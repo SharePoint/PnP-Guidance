@@ -78,6 +78,9 @@ Therefore, prior to committing the project to source control or before sharing w
 -  Office 365 Multi Tenant (MT)
 -  Office 365 Dedicated (D)
 
+### Author
+Andrew Connell - [@andrewconnell](https://twitter.com/andrewconnell)
+
 ### Version history ###
 Version  | Date | Comments
 ---------| -----| --------

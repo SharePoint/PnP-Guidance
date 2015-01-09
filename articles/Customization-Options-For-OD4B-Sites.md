@@ -125,6 +125,9 @@ One of the key downsides of this option is that there can clearly be a situation
 
 *Patterns for Dedicated and on-premises are identical with app model techniques, but there are differences on the possible technologies which can be used.*
 
+### Author
+Vesa Juvonen (Microsoft) - [@vesajuvonen](https://twitter.com/vesajuvonen)
+
 ### Version history ###
 Version  | Date | Comments
 ---------| -----| --------

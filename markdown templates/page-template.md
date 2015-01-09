@@ -48,10 +48,13 @@ Story
 
 -> Remove platforms if needed
 
+### Author
+Zrinka Makovac (Contoso) - [@contoso](https://twitter.com/OfficeDev)
+
 ### Version history ###
-Version  | Date | Comments
----------| -----| --------
+Version  | Date | Author  
+---------| -----| ------ 
 2.0  | March 21st 2014 (to update/remove)| Added chapter 2
-1.0  | November 6th 2013 (to update) | Initial release
+1.0  | November 6th 2013 (to update) | Initial release 
 
 

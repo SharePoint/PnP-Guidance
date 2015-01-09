@@ -57,6 +57,9 @@ Now, install the public version of the same NuGet package from the public regist
 -  Office 365 Dedicated (D)
 -  SharePoint 2013 on-premises
 
+### Author
+Andrew Connell - [@andrewconnell](https://twitter.com/andrewconnell)
+
 ### Version history ###
 Version  | Date | Comments
 ---------| -----| --------

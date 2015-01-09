@@ -155,6 +155,8 @@ At this point you have successfully deployed your Office 365 API web application
 -  Office 365 Multi Tenant (MT)
 -  Office 365 Dedicated (D)
 
+### Author
+Andrew Connell - [@andrewconnell](https://twitter.com/andrewconnell)
 
 ### Version history ###
 Version  | Date | Comments
