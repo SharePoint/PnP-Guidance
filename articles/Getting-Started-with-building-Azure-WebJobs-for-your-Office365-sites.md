@@ -130,6 +130,7 @@ If you review the first code snippet, I’m fetching these settings from the app
 
 #### The job runs under the specified account ####
 Once the application runs, you will see that it runs using the account specified in the SharePointOnlineCredentials() constructor:
+
 ![](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/5.Running-Job-Overview.png)
 
 In my sample above I’m showing a WebJob that is executing actions on a custom list in one of my sites hosted in my SharePoint Online site collection.
