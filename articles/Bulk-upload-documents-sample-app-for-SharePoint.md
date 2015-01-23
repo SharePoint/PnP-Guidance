@@ -1,6 +1,3 @@
-Title: Bulk upload documents sample app for SharePointDescription: As part of your Enterprise Content Management (ECM) strategy, you can bulk upload documents to document libraries, including OneDrive for Business.
-ms.ContentId: 1ed6d253-a119-403d-aeaa-4f6a2a1dbef2
-
 
 # Bulk upload documents sample app for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can bulk upload documents to document libraries, including OneDrive for Business.
