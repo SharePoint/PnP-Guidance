@@ -1,6 +1,3 @@
-Title: Document library templates sample app for SharePointDescription: As part of your Enterprise Content Management (ECM) strategy, you can implement a custom document library template, and customize site columns, site content types, taxonomy fields, version settings, and the default document content type.
-ms.ContentId: c911c598-49e3-4102-900b-9785f5b014eb
-
 
 # Document library templates sample app for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can implement a custom document library template, and customize site columns, site content types, taxonomy fields, version settings, and the default document content type.
@@ -10,7 +7,7 @@ As part of your Enterprise Content Management (ECM) strategy, you can implement 
 
     
 
-    
+The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/ECM.DocumentLibraries) sample shows you how to use a provider-hosted app to create a list or document library, assign a content type to it, and remove the default content type. Use this solution if you want to:    
 
 - Create a list or document library and apply a default content type.
     
@@ -19,9 +16,6 @@ As part of your Enterprise Content Management (ECM) strategy, you can implement 
 - Remove the default content type on a list or library.
     
 - Apply library configuration settings when you create a list or library.
-    
- **Contribute to this content**
-
     
 
 ## Before you begin
@@ -59,7 +53,9 @@ When you start this app, the start page displays as shown in Figure 1. The ECM.D
 
 **Figure 1. Start page of the ECM.DocumentLibraries app**
 
-![Screenshot that shows the ECM.DocumentLibraries app start page, with a Document Template drop-down box that lists IT Document as a choice.](..\..\includes\media\d58b9d12-808e-4f2b-9065-31e6d735dbaa.png)When users choose  **Create**, the  **CreateLibrary_Click** method in Default.aspx.cs checks the selected default template and makes calls to either the **CreateITDocumentLibrary** or **CreateContosoDocumentLibrary** method in ContentTypeManager.cs, as shown in the following code.
+![Screenshot that shows the ECM.DocumentLibraries app start page, with a Document Template drop-down box that lists IT Document as a choice.](..\..\includes\media\d58b9d12-808e-4f2b-9065-31e6d735dbaa.png)
+
+When users choose  **Create**, the  **CreateLibrary_Click** method in Default.aspx.cs checks the selected default template and makes calls to either the **CreateITDocumentLibrary** or **CreateContosoDocumentLibrary** method in ContentTypeManager.cs, as shown in the following code.
 
 
     
@@ -332,7 +328,7 @@ After you create the document library, go to the  **Library settings** on your d
 <a name="bk_addresources"> </a>
 
 
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](..\api\Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
+-  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/dn904530(v=office.15).aspx)
     
 -  [ECM.Autotagging sample app](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/ECM.)
     
