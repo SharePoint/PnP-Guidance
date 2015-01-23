@@ -17,9 +17,6 @@ This app uses a console application to upload files by using REST API calls. Con
     
 - Migrate to Office 365 and use a custom migration tool to move your files.
     
- **Contribute to this content**
-
-    
 
 ## Before you begin
 <a name="sectionSection0"> </a>
