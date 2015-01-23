@@ -50,7 +50,7 @@ Before you run this app, do the following:
 
 ```
 
-**Figure 1. Assigning app-only permissions by using the AppInv.aspx page in Office 365**
+  **Figure 1. Assigning app-only permissions by using the AppInv.aspx page in Office 365**
 
 ![Screenshot of the AppInv.aspx page, with the App ID and Permission Request XML boxes highlighted.](..\..\includes\media\d733e2b0-55f3-4aee-872b-49e7e2baf470.png)
 
@@ -69,7 +69,7 @@ Before you run this app, do the following:
             return _rer;
         }
 
-    ```
+```
 
 5. Package and deploy your app. 
     
