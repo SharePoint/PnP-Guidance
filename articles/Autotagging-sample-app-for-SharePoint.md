@@ -1,6 +1,3 @@
-Title: Autotagging sample app for SharePointDescription: As part of your Enterprise Content Management (ECM) strategy, you can automatically tag documents with metadata when they are created or uploaded to SharePoint.
-ms.ContentId: b79f83ea-e1b6-4a96-9320-006be59e976d
-
 
 # Autotagging sample app for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can automatically tag documents with metadata when they are created or uploaded to SharePoint. 
@@ -10,7 +7,7 @@ As part of your Enterprise Content Management (ECM) strategy, you can automatica
 
     
 
-    
+The [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/ECM.AutoTagging) sample shows you how to use a provider-hosted app to automatically tag content added to a SharePoint library with data sourced from a custom user profile property. This app uses remote event receivers, hosted on an Azure Web Site, to:   
 
 - Create fields, content types, and document libraries.
     
@@ -28,9 +25,6 @@ Use this solution if you want to:
     
 - Modernize your code before migrating to a newer version of SharePoint, and you've used event receivers in the past.
     
- **Contribute to this content**
-
-    
 
 ## Before you begin
 <a name="sectionSection0"> </a>
@@ -45,7 +39,8 @@ Before you run this app, do the following:
 2. Register your app using the Appregnew.aspx page in Office 365. 
     
 3. This app uses app-only permissions. You need to assign app-only permissions using the AppInv.aspx page in Office 365. Copy the following XML from the AppManifest.xml file to the Permission Request XML textbox on the AppInv.aspx page, as shown in Figure 1. 
-        ```XML
+
+``` 
     <AppPermissionRequests AllowAppOnlyPolicy="true">
     <AppPermissionRequest Scope="http://sharepoint/content/tenant" Right="FullControl" />
     <AppPermissionRequest Scope="http://sharepoint/taxonomy" Right="Read" />
@@ -53,15 +48,15 @@ Before you run this app, do the following:
   </AppPermissionRequests>
 
 
-    ```
+```
 
+  **Figure 1. Assigning app-only permissions by using the AppInv.aspx page in Office 365**
 
-    **Figure 1. Assigning app-only permissions by using the AppInv.aspx page in Office 365**
-
-    ![Screenshot of the AppInv.aspx page, with the App ID and Permission Request XML boxes highlighted.](..\..\includes\media\d733e2b0-55f3-4aee-872b-49e7e2baf470.png)
+![Screenshot of the AppInv.aspx page, with the App ID and Permission Request XML boxes highlighted.](..\..\includes\media\d733e2b0-55f3-4aee-872b-49e7e2baf470.png)
 
 4. In the ECM.AutoTaggingWeb project, in the ReceiverHelper.cs file, in the  **CreateEventReciever** method, update the **ReceiverUrl** property with the URL of your Azure Web Site.
-        ```C#
+
+```C#
     public static EventReceiverDefinitionCreationInformation CreateEventReciever(string receiverName, EventReceiverType type)
         {
 
@@ -74,7 +69,7 @@ Before you run this app, do the following:
             return _rer;
         }
 
-    ```
+```
 
 5. Package and deploy your app. 
     
@@ -83,7 +78,7 @@ When you start the app, the start page of the Document Autotagging provider-host
 
 **Figure 2. Additional configuration steps to be performed on the app start page in SharePoint**
 
-![Screenshot of the autotagging app start page, with three setu steps highlighted.](..\..\includes\media\eb0521b2-11e2-4c57-8026-d7e838c21eae.png)
+![Screenshot of the autotagging app start page, with three setup steps highlighted.](..\..\includes\media\eb0521b2-11e2-4c57-8026-d7e838c21eae.png)
 
 
 ## Using the ECM.Autotagging sample app
@@ -378,7 +373,7 @@ public static void RemoveEventReceiver(ClientContext ctx, List list, string rece
 <a name="bk_addresources"> </a>
 
 
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](..\api\Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
+-  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/dn904530(v=office.15).aspx)
     
 -  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP/tree/master/OfficeDevPnP.Core)
     
