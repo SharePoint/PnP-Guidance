@@ -1,24 +1,16 @@
-Title: Records management extensions sample app for SharePointDescription: As part of your Enterprise Content Management (ECM) strategy, you can enable and change in-place records management settings on your SharePoint sites and lists.
-ms.ContentId: a14df04d-2f41-469f-9c22-75d2dc8e5dec
-
-
 # Records management extensions sample app for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can enable and change in-place records management settings on your SharePoint sites and lists.
 
     
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-    
+The [ECM.RecordsManagement](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/ECM.RecordsManagement) sample shows you how to use a provider-hosted SharePoint app to control the in-place records management settings for a site or list.    
 
-    
 Use this solution if you want to:
 
 - Configure in-place records management settings during your custom site provisioning process.
     
- **Contribute to this content**
-
-    
-
+ 
 ## Before you begin
 <a name="sectionSection0"> </a>
 
@@ -53,12 +45,16 @@ Before you run this app:
 
 **Figure 3. ECM.RecordsManagement app start page**
 
-![Screenshot of the app start page, showing the two scenarios.](..\..\includes\media\a5fb2d86-2365-4d39-b41e-29719ab88287.png) You can use scenario 1 to build a UI to control the records management settings on your site collection. The UI in this app is similar to the UI found in **Records declaration settings** in **Site Settings** (see Figure 2). You can also activate or deactivate the In-Place Records Management feature on your site collection.
+![Screenshot of the app start page, showing the two scenarios.](..\..\includes\media\a5fb2d86-2365-4d39-b41e-29719ab88287.png) 
+
+You can use scenario 1 to build a UI to control the records management settings on your site collection. The UI in this app is similar to the UI found in **Records declaration settings** in **Site Settings** (see Figure 2). You can also activate or deactivate the In-Place Records Management feature on your site collection.
 
 
 **Figure 4. Record declaration settings on a list**
 
-![Screenshot of the Settings page with the Records declaration settings permission highlighted.](..\..\includes\media\8077fed2-23a1-4500-89d6-57c37f046fef.png)You can use Scenario 2 to build a UI to control the records management settings on lists. The UI in this app is similar to the UI found in  **Records declaration settings** in the library settings on your list.
+![Screenshot of the Settings page with the Records declaration settings permission highlighted.](..\..\includes\media\8077fed2-23a1-4500-89d6-57c37f046fef.png)
+
+You can use Scenario 2 to build a UI to control the records management settings on lists. The UI in this app is similar to the UI found in  **Records declaration settings** in the library settings on your list.
 
 
 **Figure 5. Record declaration settings on a list**
@@ -71,7 +67,9 @@ Scenario 1 addresses in-place records management features and settings for sites
 
 **Figure 6. Deactivate button for the In-Place Records Management feature**
 
-![Screenshot that shows the deactivate or activate button for in-place records management.](..\..\includes\media\b1a29cad-4239-4f49-a3e8-ca4e8ca99667.png)The following code activates or deactivates the In-Place Records Management feature on the site collection. The  **DisableInPlaceRecordsManagementFeature** and **EnableSiteForInPlaceRecordsManagement** methods are part of the AppModelExtensions\RecordsManagementExtensions.cs file in the [OfficeDevPnP.Core](https://github.com/OfficeDev/PnP/tree/dev/OfficeDevPnP.Core)OfficeDevPnP.Core.
+![Screenshot that shows the deactivate or activate button for in-place records management.](..\..\includes\media\b1a29cad-4239-4f49-a3e8-ca4e8ca99667.png)
+
+The following code activates or deactivates the In-Place Records Management feature on the site collection. The  **DisableInPlaceRecordsManagementFeature** and **EnableSiteForInPlaceRecordsManagement** methods are part of the AppModelExtensions\RecordsManagementExtensions.cs file in the [OfficeDevPnP.Core](https://github.com/OfficeDev/PnP/tree/dev/OfficeDevPnP.Core).
 
 
     
@@ -344,7 +342,7 @@ public static void SetListAutoRecordDeclaration(this List list, bool autoDeclare
 <a name="bk_addresources"> </a>
 
 
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](..\api\Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
+-  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/dn904530(v=office.15).aspx)
     
 -  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP/tree/master/OfficeDevPnP.Core)
     
