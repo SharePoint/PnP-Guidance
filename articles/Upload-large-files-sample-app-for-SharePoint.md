@@ -1,6 +1,3 @@
-Title: Upload large files sample app for SharePointDescription: As part of your Enterprise Content Management (ECM) strategy, you can use different methods to upload large files to a SharePoint document library.
-ms.ContentId: e21d224b-5fac-4d04-af99-5e658c07bd5c
-
 
 # Upload large files sample app for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can use different methods to upload large files to a SharePoint document library.
@@ -9,17 +6,14 @@ As part of your Enterprise Content Management (ECM) strategy, you can use differ
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
     
-
-    
+The [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.LargeFileUpload) sample shows you how to use a provider-hosted app to upload large files to SharePoint, and how to bypass the 2 MB file upload limit. This sample runs as a console application that uploads large files to a document library by using one of the following:
 
 - The  **SaveBinaryDirect** method on the Microsoft.SharePoint.Client.File object
     
 - The ContentStream property on the FileCreationInformation object
     
 Use this solution if you want to upload files that are larger than 2 MB to SharePoint.
- **Contribute to this content**
 
-    
 
 ## Before you begin
 <a name="sectionSection0"> </a>
@@ -35,7 +29,9 @@ When you start this app, a console application appears, as shown in Figure 1. Yo
 
 **Figure 1. Core.LargeFileUpload console application**
 
-![Screenshot that shows a console application with user name and password logon credentials.](..\..\includes\media\09de7f68-b021-4ca8-ae82-0ca26427b856.png)After authentication, the console application displays an error, as shown in Figure 2. The error occurs when the  **UploadDocumentContent** method in FileUploadService.cs tries to use the **FileCreationInformation.Content** property to upload a file that is larger than 2 MB, and an exception is thrown.
+![Screenshot that shows a console application with user name and password logon credentials.](..\..\includes\media\09de7f68-b021-4ca8-ae82-0ca26427b856.png)
+
+After authentication, the console application displays an error, as shown in Figure 2. The error occurs when the  **UploadDocumentContent** method in FileUploadService.cs tries to use the **FileCreationInformation.Content** property to upload a file that is larger than 2 MB, and an exception is thrown.
 
 
     
@@ -160,7 +156,7 @@ After the console application runs, you can go to the Docs document library by c
 <a name="bk_addresources"> </a>
 
 
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](..\api\Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
+-  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn904530(v=office.15).aspx)
     
     
     
