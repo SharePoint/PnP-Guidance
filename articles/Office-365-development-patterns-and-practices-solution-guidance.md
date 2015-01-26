@@ -1,6 +1,3 @@
-Title: Office 365 development patterns and practices solution guidanceDescription: The Office 365 Developer Patterns and Practices program provides samples and documentation to help you transition your development solutions from full-trust code to the app model.
-ms.ContentId: 4bb8d1ad-1cf9-484c-b444-1aa032608bc1
-
 
 # Office 365 development patterns and practices solution guidance
 The Office 365 Developer Patterns and Practices program provides samples and documentation to help you transition your development solutions from full-trust code to the app model.
@@ -15,6 +12,9 @@ The Office 365 Developer Patterns and Practices program provides samples and doc
 
 ## In this section
 
+|**Read this content**|**If you want to...**|
+|:-----|:-----|
+|[Enterprise Content Management solutions](https://msdn.microsoft.com/en-us/library/dn904529(v=office.15).aspx)|Use provider-hosted apps to perform common ECM tasks such as setting site policies, uploading files, synchronizing term groups, and more.|
 
 
 
