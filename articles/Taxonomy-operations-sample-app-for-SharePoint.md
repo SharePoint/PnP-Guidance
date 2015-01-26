@@ -1,19 +1,11 @@
-Title: Taxonomy operations sample app for SharePointDescription: As part of your Enterprise Content Management (ECM) strategy, you can create and read taxonomy data on a SharePoint list.
-ms.ContentId: db01e54f-3b2d-4804-895f-5842725b477f
-
-
 # Taxonomy operations sample app for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can create and read taxonomy data on a SharePoint list.
 
     
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-    
+The Core.MMS sample console application shows you how to interact with the SharePoint managed metadata service to create and retrieve terms, term sets, and groups. This sample will also run in a provider-hosted app, such as an ASP.NET MVC web application. Use this solution if you want to migrate terms between SharePoint farms or display terms in your custom app.   
 
-    
- **Contribute to this content**
-
-    
 
 ## Before you begin
 <a name="sectionSection0"> </a>
@@ -30,10 +22,10 @@ Before you run this app, you'll need:
     **Figure 1. Assigning permissions to the term store in the SharePoint admin center**
 
     ![Screenshot of the SharePoint admin center with the term store, taxonomy term store search box, and term store administrators boxes highlighted.](..\..\includes\media\5a9d8c07-afce-4d9e-b0d1-10b28e089278.png)
-    To assign permissions to the term store:
     
+To assign permissions to the term store:
 
-      1. From the Office 365 admin center, choose  **term store**.
+  1. From the Office 365 admin center, choose  **term store**.
     
   2. In  **TAXONOMY TERM STORE**, choose the term set that you want to assign an administrator to.
     
@@ -48,7 +40,9 @@ When you start the app, you see a console application similar to Figure 2. You a
 
 **Figure 2. Core.MMS console application**
 
-![Screenshot of the Core.MMS sample app console, prompting for the SharePoint user name and password.](..\..\includes\media\5ddaf3f1-2d7c-4818-9a9a-b0e905226db5.png)After you supply the SharePoint URL and your credentials, user authentication occurs. The following code performs user authentication in SharePoint Online.
+![Screenshot of the Core.MMS sample app console, prompting for the SharePoint user name and password.](..\..\includes\media\5ddaf3f1-2d7c-4818-9a9a-b0e905226db5.png)
+
+After you supply the SharePoint URL and your credentials, user authentication occurs. The following code performs user authentication in SharePoint Online.
 
 
     
@@ -186,7 +180,7 @@ You will see your term data from your managed metadata service displayed in the 
 <a name="bk_addresources"> </a>
 
 
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](..\api\Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
+-  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn904530(v=office.15).aspx)
     
 -  [Core.MMSSync sample](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.MMSSync)
     
