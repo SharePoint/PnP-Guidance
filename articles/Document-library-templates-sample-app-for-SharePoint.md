@@ -148,55 +148,46 @@ The  **CreateContosoDocumentLibrary** method then performs the following tasks, 
  **CreateContosoDocumentLibrary** calls the **CreateTaxonomyField** method, which is part of the OfficeDevPnP.Core. **CreateTaxonomyField** creates a field in the managed metadata service from the provider-hosted app.
 
 
-
-
 ```C#
-public void CreateContosoDocumentLibrary(ClientContext ctx, Library library)
-        {
-            // Check the fields.
-            if (!ctx.Web.FieldExistsById(FLD_CLASSIFICATION_ID)){
-                ctx.Web.CreateTaxonomyField(FLD_CLASSIFICATION_ID, 
-                                            FLD_CLASSIFICATION_INTERNAL_NAME, 
-                                            FLD_CLASSIFICATION_DISPLAY_NAME, 
-                                            FIELDS_GROUP_NAME, 
-                                            TAXONOMY_GROUP, 
-                                            TAXONOMY_TERMSET_CLASSIFICATION_NAME);
-            }
-            
-            // Check the content type.
-            if (!ctx.Web.ContentTypeExistsById(CONTOSODOCUMENT_CT_ID)){
-                ctx.Web.CreateContentType(CONTOSODOCUMENT_CT_NAME, 
-                                          CT_DESC, CONTOSODOCUMENT_CT_ID, 
-                                          CT_GROUP);
-            }
+public static Field CreateTaxonomyField(this Web web, Guid id, string internalName, string displayName, string group, TermSet termSet, bool multiValue = false)
+		{
+			internalName.ValidateNotNullOrEmpty("internalName");
+			displayName.ValidateNotNullOrEmpty("displayName");
+			termSet.ValidateNotNullOrEmpty("termSet");
 
-            // Associate fields to content types.
-            if (!ctx.Web.FieldExistsByNameInContentType(CONTOSODOCUMENT_CT_NAME, FLD_CLASSIFICATION_INTERNAL_NAME)){
-                ctx.Web.AddFieldToContentTypeById(CONTOSODOCUMENT_CT_ID, 
-                                                  FLD_CLASSIFICATION_ID.ToString(), 
-                                                  false);
-            }
-            CreateLibrary(ctx, library, CONTOSODOCUMENT_CT_ID);
-          
-        }
-       
+			try
+			{
+				var _field = web.CreateField(id, internalName, multiValue ? "TaxonomyFieldTypeMulti" : "TaxonomyFieldType", true, displayName, group, "ShowField=\"Term1033\"");
 
- 
+				WireUpTaxonomyField(web, _field, termSet, multiValue);
+				_field.Update();
 
+				web.Context.ExecuteQuery();
 
+				return _field;
+			}
+			catch (Exception)
+			{
+				/// If there is an exception, the hidden field might be present.
+				FieldCollection _fields = web.Fields;
+				web.Context.Load(_fields, fc => fc.Include(f => f.Id, f => f.InternalName));
+				web.Context.ExecuteQuery();
+				var _hiddenField = id.ToString().Replace("-", "");
 
+				var _field = _fields.FirstOrDefault(f => f.InternalName == _hiddenField);
+				if (_field != null)
+				{
+					_field.DeleteObject();
+					web.Context.ExecuteQuery();
+				}
+				throw;
 
-
-
-
-
-
-
-
-
-
+			}
+		}
 
 ```
+
+
 
  **CreateContosoDocumentLibrary** calls the **CreateContentType** method which is part of OfficeDevPnP.Core. **CreateContentType** creates a new content type.
 
