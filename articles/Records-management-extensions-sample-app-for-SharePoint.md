@@ -45,21 +45,21 @@ Before you run this app:
 
 **Figure 3. ECM.RecordsManagement app start page**
 
-![Screenshot of the app start page, showing the two scenarios.](..\..\includes\media\a5fb2d86-2365-4d39-b41e-29719ab88287.png) 
+![Screenshot of the app start page, showing the two scenarios.](media/a5fb2d86-2365-4d39-b41e-29719ab88287.png) 
 
 You can use scenario 1 to build a UI to control the records management settings on your site collection. The UI in this app is similar to the UI found in **Records declaration settings** in **Site Settings** (see Figure 2). You can also activate or deactivate the In-Place Records Management feature on your site collection.
 
 
 **Figure 4. Record declaration settings on a list**
 
-![Screenshot of the Settings page with the Records declaration settings permission highlighted.](..\..\includes\media\8077fed2-23a1-4500-89d6-57c37f046fef.png)
+![Screenshot of the Settings page with the Records declaration settings permission highlighted.](media/8077fed2-23a1-4500-89d6-57c37f046fef.png)
 
 You can use Scenario 2 to build a UI to control the records management settings on lists. The UI in this app is similar to the UI found in  **Records declaration settings** in the library settings on your list.
 
 
 **Figure 5. Record declaration settings on a list**
 
-![Screenshot of the Library Record Declaration Settings page.](..\..\includes\media\2522e4b0-5d5c-40bc-829d-f13d96a2b233.png)
+![Screenshot of the Library Record Declaration Settings page.](media/2522e4b0-5d5c-40bc-829d-f13d96a2b233.png)
 ### Scenaro 1
 
 Scenario 1 addresses in-place records management features and settings for sites. The app UI includes a  **Deactivate** (or **Activate**) button, as shown in Figure 6. Choosing this button deactivates (or activates) the In-Place Records Management feature on the site collection. 
@@ -67,7 +67,7 @@ Scenario 1 addresses in-place records management features and settings for sites
 
 **Figure 6. Deactivate button for the In-Place Records Management feature**
 
-![Screenshot that shows the deactivate or activate button for in-place records management.](..\..\includes\media\b1a29cad-4239-4f49-a3e8-ca4e8ca99667.png)
+![Screenshot that shows the deactivate or activate button for in-place records management.](media/b1a29cad-4239-4f49-a3e8-ca4e8ca99667.png)
 
 The following code activates or deactivates the In-Place Records Management feature on the site collection. The  **DisableInPlaceRecordsManagementFeature** and **EnableSiteForInPlaceRecordsManagement** methods are part of the AppModelExtensions\RecordsManagementExtensions.cs file in the [OfficeDevPnP.Core](https://github.com/OfficeDev/PnP/tree/dev/OfficeDevPnP.Core).
 

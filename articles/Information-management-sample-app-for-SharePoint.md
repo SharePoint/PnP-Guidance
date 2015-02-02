@@ -43,7 +43,7 @@ When you start the app, the start page displays the following information, as sh
 
 **Figure 1. Information Management app start page**
 
-![Screenshot of the app start page, with site policy closure and expiration values, available and applied site policies, and other policies to apply highlighted.](..\..\includes\media\8c5f39f7-700d-4300-bcc4-9ed9edf0e155.png)
+![Screenshot of the app start page, with site policy closure and expiration values, available and applied site policies, and other policies to apply highlighted.](media/8c5f39f7-700d-4300-bcc4-9ed9edf0e155.png)
 
 From your SharePoint site, you can go to the app, which runs on the remote host, by choosing  **Recent** > **Core.InformationManagement**. To return to your SharePoint site, choose  **Back to Site**.
 
