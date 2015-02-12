@@ -23,13 +23,13 @@ Before you run this app:
     
     **Figure 1. Activating In-Place Records Management on your site collection**
 
-    ![Screenshot of the Site Collections Features page with the activated In-Place Record Management feature highlighted.](..\..\includes\media\d99269ae-b8fc-445b-a1b8-1612b16dcba6.png)
+    ![Screenshot of the Site Collections Features page with the activated In-Place Record Management feature highlighted.](media/d99269ae-b8fc-445b-a1b8-1612b16dcba6.png)
 
 - In site settings, verify that you see  **Record declaration settings** in **Site Collection Administration**, as shown in Figure 2.
     
     **Figure 2. Record declaration settings in Site Settings**
 
-    ![Screenshot of the Site Settings page with Record declaration settings highlighted.](..\..\includes\media\13a6a490-68cd-4f70-8714-cd6222325890.png)
+    ![Screenshot of the Site Settings page with Record declaration settings highlighted.](media/13a6a490-68cd-4f70-8714-cd6222325890.png)
 
 
 ## Using the ECM.RecordsManagement sample app
