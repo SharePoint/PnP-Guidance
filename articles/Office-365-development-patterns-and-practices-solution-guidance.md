@@ -15,7 +15,10 @@ The Office 365 Developer Patterns and Practices program provides samples and doc
 |**Read this content**|**If you want to...**|
 |:-----|:-----|
 |[Enterprise Content Management solutions](https://msdn.microsoft.com/en-us/library/dn904529(v=office.15).aspx)|Use provider-hosted apps to perform common ECM tasks such as setting site policies, uploading files, synchronizing term groups, and more.|
-
+|[Localization solutions](https://msdn.microsoft.com/EN-US/library/dn894685.aspx)|Localize your SharePoint site contents and UI text.|
+|[User profile solutions](https://msdn.microsoft.com/en-us/library/dn894686.aspx)|Work with SharePoint user profile data.|
+|[SharePoint Online throttling](https://msdn.microsoft.com/EN-US/library/dn913105.aspx)|Learn how to handle throttling in SharePoint Online by using the exponential back-off technique.|
+|[Customize your SharePoint site UI by using JavaScript](https://msdn.microsoft.com/EN-US/library/dn913116.aspx)|Use JavaScript to customize your SharePoint site UI.|
 
 
 
