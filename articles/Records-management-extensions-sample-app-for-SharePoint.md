@@ -50,22 +50,18 @@ Before you run this app:
 You can use scenario 1 to build a UI to control the records management settings on your site collection. The UI in this app is similar to the UI found in **Records declaration settings** in **Site Settings** (see Figure 2). You can also activate or deactivate the In-Place Records Management feature on your site collection.
 
 
-**Figure 4. Record declaration settings on a list**
-
-![Screenshot of the Settings page with the Records declaration settings permission highlighted.](media/8077fed2-23a1-4500-89d6-57c37f046fef.png)
-
 You can use Scenario 2 to build a UI to control the records management settings on lists. The UI in this app is similar to the UI found in  **Records declaration settings** in the library settings on your list.
 
 
-**Figure 5. Record declaration settings on a list**
+**Figure 4. Record declaration settings on a list**
 
 ![Screenshot of the Library Record Declaration Settings page.](media/2522e4b0-5d5c-40bc-829d-f13d96a2b233.png)
 ### Scenaro 1
 
-Scenario 1 addresses in-place records management features and settings for sites. The app UI includes a  **Deactivate** (or **Activate**) button, as shown in Figure 6. Choosing this button deactivates (or activates) the In-Place Records Management feature on the site collection. 
+Scenario 1 addresses in-place records management features and settings for sites. The app UI includes a  **Deactivate** (or **Activate**) button, as shown in Figure 5. Choosing this button deactivates (or activates) the In-Place Records Management feature on the site collection. 
 
 
-**Figure 6. Deactivate button for the In-Place Records Management feature**
+**Figure 5. Deactivate button for the In-Place Records Management feature**
 
 ![Screenshot that shows the deactivate or activate button for in-place records management.](media/b1a29cad-4239-4f49-a3e8-ca4e8ca99667.png)
 
