@@ -7,6 +7,39 @@ We will keep on updating this page based on the new capabilities released to clo
 
 - Latest cloud CSOM re-distributable can be downloded from Microsoft download center using [aka.ms/spocsom](http://aka.ms/spocsom) address.
 
+# Document support #
+Update settings like allowed content types, welcome page fields and shared fields for a DocumentSet
+
+
+- DocumentSetTemplate::GetDocumentSetTemplate
+- DocumentSetTemplate.AllowedContentTypes
+- DocumentSetTemplate.DefaultDocuments
+- DocumentSetTemplate.SharedFields
+- DocumentSetTemplate.WelcomePageFields
+- DocumentSetTemplate::Update()
+
+### Platforms ###
+On-Premises | Office 365
+---------| ----------
+2015 March CU  | -
+
+### Related PnP samples ###
+- 
+
+# TimezoneID for search queries #
+Option to pass timezone ID into search queries
+
+- Microsoft.SharePoint.Search.Query.KeywordQuery.TimeZoneId
+
+### Platforms ###
+On-Premises | Office 365
+---------| ----------
+2015 February CU  | -
+
+### Related PnP samples ###
+- 
+
+
 # Adding secondary site collection administrator to site collection #
 Add secondary administrator to site collection.
 
