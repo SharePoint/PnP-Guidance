@@ -23,7 +23,7 @@ Let’s start with defining what is the challenge and what are we trying to solv
 
 **Sample Image**
 
-![](media/Recipes/Themes/agenda.png)
+![](media/Recipes/Themes/Agenda.png)
 
 This section contains the following information:
 - Challenges
