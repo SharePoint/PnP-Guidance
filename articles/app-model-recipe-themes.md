@@ -4,9 +4,18 @@ App model recipe - Themes
 Summary
 -------
 
-The approach you take to brand SharePoint sites is different in the new app model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) branding scenario, custom master pages, web templates, JavaScript, CSS files, and images are created to implement a custom brand.  These artifacts are typically packaged in a feature which uses declarative code and FTC to deploy the assets and register them with the SharePoint site.
+The approach you take to brand SharePoint sites is different in the new app model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) branding scenario, custom master pages, web templates, JavaScript, CSS files, and images are created to implement a custom brand.  Additionally, SharePoint themes and composed looks may be created to implement a custom brand.  These artifacts are typically packaged in a feature which uses declarative code and FTC to deploy the assets and register them with the SharePoint site.
 
-In an app model branding scenario, all of the options associated with FTC branding scenarios are available.  Additionally, Office 365 and SharePoint Themes and composed looks may be created to implement a custom brand.  No matter which option you choose, you can deploy and register your branding assets on SharePoint sites via the remote-provisioning pattern.
+In an app model branding scenario, all of the options associated with FTC branding scenarios are available.  No matter which option you choose, you can deploy and register your branding assets on SharePoint sites via the remote-provisioning pattern.
+
+Terminology
+-----------
+
+Throughout this article the term **SharePoint theme** is used. This is a term which has overloaded meanings in other articles on MSDN, MS Blogs, and all across the Internet.  In this article, the term **SharePoint theme** specifically refers to the color palette / color scheme (.spcolor file) applied to a SharePoint site.
+
+A SharePoint theme is one of many [SharePoint theming experience components](https://msdn.microsoft.com/en-us/library/office/jj927174.aspx).
+
+In this article we chose to align the term **SharePoint theme** with the specific technical item it refers to in order to succinctly describe all your branding options. 
 
 Why would you custom brand a SharePoint site?
 ----------------------------------------------------
@@ -15,7 +24,7 @@ There are many different reasons why you would apply custom branding to a ShareP
 
 As a rule of a thumb, we would like to provide the following high level guidelines for custom branding SharePoint sites
 
-- Use Office 365 themes, SharePoint site themes, and composed looks to apply branding to SharePoint sites whenever possible
+- Use Office 365 themes, SharePoint site theming experience components, and composed looks to apply branding to SharePoint sites whenever possible
 - You can adjust some CSS settings using the Alternate CSS option if the themes do not support your requirements
 - You can use JavaScript injection to modify or hide elements of a SharePoint site
 - You can customize SharePoint sites using custom master pages, but keep in mind this will cause you additional long term costs and challenges with future updates
@@ -34,7 +43,6 @@ This example comes from the [Theme management using CSOM (O365 PnP Sample)](http
 
 Challenges applying brand customization to SharePoint sites
 -----------------------------------------------------------
-
 **Office 365 Themes vs. SharePoint Themes**
 
 It is important to understand that Office 365 Themes and SharePoint Themes are different.  It is also important to understand SharePoint themes and composed looks are used to brand SharePoint sites.  This list describes the different items.  
@@ -83,7 +91,7 @@ See the [Themes overview for SharePoint 2013](https://msdn.microsoft.com/en-us/l
 
 When applying custom branding to SharePoint sites you will encounter the need to brand both Team sites and Publishing sites. Generally speaking, Intranets built on SharePoint in both on-premises and Office 365 scenarios use a combination of Team sites and Publishing sites.  
 
-Custom branding requirements often times require specific layout changes which themes and JavaScript injection techniques cannot accomplish.  A responsive web design is a good example of when a custom master page is required.  
+Custom branding requirements often times require specific layout changes which themes and JavaScript injection techniques cannot accomplish.
 
 In such a scenario, Team sites usually do not require the amount of custom branding that Publishing sites do and the out of the box SharePoint Contemporary View for mobile devices is usually sufficient to support mobile devices for Team sites.  Since this is the case it is best to only use custom Master Pages for Publishing sites and to use custom SharePoint themes (.spcolor files), font schemes (.spfont files), and background images defined as composed looks to brand Team sites.
 
@@ -270,7 +278,7 @@ In scenarios where a custom master page is the only way to implement your custom
 - There are many required content placeholders in SharePoint master pages which must not be removed or they will cause the pages to error.  You will know when you have removed a required content placeholder because the minute you deploy it and assign the master page to your site errors will appear.
 
 **When is it a good fit?**
-This option works well when your branding needs are very specific or you are using Publishing sites. Responsive Web Design requirements are a good example of specific branding requirements which are best implemented via a custom master page.
+This option works well when your branding needs are very specific or you are using Publishing sites.
 
 **Recommended deployment approaches**
 
