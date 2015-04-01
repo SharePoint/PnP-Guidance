@@ -11,7 +11,7 @@ In an app model branding scenario, all of the options associated with FTC brandi
 Terminology
 -----------
 
-Throughout this article the term **SharePoint theme** is used. This is a term which has overloaded meanings in other articles on MSDN, MS Blogs, and all across the Internet.  In this article, the term **SharePoint theme** specifically refers to the color palette / color scheme (.spcolor file) applied to a SharePoint site.
+Throughout this article the term **SharePoint theme** is used. This is a term which has overloaded meanings in other articles on MSDN, MS Blogs, and all across the Internet.  In MSDN terminology, the term **SharePoint theme** specifically refers to the color palette / color scheme (.spcolor file) applied to a SharePoint site.  The PnP terminology, the terms **SharePoint theme** and **composed look** are the same thing.
 
 A SharePoint theme is one of many [SharePoint theming experience components](https://msdn.microsoft.com/en-us/library/office/jj927174.aspx).
 
@@ -70,7 +70,7 @@ See the [Customize the Office 365 theme for your organization](https://support.o
 
 *Notice a SharePoint theme in an Office 365 SharePoint site does not include a master page, master page preview, or composed look.* This aligns with the guidance mentioned above to not use custom master pages to implement branding on SharePoint sites.
 
-**Composed looks used for on-premises SharePoint 2013 sites** include the following components.  
+**Composed looks used for on-premises SharePoint 2013 sites** include one or more of the following components.  
 
 - color palette (.spcolor file) - Also referred to as a SharePoint theme
 - font scheme (.spfont file)
@@ -80,7 +80,7 @@ See the [Customize the Office 365 theme for your organization](https://support.o
 
 See the [Themes overview for SharePoint 2013](https://msdn.microsoft.com/en-us/library/office/jj927174.aspx) article to learn more about these components.
 
-**Composed looks used for Office 365 SharePoint 2013 sites** include the following components.  
+**Composed looks used for Office 365 SharePoint 2013 sites** include one or more of the following components.  
 
 - color palette (.spcolor file) - Also referred to as a SharePoint theme
 - font scheme (.spfont file)
@@ -346,8 +346,9 @@ Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
 
 Version history
 ---------------
-Version  | Date | Comments
----------| -----| --------
+Version  | Date | Comments | Author
+---------| -----| ---------| ------
 0.1  | March 27, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | March 30, 2015 | Revisions based on feedback from Vesa | Todd Baginski (Canviz LLC)
+1.0  | March 31, 2015 | Final revisions after discussion with Vesa | Todd Baginski (Canviz LLC)
 
