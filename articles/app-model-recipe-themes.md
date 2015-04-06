@@ -4,9 +4,9 @@ App model recipe - Themes
 Summary
 -------
 
-The approach you take to brand SharePoint sites is different in the new app model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) branding scenario, custom master pages, web templates, JavaScript, CSS files, and images are created to implement a custom brand.  Additionally, SharePoint themes and composed looks may be created to implement a custom brand.  These artifacts are typically packaged in a feature that uses declarative code and FTC to deploy the assets and register them with the SharePoint site.
+The approach you take to brand SharePoint sites is different in the new app model than it was with Full Trust Code / Farm Solutions.  In a typical Full Trust Code (FTC) / Farm Solution branding scenario, custom master pages, web templates, JavaScript, CSS files, and images are created to implement a custom brand.  Additionally, SharePoint themes and composed looks may be created to implement a custom brand.  These artifacts are typically packaged in a feature that uses declarative code and FTC / Farm Solution to deploy the assets and register them with the SharePoint site.
 
-In an app model branding scenario, all of the options associated with FTC branding scenarios are available.  No matter which option you choose, you can deploy and register your branding assets on SharePoint sites via the remote-provisioning pattern.
+In an app model branding scenario, all of the options associated with FTC / Farm Solution branding scenarios are available.  No matter which option you choose, you can deploy and register your branding assets on SharePoint sites via the remote-provisioning pattern.
 
 Terminology
 -----------
