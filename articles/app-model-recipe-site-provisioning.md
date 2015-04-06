@@ -4,38 +4,44 @@ App model recipe - Site Provisioning
 Summary
 -------
 
-The approach you take to provision site collections and sub sites sites is different in the new app model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, site collections and sub sites are created with the SharePoint Server Side Object Model and declarative code is used to configure the sites and apply customization.  In this model, declarative code is typically used to create site columns, content types, lists defined in XML and SharePoint's feature framework elements are used to package and deploy them.
+The approach you take to provision site collections and sub sites sites is different in the new app model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, site collections and sub sites are created with the site definitions and web templates and declarative code is used to configure the sites and apply customization.  In this model, declarative code is typically used to create site columns, content types, lists defined in XML and SharePoint's feature framework elements are used to package and deploy them.
 
-In an app model scenario, site collections and sub sites are created and configured with the SharePoint Client Side Object Model (CSOM).  This pattern is commonly referred to as the remote provisioning pattern.
+In an app model scenario, site collections and sub sites are created and configured with the SharePoint Client Side Object Model (CSOM).  This pattern is commonly referred to as the *remote provisioning pattern*.
+
+At a high level, The remote provisioning pattern looks like this:
+
+![](media/Recipes/SiteProvisioning/overview.png)
 
 High Level Guidelines
 ---------------------
 
 As a rule of a thumb, we would like to provide the following high level guidelines for creating site collections and sub sites.
 
-- The SharePoint CSOM should be used to create site collections and sub sites.
+- Provision sites collections and sub sites based on the out-of-the-box site templates that ship with SharePoint.
+	+ Use the SharePoint CSOM to create the site collections and sub sites.
+- Apply customization and settings to the out-of-the-box site collections and sub sites to meet your requirements.
+	+ Use the SharePoint CSOM to apply customization and settings.
 - Feature framework elements should not be used in the creation of create collections and sub sites.
 	+ The only exception to this guideline is when you are using declarative XML based provision to an app web in a SharePoint-hosted app.  This is because the CSOM is not available in a SharePoint-hosted app.
 
-Challenges creating collections and sub sites
----------------------------------------------
+Challenges creating site collections and sub sites
+--------------------------------------------------
 
 **Creating in a web browser vs. Creating with code** 
 
-It is important to understand that creating site columns and content types via the web browser or via code are different.  This list describes the different options.
+It is important to understand that creating site collections and sub sites via the web browser or via code are different.  This list describes the different options.
 
 - **Creating via a web browser**
-	+ In this option, users access a SharePoint site via a web browser and use the Administrative Pages to create site columns and content types.
-	+ Usually the only time you will use the web browser to manually create site collections and sub sites is when you are prototyping or modifying a single SharePoint site that is not planned to grow to include other site collections or sub sites. 
+	+ In this option, users access a SharePoint site via a web browser and use the Administrative Pages to create site collections and sub sites.
+	+ Usually the only time you will use the web browser to manually create site collections and sub sites is when you are prototyping or modifying a single SharePoint site that is not planned to grow to include other site collections or sub sites.	
 - **Creating with code**
-	+ In this option, SharePoint CSOM code is executed to create site columns and content types.
+	+ In this option, SharePoint CSOM code is executed to create site collections and sub sites.
 	+ There are a few options you can use to execute the SharePoint CSOM code, they are described later in this article.
 
 When **Creating via a web browser** consider the following points.
 
 - Creating site collections and sub sites via the web browser is typically a complicated and time consuming process.
-	+ These factors make it **prone to error**.
-	
+	+ These factors make it **prone to error**.	
 - It is not easy to replicate site collections and sub sites (and the components they contain) created via the web browser in a granular fashion. 
 	+ This makes it **difficult** to quickly and consistently deploy the site collections and sub sites to different environments as you move from development to testing to production.
 
@@ -69,16 +75,12 @@ There are several options you can use to create site collections and sub sites w
 - Override the create site link
 - Override the create sub site link
 - Use a Provider-hosted app
-- Use Windows/Java/iOS applications or PowerShell scripts
+- Use .NET/Java/Objective-C applications or PowerShell scripts
 
 Override the create site link
 -----------------------------
 
 In this pattern the link to create a site collection is overridden with a link that points to a Provider-hosted app.  CSOM code running in a Provider-hosted app is executed via the remote provisioning pattern as part of the site creation process.
- 
-The pattern looks like this:
-
-![](media/Recipes/SiteColumnsContentTypes/override-overview.png)
 
 - The pattern is only used when targeting site collection creation, it is not used to create sub sites.
 - The override URL is configured in the SharePoint admin center.  This URL points to a Provider-hosted app.
@@ -92,15 +94,15 @@ The pattern looks like this:
 
 To override the create site link open the settings page in the SharePoint admin center (shown below).
 
-![](media/Recipes/SiteColumnsContentTypes/sp-admin-center.png)
+![](media/Recipes/SiteProvisioning/sp-admin-center.png)
 
 Then, check the Use the form at this URL checkbox and enter the URL to the Provider-hosted app which implements the site creation functionality (shown below).
 
-![](media/Recipes/SiteColumnsContentTypes/override-warning.png)
+![](media/Recipes/SiteProvisioning/override-warning.png)
 
 Notice  SharePoint warns you (in the dialog below) about the security implications associated with this approach and provides you with an option to disable this type of functionality.
 
-![](media/Recipes/SiteColumnsContentTypes/override-form.png)
+![](media/Recipes/SiteProvisioning/override-form.png)
 
 **When is it a good fit?**
 
@@ -108,7 +110,7 @@ This option works well when you need to provide your end users with a self-servi
 
 **Getting Started**
 
-The following articles describe the override site link pattern and provide code samples to get you started.
+The following articles describe the override create site link pattern and provide code samples to get you started.
 
 - [Self-Service Site Provisioning using Apps for SharePoint 2013 (MSDN Blog)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
 	+ End to end article about this pattern with accompanying video.
@@ -120,10 +122,6 @@ Override the create sub site link
 
 In this pattern the link to create a sub site is overridden with a link that points to a Provider-hosted app.  CSOM code running in a Provider-hosted app is executed via the remote provisioning pattern as part of the site creation process.
  
-The pattern looks like this:
-
-![](media/Recipes/SiteColumnsContentTypes/override-overview.png)
-
 - The pattern is only used when targeting sub site creation, it is not used to create site collections.
 - The override URL is configured with a custom action that uses JavaScript to modify the link. This URL points to a Provider-hosted app.
 - The Provider-hosted app uses CSOM APIs to create sub sites.
@@ -171,10 +169,10 @@ This option works well when you need to provide your end users with a self-servi
 - [Core.ContentTypesAndFields (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.ContentTypesAndFields)
 	+ Demonstrates how to create a new content type in the host web, create a taxonomy field in the host web and wire it up to the taxonomy, create a list and associate it with a content type, create content types and fields in particular languages.
 
-Use Windows/Java/iOS applications or PowerShell scripts
--------------------------------------------------------
+Use .NET/Java/Objective-C applications or PowerShell scripts
+----------------------------------------------------
 
-In this pattern, CSOM code is executed via Windows/Java/iOS applications or PowerShell scripts.
+In this pattern, CSOM code is executed via .NET/Objective-C/iOS applications or PowerShell scripts.  This pattern also encompasses using remote timer jobs; for example, an Azure Web Job.
  
 - The pattern may be used to target site collection and sub site creation.
 - The apps must be granted Full Control permissions to the SharePoint environment	.
@@ -188,11 +186,6 @@ In this pattern, CSOM code is executed via Windows/Java/iOS applications or Powe
 **When is it a good fit?**
 
 This option works well in Dev-Ops scenarios. It allows you to create custom applications or scripts that are specifically built to work with your Dev-Ops processes. This option provides the ultimate level of automation because the apps and scripts can be built to run without any user interaction.  
-
-- [Core.CreateContentTypes (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.CreateContentTypes)
-	+ This sample shows how you can create site columns, content types and add then add the site columns to the content type. It will also explain the new localization features that have been introduced for Office 365 CSOM APIs.
-- [Core.CreateDocumentContentType (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.CreateDocumentContentType)
-	+ This sample shows how you can create document content types and add then associate a document template to the content type.
 
 Related links
 =============
