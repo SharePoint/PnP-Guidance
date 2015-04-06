@@ -16,7 +16,7 @@ As a rule of a thumb, we would like to provide the following high level guidelin
 - The SharePoint CSOM or REST APIs should be used to create site columns and content types.
 - Feature framework elements should not be used in the creation of site columns and content types.
 	+ The only exception to this guideline is when you are using declarative XML-based provisioning to an app web in a SharePoint-hosted app.  This is due to the fact that the CSOM is not available in a SharePoint-hosted app.
-- You can automate the creation of site columns and content types as part of the site provisioning process.  See the [site provisioning recipe](/app-model-recipe-site-provisioning.md) for more details.
+- You can automate the creation of site columns and content types as part of the site provisioning process.  See the [site provisioning recipe](/articles/app-model-recipe-site-provisioning.md) for more details.
 
 Challenges creating site columns and content types in SharePoint sites
 ----------------------------------------------------------------------
@@ -64,7 +64,7 @@ This example may also be applied to Content By Search Web Parts, SharePoint apps
 Options to create site columns and content types in SharePoint sites
 --------------------------------------------------------------------
 
-There are several ways you can call the CSOM/REST code to create site columns and content types.  These patterns all fall into the **Creating with code** approach described above.  Each one of these patterns is described in detail in the [site provisioning recipe](/app-model-recipe-site-provisioning.md).
+There are several ways you can call the CSOM/REST code to create site columns and content types.  These patterns all fall into the **Creating with code** approach described above.  Each one of these patterns is described in detail in the [site provisioning recipe](/articles/app-model-recipe-site-provisioning.md).
 
 - Override the create site link
 - Override the create sub site link
@@ -106,7 +106,7 @@ More Examples
 
 Related links
 =============
-- [App Model Recipe - Site Provisioning (O365 PnP Recipe)](/app-model-recipe-site-provisioning.md)
+- [App Model Recipe - Site Provisioning (O365 PnP Recipe)](/articles/app-model-recipe-site-provisioning.md)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")
@@ -138,4 +138,4 @@ Version history
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | April 2, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-
+0.2  | April 5, 2015 | Trimmed article and updated content | Todd Baginski (Canviz LLC)
