@@ -35,11 +35,16 @@ Options to schedule timer jobs
 You have a couple of options to implement the scheduling for a timer job.
 
 - Windows Scheduler
+	+ Windows Service
 - Azure WebJob
+	+ Azure worker process
 
 Windows Scheduler
 -----------------
 In this pattern the Windows Scheduler handles the scheduling aspects associated with a timer job.  Implementation code can be a console application or a PowerShell script or any other code which the Windows Scheduler can invoke.
+
+**Windows Service Sub Option**
+A Windows Service has the same characteristics as the Windows Scheduler.  It is not a recommended pattern but it is worth mentioning because it is commonly used.
 
 **When is it a good fit?**
 
@@ -63,6 +68,9 @@ In this pattern the Azure WebJob handles the scheduling aspects associated with 
 
 - Does not require additional hardware to run the Azure WebJob (scheduling and implementation code).
 - Advantageous because it uses the Azure WebJob for scheduling as well as the implementation code which makes it easy to manage in one location.
+
+**Azure Worker Role Sub Option**
+An Azure Worker Role has the same characteristics as an Azure WebJob.  It is not a recommended pattern but it is worth mentioning because it is commonly used.
 
 **When is it a good fit?**
 
@@ -200,3 +208,4 @@ Version history
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | April 7, 2015 | Initial draft | Todd Baginski (Canviz LLC)
+0.2  | April 8, 2015 | Added sub options | Todd Baginski (Canviz LLC)
