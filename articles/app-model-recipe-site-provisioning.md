@@ -228,3 +228,4 @@ Version history
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | April 6, 2015 | Initial draft | Todd Baginski (Canviz LLC)
+0.2  | April 8, 2015 | Updated with latest samples and reference articles | Todd Baginski (Canviz LLC)
