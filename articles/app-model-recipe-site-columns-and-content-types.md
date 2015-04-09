@@ -92,18 +92,6 @@ This option works well in Dev-Ops scenarios. It allows you to create custom appl
 - [Core.CreateDocumentContentType (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.CreateDocumentContentType)
 	+ This sample shows how you can create document content types and add then associate a document template to the content type.
 
-More Examples
--------------
-
-- [Branding.DisplayTemplates (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.DisplayTemplates)
-	+ The Display Templates sample demonstrates how to use Display Templates to render a hero image and content rotator in a Content By Search Web Part. Additionally, the Display Templates target mobile devices using Responsive Web Design (RWD) and Device Channels.
-	+ The [code behind for the default.aspx web page](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.DisplayTemplates/Branding.DisplayTemplatesWeb/Pages/Default.aspx.cs) is an excellent easy to follow example that demonstrates how to create a list, create a content type for the list, bind site columns to the content type, bind the content type to the list, upload control and item template JS files to the master page gallery, upload master pages, create pages and add content and web parts to the pages, and initialize list data.  
-- [Core.DataStorageModels (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.DataStorageModels)
-	+ This Provider-hosted sample application for SharePoint demonstrates the differences, advantages, and disadvantages between different data storage patterns associated with the App Model and how they are built. It also illustrates limitations associated with certain data storage components that should be considered when deciding which data storage components to use when building with the App Model.  
-	+ The [Util class](https://github.com/OfficeDev/PnP/blob/master/Samples/Core.DataStorageModels/Core.DataStorageModelsWeb/Util/Util.cs) includes reusable methods which may be used to create site columns and content types.  
-	+ The [SharePointService class](https://github.com/OfficeDev/PnP/blob/master/Samples/Core.DataStorageModels/Core.DataStorageModelsWeb/Services/SharePointService.cs)  includes methods which demonstrate how to create lists, content types, and site columns and many other related operations.
-
-
 Related links
 =============
 - [App Model Recipe - Site Provisioning (O365 PnP Recipe)](/articles/app-model-recipe-site-provisioning.md)
@@ -139,3 +127,4 @@ Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | April 2, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | April 5, 2015 | Trimmed article and updated content | Todd Baginski (Canviz LLC)
+0.3  | April 8, 2015 | Trimmed article | Todd Baginski (Canviz LLC)
