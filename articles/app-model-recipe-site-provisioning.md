@@ -162,12 +162,13 @@ In this pattern, CSOM code running in a Provider-hosted app is executed via the 
 
 This option works well when you need to provide your end users with a self-service ability to create SharePoint site collections and sub sites based on custom templates.  *Note that you will need to provide your users a link to the Provider-hosted application so they can access it.*
 
+- [Async provisioning with hybrid scenarios (MSDN Blog Article)](http://blogs.msdn.com/b/vesku/archive/2015/03/05/hybrid-site-collection-provisioning-from-azure-to-on-premises-sharepoint.aspx)
+- [Provisioning.Hybrid.Simple (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Hybrid.Simple)
+	+ This sample demonstrates simplest possible hybrid setup with Azure storage queues, WebJobs and Service Bus relay. This is a demonstration of hosting a provider app in the Azure web site, which can be used to provision new custom branded site collections to on-premises farm without any app infrastructure requirements to on-premises.
 - [Provisioning.Services.SiteManager (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Services.SiteManager)
 	+ This sample shows how to extend on-premises farm to support site collection creation from a Provider-hosted app.
 - [Provisioning.SiteCollectionCreation (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.SiteCollectionCreation)
 	+ Demonstrates how to create site collections using CSOM for Office 365 from a Provider-hosted app.
-- [Core.ContentTypesAndFields (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.ContentTypesAndFields)
-	+ Demonstrates how to create a new content type in the host web, create a taxonomy field in the host web and wire it up to the taxonomy, create a list and associate it with a content type, create content types and fields in particular languages.
 
 Use .NET/Java/Objective-C applications or PowerShell scripts
 ----------------------------------------------------
@@ -185,7 +186,14 @@ In this pattern, CSOM code is executed via .NET/Objective-C/iOS applications or 
 
 **When is it a good fit?**
 
-This option works well in Dev-Ops scenarios. It allows you to create custom applications or scripts that are specifically built to work with your Dev-Ops processes. This option provides the ultimate level of automation because the apps and scripts can be built to run without any user interaction.  
+This option works well in Dev-Ops scenarios. It allows you to create custom applications or scripts that are specifically built to work with your Dev-Ops processes. This option provides the ultimate level of automation because the apps and scripts can be built to run without any user interaction. 
+
+-   [Async provisioning for Office 365 with WebJobs (MSDN Blog Article)](http://blogs.msdn.com/b/vesku/archive/2015/03/04/asynchronous-on-demand-site-collection-provisioning-to-office-365-with-azure-webjobs.aspx) 
+- [Provisioning.Cloud.Async.WebJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Cloud.Async.WebJob)
+	+ Solution demonstrating how to build an asynchronous self-service site collection provisioning solution using Azure Storage Queues and Azure WebJobs.
+-	[Provisioning.Framework.Console (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Provisioning.Framework.Console) – Site Provisioning Framework sample to show the power of the new engine.
+-	[Provisioning.Cloud.Async (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Cloud.Async) - Demonstrates how to create site collections in Office 365/SharePoint asynchronously. Requests are saved in a list within the SharePoint host web. The console application included in this sample is deployed to Azure or an on-premises & scheduled.
+ 
 
 Related links
 =============
