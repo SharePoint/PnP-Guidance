@@ -1,11 +1,6 @@
 App model recipe - Custom field type
 ====================================
 
-o	This is really about the JSLink reference in site column level… how you can provide custom end user experiences using the client side rendering… this is what you provided earlier, except that even more optimal case we would have JSLink set in field level to ensure that it’s always overridden when shown… but you get the point.
-o	From end user perspective the capability looks the same, but it’s just implemented using client side rendering
-o	https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.ClientSideRendering 
-
-
 Summary
 -------
 
