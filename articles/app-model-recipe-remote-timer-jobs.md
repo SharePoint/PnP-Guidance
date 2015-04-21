@@ -4,14 +4,14 @@ App model recipe - Remote Timer Jobs
 Summary
 -------
 
-The approach you take to implement timer jobs is different in the new app model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, SharePoint Timer Jobs were created with the SharePoint Server Side Object Model code, deployed via Farm Solutions and managed in the SharePoint Central Administration web site.  SharePoint handles both the scheduling and the execution of the timer job in this scenario. 
+The approach you take to implement timer jobs is different in the new app model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, SharePoint Timer Jobs were created with the SharePoint Server Side Object Model code, deployed via Farm Solutions and managed in the SharePoint Central Administration web site. SharePoint handles both the scheduling and the execution of the timer job in this scenario. 
 
 In an app model scenario, timer jobs are created and scheduled outside of SharePoint.  SharePoint is not responsible for the scheduling or the execution of the timer job in this scenario.
 
-High Level Guidelines
+High-Level Guidelines
 ---------------------
 
-As a rule of a thumb, we would like to provide the following high level guidelines for creating timer jobs.
+As a rule of a thumb, we would like to provide the following high-level guidelines for creating timer jobs.
 
 - Timer jobs should be implemented outside of SharePoint.
 - Scheduling timer jobs should be implemented outside of SharePoint.
@@ -20,13 +20,12 @@ As a rule of a thumb, we would like to provide the following high level guidelin
 Challenges creating timer jobs
 ------------------------------
 
-The biggest challenge associated with creating timer jobs in Office 365 tenancies is the fact that you cannot deploy farm scoped solutions to an Office 365 tenancy.  Without a farm scoped solution you cannot deploy a SharePoint timer job.
+The biggest challenge associated with creating timer jobs in Office 365 tenancies is the fact that you cannot deploy farm scoped solutions to an Office 365 tenancy. Without a farm scoped solution, you cannot deploy a SharePoint timer job.
 
-The new way to create a timer job is to built it outside of SharePoint and to handle the scheduling outside of SharePoint as well.  Consider the following factors associated with SharePoint timer jobs for an on-premises SharePoint environment.
+The new way to create a timer job is to build it outside of SharePoint and to handle the scheduling outside of SharePoint as well. Consider the following factors associated with SharePoint timer jobs for an on-premises SharePoint environment.
 
 - SharePoint ships with hundreds of out-of-the-box timer jobs that the SharePoint scheduler struggles to keep up with.  
-- You can make your SharePoint server's life easier by moving the scheduling code to Azure or another environment.
-- You can reduce the amount of memory and processor power needed on your SharePoint server by moving the implementation code to Azure or another environment.
+ok- You can reduce the amount of memory and processor power needed on your SharePoint server by moving the implementation code to Azure or another environment.
 - Moving the scheduling and implementation code associated with timer jobs to another server makes your SharePoint server more scalable and stable as a result.
 
 Options to schedule timer jobs
@@ -41,14 +40,14 @@ You have a couple of options to implement the scheduling for a timer job.
 
 Windows Scheduler
 -----------------
-In this pattern the Windows Scheduler handles the scheduling aspects associated with a timer job.  Implementation code can be a console application or a PowerShell script or any other code which the Windows Scheduler can invoke.
+In this pattern, the Windows Scheduler handles the scheduling aspects associated with a timer job.  Implementation code can be a console application or a PowerShell script or any other code that the Windows Scheduler can invoke.
 
 **Windows Service Sub Option**
-A Windows Service has the same characteristics as the Windows Scheduler.  It is not a recommended pattern but it is worth mentioning because it is commonly used.
+A Windows Service has the same characteristics as the Windows Scheduler. Microsoft does not recommend this pattern but it is worth mentioning because it is commonly used.
 
-**When is it a good fit?**
+**When is Windows Scheduler a good fit?**
 
-When you do not have access to an Azure subscription to schedule timer jobs with Azure WebJobs this is a good option because this option may be implemented on any machine with the Windows operating system.
+When you do not have access to an Azure subscription to schedule timer jobs with Azure WebJobs, Using a Windows Scheduler is a good option because this option may be implemented on any machine with the Windows operating system.
 
 - Requires additional hardware to run the Windows Scheduler.
 - Requires additional hardware to run the timer job code.
@@ -58,21 +57,21 @@ When you do not have access to an Azure subscription to schedule timer jobs with
 The following articles use the Windows Scheduler pattern and provide code samples to get you started.
 
 - [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.SimpleTimerJob)
-	+ End to end article about this pattern with accompanying video.
+	+ End-to-end article about this pattern with accompanying video.
 - [Core.TimerJobs.Samples (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Solutions/Core.TimerJobs.Samples)
 	+ Excellent code samples encompassing 10 different examples. *Note: Not all ten code examples are applicable to the Windows Scheduler pattern.*
 
 Azure WebJob
 ------------
-In this pattern the Azure WebJob handles the scheduling aspects associated with a timer job and includes the implementation code.
+In this pattern, the Azure WebJob handles the scheduling aspects associated with a timer job and includes the implementation code.
 
 - Does not require additional hardware to run the Azure WebJob (scheduling and implementation code).
-- Advantageous because it uses the Azure WebJob for scheduling as well as the implementation code which makes it easy to manage in one location.
+- Advantageous because it uses the Azure WebJob for scheduling as well as the implementation code, which makes it easy to manage in one location.
 
 **Azure Worker Role Sub Option**
-An Azure Worker Role has the same characteristics as an Azure WebJob.  It is not a recommended pattern but it is worth mentioning because it is commonly used.
+An Azure Worker Role has the same characteristics as an Azure WebJob. Microsoft does not recommend this pattern but it is worth mentioning because it is commonly used.
 
-**When is it a good fit?**
+**When is Azure WebJob a good fit?**
 
 When you have access to an Azure subscription to schedule timer jobs with Azure WebJobs.
 
@@ -81,7 +80,7 @@ When you have access to an Azure subscription to schedule timer jobs with Azure 
 The following articles describe the Azure WebJob pattern and provide code samples to get you started.
 
 - [Getting Started with azure WebJobs ("timer jobs") for your Office 365 Sites (O365 PnP Article)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites.md)
-	+ Describes how to build an Azure WebJob to act as a scheduled job for your Office 365 or on-premises SharePoint environment.  Includes publishing and monitoring information.
+	+ Describes how to build an Azure WebJob to act as a scheduled job for your Office 365 or on-premises SharePoint environment. Includes publishing and monitoring information.
 - [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Solutions/Core.TimerJobs.Samples)
 	+ Excellent code samples encompassing 10 different examples. *Note: Not all ten code examples are applicable to the Azure WebJob pattern.*
 
@@ -95,7 +94,7 @@ In order for your timer jobs to interact with SharePoint they must authenticate.
 
 Use a service account
 ---------------------
-In this pattern, you define one or more service accounts used authenticate timer jobs.
+In this pattern, you define one or more service accounts used to authenticate timer jobs.
 
 - Service accounts are defined in SharePoint.
 	+ In an Office 365 tenancy, depending what functionality your timer jobs have, the service accounts may need an Office 365 license assigned to them.
@@ -104,7 +103,7 @@ In this pattern, you define one or more service accounts used authenticate timer
 	
 	For example: If your timer job modifies list items, the Modified By column for the list items will display the name of the service account associated with the timer job.
 
-- When authenticating with service accounts you must retrieve a user name and password for the service account.
+- When authenticating with service accounts, you must retrieve a user name and password for the service account.
 	+ The code snippet below illustrates using a user name and password to authenticate.
 	+ Take care to store and retrieve the user name and password in a secure fashion.
 
@@ -121,12 +120,12 @@ In this pattern, you define one or more service accounts used authenticate timer
 
 **Getting Started**
 
-The following articles describe the use a service account authentication pattern and provide code samples to get you started.
+The following articles describe how to use a service account authentication pattern and provide code samples to get you started.
 
 - [Building a SharePoint App as a Timer Job (MSDN Blog)](http://blogs.msdn.com/b/kaevans/archive/2014/03/02/building-a-sharepoint-app-as-a-timer-job.aspx)
-	+ End to end article about this pattern.
+	+ End-to-end article about this pattern.
 - [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.SimpleTimerJob)
-	+ End to end article about this pattern with accompanying video.
+	+ End-to-end article about this pattern with accompanying video.
 - [Core.TimerJobs.Samples (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Solutions/Core.TimerJobs.Samples)
 	+ Excellent code samples encompassing 10 different examples. *Note: Not all ten code examples are applicable to the service account authentication pattern.*
 
@@ -160,9 +159,9 @@ In this pattern, you define an application in SharePoint or Azure Active Directo
 	}
 	```
 
-- When using an Azure Active Directory application to authenticate you create an Azure Active Directory application in the Azure Management Portal and assign permissions to it.
+- When using an Azure Active Directory application to authenticate, you create an Azure Active Directory application in the Azure Management Portal and assign permissions to it.
 	+ In this pattern, timer jobs may be implemented via a Provider-hosted app or a console application.
-	+ In this pattern you interact with the Active Directory Authentication Library or the Microsoft Graph API to retrieve an access token.
+	+ In this pattern, you interact with the Active Directory Authentication Library or the Microsoft Graph API to retrieve an access token.
 	+ The access token is used to authenticate to SharePoint (and possibly other Office 365 services in an Office 365 tenancy).
 
 **Getting Started**
@@ -170,7 +169,7 @@ In this pattern, you define an application in SharePoint or Azure Active Directo
 The following articles describe the OAUth authentication pattern and provide code samples to get you started.
 
 - [Building a SharePoint App as a Timer Job (MSDN Blog)](http://blogs.msdn.com/b/kaevans/archive/2014/03/02/building-a-sharepoint-app-as-a-timer-job.aspx)
-	+ End to end article about this pattern.
+	+ End-to-end article about this pattern.
 - [Core.TimerJobs.Samples (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Solutions/Core.TimerJobs.Samples)
 	+ Excellent code samples encompassing 10 different examples. *Note: Not all ten code examples are applicable to the OAUth authentication pattern.*
 
@@ -209,3 +208,4 @@ Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | April 7, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | April 8, 2015 | Added sub options | Todd Baginski (Canviz LLC)
+0.3  | April 21, 2015 | Copy edits | Todd Baginski (Canviz LLC)
