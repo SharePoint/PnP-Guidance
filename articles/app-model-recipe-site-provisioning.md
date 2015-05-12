@@ -4,54 +4,54 @@ App model recipe - Site Provisioning
 Summary
 -------
 
-The approach you take to provision site collections and sub sites sites is different in the new app model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, site collections and sub sites are created with the site definitions and web templates and declarative code is used to configure the sites and apply customization.  In this model, declarative code is typically used to create site columns, content types, lists defined in XML and SharePoint's feature framework elements are used to package and deploy them.
+The approach you take to provision site collections and sub sites is different in the new app model than it was with Full Trust Code. In a typical Full Trust Code (FTC) / Farm Solution scenario, you create site collections and sub sites with the site definitions and web templates and then you use declarative code to configure the sites and apply customization. In this model, you typically use declarative code to create site columns, content types, and lists defined in XML and then use SharePoint's feature framework elements to package and deploy them.
 
-In an app model scenario, site collections and sub sites are created and configured with the SharePoint Client Side Object Model (CSOM).  This pattern is commonly referred to as the *remote provisioning pattern*.
+In an app model scenario, you use the SharePoint Client Side Object Model (CSOM) to create and configure site collections and sub sites. This pattern is commonly referred to as the *remote provisioning pattern*.
 
-At a high level, The remote provisioning pattern looks like this:
+At a high level, the remote provisioning pattern looks like this:
 
 ![](media/Recipes/SiteProvisioning/overview.png)
 
 High Level Guidelines
 ---------------------
 
-As a rule of a thumb, we would like to provide the following high level guidelines for creating site collections and sub sites.
+As a rule of a thumb, we recommend the following high-level guidelines for creating site collections and sub sites.
 
 - Provision sites collections and sub sites based on the out-of-the-box site templates that ship with SharePoint.
 	+ Use the SharePoint CSOM to create the site collections and sub sites.
 - Apply customization and settings to the out-of-the-box site collections and sub sites to meet your requirements.
 	+ Use the SharePoint CSOM to apply customization and settings.
-- Feature framework elements should not be used in the creation of create collections and sub sites.
-	+ The only exception to this guideline is when you are using declarative XML based provision to an app web in a SharePoint-hosted app.  This is because the CSOM is not available in a SharePoint-hosted app.
+- We recommend that you do not use Feature framework elements in the creation of create collections and sub sites.
+	+ The only exception to this guideline is when you are using declarative XML-based provision to an app web in a SharePoint-hosted app. **{Todd, please re-read the previous sentence and consider rewriting. "XML-based provision to an app..." makes no sense to me.}** This is because the CSOM is not available in a SharePoint-hosted app.
 
 Challenges creating site collections and sub sites
 --------------------------------------------------
 
 **Creating in a web browser vs. Creating with code** 
 
-It is important to understand that creating site collections and sub sites via the web browser or via code are different.  This list describes the different options.
+It is important to understand that creating site collections and sub sites via the web browser or via code are different. This list describes the different options.
 
 - **Creating via a web browser**
 	+ In this option, users access a SharePoint site via a web browser and use the Administrative Pages to create site collections and sub sites.
 	+ Usually the only time you will use the web browser to manually create site collections and sub sites is when you are prototyping or modifying a single SharePoint site that is not planned to grow to include other site collections or sub sites.	
 - **Creating with code**
-	+ In this option, SharePoint CSOM code is executed to create site collections and sub sites.
-	+ There are a few options you can use to execute the SharePoint CSOM code, they are described later in this article.
+	+ In this option, you'll execute SharePoint CSOM code to create site collections and sub sites. **{Todd, did I create an error here by changing this to "you'll execute"?}**
+	+ Later in this article you'll read about a few options you can use to execute the SharePoint CSOM code.
 
 When **Creating via a web browser** consider the following points.
 
 - Creating site collections and sub sites via the web browser is typically a complicated and time consuming process.
-	+ These factors make it **prone to error**.	
-- It is not easy to replicate site collections and sub sites (and the components they contain) created via the web browser in a granular fashion. 
+	+ These factors make creating site collections and sub sites via the web browser **prone to errors**.	
+- You can not easily replicate site collections and sub sites (and the components they contain) created via the web browser in a granular fashion. 
 	+ This makes it **difficult** to quickly and consistently deploy the site collections and sub sites to different environments as you move from development to testing to production.
 
-When **Creating with code** consider the following points.
+When **Creating with code**, consider the following points.
 
 - Creating site collections and sub sites with code typically involves using custom utility libraries to execute SharePoint CSOM code.
-	+ These libraries are available in many projects in the OfficeDev PnP GitHub Repository.  They are referenced throughout the article and at the end.
-	+ These factors make it **prone to success**.
+	+ You'll find these libraries available in many projects in the OfficeDev PnP GitHub Repository. They are referenced throughout the article and at the end.
+	+ These factors make creating site collections and sub sites with code **prone to success**.
 - You can **easily and consistently replicate** site collections and sub sites (and the components they contain) created via code in a granular fashion.
-	+ This makes it **easy** deploy the site collections and sub sites to different environments and reference them as you move from development to testing to production.
+	+ You can **easily** deploy the site collections and sub sites to different environments and reference them as you move from development to testing to production.
 
 **Must happen quickly!**
 
@@ -59,13 +59,13 @@ End users won't accept having to wait several hours for their new SharePoint sit
 
 **Must be consistently perfect!**
 
-Site collections and sub sites and the various components they include such as site columns, content types, lists, master pages, JavaScript files, images, etc. are the foundation which define your information architecture, *they must be perfect*!
+Site collections and sub sites and the various components they include such as site columns, content types, lists, master pages, JavaScript files, images, etc., are the foundation that define your information architecture, *they must be perfect*!
 
-Incorrect site collection and sub site provisioning can affect an entire line of business application in the SharePoint site where they are provisioned as well as other parts of SharePoint and other line of business applications which access SharePoint services.
+Incorrect site collection and sub site provisioning can affect an entire line-of-business application in the SharePoint site where they are provisioned as well as other parts of SharePoint and other line-of-business applications that access SharePoint services.
 
-For example:  If you have SharePoint sites used to manage projects in your company you will most likely create a common list scheme for all of them.  This will require creating site columns and content types.  When you search for information in these sites via the SharePoint search page you filter the results by content type or tag (site column). If your site columns and content types are not perfectly consistent across all the project sites you will not receive accurate search results.
+For example: If you have SharePoint sites used to manage projects in your company, you will most likely create a common list scheme for all of them. This will require creating site columns and content types. When you search for information in these sites via the SharePoint search page, you filter the results by content type or tag (site column). If your site columns and content types are not perfectly consistent across all the project sites, you will not receive accurate search results.
 
-This example may also be applied to Content By Search Web Parts, SharePoint apps, mobile apps, and any other systems which access the information in the SharePoint sites.
+This example may also be applied to Content By Search Web Parts, SharePoint apps, mobile apps, and any other systems that access the information in the SharePoint sites.
 
 Options to create site collections and sub sites
 ------------------------------------------------
@@ -80,10 +80,10 @@ There are several options you can use to create site collections and sub sites w
 Override the create site link
 -----------------------------
 
-In this pattern the link to create a site collection is overridden with a link that points to a Provider-hosted app.  CSOM code running in a Provider-hosted app is executed via the remote provisioning pattern as part of the site creation process.
+In this pattern, the link to create a site collection is overridden with a link that points to a Provider-hosted app. CSOM code running in a Provider-hosted app is executed via the remote provisioning pattern as part of the site creation process.
 
-- The pattern is only used when targeting site collection creation, it is not used to create sub sites.
-- The override URL is configured in the SharePoint admin center.  This URL points to a Provider-hosted app.
+- The pattern is only used when targeting site collection creation; it is not used to create sub sites.
+- The override URL is configured in the SharePoint admin center. This URL points to a Provider-hosted app.
 - The Provider-hosted app uses CSOM APIs to create site collections.
 	+ CSOM/REST APIs may also be used to configure other aspects of the site during the provisioning process.
 - This approach may be used in Office 365 tenants and in on-premises SharePoint.
@@ -96,11 +96,11 @@ To override the create site link open the settings page in the SharePoint admin 
 
 ![](media/Recipes/SiteProvisioning/sp-admin-center.png)
 
-Then, check the Use the form at this URL checkbox and enter the URL to the Provider-hosted app which implements the site creation functionality (shown below).
+Then, check the Use the form at this URL checkbox and enter the URL to the Provider-hosted app that implements the site creation functionality (shown below).
 
 ![](media/Recipes/SiteProvisioning/override-warning.png)
 
-Notice  SharePoint warns you (in the dialog below) about the security implications associated with this approach and provides you with an option to disable this type of functionality.
+Notice SharePoint warns you (in the dialog below) about the security implications associated with this approach and provides you with an option to disable this type of functionality.
 
 ![](media/Recipes/SiteProvisioning/override-form.png)
 
@@ -113,16 +113,16 @@ This option works well when you need to provide your end users with a self-servi
 The following articles describe the override create site link pattern and provide code samples to get you started.
 
 - [Self-Service Site Provisioning using Apps for SharePoint 2013 (MSDN Blog)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
-	+ End to end article about this pattern with accompanying video.
+	+ End-to-end article about this pattern with accompanying video.
 - [Provisioning.Cloud.Sync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Provisioning.Cloud.Sync)
-	+ This solution shows the model for providing synchronous site collection or sub site creation experience to introduce model for site templates without using actual sandbox solutions or stp files. 
+	+ This solution shows the model for providing synchronous site collection or sub site creation experience to introduce model for site templates without using actual sandbox solutions or stp files. **{Todd, please re-read the previous sentence and consider rewriting. You might just be missing "a" before the word model, or more text is missing.}**
 
 Override the create sub site link
 ---------------------------------
 
-In this pattern the link to create a sub site is overridden with a link that points to a Provider-hosted app.  CSOM code running in a Provider-hosted app is executed via the remote provisioning pattern as part of the site creation process.
+In this pattern, the link to create a sub site is overridden with a link that points to a Provider-hosted app. CSOM code running in a Provider-hosted app is executed via the remote provisioning pattern as part of the site creation process.
  
-- The pattern is only used when targeting sub site creation, it is not used to create site collections.
+- The pattern is only used when targeting sub site creation; it is not used to create site collections.
 - The override URL is configured with a custom action that uses JavaScript to modify the link. This URL points to a Provider-hosted app.
 - The Provider-hosted app uses CSOM APIs to create sub sites.
 	+ CSOM/REST APIs may also be used to configure other aspects of the site during the provisioning process.
@@ -139,9 +139,9 @@ This option works well when you need to provide your end users with a self-servi
 The following articles describe the override create sub site link pattern and provide code samples to get you started.
 
 - [Provisioning.Cloud.Sync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Provisioning.Cloud.Sync)
-	+ This solution shows the model for providing synchronous site collection or sub site creation experience to introduce model for site templates without using actual sandbox solutions or stp files. 
+	+ This solution shows the model for providing synchronous site collection or sub site creation experience to introduce a model for site templates without using actual sandbox solutions or stp files. 
 - [Provisioning.SubSiteCreationApp (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.SubSiteCreationApp)
-	+ This solution uses so called remote provisioning pattern to provide as flexible sub site template system as possible.  It also includes an accompanying video.
+	+ This solution uses the so-called remote provisioning pattern to provide as flexible sub site template system as possible. It also includes an accompanying video.
 
 
 Use a Provider-hosted app
@@ -160,11 +160,11 @@ In this pattern, CSOM code running in a Provider-hosted app is executed via the 
 
 **When is it a good fit?**
 
-This option works well when you need to provide your end users with a self-service ability to create SharePoint site collections and sub sites based on custom templates.  *Note that you will need to provide your users a link to the Provider-hosted application so they can access it.*
+This option works well when you need to provide your end users with a self-service ability to create SharePoint site collections and sub sites based on custom templates. *Note that you will need to provide your users a link to the Provider-hosted application so they can access it.*
 
 - [Async provisioning with hybrid scenarios (MSDN Blog Article)](http://blogs.msdn.com/b/vesku/archive/2015/03/05/hybrid-site-collection-provisioning-from-azure-to-on-premises-sharepoint.aspx)
 - [Provisioning.Hybrid.Simple (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Hybrid.Simple)
-	+ This sample demonstrates simplest possible hybrid setup with Azure storage queues, WebJobs and Service Bus relay. This is a demonstration of hosting a provider app in the Azure web site, which can be used to provision new custom branded site collections to on-premises farm without any app infrastructure requirements to on-premises.
+	+ This sample demonstrates the simplest possible hybrid setup with Azure storage queues, WebJobs and Service Bus relay. This is a demonstration of hosting a provider app in the Azure web site, which can be used to provision new custom branded site collections to on-premises farm without any app infrastructure requirements on-premises.
 - [Provisioning.Services.SiteManager (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Services.SiteManager)
 	+ This sample shows how to extend on-premises farm to support site collection creation from a Provider-hosted app.
 - [Provisioning.SiteCollectionCreation (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.SiteCollectionCreation)
@@ -176,7 +176,7 @@ Use .NET/Java/Objective-C applications or PowerShell scripts
 In this pattern, CSOM code is executed via .NET/Objective-C/iOS applications or PowerShell scripts.  This pattern also encompasses using remote timer jobs; for example, an Azure Web Job.
  
 - The pattern may be used to target site collection and sub site creation.
-- The apps must be granted Full Control permissions to the SharePoint environment	.
+- The apps must be granted Full Control permissions to the SharePoint environment.
 - Authentication can be a challenge depending on the type of app you are creating and your SharePoint security settings.
 - The Provider-hosted app uses CSOM APIs to create site collections and sub sites.
 	+ CSOM/REST APIs may also be used to configure other aspects of the site during the provisioning process.
@@ -192,7 +192,7 @@ This option works well in Dev-Ops scenarios. It allows you to create custom appl
 - [Provisioning.Cloud.Async.WebJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Cloud.Async.WebJob)
 	+ Solution demonstrating how to build an asynchronous self-service site collection provisioning solution using Azure Storage Queues and Azure WebJobs.
 -	[Provisioning.Framework.Console (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Provisioning.Framework.Console) – Site Provisioning Framework sample to show the power of the new engine.
--	[Provisioning.Cloud.Async (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Cloud.Async) - Demonstrates how to create site collections in Office 365/SharePoint asynchronously. Requests are saved in a list within the SharePoint host web. The console application included in this sample is deployed to Azure or an on-premises & scheduled.
+-	[Provisioning.Cloud.Async (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Cloud.Async) - Demonstrates how to create site collections in Office 365/SharePoint asynchronously. Requests are saved in a list within the SharePoint host web. The console application included in this sample is deployed to Azure or an on-premises environment & scheduled. 
  
 
 Related links
@@ -229,3 +229,4 @@ Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | April 6, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | April 8, 2015 | Updated with latest samples and reference articles | Todd Baginski (Canviz LLC)
+0.3  | May 12, 2015  | Copy edit | Todd Baginski (Canviz LLC)
