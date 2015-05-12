@@ -4,67 +4,67 @@ App model recipe - Site Columns and Content Types
 Summary
 -------
 
-The approach you take to create site columns and content types in SharePoint sites is different in the new app model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, site columns and content types are created with declarative code.  In the declarative code approach the site columns and content types are defined in XML and SharePoint's feature framework elements are used to package and deploy them.
+The approach you take to create site columns and content types in SharePoint sites is different in the new app model than it was with Full Trust Code. In a typical Full Trust Code (FTC) / Farm Solution scenario, you use declarative code to create site columns and content types. In the declarative code approach, you define the site columns and content types in XML and then use  SharePoint's feature framework elements to package and deploy them.
 
-In an app model scenario, site columns and content types are created with the SharePoint Client Side Object Model (CSOM) or SharePoint REST APIs.
+In an app model scenario, you use the SharePoint Client Side Object Model (CSOM) or SharePoint REST APIs to create site columns and content types.
 
-High Level Guidelines
+High-Level Guidelines
 ---------------------
 
-As a rule of a thumb, we would like to provide the following high level guidelines for creating site columns and content types.
+As a rule of a thumb, we recommend the following high-level guidelines for creating site columns and content types.
 
-- The SharePoint CSOM or REST APIs should be used to create site columns and content types.
-- Feature framework elements should not be used in the creation of site columns and content types.
-	+ The only exception to this guideline is when you are using declarative XML-based provisioning to an app web in a SharePoint-hosted app.  This is due to the fact that the CSOM is not available in a SharePoint-hosted app.
-- You can automate the creation of site columns and content types as part of the site provisioning process.  See the [site provisioning recipe](/articles/app-model-recipe-site-provisioning.md) for more details.
+- You should use the SharePoint CSOM or REST APIs to create site columns and content types.
+- You should not use Feature framework elements to create site columns and content types.
+	+ The only exception to this guideline is when you are using declarative XML-based provisioning to an app web in a SharePoint-hosted app. This is due to the fact that the CSOM is not available in a SharePoint-hosted app.
+- You can automate the creation of site columns and content types as part of the site provisioning process. See the [site provisioning recipe](/articles/app-model-recipe-site-provisioning.md) for more details.
 
 Challenges creating site columns and content types in SharePoint sites
 ----------------------------------------------------------------------
 
 **Creating in a web browser vs. Creating with code** 
 
-It is important to understand that creating site columns and content types via the web browser or via code are different.  This list describes the different options.
+It is important to understand that creating site columns and content types via the web browser or via code are different. This list describes the different options.
 
 - **Creating via a web browser**
 	+ In this option, users access a SharePoint site via a web browser and use the Administrative Pages to create site columns and content types.
 	+ Usually the only time you will use the web browser to manually create site columns and content types is when you are prototyping or modifying a single SharePoint site that is not planned to grow to include other site collections or sub sites.
 - **Creating with code**
-	+ In this option, SharePoint CSOM/REST code is executed to create site columns and content types.
-	+ There are a few options you can use to execute the SharePoint CSOM/REST code, they are described later in this article.
+	+ In this option, you execute SharePoint CSOM/REST code to create site columns and content types.
+	+ Later in this article you'll learn about a few options you can use to execute the SharePoint CSOM/REST code.
 
-When **Creating via a web browser** consider the following points.
+When **Creating via a web browser**, consider the following points.
 
 - Creating site columns and content types via the web browser is typically a complicated and time consuming process.
-	+ These factors make it **prone to error**.
-- You do not control the GUIDs for site columns or content types when created via a web browser.
-	+ This makes it **difficult** to deploy the site columns and content types to different environments and reference them in line of business applications consistently.
+	+ These factors make it **prone to errors**.
+- You do not control the GUIDs for site columns or content types that you create via a web browser.
+	+ This makes it **difficult** to deploy the site columns and content types to different environments and reference them in line-of-business applications consistently.
 
 When **Creating with code** consider the following points.
 
 - Creating site columns and content types with code typically involves using custom utility libraries to execute SharePoint CSOM/REST code.
-	+ These libraries are available in many projects in the OfficeDev PnP GitHub Repository.  They are referenced throughout the article and at the end.
-	+ These factors make it **prone to success**.
-- You can control the GUIDs for site columns or content types when created via the SharePoint CSOM/REST.
-	+ This makes it **easy** deploy the site columns and content types to different environments and reference them in line of business applications consistently.
+	+ You'll find these libraries available in many projects in the OfficeDev PnP GitHub Repository.  They are referenced throughout the article and at the end.
+	+ These factors make creating site columns and content types with code **prone to success**.
+- You can control the GUIDs for site columns or content types that get created via the SharePoint CSOM/REST.
+	+ This makes it **easy** to deploy the site columns and content types to different environments and reference them in line-of-business applications consistently.
 
 **Must happen quickly!**
 
-The creation of site columns and content types typically happens when a SharePoint site is provisioned.  End users won't accept having to wait several hours for their new SharePoint sites to be provisioned.
+You typically create site columns and content types when you provision a SharePoint site. End users won't accept having to wait several hours for you to provision their new SharePoint sites.
 
 **Must be consistently perfect!**
 
-Site columns and content types are the foundation which define your information architecture at the lowest level, *they must be perfect*!
+Site columns and content types are the foundation that define your information architecture at the lowest level, *they must be perfect*!
 
-Incorrect site column and content type provisioning can affect an entire line of business application in the SharePoint site where they are provisioned as well as other parts of SharePoint and other line of business applications which access SharePoint services.
+Incorrect site column and content type provisioning can affect an entire line-of-business application in the SharePoint site where they are provisioned as well as other parts of SharePoint and other line-of-business applications that access SharePoint services.
 
-For example:  If you have SharePoint sites used to manage projects in your company you will most likely create a common list schema for all of them.  This will require creating site columns and content types.  When you search for information in these sites via the SharePoint search page you filter the results by content type or tag (site column). If your site columns and content types are not perfectly consistent across all the project sites you will not receive accurate search results.
+For example: If your company uses SharePoint sites to manage projects, you will most likely create a common list schema for all of them. This will require that you create site columns and content types.  When you search for information in these sites via the SharePoint search page, you filter the results by content type or tag (site column). If your site columns and content types are not perfectly consistent across all the project sites, you will not receive accurate search results.
 
-This example may also be applied to Content By Search Web Parts, SharePoint apps, mobile apps, and any other systems which access the information in the SharePoint sites.
+You could apply this example to Content By Search Web Parts, SharePoint apps, mobile apps, and any other systems that access the information in the SharePoint sites.
 
 Options to create site columns and content types in SharePoint sites
 --------------------------------------------------------------------
 
-There are several ways you can call the CSOM/REST code to create site columns and content types.  These patterns all fall into the **Creating with code** approach described above.  Each one of these patterns is described in detail in the [site provisioning recipe](/articles/app-model-recipe-site-provisioning.md).
+There are several ways you can call the CSOM/REST code to create site columns and content types. These patterns all fall into the **Creating with code** approach described above. You'll see each one of these patterns described in detail in the [site provisioning recipe](/articles/app-model-recipe-site-provisioning.md).
 
 - Override the create site link
 - Override the create sub site link
@@ -73,19 +73,19 @@ There are several ways you can call the CSOM/REST code to create site columns an
 
 Regardless of the option you choose to implement, you will ultimately use CSOM/REST to create site columns and content types.
 
-There are many different articles and samples you can use to learn how to make site columns and content types with the CSOM.  Here you will find these examples (classified by the pattern that is used to invoke the CSOM code) to create site columns and content types.
+There are many different articles and samples you can use to learn how to make site columns and content types with the CSOM. Here you will find these examples (classified by the pattern that is used to invoke the CSOM code) to create site columns and content types.
 
 Use a Provider-hosted app
 -------------------------
 This option works well when you need to provide your end users with a self-service ability to create SharePoint site collections and sub sites based on custom templates.
 
 - [Core.ContentTypesAndFields (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.ContentTypesAndFields)
-	+ Demonstrates how to create a new content type in the host web, create a taxonomy field in the host web and wire it up to the taxonomy, create a list and associate it with a content type, create content types and fields in particular languages.
+	+ Demonstrates how to create a new content type in the host web, create a taxonomy field in the host web and wire it up to the taxonomy, create a list and associate it with a content type,  and create content types and fields in particular languages.
 
 Use Windows/Java/iOS applications or PowerShell scripts
 -------------------------------------------------------
 
-This option works well in Dev-Ops scenarios. It allows you to create custom applications or scripts that are specifically built to work with your Dev-Ops processes. This option provides the ultimate level of automation because the apps and scripts can be built to run without any user interaction.  
+This option works well in Dev-Ops scenarios. It allows you to create custom applications or scripts that are specifically built to work with your Dev-Ops processes. This option provides the ultimate level of automation because you can build the apps and scripts to run without any user interaction.  
 
 - [Core.CreateContentTypes (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.CreateContentTypes)
 	+ This sample shows how you can create site columns, content types and add then add the site columns to the content type. It also explains the new localization features that have been introduced for Office 365 CSOM APIs.
@@ -107,7 +107,7 @@ Related PnP samples
 - [Core.CreateDocumentContentType (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.CreateDocumentContentType)
 - [Branding.DisplayTemplates (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.DisplayTemplates)
 - [Core.DataStorageModels (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.DataStorageModels)
-- Samples and content at https://github.com/OfficeDev/PnP
+- Samples and content at [https://github.com/OfficeDev/PnP](https://github.com/OfficeDev/PnP)
 
 Applies to
 ==========
@@ -128,3 +128,4 @@ Version  | Date | Comments | Author
 0.1  | April 2, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | April 5, 2015 | Trimmed article and updated content | Todd Baginski (Canviz LLC)
 0.3  | April 8, 2015 | Trimmed article | Todd Baginski (Canviz LLC)
+0.4  | May 12, 2015 | Copy edits | Todd Baginski (Canviz LLC)
