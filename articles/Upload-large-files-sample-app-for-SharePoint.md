@@ -1,19 +1,39 @@
 
 # Upload large files sample app for SharePoint
-As part of your Enterprise Content Management (ECM) strategy, you can use different methods to upload large files to a SharePoint document library.
+Upload files larger than 2MB to SharePoint and SharePoint Online using SaveBinaryDirect, ContentStream, StartUpload, ContinueUpload and FinishUpload. 
 
-    
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+ **Last modified:** April 13, 2015
 
-    
-The [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.LargeFileUpload) sample shows you how to use a provider-hosted app to upload large files to SharePoint, and how to bypass the 2 MB file upload limit. This sample runs as a console application that uploads large files to a document library by using one of the following:
+ _**Applies to:** apps for SharePoint | SharePoint 2013 | SharePoint Online_
 
-- The  **SaveBinaryDirect** method on the Microsoft.SharePoint.Client.File object
-    
-- The ContentStream property on the FileCreationInformation object
-    
-Use this solution if you want to upload files that are larger than 2 MB to SharePoint.
+ **In this article**
 
+ [Before you begin](#sectionSection0)
+
+ [Using the Core.LargeFileUpload sample app](#sectionSection1)
+
+ [Additional resources](#bk_addresources)
+
+
+The  [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.LargeFileUpload) sample shows you how to use a provider-hosted app to upload large files to SharePoint, and how to bypass the 2 MB file upload limit. Use this solution if you want to upload files that are larger than 2 MB to SharePoint. This sample runs as a console application that uploads large files to a document library by using one of the following methods:
+
+- The  ** [SaveBinaryDirect](https://msdn.microsoft.com/library/office/ee538285.aspx)** method on the **Microsoft.SharePoint.Client.File** class.
+    
+- The  ** [ContentStream](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.filecreationinformation.contentstream.aspx)** property on the **FileCreationInformation** class.
+    
+- The  ** [StartUpload](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.file.startupload.aspx)**,  ** [ContinueUpload](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.file.continueupload.aspx)** and ** [FinishUpload](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.file.finishupload.aspx)** methods on the **File** class.
+    
+The following table lists the file upload methods that are available and describes when to use each method.
+
+**Options for uploading files**
+
+
+|**File upload option**|**Considerations**|**When should you use this?**|**Supported platforms**|
+|:-----|:-----|:-----|:-----|
+| [Content](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.filecreationinformation.content.aspx) property on the **FileCreationInformation** class.|Maximum file size that can be uploaded is 2 MB. Time-out occurs after 30 minutes.|Use to upload files that are less than 2 MB only. |SharePoint Server 2013, SharePoint Online|
+| **SaveBinaryDirect** method on the **File** class.|No file size limits. Time-out occurs after 30 minutes.|Only use this method if you're using a user-only authentication policy. User-only authentication policy is not available in an app for SharePoint, but can be used in native device apps, Windows PowerShell, and Windows console applications.|SharePoint Server 2013, SharePoint Online|
+| **ContentStream** property on the **FileCreationInformation** class.|No file size limits. Time-out occurs after 30 minutes.|Recommended for:<br/>- SharePoint Server 2013.<br/>- SharePoint Online when the file is smaller than 10 MB.|SharePoint Server 2013, SharePoint Online|
+|Upload a single file as a set of chunks using the  **StartUpload**,  **ContinueUpload**, and  **FinishUpload** methods on the **File** class.|No file size limits. Time-out occurs after 30 minutes. Each chunk of the file must upload within 30 minutes of completion of the previous chunk to avoid the time-out. |Recommended for SharePoint Online when the file is larger than 10 MB.|SharePoint Online|
 
 ## Before you begin
 <a name="sectionSection0"> </a>
@@ -24,27 +44,10 @@ To get started, download the  [Core.LargeFileUpload](https://github.com/OfficeDe
 ## Using the Core.LargeFileUpload sample app
 <a name="sectionSection1"> </a>
 
-When you start this app, a console application appears, as shown in Figure 1. You must supply a SharePoint Online site collection URL and your logon credentials for Office 365.
+When you start this code sample, a console application appears. You must supply a SharePoint Online site collection URL and your logon credentials for Office 365. After authentication, the console application displays an exception. The exception occurs when the  **UploadDocumentContent** method in FileUploadService.cs tries to use the **FileCreationInformation.Content** property to upload a file that is larger than 2 MB. **UploadDocumentContent** also creates a document library called **Docs** if it does not already exist. The **Docs** document library is used later in this code sample.
 
 
-**Figure 1. Core.LargeFileUpload console application**
-
-![Screenshot that shows a console application with user name and password logon credentials.](media/09de7f68-b021-4ca8-ae82-0ca26427b856.png)
-
-After authentication, the console application displays an error, as shown in Figure 2. The error occurs when the  **UploadDocumentContent** method in FileUploadService.cs tries to use the **FileCreationInformation.Content** property to upload a file that is larger than 2 MB, and an exception is thrown.
-
-
-    
-**Tip**  Avoid using the  **FileCreationInformation.Content** property in your code because it restricts your file upload size to a maximum of 2 MB.
-
-
-**Figure 2. Exception that is thrown when using the FileCreationInformation.Content property to upload files larger than 2 MB**
-
-![Screenshot of the error message that appears when an attempt is made to upload a file larger than 2 MBs.](media/ccc6e053-aff4-43e3-9d8a-24a345aaf92d.png)
-    
 **Note**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
-
 
 
 ```C#
@@ -75,17 +78,16 @@ public void UploadDocumentContent(ClientContext ctx, string libraryName, string 
 
 ```
 
- **UploadDocumentContent** creates a document library called Docs if it does not already exist. The Docs document library is used later in this code sample.
-
-The Core.LargeFileUpload sample provides two options that you can use to upload large files to a document library:
+In FileUploadService.cs, this code sample provides three options that you can use to upload large files to a document library:
 
 
-
-- The  **SaveBinaryDirect** method
+- The  **File.SaveBinaryDirect** method.
     
-- The  **UploadDocumentContentStream** method
+- The  **FileCreationInformation.ContentStream** property.
     
-In the following code,  **SaveBinaryDirect** in FileUploadService.cs uses the **Microsoft.SharePoint.Client.File.SaveBinaryDirect** method with a **FileStream** object to upload files to a document library.
+- The  **StartUpload**,  **ContinueUpload**, and  **FinishUpload** methods on the **File** class.
+    
+In FileUploadService.cs,  **SaveBinaryDirect** uses the **Microsoft.SharePoint.Client.File.SaveBinaryDirect** method with a **FileStream** object to upload files to a document library.
 
 
 
@@ -109,7 +111,7 @@ public void SaveBinaryDirect(ClientContext ctx, string libraryName, string fileP
 
 ```
 
-In the following code,  **UploadDocumentContentStream** in FileUploadService.cs uses the **FileCreationInformation.ContentStream** property with the **Microsoft.SharePoint.Client.File** object to upload a file to a document library. Assign a **FileStream** object to the **FileCreationInformation.ContentStream** property.
+In FileUploadService.cs,  **UploadDocumentContentStream** uses the **FileCreationInformation.ContentStream** property with the **FileStream** object to upload a file to a document library.
 
 
 
@@ -144,19 +146,195 @@ public void UploadDocumentContentStream(ClientContext ctx, string libraryName, s
 
 ```
 
-After the console application runs, you can go to the Docs document library by choosing  **Recent** > **Docs**. The document library contains two large files. 
+In FileUploadService.cs,  **UploadFileSlicePerSlice** uploads a large file to a document library as a set of chunks or fragments. **UploadFileSlicePerSlice** performs the following tasks:
 
 
-**Figure 3. Document document library with two large files**
+1. Gets a new GUID. To upload a file in chunks, you must use a unique GUID. 
+    
+2. Calculates the block size of the chunk in bytes. To calculate the block size in bytes,  **UploadFileSlicePerSlice** uses **fileChunkSizeInMB**, which specifies the size of the individual chunks in MB. 
+    
+3. Tests if the size of the file to upload ( **fileSize**) is less than or equal to the chunk size ( **blockSize**).
+    
+      1. If  **fileSize** is less than or equal to the chunk size, the sample ensures that the file is still uploaded by using the **FileCreationInformation.ContentStream** property. Remember that the recommended chunk size is 10 MB or larger.
+    
+  2. If  **fileSize** is larger than the chunk size:
+    
+      1. A chunk of the file is read into  **buffer**.
+    
+  2. If the chunk size is equal to the file size, the entire file was read. The chunk is copied to  **lastBuffer**.  **lastBuffer** then uses **File.FinishUpload** to upload the chunk.
+    
+  3. If the chunk size is not equal to the file size, there is more than one chunk to read from the file.  **File.StartUpload** is called to upload the first chunk. **fileoffset**, which is used as the starting point of the next chunk, is then set to the amount of bytes uploaded from the first chunk. When the next chunk is read, if the last chunk has not been reached,  **File.ContinueUpload** is called to upload the next chunk of the file. The process repeats until the last chunk is read. When the last chunk is read, **File.FinishUpload** uploads the last chunk and commits the file. The file content is then changed when this method is finished.
+    
 
-![Screenshot of a document library that includes two large files.](media/51902366-2d57-4b19-81c2-eb4047b868bc.png)
+**Note**  Consider the following best practices:
+
+
+
+
+```
+ public Microsoft.SharePoint.Client.File UploadFileSlicePerSlice(ClientContext ctx, string libraryName, string fileName, int fileChunkSizeInMB = 3)
+        {
+            // Each sliced upload requires a unique ID.
+            Guid uploadId = Guid.NewGuid();
+
+            // Get the name of the file.
+            string uniqueFileName = Path.GetFileName(fileName);
+
+            // Ensure that target library exists, and create it if it is missing.
+            if (!LibraryExists(ctx, ctx.Web, libraryName))
+            {
+                CreateLibrary(ctx, ctx.Web, libraryName);
+            }
+            // Get the folder to upload into. 
+            List docs = ctx.Web.Lists.GetByTitle(libraryName);
+            ctx.Load(docs, l => l.RootFolder);
+            // Get the information about the folder that will hold the file.
+            ctx.Load(docs.RootFolder, f => f.ServerRelativeUrl);
+            ctx.ExecuteQuery();
+
+            // File object.
+            Microsoft.SharePoint.Client.File uploadFile;
+
+            // Calculate block size in bytes.
+            int blockSize = fileChunkSizeInMB * 1024 * 1024;
+
+            // Get the information about the folder that will hold the file.
+            ctx.Load(docs.RootFolder, f => f.ServerRelativeUrl);
+            ctx.ExecuteQuery();
+
+
+            // Get the size of the file.
+            long fileSize = new FileInfo(fileName).Length;
+
+            if (fileSize <= blockSize)
+            {
+                // Use regular approach.
+                using (FileStream fs = new FileStream(fileName, FileMode.Open))
+                {
+                    FileCreationInformation fileInfo = new FileCreationInformation();
+                    fileInfo.ContentStream = fs;
+                    fileInfo.Url = uniqueFileName;
+                    fileInfo.Overwrite = true;
+                    uploadFile = docs.RootFolder.Files.Add(fileInfo);
+                    ctx.Load(uploadFile);
+                    ctx.ExecuteQuery();
+                    // Return the file object for the uploaded file.
+                    return uploadFile;
+                }
+            }
+            else
+            {
+                // Use large file upload approach.
+                ClientResult<long> bytesUploaded = null;
+
+                FileStream fs = null;
+                try
+                {
+                    fs = System.IO.File.Open(fileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+                    using (BinaryReader br = new BinaryReader(fs))
+                    {
+                        byte[] buffer = new byte[blockSize];
+                        Byte[] lastBuffer = null;
+                        long fileoffset = 0;
+                        long totalBytesRead = 0;
+                        int bytesRead;
+                        bool first = true;
+                        bool last = false;
+
+                        // Read data from file system in blocks. 
+                        while ((bytesRead = br.Read(buffer, 0, buffer.Length)) > 0)
+                        {
+                            totalBytesRead = totalBytesRead + bytesRead;
+
+                            // You've reached the end of the file.
+                            if (totalBytesRead == fileSize)
+                            {
+                                last = true;
+                                // Copy to a new buffer that has the correct size.
+                                lastBuffer = new byte[bytesRead];
+                                Array.Copy(buffer, 0, lastBuffer, 0, bytesRead);
+                            }
+
+                            if (first)
+                            {
+                                using (MemoryStream contentStream = new MemoryStream())
+                                {
+                                    // Add an empty file.
+                                    FileCreationInformation fileInfo = new FileCreationInformation();
+                                    fileInfo.ContentStream = contentStream;
+                                    fileInfo.Url = uniqueFileName;
+                                    fileInfo.Overwrite = true;
+                                    uploadFile = docs.RootFolder.Files.Add(fileInfo);
+
+                                    // Start upload by uploading the first slice. 
+                                    using (MemoryStream s = new MemoryStream(buffer))
+                                    {
+                                        // Call the start upload method on the first slice.
+                                        bytesUploaded = uploadFile.StartUpload(uploadId, s);
+                                        ctx.ExecuteQuery();
+                                        // fileoffset is the pointer where the next slice will be added.
+                                        fileoffset = bytesUploaded.Value;
+                                    }
+
+                                    // You can only start the upload once.
+                                    first = false;
+                                }
+                            }
+                            else
+                            {
+                                // Get a reference to your file.
+                                uploadFile = ctx.Web.GetFileByServerRelativeUrl(docs.RootFolder.ServerRelativeUrl + System.IO.Path.AltDirectorySeparatorChar + uniqueFileName);
+
+                                if (last)
+                                {
+                                    // Is this the last slice of data?
+                                    using (MemoryStream s = new MemoryStream(lastBuffer))
+                                    {
+                                        // End sliced upload by calling FinishUpload.
+                                        uploadFile = uploadFile.FinishUpload(uploadId, fileoffset, s);
+                                        ctx.ExecuteQuery();
+
+                                        // Return the file object for the uploaded file.
+                                        return uploadFile;
+                                    }
+                                }
+                                else
+                                {
+                                    using (MemoryStream s = new MemoryStream(buffer))
+                                    {
+                                        // Continue sliced upload.
+                                        bytesUploaded = uploadFile.ContinueUpload(uploadId, fileoffset, s);
+                                        ctx.ExecuteQuery();
+                                        // Update fileoffset for the next slice.
+                                        fileoffset = bytesUploaded.Value;
+                                    }
+                                }
+                            }
+
+                        } // while ((bytesRead = br.Read(buffer, 0, buffer.Length)) > 0)
+                    }
+                }
+                finally
+                {
+                    if (fs != null)
+                    {
+                        fs.Dispose();
+                    }
+                }
+            }
+
+            return null;
+        }
+```
+
+After the code sample is finished, in your Office 365 site, you can go to the  **Docs** document library by choosing **Recent** > **Docs**. Verify that the  **Docs** document library contains three large files.
 
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
 
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn904530(v=office.15).aspx)
+-  [Enterprise content management solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/85714a89-324c-458e-8a2e-c1ac553c6e01.aspx)
     
     
     
