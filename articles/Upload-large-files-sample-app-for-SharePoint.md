@@ -35,6 +35,10 @@ The following table lists the file upload methods that are available and describ
 | **ContentStream** property on the **FileCreationInformation** class.|No file size limits. Time-out occurs after 30 minutes.|Recommended for:<br/>- SharePoint Server 2013.<br/>- SharePoint Online when the file is smaller than 10 MB.|SharePoint Server 2013, SharePoint Online|
 |Upload a single file as a set of chunks using the  **StartUpload**,  **ContinueUpload**, and  **FinishUpload** methods on the **File** class.|No file size limits. Time-out occurs after 30 minutes. Each chunk of the file must upload within 30 minutes of completion of the previous chunk to avoid the time-out. |Recommended for SharePoint Online when the file is larger than 10 MB.|SharePoint Online|
 
+**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn904536.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
+
+
+
 ## Before you begin
 <a name="sectionSection0"> </a>
 
