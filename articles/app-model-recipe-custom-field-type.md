@@ -19,33 +19,6 @@ As a rule of a thumb, we would like to provide the following high level guidelin
 - Use the remote provisioning pattern to deploy JavaScript files and register them with SharePoint fields or List View Web Parts.
 - Register the JavaScript files with the Minimal Download Strategy (MDS) engine to ensure the MDS engine is aware of the custom rendering JavaScript files.
 
-Challenges with implementing Client-Side Rendering with JavaScript files via the JSLink property
-------------------------------------------------------------------------------------------------
-
-As you develop custom Client-Side Rendering components, keep in mind the following things.
-
-- Not all SharePoint fields may be overridden with the JSLink property.
-	+ The TaxonomyField is a good example.
-- JSLink supports several tokens.
-	+ _layouts
-	+ _site
-	+ _siteCollection
-	+ _siteCollectionLayouts
-	+ _siteLayouts
-- You can register the JSLink JavaScript files with the SharePoint Script On Demand (SOD) framework to lazy load the file.
-	- Use the (d) tag at the end of the JSLink URL to register the file with the SOD.
- 
-	```
-	~sitecollection/Style Library/JSLink-Samples/DependentFields.js(d)
-	```
-- You can load multiple JavaScript files via the JSLink property.
-	+ This is especially helpful if you have a library of JavaScript files that implement your Client-Side Rendering.
-	+ Consider using this approach when targeting mobile devices because it allows you to deliver just the JavaScript you need to implement a given SharePoint field's Client-Side Rendering.
-	+ Use the | character to separate the JavaScript files you wish to load. 
-	```
-	~sitecollection/Style Library/JSLink-Samples/MainLibrary.js|~sitecollection/Style Library/JSLink-Samples/SpecificField.js**(d)**
-	```
-
 Options to implement Client-Side Rendering with JavaScript files via the JSLink property
 ----------------------------------------------------------------------------------------
 
@@ -103,6 +76,33 @@ The following articles demonstrate how to set the JSLink property on an SPField.
 - [Using the JSLink property to change the way your field or views are rendered in SharePoint 2013 (Tobias Zimmergren)](http://zimmergren.net/technical/sp-2013-using-the-spfield-jslink-property-to-change-the-way-your-field-is-rendered-in-sharepoint-2013)
 - [Using JSLink with SharePoint 2013 (MSD Magazine)](https://msdn.microsoft.com/en-us/magazine/dn745867.aspx)
 
+Challenges with implementing Client-Side Rendering with JavaScript files via the JSLink property
+------------------------------------------------------------------------------------------------
+
+As you develop custom Client-Side Rendering components, keep in mind the following things.
+
+- Not all SharePoint fields may be overridden with the JSLink property.
+	+ The TaxonomyField is a good example.
+- JSLink supports several tokens.
+	+ _layouts
+	+ _site
+	+ _siteCollection
+	+ _siteCollectionLayouts
+	+ _siteLayouts
+- You can register the JSLink JavaScript files with the SharePoint Script On Demand (SOD) framework to lazy load the file.
+	- Use the (d) tag at the end of the JSLink URL to register the file with the SOD.
+ 
+	```
+	~sitecollection/Style Library/JSLink-Samples/DependentFields.js(d)
+	```
+- You can load multiple JavaScript files via the JSLink property.
+	+ This is especially helpful if you have a library of JavaScript files that implement your Client-Side Rendering.
+	+ Consider using this approach when targeting mobile devices because it allows you to deliver just the JavaScript you need to implement a given SharePoint field's Client-Side Rendering.
+	+ Use the | character to separate the JavaScript files you wish to load. 
+	```
+	~sitecollection/Style Library/JSLink-Samples/MainLibrary.js|~sitecollection/Style Library/JSLink-Samples/SpecificField.js**(d)**
+	```
+
 Related links
 =============
 - [SPField.JSLink property (MSDN API Docs)](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spfield.jslink.aspx)
@@ -116,6 +116,7 @@ Related PnP samples
 ===================
 
 - [Branding.ClientSideRendering (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.ClientSideRendering)
+- [Branding.JSLink (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.JSLink)
 - Samples and content at https://github.com/OfficeDev/PnP
 
 Applies to
@@ -135,3 +136,4 @@ Version history
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | April 20, 2015 | Initial draft | Todd Baginski (Canviz LLC)
+0.2  | May 18, 2015 | Re-ordering some content and adding additional reference samples | Todd Baginski (Canviz LLC)
