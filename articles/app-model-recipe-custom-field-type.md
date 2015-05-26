@@ -10,6 +10,18 @@ In an app model scenario, customized end user experiences are implemented via Cl
 
 From an end user's perspective the capability/result looks the same.
 
+Here are some examples of custom field type that implements a Google map.come from the [Branding.JSLink](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.JSLink) Office 365 PnP Sample.
+
+**Thumbnail Google map images displayed in a list view:**
+
+![](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps.png)
+
+**Inline editing showing a larger Google map thumbnail:**
+![](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps_Edit.png)
+
+**A dialog enabling inline editing:**
+![](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps_Shape_Edit.png)
+
 High Level Guidelines
 ---------------------
 
@@ -137,3 +149,4 @@ Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | April 20, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | May 18, 2015 | Re-ordering some content and adding additional reference samples | Todd Baginski (Canviz LLC)
+0.3  | May 26, 2015 | Updates based on Vesa's feedback| Todd Baginski (Canviz LLC)

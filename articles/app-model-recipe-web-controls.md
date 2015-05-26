@@ -22,7 +22,7 @@ You have a few options to embed JavaScript in SharePoint pages.
 
 - Use custom user actions
 - Embed JavaScript directly into page layouts
-- Embed JavaScript directly into custom master pages
+- Embed JavaScript directly into custom master pages (not recommended)
 
 Use custom user actions
 -----------------------
@@ -44,19 +44,21 @@ The following article and accompanying video demonstrates how to use custom user
 Embed JavaScript directly into page layouts
 -------------------------------------------
 
-In this pattern JavaScript is embedded directly in page layouts.  
+In this pattern JavaScript is embedded directly in page layouts in publishing sites.  
 
 - This approach is absolutely supported and a valid approach.
+- This approach works with publishing sites.
 
 **When is it a good fit?**
 
-When you need to embed JavaScript into specific SharePoint page layouts in a WCM scenario this option is a good fit.
+When you need to embed JavaScript into specific SharePoint page layouts in publishing sites in a WCM scenario this option is a good fit.
 
 Embed JavaScript directly into custom master pages
 --------------------------------------------------
 
 In this pattern JavaScript is embedded directly in custom master pages.  
 
+- This approach is not recommended.
 - This approach is a valid approach.
 - You can embed JavaScript directly in custom master pages, but keep in mind this will cause you additional long-term costs and challenges with future updates.
 	+ If you chose to use custom master pages, be prepared to apply changes to the custom master pages when major functional updates are applied to Office 365.
@@ -77,15 +79,13 @@ Related PnP samples
 ===================
 
 - [OD4B.NavLinksInjection (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/OD4B.NavLinksInjection)
-- Samples and content at https://github.com/OfficeDev/PnP
+- Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to
 ==========
 - Office 365 Multi Tenant (MT)
-- Office 365 Dedicated (D) *partly*
-- SharePoint 2013 on-premises – *partly*
-
-*Patterns for dedicated and on-premises are identical with app model techniques, but there are differences on the possible technologies that can be used.*
+- Office 365 Dedicated (D)
+- SharePoint 2013 on-premises
 
 Author
 ------
@@ -95,4 +95,6 @@ Version history
 ---------------
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
-0.1  | May 21, 2015 | Initial draft | Todd Baginski (Canviz LLC)
+0.1  | May 21, 2015 | Initial draft | Todd Baginski
+ (Canviz LLC)
+0.2  | May 26, 2015 | Updates based on Vesa's feedback| Todd Baginski (Canviz LLC)

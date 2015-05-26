@@ -13,10 +13,33 @@ High Level Guidelines
 
 As a rule of a thumb, we would like to provide the following high level guidelines for elevating privileges in code.
 
+- AllowAppOnlyPolicy does not work with 
+	+ Search
+	+ User Profile CSOM operations
+	**Note:** In these scenarios you need to use a specific service account.
 - AllowAppOnlyPolicy is similar to RunWithElevatedPrivileges, but not exactly the same.
 	+ AllowAppOnlyPolicy executes code based on the permissions granted to the app, not on behalf of another user who has the appropriate permissions to perform an operation.
+
+Here is an example of returning an App Only Policy token and using it to create a context object.
+
+	Uri siteUrl = new Uri(ConfigurationManager.AppSettings["MySiteUrl"]);
+	try
+    {
+    	//Connect to the give site using App Only token
+    	string realm = TokenHelper.GetRealmFromTargetUrl(siteUrl);
+    	var token = TokenHelper.GetAppOnlyAccessToken(TokenHelper.SharePointPrincipal, siteUrl.Authority, realm).AccessToken;
+
+    	using (var ctx = TokenHelper.GetClientContextWithAccessToken(siteUrl.ToString(), token))
+    	{
+    		// Perform operations using the app only token access. 
+    	}
+    }
+    catch (Exception ex)
+    {
+    	Console.WriteLine("Error in execution: " + ex.Message);
+    }
+
 - When using the AllowAppOnlyPolicy keep in mind it only works in Provider-hosted apps.
-- AllowAppOnlyPolicy does not work with Search and User Profile operations.
 - AllowAppOnlyPolicy does not execute code on behalf of a user and therefore may not be appropriate for all scenarios.
 - Service accounts are defined in SharePoint.
 	+ In an Office 365 tenancy, depending what functionality your code requires have, the service accounts may need an Office 365 license assigned to them.
@@ -137,3 +160,4 @@ Version history
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | May 18, 2015 | Initial draft | Todd Baginski (Canviz LLC)
+0.2  | May 26, 2015 | Updates based on Vesa's feedback| Todd Baginski (Canviz LLC)

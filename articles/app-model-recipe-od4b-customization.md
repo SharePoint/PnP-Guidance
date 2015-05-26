@@ -553,6 +553,7 @@ Video demonstrating the solution and the actions
 
 Related links
 =============
+- [Customize OneDrive for Business site branding (MSDN Article)](https://msdn.microsoft.com/EN-US/library/mt168839.aspx)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")
@@ -560,6 +561,7 @@ Related links
 Related PnP samples
 ===================
 
+- [OD4B.Configuration.Async (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/OD4B.Configuration.Async)
 - [Provisioning.OneDriveProvisioning (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.OneDriveProvisioning)
 - [Office PnP Core component](https://github.com/OfficeDev/PnP/tree/master/OfficeDevPnP.Core)
 - Samples and content at https://github.com/OfficeDev/PnP
@@ -583,3 +585,4 @@ Version history
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | May 19, 2015 | Initial draft | Todd Baginski (Canviz LLC)
+0.2  | May 26, 2015 | Updates based on Vesa's feedback| Todd Baginski (Canviz LLC)
