@@ -13,7 +13,18 @@ High-Level Guidelines
 
 As a rule of a thumb, we would like to provide the following high-level guidelines for creating event receivers.
 
-- There is no guaranteed execution for event receivers because event receivers typically are not located on the SharePoint server farm.
+- The service end point that implements a event receiver must be accessible by anonymous users.
+- Event receivers added to the app/Add-in web allow you to return an access token.
+- Event receivers added to the host web do not allow you to return an access token.
+- Adding event receivers to the host web is supported.
+	+ It is only possible to do this via CSOM/REST APIs, not by using Visual Studio wizards.
+- SharePoint will absolutely call the event receiver end points configured for a given event.  However, there is no guarantee that the code in the event receiver end points will execute because the code is not running on the SharePoint server.
+	
+	For example:
+	
+	If the event receiver end point URL is unavailable the event receiver code will not execute.  The URL might be unavailable due to several reasons.  Some of the most common reasons include a misconfiguration when the end point URL is registered, DNS issues when trying to resolve the URL, or the web site hosting the end point is shut down or in an inoperable state.
+
+	Additionally, if there is a bug in poorly written event receiver code there is no way to notify SharePoint the bug occurred and the event should be executed again.  You can work around this to some degree with event receivers attached to SharePoint lists.  See below for more information about this approach.  
 - When an event receiver executes a significant amount of code an asynchronous pattern should be used.
 	+ See the following MSDN blog post for more information about this pattern. [Using Azure storage queues and WebJobs for async actions in Office 365 (MSDN Blog Post)](http://blogs.msdn.com/b/vesku/archive/2015/03/02/using-azure-storage-queues-and-webjobs-for-async-actions-in-office-365.aspx)
 	+ See the following MSDN article for more information about timeouts in event receivers.  (Search for timeout in the article.)  [Handle events in apps for SharePoint (MSDN Article)](https://msdn.microsoft.com/en-us/library/office/jj220048.aspx)
@@ -78,4 +89,5 @@ Version history
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | June 6, 2015 | Initial draft | Todd Baginski (Canviz LLC)
+0.2  | June 10, 2015 | Updates based on Vesa's feedback | Todd Baginski (Canviz LLC)
 
