@@ -4,7 +4,7 @@ SharePoint Add-in model recipe - List instance
 Summary
 -------
 
-The approach you take to create list instancess is different in the new SharePoint Add-in model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, list instances were created with declarative code and deployed via SharePoint Solutions. 
+The approach you take to create list instances is different in the new SharePoint Add-in model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, list instances were created with declarative code and deployed via SharePoint Solutions. 
 
 In a SharePoint Add-in model scenario, the remote provisioning pattern is used to create list instances.
 
