@@ -126,12 +126,12 @@ When you need to execute code on behalf of a specific user (service account) thi
 
 The following article demonstrates how the SharePointOnlineCredentials class is used to establish the context of a user that executes code.
 
-- [Getting Started with building Azure WebJobs ("Timer Jobs") for your Office 365 sites (Authentication considerations section) - Tobias Zimmergren Blog Article](http://azure.microsoft.com/en-us/documentation/articles/websites-dotnet-deploy-webjobs/)
+- [Getting Started with building Azure WebJobs ("Timer Jobs") for your Office 365 sites (Authentication considerations section) - Tobias Zimmergren Blog Article](http://zimmergren.net/technical/getting-started-with-building-azure-webjobs-timer-jobs-for-your-office-365-sites)
 
 Related links
 =============
 - [SharePoint 2013 App Only Policy Made Easy (Kirk Evans - MSDN Blog Post)](http://blogs.msdn.com/b/kaevans/archive/2013/02/23/sharepoint-2013-app-only-policy-made-easy.aspx)
-- [Getting Started with building Azure WebJobs ("Timer Jobs") for your Office 365 sites (Authentication considerations section) - Tobias Zimmergren Blog Article](http://azure.microsoft.com/en-us/documentation/articles/websites-dotnet-deploy-webjobs/)
+- [Getting Started with building Azure WebJobs ("Timer Jobs") for your Office 365 sites (Authentication considerations section) - Tobias Zimmergren Blog Article](http://zimmergren.net/technical/getting-started-with-building-azure-webjobs-timer-jobs-for-your-office-365-sites)
 - [SharePointOnlineCredentials class (MSDN API Documentation)](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.sharepointonlinecredentials.aspx)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
