@@ -2,6 +2,11 @@
 
 PnP Transformation process originates from the work we originally did internally at Microsoft and also from the work we did along with our global enterprise customers towards add-in model transition. We first started sharing the project artefacts internally, but since there was clearly a lot of value for external community as well, we have decided to share the templates and samples with the wider SharePoint community. Key objective of these documents is to share the learnings from actual case studies.  
 
+Resources related on the PnP Provisioning Process
+* [Recorded video on the introduction presentation at Channel 9](https://channel9.msdn.com/blogs/OfficeDevPnP/Introduction-to-PnP-Transformation-Process)
+* [Introduction to Office 365 Dev PnP Transformation Process - Blog post](http://blogs.msdn.com/b/vesku/archive/2015/06/18/introduction-to-office-365-dev-pnp-transformation-process.aspx)
+
+
 The documents in this repository concentrate on the typical transformation process from farm solutions to the add-in model. It covers the recommendations from process and implementation perceptive. This relevant information will help you and your customer to move from:
 * An on-premises environment to Office 365, or 
 * Transform existing farm solutions or full trust code to "add-in model" implementations in existing on-premises environment.
