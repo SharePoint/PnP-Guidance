@@ -6,7 +6,7 @@ Summary
 
 The approach you take to brand SharePoint sites is different in the new SharePoint Add-in model than it was with Full Trust Code / Farm Solutions.  In a typical Full Trust Code (FTC) / Farm Solution branding scenario, custom master pages, web templates, JavaScript, CSS files, and images are created to implement a custom brand.  Additionally, SharePoint themes and composed looks may be created to implement a custom brand.  These artifacts are typically packaged in a feature that uses declarative code and FTC / Farm Solution to deploy the assets and register them with the SharePoint site.
 
-In an SharePoint Add-in model branding scenario, all of the options associated with FTC / Farm Solution branding scenarios are available.  No matter which option you choose, you can deploy and register your branding assets on SharePoint sites via the remote-provisioning pattern.
+In a SharePoint Add-in model branding scenario, all of the options associated with FTC / Farm Solution branding scenarios are available.  No matter which option you choose, you can deploy and register your branding assets on SharePoint sites via the remote-provisioning pattern.
 
 Terminology
 -----------
@@ -267,17 +267,17 @@ You can use the remote provisioning pattern to deploy JavaScript injection modif
 
 Create custom master pages and page layouts for a SharePoint site
 -----------------------------------------------------------------
-In scenarios where a custom master page is the only way to implement your custom branding requirements you can create a custom master page and page layouts.  You should use the approach to brand publishing sites.  Keep in mind the points made at the beginning of this article with regard to the long-term maintenance costs associated with this approach.
+In scenarios where a custom master page is the only way to implement your custom branding requirements you can create a custom master page and page layouts.  Keep in mind the points made at the beginning of this article with regard to the long-term maintenance costs associated with this approach.
 
 - Using custom master pages for SharePoint sites provides the ultimate level of customization (unlimited).
 - Using custom master pages for SharePoint sites requires the largest amount of time to implement and maintain in the short and long term.
 - Any changes to out-of-the-box master pages that come with service updates will not be reflected in custom master pages.
 - You can apply custom master pages at a per-site level.
-- When using a custom master page it is. recommended to start with one of the out of the box master pages and modify it to meet your needs.
-	+ Try to minimize he amount of customization you make with custom master pages, this will make it easier to update them when O365 service changes to out of the box master pages must be replicated to custom master pages.  
+- When using a custom master page it is recommended to start with one of the out of the box master pages and modify it to meet your needs.
+	+ Try to minimize the amount of customization you make with custom master pages, this will make it easier to update them when O365 service changes to out of the box master pages must be replicated to custom master pages.  
 - There are many required content placeholders in SharePoint master pages that must not be removed or they will cause the pages to error.  You will know when you have removed a required content placeholder because the minute you deploy it and assign the master page to your site errors will appear.
 
-**When are custome master pages and page layouts for a SharePoint site a good fit?**
+**When are custom master pages and page layouts for a SharePoint site a good fit?**
 This option works well when your branding needs are very specific or you are using publishing sites.
 
 **Recommended deployment approaches**
@@ -328,6 +328,8 @@ Related PnP samples
 - [Theme management using CSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.DeployCustomThemeWeb)
 - [Set theme to site (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.SetThemeToSite)
 - [Setting a SharePoint Theme in an App for SharePoint (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Branding.Themes)
+- [Making out of the box Seattle master responsive (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.InjectResponsiveCSS)
+- [AlternateCSSUrl and SiteLogoUrl Properties in the web object (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)
 - Samples and content at https://github.com/OfficeDev/PnP
 
 Applies to
@@ -351,4 +353,5 @@ Version  | Date | Comments | Author
 1.0  | March 31, 2015 | Final revisions after discussion with Vesa | Todd Baginski (Canviz LLC)
 1.1  | April 2, 2015 | Copy edits | Todd Baginski (Canviz LLC)
 1.2  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
+1.3  | June 18, 2015 | Adding links to additional resources and copy edits | Todd Baginski (Canviz LLC)
 
