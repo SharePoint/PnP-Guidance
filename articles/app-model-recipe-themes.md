@@ -277,7 +277,7 @@ In scenarios where a custom master page is the only way to implement your custom
 	+ Try to minimize he amount of customization you make with custom master pages, this will make it easier to update them when O365 service changes to out of the box master pages must be replicated to custom master pages.  
 - There are many required content placeholders in SharePoint master pages that must not be removed or they will cause the pages to error.  You will know when you have removed a required content placeholder because the minute you deploy it and assign the master page to your site errors will appear.
 
-**When are custome master pages and page layouts for a SharePoint site a good fit?**
+**When are custom master pages and page layouts for a SharePoint site a good fit?**
 This option works well when your branding needs are very specific or you are using publishing sites.
 
 **Recommended deployment approaches**
