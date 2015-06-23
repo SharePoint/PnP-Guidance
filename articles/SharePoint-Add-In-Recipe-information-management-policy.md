@@ -13,6 +13,8 @@ High Level Guidelines
 
 As a rule of a thumb, we would like to provide the following high level guidelines to manage and apply information management policies to SharePoint sites.  
 
+- Keep in mind, when information management policies are defined at the site collection level then site collection owners may disable them.
+	+ When using the remote model and CSOM to set information management policies a site collection owner cannot disable them.  The remote model approach is a more enterprise friendly model that ensures information management policies are always enabled throughout a SharePoint environment.
 - Use the SharePoint CSOM in a remote timer job to manage and apply information management policies.
 
 - Ensure you are not violating the Office 365 SharePoint API throttle limits when working with large data sets and recursive crawls as you inspect artifacts in your SharePoint sites and apply information management policies to them accordingly.
@@ -62,3 +64,4 @@ Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | June 11, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
+0.3  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)

@@ -8,7 +8,9 @@ The approaches you take to ensure optimal performance with SharePoint is differe
 
 In an SharePoint Add-in model scenario, the SharePoint Client Side Object Model (CSOM) and/or the SharePoint REST API are used to execute code.
 
-The major difference between the two models is server side code versus client side code.  In the SharePoint Add-in model, because code is executed via clients there is additional network traffic which occurs.  Minimizing the API call round trips to the SharePoint server will increase the performance of your SharePoint Add-ins, prevent API throttle limits from being hit, and reduce the amount of resources consumed by your SharePoint site.  
+The major difference between the two models is server side code versus client side code.  In the SharePoint Add-in model, because code is executed via clients there is additional network traffic which occurs.  Minimizing the API call round trips to the SharePoint server will increase the performance of your SharePoint Add-ins, and reduce the amount of resources consumed by your SharePoint site.
+
+Additionally, in the SharePoint Add-in model, because code is executed via clients there could be long delays before a response is received.  Caching data for long running operations (like the User Profile APIs) can reduce the amount of time it takes to return information or receive confirmation a process is complete.
 
 High Level Guidelines
 ---------------------
@@ -39,6 +41,70 @@ In this pattern, client side caching techniques such as HTML5 LocalStorage and C
 	
 		See the **setLocalStorageKeyExpiry** and **isLocalStorageExpired** functions in the [App.js JavaScript file](https://github.com/OfficeDev/PnP/blob/master/Samples/Performance.Caching/Performance.LocalStorage/Scripts/App.js) in the [Performance.LocalStorage (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Performance.Caching/Performance.LocalStorage) for an example.
 
+		**Setting an expiration key in LocalStorage:**
+
+		```
+		function setLocalStorageKeyExpiry(key) 
+		{		
+		    // Check for expiration config values
+		    var expiryConfig = localStorage.getItem(expiryConfigKey);
+		    
+		    // Check for existing expiration stamp
+		    var existingStamp = localStorage.getItem(key + expiryKeySuffix);    
+		
+		    // Override cached setting if a user has entered a value that is different than what is stored
+		    if (expiryConfig != null) {
+		                
+		        var currentTime = Math.floor((new Date().getTime()) / 1000);
+		        expiryConfig = parseInt(expiryConfig);
+		        
+		        var newStamp = Math.floor((currentTime + expiryConfig));
+		        localStorage.setItem(key + expiryKeySuffix, newStamp);
+		        
+		        // Log status to window        
+		        cachingStatus += "\n" + "Setting expiration for the " + key + " key...";
+		        $('#status').val(cachingStatus);
+		    }    
+		    else {
+		       
+		    }
+		}
+		```
+
+		**Check to see if the expiration key is expired in LocalStorage:**
+		```
+		function isLocalStorageExpired(key, keyTimeStampName) 
+		{
+		    // Retrieve the example setting for expiration in seconds
+		    var expiryConfig = localStorage.getItem(expiryConfigKey);
+		    
+		    // Retrieve the example setting for expiration in seconds
+		    var expiryStamp = localStorage.getItem(keyTimeStampName);
+		
+		    if (expiryStamp != null && expiryConfig != null) {
+		
+		        // Retrieve the expiration stamp and compare against specified settings to see if it is expired
+		        var currentTime = Math.floor((new Date().getTime()) / 1000);
+		
+		        if (currentTime - parseInt(expiryStamp) > parseInt(expiryConfig)) {
+		            cachingStatus += "\n" + "The " + key + " key time stamp has expired...";
+		            $('#status').val(cachingStatus);
+		            return true;
+		        }
+		        else {
+		            var estimatedSeconds = parseInt(expiryStamp) - currentTime;
+		            cachingStatus += "\n" + "The " + key + " time stamp expires in " + estimatedSeconds + " seconds...";
+		            $('#status').val(cachingStatus);
+		            return false;
+		        }
+		    }
+		    else {
+		        //default
+		        return true;
+		    }
+		}
+		```
+
 **When is it a good fit?**
 
 When you need to use the SharePoint ECMA Client Side Object Model API (sp.js) and evaluate client side data to determine if the API calls need to be made.
@@ -51,7 +117,7 @@ Use server side caching
 -----------------------
 In this pattern, server side caching techniques such as session and server side Cookie evaluation are used to access cached data.  Information stored in these locations is used to determine if it is necessary to make API calls to a SharePoint server.
 
-- This pattern stores data returned from SharePoint API calls in server side caches.
+- This pattern stores data returned from SharePoint API calls in server side caches.	
 - This pattern uses server side code to evaluate data stored in server side locations.
 	+ Server side locations may include session based data, server side caches stored in RAM, or other third party server based caching technologies.
 - This pattern uses server side code to evaluate data stored in Cookies.
@@ -59,6 +125,11 @@ In this pattern, server side caching techniques such as session and server side 
 	+ Cookies have a built in data expiration mechanism.
 	
 	See the **CookieCheckSkip** method in the [Customizer.aspx.cs Class](https://github.com/OfficeDev/PnP/blob/master/Solutions/OD4B.Configuration.Async/OD4B.Configuration.AsyncWeb/Pages/Customizer.aspx.cs) in the [OD4B.Configuration.Async (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/OD4B.Configuration.Async) to see how server side code is used to evaluate Cookies.
+
+**Implementing your own 'man-in-the-middle' cache layer**
+Sometimes, it makes sense to create your own custom cache layer.  A good example is when you need to return information from a User's Profile.  The User Profile APIs sometimes take a long time to execute.  To provide end users with a fast user interface experience you can create a remote timer job to query the user profile service and store the information in a variety of data stores.  Then, you can create a service to allow you to query the data stores via JavaScript calls from SharePoint Add-ins.  
+
+Azure has many different storage mechanisms that may be used to store information, many of which perform extremely fast, like Table Storage and Blob Storage.  Azure also allows you to create a web app to host the service and secure all of the data and the service with the same Azure Active Directory as an Office 365 SharePoint tenancy, or even an on-premises SharePoint environment with DirSync enabled.
 
 **When is it a good fit?**
 
@@ -95,5 +166,5 @@ Version history
 ---------------
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
-0.1  | June 22, 2015 | Initial draft | Todd Baginski
- (Canviz LLC)
+0.1  | June 22, 2015 | Initial draft | Todd Baginski (Canviz LLC)
+0.2  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)

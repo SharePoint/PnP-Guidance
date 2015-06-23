@@ -14,6 +14,8 @@ High Level Guidelines
 As a rule of a thumb, we would like to provide the following high level guidelines for setting unique identifiers for documents in the new SharePoint Add-in model.
 
 - Use the SharePoint Client Side Object Model (CSOM), and/or the SharePoint REST APIs to set unique identifiers for documents.
+- Currently, there is no no supported mechanism for setting unique identifiers for documents or a code sample for this topic.
+- However, like in many cases with the add-in model, alternative routes are being explored.
 
 How are unique identifiers set on documents?
 --------------------------------------------
@@ -109,5 +111,6 @@ Version history
 ---------------
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
-0.1  | June 22, 2015 | Initial draft | Todd Baginski
- (Canviz LLC)
+0.1  | June 22, 2015 | Initial draft | Todd Baginski (Canviz LLC)
+0.2  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)
+

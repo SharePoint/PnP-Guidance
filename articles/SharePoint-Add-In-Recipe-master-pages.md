@@ -31,7 +31,7 @@ When applying custom branding to SharePoint sites you will encounter the need to
 
 Custom branding requirements often times require specific layout changes that themes and JavaScript injection techniques cannot accomplish.
 
-In such a scenario, team sites usually do not require the amount of custom branding that publishing sites do and the out-of-the-box SharePoint Contemporary View for mobile devices is usually sufficient to support mobile devices for team sites.  Since this is the case, it is best to only use custom master pages for publishing sites and to use custom SharePoint themes (.spcolor files), font schemes (.spfont files), and background images defined as composed looks to brand team sites.
+In such a scenario, team sites usually do not require the amount of custom branding that publishing sites do and the out-of-the-box SharePoint Contemporary View for mobile devices is usually sufficient to support mobile devices for team sites.  Since this is the case, it is best to only use custom master pages for publishing sites and to use AlternativeCSS and custom SharePoint themes (.spcolor files), font schemes (.spfont files), and background images defined as composed looks to brand team sites.
 
 **Deployment Considerations**
 
@@ -103,4 +103,5 @@ Version history
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | June 18, 2015 | Initial draft | Todd Baginski (Canviz LLC)
+0.2  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)
 
