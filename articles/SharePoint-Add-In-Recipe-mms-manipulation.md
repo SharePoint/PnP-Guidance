@@ -4,20 +4,20 @@ SharePoint Add-in Recipe - MMS manipulation
 Summary
 -------
 
-The approach you take to perform Create, Read, Update, and Delete (CRUD) operations in the Managed Metadata Service (MMS) is different in the new Add-in model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, MMS CRUD operations were performed with the SharePoint Server Side Object Model code and deployed via Farm Solutions. 
+The approach you take to perform Create, Read, Update and Delete (CRUD) operations in the Managed Metadata Service (MMS) is different in the new SharePoint Add-in model than it was with Full Trust Code. In a typical Full Trust Code (FTC) / Farm Solution scenario, MMS CRUD operations were performed with the SharePoint server-side object model code and deployed via Farm Solutions. 
 
-In an SharePoint Add-in model scenario, MMS CRUD operations are performed with the Client Side Object Model (CSOM).
+In a SharePoint Add-in model scenario, MMS CRUD operations are performed with the client-side object model (CSOM).
 
 **The CSOM provides all of the operations necessary to replicate and synchronize data in the MMS.**
 
-High Level Guidelines
+High-Level Guidelines
 ---------------------
 
 As a rule of a thumb, we recommend the following high-level guidelines for performing MMS CRUD operations.
 
-- MMS CRUD operations should be implemented with the Client Side Object Model.
+- MMS CRUD operations should be implemented with the client-side object model.
 - Execute the CSOM code with an account that has the appropriate permissions to perform MMS CRUD operations.
-- When synchronizing term sets use the ChangeInformation class because it performs better  than using GetAllTerms and enumerating the terms every time you want to sync. 
+- When synchronizing term sets use the ChangeInformation class because it performs better than using GetAllTerms and enumerating the terms every time you want to sync. 
 
 
 Options to copy and synchronize MMS data
@@ -39,17 +39,17 @@ If you have an on-premises SharePoint environment you can copy the MMS database 
 
 **When is it a good fit?**
 
-When you have an on-premises SharePoint environment and you are performing a one way copy of terms this is a good option because this option may be implemented quickly and easily without writing any code.
+When you have an on-premises SharePoint environment and you are performing a one-way copy of terms, this is a good option because it may be implemented quickly and easily without writing any code.
 
 On-premises & O365 - Use CSOM to copy data
 ------------------------------------------
-If you have an on-premises or Office 365 SharePoint environment you can use CSOM to copy MMS data from one farm to another.  ***You can include both on-premises and Office 365 farms with this approach.***
+If you have an on-premises or Office 365 SharePoint environment you can use CSOM to copy MMS data from one farm/tenancy to another.  ***You can include both on-premises and Office 365 farms with this approach.***
 
 **When is it a good fit?**
 
-When you have an on-premises SharePoint or Office 365 or a hybrid environment and you are copying MMS data between two or more SharePoint farms this is a good option because it gives you the flexibility to copy the MMS data from one farm to another.
+When you have an on-premises SharePoint or Office 365 or a hybrid environment and you are copying MMS data between two or more SharePoint farms/tenancies, this is a good option because it gives you the flexibility to copy the MMS data from one farm to another.
 
-**Getting Started**
+**Getting started**
 
 The following sample demonstrates how to perform MMS CRUD operations.
 
@@ -57,13 +57,13 @@ The following sample demonstrates how to perform MMS CRUD operations.
 
 On-premises & O365 - Use CSOM to sync data
 ------------------------------------------
-If you have an on-premises SharePoint environment you can use CSOM to sync MMS data between farms. ***You can include both on-premises and Office 365 farms with this approach.***
+If you have an on-premises SharePoint environment you can use CSOM to sync MMS data between farms. ***You can include both on-premises and Office 365 farms/tenancies with this approach.***
 
 **When is it a good fit?**
 
-When you have an on-premises SharePoint or Office 365 or a hybrid environment and you are synchronizing MMS data between two or more SharePoint farms this is a good option because it gives you the flexibility to perform true synchronization and include as many sources as you like.
+When you have an on-premises SharePoint or Office 365 or a hybrid environment and you are synchronizing MMS data between two or more SharePoint farms/tenancies, this is a good option because it gives you the flexibility to perform true synchronization and include as many sources as you like.
 
-**Getting Started**
+**Getting started**
 
 The following sample demonstrates how to build a synchronization tool for MMS data.
 
@@ -81,7 +81,7 @@ Related PnP samples
 
 - [Core.MMS (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.MMS)
 - [Core.MMSSync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.MMSSync)
-- Samples and content at https://github.com/OfficeDev/PnP
+- Samples and content at [https://github.com/OfficeDev/PnP](https://github.com/OfficeDev/PnP)
 
 Applies to
 ==========
@@ -101,3 +101,5 @@ Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | May 18, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
+0.3  | June 30, 2015 | Copy edits | Todd Baginski (Canviz LLC)
+

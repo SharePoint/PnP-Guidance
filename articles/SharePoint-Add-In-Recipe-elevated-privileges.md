@@ -4,14 +4,14 @@ SharePoint Add-in Recipe - Elevated privileges
 Summary
 -------
 
-The approach you take to elevate privileges in your code is different in the new SharePoint Add-in model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, the RunWithElevatedPrivileges  API is used with the SharePoint Server Side Object Model code and deployed via Farm Solutions.
+The approach you take to elevate privileges in your code is different in the new SharePoint Add-in model than it was with Full Trust Code. In a typical Full Trust Code (FTC) / Farm Solution scenario, the RunWithElevatedPrivileges API is used with the SharePoint server-side object model code and deployed via Farm Solutions.
 
 In an SharePoint Add-in model scenario, the AllowAppOnlyPolicy permission or a service account is used to allow the current user to execute operations they are not authorize to perform.
 
-High Level Guidelines
+High-Level Guidelines
 ---------------------
 
-As a rule of a thumb, we would like to provide the following high level guidelines for elevating privileges in code.
+As a rule of a thumb, we would like to provide the following high-level guidelines for elevating privileges in code.
 
 - AllowAppOnlyPolicy does not work with 
 	+ Search
@@ -39,10 +39,10 @@ Here is an example of returning an App Only Policy token and using it to create 
     	Console.WriteLine("Error in execution: " + ex.Message);
     }
 
-- When using the AllowAppOnlyPolicy keep in mind it only works in Provider-hosted SharePoint Add-ins.
+- When using the AllowAppOnlyPolicy, keep in mind it only works in Provider-hosted SharePoint Add-ins.
 - AllowAppOnlyPolicy does not execute code on behalf of a user and therefore may not be appropriate for all scenarios.
 - Service accounts are defined in SharePoint.
-	+ In an Office 365 tenancy, depending what functionality your code requires have, the service accounts may need an Office 365 license assigned to them.
+	+ In an Office 365 tenancy, depending what functionality your code requirements have, the service accounts may need an Office 365 license assigned to them.
 	+ You can create service accounts on a per SharePoint Add-in basis, or use a single account for all SharePoint Add-ins.
 	+ Create clear and descriptive names for the service accounts so you can easily track the operations they perform.
 	
@@ -76,7 +76,7 @@ You have a couple of options to elevate permissions.
 
 OAuth (AllowAppOnlyPolicy)
 --------------------------
-In this pattern the AllowAppOnlyPolicy is set to true in the AppPermissionRequests element and permissions are set in the SharePoint Add-in manifest. OAuth is used to return access tokens to allow the SharePoint Add-in to execute operations it has permissions to perform.
+In this option the AllowAppOnlyPolicy is set to true in the AppPermissionRequests element and permissions are set in the SharePoint Add-in manifest. OAuth is used to return access tokens to allow the SharePoint Add-in to execute operations it has permissions to perform.
 
 **S2S sub option**
 
@@ -116,7 +116,7 @@ The following article demonstrates how to use AllowAppOnlyPolicy with ACS.
 
 Service Account
 ---------------
-In this pattern the SharePointOnlineCredentials class is used to establish the context of a user that executes code.
+In this pattern, the SharePointOnlineCredentials class is used to establish the context of a user that executes code.
 
 **When is it a good fit?**
 
@@ -162,3 +162,4 @@ Version  | Date | Comments | Author
 0.1  | May 18, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | May 26, 2015 | Updates based on Vesa's feedback| Todd Baginski (Canviz LLC)
 0.3  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
+0.4  | June 30, 2015 | Copy edits | Todd Baginski (Canviz LLC)
