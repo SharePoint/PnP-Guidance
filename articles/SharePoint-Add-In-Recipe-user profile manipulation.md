@@ -79,7 +79,7 @@ When you have an on-premises SharePoint environment and you are synchronizing UP
 
 **Getting started**
 
-The [Core.UserProfilePropertyUpdater (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.UserProfilePropertyUpdater) demonstrates how to perform UPS CRUD operations with  the User Profile Web Service.
+The [Core.UserProfilePropertyUpdater (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.UserProfilePropertyUpdater) demonstrates how to perform UPS CRUD operations with the User Profile Web Service.
 
 The [Core.MMSSync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.MMSSync) demonstrates how to build a synchronization tool for Managed Metadata Service (MMS data).  Although this sample focuses on the MMS APIs, the overall pattern used for synchronization may be applied to UPS data as well.
 
