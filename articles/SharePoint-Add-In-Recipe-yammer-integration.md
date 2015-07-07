@@ -37,8 +37,6 @@ In this option you embed a Yammer feed in a SharePoint web page.
 
 Using embed looks like this in your SharePoint page:
 
-**Need to get the sample working then add screen shot here.**
-
 ![](media/Recipes/Yammer/YammerEmbed.png)
 
 The following table describes each type of Yammer feed you can access with embed out-of-the-box.
