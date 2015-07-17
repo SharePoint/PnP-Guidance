@@ -4,21 +4,21 @@ SharePoint Add-in model recipe - List instance
 Summary
 -------
 
-The approach you take to create list instances is different in the new SharePoint Add-in model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, list instances were created with declarative code and deployed via SharePoint Solutions. 
+The approach you take to create list instances is different in the new SharePoint Add-in model than it was with Full Trust Code. In a typical Full Trust Code (FTC) / Farm Solution scenario, list instances were created with declarative code and deployed via SharePoint Solutions. 
 
 In a SharePoint Add-in model scenario, the remote provisioning pattern is used to create list instances.
 
-High Level Guidelines
+High-level guidelines
 ---------------------
 
-As a rule of a thumb, we would like to provide the following high level guidelines to create list instances.
+As a rule of a thumb, we would like to provide the following high-level guidelines to create list instances.
 
 - Use the remote provisioning pattern to create list instances.
 - Do not use declarative code (elements.xml) to create list instances.
 
-**Getting Started**
+**Getting started**
 
-The following O365 PnP Code Sample and video demonstrates how to create a SharePoint Add-in that provides a user interface that allows end users to create new document libraries.  It also demonstrates how to create a document library with specific configurations that collectively represent a template.  In this sample you will find the code which creates a list instance.
+The following O365 PnP code sample and video demonstrates how to create a SharePoint Add-in that provides a user interface that allows end users to create new document libraries. It also demonstrates how to create a document library with specific configurations that collectively represent a template. In this sample you will find the code that creates a list instance.
 
 - [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Scenarios/ECM.DocumentLibraries)
 
@@ -26,7 +26,7 @@ The following video walks through the code sample.
 
 - [Document and list templates with app model (O365 PnP Video)](http://channel9.msdn.com/blogs/OfficeDevPnP/Document-and-list-templates-with-app-model)
 
-Use the AddList method in the SharePoint CSOM to create a list instance via the remote provisioning pattern.  The following code taken from the [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Scenarios/ECM.DocumentLibraries) illustrates how to do it.
+Use the AddList method in the SharePoint CSOM to create a list instance via the remote provisioning pattern. The following code taken from the [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Scenarios/ECM.DocumentLibraries) illustrates how to do it.
 
 	private void CreateLibrary(ClientContext ctx, Library library, string associateContentTypeID) 
 	{
@@ -87,7 +87,7 @@ Related PnP samples
 ===================
 
 - [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Scenarios/ECM.DocumentLibraries)
-- Samples and content at https://github.com/OfficeDev/PnP
+- Samples and content at [https://github.com/OfficeDev/PnP](https://github.com/OfficeDev/PnP)
 
 Applies to
 ==========
@@ -107,3 +107,4 @@ Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | June 11, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
+0.3  | July 17, 2015 | Copy edits | Todd Baginski (Canviz LLC)

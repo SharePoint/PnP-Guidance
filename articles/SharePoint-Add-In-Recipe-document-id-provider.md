@@ -4,25 +4,25 @@ SharePoint Add-in Recipe - Document ID Provider
 Summary
 -------
 
-The approach you take to set unique identifiers for documents in SharePoint is different in the new SharePoint Add-in model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, list item event handlers running SharePoint Server Side Object Model code were used to set unique identifiers for documents and they were deployed via SharePoint Solutions.
+The approach you take to set unique identifiers for documents in SharePoint is different in the new SharePoint Add-in model than it was with Full Trust Code. In a typical Full Trust Code (FTC) / Farm Solution scenario, list item event handlers running SharePoint Server-side Object Model code were used to set unique identifiers for documents and they were deployed via SharePoint Solutions.
 
-In an SharePoint Add-in model scenario, the SharePoint Client Side Object Model (CSOM) and/or the SharePoint REST API are used to set unique identifiers for documents.
+In an SharePoint Add-in model scenario, the SharePoint Client-side Object Model (CSOM) and/or the SharePoint REST API are used to set unique identifiers for documents.
 
-High Level Guidelines
+High-level guidelines
 ---------------------
 
-As a rule of a thumb, we would like to provide the following high level guidelines for setting unique identifiers for documents in the new SharePoint Add-in model.
+As a rule of a thumb, we would like to provide the following high-level guidelines for setting unique identifiers for documents in the new SharePoint Add-in model.
 
 - Use the SharePoint Client Side Object Model (CSOM), and/or the SharePoint REST APIs to set unique identifiers for documents.
-- Currently, there is no supported oob mechanism for associating remote processed code to replace oob document ID provider, so this capability is not natively supported to be modified with remote APIs
-- However, like in many cases with the add-in model, alternative routes are being explored.
+- Currently, there is no supported out-of-the-box mechanism for associating remote processed code to replace the out-of-the-box document ID provider, so this capability is not natively supported to be modified with remote APIs.
+- However, like in many cases with the Add-in model, alternative routes are being explored.
 
 How are unique identifiers set on documents?
 --------------------------------------------
 
 ***Essentially, setting a unique identifier for a document means setting the value of a column in a SharePoint list/document library.***  
 
-The SharePoint (CSOM) and/or REST APIs may be used to set column values, and therefor they may be used to set unique identifiers for documents.  See the following articles to learn more about these APIs and how to set column values with them.  
+The SharePoint (CSOM) and/or REST APIs may be used to set column values, and therefor they may be used to set unique identifiers for documents. See the following articles to learn more about these APIs and how to set column values with them.  
 
 - [Complete basic operations using SharePoint 2013 client library code (MSDN Article)](https://msdn.microsoft.com/en-us/library/office/fp179912.aspx#BasicOps_SPListItemTasks) 
 - [Working with lists and list items with REST (MSDN Article)](https://msdn.microsoft.com/en-us/library/office/dn292552.aspx#ListItems)
@@ -36,25 +36,25 @@ You have a few options to set unique identifiers for documents stored in SharePo
 
 Use remote event receivers
 --------------------------
-In this pattern, remote event receivers fire when new documents are uploaded to SharePoint libraries.  The remote event receivers make CSOM or REST API calls to set unique identifiers for documents.
+In this pattern, remote event receivers fire when new documents are uploaded to SharePoint libraries. The remote event receivers make CSOM or REST API calls to set unique identifiers for documents.
 
 - This pattern executes immediately after a document is uploaded to SharePoint.
 	+ As long as the code in the service associated with the remote event receiver executes in a timely fashion, the document IDs are set quickly after a new document is uploaded to SharePoint.
-- This pattern only operates on new documents uploaded to SharePoint, it does not set set unique identifiers for documents already stored in SharePoint.
-- Bulk upload operations will trigger multiple calls to the service associated with the remote event receiver.  Plan accordingly to ensure bulk upload operations will not overload the service.
+- This pattern only operates on new documents uploaded to SharePoint, it does not set unique identifiers for documents already stored in SharePoint.
+- Bulk upload operations will trigger multiple calls to the service associated with the remote event receiver. Plan accordingly to ensure bulk upload operations will not overload the service.
 - There is no way for a remote event receiver to notify SharePoint if setting a unique document ID failed.
 
 **When is it a good fit?**
 
 When you need to set unique identifiers for documents quickly after they are uploaded to SharePoint and you do not expect bulk upload operations.
 
-**Getting Started**
+**Getting started**
 
-The [Event Receivers & List Event Receivers (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-event-receiver-and-list-event-receiver) describes how to implement event receivers in the Add-in model and provides links to several samples and articles.
+The [Event Receivers & List Event Receivers (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-event-receiver-and-list-event-receiver.md) describes how to implement event receivers in the Add-in model and provides links to several samples and articles.
 
 Use a background process
 ------------------------
-In this pattern, a background process checks documents in SharePoint to determine if they have a unique identifier set.  If no unique identifier is found for a document then the background process sets a unique identifier for the document.  The background process makes CSOM or REST API calls to set unique identifiers for documents.
+In this pattern, a background process checks documents in SharePoint to determine if they have a unique identifier set. If no unique identifier is found for a document, then the background process sets a unique identifier for the document. The background process makes CSOM or REST API calls to set unique identifiers for documents.
 
 - This pattern executes according to the schedule you define for it.
 - This pattern operates on all documents the code is written to crawl.
@@ -63,7 +63,7 @@ In this pattern, a background process checks documents in SharePoint to determin
 	+ This pattern eliminates custom query logic from the background service.
 	+ This pattern requires some search configuration.
 
-		To learn more about search configuration, see the [Search Configuration (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-search-configuration).
+		To learn more about search configuration, see the [Search Configuration (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-search-configuration.md).
 - It is not recommended to recursively query and return metadata about all the documents in a SharePoint environment by looping through web and list objects.
 	+ This pattern performs the slowest and scales worse than any other query pattern.  
 	+ You may encounter API throttle limits when using this pattern.
@@ -113,4 +113,4 @@ Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | June 22, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)
-
+0.3  | July 15, 2015 | Copy edits | Todd Baginski (Canviz LLC)

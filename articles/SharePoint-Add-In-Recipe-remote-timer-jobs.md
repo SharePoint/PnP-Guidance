@@ -109,8 +109,7 @@ In this pattern, you define one or more service accounts used to authenticate ti
 
 	```
 	using (ClientContext context = new ClientContext("https://tenancy.sharepoint.com"))
-	{
-	
+	{	
 		// Use default authentication mode
 		context.AuthenticationMode = ClientAuthenticationMode.Default;	
 		// Specify the credentials for the account that will execute the request
@@ -147,13 +146,9 @@ In this pattern, you define an application in SharePoint or Azure Active Directo
 	+ The code snippet below illustrates obtaining an access token and using App Only permissions to authenticate to SharePoint.
 
 	```
-	string accessToken = TokenHelper.GetAppOnlyAccessToken(
-	    TokenHelper.SharePointPrincipal, 
-	    siteUri.Authority, realm).AccessToken;
+	string accessToken = TokenHelper.GetAppOnlyAccessToken(TokenHelper.SharePointPrincipal, siteUri.Authority, realm).AccessToken;
 	
-	using(var clientContext = 
-	    TokenHelper.GetClientContextWithAccessToken(
-	        siteUri.ToString(),accessToken))
+	using(var clientContext = TokenHelper.GetClientContextWithAccessToken(siteUri.ToString(),accessToken))
 	{
 		//Implement timer job code
 	}

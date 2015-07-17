@@ -4,22 +4,22 @@ SharePoint Add-in Recipe - Search Configuration
 Summary
 -------
 
-The approach you take to configure search is different in the new SharePoint Add-in model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, the SharePoint Server Side Object Model was used to configure search, and deployed via SharePoint Solutions.
+The approach you take to configure search is different in the new SharePoint Add-in model than it was with Full Trust Code. In a typical Full Trust Code (FTC) / Farm Solution scenario, the SharePoint Server-side Object Model was used to configure search, and deployed via SharePoint Solutions.
 
-In an SharePoint Add-in model scenario, you use the SharePoint Client Side Object Model (CSOM) or REST API to configure search. This pattern is commonly referred to as the *remote provisioning pattern*.
+In an SharePoint Add-in model scenario, you use the SharePoint Client-side Object Model (CSOM) or REST API to configure search. This pattern is commonly referred to as the *remote provisioning pattern*.
 
-High Level Guidelines
+High-level guidelines
 ---------------------
 
-As a rule of a thumb, we would like to provide the following high level guidelines to configure search in the new SharePoint Add-in model.
+As a rule of a thumb, we would like to provide the following high-level guidelines to configure search in the new SharePoint Add-in model.
 
-- Use the SharePoint Client Side Object Model (CSOM) API to configure search whenever possible by importing and exporting search configuration settings.
+- Use the SharePoint Client-side Object Model (CSOM) API to configure search whenever possible by importing and exporting search configuration settings.
 - Not all search configuration settings are currently available via the SharePoint CSOM API.
 	+ See the [Export and import customized search configuration settings in SharePoint Server 2013 (TechNet Article)](https://technet.microsoft.com/en-us/library/jj871675.aspx#BKMK_2) for a list of search configuration settings that can be exported and imported.
 	+ If a search configuration setting is not able to be set using the CSOM then the Administration user interface is required to set configuration values.
 - The SharePoint REST API is not capable (at this time) of importing or exporting search configuration settings.
 
-**Getting Started**
+**Getting started**
 
 The following sample demonstrates how to import and export search settings between SharePoint tenants, site collections and sites.
 
@@ -54,3 +54,4 @@ Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | June 22, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)
+0.3  | July 15, 2015 | Copy edits | Todd Baginski (Canviz LLC)
