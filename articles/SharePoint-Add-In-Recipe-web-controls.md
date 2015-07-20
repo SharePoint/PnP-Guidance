@@ -26,7 +26,7 @@ You have a few options to embed JavaScript in SharePoint pages.
 
 Use custom user actions
 -----------------------
-In this pattern, custom user actions are used to inject JavaScript into a page at run time.
+In this pattern, custom user actions are used to embed JavaScript into a page at run time.
 
 - This approach is absolutely supported and is a valid approach.
 
@@ -38,6 +38,7 @@ When you need to embed JavaScript into all of your SharePoint pages, this option
 
 The following article and accompanying video demonstrates how to use custom user actions to embed JavaScript into SharePoint pages.
 
+- [Core.EmbedJavaScript (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScript)
 - [OD4B.NavLinksInjection (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/OD4B.NavLinksInjection)
 - [Cross site collection navigation (O365 PnP Video)](http://channel9.msdn.com/blogs/OfficeDevPnP/Cross-site-collection-navigation)
 
@@ -77,8 +78,11 @@ Related links
 
 Related PnP samples
 ===================
-
+- [Core.EmbedJavaScript (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScript)
 - [OD4B.NavLinksInjection (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/OD4B.NavLinksInjection)
+- [Core.EmbedJavaScript.WeekNumbers (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScript.WeekNumbers)
+- [Core.EmbedJavaScriptJSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScriptJSOM)
+- [Core.JavaScriptCustomization (O365 PnP Scenario using PnP Core component)](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Core.JavaScriptCustomization)
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to
@@ -95,8 +99,8 @@ Version history
 ---------------
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
-0.1  | May 21, 2015 | Initial draft | Todd Baginski
- (Canviz LLC)
+0.1  | May 21, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | May 26, 2015 | Updates based on Vesa's feedback| Todd Baginski (Canviz LLC)
 0.21  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
 0.3  | July 15, 2015 | Copy edits | Todd Baginski (Canviz LLC)
+1.0  | July 20, 2015 | Sign-off for v1.0 | Vesa Juvonen
