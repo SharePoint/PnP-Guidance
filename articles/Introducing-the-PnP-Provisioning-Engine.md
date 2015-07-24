@@ -22,7 +22,7 @@
  [Additional resources](#bk_addresources)
 
 
-This short whitepaper introduces the PnP Provisioning Engine, which has been release in April 2015 within the [OfficeDev PnP](http://aka.ms/officedevpnp) project, and which will be update in early May 2015. What you will see here is available thanks to the efforts of some of the Office Dev PnP Core Team members ([Vesa Juvonen](https://twitter.com/vesajuvonen), [Bert Jansen](https://twitter.com/O365Bert), [Frank Marasco](https://twitter.com/frank_marasco), [Erwin van Hunen](https://twitter.com/erwinvanhunen), and [me](https://twitter/paolopia)), as well as the whole OfficeDev PnP community.
+This short whitepaper introduces the PnP Provisioning Engine, which has been release in April 2015 within the [OfficeDev PnP](http://aka.ms/officedevpnp) project, and which will be update on a monthly basis, accordingly to the release schedule of the Office Dev PnP Core Library. What you will see here is available thanks to the efforts of some of the Office Dev PnP Core Team members ([Vesa Juvonen](https://twitter.com/vesajuvonen), [Bert Jansen](https://twitter.com/O365Bert), [Frank Marasco](https://twitter.com/frank_marasco), [Erwin van Hunen](https://twitter.com/erwinvanhunen), and [me](https://twitter/paolopia)), as well as the whole OfficeDev PnP community.
 
 <a name="thegoal"> </a>
 ## The Goal
@@ -255,7 +255,7 @@ Please, play with the PnP Provisioning Engine, give us feedbacks, and enjoy the 
 <a name="bk_addresources"> </a>
 ## Additional resources
 
--  [Office 365 development patterns and practices on GitHub](https://github.com/OfficeDev/PnP/)
+-  [Office 365 Development Patterns & Practices on GitHub](https://github.com/OfficeDev/PnP/)
     
 -  [Yammer Network for Office 365 Professionals](https://www.yammer.com/itpronetwork/)
     
