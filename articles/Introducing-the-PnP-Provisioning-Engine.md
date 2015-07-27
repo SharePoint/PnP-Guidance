@@ -42,13 +42,13 @@ As already stated, the easiest way to create a custom provisioning template is t
 
 Thus, let's say you have defined a sample site with a custom look (custom color theme, custom logo, custom background image). You can see the resulting Home Page in the following figure.
 
-![](./media/Introducing-the-PnP-Provisioning-Engine/Figure-1-SiteTemplate01.png)
+![The home page of a template site](./media/Introducing-the-PnP-Provisioning-Engine/Figure-1-SiteTemplate01.png)
 
 Moreover, you have defined a couple of Site Columns, a Content Type and a Library of Invoices with a custom View. In the two following figures you can see the result.
 
-![](./media/Introducing-the-PnP-Provisioning-Engine/Figure-2-SiteTemplate02.png)
+![A library of Invoices with a custom content type](./media/Introducing-the-PnP-Provisioning-Engine/Figure-2-SiteTemplate02.png)
 
-![](./media/Introducing-the-PnP-Provisioning-Engine/Figure-3-SiteTemplate03.png)
+![The settings page of the Invoices library](./media/Introducing-the-PnP-Provisioning-Engine/Figure-3-SiteTemplate03.png)
 
 In order to export that site as a Provisioning Template, you can use either a bunch of PowerShell Scripting (thanks to the efforts of [Erwin](https://twitter.com/erwinvanhunen)!) or some CSOM code, with some extension methods, which are provided by the OfficeDev PnP Core Library. 
 
@@ -62,7 +62,7 @@ On the other side, in order to use the CSOM extensions, you can simply create an
 
 Let's target the Microsoft SharePoint Online, which so far has been more tested and was the main target of the PnP Core Team efforts. You will simply need to connect to Microsoft Office 365, create a *ClientContext* instance and retrieve a reference to a *Web* object. Thanks to a new extension method, called *GetProvisioningTemplate*, you will be able to retrieve a *ProvisioningTemplate* object that can be saved using a template provider and a serialization formatter. Both the template provider and the serialization formatter objects can be customized, so that you can implement whatever persistence storage and serialization format you like. Out of the box, the PnP Provisioning Engine provides support for File System, SharePoint, and Azure Blob Storage template providers, as well as for XML and JSON serialization formatters. In the following figure (credits to [Vesa](https://twitter.com/vesajuvonen)) you can see an outline of the overall architecture of the PnP Provisioning Engine.
 
-![](./media/Introducing-the-PnP-Provisioning-Engine/Figure-4-PnP-Provisioning-Framework-Outline.png)
+![The architecture of the PnP Provisioning Engine Framework](./media/Introducing-the-PnP-Provisioning-Engine/Figure-4-PnP-Provisioning-Framework-Outline.png)
 
 The result of extracting and saving a *ProvisioningTemplate* instance object will be for instance an XML file like the one shown in the following XML code excerpt:
 
@@ -183,7 +183,7 @@ As you can see, the XML elements are almost self-explanatory. The XML schema use
 
 However, the real power of this provisioning engine is the availability of a high level and serialization format independent Domain Model. In fact, internally the PnP Provisioning Engine is completely decoupled from any kind of serialization format, and the whole engine simply handles instances of the *ProvisioningTemplate* type. For instance, in the following figure you can see the "Quick Watch" window of Microsoft Visual Studio 2013 showing a ProvisioningTemplate object instance.
 
-![](./media/Introducing-the-PnP-Provisioning-Engine/Figure-5-Domain-Model.png)
+![The structure - within a debugger watch - of a ProvisioningTemplate object](./media/Introducing-the-PnP-Provisioning-Engine/Figure-5-Domain-Model.png)
 
 It is up to you to define the *ProvisioningTemplate* manually, using a model site, or by composing an XML document that has to be valid against the PnP Provisioning XSD Schema, or by simply writing .NET code and constructing the hierarchy of objects. You can even do a mix of those approaches: you can design the provisioning template using a model site, then you can save it into an XML file and do some in-memory customizations, while handling the *ProvisioningTemplate* instance in your code.
 
@@ -192,11 +192,11 @@ It is up to you to define the *ProvisioningTemplate* manually, using a model sit
 
 Now that you have seen what a Provisioning Template is, and how to extract the Domain Model object from an existing site, you are ready to apply it to a target site. Let's say that you have another fresh new Site, which for instance is the root site of a new Site Collection in Microsoft SharePoint Online that has been create using the Team Site template, like it is shown in the following figure.
  
-![](./media/Introducing-the-PnP-Provisioning-Engine/Figure-6-Target-Site-Creation.png)
+![The SharePoint Online page for creating a new site collection](./media/Introducing-the-PnP-Provisioning-Engine/Figure-6-Target-Site-Creation.png)
 
 By default, the site will look like the following figure, which is the default layout of a SharePoint Online site.
 
-![](./media/Introducing-the-PnP-Provisioning-Engine/Figure-7-Target-Site-Created.png)
+![The home page of a fresh new target](./media/Introducing-the-PnP-Provisioning-Engine/Figure-7-Target-Site-Created.png)
 
 One more time, you can apply a custom *ProvisioningTemplate* instance object either by using a bunch of PowerShell scripting, or by writing some .NET code. If you want to use PowerShell, in the following excerpt you can see the *Apply-SPOProvisioningTemplate* cmdlet in action.
 
@@ -204,7 +204,7 @@ One more time, you can apply a custom *ProvisioningTemplate* instance object eit
 
 The *–Path* argument refers to the source template file, and the cmdlet will automatically apply to the currently connected site (implied by the *Connect-SPOnline* cmdlet). In the following figure you can see the final result.
 
-![](./media/Introducing-the-PnP-Provisioning-Engine/Figure-8-Target-Site-Provisioned.png)
+![The home page of a target site based on a Provisioning Templated](./media/Introducing-the-PnP-Provisioning-Engine/Figure-8-Target-Site-Provisioned.png)
 
 As you can see, the site has the same look as the original template, and it includes the Invoices library, with all the provisioning stuff under the cover (Site Columns, Content Types, etc.).
 And what about using .NET code? Here is an excerpt about how to use CSOM and the OfficeDev PnP Core Library extension methods to apply the template.
