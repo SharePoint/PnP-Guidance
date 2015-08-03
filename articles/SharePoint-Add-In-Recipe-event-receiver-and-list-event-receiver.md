@@ -15,7 +15,8 @@ As a rule of a thumb, we would like to provide the following high-level guidelin
 
 - The service end point that implements a event receiver must be accessible by anonymous users.
 - Event receivers added to the Add-in web allow you to return an access token.
-- Event receivers added to the host web do not allow you to return an access token.
+- Event receivers added to the host web will return access token, if they are applied from app context using app access token and operation in the host web is end user driven (ItemAdded etc.)
+- Event receivers added to host web without app context, for example with SharePointOnlineCredentials or other means, will not return access token and you'll have to access the host web with app-only access token
 - Adding event receivers to the host web is supported.
 	+ It is only possible to do this via CSOM/REST APIs, not by using Visual Studio wizards.
 - SharePoint will absolutely call the event receiver end points configured for a given event.  However, there is no guarantee that the code in the event receiver end points will execute because the code is not running on the SharePoint server.
@@ -83,6 +84,7 @@ Applies to
 Author
 ------
 Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
+Vesa Juvonen (Microsoft) - [@vesajuvonen](https://twitter.com/veajuvonen)
 
 Version history
 ---------------
@@ -91,3 +93,5 @@ Version  | Date | Comments | Author
 0.1  | June 6, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | June 10, 2015 | Updates based on Vesa's feedback | Todd Baginski (Canviz LLC)
 0.3  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
+1.0  | June 18, 2015 | Signoff and updates on details around access tokens with different registration routes | Vesa Juvonen (Microsoft)
+
