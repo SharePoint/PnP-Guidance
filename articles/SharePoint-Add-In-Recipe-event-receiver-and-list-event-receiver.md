@@ -4,9 +4,12 @@ SharePoint Add-in Recipe - Event Receivers & List Event Receivers
 Summary
 -------
 
-The approach you take to handle events in SharePoint is different in the new SharePoint Add-in model than it was with Full Trust Code.  In a typical Full Trust Code (FTC) / Farm Solution scenario, Event Receivers and List Event Receivers were created with the SharePoint Server Side Object Model code and deployed via Solutions.  In this scenario, the event receiver code runs on the SharePoint server.
+The approach you take to handle events in SharePoint is different in the new SharePoint Add-in model than it was with Full Trust Code.  
+In a typical Full Trust Code (FTC) / Farm Solution scenario, Event Receivers and List Event Receivers were created with the SharePoint 
+Server Side Object Model code and deployed via Solutions.  In this scenario, the event receiver code runs on the SharePoint server.
 
-In an SharePoint Add-in model scenario, event receivers are created outside of SharePoint inside a web service and registered with SharePoint.  In this scenario, the event receiver code runs on the web server where the web service is hosted.
+In an SharePoint Add-in model scenario, event receivers are created outside of SharePoint inside a web service and registered with SharePoint.  
+These are called as *Remote Event Recivers (RER)*. In this scenario, the event receiver code runs on the web server where the web service is hosted.
 
 High-Level Guidelines
 ---------------------
