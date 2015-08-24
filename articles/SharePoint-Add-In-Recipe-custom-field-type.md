@@ -30,6 +30,7 @@ As a rule of a thumb, we would like to provide the following high-level guidelin
 - Use JavaScript files and client-side rendering to implement custom field types.
 - Use the remote provisioning pattern to deploy JavaScript files and register them with SharePoint fields or List View Web Parts.
 - Register the JavaScript files with the Minimal Download Strategy (MDS) engine to ensure the MDS engine is aware of the custom rendering JavaScript files.
+- Setting JSLink property to host web requires at least full permission at web level, so this approach is not suitable for apps at the SharePoint store
 
 Options to implement client-side rendering with JavaScript files via the JSLink property
 ----------------------------------------------------------------------------------------
@@ -38,6 +39,7 @@ You have a couple of options to implement client-side rendering with JavaScript 
 
 - Set the JSLink property on a List View Web Part that renders a view of a SharePoint list.	
 - Set the JSLink property for a SharePoint field. 
+- Set the JSLink property for a SharePoint content type. 
 	
 
 Set the JSLink property on a List View Web Part that renders a view of a SharePoint list
@@ -149,3 +151,4 @@ Version  | Date | Comments | Author
 0.3  | May 26, 2015 | Updates based on Vesa's feedback| Todd Baginski (Canviz LLC)
 0.4  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
 0.5  | June 30, 2015 | Copy edits | Todd Baginski (Canviz LLC)
+1.0  | August 24, 2015 | Few edits and v1.0 sign-off | Vesa Juvonen (Microsoft)
