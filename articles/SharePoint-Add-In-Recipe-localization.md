@@ -6,7 +6,7 @@ Summary
 
 The approach you take to implement localization for Add-ins is different in the new SharePoint Add-in model than it was with Full Trust Code. In a typical Full Trust Code (FTC) / Farm Solution scenario, localization for custom components such as Web Parts, User Controls, and Web Controls was implemented with a combination of resource files, .Net managed code, properties, and declarative code.  All the artifacts were packaged in features deployed via SharePoint Solutions.
 
-In an SharePoint Add-in model scenario, you use JavaScript or the localization capabilities associated with the web technology you build your Add-ins with to implement localization.
+In an SharePoint Add-in model scenario, you use JavaScript or the localization capabilities associated with the web technology you build your Add-ins with to implement localization. Depending on the localized resource, you might also use classic resources files, for example when you need to lozalize elements deployed to app web using feature framework elements in the app definition.
 
 High-Level Guidelines
 ---------------------
@@ -24,24 +24,24 @@ There are two distinct scenarios where you may need to implement localization fo
 - SharePoint-hosted Add-ins
 - Provider-hosted Add-ins
 
-SharePoint-hosted Add-ins
+Add-in web components or assets
 -------------------------
 In this scenario localization is applied to the Add-in via JavaScript.
 
-- SharePoint-hosted Add-ins do not have access to server-based resource files.
+- SharePoint-hosted Add-ins do not have access to server-based resource files in the SharePoint servers, but you have access on the feature element resx files 
 - The approach to localize a SharePoint-hosted Add-in and an Office Add-in are very similar because they both use JavaScript.
 
 **When is it a good fit?**
 
-When you are creating a SharePoint-hosted Add-in, using JavaScript is your best fit because you can implement localization with JavaScript and deploy all of the JavaScript files necessary to support localization with the SharePoint-hosted Add-in.
+When you are creating a SharePoint-hosted Add-in, using JavaScript is your best fit because you can implement localization with JavaScript and deploy all of the JavaScript files necessary to support localization with the SharePoint-hosted Add-in. You can also take advantage of this approach if your provider hosted add-in contains also specific add-in web.
 
 **Getting Started**
 
 Scenario 2 in the [Core.JavaScriptCustomization (O365 PnP Sample))](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Core.JavaScriptCustomization) demonstrates how to use JavaScript to localize the text in an Add-in as well as attributes associated with the HTML elements in the Add-in.
 
-The [How to localize SharePoint hosted Apps for SharePoint 2013 with JQuery (MSDN Blog Article)](http://blogs.msdn.com/b/ocarpen/archive/2012/08/28/how-to-localize-sharepoint-hosted-apps-for-sharepoint-2013-with-jquery.aspx) also demonstrates how to use JavaScript to localize a SharePoint-hosted Add-in.
+The [Localize SharePoint Add-ins](https://msdn.microsoft.com/en-us/library/fp179919(v=office.15).aspx) also demonstrates how to use JavaScript to localize assets in the add-in web.
 
-Provider-hosted Add-ins
+Remote components
 -------------------------
 In this scenario localization is applied to the Add-in via the localization technologies associated with the web technology hosting the Add-in.
 
@@ -57,15 +57,13 @@ When you are creating a Provider-hosted Add-in, using the localization technolog
 The following articles describes how to localize Provider-hosted Add-ins with resource files and JavaScript.
 
 - [Localize SharePoint Add-ins (MSDN Article)](https://msdn.microsoft.com/en-us/library/fp179919(v=office.15).aspx)
-
 - [Localize the app web, host web, and remote components of an app  (MSDN Code Sample)](https://code.msdn.microsoft.com/office/SharePoint-2013-Bookstore-328060fc)
 
 Related links
 =============
 
-- [How to localize SharePoint hosted Apps for SharePoint 2013 with JQuery (MSDN Blog Article)](http://blogs.msdn.com/b/ocarpen/archive/2012/08/28/how-to-localize-sharepoint-hosted-apps-for-sharepoint-2013-with-jquery.aspx)
 - [Localize SharePoint Add-ins (MSDN Article)](https://msdn.microsoft.com/en-us/library/fp179919(v=office.15).aspx)
-- [Localize the app web, host web, and remote components of an app  (MSDN Code Sample)](https://code.msdn.microsoft.com/office/SharePoint-2013-Bookstore-328060fc)
+- [Localize the app web, host web, and remote components of an app  (Office Dev GitHub sample)](https://github.com/OfficeDev/SharePoint-Add-in-Localization)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")
@@ -91,3 +89,4 @@ Version history
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | July 28, 2015 | Initial draft | Todd Baginski (Canviz LLC)
+1.0  | August 24, 2015 | Sign-off | Vesa Juvonen (Microsoft)

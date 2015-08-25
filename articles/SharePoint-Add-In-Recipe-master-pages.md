@@ -72,6 +72,7 @@ Related links
 - [Modules (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-modules.md)
 - [Site Provisioning (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-site-provisioning.md)
 - [Themes (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-themes.md)
+- Ignite 2015 - [Deep Dive into Safe SharePoint Branding in Office 365 Using Repeatable Patterns and Practices](https://channel9.msdn.com/Events/Ignite/2015/BRK3164)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")
@@ -84,7 +85,7 @@ Related PnP samples
 - [Set theme to site (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.SetThemeToSite)
 - [Setting a SharePoint Theme in an App for SharePoint (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Branding.Themes)
 - [Making out of the box Seattle master responsive (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.InjectResponsiveCSS)
-- Samples and content at https://github.com/OfficeDev/PnP
+- Samples and content at [https://github.com/OfficeDev/PnP](https://github.com/OfficeDev/PnP)
 
 Applies to
 ==========
@@ -105,3 +106,5 @@ Version  | Date | Comments | Author
 0.1  | June 18, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)
 0.3  | July 15, 2015 | Copy edits | Todd Baginski (Canviz LLC)
+1.0  | August 24, 2015 | Sign-off | Vesa Juvonen (Microsoft)
+

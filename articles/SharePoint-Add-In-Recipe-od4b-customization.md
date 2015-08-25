@@ -587,3 +587,4 @@ Version  | Date | Comments | Author
 0.1  | May 19, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 0.2  | May 26, 2015 | Updates based on Vesa's feedback| Todd Baginski (Canviz LLC)
 0.3  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
+1.0  | August 18, 2015 | Sign-off | Vesa Juvonen (Microsoft)

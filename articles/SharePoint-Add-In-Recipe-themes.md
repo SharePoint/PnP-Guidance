@@ -308,6 +308,14 @@ This option also works well when you need to include a custom master page to imp
 
 You can upload the assets that make up a composed look via the web browser then create the composed look via the web browser, or you can use the remote provisioning pattern to upload the assets that make up a composed look and create it in the SharePoint list.
 
+# Specic challenges with chosen path #
+Following bullet points are pointing out specific challenges with chosen pattern, which should be also considered when the branding approach for your deployment is decided.
+
+- Office 365 themes are highly limited and mainly control the suite navigation section of the page
+- SharePoint themes are dependent on the time they are applied to the site. When selected theme is applied to site, SharePoint will dynamically create needed CSS files based on the spcolor and spfont files. This could result maintenance requirments when new CSS definitions are introduced for the SharePoint UI.
+- Alternate CSS approach is based on overriding out of the box styles. When new oob CSS definitions are introduced, they could influence your site and you might be needed to apply changes on the associated custom CSS file.
+- Master pages are always created based on out of the box master pages. When new controls or layout structures are introduced to out of the box master pages, you might be forced to update your custom master pages as well cross used sites.
+ 
 Summary
 -------
 The following chart summarizes all your options to brand a SharePoint site at a high level.
@@ -317,6 +325,7 @@ The following chart summarizes all your options to brand a SharePoint site at a 
 Related links
 =============
 - [SharePoint color palette tool](http://www.microsoft.com/en-gb/download/details.aspx?id=38182)
+- Ignite 2015 - [Deep Dive into Safe SharePoint Branding in Office 365 Using Repeatable Patterns and Practices](https://channel9.msdn.com/Events/Ignite/2015/BRK3164)
 - [Customize your SharePoint site UI by using JavaScript](https://msdn.microsoft.com/EN-US/library/dn913116.aspx)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
@@ -354,4 +363,5 @@ Version  | Date | Comments | Author
 1.1  | April 2, 2015 | Copy edits | Todd Baginski (Canviz LLC)
 1.2  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
 1.3  | June 18, 2015 | Adding links to additional resources and copy edits | Todd Baginski (Canviz LLC)
+1.4  | August 24, 2015 | Added chapter on specific challenges compared on different branding options | Vesa Juvonen (Microsoft)
 
