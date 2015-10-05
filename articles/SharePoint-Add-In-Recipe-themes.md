@@ -37,7 +37,7 @@ In summary, Office 365 SharePoint sites support customized branding. This articl
 
 Here’s an example of an Office 365 SharePoint site, which has been customized using the guidelines above. In this case the custom branding has been implemented with an Office 365 theme, deployed, and registered with a SharePoint site via the remote provisioning pattern with the SharePoint CSOM API.
 
-This example comes from the [Theme management using CSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.DeployCustomThemeWeb).
+This example comes from the [Theme management using CSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.DeployCustomThemeWeb).
 
 ![](media/Recipes/Themes/example-custom-theme.png)
 
@@ -334,9 +334,9 @@ Related links
 Related PnP samples
 ===================
 
-- [Theme management using CSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.DeployCustomThemeWeb)
-- [Set theme to site (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.SetThemeToSite)
-- [Setting a SharePoint Theme in an App for SharePoint (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Branding.Themes)
+- [Theme management using CSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.DeployCustomThemeWeb)
+- [Set theme to site (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.SetThemeToSite)
+- [Setting a SharePoint Theme in an App for SharePoint (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.Themes)
 - [Making out of the box Seattle master responsive (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.InjectResponsiveCSS)
 - [AlternateCSSUrl and SiteLogoUrl Properties in the web object (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)
 - Samples and content at https://github.com/OfficeDev/PnP

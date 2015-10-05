@@ -7,7 +7,7 @@ As part of your Enterprise Content Management (ECM) strategy, you can implement 
 
     
 
-The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/ECM.DocumentLibraries) sample shows you how to use a provider-hosted app to create a list or document library, assign a content type to it, and remove the default content type. Use this solution if you want to:    
+The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample shows you how to use a provider-hosted app to create a list or document library, assign a content type to it, and remove the default content type. Use this solution if you want to:    
 
 - Create a list or document library and apply a default content type.
     
@@ -21,7 +21,7 @@ The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/ECM.DocumentLibraries) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Users accessing the ECM.DocumentLibraries app must have permissions to manage lists. The  **DoesUserHavePermission** method in Default.aspx.cs checks the user's permissions to ensure they can manage lists. If the user does not have permissions to manage lists, the app presents an error message to the user.
 
@@ -321,5 +321,5 @@ After you create the document library, go to the  **Library settings** on your d
 
 -  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/dn904530(v=office.15).aspx)
     
--  [ECM.Autotagging sample app](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/ECM.)
+-  [ECM.Autotagging sample app](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.Autotagging)
     

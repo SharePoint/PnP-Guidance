@@ -6,9 +6,9 @@ Integrate apps for SharePoint into your business operations by using a provider-
 
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-The  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/dev/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement a centralized corporate events management system as a provider-hosted app that integrates with your existing line-of-business (LOB) applications.
+The  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement a centralized corporate events management system as a provider-hosted app that integrates with your existing line-of-business (LOB) applications.
 
-More specifically, the  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/dev/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement an ASP.NET web application that interacts with SharePoint as a data store for LOB entities. It also shows you how to implement multiple steps in a complex business task with a single provider-hosted app.
+More specifically, the  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement an ASP.NET web application that interacts with SharePoint as a data store for LOB entities. It also shows you how to implement multiple steps in a complex business task with a single provider-hosted app.
 This sample app implements a centralized management system that consists of SharePoint entities (lists and content types). For each new content type, it creates corresponding LOB entities in an ASP.NET web application. Components of the web application run as remotely hosted app parts within the SharePoint interface and also as pages running entirely on the remote web host. The app overrides the default welcome page for your SharePoint site so that it can present a custom-branded interface on the site home page.
 
 **Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957895.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
@@ -57,7 +57,7 @@ The Models\DataInitializer.cs file contains the code that runs when you choose t
     
 - Event sessions
     
-The code in this file uses a method similar to the one that is used in the  [Core.ModifyPages](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ModifyPages) sample to add a custom page to the site.
+The code in this file uses a method similar to the one that is used in the  [Core.ModifyPages](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ModifyPages) sample to add a custom page to the site.
 
 
 
@@ -322,9 +322,9 @@ public void Save(Web web) {
 
 -  [Composite business apps for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
     
--  [Core.ModifyPages sample](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ModifyPages)
+-  [Core.ModifyPages sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ModifyPages)
     
--  [Provisioning.Pages sample](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Provisioning.Pages)
+-  [Provisioning.Pages sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages)
     
--  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP/tree/dev/OfficeDevPnP.Core)
+-  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core)
     

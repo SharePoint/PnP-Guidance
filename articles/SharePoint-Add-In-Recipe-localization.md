@@ -37,7 +37,7 @@ When you are creating a SharePoint-hosted Add-in, using JavaScript is your best 
 
 **Getting Started**
 
-Scenario 2 in the [Core.JavaScriptCustomization (O365 PnP Sample))](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Core.JavaScriptCustomization) demonstrates how to use JavaScript to localize the text in an Add-in as well as attributes associated with the HTML elements in the Add-in.
+Scenario 2 in the [Core.JavaScriptCustomization (O365 PnP Sample))](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization) demonstrates how to use JavaScript to localize the text in an Add-in as well as attributes associated with the HTML elements in the Add-in.
 
 The [Localize SharePoint Add-ins](https://msdn.microsoft.com/en-us/library/fp179919(v=office.15).aspx) also demonstrates how to use JavaScript to localize assets in the add-in web.
 
@@ -71,7 +71,7 @@ Related links
 Related PnP samples
 ===================
 
-- [VariationsExtensions.cs class (O365 PnP Sample)](https://github.com/OfficeDev/PnP/blob/96eff6153389d6d21358480878de9cc8fa21abab/OfficeDevPnP.Core/OfficeDevPnP.Core/AppModelExtensions/VariationExtensions.cs)
+- [VariationsExtensions.cs class (O365 PnP Sample)](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core/OfficeDevPnP.Core/AppModelExtensions/VariationExtensions.cs)
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to

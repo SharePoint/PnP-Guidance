@@ -17,14 +17,14 @@ Implement real-time communication between SharePoint app parts by using SignalR.
  [Additional resources](#bk_addresources)
 
 
-The  [Core.ConnectedAppParts](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ConnectedAppParts) sample shows you how to use a provider-hosted app as a message broker or chat hub to send and receive messages from all app parts connected to the chat hub. Use this solution if you are converting your SharePoint web parts to app parts, and need your app parts to communicate with each other.
+The  [Core.ConnectedAppParts](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ConnectedAppParts) sample shows you how to use a provider-hosted app as a message broker or chat hub to send and receive messages from all app parts connected to the chat hub. Use this solution if you are converting your SharePoint web parts to app parts, and need your app parts to communicate with each other.
 
 **Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957927.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
 
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.ConnectedAppParts](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ConnectedAppParts) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.ConnectedAppParts](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ConnectedAppParts) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 
 ## Connected app parts and chat hub architecture

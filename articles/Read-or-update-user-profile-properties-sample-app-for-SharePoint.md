@@ -6,7 +6,7 @@ You can use a provider-hosted app to read or update SharePoint single and multiv
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
     
-The [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/dev/Samples/UserProfile.Manipulation.CSOM) sample shows you how to read and update user profile properties for a particular user. This sample uses a provider-hosted app to:
+The [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM) sample shows you how to read and update user profile properties for a particular user. This sample uses a provider-hosted app to:
     
 
 - Read and display all user profile properties for a user.
@@ -28,7 +28,7 @@ Use this solution if you want to:
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/dev/Samples/UserProfile.Manipulation.CSOM) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run Scenario 1:
 
@@ -268,5 +268,5 @@ Choosing  **Run scenario 3** calls **btnScenario3_Click** in CodeSample3.aspx.cs
 
 -  [User profile solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/b6d19973-cf74-4640-a742-821f562ba5af.aspx)
     
--  [ Search.PersonalizedResults sample](https://github.com/OfficeDev/PnP/tree/dev/Samples/Search.PersonalizedResults)
+-  [ Search.PersonalizedResults sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults)
     

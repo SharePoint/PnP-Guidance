@@ -25,7 +25,7 @@ You can apply and interact with themes by using remote provisioning features in 
     
 The  **ApplyTheme** method powers the Change the Look wizard. The wizard applies acomposed look, or a custom look, to a SharePoint site by using specified components. Themes are applied on a site-by-site basis.
 The  **ApplyThemeApp** and **ThemeInfo** server-side APIs are exposed via the **ApplyTheme** and **ThemeInfo** APIs in CSOM and JSOM.
-For a sample that shows you how to apply an existing or custom theme, see  [Branding.Themes](https://github.com/Lauragra/PnP/tree/master/Scenarios/Branding.Themes) on GitHub.
+For a sample that shows you how to apply an existing or custom theme, see  [Branding.Themes](https://github.com/Lauragra/PnP/tree/master/Samples/Branding.Themes) on GitHub.
 
 ## ApplyTheme method
 <a name="sectionSection0"> </a>
@@ -302,5 +302,5 @@ namespace ApplyThemeAppWeb.Pages
     
 -  [Use composed looks to brand SharePoint sites](97342600-351b-4438-9a6f-0d71b926c6d9.md)
     
--  [Branding.Themes sample](https://github.com/Lauragra/PnP/tree/master/Scenarios/Branding.Themes)
+-  [Branding.Themes sample](https://github.com/Lauragra/PnP/tree/master/Samples/Branding.Themes)
     

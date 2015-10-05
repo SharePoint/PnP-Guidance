@@ -230,7 +230,7 @@ The code samples described in this section show the core scenario and extend it 
 |**Sample**|**Description**|**Related article**|
 |:-----|:-----|:-----|
 |Batch Provisioning|Provisions site collections in a console app.| [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
-| [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Provisioning.Pages)|Shows how to use the remote provisioning model to provision a Wiki page and add remote Web Parts and HTML from the Wiki page.| [SharePoint pages and the page model](7d1ca7d4-f229-40e8-b2a3-08fb5e113483.md)|
+| [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages)|Shows how to use the remote provisioning model to provision a Wiki page and add remote Web Parts and HTML from the Wiki page.| [SharePoint pages and the page model](7d1ca7d4-f229-40e8-b2a3-08fb5e113483.md)|
 |SiteProvisioningWorkflow|Provisions site collections with a workflow on the host web and a remote event receiver.| [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
 |SiteProvisioningWorkflowAppWeb|Provisions site collections with a workflow on the app web and a remote event receiver.| [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
 
@@ -242,7 +242,7 @@ The code samples described in this section show the core scenario and extend it 
 
 |**Sample**|**Description**|**Related article**|
 |:-----|:-----|:-----|
-| [Branding.Theme](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Branding.Themes)|Shows how to apply a theme (CSOM).| [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)|
+| [Branding.Theme](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.Themes)|Shows how to apply a theme (CSOM).| [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)|
 | [OD4B.Configuration.Async](https://github.com/OfficeDev/PnP/tree/master/Solutions/OD4B.Configuration.Async)|Shows how to use the remote provisioning model to provision a Wiki page and add remote Web Parts and HTML from the Wiki page.| [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)|
 | [Branding.AlternateCSSAndSiteLogo ](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)|Shows how to set custom CSS to the host site by using a user customer action and embedded JavaScript (CSOM).| [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)|
 | [Provisioning.OnPrem.Async](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.OnPrem.Async) [Provisioning.SiteCol.OnPrem](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.SiteCol.OnPrem)|Shows how to use a service to encapsulate all of the information in SharePoint host web to the app web, and get a list of site collections in a specified web application and create a content type with a specific ContentTypeId. This sample is especially useful when you want to use the remote provisioning pattern to provision sites using apps for SharePoint, but the CSOM member you need to complete your scenario is not yet available in CSOM. | [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|

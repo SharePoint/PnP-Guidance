@@ -176,7 +176,7 @@ On-Premises | Office 365
 - | Supported
 
 ### Related PnP samples ###
-- [Fields and Content Types, Core.ContentTypesAndFields](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Core.ContentTypesAndFields)
+- [Fields and Content Types, Core.ContentTypesAndFields](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ContentTypesAndFields)
 
 ### Related links ###
 -  [Office365 – Multilingual content types, site columns and other site elements](http://blogs.msdn.com/b/vesku/archive/2014/03/20/office365-multilingual-content-types-site-columns-and-site-other-elements.aspx)
@@ -193,9 +193,9 @@ SP2013 SP1 | Supported
 ### Related PnP samples ###
 -  [
 Creating Content Types, Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes)
-- [Fields and Content Types, Core.ContentTypesAndFields](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Core.ContentTypesAndFields)
+- [Fields and Content Types, Core.ContentTypesAndFields](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ContentTypesAndFields)
 - [
-Create fields and content types based on element XML, Core.XMLBasedFieldsAndContentTypes](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Core.XMLBasedFieldsAndContentTypes)
+Create fields and content types based on element XML, Core.XMLBasedFieldsAndContentTypes](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.XMLBasedFieldsAndContentTypes)
 
 ### Related links ###
 -  [FTC to CAM – Create Content Types with specific IDs using CSOM](http://blogs.msdn.com/b/vesku/archive/2014/02/28/ftc-to-cam-create-content-types-with-specific-ids-using-csom.aspx)

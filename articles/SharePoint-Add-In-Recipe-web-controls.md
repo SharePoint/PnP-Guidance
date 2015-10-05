@@ -82,7 +82,7 @@ Related PnP samples
 - [OD4B.NavLinksInjection (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/OD4B.NavLinksInjection)
 - [Core.EmbedJavaScript.WeekNumbers (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScript.WeekNumbers)
 - [Core.EmbedJavaScriptJSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScriptJSOM)
-- [Core.JavaScriptCustomization (O365 PnP Scenario using PnP Core component)](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Core.JavaScriptCustomization)
+- [Core.JavaScriptCustomization (O365 PnP Scenario using PnP Core component)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization)
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to

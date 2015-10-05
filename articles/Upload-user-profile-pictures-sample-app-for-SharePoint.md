@@ -6,7 +6,7 @@ You can use a provider-hosted app to do a bulk upload of user profile data from 
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
     
-The [Core.ProfilePictureUploader](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ProfilePictureUploader) sample app shows how to do a bulk upload of user profile data from either a file share or SharePoint Online URL, and how to link user profile properties to uploaded images.
+The [Core.ProfilePictureUploader](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfilePictureUploader) sample app shows how to do a bulk upload of user profile data from either a file share or SharePoint Online URL, and how to link user profile properties to uploaded images.
     
 Use this sample to learn how to:
 
@@ -30,7 +30,7 @@ This sample uses a console application to do the following:
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.ProfilePictureUploader](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ProfilePictureUploader) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.ProfilePictureUploader](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfilePictureUploader) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this code sample:
 
@@ -447,11 +447,11 @@ static void SetAdditionalProfileProperties(string UserName)
 
 -  [User profile solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/b6d19973-cf74-4640-a742-821f562ba5af.aspx)
     
--  [Core.ProfilePictureUploader app](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ProfilePictureUploader)
+-  [Core.ProfilePictureUploader app](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfilePictureUploader)
     
--  [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/dev/Samples/UserProfile.Manipulation.CSOM)
+-  [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM)
     
--  [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ProfileProperty.Migration)
+-  [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfileProperty.Migration)
     
--  [UserProfile.Manipulation.CSOM.Console](https://github.com/OfficeDev/PnP/tree/dev/Samples/UserProfile.Manipulation.CSOM.Console)
+-  [UserProfile.Manipulation.CSOM.Console](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM.Console)
     

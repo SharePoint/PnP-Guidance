@@ -10,7 +10,7 @@ The Core.MMS sample console application shows you how to interact with the Share
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.MMS](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.MMS) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.MMS](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMS) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this app, you'll need:
 
@@ -182,7 +182,7 @@ You will see your term data from your managed metadata service displayed in the 
 
 -  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn904530(v=office.15).aspx)
     
--  [Core.MMSSync sample](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.MMSSync)
+-  [Core.MMSSync sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMSSync)
     
--  [Core.ContentTypesAndFields sample](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.ContentTypesAndFields)
+-  [Core.ContentTypesAndFields sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ContentTypesAndFields)
     

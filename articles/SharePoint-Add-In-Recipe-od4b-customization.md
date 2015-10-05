@@ -257,7 +257,7 @@ Second level of optimization on our code processing is done by versioning specif
 
 This approach will also significantly reduce the needed resources from Microsoft Azure, since we avoid refreshing or executing actual customization code when it’s not needed. This means reduction on the CPU and other resource usage in the Microsoft Azure and less requests towards Office 365.
 
-All customization logic is stored in this sample is located in *ApplySiteConfiguration* method at *OD4B.Configuration.Async.Common.SiteModificationManager* class. This method is also called by the WebJob with right parameters to start the customization process. Before we actually perform any operations, we are checking property bag value with a key of ‘Contoso_OneDriveVersion’ and execution will only continue if current version in the site is lower than the version which we are planning to apply.  Here’s the actual code which is using [Office PnP Core component](https://github.com/OfficeDev/PnP/tree/master/OfficeDevPnP.Core) to simplify the code.
+All customization logic is stored in this sample is located in *ApplySiteConfiguration* method at *OD4B.Configuration.Async.Common.SiteModificationManager* class. This method is also called by the WebJob with right parameters to start the customization process. Before we actually perform any operations, we are checking property bag value with a key of ‘Contoso_OneDriveVersion’ and execution will only continue if current version in the site is lower than the version which we are planning to apply.  Here’s the actual code which is using [Office PnP Core component](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core) to simplify the code.
 
 	// Check current site configuration status - is it already in right version?
     if (ctx.Web.GetPropertyBagValueInt(
@@ -563,7 +563,7 @@ Related PnP samples
 
 - [OD4B.Configuration.Async (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/OD4B.Configuration.Async)
 - [Provisioning.OneDriveProvisioning (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.OneDriveProvisioning)
-- [Office PnP Core component](https://github.com/OfficeDev/PnP/tree/master/OfficeDevPnP.Core)
+- [Office PnP Core component](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core)
 - Samples and content at https://github.com/OfficeDev/PnP
 
 Applies to

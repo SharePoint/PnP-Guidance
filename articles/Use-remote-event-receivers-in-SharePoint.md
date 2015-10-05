@@ -15,7 +15,7 @@ Use remote event receivers to handle events in the SharePoint app model. Use App
 [Additional resources](#bk_addresources)
 
 
-The  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.EventReceivers) sample shows how to use a provider-hosted app with a remote event receiver to handle the AppInstalled and AppUninstalling events. The AppInstalled and AppUninstalling events set up and remove SharePoint objects that the app uses when it runs. Additionally, the AppInstalled event handler adds the ItemAdded event handler to a list. Use this solution if you want to:
+The  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EventReceivers) sample shows how to use a provider-hosted app with a remote event receiver to handle the AppInstalled and AppUninstalling events. The AppInstalled and AppUninstalling events set up and remove SharePoint objects that the app uses when it runs. Additionally, the AppInstalled event handler adds the ItemAdded event handler to a list. Use this solution if you want to:
 
 - Configure your app on first run using the AppInstalled event to set up various SharePoint objects or additional event receivers that your app works with.
     
@@ -31,7 +31,7 @@ The  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/dev/Samples/Cor
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.EventReceivers) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EventReceivers) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this app, do the following:
 
@@ -300,5 +300,5 @@ When an item is added to the  **Remote Event Receiver Jobs** list, **ProcessEven
 
 -  [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx)
     
--  [Core.AppEvents.HandlerDelegation ](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.AppEvents.HandlerDelegation)
+-  [Core.AppEvents.HandlerDelegation ](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppEvents.HandlerDelegation)
     

@@ -140,7 +140,7 @@ Related links
 Related PnP samples
 ===================
 
-- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.SimpleTimerJob)
+- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.SimpleTimerJob)
 - Samples and content at https://github.com/OfficeDev/PnP
 
 Applies to

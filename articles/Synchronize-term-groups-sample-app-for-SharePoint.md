@@ -366,7 +366,7 @@ The following code shows how to perform a delete operation when a term group was
 
 -  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/dn904530(v=office.15).aspx)
     
--  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP/tree/master/OfficeDevPnP.Core)
+-  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP-Sites-Core/blob/master/Core)
     
 -  [Core.MMS sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMS)
     

@@ -98,7 +98,7 @@ Apply the following best practices when transforming specific solutions:
 	- Disable side loading of apps on your Office 365 subscription. Consult with your Office 365 administrator.
 
     
-- Page manipulation. You might need to implement page manipulation during your custom site provisioning process. The  [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Provisioning.Pages) code sample shows page manipulation techniques, including creating a wiki page, adding HTML content to the page, creating a promoted links list, creating pages with different layouts, adding out-of-the-box web parts to the page, and removing the page.
+- Page manipulation. You might need to implement page manipulation during your custom site provisioning process. The  [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages) code sample shows page manipulation techniques, including creating a wiki page, adding HTML content to the page, creating a promoted links list, creating pages with different layouts, adding out-of-the-box web parts to the page, and removing the page.
     
 - Site columns, list definitions, and content types. If your site columns, list definitions, and content types were created using the Feature framework elements, which were deployed using farm solutions, then you must use the swing or content migration transformation approach. This does not apply to Feature framework elements deployed using sandbox solutions. To use the content migration transformation approach, you must use third-party tools to remove the farm solution dependencies.
     
@@ -106,7 +106,7 @@ Apply the following best practices when transforming specific solutions:
     
 - Site templates and web templates. You should focus on transforming Feature framework elements deployed by the site template or web template. For example, ensure that the default.aspx page of the site is not replaced when retracting the farm solution.
     
-- Timer jobs. If you are using SharePoint Online, you cannot create and manage timer jobs. Instead, you can create a console application that uses Windows Task Scheduler or an  [Azure Web Job](http://azure.microsoft.com/documentation/articles/web-sites-create-web-jobs/) to schedule and run the console application remotely. When creating a custom timer job, determine whether you need to use a specific account or an OAuth-based app-only token. The [Core.TimerJobs.Samples](https://github.com/OfficeDev/PnP/tree/dev/Solutions/Core.TimerJobs.Samples) code sample shows how to create your own custom timer job.
+- Timer jobs. If you are using SharePoint Online, you cannot create and manage timer jobs. Instead, you can create a console application that uses Windows Task Scheduler or an  [Azure Web Job](http://azure.microsoft.com/documentation/articles/web-sites-create-web-jobs/) to schedule and run the console application remotely. When creating a custom timer job, determine whether you need to use a specific account or an OAuth-based app-only token. The [Core.TimerJobs.Samples](https://github.com/OfficeDev/PnP/tree/master/Solutions/Core.TimerJobs.Samples) code sample shows how to create your own custom timer job.
     
     **Note**  If your timer job uses server-side code, you will have to redesign your timer job to use the CSOM or another method.
 

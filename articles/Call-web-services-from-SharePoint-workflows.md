@@ -30,9 +30,9 @@ This article describes three code samples that show you how to call web services
 
 |**Task**|**Sample**|
 |:-----|:-----|
-|Call custom web services from a workflow|[Workflow.CallCustomService](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.CallCustomService)|
-|Call a custom web service from a workflow and update SharePoint by using the SharePoint web proxy|[Workflow.CallServiceUpdateSPViaProxy](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.CallServiceUpdateSPViaProxy)|
-|Associate a workflow with the host web|[Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.AssociateToHostWeb)|
+|Call custom web services from a workflow|[Workflow.CallCustomService](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService)|
+|Call a custom web service from a workflow and update SharePoint by using the SharePoint web proxy|[Workflow.CallServiceUpdateSPViaProxy](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy)|
+|Associate a workflow with the host web|[Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.AssociateToHostWeb)|
 
 **Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957896.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
 
@@ -40,12 +40,12 @@ This article describes three code samples that show you how to call web services
 ## Call custom web services from a workflow
 <a name="bk1"> </a>
 
-The  [Workflow.CallCustomService ](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.CallCustomService) sample shows you how to create a workflow that calls a custom web service that updates SharePoint list data. It also shows you how to design a provider-hosted app so that it queries a web service by using the remotely hosted web application that deploys with the app. This sample is useful when you want all the interactions with the web service to be handled by the remotely hosted portion of your provider-hosted app.
+The  [Workflow.CallCustomService ](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService) sample shows you how to create a workflow that calls a custom web service that updates SharePoint list data. It also shows you how to design a provider-hosted app so that it queries a web service by using the remotely hosted web application that deploys with the app. This sample is useful when you want all the interactions with the web service to be handled by the remotely hosted portion of your provider-hosted app.
 
 The sample works by starting a workflow from a remote web application. This workflow passes query information submitted by the user to the remote web application, which then uses that information to construct a query to the Northwind OData web service. The query returns the product suppliers for a given country. After it receives that information, the remote web application updates a product suppliers list that the app has deployed to the app web.
 
 
-**Note**  The  [Workflow.CallCustomService ](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.CallCustomService) sample page contains instructions for deploying this app. You can also deploy and test with F5 debugging in Visual Studio if you follow the instructions in the blog post [Debugging SharePoint 2013 workflows using Visual Studio 2013](http://blogs.msdn.com/b/officeapps/archive/2013/10/30/debugging-sharepoint-2013-workflows-using-visual-studio-2013.aspx).
+**Note**  The  [Workflow.CallCustomService ](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService) sample page contains instructions for deploying this app. You can also deploy and test with F5 debugging in Visual Studio if you follow the instructions in the blog post [Debugging SharePoint 2013 workflows using Visual Studio 2013](http://blogs.msdn.com/b/officeapps/archive/2013/10/30/debugging-sharepoint-2013-workflows-using-visual-studio-2013.aspx).
 
 This app's start page includes a drop-down menu from which you can select a country for which you want to create a product suppliers list (Figure 1). 
 
@@ -249,7 +249,7 @@ If the workflow is approved, it changes the value of the isApproved field of the
 ## Call a custom web service from a workflow and update SharePoint by using the SharePoint web proxy
 <a name="bk2"> </a>
 
-The  [Workflow.CallServiceUpdateSPViaProxy ](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.CallServiceUpdateSPViaProxy) sample shows how to design a provider-hosted app to query a web service and then pass that information to a SharePoint list via the SharePoint 2013 web proxy.
+The  [Workflow.CallServiceUpdateSPViaProxy ](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy) sample shows how to design a provider-hosted app to query a web service and then pass that information to a SharePoint list via the SharePoint 2013 web proxy.
 
 The sample shows a task that is useful when you want to encapsulate all the interactions with a web service so that they are handled directly by the workflow. Using the web proxy makes it easier to update the remote web application logic without having to update the workflow instance. If you're not using the proxy and you have to update the logic in your web application, you'll have to remove the existing workflow instances and then redeploy the app. For this reason, we recommend this design when you need to call a remote web service. 
 
@@ -473,7 +473,7 @@ If the workflow is approved, it changes the value of the isApproved field of the
 ## Associate a workflow with the host web
 <a name="bk3"> </a>
 
-The  [Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.AssociateToHostWeb) sample shows you how to deploy a workflow to the host web and associate it with a list on the host web by using tools in Visual Studio 2013. The instructions for this sample show you how to create a workflow in Visual Studio, deploy it to the host web, and associate it with a list on the host web.
+The  [Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.AssociateToHostWeb) sample shows you how to deploy a workflow to the host web and associate it with a list on the host web by using tools in Visual Studio 2013. The instructions for this sample show you how to create a workflow in Visual Studio, deploy it to the host web, and associate it with a list on the host web.
 
 The sample contains a simple workflow that can be associated with any list. The instructions for deploying this workflow show you how to work around the current limitations of the Visual Studio workflow tools by packaging the app, opening it up and editing a configuration file, and then repackaging it manually before deploying it to the host web.
 
@@ -486,7 +486,7 @@ When you open this project in Visual Studio, you'll see that it is a simple, gen
 ### Deploy a workflow to the host web
 
 
-1 - Open the shortcut menu (right-click) for the  [Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.AssociateToHostWeb) app project in the project explorer, and select **Publish**. You'll see a window that contains a  **Package the app** button, as shown in Figure 15.
+1 - Open the shortcut menu (right-click) for the  [Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.AssociateToHostWeb) app project in the project explorer, and select **Publish**. You'll see a window that contains a  **Package the app** button, as shown in Figure 15.
     
     **Figure 15. Publish your app screen**
 
@@ -540,11 +540,11 @@ You have now deployed the workflow to the host web and associated it with a list
     
 -  [Debugging SharePoint 2013 workflows using Visual Studio 2013](http://blogs.msdn.com/b/officeapps/archive/2013/10/30/debugging-sharepoint-2013-workflows-using-visual-studio-2013.aspx)
     
--  [Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.AssociateToHostWeb)
+-  [Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.AssociateToHostWeb)
     
--  [Workflow.CallServiceUpdateSPViaProxy](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.CallServiceUpdateSPViaProxy)
+-  [Workflow.CallServiceUpdateSPViaProxy](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy)
     
--  [Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.AssociateToHostWeb)
+-  [Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.AssociateToHostWeb)
     
--  [Workflow.CallCustomService](https://github.com/OfficeDev/PnP/tree/dev/Samples/Workflow.CallCustomService)
+-  [Workflow.CallCustomService](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService)
     

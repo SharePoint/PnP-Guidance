@@ -6,7 +6,7 @@ You can use a provider-hosted app to migrate and import SharePoint user profile 
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
     
-The [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ProfileProperty.Migration) sample app shows you how to migrate user profile data from SharePoint Server 2010 or SharePoint Server 2013 into SharePoint Online.
+The [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfileProperty.Migration) sample app shows you how to migrate user profile data from SharePoint Server 2010 or SharePoint Server 2013 into SharePoint Online.
     
 This sample includes two console applications. Both use the userprofileservice.asmx web service to extract single and multivalued user profile data to an XML file, and to import the extracted data into the user profile service in SharePoint Online.
 Use this code sample if you want to:
@@ -19,7 +19,7 @@ Use this code sample if you want to:
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ProfileProperty.Migration) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub. The code sample contains two projects.
+To get started, download the  [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfileProperty.Migration) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub. The code sample contains two projects.
 
 For the  **Contoso.ProfileProperty.Migration.Extract** project:
 
@@ -415,9 +415,9 @@ static void SetSingleProfileProperty(string UserName, string PropertyName, strin
 
 -  [User profile solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/b6d19973-cf74-4640-a742-821f562ba5af.aspx)
     
--  [Core.ProfilePictureUploader](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ProfilePictureUploader)
+-  [Core.ProfilePictureUploader](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfilePictureUploader)
     
--  [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/dev/Samples/UserProfile.Manipulation.CSOM)
+-  [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM)
     
--  [UserProfile.Manipulation.CSOM.Console](https://github.com/OfficeDev/PnP/tree/dev/Samples/UserProfile.Manipulation.CSOM.Console)
+-  [UserProfile.Manipulation.CSOM.Console](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM.Console)
     

@@ -7,7 +7,7 @@ As part of your Enterprise Content Management (ECM) strategy, you can automatica
 
     
 
-The [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/ECM.AutoTagging) sample shows you how to use a provider-hosted app to automatically tag content added to a SharePoint library with data sourced from a custom user profile property. This app uses remote event receivers, hosted on an Azure Web Site, to:   
+The [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.AutoTagging) sample shows you how to use a provider-hosted app to automatically tag content added to a SharePoint library with data sourced from a custom user profile property. This app uses remote event receivers, hosted on an Azure Web Site, to:   
 
 - Create fields, content types, and document libraries.
     
@@ -29,7 +29,7 @@ Use this solution if you want to:
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/ECM.AutoTagging) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.AutoTagging) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this app, do the following:
 
@@ -381,5 +381,5 @@ public static void RemoveEventReceiver(ClientContext ctx, List list, string rece
 
 -  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/dn904530(v=office.15).aspx)
     
--  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP/tree/master/OfficeDevPnP.Core)
+-  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core)
     

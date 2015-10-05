@@ -15,7 +15,7 @@ Upload files larger than 2MB to SharePoint and SharePoint Online using SaveBinar
  [Additional resources](#bk_addresources)
 
 
-The  [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.LargeFileUpload) sample shows you how to use a provider-hosted app to upload large files to SharePoint, and how to bypass the 2 MB file upload limit. Use this solution if you want to upload files that are larger than 2 MB to SharePoint. This sample runs as a console application that uploads large files to a document library by using one of the following methods:
+The  [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.LargeFileUpload) sample shows you how to use a provider-hosted app to upload large files to SharePoint, and how to bypass the 2 MB file upload limit. Use this solution if you want to upload files that are larger than 2 MB to SharePoint. This sample runs as a console application that uploads large files to a document library by using one of the following methods:
 
 - The  ** [SaveBinaryDirect](https://msdn.microsoft.com/library/office/ee538285.aspx)** method on the **Microsoft.SharePoint.Client.File** class.
     
@@ -42,7 +42,7 @@ The following table lists the file upload methods that are available and describ
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.LargeFileUpload) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.LargeFileUpload) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 
 ## Using the Core.LargeFileUpload sample app
@@ -342,5 +342,5 @@ After the code sample is finished, in your Office 365 site, you can go to the  *
     
     
     
--  [Core.BulkDocumentUploader sample](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.BulkDocumentUploader)
+-  [Core.BulkDocumentUploader sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.BulkDocumentUploader)
     

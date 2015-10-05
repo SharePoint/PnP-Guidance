@@ -36,7 +36,7 @@ In such a scenario, team sites usually do not require the amount of custom brand
 **Deployment considerations**
 
 - When deploying custom master pages to *publishing sites* you only need to deploy the custom master pages to the root site.
-	+ The [Provisioning.PublishingFeatures (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Provisioning.PublishingFeatures) demonstrates how to deploy custom master pages to publishing sites. 
+	+ The [Provisioning.PublishingFeatures (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.PublishingFeatures) demonstrates how to deploy custom master pages to publishing sites. 
 	+ The [Provisioning SharePoint Publishing Features (O365 PnP Video)](http://channel9.msdn.com/Blogs/Office-365-Dev/Provisioning-SharePoint-Publishing-Features-Office-365-Developer-Patterns-and-Practices) walks you through the sample. 	
 - When deploying custom master pages to *non-publishing sites* you need to deploy the custom master pages to each site.
 
@@ -80,10 +80,10 @@ Related links
 Related PnP samples
 ===================
 
-- [Theme management using CSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.DeployCustomThemeWeb)
+- [Theme management using CSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.DeployCustomThemeWeb)
 - [AlternateCSSUrl and SiteLogoUrl Properties in the web object (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)
-- [Set theme to site (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.SetThemeToSite)
-- [Setting a SharePoint Theme in an App for SharePoint (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Branding.Themes)
+- [Set theme to site (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.SetThemeToSite)
+- [Setting a SharePoint Theme in an App for SharePoint (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.Themes)
 - [Making out of the box Seattle master responsive (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.InjectResponsiveCSS)
 - Samples and content at [https://github.com/OfficeDev/PnP](https://github.com/OfficeDev/PnP)
 

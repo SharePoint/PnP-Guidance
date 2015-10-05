@@ -60,7 +60,7 @@ When you need to define specific views for SharePoint list data and modify the r
 
 The following sample sets the JSLink property on a SharePoint List View Web Part.
 
-- [Branding.ClientSideRendering (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.ClientSideRendering)
+- [Branding.ClientSideRendering (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.ClientSideRendering)
 	+ Includes 9 samples that set the JSLink property on a SharePoint List View Web Part and an explanation of how each sample was implemented.
 	+ The RegisterJStoWebPart method sets the List View Web Part's JSLink property. 
 
@@ -126,7 +126,7 @@ Related links
 Related PnP samples
 ===================
 
-- [Branding.ClientSideRendering (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.ClientSideRendering)
+- [Branding.ClientSideRendering (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.ClientSideRendering)
 - [Branding.JSLink (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.JSLink)
 - Samples and content at https://github.com/OfficeDev/PnP
 

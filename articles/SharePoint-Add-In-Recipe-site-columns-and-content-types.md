@@ -79,7 +79,7 @@ Use a Provider-hosted SharePoint Add-in
 ---------------------------------------
 This option works well when you need to provide your end users with a self-service ability to create SharePoint site collections and sub sites based on custom templates.
 
-- [Core.ContentTypesAndFields (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.ContentTypesAndFields)
+- [Core.ContentTypesAndFields (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ContentTypesAndFields)
 	+ Demonstrates how to create a new content type in the host web, create a taxonomy field in the host web and wire it up to the taxonomy, create a list and associate it with a content type,  and create content types and fields in particular languages.
 
 Use Windows/Java/iOS applications or PowerShell scripts
@@ -87,9 +87,9 @@ Use Windows/Java/iOS applications or PowerShell scripts
 
 This option works well in Dev-Ops scenarios. It allows you to create custom applications or scripts that are specifically built to work with your Dev-Ops processes. This option provides the ultimate level of automation because you can build the SharePoint Add-ins and scripts to run without any user interaction.  
 
-- [Core.CreateContentTypes (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.CreateContentTypes)
+- [Core.CreateContentTypes (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes)
 	+ This sample shows how you can create site columns, content types and add then add the site columns to the content type. It also explains the new localization features that have been introduced for Office 365 CSOM APIs.
-- [Core.CreateDocumentContentType (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.CreateDocumentContentType)
+- [Core.CreateDocumentContentType (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateDocumentContentType)
 	+ This sample shows how you can create document content types and add then associate a document template to the content type.
 
 Related links
@@ -102,9 +102,9 @@ Related links
 Related PnP samples
 ===================
 
-- [Core.CreateContentTypes (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.CreateContentTypes)
-- [Core.ContentTypesAndFields (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.ContentTypesAndFields)
-- [Core.CreateDocumentContentType (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.CreateDocumentContentType)
+- [Core.CreateContentTypes (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes)
+- [Core.ContentTypesAndFields (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ContentTypesAndFields)
+- [Core.CreateDocumentContentType (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateDocumentContentType)
 - [Branding.DisplayTemplates (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.DisplayTemplates)
 - [Core.DataStorageModels (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.DataStorageModels)
 - Samples and content at [https://github.com/OfficeDev/PnP](https://github.com/OfficeDev/PnP)
