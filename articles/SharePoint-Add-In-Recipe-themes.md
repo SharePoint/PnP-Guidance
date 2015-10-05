@@ -1,4 +1,4 @@
-SharePoint Add-in Recipe - Themes
+SharePoint Add-in Recipe - Branding SharePoint Sites
 =================================
 
 Summary
