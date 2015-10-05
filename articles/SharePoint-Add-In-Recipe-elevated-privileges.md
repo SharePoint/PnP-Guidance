@@ -1,4 +1,4 @@
-SharePoint Add-in Recipe - Elevated privileges
+SharePoint Add-in Recipe - App-Only and Elevated privileges
 ==============================================
 
 Summary
