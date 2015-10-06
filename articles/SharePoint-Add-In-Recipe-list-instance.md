@@ -1,4 +1,4 @@
-SharePoint Add-in model recipe - List instance
+SharePoint Add-in Recipe - List instance
 ==============================================
 
 Summary

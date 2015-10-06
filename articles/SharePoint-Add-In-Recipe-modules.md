@@ -1,4 +1,4 @@
-SharePoint Add-in model recipe - Modules
+SharePoint Add-in Recipe - Modules
 ========================================
 
 Summary

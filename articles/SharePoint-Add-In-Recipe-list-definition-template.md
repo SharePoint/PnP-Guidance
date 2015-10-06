@@ -1,4 +1,4 @@
-SharePoint Add-in model recipe - List definition / list template
+SharePoint Add-in Recipe - List definition / list template
 ================================================================
 
 Summary
