@@ -19,6 +19,8 @@ As a rule of a thumb, we would like to provide the following high-level guidelin
 - The service end point that implements a event receiver must be accessible by anonymous users.
 - Event receivers added to the Add-in web allow you to return an access token.
 - Event receivers added to the host web will return access token, if they are applied from app context using app access token and operation in the host web is end user driven (ItemAdded etc.)
+- AppInstalled event must complete within 30 seconds or SharePoint will think it has failed. SharePoint will rerun the event 3 times and after fourth execution SharePoint will consider add-in installation to be failed
+- Normal events like ItemAdded have also timeout of 30 seconds, but there's no retry mechanism
 - Event receivers added to host web without app context, for example with SharePointOnlineCredentials or other means, will not return access token and you'll have to access the host web with app-only access token
 - Adding event receivers to the host web is supported.
 	+ It is only possible to do this via CSOM/REST APIs, not by using Visual Studio wizards.
