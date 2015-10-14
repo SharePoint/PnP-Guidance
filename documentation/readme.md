@@ -1,5 +1,5 @@
 # Documentation and Presentations #
-All communiyt call and other presentations have been moved from these folders to http://docs.com/OfficeDevPnP.
+All community call and other presentations have been moved from these folders to http://docs.com/OfficeDevPnP.
 
 Other resources
 - Generic guidance is available from the MSDN under http://aka.ms/OfficeDevPnPMSDN.
