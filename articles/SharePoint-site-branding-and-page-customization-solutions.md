@@ -29,8 +29,6 @@ This section builds on your knowledge about [SharePoint development and design t
 
 ## Key terms and concepts related to SharePoint branding
 <a name="sectionSection0"> </a>
-ex
-
 
 |**Term or concept**|**Definition**|**More information**|
 |:-----|:-----|:-----|
