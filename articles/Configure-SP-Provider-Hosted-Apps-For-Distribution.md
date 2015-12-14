@@ -7,7 +7,7 @@ This page explains issues that may arise when sharing a SharePoint Provider-Host
 
 # Configure SharePoint Provider-Hosted Add-ins for Distribution
 
-All SharePoint Provider-Hosted add-ins created using Visual Studio 2013 include a NuGet package that adds SharePoint-specific code and references to the web application that serves as the RemoteWeb for the SharePoint app. 
+All SharePoint Provider-Hosted add-ins created using Visual Studio 2013 include a NuGet package that adds SharePoint-specific code and references to the web application that serves as the RemoteWeb for the SharePoint add-in. 
 
 The NuGet package added to the web application project by the Office Developer Tools in Visual Studio is not present in the NuGet package registry and therefore attempts to perform a NuGet package restore will fail because it cannot find a matching package.
 

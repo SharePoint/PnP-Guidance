@@ -65,14 +65,14 @@ Since by default Office 365 theme settings are for controlling OD4B site suite b
 
 This is an approach where use centralized landing page as the location for starting the needed customization process. This means that you would have to have one centralized location, like company intranet front page, where the users are always landing when they open up their browser. This is pretty typical process with midsized and larger enterprises where corporate landing page is then controlled using group policy settings in the AD. This will ensure that end users cannot override default welcome page of the company domain joined browsers.
 
-When user arrives to the intranet, we will have hidden app part in the page, which will start the customization process. It can actually be responsible of the whole OD4B site creation as well, since normally user would have to visit the OD4B site once time, before the site creation process will be started. Hidden app part is actually hosting a page from provider hosted app hosted in Azure. This page is then responsible of starting the customization process.
+When user arrives to the intranet, we will have hidden app part in the page, which will start the customization process. It can actually be responsible of the whole OD4B site creation as well, since normally user would have to visit the OD4B site once time, before the site creation process will be started. Hidden app part is actually hosting a page from provider hosted add-in hosted in Azure. This page is then responsible of starting the customization process.
 
 Let’s have a closer look on the logical design of this approach.
 
 ![](media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-04.png)
 
 1. Place hidden app part to centralized site where end users will land. Typically this is the corporate intranet front page.
-2. App part is hosting a page from provider hosted app, where in the server side code we initiate the customization process by adding needed metadata to the azure storage queue. This means that this page will only receive the customization request, but will not actually apply any changes to keep the processing time normal.
+2. App part is hosting a page from provider hosted add-in, where in the server side code we initiate the customization process by adding needed metadata to the azure storage queue. This means that this page will only receive the customization request, but will not actually apply any changes to keep the processing time normal.
 3. This is the actual azure storage queue, which will receive the messages to queue for processing. This way we can handle the customization controlling process asynchronously so that it does not really matter how long end user will stay on the front page of the Intranet. If the customization process would be synchronous, we would be dependent on end user to keep the browser open in the Intranet front page until page execution is finalized. This would not definitely be optimal end user experience. 
 4. WebJob hooked to follow the storage queue, which is called when new item is placed to the storage queue. This WebJob will receive the needed parameters and metadata from the queued message to access right site collection. WebJob is using app only token and have been granted the needed permissions to manipulate site collections in the tenant level.
 5. Actual customizations are applied one-by-one to those people’s sites who visit the intranet front page to start the process.
@@ -111,7 +111,7 @@ One of the key downsides of this option is that there can clearly be a situation
 ----------
 
 ### Related links ###
--  [Customizing OneDrive for Business sites with app model (MSDN blog article)](http://blogs.msdn.com/b/vesku/archive/2015/01/01/customizing-onedrive-for-business-sites-with-app-model.aspx)
+-  [Customizing OneDrive for Business sites with add-in model (MSDN blog article)](http://blogs.msdn.com/b/vesku/archive/2015/01/01/customizing-onedrive-for-business-sites-with-app-model.aspx)
 
 ### Related PnP samples ###
 -  [Customizing OD4B sites using Async pattern](#)
@@ -123,7 +123,7 @@ One of the key downsides of this option is that there can clearly be a situation
 -  Office 365 Dedicated (D) - *partly*
 -  SharePoint 2013 on-premises - *partly*
 
-*Patterns for Dedicated and on-premises are identical with app model techniques, but there are differences on the possible technologies which can be used.*
+*Patterns for Dedicated and on-premises are identical with add-in model techniques, but there are differences on the possible technologies which can be used.*
 
 ### Author
 Vesa Juvonen (Microsoft) - [@vesajuvonen](https://twitter.com/vesajuvonen)

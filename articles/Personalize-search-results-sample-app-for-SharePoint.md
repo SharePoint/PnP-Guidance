@@ -83,7 +83,7 @@ Choosing  **Perform Personalized Search** calls the **btnPersonalizedSearch_Clic
 
 
 
-- Uses  **PeopleManager** to get all user profile properties for the user running this app.
+- Uses  **PeopleManager** to get all user profile properties for the user running this add-in.
     
 - Retrieves and checks the value of the  **AboutMe** user profile property. If the value of the **AboutMe** property is **AppTest**, the search query retrieves all sites using the query string  `contentclass:"STS_Site"`. If the value of the  **AboutMe** property is not **AppTest**, the team site filter is appended to the query string ( `WebTemplate=STS`), and the search query retrieves team sites only.
     

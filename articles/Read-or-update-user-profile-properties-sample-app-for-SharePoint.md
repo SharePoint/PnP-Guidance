@@ -196,7 +196,7 @@ Scenario 3 shows how to update a multivalued user profile property. Figure 6 sho
 
 ![Screenshot of the start page for Scenario 3](media/30926c45-3ecc-4c7d-bc27-d896fc6136b2.png)
 
-To add new skills to the SPS-Skills user profile property from this app:
+To add new skills to the SPS-Skills user profile property from this add-in:
 
 
 

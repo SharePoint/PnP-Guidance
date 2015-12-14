@@ -33,7 +33,7 @@ The  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/master/Samples/
 
 To get started, download the  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EventReceivers) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
-Before you run this app, do the following:
+Before you run this add-in, do the following:
 
 
 1. In the properties on the Core.EventReceivers project, verify that  **Handle App Installed** and **Handle App Uninstalling** is set to **True**. Setting  **Handle App Installed** and **Handle App Uninstalling** to **True** creates a WCF service that defines the event handler for the **AppInstalled** and **AppUninstalling** event. In Core.EventReceivers, open the shortcut menu (right-click) on AppManifest.xml, and choose **Properties**. The  **InstalledEventEndpoint** and **UninstallingEventEndpoint** point to the remote event receiver that handles the **AppInstalled** and **AppUninstalling** events.

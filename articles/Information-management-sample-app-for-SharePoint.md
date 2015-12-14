@@ -23,7 +23,7 @@ The [Core.InformationManagement](https://github.com/OfficeDev/PnP/tree/master/Sa
 
 To get started, download the  [Core.InformationManagement](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.InformationManagement) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
-We recommend that you create at least one site policy, and assign it to your site before you run this app. Otherwise, the add-in will start without displaying sample data. For more information, see  [Overview of site policies in SharePoint 2013](http://technet.microsoft.com/en-US/library/jj219569%28v=office.15%29.aspx).
+We recommend that you create at least one site policy, and assign it to your site before you run this add-in. Otherwise, the add-in will start without displaying sample data. For more information, see  [Overview of site policies in SharePoint 2013](http://technet.microsoft.com/en-US/library/jj219569%28v=office.15%29.aspx).
 
 
 ## Using the Core.InformationManagement sample app

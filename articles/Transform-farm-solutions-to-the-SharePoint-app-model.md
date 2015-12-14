@@ -1,6 +1,6 @@
 
-# Transform farm solutions to the SharePoint app model
-Transform or convert your farm solutions to the SharePoint app model. Learn how to convert web parts, page layouts, master pages, timer jobs, and so on to the SharePoint app model.
+# Transform farm solutions to the SharePoint add-in model
+Transform or convert your farm solutions to the SharePoint add-in model. Learn how to convert web parts, page layouts, master pages, timer jobs, and so on to the SharePoint add-in model.
 
  **Last modified:** April 20, 2015
 
@@ -10,21 +10,21 @@ Transform or convert your farm solutions to the SharePoint app model. Learn how 
 
  [Plan the transformation process](#sectionSection0)
 
- [Transformation approaches to deploy your new app for SharePoint](#sectionSection1)
+ [Transformation approaches to deploy your new add-in for SharePoint](#sectionSection1)
 
  [Best practices for specific farm solutions ](#sectionSection2)
 
  [Additional resources](#bk_addresources)
 
 
-If you have extended your SharePoint environment by using farm solutions and you want to migrate your extensions to the SharePoint app model to make your transition to SharePoint Online easier, you need to transform your farm solutions to the SharePoint app model. Transforming your farm solutions to the SharePoint app model involves analyzing your existing extensions, designing and developing your new app for SharePoint, and then testing and deploying your app in your production environment. This article describes the process and best practices to use when you transform your farm solutions to the SharePoint app model.
+If you have extended your SharePoint environment by using farm solutions and you want to migrate your extensions to the SharePoint add-in model to make your transition to SharePoint Online easier, you need to transform your farm solutions to the SharePoint add-in model. Transforming your farm solutions to the SharePoint add-in model involves analyzing your existing extensions, designing and developing your new add-in for SharePoint, and then testing and deploying your add-in in your production environment. This article describes the process and best practices to use when you transform your farm solutions to the SharePoint add-in model.
 
 **Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn986827.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
 
 ## Plan the transformation process
 <a name="sectionSection0"> </a>
 
- When you transform your farm solutions to the SharePoint app model, you want to ensure that the impact on your users is minimal. Carefully analyze your current farm solutions, and then design your new app for SharePoint to meet the needs of your organization. We recommend the following process to ensure a successful transformation.
+ When you transform your farm solutions to the SharePoint add-in model, you want to ensure that the impact on your users is minimal. Carefully analyze your current farm solutions, and then design your new add-in for SharePoint to meet the needs of your organization. We recommend the following process to ensure a successful transformation.
 
 
 1. Readiness. Learn about:
@@ -39,32 +39,32 @@ If you have extended your SharePoint environment by using farm solutions and you
     
   - Reviewing requirements with your users. Consider asking your users to demonstrate how they use the existing farm solutions to perform their daily work.
     
-  - Identifying, documenting, and designing new functionality to include in the new app for SharePoint. Consider reviewing your list of new feature requests from your users for additional ideas.
+  - Identifying, documenting, and designing new functionality to include in the new add-in for SharePoint. Consider reviewing your list of new feature requests from your users for additional ideas.
     
-  - Identifying unused features, and agreeing with your users to omit this functionality from the new app for SharePoint. 
+  - Identifying unused features, and agreeing with your users to omit this functionality from the new add-in for SharePoint. 
     
-  - For each farm solution, determining whether to replace it with an app for SharePoint. Some solutions, such as SharePoint administration extensions, cannot be duplicated in the SharePoint app model. For more information, see  [add-ins for SharePoint compared with SharePoint solutions](http://msdn.microsoft.com/library/0e9efadb-aaf2-4c0d-afd5-d6cf25c4e7a8.aspx) and [Deciding between add-ins for SharePoint and SharePoint solutions](http://msdn.microsoft.com/library/8459e265-b8fd-4bf8-911e-d63cae8bf96f.aspx).
+  - For each farm solution, determining whether to replace it with an add-in for SharePoint. Some solutions, such as SharePoint administration extensions, cannot be duplicated in the SharePoint add-in model. For more information, see  [add-ins for SharePoint compared with SharePoint solutions](http://msdn.microsoft.com/library/0e9efadb-aaf2-4c0d-afd5-d6cf25c4e7a8.aspx) and [Deciding between add-ins for SharePoint and SharePoint solutions](http://msdn.microsoft.com/library/8459e265-b8fd-4bf8-911e-d63cae8bf96f.aspx).
     
-3.  Solution planning. Design the new application using the SharePoint app model based on:
+3.  Solution planning. Design the new application using the SharePoint add-in model based on:
     
       - The requirements gathered in step 2.
     
   - Your analysis of the existing code. During your code analysis, consider identifying portions of the code that can be dropped (for example, the code is no longer being used, or the requirements have changed).
     
-4. Develop and test the SharePoint app model version of your application. This is usually the most time-consuming step in the transformation process. 
+4. Develop and test the SharePoint add-in model version of your application. This is usually the most time-consuming step in the transformation process. 
     
-5. Deploy your new app. Depending on your requirements, you might decide to keep the farm solutions running in parallel to the new app for SharePoint, or you may retract the farm solution and only allow users to use the new app for SharePoint. In either scenario, ensure that your deployment is stable, and send appropriate communication to your users. If your content in existing site collections depended on your farm solutions (for example, if content was created by using a content type), before you fully retract the farm solution, you need to transform your existing content to use your new SharePoint app model solution. Ensure that you allow enough time to complete this task because it can be time consuming and difficult.
+5. Deploy your new add-in. Depending on your requirements, you might decide to keep the farm solutions running in parallel to the new add-in for SharePoint, or you may retract the farm solution and only allow users to use the new add-in for SharePoint. In either scenario, ensure that your deployment is stable, and send appropriate communication to your users. If your content in existing site collections depended on your farm solutions (for example, if content was created by using a content type), before you fully retract the farm solution, you need to transform your existing content to use your new SharePoint add-in model solution. Ensure that you allow enough time to complete this task because it can be time consuming and difficult.
     
 
-## Transformation approaches to deploy your new app for SharePoint
+## Transformation approaches to deploy your new add-in for SharePoint
 <a name="sectionSection1"> </a>
 
-After you finish development and unit testing of your new app for SharePoint, start transforming your farm solution to the new app for SharePoint by using one of the transformation approaches listed in the following table.
+After you finish development and unit testing of your new add-in for SharePoint, start transforming your farm solution to the new add-in for SharePoint by using one of the transformation approaches listed in the following table.
 
 |**Transformation approach**|**Description**|**Advantages**|**Disadvantages**|
 |:-----|:-----|:-----|:-----|
-|In-place|Deploy your new app for SharePoint into your existing SharePoint environment. You need to ensure your site is using the new app for SharePoint before retracting the farm solution.|<ul><li>Less overall user impact.</li><li>Less resources needed because you are using your existing SharePoint environment.</li><li>No need for third-party tools.</li><li>Minimal site downtime.</li><li>Upgrade one site collection at a time, rather than upgrading the entire farm all at once.</li><li>URLs do not change.</li></ul>|<ul><li>Difficult to track completion progress of all affected assets on a site.</li><li>Increased chance of creating orphans. When an asset points to a file on the file system which does not exist, this is referred to as an orphan.</li></ul>|
-|Swing or content migration|Extract your content from your existing site collections where your farm solutions are currently deployed, and deploy the content in a new site collection which uses the new app for SharePoint. When you migrate content to SharePoint Online, this process is normally used.|<ul><li>Clean SharePoint environment with no previous farm solution dependencies.</li><li>The new site collection is isolated from your production environment. Release the updated site collection when ready.</li.</ul>|<ul><li>Requires third-party tools to help with the content migration.</li><li>Requires an additional SharePoint environment.</li><li>Site downtime required.</li><li>URLs might change if you keep both sites running in parallel for a period of time.</li>|
+|In-place|Deploy your new add-in for SharePoint into your existing SharePoint environment. You need to ensure your site is using the new add-in for SharePoint before retracting the farm solution.|<ul><li>Less overall user impact.</li><li>Less resources needed because you are using your existing SharePoint environment.</li><li>No need for third-party tools.</li><li>Minimal site downtime.</li><li>Upgrade one site collection at a time, rather than upgrading the entire farm all at once.</li><li>URLs do not change.</li></ul>|<ul><li>Difficult to track completion progress of all affected assets on a site.</li><li>Increased chance of creating orphans. When an asset points to a file on the file system which does not exist, this is referred to as an orphan.</li></ul>|
+|Swing or content migration|Extract your content from your existing site collections where your farm solutions are currently deployed, and deploy the content in a new site collection which uses the new add-in for SharePoint. When you migrate content to SharePoint Online, this process is normally used.|<ul><li>Clean SharePoint environment with no previous farm solution dependencies.</li><li>The new site collection is isolated from your production environment. Release the updated site collection when ready.</li.</ul>|<ul><li>Requires third-party tools to help with the content migration.</li><li>Requires an additional SharePoint environment.</li><li>Site downtime required.</li><li>URLs might change if you keep both sites running in parallel for a period of time.</li>|
 
 ## Best practices for specific farm solutions
 <a name="sectionSection2"> </a>

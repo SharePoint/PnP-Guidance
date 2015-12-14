@@ -31,7 +31,7 @@ Use this solution if you want to:
 
 To get started, download the  [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.AutoTagging) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
-Before you run this app, do the following:
+Before you run this add-in , do the following:
 
 
 1. Create an Azure Web Site and deploy the ECM.AutoTaggingWeb project to it.
@@ -71,9 +71,9 @@ Before you run this app, do the following:
 
 ```
 
-5 - Package and deploy your app. 
+5 - Package and deploy your add-in . 
     
-When you start the app, the start page of the Document Autotagging provider-hosted add-in displays, as shown in Figure 2. The start page shows some additional configuration steps you need to perform before you assign or remove the event receivers. 
+When you start the add-in , the start page of the Document Autotagging provider-hosted add-in displays, as shown in Figure 2. The start page shows some additional configuration steps you need to perform before you assign or remove the event receivers. 
 
 
 **Figure 2. Additional configuration steps to be performed on the add-in start page in SharePoint**
@@ -81,7 +81,7 @@ When you start the app, the start page of the Document Autotagging provider-host
 ![Screenshot of the autotagging add-in start page, with three setup steps highlighted.](media/eb0521b2-11e2-4c57-8026-d7e838c21eae.png)
 
 
-## Using the ECM.Autotagging sample app
+## Using the ECM.Autotagging sample add-in 
 <a name="sectionSection1"> </a>
 
 This sample uses a remote event receiver to automatically tag (add metadata to) documents that are added to a document library, with data from a custom user profile property. The process flow for autotagging documents using the remote event receiver is shown in Figure 3.
@@ -99,7 +99,7 @@ To assign metadata to the newly created document in the document library by usin
     
 2. The  **ItemAdding** or **ItemAdded** method makes a call to the remove event receiver.
     
-3. The provider-hosted add-in fetches the value of a custom user profile property in the User Profile Service of SharePoint for that user. In this sample app, the Classification custom user profile property that was added previously is retrieved.
+3. The provider-hosted add-in fetches the value of a custom user profile property in the User Profile Service of SharePoint for that user. In this sample add-in , the Classification custom user profile property that was added previously is retrieved.
     
 4. The remote event receiver updates the metadata on the new document with the value of the custom user profile property for that user. 
     

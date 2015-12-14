@@ -23,7 +23,7 @@ Use this solution if you want to:
 
 To get started, download the  [Core.MMSSync](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMSSync) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
-Before you run this app, you'll need permission to access the term store in the managed metadata service. Figure 1 shows the Office 365 admin center where these permissions are assigned.
+Before you run this add-in, you'll need permission to access the term store in the managed metadata service. Figure 1 shows the Office 365 admin center where these permissions are assigned.
 
 
 **Figure 1. Assigning permissions to the term store in the SharePoint admin center**
@@ -44,7 +44,7 @@ To assign permissions to the term store:
 ## Using the Core.MMSSync sample app
 <a name="sectionSection1"> </a>
 
-When you start the app, you see a console application, as shown in Figure 2. You are prompted to enter the following information:
+When you start the add-in, you see a console application, as shown in Figure 2. You are prompted to enter the following information:
 
 
 - The URL of the Office 365 admin center that contains the source term store (this is the URL of the source managed metadata service). For example, you might enter https://contososource-admin.sharepoint.com.

@@ -41,7 +41,7 @@ The connected app parts and chat hub architecture includes the following compone
 
 
 
-1. SharePoint pages that include app parts. The app parts use the SignalR jQuery library. The app parts contain JavaScript code, which send and receive messages from the chat hub running in the provider-hosted app. Each app part must first connect to the chat hub. After connecting to the chat hub, app parts can send and receive messages from other connected app parts.
+1. SharePoint pages that include app parts. The app parts use the SignalR jQuery library. The app parts contain JavaScript code, which send and receive messages from the chat hub running in the provider-hosted add-in. Each app part must first connect to the chat hub. After connecting to the chat hub, app parts can send and receive messages from other connected app parts.
     
 2. A SignalR Hub Proxy, which establishes a socket connection to the chat hub. The SignalR Hub Proxy brokers messages between the app part's JavaScript code and the chat hub's C# code.
     
