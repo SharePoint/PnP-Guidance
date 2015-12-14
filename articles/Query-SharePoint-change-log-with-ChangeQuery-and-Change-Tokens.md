@@ -4,7 +4,7 @@ Use  **ChangeQuery** and **ChangeToken** to query the SharePoint change log for 
 
  **Last modified:** April 13, 2015
 
- _**Applies to:** apps for SharePoint | SharePoint 2013 | SharePoint Online_
+ _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
  **In this article**
 
@@ -29,7 +29,7 @@ The  [Core.ListItemChangeMonitor](https://github.com/OfficeDev/PnP/tree/master/S
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.ListItemChangeMonitor](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ListItemChangeMonitor) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.ListItemChangeMonitor](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ListItemChangeMonitor) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this code sample, do the following:
 

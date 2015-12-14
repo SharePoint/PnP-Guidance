@@ -4,7 +4,7 @@ Transform or convert your farm solutions to the SharePoint app model. Learn how 
 
  **Last modified:** April 20, 2015
 
- _**Applies to:** apps for SharePoint | SharePoint 2013 | SharePoint Online_
+ _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
  **In this article**
 
@@ -29,7 +29,7 @@ If you have extended your SharePoint environment by using farm solutions and you
 
 1. Readiness. Learn about:
     
-      - The SharePoint app model, different kinds of apps, and hosting options. For more information, see  [Overview of apps for SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx).
+      - The SharePoint add-in model, different kinds of add-ins, and hosting options. For more information, see  [Overview of add-ins for SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx).
     
   - Remote access technologies for accessing your on-premises data.
     
@@ -43,7 +43,7 @@ If you have extended your SharePoint environment by using farm solutions and you
     
   - Identifying unused features, and agreeing with your users to omit this functionality from the new app for SharePoint. 
     
-  - For each farm solution, determining whether to replace it with an app for SharePoint. Some solutions, such as SharePoint administration extensions, cannot be duplicated in the SharePoint app model. For more information, see  [Apps for SharePoint compared with SharePoint solutions](http://msdn.microsoft.com/library/0e9efadb-aaf2-4c0d-afd5-d6cf25c4e7a8.aspx) and [Deciding between apps for SharePoint and SharePoint solutions](http://msdn.microsoft.com/library/8459e265-b8fd-4bf8-911e-d63cae8bf96f.aspx).
+  - For each farm solution, determining whether to replace it with an app for SharePoint. Some solutions, such as SharePoint administration extensions, cannot be duplicated in the SharePoint app model. For more information, see  [add-ins for SharePoint compared with SharePoint solutions](http://msdn.microsoft.com/library/0e9efadb-aaf2-4c0d-afd5-d6cf25c4e7a8.aspx) and [Deciding between add-ins for SharePoint and SharePoint solutions](http://msdn.microsoft.com/library/8459e265-b8fd-4bf8-911e-d63cae8bf96f.aspx).
     
 3.  Solution planning. Design the new application using the SharePoint app model based on:
     
@@ -91,11 +91,11 @@ Apply the following best practices when transforming specific solutions:
     
     **Note**  To replace your existing web parts with app parts, you need to:
 			
-	- Enable side loading of apps in your Office 365 subscription. Consult with your Office 365 administrator.
-	- Use CSOM to enable side loading of apps on your site. For more information, see the Core.SideLoading code sample.
+	- Enable side loading of add-ins in your Office 365 subscription. Consult with your Office 365 administrator.
+	- Use CSOM to enable side loading of add-ins on your site. For more information, see the Core.SideLoading code sample.
 	- Install your app part on your site.
-	- Disable side loading of apps on your site.
-	- Disable side loading of apps on your Office 365 subscription. Consult with your Office 365 administrator.
+	- Disable side loading of add-ins on your site.
+	- Disable side loading of add-ins on your Office 365 subscription. Consult with your Office 365 administrator.
 
     
 - Page manipulation. You might need to implement page manipulation during your custom site provisioning process. The  [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages) code sample shows page manipulation techniques, including creating a wiki page, adding HTML content to the page, creating a promoted links list, creating pages with different layouts, adding out-of-the-box web parts to the page, and removing the page.
@@ -116,5 +116,5 @@ Apply the following best practices when transforming specific solutions:
 
 -  [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx)
     
--  [Build apps for SharePoint](https://msdn.microsoft.com/library/jj163230.aspx)
+-  [Build add-ins for SharePoint](https://msdn.microsoft.com/library/jj163230.aspx)
     

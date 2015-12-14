@@ -1,6 +1,6 @@
 
 # Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online
-The introduction of the Cloud App Model and apps for SharePoint provides alternatives to existing, established ways of branding and provisioning SharePoint sites. 
+The introduction of the Cloud Add-in Model and add-ins for SharePoint provides alternatives to existing, established ways of branding and provisioning SharePoint sites. 
 
  **Last modified:** April 28, 2015
 
@@ -14,13 +14,13 @@ The introduction of the Cloud App Model and apps for SharePoint provides alterna
 
  [Hierarchy of SharePoint structural elements](#sectionSection2)
 
- [Apps for SharePoint](#sectionSection3)
+ [add-ins for SharePoint](#sectionSection3)
 
  [File system and content databases, and how they work together](#sectionSection4)
 
  [File customization states and their effects on upgrade](#sectionSection5)
 
- [Site branding and provisioning with the Cloud App Model](#sectionSection6)
+ [Site branding and provisioning with the Cloud Add-in Model](#sectionSection6)
 
  [Branding and site provisioning code samples](#sectionSection7)
 
@@ -33,8 +33,8 @@ The introduction of the Cloud App Model and apps for SharePoint provides alterna
  [Additional resources](#bk_addresources)
 
 
-Up to now, you might have used the SharePoint feature framework, site templates, web templates, and site definitions to provision your sites and site collections. The remote provisioning pattern shows you how to create custom apps for SharePoint that provision site branding and perform other site provisioning tasks.
-The articles in this section provide information about using apps for SharePoint to provision and manage site branding, a pattern that is sometimes referred to as remote provisioning.
+Up to now, you might have used the SharePoint feature framework, site templates, web templates, and site definitions to provision your sites and site collections. The remote provisioning pattern shows you how to create custom add-ins for SharePoint that provision site branding and perform other site provisioning tasks.
+The articles in this section provide information about using add-ins for SharePoint to provision and manage site branding, a pattern that is sometimes referred to as remote provisioning.
 
 ## What you need to know about SharePoint
 <a name="sectionSection0"> </a>
@@ -52,7 +52,7 @@ To use the branding and site provisioning capabilities in SharePoint, you'll nee
     
 - File customization states and their long-term impact on upgrades.
     
-- Apps for SharePoint.
+- add-ins for SharePoint.
     
 - Client-side programming in SharePoint with the .NET client-side object model (CSOM) and REST APIs.
     
@@ -68,24 +68,24 @@ The following table lists terms and concepts that are useful to know as you star
 
 |**Term or concept**|**Description**|**For more information**|
 |:-----|:-----|:-----|
-|app for SharePoint|Lightweight web applications that integrate popular web standards and technologies to extend the capabilities of a SharePoint website by using the Cloud App Model.| [Build apps for SharePoint](http://msdn.microsoft.com/library/37727101-0692-4652-a481-e6d6379cf921.aspx)|
-|App web|The website from which an app is deployed.| [Host webs, app webs, and SharePoint components in SharePoint 2013](http://msdn.microsoft.com/library/b791cdf5-8aa2-47fa-bc4c-aee437354759.aspx)|
+|app for SharePoint|Lightweight web applications that integrate popular web standards and technologies to extend the capabilities of a SharePoint website by using the Cloud Add-in Model.| [Build add-ins for SharePoint](http://msdn.microsoft.com/library/37727101-0692-4652-a481-e6d6379cf921.aspx)|
+|App web|The website from which an add-in is deployed.| [Host webs, add-in webs, and SharePoint components in SharePoint 2013](http://msdn.microsoft.com/library/b791cdf5-8aa2-47fa-bc4c-aee437354759.aspx)|
 |Approval workflow|Workflows specific to publishing sites that specifies who approves the publication of a page and when.| [SharePoint 2013 approval workflow](http://blogs.msdn.com/b/thirusrinivasan1/archive/2013/10/31/sharepoint-2013-workflow-calling-a-wcf-service.aspx),  [Get started with workflows in SharePoint 2013](http://msdn.microsoft.com/library/a2643cd7-474d-4e4c-85bb-00f0b6685a1d.aspx)|
 |ClientContext|A central object that serves as a "center of gravity" for all SharePoint CSOM and JSOM operations.| [T:Microsoft.SharePoint.Client.ClientContext](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.clientcontext.aspx)|
-|Cloud App Model |Apps for SharePoint are self-contained pieces of functionality that extend the capabilities of a SharePoint website. You can use the Cloud App Model to author and deliver secure, reliable, flexible, and consistent apps for SharePoint.| [Overview of apps for SharePoint](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70.aspx)|
+|Cloud Add-in Model |add-ins for SharePoint are self-contained pieces of functionality that extend the capabilities of a SharePoint website. You can use the Cloud Add-in Model to author and deliver secure, reliable, flexible, and consistent add-ins for SharePoint.| [Overview of add-ins for SharePoint](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70.aspx)|
 |Content database|Content databases store all content for a site collection, including the following:
 <ul><li><p>Site documents and files in document libraries</p></li><li><p>List data</p></li><li><p>Web Part properties</p></li><li><p>User names and rights</p></li></ul>| [Database types and descriptions](https://technet.microsoft.com/en-us/library/cc678868.aspx)|
 |CSOM|Client-side object model. A model for writing client-side code for SharePoint using the .NET Framework.| [Get started using the client object model with external data in SharePoint 2013](http://msdn.microsoft.com/library/8ed91929-fdb6-4fde-ba2a-7942870575f3.aspx)<br/>[[MS-CSOM]: SharePoint Client Query Protocol](https://msdn.microsoft.com/en-us/library/dd912094%28v=office.15%29.aspx)<br/>[SharePoint 2013 .NET Server, CSOM, JSOM, and REST API index](http://msdn.microsoft.com/library/fddbb75f-9f6c-46d3-8d95-1d4a5e791dfa.aspx)|
 |Hive|SharePoint's physical files; the files in the file system. These files are distinct from content stored in a content database. The following is the location of the hive. `%program files%/Common Files/Microsoft Shared/Web Server Extensions/15/`||
-|Host web|The website on which an app is installed.| [Host webs, app webs, and SharePoint components in SharePoint 2013](http://msdn.microsoft.com/library/b791cdf5-8aa2-47fa-bc4c-aee437354759.aspx)|
+|Host web|The website on which an add-in is installed.| [Host webs, add-in webs, and SharePoint components in SharePoint 2013](http://msdn.microsoft.com/library/b791cdf5-8aa2-47fa-bc4c-aee437354759.aspx)|
 |OneDrive for Business|A personal library for storing and organizing work documents that are shareable within your organization.| [OneDrive for Business is different from OneDrive](https://support.office.microsoft.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2?CorrelationId=2ac1e496-1807-483a-a39f-c1a460efc7af&amp;ui=en-US&amp;rs=en-US&amp;ad=US#differences) [OneDrive for Business is different from your team site](https://support.office.microsoft.com/en-us/article/Should-I-save-my-documents-to-OneDrive-for-Business-or-a-team-site-d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e?CTT=5&amp;origin=HA102822076&amp;CorrelationId=e3a0512c-ab5f-4ae7-a58f-e33878242936&amp;ui=en-US&amp;rs=en-US&amp;ad=US)|
-|Remote provisioning|A model that provisions sites by using templates and code that runs outside SharePoint in a provider-hosted app.| [Site provisioning techniques and remote provisioning in SharePoint 2013](http://blogs.msdn.com/b/vesku/archive/2013/08/23/site-provisioning-techniques-and-remote-provisioning-in-sharepoint-2013.aspx)<br/>[Self-service site provisioning using apps for SharePoint 2013](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)|
+|Remote provisioning|A model that provisions sites by using templates and code that runs outside SharePoint in a provider-hosted app.| [Site provisioning techniques and remote provisioning in SharePoint 2013](http://blogs.msdn.com/b/vesku/archive/2013/08/23/site-provisioning-techniques-and-remote-provisioning-in-sharepoint-2013.aspx)<br/>[Self-service site provisioning using add-ins for SharePoint 2013](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)|
 |REST| A stateless architectural style that abstracts architectural elements and uses HTTP verbs to read and write data from webpages that contain XML files.| [How to: Set custom permissions on a list by using the REST interface](http://msdn.microsoft.com/library/d5fcc26c-4e44-404b-aacf-e9351af8cc7d.aspx)|
 |Root web|The first web inside of a site collection. The root web is also sometimes referred to as the "Web Application Root." ||
 |SharePoint Online|Cloud-based SharePoint offering in Office 365. | [SharePoint Online General Reference](https://msdn.microsoft.com/en-us/library/office/gg271151%28v=office.14%29.aspx#sectionSection0)|
 |Site|A group of sites that share the same owner and administrative settings, such as permissions.| [T:Microsoft.SharePoint.Client.Web](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.web.aspx)|
 |Site collection|A group of sites that share the same owner and administrative settings, such as permissions.| [Create a site collection in SharePoint 2013](https://technet.microsoft.com/en-us/library/cc263094.aspx)|
-|Site provisioning|A process for equipping sites with the features, structure, brand, and other functionality.| [Site provisioning techniques and remote provisioning in SharePoint 2013](http://blogs.msdn.com/b/vesku/archive/2013/08/23/site-provisioning-techniques-and-remote-provisioning-in-sharepoint-2013.aspx) [Self-service site provisioning using apps for SharePoint 2013](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)|
+|Site provisioning|A process for equipping sites with the features, structure, brand, and other functionality.| [Site provisioning techniques and remote provisioning in SharePoint 2013](http://blogs.msdn.com/b/vesku/archive/2013/08/23/site-provisioning-techniques-and-remote-provisioning-in-sharepoint-2013.aspx) [Self-service site provisioning using add-ins for SharePoint 2013](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)|
 |Subsite|A single SharePoint site in a SharePoint site collection. A subsite can inherit navigation and permissions from a parent site, or it can have unique permissions and navigation. You can create subsites that are based on the root site collection, or sites based on other site collections. You can choose to inherit permissions from the site collection or specify unique permissions for the subsite.||
 
 ## Hierarchy of SharePoint structural elements
@@ -102,12 +102,12 @@ Conceptually, the hierarchy of SharePoint objects is expressed in terms of conta
 |Site collections|Containers of sites that define permissions, and that can define some aspects of branding, depending on the configuration, for all sites within the container.|
 |Sites|A collection of lists, libraries, structure, navigation, and look and feel elements usually organized around a central topic or theme. Sites that are children of other sites in the same site collection are sometimes called subsites. A subsite is a site that is stored in a subfolder of the parent website. A subsite can inherit permissions and navigation structure from its parent site, or administration and authoring permissions might be unique for the subsite. Subsites can have child subsites.|
 |Apps, lists, and document libraries|Containers of content and data that are organized into specific structures. The Master Page Gallery is a special document library in SharePoint 2010 publishing sites where all branding elements - master pages, page layouts, JavaScript files, CSS, and images - are stored by default. Every site has its own Master Page Gallery. In Team sites, the master page comes from the site, not the site collection.|
-|Items|Individual pieces of content or data that are contained in apps, lists, and document libraries.|
+|Items|Individual pieces of content or data that are contained in add-ins, lists, and document libraries.|
 
-## Apps for SharePoint
+## add-ins for SharePoint
 <a name="sectionSection3"> </a>
 
-Apps for SharePoint are lightweight solutions that don't install on the SharePoint host server, which means they don't make excessive API calls to the host server. You can build apps for SharePoint by using the Cloud App Model. Users can discover and download apps from the Office Store or from the enterprise's App Catalog. For more information, see  [Overview of apps for SharePoint](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70.aspx). 
+add-ins for SharePoint are lightweight solutions that don't install on the SharePoint host server, which means they don't make excessive API calls to the host server. You can build add-ins for SharePoint by using the Cloud Add-in Model. Users can discover and download add-ins from the Office Store or from the enterprise's App Catalog. For more information, see  [Overview of add-ins for SharePoint](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70.aspx). 
 
 
 ## File system and content databases, and how they work together
@@ -151,15 +151,15 @@ The state of SharePoint files and content affects how easy it is to apply update
 **Note**  If a file has been customized, it won't be updated when you install new service packs or the SharePoint Online service is updated.
 
 
-## Site branding and provisioning with the Cloud App Model
+## Site branding and provisioning with the Cloud Add-in Model
 <a name="sectionSection6"> </a>
 
-In SharePoint 2013, you can use custom CSOM code in apps for SharePoint to provision SharePoint site collections, sites, and subsites with branding elements. This site provisioning pattern is called remote provisioning. SharePoint is increasingly focused on cloud-based deployments, so this pattern was created to help you use SharePoint's out-of-the-box capabilities to provision site branding in a way that reduces complexity and long-term operational costs.
+In SharePoint 2013, you can use custom CSOM code in add-ins for SharePoint to provision SharePoint site collections, sites, and subsites with branding elements. This site provisioning pattern is called remote provisioning. SharePoint is increasingly focused on cloud-based deployments, so this pattern was created to help you use SharePoint's out-of-the-box capabilities to provision site branding in a way that reduces complexity and long-term operational costs.
 
 
-### What can I do with the Cloud App Model?
+### What can I do with the Cloud Add-in Model?
 
-Sometimes, there is no correlation between features in full-trust code and the Cloud App Model. When developing a customization based on apps for SharePoint and the Cloud App Model, consider an alternative approach rather than a direct conversion, and strive to keep customizations as simple as possible. Here are some examples:
+Sometimes, there is no correlation between features in full-trust code and the Cloud Add-in Model. When developing a customization based on add-ins for SharePoint and the Cloud Add-in Model, consider an alternative approach rather than a direct conversion, and strive to keep customizations as simple as possible. Here are some examples:
 
 
 - Replace event receivers with remote event receivers (see  [How to: Create a remote event receiver](http://msdn.microsoft.com/library/628c6103-52f9-4d85-9464-4a6862b36640.aspx)).
@@ -168,21 +168,21 @@ Sometimes, there is no correlation between features in full-trust code and the C
     
 - Replace timer jobs with Microsoft Azure or on-premises  [worker roles](https://msdn.microsoft.com/library/azure/jj149831.aspx).
     
-Some things, such as HTTP modules and HTTP handlers can not be built with the Cloud App Model. Before you try to replicate an existing customization in the Cloud App Model, first consider why these customizations were built and whether an out-of-the-box SharePoint feature can work.
+Some things, such as HTTP modules and HTTP handlers can not be built with the Cloud Add-in Model. Before you try to replicate an existing customization in the Cloud Add-in Model, first consider why these customizations were built and whether an out-of-the-box SharePoint feature can work.
 
 
 ### Remote provisioning pattern
 
-Remote provisioning uses new app patterns to move provisioning logic outside of the SharePoint farm entirely. This approach eliminates the need to use the feature framework or other customizations in the SharePoint farm, and instead enables you to control customizations outside of SharePoint. This approach makes it possible to update and change the provisioning engine without affecting SharePoint availability. For more information about the feature framework, see  [Site Definitions and Provisioning: the Feature Framework](https://msdn.microsoft.com/en-us/library/ms454453%28v=office.12%29.aspx). Aspects and implementations of the remote provisioning pattern are documented in detail in this section. You may find it useful to get started with the following introductions to the pattern:
+Remote provisioning uses new add-in patterns to move provisioning logic outside of the SharePoint farm entirely. This approach eliminates the need to use the feature framework or other customizations in the SharePoint farm, and instead enables you to control customizations outside of SharePoint. This approach makes it possible to update and change the provisioning engine without affecting SharePoint availability. For more information about the feature framework, see  [Site Definitions and Provisioning: the Feature Framework](https://msdn.microsoft.com/en-us/library/ms454453%28v=office.12%29.aspx). Aspects and implementations of the remote provisioning pattern are documented in detail in this section. You may find it useful to get started with the following introductions to the pattern:
 
 
--  [Self-service site provisioning using apps for SharePoint 2013](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
+-  [Self-service site provisioning using add-ins for SharePoint 2013](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
     
 -  [SharePoint 2013 site provisioning techniques video recording](http://blogs.msdn.com/b/vesku/archive/2013/09/09/sharepoint-2013-site-provisioning-techniques-presentation-video-recording.aspx)
     
--  [Why did we introduce the SharePoint app pattern?](http://blogs.msdn.com/b/vesku/archive/2013/09/06/introduction-to-sp-apps-or-cam.aspx)
+-  [Why did we introduce the SharePoint add-in pattern?](http://blogs.msdn.com/b/vesku/archive/2013/09/06/introduction-to-sp-apps-or-cam.aspx)
     
-In the simplest implementation of the remote provisioning pattern, provisioning requirements are stored in a SQL Server or SQL Azure database or XML file; then, an app for SharePoint reads requirements from the data source, reads branding elements from their source location, and applies branding elements to the target site based on the provisioning requirements.
+In the simplest implementation of the remote provisioning pattern, provisioning requirements are stored in a SQL Server or SQL Azure database or XML file; then, an add-in for SharePoint reads requirements from the data source, reads branding elements from their source location, and applies branding elements to the target site based on the provisioning requirements.
 
 The branding and provisioning code samples follow this sequence of events to show the remote provisioning pattern.
 
@@ -193,8 +193,8 @@ The branding and provisioning code samples follow this sequence of events to sho
 |**Step**|**Description**|**Samples**|**Article**|
 |:-----|:-----|:-----|:-----|
 |1|The user requests a change to the site through a form, which kicks off an approval workflow. The data that the user submits via the request form are stored using potentially any data storage format (SQL, SQL Azure, XML).| [SharePoint 2013: Use workflow to provision a SharePoint site (host web)](https://code.msdn.microsoft.com/SharePoint-2013-Use-e2ee88dd)<br /> [SharePoint 2013: Use workflow to provision a SharePoint site (app web)](https://code.msdn.microsoft.com/SharePoint-2013-Use-2b96feb7)| [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
-|2|If the workflow is approved, the app for SharePoint calls the stored data and provisions the site according to the metadata that user submitted in step 1.| [Provision sites in batches with the app model](https://code.msdn.microsoft.com/Provision-sites-in-batches-fcf31bc6)<br />[SharePoint 2013: Use workflow to provision a SharePoint site (host web)](https://code.msdn.microsoft.com/SharePoint-2013-Use-e2ee88dd)<br />[SharePoint 2013: Use workflow to provision a SharePoint site (app web)](https://code.msdn.microsoft.com/SharePoint-2013-Use-2b96feb7)<br />[SharePoint 2013: Use apps for SharePoint to provision on-prem site collection](https://code.msdn.microsoft.com/SharePoint-2013-Use-apps-9094e012)| [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
-|3|The app for SharePoint scopes provisioning to the instructions in the request form by using the data available in the app web and content database. During this stage, applicable branding elements are provisioned to the site.| [SharePoint 2013: Use an app for SharePoint to configure CSS](https://code.msdn.microsoft.com/SharePoint-2013-Use-an-app-c5d78f25)<br/>[SharePoint 2013: Use an app for SharePoint to apply a theme to a SharePoint site](https://code.msdn.microsoft.com/SharePoint-2013-Use-an-app-d90a49e3)<br/>[SharePoint 2013: Brand a SharePoint OneDrive For Business site](https://code.msdn.microsoft.com/SharePoint-2013-Brand-a-6da627cb)<br/>[SharePoint 2013: Provision custom CSS to a site with remote provisioning](https://code.msdn.microsoft.com/SharePoint-2013-Provision-bf1d878a) <br/>[SharePoint 2013: Use an app for SharePoint to provision a wiki page](https://code.msdn.microsoft.com/SharePoint-2013-Use-an-app-5db977e8)|[SharePoint pages and the page model](7d1ca7d4-f229-40e8-b2a3-08fb5e113483.md) <br/>[SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)<br/> [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
+|2|If the workflow is approved, the add-in for SharePoint calls the stored data and provisions the site according to the metadata that user submitted in step 1.| [Provision sites in batches with the add-in model](https://code.msdn.microsoft.com/Provision-sites-in-batches-fcf31bc6)<br />[SharePoint 2013: Use workflow to provision a SharePoint site (host web)](https://code.msdn.microsoft.com/SharePoint-2013-Use-e2ee88dd)<br />[SharePoint 2013: Use workflow to provision a SharePoint site (app web)](https://code.msdn.microsoft.com/SharePoint-2013-Use-2b96feb7)<br />[SharePoint 2013: Use add-ins for SharePoint to provision on-prem site collection](https://code.msdn.microsoft.com/SharePoint-2013-Use-apps-9094e012)| [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
+|3|The add-in for SharePoint scopes provisioning to the instructions in the request form by using the data available in the add-in web and content database. During this stage, applicable branding elements are provisioned to the site.| [SharePoint 2013: Use an add-in for SharePoint to configure CSS](https://code.msdn.microsoft.com/SharePoint-2013-Use-an-app-c5d78f25)<br/>[SharePoint 2013: Use an add-in for SharePoint to apply a theme to a SharePoint site](https://code.msdn.microsoft.com/SharePoint-2013-Use-an-app-d90a49e3)<br/>[SharePoint 2013: Brand a SharePoint OneDrive For Business site](https://code.msdn.microsoft.com/SharePoint-2013-Brand-a-6da627cb)<br/>[SharePoint 2013: Provision custom CSS to a site with remote provisioning](https://code.msdn.microsoft.com/SharePoint-2013-Provision-bf1d878a) <br/>[SharePoint 2013: Use an add-in for SharePoint to provision a wiki page](https://code.msdn.microsoft.com/SharePoint-2013-Use-an-app-5db977e8)|[SharePoint pages and the page model](7d1ca7d4-f229-40e8-b2a3-08fb5e113483.md) <br/>[SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)<br/> [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
 
 **Note**  Table 4 lists the steps that might be typical of a remote provisioning scenario. The samples you use depend on the approach that works best for your enterprise. For example, if you don't have a business need to create a custom approval workflow, you won't use that sample. 
 
@@ -206,7 +206,7 @@ The branding and provisioning code samples follow this sequence of events to sho
 
 ### How remote provisioning affects pre-existing site content
 
-Depending on the specific site elements you want to provision, your code will override default or pre-existing site content with a hook for the remote provisioning app for SharePoint. The app will select site templates and other capabilities based on the provisioning requirements stored in the database, without configuring SharePoint at all.
+Depending on the specific site elements you want to provision, your code will override default or pre-existing site content with a hook for the remote provisioning add-in for SharePoint. The add-in will select site templates and other capabilities based on the provisioning requirements stored in the database, without configuring SharePoint at all.
 
 The basic remote provisioning pattern is the same regardless of additional requirements. However, when you plan to use this pattern to provision site branding, map your brand development strategy in the context of the customization capabilities that SharePoint CSOM, JSOM, and REST APIs provide (the code samples described in this section use CSOM). Also consider: 
 
@@ -232,7 +232,7 @@ The code samples described in this section show the core scenario and extend it 
 |Batch Provisioning|Provisions site collections in a console app.| [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
 | [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages)|Shows how to use the remote provisioning model to provision a Wiki page and add remote Web Parts and HTML from the Wiki page.| [SharePoint pages and the page model](7d1ca7d4-f229-40e8-b2a3-08fb5e113483.md)|
 |SiteProvisioningWorkflow|Provisions site collections with a workflow on the host web and a remote event receiver.| [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
-|SiteProvisioningWorkflowAppWeb|Provisions site collections with a workflow on the app web and a remote event receiver.| [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
+|SiteProvisioningWorkflowAppWeb|Provisions site collections with a workflow on the add-in web and a remote event receiver.| [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
 
 **Note**  The BatchProvisioning, SiteProvisioningWorkflow, and SiteProvisioningWorkflowAppWeb samples demonstrate the core concepts and functions of the remote provisioning pattern. The ProvisionWikiPages sample addresses a specific use case (Wiki page provisioning).
 
@@ -245,7 +245,7 @@ The code samples described in this section show the core scenario and extend it 
 | [Branding.Theme](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.Themes)|Shows how to apply a theme (CSOM).| [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)|
 | [OD4B.Configuration.Async](https://github.com/OfficeDev/PnP/tree/master/Solutions/OD4B.Configuration.Async)|Shows how to use the remote provisioning model to provision a Wiki page and add remote Web Parts and HTML from the Wiki page.| [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)|
 | [Branding.AlternateCSSAndSiteLogo ](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)|Shows how to set custom CSS to the host site by using a user customer action and embedded JavaScript (CSOM).| [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)|
-| [Provisioning.OnPrem.Async](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.OnPrem.Async) [Provisioning.SiteCol.OnPrem](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.SiteCol.OnPrem)|Shows how to use a service to encapsulate all of the information in SharePoint host web to the app web, and get a list of site collections in a specified web application and create a content type with a specific ContentTypeId. This sample is especially useful when you want to use the remote provisioning pattern to provision sites using apps for SharePoint, but the CSOM member you need to complete your scenario is not yet available in CSOM. | [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
+| [Provisioning.OnPrem.Async](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.OnPrem.Async) [Provisioning.SiteCol.OnPrem](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.SiteCol.OnPrem)|Shows how to use a service to encapsulate all of the information in SharePoint host web to thePrem)|Shows how to use a service to encapsulate all o the information in SharePoint host web to the add-in web, and get a web, and get a list of site collections in a specified web application and create a content type with a specific ContentTypeId. This sample is especially useful when you want to use the remote provisioning pattern to provision sites using add-ins for SharePoint, but the CSOM member you need to complete your scenario is not yet available in CSOM. | [SharePoint 2013 site provisioning](http://msdn.microsoft.com/library/8bc4137a-2603-40a5-af07-e2954b82fcc5.aspx)|
 
 ## SharePoint branding workflow
 <a name="sectionSection8"> </a>
@@ -263,7 +263,7 @@ The branding design and development workflow for SharePoint websites closely res
     
 - Build your site using SharePoint tools such as Design Manager.
     
-- Package your site design, and use apps for SharePoint and the remote provisioning pattern to provision site branding.
+- Package your site design, and use add-ins for SharePoint and the remote provisioning pattern to provision site branding.
     
 
 **Note**  Applying branding in SharePoint means modifying the look and feel of a default SharePoint site. This can include making both structural and cosmetic changes to the site's appearance
@@ -302,22 +302,22 @@ For more information, see  [Select an Office 365 plan for business](https://prod
 
 Most functionality you need to meet your business needs is available out-of-the-box in SharePoint. Therefore, before creating a customization, determine whether there is an actual business case for creating the customization and what the long-term costs of creating and supporting this customization would be to the enterprise. How are features and functionality provided for end users? Look at business goals and user experience considerations before technology.
 
-When working with an existing custom SharePoint solution and weighing whether and how to migrate it to the Cloud App Model, first understand why the customization was done and what purpose it serves. 
+When working with an existing custom SharePoint solution and weighing whether and how to migrate it to the Cloud Add-in Model, first understand why the customization was done and what purpose it serves. 
 
-When considering moving an existing customization from full-trust code to the Cloud App Model, there usually isn't a one-to-one relationship between features and functionality. Rather than trying to find a one-to-one match between server-side and client-side code, consider alternative approaches. Table 8 maps some commonly used concepts and functionality of SharePoint solutions to their equivalents in apps for SharePoint.
+When considering moving an existing customization from full-trust code to the Cloud Add-in Model, there usually isn't a one-to-one relationship between features and functionality. Rather than trying to find a one-to-one match between server-side and client-side code, consider alternative approaches. Table 8 maps some commonly used concepts and functionality of SharePoint solutions to their equivalents in add-ins for SharePoint.
 
- **Table 8. Mapping SharePoint concepts to apps**
+ **Table 8. Mapping SharePoint concepts to add-ins**
 
 
 
-|**Task**|**In SharePoint solution**|**In apps for SharePoint**|**Guidance**|
+|**Task**|**In SharePoint solution**|**In add-ins for SharePoint**|**Guidance**|
 |:-----|:-----|:-----|:-----|
-|Display information in SharePoint pages|Web Parts|App Parts|Web parts run on the SharePoint Server with user permission or full-permissions/elevated privilege.App parts run in the browser or on an external server with an app identity with specifically granted permissions. They are completely isolated on the client in their own domain. App parts are executed outside of SharePoint and incur no performance impact on the SharePoint Server.<br />[How to: Create app parts to install with your app for SharePoint](http://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb.aspx)|
-|Create and manage notifications|Event receivers and feature receivers|Remote event receivers and app event receivers|Event receivers and feature receivers require server-side code and can't notify external systems of events.Remote event receivers use client-side code, can be used in SharePoint solutions or apps for SharePoint, and can notify external systems of events.App event receivers execute code when apps are installed, uninstalled, or upgraded.<br />[Handling events in apps for SharePoint](http://msdn.microsoft.com/library/c050d056-8548-4496-a053-016779d723d9.aspx) [How to: Create an event receiver for an app for SharePoint](http://msdn.microsoft.com/library/f20a0476-e3f7-4f1b-b692-2ec893245b85.aspx)|
-|Access data|the .NET server object model (SSOM), .NET client object model (CSOM), and OData|.NET client object model (CSOM, JSOM), OData, REST, cross-domain libraries| [How to: Complete basic operations using SharePoint 2013 client library code](http://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394.aspx)<br />[How to: Complete basic operations using JavaScript library code in SharePoint 2013](http://msdn.microsoft.com/library/29089af8-dbc0-49b7-a1a0-9e311f49c826.aspx)<br />[Get started with the SharePoint 2013 REST service](http://msdn.microsoft.com/library/2de035a0-ac75-43bd-9665-5c5a59c4c590.aspx)<br />[.NET client API reference for apps for SharePoint](http://msdn.microsoft.com/library/16912f78-e8e4-4a1a-89c2-77b155c7ffa8.aspx)<br />[JavaScript API reference for apps for SharePoint](http://msdn.microsoft.com/library/46510ed1-a8d9-4fa6-86b3-9b9426897d97.aspx)<br />[REST API reference and samples](http://msdn.microsoft.com/library/02128c70-9d27-4388-9374-a11bce68fdb8.aspx)|
-|Package and deploy|Solution packages (WSPs, feature packages)|App catalog and Office Store|Solution packages are difficult to deploy across a SharePoint farm.You can publish an app for SharePoint to the Office Store if you want to make it publicly available or sell it. Use the app catalog to make an app for SharePoint available within your organization.Guidance and code samples in the solution pack demonstrate how to use apps for SharePoint to provision branding elements to your SharePoint site. [How to: Set up an app catalog on SharePoint Online](http://msdn.microsoft.com/library/1d50a571-6e02-4bc0-a3d6-6ef1eca3c2ce.aspx)<br />[How to: Set up an app catalog on SharePoint](http://msdn.microsoft.com/library/fddbdb6c-250e-411c-9de4-4b6d874fc096.aspx)<br />[Publish apps for Office and SharePoint to make them available to users](http://msdn.microsoft.com/library/ff075782-1303-4517-91cc-b3d730e9b9ae.aspx)<br />[Choose patterns for developing and hosting your app for SharePoint](http://msdn.microsoft.com/library/05ce5435-0a03-4ddc-976b-c33b08d03457.aspx)|
-|Use external data|External content types|App-scoped external content types|SharePoint site administrators or SharePoint Designer users must create and/or install external content types, which, can be installed only at the farm level.App-scoped external content types apply only to the app for SharePoint for which they were created, require no administration, and can access OData sources.<br />[App-scoped external content types in SharePoint 2013](http://msdn.microsoft.com/library/a34cbbba-dc38-4d3d-b796-d54b5848bdfb.aspx)<br />[How to: Create an external content type from an OData source in SharePoint 2013](http://msdn.microsoft.com/library/bc60ea49-c44e-4531-af62-06b8cf77d35d.aspx)|
-|Add custom pages and master pages|Application pages and site pages|Web-hosted pages|Application pages are shared across all sites on the server and are hosted on SharePoint.Site pages are hosted by SharePoint, and require that page controls be listed in a safe controls list.While application pages are ideal for custom code, custom code on site pages will break after customization. Instead, use Web hosted pages. They are designed to be customizable, support the use of built-in Web Parts on site pages, are hosted externally, and are available anywhere the app is installed.|
+|Display information in SharePoint pages|Web Parts|App Parts|Web parts run on the SharePoint Server with user permission or full-permissions/elevated privilege.App parts run in the browser or on an external server with an app identity with specifically granted permissions. They are completely isolated on the client in their own domain. Add-in parts are executed outside of SharePoint and incur no performance impact on the SharePoint Server.<br />[How to: Create add-in parts to install with your add-in for SharePoint](http://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb.aspx)|
+|Create and manage notifications|Event receivers and feature receivers|Remote event receivers and add-in event receivers|Event receivers and feature receivers require server-side code and can't notify external systems of events.Remote event receivers use client-side code, can be used in SharePoint solutions or add-ins for SharePoint, and can notify external systems of events.App event receivers execute code when add-ins are installed, uninstalled, or upgraded.<br />[Handling events in add-ins for SharePoint](http://msdn.microsoft.com/library/c050d056-8548-4496-a053-016779d723d9.aspx) [How to: Create an event receiver for an add-in for SharePoint](http://msdn.microsoft.com/library/f20a0476-e3f7-4f1b-b692-2ec893245b85.aspx)|
+|Access data|the .NET server object model (SSOM), .NET client object model (CSOM), and OData|.NET client object model (CSOM, JSOM), OData, REST, cross-domain libraries| [How to: Complete basic operations using SharePoint 2013 client library code](http://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394.aspx)<br />[How to: Complete basic operations using JavaScript library code in SharePoint 2013](http://msdn.microsoft.com/library/29089af8-dbc0-49b7-a1a0-9e311f49c826.aspx)<br />[Get started with the SharePoint 2013 REST service](http://msdn.microsoft.com/library/2de035a0-ac75-43bd-9665-5c5a59c4c590.aspx)<br />[.NET client API reference for add-ins for SharePoint](http://msdn.microsoft.com/library/16912f78-e8e4-4a1a-89c2-77b155c7ffa8.aspx)<br />[JavaScript API reference for add-ins for SharePoint](http://msdn.microsoft.com/library/46510ed1-a8d9-4fa6-86b3-9b9426897d97.aspx)<br />[REST API reference and samples](http://msdn.microsoft.com/library/02128c70-9d27-4388-9374-a11bce68fdb8.aspx)|
+|Package and deploy|Solution packages (WSPs, feature packages)|App catalog and Office Store|Solution packages are difficult to deploy across a SharePoint farm.You can publish an add-in for SharePoint to the Office Store if you want to make it publicly available or sell it. Use the add-in catalog to make an add-in for SharePoint available within your organization.Guidance and code samples in the solution pack demonstrate how to use add-ins for SharePoint to provision branding elements to your SharePoint site. [How to: Set up an add-in catalog on SharePoint Online](http://msdn.microsoft.com/library/1d50a571-6e02-4bc0-a3d6-6ef1eca3c2ce.aspx)<br />[How to: Set up an add-in catalog on SharePoint](http://msdn.microsoft.com/library/fddbdb6c-250e-411c-9de4-4b6d874fc096.aspx)<br />[Publish add-ins for Office and SharePoint to make them available to users](http://msdn.microsoft.com/library/ff075782-1303-4517-91cc-b3d730e9b9ae.aspx)<br />[Choose patterns for developing and hosting your add-in for SharePoint](http://msdn.microsoft.com/library/05ce5435-0a03-4ddc-976b-c33b08d03457.aspx)|
+|Use external data|External content types|App-scoped external content types|SharePoint site administrators or SharePoint Designer users must create and/or install external content types, which, can be installed only at the farm level.App-scoped external content types apply only to the add-in for SharePoint for which they were created, require no administration, and can access OData sources.<br />[App-scoped external content types in SharePoint 2013](http://msdn.microsoft.com/library/a34cbbba-dc38-4d3d-b796-d54b5848bdfb.aspx)<br />[How to: Create an external content type from an OData source in SharePoint 2013](http://msdn.microsoft.com/library/bc60ea49-c44e-4531-af62-06b8cf77d35d.aspx)|
+|Add custom pages and master pages|Application pages and site pages|Web-hosted pages|Application pages are shared across all sites on the server and are hosted on SharePoint.Site pages are hosted by SharePoint, and require that page controls be listed in a safe controls list.While application pages are ideal for custom code, custom code on site pages will break after customization. Instead, use Web hosted pages. They are designed to be customizable, support the use of built-in Web Parts on site pages, are hosted externally, and are available anywhere the add-in is installed.|
 
 ## In this section
 <a name="sectionSection10"> </a>
@@ -336,5 +336,5 @@ When considering moving an existing customization from full-trust code to the Cl
 
 -  [Office 365 development patterns and practices solution guidance](http://msdn.microsoft.com/library/4bb8d1ad-1cf9-484c-b444-1aa032608bc1.aspx)
     
--  [Build apps for SharePoint](http://msdn.microsoft.com/library/37727101-0692-4652-a481-e6d6379cf921.aspx)
+-  [Build add-ins for SharePoint](http://msdn.microsoft.com/library/37727101-0692-4652-a481-e6d6379cf921.aspx)
     

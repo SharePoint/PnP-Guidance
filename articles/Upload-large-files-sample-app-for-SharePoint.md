@@ -1,10 +1,10 @@
 
-# Upload large files sample app for SharePoint
+# Upload large files sample add-in for SharePoint
 Upload files larger than 2MB to SharePoint and SharePoint Online using SaveBinaryDirect, ContentStream, StartUpload, ContinueUpload and FinishUpload. 
 
  **Last modified:** April 13, 2015
 
- _**Applies to:** apps for SharePoint | SharePoint 2013 | SharePoint Online_
+ _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
  **In this article**
 
@@ -15,7 +15,7 @@ Upload files larger than 2MB to SharePoint and SharePoint Online using SaveBinar
  [Additional resources](#bk_addresources)
 
 
-The  [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.LargeFileUpload) sample shows you how to use a provider-hosted app to upload large files to SharePoint, and how to bypass the 2 MB file upload limit. Use this solution if you want to upload files that are larger than 2 MB to SharePoint. This sample runs as a console application that uploads large files to a document library by using one of the following methods:
+The  [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.LargeFileUpload) sample shows you how to use a provider-hosted add-in to upload large files to SharePoint, and how to bypass the 2 MB file upload limit. Use this solution if you want to upload files that are larger than 2 MB to SharePoint. This sample runs as a console application that uploads large files to a document library by using one of the following methods:
 
 - The  ** [SaveBinaryDirect](https://msdn.microsoft.com/library/office/ee538285.aspx)** method on the **Microsoft.SharePoint.Client.File** class.
     
@@ -31,7 +31,7 @@ The following table lists the file upload methods that are available and describ
 |**File upload option**|**Considerations**|**When should you use this?**|**Supported platforms**|
 |:-----|:-----|:-----|:-----|
 | [Content](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.filecreationinformation.content.aspx) property on the **FileCreationInformation** class.|Maximum file size that can be uploaded is 2 MB. Time-out occurs after 30 minutes.|Use to upload files that are less than 2 MB only. |SharePoint Server 2013, SharePoint Online|
-| **SaveBinaryDirect** method on the **File** class.|No file size limits. Time-out occurs after 30 minutes.|Only use this method if you're using a user-only authentication policy. User-only authentication policy is not available in an app for SharePoint, but can be used in native device apps, Windows PowerShell, and Windows console applications.|SharePoint Server 2013, SharePoint Online|
+| **SaveBinaryDirect** method on the **File** class.|No file size limits. Time-out occurs after 30 minutes.|Only use this method if you're using a user-only authentication policy. User-only authentication policy is not available in an add-in for SharePoint, but can be used in native device apps, Windows PowerShell, and Windows console applications.|SharePoint Server 2013, SharePoint Online|
 | **ContentStream** property on the **FileCreationInformation** class.|No file size limits. Time-out occurs after 30 minutes.|Recommended for:<br/>- SharePoint Server 2013.<br/>- SharePoint Online when the file is smaller than 10 MB.|SharePoint Server 2013, SharePoint Online|
 |Upload a single file as a set of chunks using the  **StartUpload**,  **ContinueUpload**, and  **FinishUpload** methods on the **File** class.|No file size limits. Time-out occurs after 30 minutes. Each chunk of the file must upload within 30 minutes of completion of the previous chunk to avoid the time-out. |Recommended for SharePoint Online when the file is larger than 10 MB.|SharePoint Online|
 
@@ -42,7 +42,7 @@ The following table lists the file upload methods that are available and describ
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.LargeFileUpload) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.LargeFileUpload) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 
 ## Using the Core.LargeFileUpload sample app

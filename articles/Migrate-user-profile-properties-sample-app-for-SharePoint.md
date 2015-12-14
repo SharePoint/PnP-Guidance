@@ -1,12 +1,12 @@
 
-# Migrate user profile properties sample app for SharePoint
-You can use a provider-hosted app to migrate and import SharePoint user profile data.
+# Migrate user profile properties sample add-in for SharePoint
+You can use a provider-hosted add-in to migrate and import SharePoint user profile data.
 
     
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
     
-The [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfileProperty.Migration) sample app shows you how to migrate user profile data from SharePoint Server 2010 or SharePoint Server 2013 into SharePoint Online.
+The [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfileProperty.Migration) sample add-in shows you how to migrate user profile data from SharePoint Server 2010 or SharePoint Server 2013 into SharePoint Online.
     
 This sample includes two console applications. Both use the userprofileservice.asmx web service to extract single and multivalued user profile data to an XML file, and to import the extracted data into the user profile service in SharePoint Online.
 Use this code sample if you want to:
@@ -19,7 +19,7 @@ Use this code sample if you want to:
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfileProperty.Migration) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub. The code sample contains two projects.
+To get started, download the  [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfileProperty.Migration) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub. The code sample contains two projects.
 
 For the  **Contoso.ProfileProperty.Migration.Extract** project:
 

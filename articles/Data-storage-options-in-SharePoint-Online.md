@@ -1,6 +1,6 @@
 
 # Data storage options in SharePoint Online
-When you develop SharePoint Online apps, you have a number of different options for data storage. You can use the sample described in this article to explore the differences between each option, and to learn about the advantages to using remote data storage. 
+When you develop SharePoint Online add-ins, you have a number of different options for data storage. You can use the sample described in this article to explore the differences between each option, and to learn about the advantages to using remote data storage. 
 
  **Last modified:** March 16, 2015
 
@@ -144,7 +144,7 @@ Using lists in the app web has one important advantage over other storage soluti
     
 - To update the data structure, you must rewrite application logic for storing and updating data.
     
-- Information stored in the list cannot be shared easily with other apps.
+- Information stored in the list cannot be shared easily with other add-ins.
     
 - You cannot search for data in SharePoint.
     
@@ -359,7 +359,7 @@ The Customer Dashboard scenario uses JQuery AJAX to invoke the NorthWind OData s
 The following are the advantages to using this approach:
 
 
-- A given web service can support multiple apps.
+- A given web service can support multiple add-ins.
     
 - You can update your web service without having to update and redeploy your app.
     
@@ -727,7 +727,7 @@ public ActionResult Orders(string customerId)
 <a name="bk_addresources"> </a>
 
 
--  [Composite business apps for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
+-  [Composite business add-ins for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
     
 -  [Office 365 Development Patterns and Practices on GitHub](https://github.com/OfficeDev/PnP)
     

@@ -4,7 +4,7 @@
 
  **Last modified:** March 16, 2015
 
- _**Applies to:** apps for SharePoint | SharePoint Online | Office 365_
+ _**Applies to:** add-ins for SharePoint | SharePoint Online | Office 365_
 
  **In this article**
 
@@ -29,7 +29,7 @@ External sharing settings are only available in Office 365.
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.ExternalSharing](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ExternalSharing) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.ExternalSharing](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ExternalSharing) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 
 ## Using the Core.ExternalSharing app

@@ -4,7 +4,7 @@ Implement real-time communication between SharePoint app parts by using SignalR.
 
  **Last modified:** March 16, 2015
 
- _**Applies to:** apps for SharePoint | SharePoint 2013 | SharePoint Online_
+ _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
  **In this article**
 

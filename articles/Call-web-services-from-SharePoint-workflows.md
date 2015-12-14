@@ -17,7 +17,7 @@ Deploy a SharePoint 2013 workflow to the host web from an app for SharePoint, an
  [Additional resources](#bk_addresources)
 
 
-You can use the SharePoint 2013 app model to create and deploy workflows that run on either the app web or the host web. These workflows can interact with the remotely hosted portions of provider-hosted apps. The workflows can also call remote web services that contain important business data in one of two ways: 
+You can use the SharePoint 2013 app model to create and deploy workflows that run on either the app web or the host web. These workflows can interact with the remotely hosted portions of provider-hosted add-ins. The workflows can also call remote web services that contain important business data in one of two ways: 
 
 - By passing query information to the remotely hosted portion of the app. The remote web application then calls the web service and passes the information back to SharePoint.
     
@@ -536,7 +536,7 @@ You have now deployed the workflow to the host web and associated it with a list
 <a name="bk_addresources"> </a>
 
 
--  [Composite business apps for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
+-  [Composite business add-ins for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
     
 -  [Debugging SharePoint 2013 workflows using Visual Studio 2013](http://blogs.msdn.com/b/officeapps/archive/2013/10/30/debugging-sharepoint-2013-workflows-using-visual-studio-2013.aspx)
     

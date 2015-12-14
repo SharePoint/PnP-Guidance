@@ -1,17 +1,17 @@
 
-# Localize UI elements sample app for SharePoint
+# Localize UI elements sample add-in for SharePoint
 You can localize SharePoint UI elements by using JavaScript to replace the text value of a UI element value with a translated text value loaded from a JavaScript resource file. 
 
     
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
     
-The [Core.JavaScriptCustomization](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization) sample app shows you how to use JavaScript to replace the text value of a SharePoint UI element with a translated text value, which is read from a JavaScript resource file. 
+The [Core.JavaScriptCustomization](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization) sample add-in shows you how to use JavaScript to replace the text value of a SharePoint UI element with a translated text value, which is read from a JavaScript resource file. 
     
 
 **Note**  You are responsible for maintaining the translated text values in the JavaScript resource file. 
 
-This code sample uses a provider-hosted app to:
+This code sample uses a provider-hosted add-in to:
 
 - Localize a site page or Quick Launch link title with specific text values.
     
@@ -29,7 +29,7 @@ This code sample uses a provider-hosted app to:
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.JavaScriptCustomization](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.JavaScriptCustomization](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this code sample, configure the language settings on your site, and set the display language on your user's profile page.
 

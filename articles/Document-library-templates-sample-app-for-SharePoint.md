@@ -1,5 +1,5 @@
 
-# Document library templates sample app for SharePoint
+# Document library templates sample add-in for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can implement a custom document library template, and customize site columns, site content types, taxonomy fields, version settings, and the default document content type.
 
     
@@ -7,7 +7,7 @@ As part of your Enterprise Content Management (ECM) strategy, you can implement 
 
     
 
-The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample shows you how to use a provider-hosted app to create a list or document library, assign a content type to it, and remove the default content type. Use this solution if you want to:    
+The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample shows you how to use a provider-hosted add-in to create a list or document library, assign a content type to it, and remove the default content type. Use this solution if you want to:    
 
 - Create a list or document library and apply a default content type.
     
@@ -21,9 +21,9 @@ The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
-Users accessing the ECM.DocumentLibraries app must have permissions to manage lists. The  **DoesUserHavePermission** method in Default.aspx.cs checks the user's permissions to ensure they can manage lists. If the user does not have permissions to manage lists, the app presents an error message to the user.
+Users accessing the ECM.DocumentLibraries add-in must have permissions to manage lists. The  **DoesUserHavePermission** method in Default.aspx.cs checks the user's permissions to ensure they can manage lists. If the user does not have permissions to manage lists, the app presents an error message to the user.
 
 
 
@@ -307,7 +307,7 @@ private void CreateLibrary(ClientContext ctx, Library library, string associateC
         }
 ```
 
-After you create the document library, go to the  **Library settings** on your document library to review the name, description, document versioning setting, content type, and custom fields the app assigned to your document library.
+After you create the document library, go to the  **Library settings** on your document library to review the name, description, document versioning setting, content type, and custom fields the add-in assigned to your document library.
 
 
 **Figure 2. Library settings applied by the app**

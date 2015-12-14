@@ -4,7 +4,7 @@ Add or remove a custom ribbon on your SharePoint site. Add JavaScript event hand
 
  **Last modified:** March 16, 2015
 
- _**Applies to:** apps for SharePoint | SharePoint 2013 | SharePoint Online_
+ _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
  **In this article**
 
@@ -29,7 +29,7 @@ The  [Core.RibbonCommands](https://github.com/OfficeDev/PnP/tree/master/Samples/
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.RibbonCommands](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.RibbonCommands) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.RibbonCommands](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.RibbonCommands) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 
 ## Using the Core.RibbonCommands app

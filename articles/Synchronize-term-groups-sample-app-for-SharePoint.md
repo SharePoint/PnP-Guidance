@@ -1,10 +1,10 @@
-# Synchronize term groups sample app for SharePoint
+# Synchronize term groups sample add-in for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can synchronize term groups across multiple SharePoint term stores.
 
     
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-The [Core.MMSSync](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMS) sample shows you how to use a provider-hosted app to synchronize a source and target taxonomy. This app synchronizes two term stores in the managed metadata service - a source and a target term store. The following objects are used to synchronize term groups:
+The [Core.MMSSync](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMS) sample shows you how to use a provider-hosted add-in to synchronize a source and target taxonomy. This add-in synchronizes two term stores in the managed metadata service - a source and a target term store. The following objects are used to synchronize term groups:
 
 • **TermStore** 
 
@@ -21,7 +21,7 @@ Use this solution if you want to:
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.MMSSync](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMSSync) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.MMSSync](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMSSync) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this app, you'll need permission to access the term store in the managed metadata service. Figure 1 shows the Office 365 admin center where these permissions are assigned.
 
@@ -62,7 +62,7 @@ When you start the app, you see a console application, as shown in Figure 2. You
   - Process changes (scenario 2) by using the  **ChangeInformation** object.
     
 
-**Important**  This sample app works with both SharePoint Online and SharePoint Server 2013 on-premises.
+**Important**  This sample add-in works with both SharePoint Online and SharePoint Server 2013 on-premises.
 
 
 **Figure 2. Core.MMSSync console application**
@@ -77,7 +77,7 @@ After you select your scenario, enter the name of the term group you want to syn
 ![Screenshot of the taxonomy term store drop-down list.](media/5202fd88-4f2f-4b68-8083-165e6702bc86.png)
 ### Scenario 1 - Move term group
 
-When you select  **Move Term Group**, the app prompts you to enter a term group to synchronize and then calls the  **CopyNewTermGroups** method in MMSSyncManager.cs. **CopyNewTermGroups** then does the following to copy a term group from the source term store to the target term store:
+When you select  **Move Term Group**, the add-in prompts you to enter a term group to synchronize and then calls the  **CopyNewTermGroups** method in MMSSyncManager.cs. **CopyNewTermGroups** then does the following to copy a term group from the source term store to the target term store:
 
 
 1. Retrieves the source and target term store objects.
@@ -268,7 +268,7 @@ private void CreateNewTargetTermGroup(ClientContext sourceClientContext, ClientC
 
 ### Scenario 2 - Process changes
 
-When you select  **Process Changes**, the app prompts you to enter a Term Group to synchronize, and then calls the  **ProcessChanges** method in MMSSyncManager.cs. **ProcessChanges** uses the **GetChanges** method of the **ChangedInformation** class to retrieve all changes made to groups, term sets, and terms in the source managed metadata service. Changes are then applied to the target managed metadata service.
+When you select  **Process Changes**, the add-in prompts you to enter a Term Group to synchronize, and then calls the  **ProcessChanges** method in MMSSyncManager.cs. **ProcessChanges** uses the **GetChanges** method of the **ChangedInformation** class to retrieve all changes made to groups, term sets, and terms in the source managed metadata service. Changes are then applied to the target managed metadata service.
 
 
 **Note**  This document includes only some parts of the  **ProcessChanges** method. To review the entire method, open the Core.MMSSync solution in Visual Studio.

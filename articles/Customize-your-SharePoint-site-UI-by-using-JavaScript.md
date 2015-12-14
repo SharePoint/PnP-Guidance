@@ -6,23 +6,23 @@
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
     
-The [Core.EmbedJavaScript](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScript) sample app adds a status bar message to all pages on a SharePoint site, and removes the **new subsite** link from the **Site Contents** page by using JavaScript. 
+The [Core.EmbedJavaScript](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScript) sample add-in adds a status bar message to all pages on a SharePoint site, and removes the **new subsite** link from the **Site Contents** page by using JavaScript. 
     
 Use this solution if you want to apply UI updates to your SharePoint site by using JavaScript (sometimes referred to as the Embed JavaScript technique) instead of creating custom master pages. 
 
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.EmbedJavaScript](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScript) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.EmbedJavaScript](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScript) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 
 ## Using the Core.EmbedJavaScript app
 <a name="sectionSection1"> </a>
 
-When you run this code sample, a provider-hosted app appears, as shown in Figure 1. 
+When you run this code sample, a provider-hosted add-in appears, as shown in Figure 1. 
 
 
-**Figure 1. Screen shot of Core.EmbedJavaScript app start page**
+**Figure 1. Screen shot of Core.EmbedJavaScript add-in start page**
 
 ![Screenshot of the Start page of the Embed JavaScript sample](media/bdbf1df9-5027-4c6c-8ae9-152747fbbc1c.png)
 
@@ -179,5 +179,5 @@ function IsOnPage(pageName) {
     
 -  [Core.JavaScriptCustomization](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization)
     
--  [How to: Customize a list view in apps for SharePoint using client-side rendering](https://msdn.microsoft.com/library/8d5cabb2-70d0-46a0-bfe0-9e21f8d67d86.aspx)
+-  [How to: Customize a list view in add-ins for SharePoint using client-side rendering](https://msdn.microsoft.com/library/8d5cabb2-70d0-46a0-bfe0-9e21f8d67d86.aspx)
     

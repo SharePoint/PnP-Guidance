@@ -151,7 +151,7 @@ User profile manipulation using CSOM, UserProfile.Manipulation.CSOM.Console  ](h
 -  [SharePoint user profile properties now writable with CSOM](http://blogs.msdn.com/b/vesku/archive/2014/11/07/sharepoint-user-profile-properties-now-writable-with-csom.aspx)
 
 
-# Provisioning site collections using SP App model in on-premises with just CSOM #
+# Provisioning site collections using SP Add-in model in on-premises with just CSOM #
 Site collection provisioning support added also to on-premises. This capability existed for Office 365 already previously, but was added later to the on-premises deployments
 
 ### Platforms ###
@@ -164,7 +164,7 @@ On-Premises | Office 365
 - [Asynchronious provisioning of site collections in on-premises, Provisioning.OnPrem.Async ](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.OnPrem.Async)
 
 ### Related links ###
--  [Provisioning site collections using SP App model in on-premises with just CSOM](http://blogs.msdn.com/b/vesku/archive/2014/06/09/provisioning-site-collections-using-sp-app-model-in-on-premises-with-just-csom.aspx)
+-  [Provisioning site collections using SP Add-in model in on-premises with just CSOM](http://blogs.msdn.com/b/vesku/archive/2014/06/09/provisioning-site-collections-using-sp-app-model-in-on-premises-with-just-csom.aspx)
 
 
 # Multi-lingual content types, site columns and other site elements #

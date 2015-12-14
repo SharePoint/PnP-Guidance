@@ -132,7 +132,7 @@ namespace ProviderSharePointAppWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             // Use TokenHelper to get the client context and Title property.
-            // To access other properties, the app might need to request permissions
+            // To access other properties, the add-in might need to request permissions
             // on the host web.
             var spContext = SharePointContextProvider.Current.GetSharePointContext(Context);
             
@@ -259,7 +259,7 @@ public static ClientResult<DesignPackageInfo> ExportSmallBusiness(
 ## Design tool options for SharePoint Online
 <a name="sectionSection3"> </a>
 
-The tools you can use to brand a SharePoint Online site depend on your SharePoint Online edition and the type of site you want to build. The Small Business edition, for example, includes one Team site and one public site. It does not include a Publishing site. You can use the Site Builder app in SharePoint Online to customize public site branding.
+The tools you can use to brand a SharePoint Online site depend on your SharePoint Online edition and the type of site you want to build. The Small Business edition, for example, includes one Team site and one public site. It does not include a Publishing site. You can use the Site Builder add-in in SharePoint Online to customize public site branding.
 
 The Enterprise edition includes a Team site collection at the root web application for the domain that does not include Publishing. It does not include a public site. Use Design Manager to manage SharePoint site branding elements for the Publishing site in the SharePoint Online Enterprise edition.
 

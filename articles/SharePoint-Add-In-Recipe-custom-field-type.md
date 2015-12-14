@@ -30,7 +30,7 @@ As a rule of a thumb, we would like to provide the following high-level guidelin
 - Use JavaScript files and client-side rendering to implement custom field types.
 - Use the remote provisioning pattern to deploy JavaScript files and register them with SharePoint fields or List View Web Parts.
 - Register the JavaScript files with the Minimal Download Strategy (MDS) engine to ensure the MDS engine is aware of the custom rendering JavaScript files.
-- Setting JSLink property to host web requires at least full permission at web level, so this approach is not suitable for apps at the SharePoint store
+- Setting JSLink property to host web requires at least full permission at web level, so this approach is not suitable for add-ins at the SharePoint store
 
 Options to implement client-side rendering with JavaScript files via the JSLink property
 ----------------------------------------------------------------------------------------
