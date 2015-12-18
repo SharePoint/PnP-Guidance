@@ -32,7 +32,7 @@ This article provides information about the development and design options that 
 |:-----|:-----|:-----|
 |Design Manager|A feature activated in SharePoint publishing sites or Team sites with publishing enabled that is used to import and manage site branding assets and export them to a design package.|Use Design Manager to import branding assets created in other tools, such as Adobe PhotoShop or Adobe DreamWeaver, into SharePoint.<br/>SharePoint Designer is not available for use with OneDrive for Business or SharePoint Team sites where publishing is not enabled.|
 |Design package|Designed for use with SharePoint 2013 Publishing sites, contains branding assets that are stored in Design Manager.| [SharePoint 2013 Design Manager design packages](http://msdn.microsoft.com/library/85ad1993-4d75-4806-9097-b934865a899a.aspx)|
-|Remote provisioning|A model that involves provisioning sites by using templates and code that runs outside SharePoint in a provider-hosted app.| [Site provisioning techniques and remote provisioning in SharePoint 2013](http://blogs.msdn.com/b/vesku/archive/2013/08/23/site-provisioning-techniques-and-remote-provisioning-in-sharepoint-2013.aspx)<br/>[Self-service site provisioning using apps in SharePoint 2013](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)|
+|Remote provisioning|A model that involves provisioning sites by using templates and code that runs outside SharePoint in a provider-hosted add-in.| [Site provisioning techniques and remote provisioning in SharePoint 2013](http://blogs.msdn.com/b/vesku/archive/2013/08/23/site-provisioning-techniques-and-remote-provisioning-in-sharepoint-2013.aspx)<br/>[Self-service site provisioning using apps in SharePoint 2013](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)|
 |Root web|The first web inside a site collection. The root web is also sometimes referred to as the Web Application Root.||
 |Sandboxed solutions|.wsp files that contain assemblies, other non-compiled components, and an XML manifest file. A sandbox solution uses partial-trust code.| [Sandboxed solutions](https://msdn.microsoft.com/en-us/library/ff798382.aspx)|
 |SharePoint Designer 2013|An HTML designer and design asset management tool for managing branding elements in SharePoint. In SharePoint 2013, SharePoint Designer mainly supports custom workflows.| [What's changed in SharePoint Designer 2013?](https://msdn.microsoft.com/en-us/library/office/jj728659.aspx)<br/>[What's new with SharePoint 2013 site development?](https://msdn.microsoft.com/en-us/library/office/jj163942.aspx)|
@@ -132,7 +132,7 @@ namespace ProviderSharePointAppWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             // Use TokenHelper to get the client context and Title property.
-            // To access other properties, the app might need to request permissions
+            // To access other properties, the add-in might need to request permissions
             // on the host web.
             var spContext = SharePointContextProvider.Current.GetSharePointContext(Context);
             
@@ -259,7 +259,7 @@ public static ClientResult<DesignPackageInfo> ExportSmallBusiness(
 ## Design tool options for SharePoint Online
 <a name="sectionSection3"> </a>
 
-The tools you can use to brand a SharePoint Online site depend on your SharePoint Online edition and the type of site you want to build. The Small Business edition, for example, includes one Team site and one public site. It does not include a Publishing site. You can use the Site Builder app in SharePoint Online to customize public site branding.
+The tools you can use to brand a SharePoint Online site depend on your SharePoint Online edition and the type of site you want to build. The Small Business edition, for example, includes one Team site and one public site. It does not include a Publishing site. You can use the Site Builder add-in in SharePoint Online to customize public site branding.
 
 The Enterprise edition includes a Team site collection at the root web application for the domain that does not include Publishing. It does not include a public site. Use Design Manager to manage SharePoint site branding elements for the Publishing site in the SharePoint Online Enterprise edition.
 

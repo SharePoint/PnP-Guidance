@@ -1,5 +1,5 @@
 
-# Document library templates sample app for SharePoint
+# Document library templates sample add-in for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can implement a custom document library template, and customize site columns, site content types, taxonomy fields, version settings, and the default document content type.
 
     
@@ -7,7 +7,7 @@ As part of your Enterprise Content Management (ECM) strategy, you can implement 
 
     
 
-The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample shows you how to use a provider-hosted app to create a list or document library, assign a content type to it, and remove the default content type. Use this solution if you want to:    
+The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample shows you how to use a provider-hosted add-in to create a list or document library, assign a content type to it, and remove the default content type. Use this solution if you want to:    
 
 - Create a list or document library and apply a default content type.
     
@@ -21,9 +21,9 @@ The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
-Users accessing the ECM.DocumentLibraries app must have permissions to manage lists. The  **DoesUserHavePermission** method in Default.aspx.cs checks the user's permissions to ensure they can manage lists. If the user does not have permissions to manage lists, the app presents an error message to the user.
+Users accessing the ECM.DocumentLibraries add-in must have permissions to manage lists. The  **DoesUserHavePermission** method in Default.aspx.cs checks the user's permissions to ensure they can manage lists. If the user does not have permissions to manage lists, the add-in presents an error message to the user.
 
 
 
@@ -45,15 +45,15 @@ private bool DoesUserHavePermission()
 ```
 
 
-## Using the ECM.DocumentLibraries sample app
+## Using the ECM.DocumentLibraries sample add-in 
 <a name="sectionSection1"> </a>
 
-When you start this app, the start page displays as shown in Figure 1. The ECM.DocumentLibraries start page looks like the page to add a new document library when you select  **Site Contents** > **add an app** > **Document Library** > **Advanced Options** - with one difference. When you start the app, the Document Template dropdown list displays custom document library template, IT Document and Contoso Document. When the user chooses **Create**, the selected custom content type is assigned to the new document library. 
+When you start this add-in , the start page displays as shown in Figure 1. The ECM.DocumentLibraries start page looks like the page to add a new document library when you select  **Site Contents** > **add an app** > **Document Library** > **Advanced Options** - with one difference. When you start the add-in , the Document Template dropdown list displays custom document library template, IT Document and Contoso Document. When the user chooses **Create**, the selected custom content type is assigned to the new document library. 
 
 
-**Figure 1. Start page of the ECM.DocumentLibraries app**
+**Figure 1. Start page of the ECM.DocumentLibraries add-in **
 
-![Screenshot that shows the ECM.DocumentLibraries app start page, with a Document Template drop-down box that lists IT Document as a choice.](media/d58b9d12-808e-4f2b-9065-31e6d735dbaa.png)
+![Screenshot that shows the ECM.DocumentLibraries add-in start page, with a Document Template drop-down box that lists IT Document as a choice.](media/d58b9d12-808e-4f2b-9065-31e6d735dbaa.png)
 
 When users choose  **Create**, the  **CreateLibrary_Click** method in Default.aspx.cs checks the selected default template and makes calls to either the **CreateITDocumentLibrary** or **CreateContosoDocumentLibrary** method in ContentTypeManager.cs, as shown in the following code.
 
@@ -145,7 +145,7 @@ The  **CreateContosoDocumentLibrary** method then performs the following tasks, 
 
 ```
 
- **CreateContosoDocumentLibrary** calls the **CreateTaxonomyField** method, which is part of the OfficeDevPnP.Core. **CreateTaxonomyField** creates a field in the managed metadata service from the provider-hosted app.
+ **CreateContosoDocumentLibrary** calls the **CreateTaxonomyField** method, which is part of the OfficeDevPnP.Core. **CreateTaxonomyField** creates a field in the managed metadata service from the provider-hosted add-in .
 
 
 ```C#
@@ -307,10 +307,10 @@ private void CreateLibrary(ClientContext ctx, Library library, string associateC
         }
 ```
 
-After you create the document library, go to the  **Library settings** on your document library to review the name, description, document versioning setting, content type, and custom fields the app assigned to your document library.
+After you create the document library, go to the  **Library settings** on your document library to review the name, description, document versioning setting, content type, and custom fields the add-in assigned to your document library.
 
 
-**Figure 2. Library settings applied by the app**
+**Figure 2. Library settings applied by the add-in **
 
 ![Screenshot of a Document Library Setting page, with Name, Web Address, and Description fields highlighted.](media/aedf5107-bacb-4872-8ad4-8e66b1afead8.png)
 

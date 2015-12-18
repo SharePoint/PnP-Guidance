@@ -52,7 +52,7 @@ Related PnP samples
 ===================
 
 - Customizing OD4B sites using Async pattern
-- Classic app part and sync process for OD4B site customization
+- Classic add-in part and sync process for OD4B site customization
 - Pre-create OD4B sites for users
 - Samples and content at http://aka.ms/OfficeDevPnP
 

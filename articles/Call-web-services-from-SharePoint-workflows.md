@@ -1,6 +1,6 @@
 
 # Call web services from SharePoint workflows
-Deploy a SharePoint 2013 workflow to the host web from an app for SharePoint, and call web services from SharePoint workflows.
+Deploy a SharePoint 2013 workflow to the host web from an add-in for SharePoint, and call web services from SharePoint workflows.
 
  **Last modified:** March 16, 2015
 
@@ -17,14 +17,14 @@ Deploy a SharePoint 2013 workflow to the host web from an app for SharePoint, an
  [Additional resources](#bk_addresources)
 
 
-You can use the SharePoint 2013 app model to create and deploy workflows that run on either the app web or the host web. These workflows can interact with the remotely hosted portions of provider-hosted apps. The workflows can also call remote web services that contain important business data in one of two ways: 
+You can use the SharePoint 2013 add-in model to create and deploy workflows that run on either the add-in web or the host web. These workflows can interact with the remotely hosted portions of provider-hosted add-ins. The workflows can also call remote web services that contain important business data in one of two ways: 
 
-- By passing query information to the remotely hosted portion of the app. The remote web application then calls the web service and passes the information back to SharePoint.
+- By passing query information to the remotely hosted portion of the add-in. The remote web application then calls the web service and passes the information back to SharePoint.
     
-- By querying the web service by using the SharePoint 2013 web proxy. The workflow passes the results of the query to the remotely hosted portion of the app, which then passes the information to SharePoint.
+- By querying the web service by using the SharePoint 2013 web proxy. The workflow passes the results of the query to the remotely hosted portion of the add-in, which then passes the information to SharePoint.
     
 The information retrieved from the web service can be stored in SharePoint lists. 
-This article describes three code samples that show you how to call web services from workflows, as listed in the following table. In the first two samples, the workflows and the lists are deployed to the app web when the app installs. The last sample provides the basic shell of a workflow and instructions for how to deploy it to the host web and associate it with a list on the host web. 
+This article describes three code samples that show you how to call web services from workflows, as listed in the following table. In the first two samples, the workflows and the lists are deployed to the add-in web when the add-in installs. The last sample provides the basic shell of a workflow and instructions for how to deploy it to the host web and associate it with a list on the host web. 
 
  **Workflow tasks and associated samples**
 
@@ -40,21 +40,21 @@ This article describes three code samples that show you how to call web services
 ## Call custom web services from a workflow
 <a name="bk1"> </a>
 
-The  [Workflow.CallCustomService ](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService) sample shows you how to create a workflow that calls a custom web service that updates SharePoint list data. It also shows you how to design a provider-hosted app so that it queries a web service by using the remotely hosted web application that deploys with the app. This sample is useful when you want all the interactions with the web service to be handled by the remotely hosted portion of your provider-hosted app.
+The  [Workflow.CallCustomService ](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService) sample shows you how to create a workflow that calls a custom web service that updates SharePoint list data. It also shows you how to design a provider-hosted add-in so that it queries a web service by using the remotely hosted web application that deploys with the add-in. This sample is useful when you want all the interactions with the web service to be handled by the remotely hosted portion of your provider-hosted add-in.
 
-The sample works by starting a workflow from a remote web application. This workflow passes query information submitted by the user to the remote web application, which then uses that information to construct a query to the Northwind OData web service. The query returns the product suppliers for a given country. After it receives that information, the remote web application updates a product suppliers list that the app has deployed to the app web.
+The sample works by starting a workflow from a remote web application. This workflow passes query information submitted by the user to the remote web application, which then uses that information to construct a query to the Northwind OData web service. The query returns the product suppliers for a given country. After it receives that information, the remote web application updates a product suppliers list that the add-in has deployed to the add-in web.
 
 
-**Note**  The  [Workflow.CallCustomService ](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService) sample page contains instructions for deploying this app. You can also deploy and test with F5 debugging in Visual Studio if you follow the instructions in the blog post [Debugging SharePoint 2013 workflows using Visual Studio 2013](http://blogs.msdn.com/b/officeapps/archive/2013/10/30/debugging-sharepoint-2013-workflows-using-visual-studio-2013.aspx).
+**Note**  The  [Workflow.CallCustomService ](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService) sample page contains instructions for deploying this add-in. You can also deploy and test with F5 debugging in Visual Studio if you follow the instructions in the blog post [Debugging SharePoint 2013 workflows using Visual Studio 2013](http://blogs.msdn.com/b/officeapps/archive/2013/10/30/debugging-sharepoint-2013-workflows-using-visual-studio-2013.aspx).
 
 This app's start page includes a drop-down menu from which you can select a country for which you want to create a product suppliers list (Figure 1). 
 
 
-**Figure 1. Workflow.CallCustomService sample app start page**
+**Figure 1. Workflow.CallCustomService sample add-in start page**
 
 ![Screenshot that shows the Start page of the sample app](media/b2def940-9c82-458b-8f57-7ea92548ea71.png)
 
-The  **Create** button on the screen calls a **Create** method in the Controllers\PartSuppliersController.cs file that creates a new entry in the Part Suppliers list on the app web. The **Create** method then calls the **Add** method that is defined in the Services\PartSuppliersService.cs file. The sequence is shown in the following two code examples.
+The  **Create** button on the screen calls a **Create** method in the Controllers\PartSuppliersController.cs file that creates a new entry in the Part Suppliers list on the add-in web. The **Create** method then calls the **Add** method that is defined in the Services\PartSuppliersService.cs file. The sequence is shown in the following two code examples.
 
  **Create method**
 
@@ -100,14 +100,14 @@ public int Add(string country)
 
 ```
 
-After creating that new list item, the app presents a button that starts the approval workflow, as shown in Figure 2.
+After creating that new list item, the add-in presents a button that starts the approval workflow, as shown in Figure 2.
 
 
 **Figure 2. Start Workflow button in the sample app**
 
 ![Screenshot that shows the Start Workflow page in the sample app](media/1d5fc6a1-79fe-4767-b8d8-905a10354565.png)
 
-Choosing the  **Start Workflow** button triggers the **StartWorkflow** method that is defined in the Controllers\PartSuppliersController.cs file. This method packages the app web URL, the web service URL (for your remotely hosted web application, not for the Northwind web service), and the context token values, and passes them to the **StartWorkflow** method. The **PartSuppliersService** method will need the context token to interact with SharePoint.
+Choosing the  **Start Workflow** button triggers the **StartWorkflow** method that is defined in the Controllers\PartSuppliersController.cs file. This method packages the add-in web URL, the web service URL (for your remotely hosted web application, not for the Northwind web service), and the context token values, and passes them to the **StartWorkflow** method. The **PartSuppliersService** method will need the context token to interact with SharePoint.
 
 
 
@@ -249,23 +249,23 @@ If the workflow is approved, it changes the value of the isApproved field of the
 ## Call a custom web service from a workflow and update SharePoint by using the SharePoint web proxy
 <a name="bk2"> </a>
 
-The  [Workflow.CallServiceUpdateSPViaProxy ](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy) sample shows how to design a provider-hosted app to query a web service and then pass that information to a SharePoint list via the SharePoint 2013 web proxy.
+The  [Workflow.CallServiceUpdateSPViaProxy ](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy) sample shows how to design a provider-hosted add-in to query a web service and then pass that information to a SharePoint list via the SharePoint 2013 web proxy.
 
-The sample shows a task that is useful when you want to encapsulate all the interactions with a web service so that they are handled directly by the workflow. Using the web proxy makes it easier to update the remote web application logic without having to update the workflow instance. If you're not using the proxy and you have to update the logic in your web application, you'll have to remove the existing workflow instances and then redeploy the app. For this reason, we recommend this design when you need to call a remote web service. 
+The sample shows a task that is useful when you want to encapsulate all the interactions with a web service so that they are handled directly by the workflow. Using the web proxy makes it easier to update the remote web application logic without having to update the workflow instance. If you're not using the proxy and you have to update the logic in your web application, you'll have to remove the existing workflow instances and then redeploy the add-in. For this reason, we recommend this design when you need to call a remote web service. 
 
 
-**Note**  The  [Workflow.CallCustomServiceUpdateViaProxy](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy) sample page contains instructions for deploying this app. You can also deploy and test the app by using **F5** debugging in Visual Studio if you follow the instructions in the blog post [Debugging SharePoint 2013 workflows using Visual Studio 2013](http://blogs.msdn.com/b/officeapps/archive/2013/10/30/debugging-sharepoint-2013-workflows-using-visual-studio-2013.aspx).
+**Note**  The  [Workflow.CallCustomServiceUpdateViaProxy](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy) sample page contains instructions for deploying this add-in. You can also deploy and test the add-in by using **F5** debugging in Visual Studio if you follow the instructions in the blog post [Debugging SharePoint 2013 workflows using Visual Studio 2013](http://blogs.msdn.com/b/officeapps/archive/2013/10/30/debugging-sharepoint-2013-workflows-using-visual-studio-2013.aspx).
 
-The sample starts a workflow from a remote web application. This workflow passes query information submitted by the user to the Northwind OData web service. The query returns the product suppliers for a given country. After it receives the web service response, the workflow passes the information from the response to the remote web application. The remote web application then updates a product suppliers list that the app has deployed to the app web.
+The sample starts a workflow from a remote web application. This workflow passes query information submitted by the user to the Northwind OData web service. The query returns the product suppliers for a given country. After it receives the web service response, the workflow passes the information from the response to the remote web application. The remote web application then updates a product suppliers list that the add-in has deployed to the add-in web.
 
 When you start the app, the start page includes a drop-down menu from which you can select a country for which you want to create a product suppliers list (Figure 7).
 
 
-**Figure 7. Workflow.CallServiceUpdateSPViaProxy sample app start page**
+**Figure 7. Workflow.CallServiceUpdateSPViaProxy sample add-in start page**
 
-![Screenshot that shows the start page for the sample app with update for proxy workflow app](media/29a447b3-f17d-441f-b428-dd2a34285bb6.png)
+![Screenshot that shows the start page for the sample add-in with update for proxy workflow app](media/29a447b3-f17d-441f-b428-dd2a34285bb6.png)
 
-That button calls a method in the Controllers\PartSuppliersController.cs file that creates a new entry in the  **Part Suppliers** list on the app web. The **Create** method in that file calls the **Add** method that is defined in the Services\PartSuppliersService.cs file. Both are shown in the following two code examples.
+That button calls a method in the Controllers\PartSuppliersController.cs file that creates a new entry in the  **Part Suppliers** list on the add-in web. The **Create** method in that file calls the **Add** method that is defined in the Services\PartSuppliersService.cs file. Both are shown in the following two code examples.
 
  **Create method**
 
@@ -311,14 +311,14 @@ public int Add(string country)
 
 ```
 
-After it creates that new list item, the app presents a button that starts the approval workflow (Figure 8).
+After it creates that new list item, the add-in presents a button that starts the approval workflow (Figure 8).
 
 
 **Figure 8. Start Workflow button**
 
 ![Screenshot that shows the Start Workflow page in custom web service](media/69576609-f4c1-4160-9f82-3099e0a07d58.png)
 
-Choosing the  **Start Workflow** button triggers the **StartWorkflow** method in the Controllers\PartSuppliersController.cs file. This method packages the app web URL and the web service URL (for your remotely hosted web application, not for the Northwind web service) and passes them to the **StartWorkflow** method in the Services\PartSuppliersService.cs file. The workflow is going to communicate with the remote web application via the web proxy, and the web proxy will add the access token in a request header. This is why the workflow doesn't pass a context token to the **StartWorkflow** method in this sample. The code is shown in the following example.
+Choosing the  **Start Workflow** button triggers the **StartWorkflow** method in the Controllers\PartSuppliersController.cs file. This method packages the add-in web URL and the web service URL (for your remotely hosted web application, not for the Northwind web service) and passes them to the **StartWorkflow** method in the Services\PartSuppliersService.cs file. The workflow is going to communicate with the remote web application via the web proxy, and the web proxy will add the access token in a request header. This is why the workflow doesn't pass a context token to the **StartWorkflow** method in this sample. The code is shown in the following example.
 
 
 
@@ -411,7 +411,7 @@ The ** Create WebProxy Payload** activity constructs a payload that passes the c
 
 ![Screenshot that shows the Create WebProxy Payload activity dialog](media/0f016d2c-8e90-4d23-aea3-095ad6bf288a.png)
 
-The properties for this activity specify the app web URL, the POST request content length and type, and the request acceptance type via request headers (Figure 13).
+The properties for this activity specify the add-in web URL, the POST request content length and type, and the request acceptance type via request headers (Figure 13).
 
 
 **Figure 13. WebProxy Payload activity properties grid**
@@ -425,7 +425,7 @@ After the workflow has constructed the payload and the request, it passes the re
 
 ![Screenshot that shows the Request Headers dialog for the HTTP Send activity](media/01ce82fb-4690-4226-874a-c4734a17d9a4.png)
 
-The  **Post** method inside the Controllers\DataController.cs file accepts the contents of the request that the workflow sends through the web proxy. The **Post** method in the previous sample called a method for retrieving the supplier list from Northwind as well as one for updating the corresponding SharePoint supplier list. Since the workflow in this sample has already queried the Northwind service, this version of the method needs only to update the SharePoint list. It also passes the app web URL and the access token (which is passed by the web proxy) to the **UpdateSuppliers** method in the Services\PartSuppliersService.cs file, as shown in the following code example.
+The  **Post** method inside the Controllers\DataController.cs file accepts the contents of the request that the workflow sends through the web proxy. The **Post** method in the previous sample called a method for retrieving the supplier list from Northwind as well as one for updating the corresponding SharePoint supplier list. Since the workflow in this sample has already queried the Northwind service, this version of the method needs only to update the SharePoint list. It also passes the add-in web URL and the access token (which is passed by the web proxy) to the **UpdateSuppliers** method in the Services\PartSuppliersService.cs file, as shown in the following code example.
 
 
 
@@ -486,11 +486,11 @@ When you open this project in Visual Studio, you'll see that it is a simple, gen
 ### Deploy a workflow to the host web
 
 
-1 - Open the shortcut menu (right-click) for the  [Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.AssociateToHostWeb) app project in the project explorer, and select **Publish**. You'll see a window that contains a  **Package the app** button, as shown in Figure 15.
+1 - Open the shortcut menu (right-click) for the  [Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.AssociateToHostWeb) add-in project in the project explorer, and select **Publish**. You'll see a window that contains a  **Package the app** button, as shown in Figure 15.
     
-    **Figure 15. Publish your app screen**
+    **Figure 15. Publish your add-in screen**
 
-    ![Screenshot that shows the Publsih your app page for publishing the sample app](media/b003cc8b-90dc-4d49-8cb7-8b563f25f056.png)
+    ![Screenshot that shows the Publish your app page for publishing the sample app](media/b003cc8b-90dc-4d49-8cb7-8b563f25f056.png)
 
 2 - When you choose  **Package the app**, Visual Studio creates a Workflow.AssociateToHostWeb.app file in the  `bin\Debug\app.publish\1.0.0.0` directory of your solution. This .app file is a type of zip file.
     
@@ -511,9 +511,9 @@ When you open this project in Visual Studio, you'll see that it is a simple, gen
     
 7 - On the zip file you just created, change the file extension to .app. You should now have a new Workflow.AssociateToHostWeb.app package that contains the updated WorkflowManifest.xml file.
     
-8 - Add the app to your app catalog.
+8 - Add the add-in to your app catalog.
     
-9 - Install the app to your host site.
+9 - Install the add-in to your host site.
     
 10 - Go to a list on your host site and select the  **List** editing option at the top left of the page. You'll see a **Workflow Settings** drop-down menu (Figure 16).
     
@@ -536,7 +536,7 @@ You have now deployed the workflow to the host web and associated it with a list
 <a name="bk_addresources"> </a>
 
 
--  [Composite business apps for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
+-  [Composite business add-ins for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
     
 -  [Debugging SharePoint 2013 workflows using Visual Studio 2013](http://blogs.msdn.com/b/officeapps/archive/2013/10/30/debugging-sharepoint-2013-workflows-using-visual-studio-2013.aspx)
     

@@ -108,7 +108,7 @@ SharePoint uses dynamic tokens to bind the master page to the content page, whic
 |~site/<xyz>.master|http://<siteColl>/<subsite1>/<subsite2>/<xyz>.master|
 |~sitecollection/<abc>.master|http://<siteColl>/<abc>.master|
 
-**Note**  The dynamic tokens in content placeholders correspond to server-side API properties and methods. When using remote provisioning, write code in CSOM or REST.To learn more about dynamic tokens and SharePoint URLs, see  [URLs and Tokens in SharePoint 2013](http://msdn.microsoft.com/library/161418d7-8123-4c4e-91a1-97e43c17f0e6.aspx). Apps for SharePoint use some tokens that apply to site URLs.
+**Note**  The dynamic tokens in content placeholders correspond to server-side API properties and methods. When using remote provisioning, write code in CSOM or REST.To learn more about dynamic tokens and SharePoint URLs, see  [URLs and Tokens in SharePoint 2013](http://msdn.microsoft.com/library/161418d7-8123-4c4e-91a1-97e43c17f0e6.aspx). Add-ins for SharePoint use some tokens that apply to site URLs.
 
 
 ## Web Part pages and Wiki pages
@@ -143,7 +143,7 @@ In SharePoint, content types are reusable collections of metadata (also known as
 To learn more about content types, see  [Introduction to Content Types](https://msdn.microsoft.com/en-us/library/office/ms472236%28v=office.14%29.aspx),  [Columns](https://msdn.microsoft.com/en-us/library/office/ms196085%28v=office.14%29.aspx), and  [Custom Information in Content Types](https://msdn.microsoft.com/en-us/library/office/ms468437%28v=office.14%29.aspx).
 
 
-**Important**   Currently, you can use the remote provisioning pattern to apply out-of-the-box page layouts to a SharePoint site. Although you can provision custom content types on a site by using CSOM code via custom apps for SharePoint code, and setting custom **ContentTypeId** via CSOM is supported in SharePoint Online, setting the ContentTypeId for a custom content type via remote provisioning on on-premises SharePoint sites is not currently supported. For more information, see [How to: Create a page layout in SharePoint 2013](http://msdn.microsoft.com/library/5447e6a1-2f14-4667-81d0-7514b468be80.aspx).
+**Important**   Currently, you can use the remote provisioning pattern to apply out-of-the-box page layouts to a SharePoint site. Although you can provision custom content types on a site by using CSOM code via custom add-ins for SharePoint code, and setting custom **ContentTypeId** via CSOM is supported in SharePoint Online, setting the ContentTypeId for a custom content type via remote provisioning on on-premises SharePoint sites is not currently supported. For more information, see [How to: Create a page layout in SharePoint 2013](http://msdn.microsoft.com/library/5447e6a1-2f14-4667-81d0-7514b468be80.aspx).
 
 
 ## SharePoint page processing model

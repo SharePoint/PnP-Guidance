@@ -3,7 +3,7 @@ Use namespaces in order to avoid conflicts of your JavaScript customizations wit
 
  **Last modified:** April 30, 2015
 
- _**Applies to:** apps for SharePoint | SharePoint 2013 | SharePoint Online_
+ _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
 **In this article**
 

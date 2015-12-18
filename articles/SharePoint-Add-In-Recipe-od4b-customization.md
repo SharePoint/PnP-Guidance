@@ -118,7 +118,7 @@ Enhanced app part based customization
 
 Here's more detailed description of enhanced app part based customizations, which seems to be the typical approach for applying and managing needed customizations to the OD4B sites. Source code and additional details on this solution is available from the [Office 365 Developer Patterns and Practices guidance](http://aka.ms/officedevpnp).
 
-Actual logical design follows the hidden app part approach, mentioned before in [this blog post](http://blogs.msdn.com/b/vesku/archive/2013/11/25/office365-apply-automatically-custom-branding-to-personal-site-skydrive-pro.aspx). This means that the assumption is that you have centralized Intranet in the office 365 environment where you can put the needed app part and that the end users will be landing to this welcome page when they open up their browser. It is common that each company browser will have same home page set using group policies, so that end users will always start from one centralized location when they open up their browser. This is the location where you’d put app part, which can be set to be sized as 0 pixel width and height. Key point here is that you use the end user context to execute the app part, which contains page from the provider hosted app.
+Actual logical design follows the hidden app part approach, mentioned before in [this blog post](http://blogs.msdn.com/b/vesku/archive/2013/11/25/office365-apply-automatically-custom-branding-to-personal-site-skydrive-pro.aspx). This means that the assumption is that you have centralized Intranet in the office 365 environment where you can put the needed app part and that the end users will be landing to this welcome page when they open up their browser. It is common that each company browser will have same home page set using group policies, so that end users will always start from one centralized location when they open up their browser. This is the location where you’d put app part, which can be set to be sized as 0 pixel width and height. Key point here is that you use the end user context to execute the app part, which contains page from the provider hosted add-in.
 
 **Performance optimization and maintenance considerations**
 
@@ -300,7 +300,7 @@ This Visual Studio solution consists from quite a few solutions, but each of the
 
 **OD4B.Configuration.Async**
 
-This is the actual SharePoint app project, which will introduce the provider hosted app to SharePoitn and will ask the needed permissions. Notice that even though we do not actually perform tenant level operations from the app part it self, we are asking pretty high permissions for the app app. This is because we will use the same  client ID and secret from this app file in our WebJob execution. Using this approach, you do not have to manually register app id and secret to the SharePoint, we rather just use the same identifier and secret cross solution.
+This is the actual SharePoint app project, which will introduce the provider hosted app to SharePoitn and will ask the needed permissions. Notice that even though we do not actually perform tenant level operations from the app part it self, we are asking pretty high permissions for the add-in. This is because we will use the same  client ID and secret from this app file in our WebJob execution. Using this approach, you do not have to manually register app id and secret to the SharePoint, we rather just use the same identifier and secret cross solution.
 
 ![](media/Recipes/OD4BCustomization/app-permissions.png)
 

@@ -83,10 +83,10 @@ In this step you will configure the ASP.NET project in your application to use t
 
 For the sample application used in the example for this guidance, no extra work is actually required. However the web application does contain the settings within the `web.config` file for the Azure AD application and Azure AD tenant used during development. Some developers may choose to use different Azure AD applications or even different Azure subscriptions for their development and production instances.
 
-In a previous step outlined in this page, when you created the Azure website you set the app settings for the application that are typically found in the `web.config`. To ensure the web application receives these values from the Azure website configuration, it's recommended you replace the values within the `web.config` with placeholder values instead.
+In a previous step outlined in this page, when you created the Azure website you set the add-in settings for the application that are typically found in the `web.config`. To ensure the web application receives these values from the Azure website configuration, it's recommended you replace the values within the `web.config` with placeholder values instead.
 
 1. Open the project's `web.config` file.
-1. Locate the app settings for the **ida:ClientID**, **ida:Password** and **ida:TenantId**.
+1. Locate the add-in settings for the **ida:ClientID**, **ida:Password** and **ida:TenantId**.
 1. Replace the values of these settings with a placeholder value:
 
   ````xml
@@ -137,7 +137,7 @@ By default this is the HTTP endpoint. Recall from the previous step when you con
 1. In the browser, update the URL to go to the HTTPS homepage for the Azure website. In the example in this page, that is https://o365api-01.azurewebsites.net.
 1. Click the **Sign In** link in the header at the top-right of the page. This will redirect you to the Azure AD sign on page.
 
-  > If you get an error at this point, it's likely an issue with the three app settings you created for the Azure website. Go back and make sure the values are the correct values from the Azure AD tenant & application. You should see a URL that looks 
+  > If you get an error at this point, it's likely an issue with the three add-in settings you created for the Azure website. Go back and make sure the values are the correct values from the Azure AD tenant & application. You should see a URL that looks 
 
 1. After successfully logging in, you will be redirected back to the homepage for the web application of the Azure website you created.
 

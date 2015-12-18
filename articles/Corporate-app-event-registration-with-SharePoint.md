@@ -1,15 +1,15 @@
 
 # Corporate event app integration with SharePoint
-Integrate apps for SharePoint into your business operations by using a provider-hosted app that can implement multiple complex business tasks.
+Integrate add-ins for SharePoint into your business operations by using a provider-hosted add-in that can implement multiple complex business tasks.
 
  **Last modified:** March 16, 2015
 
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-The  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement a centralized corporate events management system as a provider-hosted app that integrates with your existing line-of-business (LOB) applications.
+The  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement a centralized corporate events management system as a provider-hosted add-in that integrates with your existing line-of-business (LOB) applications.
 
-More specifically, the  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement an ASP.NET web application that interacts with SharePoint as a data store for LOB entities. It also shows you how to implement multiple steps in a complex business task with a single provider-hosted app.
-This sample app implements a centralized management system that consists of SharePoint entities (lists and content types). For each new content type, it creates corresponding LOB entities in an ASP.NET web application. Components of the web application run as remotely hosted app parts within the SharePoint interface and also as pages running entirely on the remote web host. The app overrides the default welcome page for your SharePoint site so that it can present a custom-branded interface on the site home page.
+More specifically, the  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement an ASP.NET web application that interacts with SharePoint as a data store for LOB entities. It also shows you how to implement multiple steps in a complex business task with a single provider-hosted add-in.
+This sample app implements a centralized management system that consists of SharePoint entities (lists and content types). For each new content type, it creates corresponding LOB entities in an ASP.NET web application. Components of the web application run as remotely hosted add-in parts within the SharePoint interface and also as pages running entirely on the remote web host. The add-in overrides the default welcome page for your SharePoint site so that it can present a custom-branded interface on the site home page.
 
 **Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957895.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
 
@@ -24,19 +24,19 @@ When you choose  **Start configuration**, you go to the Configuration page, as s
 
 ![Screenshot that shows the initialize data screen](media/ee213035-b014-45cc-94f4-d8c1c58a047e.png)
 
-After you initialize the data store, you can go back to your site to see a new welcome page (the EventsHome.aspx page), which is populated by two web parts that the app deployed, as shown in Figure 2. In the left column, you'll see the four new lists installed by the app, The Corporate Events list is populated by sample data.
+After you initialize the data store, you can go back to your site to see a new welcome page (the EventsHome.aspx page), which is populated by two web parts that the add-in deployed, as shown in Figure 2. In the left column, you'll see the four new lists installed by the app, The Corporate Events list is populated by sample data.
 
 
 **Figure 2. Welcome page with web parts initialized**
 
-![Screenshot that shows the app Start page with web parts deployed](media/aa4dbd35-70f0-43c2-845c-615632090c44.png)
+![Screenshot that shows the add-in Start page with web parts deployed](media/aa4dbd35-70f0-43c2-845c-615632090c44.png)
 
 Each web part contains links to each of the displayed events, where you can see the event details. When you choose a link, the event details page runs separately on the remote host, as shown in Figure 3. You can choose  **Back to Site** on the page to return to the SharePoint site, and also to register yourself for the event.
 
 
 **Figure 3. Event details page**
 
-![Screenshot that shows the app UI with corporate event screen showing event details](media/b967e4ec-e0a6-4aae-af81-e22b92cef0d9.png)
+![Screenshot that shows the add-in UI with corporate event screen showing event details](media/b967e4ec-e0a6-4aae-af81-e22b92cef0d9.png)
 
 The registration page also runs separately on the remote host, and also contains a link back to the SharePoint host site (see Figure 4). When you finish registering for the event, your name will appear on the newly installed  **Event Registration** list.
 
@@ -158,7 +158,7 @@ In the Models directory of your web project, you'll notice that this MVC ASP.NET
     
 - Speaker.cs (Event Speakers)
     
-These four classes and their corresponding SharePoint content types together make up the four LOB entities used in this app.
+These four classes and their corresponding SharePoint content types together make up the four LOB entities used in this add-in.
 
 The DataInitializer.cs file adds sample data for the  **Corporate Events** list by creating sample **Event** objects that correspond with the **Corporate Events** content type and which the app adds to the **Corporate Events** list. When you register for an event, the app creates a **Registration** object that corresponds with the **Event Registration** content type and that the app adds to the **Event Registration** list. The sample has not yet fully implemented the **Session** and **Speaker** objects, so the app currently doesn't work with those objects.
 
@@ -320,7 +320,7 @@ public void Save(Web web) {
 <a name="bk_addresources"> </a>
 
 
--  [Composite business apps for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
+-  [Composite business add-ins for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
     
 -  [Core.ModifyPages sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ModifyPages)
     

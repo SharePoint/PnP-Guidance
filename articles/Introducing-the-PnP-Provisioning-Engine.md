@@ -243,7 +243,7 @@ On an average, the library will take around a couple of minutes to apply the tem
 <a name="advancedtopics"> </a>
 ## Advanced Topics
 
-This is just an introductory article, in the near future we will go deeper about some more advanced topics. Nevertheless, it is important to underline that using the new PnP Provisioning Engine you can also provision Taxonomies, you can use variables and tokens, which can be replaced at runtime, based on what you are provisioning (List IDs, Parameters, Terms’ IDs, etc.). You can invoke the provisioning engine from timer job services, provider hosted apps, external sites, or whatever else. Lastly, you can use the PnP Provisioning Engine to move artifacts from test/staging environments to production environments.
+This is just an introductory article, in the near future we will go deeper about some more advanced topics. Nevertheless, it is important to underline that using the new PnP Provisioning Engine you can also provision Taxonomies, you can use variables and tokens, which can be replaced at runtime, based on what you are provisioning (List IDs, Parameters, Terms’ IDs, etc.). You can invoke the provisioning engine from timer job services, provider hosted add-ins, external sites, or whatever else. Lastly, you can use the PnP Provisioning Engine to move artifacts from test/staging environments to production environments.
 
 Moreover, on Channel 9 there is a [section dedicated to OfficeDev PnP](http://aka.ms/OfficeDevPnPVideos), where you can watch some videos about the PnP Provisioning Engine and the PnP PowerShell Extensions:
 

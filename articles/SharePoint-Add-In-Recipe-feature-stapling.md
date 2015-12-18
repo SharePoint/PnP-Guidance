@@ -49,8 +49,8 @@ Staple Add-ins
 In this pattern you deploy Add-ins stored in the App Catalog to specific site collections, managed paths, and site templates.
 
 - See the [SharePoint 2013 App Deployment through 'App Stapling' (MSDN Blog Article - Richard DiZerega)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/09/18/10399333.aspx) for more details about the Add-in stapling model.
-- Because the app is pushed by an administrator, site owners will not be able to remove the app from a site that meets the deployment criteria.  Not even a site collection administrator can remove the app.
-- This centralized deployment also shares the same centralized app resources (Add-in Web and Remote Web).  Essentially, the Add-in is deployed, but not installed in the sites.  All sites will leverage the Add-in Web and Remote Web from the instance installed in the App Catalog.
+- Because the add-in is pushed by an administrator, site owners will not be able to remove the add-in from a site that meets the deployment criteria.  Not even a site collection administrator can remove the add-in.
+- This centralized deployment also shares the same centralized add-in resources (Add-in Web and Remote Web).  Essentially, the Add-in is deployed, but not installed in the sites.  All sites will leverage the Add-in Web and Remote Web from the instance installed in the App Catalog.
 - Because of centralized deployment, remote events such as 'Handle App Installed', 'Handle App Uninstalled', and 'Handle App Upgrade' will only fire once (when the Add-In is installed in the App Catalog).
 	+ This can make it difficult to use the Add-in stapling pattern to automatically apply changes to sites where it is deployed because these events do not fire when it is deployed to sites.
 - Add-in parts are not supported when Add-ins are stapled to sites.
@@ -83,17 +83,17 @@ In this pattern you use the SharePoint Client Side Object Model (CSOM) to create
     }
 	```
 
-	+ Watch the [Creating Cloud Hosted Line Of Business Applications with Apps for Office, O365, Azure, and WP8 (Todd Baginski, Michael Sherman - SharePoint Conference 2014)](https://channel9.msdn.com/Events/SharePoint-Conference/2014/SPC361) video to see how this approach was used to install Office Add-ins in SharePoint sites upon site provisioning.
+	+ Watch the [Creating Cloud Hosted Line Of Business Applications with Add-ins for Office, O365, Azure, and WP8 (Todd Baginski, Michael Sherman - SharePoint Conference 2014)](https://channel9.msdn.com/Events/SharePoint-Conference/2014/SPC361) video to see how this approach was used to install Office Add-ins in SharePoint sites upon site provisioning.
 	+ Full automation is only possible with Add-ins that have full tenant permission that have already been trusted.
 		+ See the [Core.Sideloading (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.SideLoading) for an example. 
 
 Related links
 =============
 - [Feature Stapling In SharePoint 2010 (MSDN Blog Article)](http://blogs.msdn.com/b/kunal_mukherjee/archive/2011/01/11/feature-stapling-in-sharepoint-2010.aspx)
-- [Self-Service Site Provisioning using Apps for SharePoint 2013 (MSDN Blog)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
+- [Self-Service Site Provisioning using add-ins for SharePoint 2013 (MSDN Blog)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
 - [SharePoint 2013 App Deployment through 'App Stapling' (MSDN Blog Article - Richard DiZerega)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/09/18/10399333.aspx)
 - [Site Provisioning (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-site-provisioning.md)
-- [Creating Cloud Hosted Line Of Business Applications with Apps for Office, O365, Azure, and WP8 (Todd Baginski, Michael Sherman - SharePoint Conference 2014)](https://channel9.msdn.com/Events/SharePoint-Conference/2014/SPC361)
+- [Creating Cloud Hosted Line Of Business Applications with Add-ins for Office, O365, Azure, and WP8 (Todd Baginski, Michael Sherman - SharePoint Conference 2014)](https://channel9.msdn.com/Events/SharePoint-Conference/2014/SPC361)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")

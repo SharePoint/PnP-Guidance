@@ -1,5 +1,5 @@
 
-# Use localization features in Office 365 sample app
+# Use localization features in Office 365 sample add-in
 You can use the localization features in Office 365 to provide localized values for SharePoint sites, lists, content types, and site columns. 
 
     
@@ -14,13 +14,13 @@ The [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Sampl
 - Localize the content type, site column, list, and a user-supplied site.
     
 
-**Note**  The localization features described in this article are only available in Office 365. For information about the localization features that are available in Office 365 Dedicated or SharePoint Server 2013 on-premises, see  [How to: Localize apps for SharePoint](http://msdn.microsoft.com/library/907a9189-7ce3-469a-8c87-4cef26f03c73.aspx) and [Localizing SharePoint solutions](https://msdn.microsoft.com/en-us/library/ee696750.aspx).
+**Note**  The localization features described in this article are only available in Office 365. For information about the localization features that are available in Office 365 Dedicated or SharePoint Server 2013 on-premises, see  [How to: Localize add-ins for SharePoint](http://msdn.microsoft.com/library/907a9189-7ce3-469a-8c87-4cef26f03c73.aspx) and [Localizing SharePoint solutions](https://msdn.microsoft.com/en-us/library/ee696750.aspx).
 
 
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this code sample:
 

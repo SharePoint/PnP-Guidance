@@ -65,7 +65,7 @@ Incorrect site collection and sub site provisioning can affect an entire line-of
 
 For example: If you have SharePoint sites used to manage projects in your company, you will most likely create a common list scheme for all of them. This will require creating site columns and content types. When you search for information in these sites via the SharePoint search page, you filter the results by content type or tag (site column). If your site columns and content types are not perfectly consistent across all the project sites, you will not receive accurate search results.
 
-This example may also be applied to Content By Search Web Parts, SharePoint SharePoint Add-ins, mobile apps, and any other systems that access the information in the SharePoint sites.
+This example may also be applied to Content By Search Web Parts, SharePoint Add-ins, mobile apps, and any other systems that access the information in the SharePoint sites.
 
 Options to create site collections and sub sites
 ------------------------------------------------
@@ -112,7 +112,7 @@ This option works well when you need to provide your end users with a self-servi
 
 The following articles describe the override create site link pattern and provide code samples to get you started.
 
-- [Self-Service Site Provisioning using Apps for SharePoint 2013 (MSDN Blog)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
+- [Self-Service Site Provisioning using add-ins for SharePoint 2013 (MSDN Blog)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
 	+ End-to-end article about this pattern with accompanying video.
 - [Provisioning.Cloud.Sync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Provisioning.Cloud.Sync)
 	+ This solution shows the model for providing synchronous site collection or sub site creation experience to introduce model for site templates without using actual sandbox solutions or stp files. **{Todd, please re-read the previous sentence and consider rewriting. You might just be missing "a" before the word model, or more text is missing.}**
@@ -197,7 +197,7 @@ This option works well in Dev-Ops scenarios. It allows you to create custom appl
 
 Related links
 =============
-- [Self-Service Site Provisioning using Apps for SharePoint 2013 (MSDN Blog)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
+- [Self-Service Site Provisioning using add-ins for SharePoint 2013 (MSDN Blog)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")

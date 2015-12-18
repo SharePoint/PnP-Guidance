@@ -4,7 +4,7 @@ Use Azure WebJobs to implement timer jobs that can access SharePoint Online.
 
  **Last modified:** April 20, 2015
 
- _**Applies to:** apps for SharePoint | SharePoint 2013 | SharePoint Online_
+ _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
  **In this article**
 
@@ -91,7 +91,7 @@ To create a console application to run as an Azure WebJob, perform the following
   ```
 
 
-    **Caution**  App.config stores the organization account's username and password in clear text. This method is used for demonstration purposes only, and should not be used in your production deployment of your Azure WebJobs. We recommend encrypting the password, or authenticating using OAuth with access tokens. For more information, see Kirk Evans blog post on  [Building a SharePoint App as a Timer Job](http://blogs.msdn.com/b/kaevans/archive/2014/03/02/building-a-sharepoint-app-as-a-timer-job.aspx).
+    **Caution**  App.config stores the organization account's username and password in clear text. This method is used for demonstration purposes only, and should not be used in your production deployment of your Azure WebJobs. We recommend encrypting the password, or authenticating using OAuth with access tokens. For more information, see Kirk Evans blog post on  [Building a SharePoint Add-in as a Timer Job](http://blogs.msdn.com/b/kaevans/archive/2014/03/02/building-a-sharepoint-app-as-a-timer-job.aspx).
 
 ## Add code to the console application
 <a name="sectionSection3"> </a>

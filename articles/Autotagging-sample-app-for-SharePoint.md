@@ -1,5 +1,5 @@
 
-# Autotagging sample app for SharePoint
+# Autotagging sample add-in for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can automatically tag documents with metadata when they are created or uploaded to SharePoint. 
 
     
@@ -7,7 +7,7 @@ As part of your Enterprise Content Management (ECM) strategy, you can automatica
 
     
 
-The [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.AutoTagging) sample shows you how to use a provider-hosted app to automatically tag content added to a SharePoint library with data sourced from a custom user profile property. This app uses remote event receivers, hosted on an Azure Web Site, to:   
+The [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.AutoTagging) sample shows you how to use a provider-hosted add-in to automatically tag content added to a SharePoint library with data sourced from a custom user profile property. This add-in uses remote event receivers, hosted on an Azure Web Site, to:   
 
 - Create fields, content types, and document libraries.
     
@@ -29,16 +29,16 @@ Use this solution if you want to:
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.AutoTagging) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.AutoTagging) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
-Before you run this app, do the following:
+Before you run this add-in , do the following:
 
 
 1. Create an Azure Web Site and deploy the ECM.AutoTaggingWeb project to it.
     
-2. Register your app using the Appregnew.aspx page in Office 365. 
+2. Register your add-in using the Appregnew.aspx page in Office 365. 
     
-3. This app uses app-only permissions. You need to assign app-only permissions using the AppInv.aspx page in Office 365. Copy the following XML from the AppManifest.xml file to the Permission Request XML textbox on the AppInv.aspx page, as shown in Figure 1. 
+3. This add-in uses app-only permissions. You need to assign app-only permissions using the AppInv.aspx page in Office 365. Copy the following XML from the AppManifest.xml file to the Permission Request XML textbox on the AppInv.aspx page, as shown in Figure 1. 
 
 ``` 
     <AppPermissionRequests AllowAppOnlyPolicy="true">
@@ -71,17 +71,17 @@ Before you run this app, do the following:
 
 ```
 
-5 - Package and deploy your app. 
+5 - Package and deploy your add-in . 
     
-When you start the app, the start page of the Document Autotagging provider-hosted app displays, as shown in Figure 2. The start page shows some additional configuration steps you need to perform before you assign or remove the event receivers. 
+When you start the add-in , the start page of the Document Autotagging provider-hosted add-in displays, as shown in Figure 2. The start page shows some additional configuration steps you need to perform before you assign or remove the event receivers. 
 
 
-**Figure 2. Additional configuration steps to be performed on the app start page in SharePoint**
+**Figure 2. Additional configuration steps to be performed on the add-in start page in SharePoint**
 
-![Screenshot of the autotagging app start page, with three setup steps highlighted.](media/eb0521b2-11e2-4c57-8026-d7e838c21eae.png)
+![Screenshot of the autotagging add-in start page, with three setup steps highlighted.](media/eb0521b2-11e2-4c57-8026-d7e838c21eae.png)
 
 
-## Using the ECM.Autotagging sample app
+## Using the ECM.Autotagging sample add-in 
 <a name="sectionSection1"> </a>
 
 This sample uses a remote event receiver to automatically tag (add metadata to) documents that are added to a document library, with data from a custom user profile property. The process flow for autotagging documents using the remote event receiver is shown in Figure 3.
@@ -89,7 +89,7 @@ This sample uses a remote event receiver to automatically tag (add metadata to) 
 
 **Figure 3. Process flow for tagging documents in a document library by using a remote event receiver**
 
-![An illustration of the process for tagging a document in a library. When the user creates content, the app contacts the event receiver, which accesses the user's profile and submits information to SharePoint.](media/430eee99-5ab9-49d8-8021-71d7cee79a73.png)
+![An illustration of the process for tagging a document in a library. When the user creates content, the add-in contacts the event receiver, which accesses the user's profile and submits information to SharePoint.](media/430eee99-5ab9-49d8-8021-71d7cee79a73.png)
 
 To assign metadata to the newly created document in the document library by using a remote event receiver:
 
@@ -99,14 +99,14 @@ To assign metadata to the newly created document in the document library by usin
     
 2. The  **ItemAdding** or **ItemAdded** method makes a call to the remove event receiver.
     
-3. The provider-hosted app fetches the value of a custom user profile property in the User Profile Service of SharePoint for that user. In this sample app, the Classification custom user profile property that was added previously is retrieved.
+3. The provider-hosted add-in fetches the value of a custom user profile property in the User Profile Service of SharePoint for that user. In this sample add-in , the Classification custom user profile property that was added previously is retrieved.
     
 4. The remote event receiver updates the metadata on the new document with the value of the custom user profile property for that user. 
     
 
 ### Run Scenario 1
 
-When you choose the button  **Run Scenario 1**, the app does the following:
+When you choose the button  **Run Scenario 1**, the add-in does the following:
 
 
 1. Creates a document library.

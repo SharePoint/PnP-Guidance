@@ -1,5 +1,5 @@
 
-# Personalize search results sample app for SharePoint
+# Personalize search results sample add-in for SharePoint
 You can personalize SharePoint by filtering information that is shown to the user based on the value of a user profile property.
 
     
@@ -15,7 +15,7 @@ The [Search.PersonalizedResults](https://github.com/OfficeDev/PnP/tree/master/Sa
     
 - Restaurants or retail outlet listings based on the location of your place of business.
     
-This code sample uses a provider-hosted app to display search results to the user that include either all sites or only team sites that the user has access to. To do this, the sample:
+This code sample uses a provider-hosted add-in to display search results to the user that include either all sites or only team sites that the user has access to. To do this, the sample:
 
 - Checks the value of the  **AboutMe** user profile property.
     
@@ -27,7 +27,7 @@ This code sample uses a provider-hosted app to display search results to the use
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Search.PersonalizedResults](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Search.PersonalizedResults](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 
 ## Using the Search.PersonalizedResults app
@@ -72,7 +72,7 @@ For handling personalization scenarios, you can change the search query by:
 
 ![Screenshot of the user profile page with About me highlighted.](media/a7eccfcd-68f7-44b9-8f32-14a0d2f60398.png)
 
-Return to the  **Search.PersonalizedResults** provider-hosted app and choose **Perform Personalized Search** again. The app changes the filter on the search query to show all sites instead of team sites only, as shown in Figure 4. The **Template** column now contains several different site template types.
+Return to the  **Search.PersonalizedResults** provider-hosted add-in and choose **Perform Personalized Search** again. The add-in changes the filter on the search query to show all sites instead of team sites only, as shown in Figure 4. The **Template** column now contains several different site template types.
 
 
 **Figure 4. Search results showing all sites**
@@ -83,7 +83,7 @@ Choosing  **Perform Personalized Search** calls the **btnPersonalizedSearch_Clic
 
 
 
-- Uses  **PeopleManager** to get all user profile properties for the user running this app.
+- Uses  **PeopleManager** to get all user profile properties for the user running this add-in.
     
 - Retrieves and checks the value of the  **AboutMe** user profile property. If the value of the **AboutMe** property is **AppTest**, the search query retrieves all sites using the query string  `contentclass:"STS_Site"`. If the value of the  **AboutMe** property is not **AppTest**, the team site filter is appended to the query string ( `WebTemplate=STS`), and the search query retrieves team sites only.
     

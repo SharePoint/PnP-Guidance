@@ -6,7 +6,7 @@ Summary
 
 The approach you take to implement localization for Add-ins is different in the new SharePoint Add-in model than it was with Full Trust Code. In a typical Full Trust Code (FTC) / Farm Solution scenario, localization for custom components such as Web Parts, User Controls, and Web Controls was implemented with a combination of resource files, .Net managed code, properties, and declarative code.  All the artifacts were packaged in features deployed via SharePoint Solutions.
 
-In an SharePoint Add-in model scenario, you use JavaScript or the localization capabilities associated with the web technology you build your Add-ins with to implement localization. Depending on the localized resource, you might also use classic resources files, for example when you need to lozalize elements deployed to app web using feature framework elements in the app definition.
+In an SharePoint Add-in model scenario, you use JavaScript or the localization capabilities associated with the web technology you build your Add-ins with to implement localization. Depending on the localized resource, you might also use classic resources files, for example when you need to lozalize elements deployed to add-in web using feature framework elements in the add-in definition.
 
 High-Level Guidelines
 ---------------------
@@ -57,13 +57,13 @@ When you are creating a Provider-hosted Add-in, using the localization technolog
 The following articles describes how to localize Provider-hosted Add-ins with resource files and JavaScript.
 
 - [Localize SharePoint Add-ins (MSDN Article)](https://msdn.microsoft.com/en-us/library/fp179919(v=office.15).aspx)
-- [Localize the app web, host web, and remote components of an app  (MSDN Code Sample)](https://code.msdn.microsoft.com/office/SharePoint-2013-Bookstore-328060fc)
+- [Localize the add-in web, host web, and remote components of an add-in  (MSDN Code Sample)](https://code.msdn.microsoft.com/office/SharePoint-2013-Bookstore-328060fc)
 
 Related links
 =============
 
 - [Localize SharePoint Add-ins (MSDN Article)](https://msdn.microsoft.com/en-us/library/fp179919(v=office.15).aspx)
-- [Localize the app web, host web, and remote components of an app  (Office Dev GitHub sample)](https://github.com/OfficeDev/SharePoint-Add-in-Localization)
+- [Localize the add-in web, host web, and remote components of an add-in  (Office Dev GitHub sample)](https://github.com/OfficeDev/SharePoint-Add-in-Localization)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")

@@ -1,12 +1,12 @@
 
-# Read or update user profile properties sample app for SharePoint
-You can use a provider-hosted app to read or update SharePoint single and multivalued user profile properties.
+# Read or update user profile properties sample add-in for SharePoint
+You can use a provider-hosted add-in to read or update SharePoint single and multivalued user profile properties.
 
     
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
     
-The [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM) sample shows you how to read and update user profile properties for a particular user. This sample uses a provider-hosted app to:
+The [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM) sample shows you how to read and update user profile properties for a particular user. This sample uses a provider-hosted add-in to:
     
 
 - Read and display all user profile properties for a user.
@@ -28,7 +28,7 @@ Use this solution if you want to:
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run Scenario 1:
 
@@ -63,7 +63,7 @@ Before you run Scenario 3:
 ## Using the UserProfile.Manipulation.CSOM app
 <a name="sectionSection1"> </a>
 
-When you run this sample, a provider-hosted app starts, as shown in Figure 2.
+When you run this sample, a provider-hosted add-in starts, as shown in Figure 2.
 
 
 **Figure 2. Start page of the UserProfile.Manipulation.CSOM app**
@@ -77,7 +77,7 @@ This code sample includes three scenarios.
 
 ### Scenario 1: Read all user profile properties
 
-When you choose  **Run scenario 1**, the app reads all user profile properties for the current user, and then displays the user profile data in  **Current user profile properties**, as shown in Figure 3.
+When you choose  **Run scenario 1**, the add-in reads all user profile properties for the current user, and then displays the user profile data in  **Current user profile properties**, as shown in Figure 3.
 
 
 **Figure 3. Current user's profile properties data**
@@ -127,7 +127,7 @@ protected void btnScenario1_Click(object sender, EventArgs e)
 
 ### Scenario 2: Update a single-valued user profile property
 
-Scenario 2 shows how to update a single-valued user profile property. As shown in Figure 4, the current value of the  **About me** user profile property for the user running this app is **I work at Contoso**. To update the value of the  **About me** user profile property, in the **About me new value** box, enterI am a software engineer at Contoso and then choose **Run scenario 2**. The code updates the value of the  **About me** property to **I am a software engineer at Contoso**. As shown in Figure 5, the app updates  **About me current value** with the new value of the **About me** user profile property.
+Scenario 2 shows how to update a single-valued user profile property. As shown in Figure 4, the current value of the  **About me** user profile property for the user running this add-in is **I work at Contoso**. To update the value of the  **About me** user profile property, in the **About me new value** box, enterI am a software engineer at Contoso and then choose **Run scenario 2**. The code updates the value of the  **About me** property to **I am a software engineer at Contoso**. As shown in Figure 5, the add-in updates  **About me current value** with the new value of the **About me** user profile property.
 
 
 **Figure 4. Scenario 2 start page**
@@ -196,7 +196,7 @@ Scenario 3 shows how to update a multivalued user profile property. Figure 6 sho
 
 ![Screenshot of the start page for Scenario 3](media/30926c45-3ecc-4c7d-bc27-d896fc6136b2.png)
 
-To add new skills to the SPS-Skills user profile property from this app:
+To add new skills to the SPS-Skills user profile property from this add-in:
 
 
 

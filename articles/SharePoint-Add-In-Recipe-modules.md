@@ -192,7 +192,7 @@ This sample demonstrates how to upload master pages, set master page meta data a
 		}
 		```
 
-	+ Watch the [Applying Branding to SharePoint Sites with an App for SharePoint (Office 365 PnP Video)](https://channel9.msdn.com/Blogs/Office-365-Dev/Applying-Branding-to-SharePoint-Sites-with-an-App-for-SharePoint-Office-365-Developer-Patterns-and-P) for a walk through of this sample.
+	+ Watch the [Applying Branding to SharePoint Sites with an Add-in for SharePoint (Office 365 PnP Video)](https://channel9.msdn.com/Blogs/Office-365-Dev/Applying-Branding-to-SharePoint-Sites-with-an-App-for-SharePoint-Office-365-Developer-Patterns-and-P) for a walk through of this sample.
 
 This sample has a little of everythign in it.  It demonstrates how to activate the publishing features, upload page layouts, create publishing pages, create lists, content types and list items, and creating pblishing pages and adding Web Parts and Add-in Parts to the pages.  It also demonstrates how to deploy list items to both the host web and the Add-in web.
 
@@ -502,9 +502,9 @@ This sample has a little of everythign in it.  It demonstrates how to activate t
 		            clientContext.ExecuteQuery();
 	
 		            if (notesList.ItemCount >= 5000)
-		                return "The App Web Notes List has " + notesList.ItemCount + " items, and exceeds the threshold.";
+		                return "The Add-in Web Notes List has " + notesList.ItemCount + " items, and exceeds the threshold.";
 		            else
-		                return 500 + " items have been added to the App Web Notes List. " +
+		                return 500 + " items have been added to the Add-in Web Notes List. " +
 		                               "There are " + (5000-notesList.ItemCount) + " items left to add.";          
 		        }
 	    	}
