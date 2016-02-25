@@ -16,6 +16,7 @@ As a rule of a thumb, we would like to provide the following high-level guidelin
 - AllowAppOnlyPolicy does not work with 
 	+ Search
 	+ User Profile CSOM operations
+	+ Updating taxonomy service entries (write) - read works
 	**Note:** In these scenarios you need to use a specific service account.
 - AllowAppOnlyPolicy is similar to RunWithElevatedPrivileges, but not exactly the same.
 	+ AllowAppOnlyPolicy executes code based on the permissions granted to the SharePoint Add-in, not on behalf of another user who has the appropriate permissions to perform an operation.
