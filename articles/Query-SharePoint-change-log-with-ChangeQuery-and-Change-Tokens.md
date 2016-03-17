@@ -24,8 +24,6 @@ The  [Core.ListItemChangeMonitor](https://github.com/OfficeDev/PnP/tree/master/S
     
 - Complement your remote event receiver. Using the change log pattern with a remote event receiver pattern provides a more reliable architecture for handling all changes made to SharePoint content databases, site collections, sites, or lists. Remote event receivers run immediately, but because they run on a remote server, you might encounter a communication failure. The change log pattern ensures that all changes are available for processing, but the application processing the changes usually runs on a schedule (for example, a timer job). This means that changes are not processed immediately. If you use these two patterns together, ensure you use a mechanism to prevent processing the same change twice. 
 
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn986828.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.    
-
 ## Before you begin
 <a name="sectionSection0"> </a>
 

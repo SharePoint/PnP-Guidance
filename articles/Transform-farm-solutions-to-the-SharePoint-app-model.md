@@ -19,8 +19,6 @@ Transform or convert your farm solutions to the SharePoint add-in model. Learn h
 
 If you have extended your SharePoint environment by using farm solutions and you want to migrate your extensions to the SharePoint add-in model to make your transition to SharePoint Online easier, you need to transform your farm solutions to the SharePoint add-in model. Transforming your farm solutions to the SharePoint add-in model involves analyzing your existing extensions, designing and developing your new add-in for SharePoint, and then testing and deploying your add-in in your production environment. This article describes the process and best practices to use when you transform your farm solutions to the SharePoint add-in model.
 
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn986827.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
-
 ## Plan the transformation process
 <a name="sectionSection0"> </a>
 

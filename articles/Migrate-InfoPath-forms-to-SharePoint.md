@@ -26,8 +26,6 @@ We recommend the first two solutions, because information workers who don't know
 |Convert InfoPath to Sandbox solutions|This is a viable option if your forms are simple, don’t require any server components, and don’t make any calls to external web services.|
 |Convert to the add-in model|You can convert complex forms driven by extensive code into provider-hosted add-ins. This option requires developer resources.|
 
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957892.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
-
 ## Additional resources
 <a name="bk_addresources"> </a>
 

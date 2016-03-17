@@ -24,8 +24,6 @@ The  [Core.ExternalSharing](https://github.com/OfficeDev/PnP/tree/master/Samples
 
 External sharing settings are only available in Office 365.
 
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957889.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
-
 ## Before you begin
 <a name="sectionSection0"> </a>
 

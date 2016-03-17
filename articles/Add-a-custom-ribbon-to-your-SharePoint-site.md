@@ -24,8 +24,6 @@ The  [Core.RibbonCommands](https://github.com/OfficeDev/PnP/tree/master/Samples/
 
 **Note**  This code sample shows how to call the JavaScript functions that handle events raised by the ribbon's buttons. This code sample does not provide the implementation of the JavaScript event handler functions for the ribbon's buttons. To implement the JavaScript event handler functions, use the embed JavaScript technique to embed the JavaScript event handler functions on all pages where your custom ribbon appears. For more information about embedding JavaScript, see  [Customize your SharePoint site UI by using JavaScript](http://msdn.microsoft.com/library/b11dceef-9ea7-4de0-92e7-0d3e4ae805ba.aspx).
 
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957890.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
-
 ## Before you begin
 <a name="sectionSection0"> </a>
 
