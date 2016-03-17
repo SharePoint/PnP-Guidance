@@ -11,8 +11,6 @@ The  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/mast
 More specifically, the  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement an ASP.NET web application that interacts with SharePoint as a data store for LOB entities. It also shows you how to implement multiple steps in a complex business task with a single provider-hosted add-in.
 This sample app implements a centralized management system that consists of SharePoint entities (lists and content types). For each new content type, it creates corresponding LOB entities in an ASP.NET web application. Components of the web application run as remotely hosted add-in parts within the SharePoint interface and also as pages running entirely on the remote web host. The add-in overrides the default welcome page for your SharePoint site so that it can present a custom-branded interface on the site home page.
 
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957895.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
-
 ## Using the BusinessApps.CorporateEventApp sample
 
 When you start the BusinessApps.CorporateEventApp sample app, the Home page provides an option for you to configure the sample. It also points you to a number of resources for more information.

@@ -51,8 +51,6 @@ The first two scenarios let you retrieve data by using relatively simply client 
 
 ![Screenshot of app sample UI](media/bb3b58ca-b983-4ec4-b36d-18a911edb5d5.png)
 
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957893.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
-
 ## Before you begin
 <a name="sectionSection0"> </a>
 

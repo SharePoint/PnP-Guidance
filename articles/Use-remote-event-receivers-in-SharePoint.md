@@ -26,8 +26,6 @@ The  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/master/Samples/
 
 **Note**  SharePoint-hosted add-ins do not support remote event receivers. To use remote event receivers, you need to use a provider-hosted add-in. You should not use remote event receivers for synchronization scenarios, or for long running processes. For more information, see  [How to: Create an add-in event receiver](https://msdn.microsoft.com/library/office/jj220052.aspx).
 
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957928.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
-
 ## Before you begin
 <a name="sectionSection0"> </a>
 

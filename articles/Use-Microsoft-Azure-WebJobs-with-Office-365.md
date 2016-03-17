@@ -28,8 +28,6 @@ Tobias Zimmergren
 
 Implement timer job functionality using  [Microsoft Azure WebJobs](http://azure.microsoft.com/documentation/articles/websites-webjobs-resources/) or Windows Task Scheduler to perform tasks in SharePoint Online. A timer job is a repetitive, scheduled, background process that runs in SharePoint to perform certain tasks. For example, you may want a timer job to copy data entered in a SharePoint list to a database. In SharePoint Online, you cannot deploy farm solutions, which is how timer jobs were deployed in the past. To implement similar timer job functionality in SharePoint Online, you need to run a console application as an Azure WebJob. The console application accesses SharePoint Online using the client-side object model (CSOM). This article presents the basic concepts involved in deploying console applications as Azure WebJobs to run and access your SharePoint Online sites and content.
 
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn986826.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
-
 
 ## Create and run a console application as an Azure WebJob
 <a name="sectionSection0"> </a>

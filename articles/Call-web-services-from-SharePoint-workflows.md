@@ -34,8 +34,6 @@ This article describes three code samples that show you how to call web services
 |Call a custom web service from a workflow and update SharePoint by using the SharePoint web proxy|[Workflow.CallServiceUpdateSPViaProxy](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy)|
 |Associate a workflow with the host web|[Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.AssociateToHostWeb)|
 
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957896.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
-
 
 ## Call custom web services from a workflow
 <a name="bk1"> </a>

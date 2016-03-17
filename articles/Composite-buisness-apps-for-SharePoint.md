@@ -18,8 +18,6 @@ Use composite business apps to integrate your SharePoint solutions with your bus
 Composite business apps are apps that are tightly integrated with your business processes and line-of-business (LOB) technologies (like databases and web services). These apps typically include a number of complex interactions with users and with other technologies.
 The sample composite business apps described in this section provide building blocks that you can use to integrate your technologies and processes with the SharePoint 2013 add-in model.
 
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957894.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
-
 
 ## SharePoint-hosted vs. provider-hosted add-ins
 <a name="sectionSection0"> </a>
