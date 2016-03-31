@@ -1,0 +1,18 @@
+{
+    "build_entry_point": "",
+    "need_generate_pdf": false,
+    "git_repository_url_open_to_public_contributors": "",
+    "docsets_to_publish": [
+        {
+            "docset_name": "PnP_articles",
+            "build_output_subfolder": "articles",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "false",
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        }
+    ],
+    "notification_subscribers": ["lauragra@microsoft.com"]
+}
