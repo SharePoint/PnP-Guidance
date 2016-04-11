@@ -40,5 +40,5 @@ Microsoft SharePoint 2013 and the new Add-in model allow you to use remote provi
 <a name="bk_addresources"> </a>
 
 
-- [Office 365 development patterns and practices solution guidance](http://msdn.microsoft.com/library/4bb8d1ad-1cf9-484c-b444-1aa032608bc1%28Office.15%29.aspx)
+- [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
