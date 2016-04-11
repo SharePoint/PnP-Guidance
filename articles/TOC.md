@@ -61,7 +61,7 @@
 ## [Create remote timer jobs in SharePoint](create-remote-timer-jobs-in-sharepoint.md)
 ## [Cross-domain images in SharePoint provider-hosted add-ins](cross-domain-images-in-sharepoint-provider-hosted-add-ins.md)
 ## [Customize your SharePoint site UI by using JavaScript](Customize-your-SharePoint-site-UI-by-using-JavaScript.md)
-Elevated privileges in SharePoint Add-ins
+# [Elevated privileges in SharePoint Add-ins](elevated-privileges-in-sharepoint-add-ins.md)
 ## [Handle SharePoint Online throttling by using exponential back off](Handle-SharePoint-Online-throttling-by-using-exponential-back-off.md)
 ## [Set external sharing on site collections in Office 365](Set-external-sharing-on-site-collections-in-Office-365.md)
 ## [Query SharePoint change log with ChangeQuery and ChangeToken](query-sharepoint-change-log-with-changequery-and-changeToken.md)
