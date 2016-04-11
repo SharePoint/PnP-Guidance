@@ -1,4 +1,4 @@
-# Timer Job Framework #
+# The Timer Job Framework #
 
 The PnP Timer Job Framework is set of classes designed to ease the creation of background processes that operate against SharePoint sites. The Timer Job Framework is similar to on-premises full trust code Timer Jobs (`SPJobDefinition`). The primary difference with between the Timer Job Framework and the full trust code Timer Job is that the Timer Job Framework only uses client side APIs and therefore can (and should) be run outside of SharePoint. The Timer Job Framework makes it possible to build Timer Jobs that operate against SharePoint Online.
 
