@@ -50,9 +50,9 @@ Before you run this add-in , do the following:
 
 ```
 
-  **Figure 1. Assigning app-only permissions by using the AppInv.aspx page in Office 365**
+**Figure 1. Assigning app-only permissions by using the AppInv.aspx page in Office 365**
 
-![Screenshot of the AppInv.aspx page, with the App ID and Permission Request XML boxes highlighted.](media/d733e2b0-55f3-4aee-872b-49e7e2baf470.png)
+![Screenshot of the AppInv.aspx page, with the App ID and Permission Request XML boxes highlighted](media/d733e2b0-55f3-4aee-872b-49e7e2baf470.png)
 
 4 - In the ECM.AutoTaggingWeb project, in the ReceiverHelper.cs file, in the  **CreateEventReciever** method, update the **ReceiverUrl** property with the URL of your Azure Web Site.
 
