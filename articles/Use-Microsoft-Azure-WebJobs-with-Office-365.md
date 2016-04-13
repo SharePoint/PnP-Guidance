@@ -215,7 +215,7 @@ After completing all the previous steps, your Azure WebJob should be running and
 <a name="bk_addresources"> </a>
 
 
--  [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/dn904529%28v=office.15%29.aspx).
+-  [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md).
     
 -  [Create a .NET WebJob in Azure App Service](http://azure.microsoft.com/documentation/articles/websites-dotnet-webjobs-sdk-get-started/).
     

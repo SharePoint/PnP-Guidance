@@ -22,9 +22,9 @@ Use provider-hosted SharePoint Add-ins to control user experience (UX) component
 <a name="bk_addresources"> </a>
 
 
-- [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/347f4d3d-5657-42da-ae01-3b5aea3a16c7%28Office.15%29.aspx)
+- [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
     
-- [Add a custom ribbon to your SharePoint site](http://msdn.microsoft.com/library/5bb11cdd-e880-46a7-b3d6-f33d19ed41ab%28Office.15%29.aspx)
+- [Add a custom ribbon to your SharePoint site](Add-a-custom-ribbon-to-your-SharePoint-site.md)
     
-- [Composite business add-ins for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/a0505811-a5f8-4aba-b7dd-7d50cbe99b53%28Office.15%29.aspx)
+- [Composite business add-ins for SharePoint 2013 and SharePoint Online](Composite-buisness-apps-for-SharePoint.md)
     

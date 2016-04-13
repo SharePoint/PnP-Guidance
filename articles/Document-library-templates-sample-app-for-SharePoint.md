@@ -319,7 +319,7 @@ After you create the document library, go to the  **Library settings** on your d
 <a name="bk_addresources"> </a>
 
 
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/dn904530(v=office.15).aspx)
+-  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
 -  [ECM.Autotagging sample app](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.Autotagging)
     

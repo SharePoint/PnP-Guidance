@@ -351,7 +351,7 @@ If you are building a publishing site, see [How to: Create a page layout in Shar
 <a name="bk_addresources"> </a>
 
 
-- [SharePoint site branding and page customization solutions](http://msdn.microsoft.com/library/9a3f639b-8b01-4a9b-8d27-2f041913b2a4%28Office.15%29.aspx)
+- [SharePoint site branding and page customization solutions](SharePoint-site-branding-and-page-customization-solutions.md)
     
-- [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/347f4d3d-5657-42da-ae01-3b5aea3a16c7%28Office.15%29.aspx)
+- [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
     

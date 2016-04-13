@@ -336,7 +336,7 @@ After the code sample is finished, in your Office 365 site, you can go to the  *
 <a name="bk_addresources"> </a>
 
 
--  [Enterprise content management solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/85714a89-324c-458e-8a2e-c1ac553c6e01.aspx)
+-  [Enterprise content management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
     
     

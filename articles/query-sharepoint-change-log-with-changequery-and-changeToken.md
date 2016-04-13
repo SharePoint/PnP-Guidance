@@ -15,10 +15,10 @@ The [Core.ListItemChangeMonitor](https://github.com/OfficeDev/PnP/tree/dev/Sampl
     
 - Start a business process after a change is made to an item in a list.
     
-- Complement your remote event receiver. Using the change log pattern with a remote event receiver pattern provides a more reliable architecture for handling all changes made to SharePoint content databases, site collections, sites, or lists. Remote event receivers run immediately, but because they run on a remote server, you might encounter a communication failure. The change log pattern ensures that all changes are available for processing, but the application processing the changes usually runs on a schedule (for example, a timer job). This means that changes are not processed immediately. If you use these two patterns together, ensure you use a mechanism to prevent processing the same change twice. For more information, see [Use remote event receivers in SharePoint](http://msdn.microsoft.com/library/7143936c-8384-4f28-8fbd-6f3bdb551808%28Office.15%29.aspx).
+- Complement your remote event receiver. Using the change log pattern with a remote event receiver pattern provides a more reliable architecture for handling all changes made to SharePoint content databases, site collections, sites, or lists. Remote event receivers run immediately, but because they run on a remote server, you might encounter a communication failure. The change log pattern ensures that all changes are available for processing, but the application processing the changes usually runs on a schedule (for example, a timer job). This means that changes are not processed immediately. If you use these two patterns together, ensure you use a mechanism to prevent processing the same change twice. For more information, see [Use remote event receivers in SharePoint](Use-remote-event-receivers-in-SharePoint.md).
     
  **Contribute to this content**
-You can get the latest updates or contribute to this [article on Github](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/Query-SharePoint-change-log-with-ChangeQuery-and-Change-Tokens.md). You can also contribute to this and other [samples on GitHub](https://github.com/OfficeDev/PnP). For a complete list of samples, see the [Patterns and Practices developer center](http://dev.office.com/patterns-and-practices). We welcome your [contributions](https://github.com/OfficeDev/PnP/wiki/contributing-to-Office-365-developer-patterns-and-practices). 
+You can get the latest updates or contribute to this [article on Github](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/query-sharepoint-change-log-with-changequery-and-changeToken.md). You can also contribute to this and other [samples on GitHub](https://github.com/OfficeDev/PnP). For a complete list of samples, see the [Patterns and Practices developer center](http://dev.office.com/patterns-and-practices). We welcome your [contributions](https://github.com/OfficeDev/PnP/wiki/contributing-to-Office-365-developer-patterns-and-practices). 
 
 ## Before you begin
 
@@ -179,9 +179,9 @@ private static void DoWork()
 <a name="bk_addresources"> </a>
 
 
-- [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx)
+- [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
-- [Use remote event receivers in SharePoint](https://msdn.microsoft.com/library/dn957928.aspx)
+- [Use remote event receivers in SharePoint](Use-remote-event-receivers-in-SharePoint.md)
     
 - [ChangeQuery members](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.changequery_members.aspx)
     

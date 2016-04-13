@@ -182,9 +182,9 @@ As shown in Figure 5, your site displays your custom French title  **Hello World
 <a name="bk_addresources"> </a>
 
 
--  [Localization solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/96bd4678-1962-4f5a-9231-ce8bc2a904b4.aspx)
+-  [Localization solutions for SharePoint 2013 and SharePoint Online](localization-solutions-for-sharepoint-2013-and-sharepoint-online.md)
     
 -  [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes)
     
--  [Enterprise content management solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/85714a89-324c-458e-8a2e-c1ac553c6e01.aspx)
+-  [Enterprise content management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     

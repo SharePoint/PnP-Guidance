@@ -18,7 +18,7 @@ Also, in the [ClientContextExtensions.cs](https://github.com/OfficeDev/PnP-Sites
 <a name="bk_addresources"> </a>
 
 
--  [Solution guidance](http://msdn.microsoft.com/library/4bb8d1ad-1cf9-484c-b444-1aa032608bc1.aspx)
+-  [Solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
 -  [ClientContextExtensions.cs sample](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core/OfficeDevPnP.Core/AppModelExtensions/ClientContextExtensions.cs)
     

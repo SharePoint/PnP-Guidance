@@ -296,7 +296,7 @@ When an item is added to the  **Remote Event Receiver Jobs** list, **ProcessEven
 <a name="bk_addresources"> </a>
 
 
--  [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx)
+-  [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
 -  [Core.AppEvents.HandlerDelegation ](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppEvents.HandlerDelegation)
     

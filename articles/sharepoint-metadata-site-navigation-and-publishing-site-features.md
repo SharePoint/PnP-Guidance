@@ -36,7 +36,7 @@ This article explains how to manage metadata and customize site navigation and p
 By default, web content published to public-facing SharePoint on-premises websites is available to anonymous users. By default, both CSOM and REST are not available to anonymous users.
 
 
- **Important:**  This scenario presents a potentially serious threat to on-premises SharePoint sites. Before you use the remote provisioning model described in [Use remote provisioning to brand SharePoint pages](http://msdn.microsoft.com/library/fd80f737-3040-4aec-802c-a37a43a7a7c2%28Office.15%29.aspx) to provision branding to publishing sites, make sure that your site's security and permissions are set correctly, and consider the security implications of anonymous access.
+ **Important:**  This scenario presents a potentially serious threat to on-premises SharePoint sites. Before you use the remote provisioning model described in [Use remote provisioning to brand SharePoint pages](Use-remote-provisioning-to-brand-SharePoint-pages.md) to provision branding to publishing sites, make sure that your site's security and permissions are set correctly, and consider the security implications of anonymous access.
 
 In the event that the site administrator creates a new web application that includes a site collection that uses the publishing template and also enables anonymous access, anonymous access will be available to every user of the site when the application is uploaded to the add-in catalog. Because anonymous access is enabled for the on-premises SharePoint publishing site, what happens if a user who is not authenticated navigates to the site?
 
@@ -53,7 +53,7 @@ There might be times when you want to remove the ability to use SharePoint Desig
 
 
  **Caution:**  
-- When you add apps to public-facing SharePoint sites that use the Publishing template, do not clear the **Use Remote Interfaces permissions** checkbox in Site Permissions. Enabling CSOM for anonymous users presents a possible information disclosure risk—it divulges much more information than you would anticipate. That said, even with access to the full CSOM, SharePoint permissions still apply. Anonymous users will only be able to see lists or items that have been explicitly made available to anonymous users. More than what you see on the webpage is available to anonymous users via CSOM and REST.
+- When you add apps to public-facing SharePoint sites that use the Publishing template, do not clear the **Use Remote Interfaces permissions** checkbox in Site Permissions. Enabling CSOM for anonymous users presents a possible information disclosure risk???it divulges much more information than you would anticipate. That said, even with access to the full CSOM, SharePoint permissions still apply. Anonymous users will only be able to see lists or items that have been explicitly made available to anonymous users. More than what you see on the webpage is available to anonymous users via CSOM and REST.
 - Unless absolutely necessary, do not clear the **Require Use Remote Interfaces permission** checkbox when anonymous access permissions are enabled on a SharePoint on-premises Publishing site. Doing so could expose both published and unpublished site content to anonymous users, and could leave your site open to a denial of service attack.
 
 
@@ -96,7 +96,7 @@ When you use the add-in model, implement the Secure Sockets Layer (SSL) protocol
 
 ## Remote provisioning and publishing sites
 
-You can use [remote provisioning practices](http://msdn.microsoft.com/library/fd80f737-3040-4aec-802c-a37a43a7a7c2%28Office.15%29.aspx) to provision branding and other customizations to SharePoint publishing sites.
+You can use [remote provisioning practices](Use-remote-provisioning-to-brand-SharePoint-pages.md) to provision branding and other customizations to SharePoint publishing sites.
 
 Publishing sites depend on content types and the  **ContentTypeId**, which links content types to page layouts and display templates. Customizing and provisioning SharePoint publishing page content depends on this functionality. Other aspects of custom publishing site provisioning behavior, such as managed metadata services and managed navigation, do not depend on  **ContentTypeId** and are fully supported in CSOM.
 
@@ -512,7 +512,7 @@ For more information, see [Learn About ASP.NET MVC](http://www.asp.net/mvc/overv
 <a name="bk_addresources"> </a>
 
 
-- [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/347f4d3d-5657-42da-ae01-3b5aea3a16c7%28Office.15%29.aspx)
+- [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
     
 - [How to: Apply styles to page fields in SharePoint 2013](http://msdn.microsoft.com/library/e227613d-0e4d-4312-924d-bb55e1fe4293%28Office.15%29.aspx)
     

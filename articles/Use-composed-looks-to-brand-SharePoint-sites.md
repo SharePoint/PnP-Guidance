@@ -299,7 +299,7 @@ The following table lists the CSS comment tokens.
 <a name="bk_addresources"> </a>
 
 
--  [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)
+-  [SharePoint site branding and page customization solutions](SharePoint-site-branding-and-page-customization-solutions.md)
     
--  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](347f4d3d-5657-42da-ae01-3b5aea3a16c7.md)
+-  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
     

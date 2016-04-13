@@ -301,7 +301,7 @@ function TranslateQuickLaunch() {
 <a name="bk_addresources"> </a>
 
 
--  [Localization solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/96bd4678-1962-4f5a-9231-ce8bc2a904b4.aspx)
+-  [Localization solutions for SharePoint 2013 and SharePoint Online](localization-solutions-for-sharepoint-2013-and-sharepoint-online.md)
     
 -  [Core.JavaScriptCustomization](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization)
     

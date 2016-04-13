@@ -268,7 +268,7 @@ The Enterprise edition includes a Team site collection at the root web applicati
 <a name="bk_addresources"> </a>
 
 
--  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](347f4d3d-5657-42da-ae01-3b5aea3a16c7.md)
+-  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
     
 -  [SharePoint Server 2013 Application Lifecycle Management](http://msdn.microsoft.com/library/caaf9a09-2e6a-49e3-a8d6-aaf7f93a842a.aspx)
     

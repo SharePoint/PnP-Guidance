@@ -129,5 +129,5 @@ After **Page_Load** finishes, Default.aspx runs the client-side code in Default.
 <a name="bk_addresources"> </a>
 
 
-- [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx)
+- [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     

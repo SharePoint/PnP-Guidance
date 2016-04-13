@@ -91,7 +91,7 @@ SharePoint master pages use a mix of ASP.NET ( `<asp:`) and SharePoint ( `<Share
 
 SharePoint provides two types of master pages: system master pages andsite master pages. System master pages are applied to all form pages and view pages on a SharePoint site. Site master pages, on the other hand, are used by all pages in a Publishing site. You can tell which kind of master page a site is using by opening the .master page file and viewing the  **Page** directive. A system master page has a page directive as follows: `~masterurl/default.master`. A site master page has the following page directive:  `~masterurl/custom.master`.
 
-You can use CSOM code to set master page propertiesâ€”mainly by writing code against the  [Web](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.web.aspx) object. Change the system master page by using its [MasterUrl](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.web.masterurl.aspx) property, and change the site master page by using the object's [CustomMasterUrl](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.web.custommasterurl.aspx) property.
+You can use CSOM code to set master page propertiesâ€”mainly by writing code against the [Web](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.web.aspx) object. Change the system master page by using its [MasterUrl](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.web.masterurl.aspx) property, and change the site master page by using the object's [CustomMasterUrl](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.web.custommasterurl.aspx) property.
 
 Content placeholders often include dynamic tokens, which are important pieces of code that form part of a SharePoint page URL. SharePoint parses URL strings according to the rules of protocols, such as HTTP, that define how hypertext information is transferred between the server and a SharePoint page. Usually, a content placeholder that points to a CSS or theme control will use a relative URL, which in the SharePoint server-side object model is represented as  `~SPUrl`.
 
@@ -125,7 +125,7 @@ Compared to Web Part pages, wiki pages are less structured. Because of their sem
 
 Enterprise wiki functionality is available in all versions of SharePoint. The Enterprise Wiki template makes it possible to create and use page layouts with wiki pages. When you edit a wiki page, Web Parts, text, and other content is displayed in the text layout. The text layout arranges content areas on a wiki page.
 
-You can use the remote provisioning pattern to create a wiki page. The  [WikiPageCreationInformation](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.utilities.wikipagecreationinformation.aspx) class provides methods you can use to create the wiki page, while the **WikiHtmlContent** property gets and sets HTML content on the page. The [Utility](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.utilities.utility.aspx) class includes a **CreateWikiPageInContextWeb** method, which SharePoint uses to create the wiki page in the client runtime context using parameters from the **WikiPageCreationInformation** class.
+You can use the remote provisioning pattern to create a wiki page. The [WikiPageCreationInformation](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.utilities.wikipagecreationinformation.aspx) class provides methods you can use to create the wiki page, while the **WikiHtmlContent** property gets and sets HTML content on the page. The [Utility](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.utilities.utility.aspx) class includes a **CreateWikiPageInContextWeb** method, which SharePoint uses to create the wiki page in the client runtime context using parameters from the **WikiPageCreationInformation** class.
 
 
 ## Page layouts
@@ -187,7 +187,7 @@ To help maintain consistency in a custom master page, follow the existing coding
 <a name="bk_addresources"> </a>
 
 
--  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](347f4d3d-5657-42da-ae01-3b5aea3a16c7.md)
+-  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
     
 -  [Master pages, the Master Page Gallery, and page layouts in SharePoint 2013](http://msdn.microsoft.com/library/80b9a360-bc2e-46c6-b0ca-1bc487b73db6.aspx)
     

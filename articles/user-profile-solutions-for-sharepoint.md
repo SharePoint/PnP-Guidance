@@ -17,6 +17,6 @@ The samples in this solution pack show you how to use provider-hosted add-ins to
 
 ## Additional resources 
 
-* [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/en-us/library/office/dn904529.aspx)
+* [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
 * [Patterns and Practices developer center](http://dev.office.com/patterns-and-practices)
 * [Office 365 Development Patterns and Practices on GitHub](https://github.com/OfficeDev/PnP)

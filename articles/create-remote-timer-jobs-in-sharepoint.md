@@ -254,7 +254,7 @@ The Core.TimerJobs.Samples.GovernanceJob project uses timer jobs to ensure two a
     
 2. Uploads the JavaScript file to the SiteAssets or Style Library list using [UploadFile](https://github.com/OfficeDev/PnP/blob/master/OfficeDevPnP.Core/OfficeDevPnP.Core/AppModelExtensions/FileFolderExtensions.cs), which is part of [OfficeDevPnP.Core](https://github.com/OfficeDev/PnP/tree/master/OfficeDevPnP.Core). 
     
-3. If the site has less than two administrators, [AddJSLink](https://github.com/OfficeDev/PnP/blob/master/OfficeDevPnP.Core/OfficeDevPnP.Core/AppModelExtensions/JavaScriptExtensions.cs) adds a notification message to a site using JavaScript. You can learn more at [Customize your SharePoint site UI by using JavaScript](https://msdn.microsoft.com/EN-US/library/office/dn913116.aspx).
+3. If the site has less than two administrators, [AddJSLink](https://github.com/OfficeDev/PnP/blob/master/OfficeDevPnP.Core/OfficeDevPnP.Core/AppModelExtensions/JavaScriptExtensions.cs) adds a notification message to a site using JavaScript. You can learn more at [Customize your SharePoint site UI by using JavaScript](Customize-your-SharePoint-site-UI-by-using-JavaScript.md).
     
 4. If the site has two or more administrators, the notification message is removed using [DeleteJsLink](https://github.com/OfficeDev/PnP/blob/master/OfficeDevPnP.Core/OfficeDevPnP.Core/AppModelExtensions/JavaScriptExtensions.cs).
     
@@ -327,7 +327,7 @@ void SiteGovernanceJob_TimerJobRun(object o, TimerJobRunEventArgs e)
 <a name="bk_addresources"> </a>
 
 
-- [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx)
+- [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
 - [Guide to using the Timer Job Framework](https://github.com/OfficeDev/PnP/blob/master/OfficeDevPnP.Core/TimerJob%20Framework.md)
     
