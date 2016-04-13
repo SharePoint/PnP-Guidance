@@ -25,7 +25,7 @@ Branding changes range from low-cost and simple to high-cost and complex. Users 
 
 **Important**  Although it's possible to create custom master pages and other structural elements as part of a custom branding project, the long-term cost of supporting custom master pages and other custom structural elements is high. Custom branding can make it more costly for your organization to apply upgrades and provide ongoing support.
 
-This section builds on your knowledge about [SharePoint development and design tools and practices](https://msdn.microsoft.com/en-us/library/office/dn985873.aspx), to show you how to customize the look and feel of a SharePoint site.
+This section builds on your knowledge about [SharePoint development and design tools and practices](SharePoint-development-and-design-tools-and-practices.md), to show you how to customize the look and feel of a SharePoint site.
 
 ## Key terms and concepts related to SharePoint branding
 <a name="sectionSection0"> </a>
@@ -71,15 +71,15 @@ This section builds on your knowledge about [SharePoint development and design t
 | [Use remote provisioning to brand SharePoint pages](Use-remote-provisioning-to-brand-SharePoint-pages.md)|Use remote provisioning to interact with themes in SharePoint.|
 | [Use CSS to brand SharePoint pages](Use-CSS-to-brand-pages.md)|Use remote provisioning to interact with themes in SharePoint.|
 | [Customize a SharePoint page by using remote provisioning and CSS](Customize-a-SharePoint-page-by-using-remote-provisioning-and-CSS.md)|Use CSS to customize SharePoint rich text fields and Web Part Zones.|
-| [Update the branding of existing SharePoint sites and page regions](https://msdn.microsoft.com/en-us/library/office/dn985880.aspx) | Customize and then refresh the branding of existing SharePoint sites or regions of SharePoint pages, including the ribbon, the site navigation, the Settings menu, the tree view, and the page content.
-|[Customize OneDrive for Business site branding](https://msdn.microsoft.com/en-us/library/office/mt168839.aspx)| Customize OneDrive for Business sites in Office 365 or by using the add-in model, depending on your organization's requirements.|
+| [Update the branding of existing SharePoint sites and page regions](update-the-branding-of-existing-sharepoint-sites-and-page-regions.md) | Customize and then refresh the branding of existing SharePoint sites or regions of SharePoint pages, including the ribbon, the site navigation, the Settings menu, the tree view, and the page content.
+|[Customize OneDrive for Business site branding](Customization-Options-For-OD4B-Sites.md)| Customize OneDrive for Business sites in Office 365 or by using the add-in model, depending on your organization's requirements.|
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
 
--  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn985881.aspx)
+-  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
 
--  [SharePoint pages and the page model](https://msdn.microsoft.com/en-us/library/office/dn985874.aspx)
+-  [SharePoint pages and the page model](SharePoint-pages-and-the-page-model.md)
 
--  [SharePoint development and design tools and practices](https://msdn.microsoft.com/en-us/library/office/dn985873.aspx)
+-  [SharePoint development and design tools and practices](SharePoint-development-and-design-tools-and-practices.md)

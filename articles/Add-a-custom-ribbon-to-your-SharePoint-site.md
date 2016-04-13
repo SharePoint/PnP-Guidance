@@ -22,7 +22,7 @@ The  [Core.RibbonCommands](https://github.com/OfficeDev/PnP/tree/master/Samples/
 - Display a custom ribbon for specific content types, sites, or lists.
     
 
-**Note**  This code sample shows how to call the JavaScript functions that handle events raised by the ribbon's buttons. This code sample does not provide the implementation of the JavaScript event handler functions for the ribbon's buttons. To implement the JavaScript event handler functions, use the embed JavaScript technique to embed the JavaScript event handler functions on all pages where your custom ribbon appears. For more information about embedding JavaScript, see  [Customize your SharePoint site UI by using JavaScript](http://msdn.microsoft.com/library/b11dceef-9ea7-4de0-92e7-0d3e4ae805ba.aspx).
+**Note**  This code sample shows how to call the JavaScript functions that handle events raised by the ribbon's buttons. This code sample does not provide the implementation of the JavaScript event handler functions for the ribbon's buttons. To implement the JavaScript event handler functions, use the embed JavaScript technique to embed the JavaScript event handler functions on all pages where your custom ribbon appears. For more information about embedding JavaScript, see  [Customize your SharePoint site UI by using JavaScript](Customize-your-SharePoint-site-UI-by-using-JavaScript.md).
 
 ## Before you begin
 <a name="sectionSection0"> </a>
@@ -322,9 +322,9 @@ The custom ribbon displays on all sites and lists on the host web because  **Reg
 <a name="bk_addresources"> </a>
 
 
--  [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx)
+-  [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
--  [Customize your SharePoint site UI by using JavaScript](http://msdn.microsoft.com/library/b11dceef-9ea7-4de0-92e7-0d3e4ae805ba.aspx)
+-  [Customize your SharePoint site UI by using JavaScript](Customize-your-SharePoint-site-UI-by-using-JavaScript.md)
     
 -  [Customizing and Extending the SharePoint 2010 Server Ribbon](https://msdn.microsoft.com/library/office/gg552606%28v=office.14%29.aspx)
     

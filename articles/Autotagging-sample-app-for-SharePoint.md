@@ -379,7 +379,7 @@ public static void RemoveEventReceiver(ClientContext ctx, List list, string rece
 <a name="bk_addresources"> </a>
 
 
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/dn904530(v=office.15).aspx)
+-  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
 -  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core)
     

@@ -122,7 +122,7 @@ protected void btnScenario_Click(object sender, EventArgs e)
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-- [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx)
+- [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
-- [Customize your SharePoint site UI by using JavaScript](https://msdn.microsoft.com/library/dn913116.aspx)
+- [Customize your SharePoint site UI by using JavaScript](Customize-your-SharePoint-site-UI-by-using-JavaScript.md)
     

@@ -227,7 +227,7 @@ namespace AlternateCSSAppAutohostedWeb.Services
 <a name="bk_addresources"> </a>
 
 
--  [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)
+-  [SharePoint site branding and page customization solutions](SharePoint-site-branding-and-page-customization-solutions.md)
     
 -  [Branding.AlternateCSSAndSiteLogo sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)
     

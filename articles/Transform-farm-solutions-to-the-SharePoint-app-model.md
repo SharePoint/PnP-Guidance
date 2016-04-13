@@ -112,7 +112,7 @@ Apply the following best practices when transforming specific solutions:
 <a name="bk_addresources"> </a>
 
 
--  [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx)
+-  [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
 -  [Build add-ins for SharePoint](https://msdn.microsoft.com/library/jj163230.aspx)
     

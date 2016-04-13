@@ -180,7 +180,7 @@ You will see your term data from your managed metadata service displayed in the 
 <a name="bk_addresources"> </a>
 
 
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn904530(v=office.15).aspx)
+-  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
 -  [Core.MMSSync sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMSSync)
     

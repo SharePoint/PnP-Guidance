@@ -150,5 +150,5 @@ Your add-in now has the access token for this user and can proceed to create lis
 <a name="bk_addresources"> </a>
 
 
-- [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx).
+- [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md).
     

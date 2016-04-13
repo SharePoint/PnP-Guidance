@@ -279,9 +279,9 @@ public static void ProcessQueueMessage(
 <a name="bk_addresources"> </a>
 
 
-- [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx).
+- [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md).
     
-- [Use remote event receivers in SharePoint](https://msdn.microsoft.com/library/dn957928.aspx)
+- [Use remote event receivers in SharePoint](Use-remote-event-receivers-in-SharePoint.md)
     
-- [Query SharePoint change log with ChangeQuery and ChangeToken](https://msdn.microsoft.com/library/dn986828.aspx)
+- [Query SharePoint change log with ChangeQuery and ChangeToken](query-sharepoint-change-log-with-changequery-and-changeToken.md)
     

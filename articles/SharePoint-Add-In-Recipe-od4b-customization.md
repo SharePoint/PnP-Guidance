@@ -553,7 +553,7 @@ Video demonstrating the solution and the actions
 
 Related links
 =============
-- [Customize OneDrive for Business site branding (MSDN Article)](https://msdn.microsoft.com/EN-US/library/mt168839.aspx)
+- [Customize OneDrive for Business site branding](Customization-Options-For-OD4B-Sites.md)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")

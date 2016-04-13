@@ -151,7 +151,7 @@ When the inline JavaScript code in ConnectedPartOne.aspx runs  **chat.server.sen
 <a name="bk_addresources"> </a>
 
 
--  [Office 365 development patterns and practices solution guidance](https://msdn.microsoft.com/library/office/dn904529.aspx)
+-  [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
 -  [Introduction to SignalR](http://www.asp.net/signalr/overview/getting-started/introduction-to-signalr)
     

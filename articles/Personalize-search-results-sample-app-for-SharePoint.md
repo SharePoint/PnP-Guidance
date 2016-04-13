@@ -144,7 +144,7 @@ private ClientResult<ResultTableCollection> ProcessQuery(ClientContext ctx, stri
 <a name="bk_addresources"> </a>
 
 
--  [User profile solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/b6d19973-cf74-4640-a742-821f562ba5af.aspx)
+-  [User profile solutions for SharePoint 2013 and SharePoint Online](user-profile-solutions-for-sharepoint.md)
     
 -  [Search.PersonalizedResults app](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults)
     

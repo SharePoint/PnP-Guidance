@@ -250,7 +250,7 @@ Use JavaScript injection to show and hide components on a SharePoint site
 -------------------------------------------------------------------------
 You can use JavaScript injection to apply custom branding to SharePoint sites.  JavaScript injection registers JavaScript to execute for all pages on a SharePoint site.  Under the hood, JavaScript injection relies on custom actions assigned to script block definitions.  These custom actions are added to the SharePoint site and cause the JavaScript in the script blocks to execute.  In summary, this approach allows you to execute JavaScript code.  In a branding scenario, the JavaScript code typically uses JQuery to manipulate the Document Object Model (DOM).
 
-See this article to learn how to [Customize your SharePoint site UI by using JavaScript](https://msdn.microsoft.com/EN-US/library/dn913116.aspx).  
+See this article to learn how to [Customize your SharePoint site UI by using JavaScript](Customize-your-SharePoint-site-UI-by-using-JavaScript.md).  
 
 - Using JavaScript injection for SharePoint sites requires a medium amount of time to implement and maintain in the short and long term.
 - Using JavaScript injection for SharePoint sites provides a good amount of flexibility to brand a SharePoint site.
@@ -326,7 +326,7 @@ Related links
 =============
 - [SharePoint color palette tool](http://www.microsoft.com/en-gb/download/details.aspx?id=38182)
 - Ignite 2015 - [Deep Dive into Safe SharePoint Branding in Office 365 Using Repeatable Patterns and Practices](https://channel9.msdn.com/Events/Ignite/2015/BRK3164)
-- [Customize your SharePoint site UI by using JavaScript](https://msdn.microsoft.com/EN-US/library/dn913116.aspx)
+- [Customize your SharePoint site UI by using JavaScript](Customize-your-SharePoint-site-UI-by-using-JavaScript.md)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")

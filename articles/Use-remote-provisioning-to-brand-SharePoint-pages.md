@@ -298,9 +298,9 @@ namespace ApplyThemeAppWeb.Pages
 <a name="bk_addresources"> </a>
 
 
--  [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)
+-  [SharePoint site branding and page customization solutions](SharePoint-site-branding-and-page-customization-solutions.md)
     
--  [Use composed looks to brand SharePoint sites](97342600-351b-4438-9a6f-0d71b926c6d9.md)
+-  [Use composed looks to brand SharePoint sites](Use-composed-looks-to-brand-SharePoint-sites.md)
     
 -  [Branding.Themes sample](https://github.com/Lauragra/PnP/tree/master/Samples/Branding.Themes)
     

@@ -129,5 +129,5 @@ cc.Web.RemovePermissionLevelFromUser(currentUser.LoginName, RoleType.Reader);
 
 - [SharePoint site provisioning solutions](sharepoint-site-provisioning-solutions.md)
     
-- [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/347f4d3d-5657-42da-ae01-3b5aea3a16c7%28Office.15%29.aspx)
+- [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
     

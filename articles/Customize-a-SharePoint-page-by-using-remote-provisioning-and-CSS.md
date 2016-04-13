@@ -143,7 +143,7 @@ namespace AlternateCSSAppAutohostedWeb.Services
 <a name="bk_addresources"> </a>
 
 
--  [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)
+-  [SharePoint site branding and page customization solutions](SharePoint-site-branding-and-page-customization-solutions.md)
     
 -  [How to Use the Script Editor Web Part in SharePoint 2013](http://community.bamboosolutions.com/blogs/sharepoint-2013/archive/2013/05/20/how-to-use-script-editor-web-part-in-sharepoint-2013.aspx)
     
