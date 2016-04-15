@@ -4,9 +4,9 @@ SharePoint Add-in Recipe - Site Provisioning
 Summary
 -------
 
-The approach you take to provision site collections and sub sites is different in the new SharePoint Add-in model than it was with Full Trust Code. In a typical Full Trust Code (FTC) / Farm Solution scenario, you create site collections and sub sites with the site definitions and web templates and then you use declarative code to configure the sites and apply customization. In this model, you typically use declarative code to create site columns, content types, and lists defined in XML and then use SharePoint's feature framework elements to package and deploy them.
+The approach you take to provision site collections and sub sites is different in the new SharePoint Add-in model, compared to how it was in Full Trust Code. In a typical Full Trust Code (FTC) / Farm Solution scenario, you would create site collections and sub sites with the site definitions and web templates and then use declarative code to configure the sites and apply customizations. In this model, you would typically use declarative code to create site columns, content types, and lists defined in XML and then use SharePoint's feature framework elements to package and deploy them.
 
-In an SharePoint Add-in model scenario, you use the SharePoint Client Side Object Model (CSOM) to create and configure site collections and sub sites. This pattern is commonly referred to as the *remote provisioning pattern*.
+In an SharePoint Add-in model scenario, you can use the SharePoint Client Side Object Model (CSOM) to create and configure site collections and sub sites. This pattern is commonly referred to as the *remote provisioning pattern*.
 
 At a high level, the remote provisioning pattern looks like this:
 
@@ -24,25 +24,25 @@ As a rule of a thumb, we recommend the following high-level guidelines for creat
 - We recommend that you do not use Feature framework elements in the creation of create collections and sub sites.
 	+ The only exception to this guideline is when you are using declarative XML-based provisioning to an Add-in web in a SharePoint-hosted SharePoint Add-in. This is because the CSOM is not available in a SharePoint-hosted SharePoint Add-in.
 
-Challenges creating site collections and sub sites
+Challenges when creating site collections and sub sites
 --------------------------------------------------
 
 **Creating in a web browser vs. Creating with code** 
 
-It is important to understand that creating site collections and sub sites via the web browser or via code are different. This list describes the different options.
+It is important to understand that creating site collections and sub sites via the web browser and via code are different. This list describes the different options.
 
 - **Creating via a web browser**
 	+ In this option, users access a SharePoint site via a web browser and use the Administrative Pages to create site collections and sub sites.
-	+ Usually the only time you will use the web browser to manually create site collections and sub sites is when you are prototyping or modifying a single SharePoint site that is not planned to grow to include other site collections or sub sites.	
+	+ Usually the only time you need to use the web browser is to manually create site collections and sub sites is when you are prototyping or modifying a single SharePoint site that is not planned to grow to include other site collections or sub sites.	
 - **Creating with code**
-	+ In this option, you'll execute SharePoint CSOM code to create site collections and sub sites. **{Todd, did I create an error here by changing this to "you'll execute"?}**
-	+ Later in this article you'll read about a few options you can use to execute the SharePoint CSOM code.
+	+ In this option, you would execute SharePoint CSOM code to create site collections and sub sites. 
+	+ Later in this article you can read about a few approaches that you could use to execute the SharePoint CSOM code.
 
 When **Creating via a web browser** consider the following points.
 
 - Creating site collections and sub sites via the web browser is typically a complicated and time consuming process.
 	+ These factors make creating site collections and sub sites via the web browser **prone to errors**.	
-- You can not easily replicate site collections and sub sites (and the components they contain) created via the web browser in a granular fashion. 
+- There is no way to re-create site collections and sub sites (and the components they contain) created via the web browser in a repeatable fashion. 
 	+ This makes it **difficult** to quickly and consistently deploy the site collections and sub sites to different environments as you move from development to testing to production.
 
 When **Creating with code**, consider the following points.
