@@ -7,8 +7,6 @@ The Enterprise Content Management (ECM) solution pack includes code samples and 
 
 The samples in this solution pack show you how to use provider-hosted add-ins to perform common ECM tasks such as setting site policies, uploading files, or synchronizing term groups. The articles in this section will help you get started with and walk you through the primary scenarios that each sample illustrates. 
 
-**Note**  You can use the  [Office 365 Developer Patterns and Practices](https://github.com/OfficeDev/PnP) project to [contribute](https://github.com/OfficeDev/PnP/wiki/contributing-to-Office-365-developer-patterns-and-practices) to these samples. You can also use the [Guidance](https://github.com/OfficeDev/PnP-Guidance) project on GitHub to contribute to these articles.
-
 ## In this section
 
 |**Article**|**Sample**|**Shows you how to...**|
