@@ -9,13 +9,7 @@ Localize content in your SharePoint site.
 
 The code samples described in this section show you how to use provider-hosted add-ins to localize site features and UI elements in your SharePoint solution. The articles in this section will help you get started with and walk you through the primary scenarios that each sample illustrates. 
 
-
- **Note:**  You can use the [Office 365 Developer Patterns and Practices](https://github.com/OfficeDev/PnP) project to [contribute](https://github.com/OfficeDev/PnP/wiki/contributing-to-Office-365-developer-patterns-and-practices) to these samples. You can also use the [Guidance project](https://github.com/OfficeDev/PnP-Guidance) on GitHub to contribute to the articles. For a complete list of samples, see the [Patterns and Practices developer center](http://dev.office.com/patterns-and-practices). 
-
-
 ## In this section
-
-
 
 |**Article**|**Sample**|**Shows you how to...**|
 |:-----|:-----|:-----|
