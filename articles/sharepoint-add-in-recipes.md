@@ -3,8 +3,6 @@
 
 The following table lists the articles included in this section.
 
- **Last modified:** April 11, 2016
-
 |**Article**|**Shows you how to**|
 |:-----|:-----|
 |[App-Only and Elevated privileges](SharePoint-Add-In-Recipe-elevated-privileges.md)|Elevate privileges in the new SharePoint Add-in model.|
