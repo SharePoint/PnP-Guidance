@@ -40,7 +40,7 @@
 ### [Localize UI elements](Localize-UI-elements-sample-app-for-SharePoint.md)
 ## [Search solutions](search-solutions-in-sharepoint-2013-and-sharepoint-online.md)
 ### [Search customizations](search-customizations-for-sharepoint.md)
-## [SharePoint Add-In Recipes](sharepoint-add-in-recipes.md)
+## [SharePoint Add-in recipes](sharepoint-add-in-recipes.md)
 ### [App-Only and Elevated privileges](SharePoint-Add-In-Recipe-elevated-privileges.md)
 ### [Branding SharePoint Sites](SharePoint-Add-In-Recipe-themes.md)
 ### [Custom Actions](SharePoint-Add-In-Recipe-custom-actions.)
