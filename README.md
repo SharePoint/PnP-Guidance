@@ -5,7 +5,9 @@ A collection of community contributed [Office 365 Developer Patterns and Practic
 
 *Please follow the structure of the existing articles under [articles](https://github.com/OfficeDev/PnP-Guidance/tree/master/articles) folder. We will update the guidance and other details soon.*
 
+## Copyright
 
+Copyright (c) 2016 Microsoft Corporation. All rights reserved.
 
 ---
 
