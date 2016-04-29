@@ -99,7 +99,7 @@
 ## [Deploy Sites to Microsoft Azure](Move-O365Api-Project-from-Dev-To-Prod.md)
 ## [Elevated privileges in SharePoint Add-ins](elevated-privileges-in-sharepoint-add-ins.md)
 ## [Handle SharePoint Online throttling](Handle-SharePoint-Online-throttling-by-using-exponential-back-off.md)
-## [Injecting JavaScript the safe way](Injecting JavaScript into SharePoint the safe way.md)
+## [Embedding JavaScript into SharePoint](Injecting JavaScript into SharePoint the safe way.md)
 ## [Introducing the PnP Provisioning Engine](Introducing-the-PnP-Provisioning-Engine.md)
 ## [Set external sharing in Office 365](Set-external-sharing-on-site-collections-in-Office-365.md)
 ## [SharePoint change log](query-sharepoint-change-log-with-changequery-and-changeToken.md)
