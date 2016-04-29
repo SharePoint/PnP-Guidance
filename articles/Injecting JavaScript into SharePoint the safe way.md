@@ -1,31 +1,22 @@
-# Injecting JavaScript into SharePoint the safe way
-Use namespaces in order to avoid conflicts of your JavaScript customizations with standard SharePoint JavaScripts and customizations deployed by other developers. 
+# Embedding JavaScript into SharePoint
 
- **Last modified:** April 30, 2015
+You can use namespaces to avoid conflicts between your JavaScript customizations and standard SharePoint JavaScript or JavaScript customizations deployed by other developers. 
 
- _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
+The [OfficeDev/PnP](https://github.com/OfficeDev/PnP/) samples and solutions often include JavaScript code. In order to make the techniques easy to understand, these samples are usually simple and do not use namespaces when embedding JavaScript code into SharePoint. It is important to ensure that you follow the simple steps outlined in this article when you incorporate PnP samples into your solutions.
 
-**In this article**
-
-[Why this is important](#sectionSection0)
-
-[How to use namespaces](#sectionSection1)
-
-[OfficeDev/PnP](https://github.com/OfficeDev/PnP/) provides various samples and solutions that include JavaScript code. In order to make demonstrated techniques easy to understand, these samples are usually oversimplified and do not use namespaces when  injecting JavaScript code into SharePoint. It is important to ensure that you follow the simple steps outlined in this article when encorporating OfficeDev/PnP samples into your solutions.
-
-## Why this is important
+## Why using namespaces is important
 <a name="sectionSection0"> </a>
 
-JavaScript is a loosely typed language. If you define a variable or function, and variable or function with the same name already exists in the current context, the new value or implementation will replace existing one.
-As a result, when injecting JavaScript code into SharePoint it is easy to override standard SharePoint JavaScripts or customizations deployed by other developers.
-This may lead to conflicts that may be hard to identify and debug.
+JavaScript is a loosely typed language. If you define a variable or function, and a variable or function with the same name already exists in the current context, the new value or implementation will replace the existing one.
+As a result, when you embed JavaScript code into SharePoint, it is easy to override standard SharePoint JavaScript code or customizations deployed by other developers.
+This can create conflicts that might be hard to identify and debug.
 
-In order to avoid such situations it is recommended that you always use custom namespaces for your JavaScripts.
+To avoid this, we recommend that you use custom namespaces for your JavaScript code.
 
 ## How to use namespaces
 <a name="sectionSection1"> </a>
 
-The sample below demonstrates a simple pattern used to organize JavaScript code in namespaces and classes.
+The following example shows a simple pattern used to organize JavaScript code in namespaces and classes.
 
 ```JavaScript
 var MySolution = MySolution || {};
@@ -58,4 +49,4 @@ MySolution.MyClass1.myFunction1();
 MySolution.MyClass1.myFunction2();
 ```
 
-This allows you to avoid naming conflicts with standard SharePoint JavaScripts and customizations deployed by other developers as now all your code uses custom *MySolution* namespace.
+Because all your code uses the custom *MySolution* namespace, you can avoid any naming conflicts.
