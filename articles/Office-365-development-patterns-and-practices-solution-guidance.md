@@ -24,6 +24,7 @@ The Office 365 Developer Patterns and Practices program provides samples and doc
 |[Handle SharePoint Online throttling](Handle-SharePoint-Online-throttling-by-using-exponential-back-off.md)|Learn how to handle throttling in SharePoint Online by using the exponential back-off technique.|
 |[Injecting JavaScript the safe way](Injecting JavaScript into SharePoint the safe way.md)|Use namespaces in order to avoid conflicts of your JavaScript customizations with standard SharePoint JavaScripts and customizations deployed by other developers.|
 |[Introducing the PnP Provisioning Engine](Introducing-the-PnP-Provisioning-Engine.md)|Get an introduction to the PnP Provisioning Engine.|
+|[JavaScript Patterns and Performance](javascript-patterns-and-performance.md)|Client-side JavaScript is now the way to go for UI control rendering.|
 |[Localization solutions](localization-solutions-for-sharepoint-2013-and-sharepoint-online.md)|Localize your SharePoint site contents and UI text.|
 |[PnP remote provisioning](pnp-remote-provisioning.md)|Learn about remote provisioning for your Office 365 and SharePoint Online site collections using features of the add-in model.|
 |[PnP remote timer job framework](pnp-remote-timer-job-framework.md)|Describes timer jobs which are background tasks that operate on your SharePoint sites.|
