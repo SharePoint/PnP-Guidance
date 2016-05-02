@@ -101,6 +101,7 @@
 ## [Handle SharePoint Online throttling](Handle-SharePoint-Online-throttling-by-using-exponential-back-off.md)
 ## [Embedding JavaScript into SharePoint](Embedding-JavaScript-into-SharePoint.md)
 ## [Introducing the PnP Provisioning Engine](Introducing-the-PnP-Provisioning-Engine.md)
+## [JavaScript Patterns and Performance](javascript-patterns-and-performance.md)
 ## [Set external sharing in Office 365](Set-external-sharing-on-site-collections-in-Office-365.md)
 ## [SharePoint change log](query-sharepoint-change-log-with-changequery-and-changeToken.md)
 ## [Upload Web Parts](upload-web-parts-in-sharepoint.md)
