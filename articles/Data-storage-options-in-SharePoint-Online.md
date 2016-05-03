@@ -2,28 +2,7 @@
 # Data storage options in SharePoint Online
 When you develop SharePoint Online add-ins, you have a number of different options for data storage. You can use the sample described in this article to explore the differences between each option, and to learn about the advantages to using remote data storage. 
 
- **Last modified:** March 16, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
-[Before you begin](#sectionSection0)
-
-[SharePoint list on the app web (Notes scenario)](#sectionSection1)
-
-[SharePoint list on the host web (Support Cases scenario)](#sectionSection2)
-
-[Northwind OData web service (Customer Dashboard scenario)](#sectionSection3)
-
-[Azure table storage (Customer Service Survey scenario)](#sectionSection4)
-
-[Azure queue storage (Customer Call Queue scenario)](#sectionSection5)
-
-[SQL Azure database (Recent Orders scenario)](#sectionSection6)
-
-[Additional resources](#bk_addresources)
-
 
 This article describes the  [Core.DataStorageModels](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.DataStorageModels) sample app, which shows you each of the following data storage options and the advantages and disadvantages of each:
 

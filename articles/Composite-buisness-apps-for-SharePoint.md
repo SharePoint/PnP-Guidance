@@ -2,18 +2,7 @@
 # Composite business apps for SharePoint 2013 and SharePoint Online
 Use composite business apps to integrate your SharePoint solutions with your business processes and technologies. Decide whether a SharePoint-hosted or provider-hosted add-in is the right choice for your solution.
 
- **Last modified:** March 16, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [SharePoint-hosted vs. provider-hosted add-ins](#sectionSection0)
-
- [In this section](#sectionSection1)
-
- [Additional resources](#bk_addresources)
-
 
 Composite business apps are apps that are tightly integrated with your business processes and line-of-business (LOB) technologies (like databases and web services). These apps typically include a number of complex interactions with users and with other technologies.
 The sample composite business apps described in this section provide building blocks that you can use to integrate your technologies and processes with the SharePoint 2013 add-in model.

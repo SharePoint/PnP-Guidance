@@ -3,8 +3,6 @@
 
 Improve the performance of your SharePoint provider-hosted add-in by limiting remote calls.
 
- **Last modified:** July 31, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 You can improve the performance of your SharePoint provider-hosted add-in by limiting the number and frequency of remote calls to SharePoint. Too many calls to the host site degrades performance. To limit the number of remote calls, you can implement either HTTP cookies or HTML5 local storage.

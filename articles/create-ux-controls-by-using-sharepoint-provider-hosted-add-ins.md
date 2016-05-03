@@ -3,8 +3,6 @@
 
 Create UX controls in SharePoint provider-hosted add-ins that work and behave like UX controls on the host web. 
 
- **Last modified:** August 12, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 The article describes three samples that show you how to implement UX controls in your provider-hosted add-in:

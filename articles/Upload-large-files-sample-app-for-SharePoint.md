@@ -2,18 +2,7 @@
 # Upload large files sample add-in for SharePoint
 Upload files larger than 2MB to SharePoint and SharePoint Online using SaveBinaryDirect, ContentStream, StartUpload, ContinueUpload and FinishUpload. 
 
- **Last modified:** April 13, 2015
-
  _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [Before you begin](#sectionSection0)
-
- [Using the Core.LargeFileUpload sample app](#sectionSection1)
-
- [Additional resources](#bk_addresources)
-
 
 The  [Core.LargeFileUpload](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.LargeFileUpload) sample shows you how to use a provider-hosted add-in to upload large files to SharePoint, and how to bypass the 2 MB file upload limit. Use this solution if you want to upload files that are larger than 2 MB to SharePoint. This sample runs as a console application that uploads large files to a document library by using one of the following methods:
 

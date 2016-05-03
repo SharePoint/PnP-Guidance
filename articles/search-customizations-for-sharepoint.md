@@ -3,8 +3,6 @@
 
 Create customized SharePoint 2013 and SharePoint Online search scenarios by using a search-based site directory, personalized search, or search configuration portability. 
 
- **Last modified:** August 11, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 ## Search-based site directory

@@ -3,8 +3,6 @@
 
 Localize content in your SharePoint site.
 
- **Last modified:** August 12, 2015
-
  _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 The code samples described in this section show you how to use provider-hosted add-ins to localize site features and UI elements in your SharePoint solution. The articles in this section will help you get started with and walk you through the primary scenarios that each sample illustrates. 

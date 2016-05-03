@@ -3,8 +3,6 @@
 
 Manage users, groups, and permissions within a SharePoint site collection. 
 
- **Last modified:** August 07, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 This article shows you how to add or remove groups and users within a given site collection. The code examples in this article add users and groups, and then give them permission levels of access to SharePoint. These user and group permission level actions are implemented via extension methods in the [Core.GroupManagement](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.GroupManagement) PnP sample.

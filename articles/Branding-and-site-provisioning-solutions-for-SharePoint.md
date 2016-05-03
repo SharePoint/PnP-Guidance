@@ -2,36 +2,7 @@
 # Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online
 The introduction of the Cloud Add-in Model and add-ins for SharePoint provides alternatives to existing, established ways of branding and provisioning SharePoint sites. 
 
- **Last modified:** April 28, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [What you need to know about SharePoint](#sectionSection0)
-
- [Key SharePoint terms and concepts ](#sectionSection1)
-
- [Hierarchy of SharePoint structural elements](#sectionSection2)
-
- [add-ins for SharePoint](#sectionSection3)
-
- [File system and content databases, and how they work together](#sectionSection4)
-
- [File customization states and their effects on upgrade](#sectionSection5)
-
- [Site branding and provisioning with the Cloud Add-in Model](#sectionSection6)
-
- [Branding and site provisioning code samples](#sectionSection7)
-
- [SharePoint branding workflow](#sectionSection8)
-
- [When should I customize?](#sectionSection9)
-
- [In this section](#sectionSection10)
-
- [Additional resources](#bk_addresources)
-
 
 Up to now, you might have used the SharePoint feature framework, site templates, web templates, and site definitions to provision your sites and site collections. The remote provisioning pattern shows you how to create custom add-ins for SharePoint that provision site branding and perform other site provisioning tasks.
 The articles in this section provide information about using add-ins for SharePoint to provision and manage site branding, a pattern that is sometimes referred to as remote provisioning.

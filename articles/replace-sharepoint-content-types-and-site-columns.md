@@ -3,8 +3,6 @@
 
 Use CSOM to replace SharePoint content types and site columns, add site columns to new content types, and replace the content types with new content types.
 
- **Last modified:** August 07, 2015
-
  _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 Learn the transformation process to use when replacing content types and site columns, adding site columns to new content types, and then replacing previous content types with new content types using the SharePoint client-side object model (CSOM).

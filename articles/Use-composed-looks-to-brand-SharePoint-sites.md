@@ -2,22 +2,7 @@
 # Use composed looks to brand SharePoint sites
 Apply composed looks, including colors, fonts, and a background image, to your SharePoint 2013 and SharePoint Online sites by using the SharePoint theming engine.
 
- **Last modified:** April 03, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [SharePoint theming engine](#sectionSection0)
-
- [Create custom themes](#sectionSection1)
-
- [Add a custom theme to SharePoint](#sectionSection2)
-
- [What does the theming engine do when a user applies a composed look?](#sectionSection3)
-
- [Additional resources](#bk_addresources)
-
 
 You can apply composed looks to your SharePoint sites. Composed looks are out-of-the-box themes that are included in SharePoint 2013 and SharePoint Online. 
 To apply a composed look to a SharePoint site, select **Site Settings** > **Look and Feel** > **Change the look**. You can then use the Change the look wizard to customize the colors, fonts, master page, and background image of a composed look. The Change the look wizard copies, transforms, and stores CSS in SharePoint's content database. It also recolors images and stores them in the content database. 
@@ -29,7 +14,6 @@ You can use the SharePoint 2013 theming engine to apply colors, fonts, and a bac
 
 In SharePoint 2013 and SharePoint Online, a theme is a connected set of XML definition files, an image file, and an associated master page that you can use to apply custom CSS to a site. The following XML files define color slots and font slots that define the details of specific colors and fonts as they're applied to styles: 
 
-
 - .spcolor
     
 - .spfont
@@ -37,8 +21,6 @@ In SharePoint 2013 and SharePoint Online, a theme is a connected set of XML defi
 You can create your own color and font files in your favorite text editor.
 
 The following table lists the elements of a composed look.
-
-
 
 |**Element**|**File or files**|**Where it's stored**|**Required?**|
 |:-----|:-----|:-----|:-----|
@@ -48,11 +30,9 @@ The following table lists the elements of a composed look.
 |Background image|.jpg.bmp.png.gif|Site assets|No|
 Users can select composed looks by using the Change the look wizard (**Site Settings** > **Look and Feel** > **Change the Look**), the Getting Started UI, or directly in the site actions menu. When a user selects a composed look, the theming engine applies colors, fonts, background images, the associated .master page, and the .preview file associated with the .master page to the site. 
 
-
 ### Color palettes
 
 The theming engine stores colors in color palettes defined by the .spcolor file, as shown in Figure 1. Color palettes are stored in the Theme Gallery of the root site. A color palette is an editable XML file made up of color palette definitions and color slots. Color palette metadata ( `<s:colorPalette>`) defines the following:
-
 
 - Three preview slots that define what color slots to use in composed look previews.
     

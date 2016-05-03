@@ -3,8 +3,6 @@
 
 Use images across domains in provider-hosted add-ins.
 
- **Last modified:** July 16, 2015
-
  _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 You might want to display images from a SharePoint site in your provider-hosted add-ins. Because provider-hosted add-ins run on a remote web, the domains for your provider-hosted add-in and your SharePoint site are different. For example, your add-in might run on Microsoft Azure, and you're trying to show an image from Office 365. Because your provider-hosted add-in crosses domains to access the image, SharePoint requires user authorization before the provider-hosted add-in shows the image.

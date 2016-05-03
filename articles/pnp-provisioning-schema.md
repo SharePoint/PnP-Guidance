@@ -2,8 +2,6 @@
 # PnP provisioning schema
 
 
- **Last modified:** October 15, 2015
-
 As you learned in our [PnP provisioning framework](pnp-provisioning-framework.md) and elsewhere, the format for provisioning templates has been decoupled from the persistence format so that you can use any format you prefer. Nevertheless, because using the XML provisioning schema for persisting templates is such a common scenario, we're providing some additional information about how to use the XML schema to serialize and save your provisioning templates.
 
  **Important:** While the provisioning schema obviously supports XML serialization of provisioning templates, it also provides the structure for serialization in JSON format. More generally, the schema provides the model for defining provisioning structures.

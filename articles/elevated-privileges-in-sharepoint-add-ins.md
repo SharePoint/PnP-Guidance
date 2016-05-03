@@ -2,8 +2,6 @@
 
 Use the app-only policy or service accounts to elevate privileges in SharePoint Add-ins.
 
-**Last modified:** July 16, 2015
-
 _**Applies to:** apps for SharePoint | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 Different methods are used to elevate privileges in SharePoint Add-ins and farm solutions. Farm solutions elevate privileges by using RunWithElevatedPrivileges(SPSecurity.CodeToRunElevated), which belongs to the SharePoint server-side object model. SharePoint Add-ins use either the app-only policy or service accounts.

@@ -2,24 +2,7 @@
 # SharePoint pages and the page model
 This article introduces the SharePoint page model, including master pages, content pages, parts of a SharePoint page, and default page file types. 
 
- **Last modified:** March 04, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [Key terms and concepts related to the SharePoint page model](#sectionSection0)
-
- [SharePoint master pages](#sectionSection1)
-
- [Web Part pages and Wiki pages](#sectionSection2)
-
- [Page layouts](#sectionSection3)
-
- [SharePoint page processing model](#sectionSection4)
-
- [Additional resources](#bk_addresources)
-
 
 A rendered SharePoint page is a combination of three page types: 
 

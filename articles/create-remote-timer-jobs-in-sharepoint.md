@@ -3,8 +3,6 @@
 
 Create remote timer jobs in SharePoint to perform background tasks to manage or govern your environment.
 
- **Last modified:** August 07, 2015
-
  _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 Create remote timer jobs to manage SharePoint by monitoring and taking action on SharePoint data. Remote timer jobs do not run on your SharePoint server. Instead remote timer jobs are scheduled tasks that run on another server. Examples of how timer jobs are used include:

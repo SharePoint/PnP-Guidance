@@ -3,8 +3,6 @@
 
 Create SharePoint content types by using CSOM, and make localization changes by using features introduced in SharePoint 2013 SP1.
 
- **Last modified:** June 24, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 You can use the [Core.SPD](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.SPD) sample to programmatically create site columns and content types and link them together. You can also use the SharePoint 2013 SP1 CSOM APIs, available in the [SharePoint Server 2013 Client Components SDK](http://www.microsoft.com/en-us/download/details.aspx?id=35585), to add a specific content type identifier, and localize content types, lists, and site titles. 

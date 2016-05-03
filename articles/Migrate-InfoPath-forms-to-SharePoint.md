@@ -2,8 +2,6 @@
 # Migrate InfoPath forms to SharePoint 2013
 Migrate InfoPath forms in your SharePoint add-ins to other supported solutions, such as Access applications, sandbox solutions, or the add-in model.
 
- **Last modified:** March 16, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 If you're using InfoPath as the basis for creating forms in your add-ins, now is the time to start thinking about migrating your forms to other solutions. Although InfoPath is currently supported, InfoPath 2013 is the last release of the desktop InfoPath client, and InfoPath Forms Services in SharePoint 2013 is the last release of InfoPath Forms Services. The client and the on-premises version of InfoPath Forms Services in SharePoint 2013 will be fully supported until 2023. The forms service will be supported in Office 365 until at least the next major release of Office.

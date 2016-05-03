@@ -2,8 +2,6 @@
 # Customize the UX by using SharePoint provider-hosted add-ins
 Customize SharePoint UX components remotely by using provider-hosted add-ins. 
 
- **Last modified:** August 12, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 This article describes samples that show best practices for customizing SharePoint UX components, including the following scenarios:

@@ -2,8 +2,6 @@
 # Upload Web Parts in SharePoint
 Deploy pre-configured, standard SharePoint Web Parts for your users.
 
- **Last modified:** August 07, 2015
-
  _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 You can upload pre-configured, standard SharePoint Web Parts for users to add to their SharePoint sites. For example, you can upload a pre-configured:

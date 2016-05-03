@@ -2,20 +2,7 @@
 # Use remote provisioning to brand SharePoint pages
 Use remote provisioning to interact with themes in SharePoint.
 
- **Last modified:** March 24, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [ApplyTheme method](#sectionSection0)
-
- [ThemeInfo class](#sectionSection1)
-
- [Using ApplyTheme and ThemeInfo in CSOM code](#sectionSection2)
-
- [Additional resources](#bk_addresources)
-
 
 You can apply and interact with themes by using remote provisioning features in SharePoint. These features are provided by the following APIs:
 

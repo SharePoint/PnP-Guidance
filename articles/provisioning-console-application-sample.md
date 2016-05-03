@@ -3,8 +3,6 @@
 
 Learn the fundamentals of using the PnP provisioning engine to create and persist, and then apply provisioning templates to new SharePoint site collections.
 
- **Last modified:** October 15, 2015
-
 To support the new add-in model, the Office 365 Developer Patterns and Practices program (PnP) has introduced a provisioning framework that allows users to create custom site templates by simply pointing at a site model, persist the model as a provisioning template, and then apply the custom template to new or existing site collections as needed.
 
 In this sample, we create a basic console application that implements classes in the provisioning PnP Core library to enable the PnP provisioning engine to complete these essential provisioning tasks: 

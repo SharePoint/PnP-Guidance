@@ -2,8 +2,6 @@
 # Display information from a host site by using Office Web Widgets
 Implement Office Web Widget controls in a SharePoint provider-hosted add-in to display information from a host site.
 
- **Last modified:** August 07, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 You can use Office Web Widgets to display information from a SharePoint-hosted site in the context of a provider-hosted add-in. Office Web Widgets are a set of controls that are designed to look and behave like SharePoint-hosted controls. The controls are provided as a [NuGet](https://www.nuget.org/) package, which provides the [Office Web Widgets library](http://www.nuget.org/packages/Microsoft.Office.WebWidgets.Experimental/).

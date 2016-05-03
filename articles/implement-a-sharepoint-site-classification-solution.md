@@ -3,8 +3,6 @@
 
 Implement a site classification solution in SharePoint.
 
- **Last modified:** August 07, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 Even with good governance, SharePoint sites can proliferate and grow out of control. Sites are created as they are needed, but are rarely deleted. Search crawl is burdened by unused site collections, and search produces outdated and irrelevant results. Site classification allows you to identify and preserve sensitive data. This article shows you how to use the [Core.SiteClassification](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SiteClassification) sample to implement a site classification solution, as well as use SharePoint site policies to enforce deletion. You can integrate this solution into your existing site provisioning solution to better manage your sites.
