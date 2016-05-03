@@ -3,8 +3,6 @@
 
 Implement asynchronous operations in SharePoint Add-ins by using Microsoft Azure WebJobs.
 
- **Last modified:** August 07, 2015
-
  _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 The [Core.QueueWebJobUsage](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.QueueWebJobUsage) sample shows you how to create and run asynchronous operations by using provider-hosted add-ins and Azure WebJobs in Office 365.

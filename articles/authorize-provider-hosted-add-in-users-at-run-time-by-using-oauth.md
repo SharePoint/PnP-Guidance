@@ -3,8 +3,6 @@
 
 Provide authorized access to SharePoint resources by using OAuth in provider-hosted add-ins at run time.
 
- **Last modified:** August 07, 2015
-
  _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 Normally, your users access SharePoint add-ins by opening a SharePoint site, choosing  **Site Contents**, and then choosing the add-in. SharePoint redirects users to the remote web where your provider-hosted add-in runs. Because users access the add-in from SharePoint, users are authorized by SharePoint before they can access the add-in.

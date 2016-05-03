@@ -3,17 +3,15 @@
 
 Get a high-level overview of remote provisioning features available for your Office 365 and SharePoint Online site collections as well as an understanding about why creating sandboxed and full-trust solutions is no longer recommended.
 
- **Last modified:** October 15, 2015
-
  Provide a code-centric and template-based platform for provisioning your site collections. The new provisioning engine allows you to persist and reuse provisioning models in your Office 365 and SharePoint Online as well as on-premises site collections.
 
 ## Why the new approach?
 
-This begs the question,  _Why the need for a new approach?_ And the question, _What are the advantages of this approach over using sandboxed and full-trust solutions?_
+This begs the question &mdash; _Why the need for a new approach?_ And the question, _What are the advantages of this approach over using sandboxed and full-trust solutions?_
 
 The answer to the first question concerns the introduction of SharePoint Add-ins and the add-in model (formerly known as the "App model"). With this change, Microsoft has moved away from sandboxed and full-trust solutions in favor of provider-hosted add-ins and on-premises solutions. These innovations have driven a retooling of the provisioning model and the introduction of a new provisioning engine.
 
-Regarding the second questionâ€” _What are the advantages of the new provisioning model?_ â€”there are several:
+Regarding the second question &mdash; _What are the advantages of the new provisioning model?_ &mdash; there are several:
 
 
 - Customize templates. Because site collections always start with an out-of-the-box template, the customizations that you introduce using the new remote provisioning model will incorporate automatic updates without any further maintenance required by you. Furthermore, this approach avoids problems that result from having different templates used across different site collections.
@@ -24,7 +22,7 @@ Regarding the second questionâ€” _What are the advantages of the new provis
     
 - Serialize and reuse templates. You can serialize and then reuse your provisioning templates.
     
-- Persist templates in serialized format. You are able to persist your provisioning templates in whichever serialization format works best for youâ€”for example, XML or JSON.
+- Persist templates in serialized format. You are able to persist your provisioning templates in whichever serialization format works best for you &mdash; for example, XML or JSON.
     
 - Provision new site collections. You can easily provision new site collections by applying your provisioning template to a target site in whichever serialized format you select.
     

@@ -2,8 +2,6 @@
 # Corporate event app integration with SharePoint
 Integrate add-ins for SharePoint into your business operations by using a provider-hosted add-in that can implement multiple complex business tasks.
 
- **Last modified:** March 16, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 The  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement a centralized corporate events management system as a provider-hosted add-in that integrates with your existing line-of-business (LOB) applications.

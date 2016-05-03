@@ -2,8 +2,6 @@
 # Replace SharePoint lists created from list definitions
 Replace lists and libraries that were created by using list definitions in SharePoint. 
 
- **Last modified:** August 07, 2015
-
  _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 If you used list definitions to create lists in your farm solution, learn how to transform them into new solutions that provide similar functionality using the client object model (CSOM). This article describes how to use the client object model (CSOM) to:

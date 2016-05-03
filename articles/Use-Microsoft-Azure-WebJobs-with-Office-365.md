@@ -2,32 +2,12 @@
 # Use Microsoft Azure WebJobs with Office 365
 Use Azure WebJobs to implement timer jobs that can access SharePoint Online.
 
- **Last modified:** April 20, 2015
-
  _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [Create and run a console application as an Azure WebJob](#sectionSection0)
-
- [Create an organization account](#sectionSection1)
-
- [Create and set up the console application](#sectionSection2)
-
- [Add code to the console application](#sectionSection3)
-
- [Publish your console application as an Azure WebJob](#sectionSection4)
-
- [Run and verify your Azure WebJob](#runandverify)
-
- [Additional resources](#bk_addresources)
-
 
  **Provided by:**
 Tobias Zimmergren
 
 Implement timer job functionality using  [Microsoft Azure WebJobs](http://azure.microsoft.com/documentation/articles/websites-webjobs-resources/) or Windows Task Scheduler to perform tasks in SharePoint Online. A timer job is a repetitive, scheduled, background process that runs in SharePoint to perform certain tasks. For example, you may want a timer job to copy data entered in a SharePoint list to a database. In SharePoint Online, you cannot deploy farm solutions, which is how timer jobs were deployed in the past. To implement similar timer job functionality in SharePoint Online, you need to run a console application as an Azure WebJob. The console application accesses SharePoint Online using the client-side object model (CSOM). This article presents the basic concepts involved in deploying console applications as Azure WebJobs to run and access your SharePoint Online sites and content.
-
 
 ## Create and run a console application as an Azure WebJob
 <a name="sectionSection0"> </a>
@@ -44,19 +24,16 @@ To set up your console application to run as an Azure WebJob, you need to:
 4. Publish your console application as an Azure WebJob.
     
 5. Run and verify your Azure WebJob.
-    
 
 ## Create an organization account
 <a name="sectionSection1"> </a>
 
 You need to create an account for the Azure WebJob to use when accessing SharePoint sites and content. For more information, see  [Add users individually to Office 365-Admin Help](https://support.office.microsoft.com/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec). When the Azure WebJob runs, the  **Modified By** field stores and displays the value entered in **Display name** of the organization account. Ensure you choose a display name that your users can easily identify as the account used by the Azure WebJob for accessing SharePoint.
 
-
 ## Create and set up the console application
 <a name="sectionSection2"> </a>
 
 To create a console application to run as an Azure WebJob, perform the following steps:
-
 
 1. Create a new console application project by:
     

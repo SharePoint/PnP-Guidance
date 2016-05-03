@@ -2,18 +2,7 @@
 # Set external sharing on site collections in Office 365
  You can control external sharing settings on a SharePoint site collection in Office 365, allowing external users (users who don't have an organization account in your Office 365 subscription) access to your site collection.
 
- **Last modified:** March 16, 2015
-
  _**Applies to:** add-ins for SharePoint | SharePoint Online | Office 365_
-
- **In this article**
-
-[Before you begin](#sectionSection0)
-
-[Using the Core.ExternalSharing app](#sectionSection1)
-
-[Additional resources](#bk_addresources)
-
 
 The  [Core.ExternalSharing](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ExternalSharing) code sample shows you how to control your external sharing settings on a SharePoint site collection. Use this solution to:
 

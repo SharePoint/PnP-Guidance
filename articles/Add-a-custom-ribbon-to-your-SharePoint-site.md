@@ -2,18 +2,7 @@
 # Add a custom ribbon to your SharePoint site
 Add or remove a custom ribbon on your SharePoint site. Add JavaScript event handlers using the embed JavaScript technique to handle your custom ribbon's events.
 
- **Last modified:** March 16, 2015
-
  _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [Before you begin](#sectionSection0)
-
- [Using the Core.RibbonCommands app](#sectionSection1)
-
- [Additional resources](#bk_addresources)
-
 
 The  [Core.RibbonCommands](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.RibbonCommands) code sample shows you how to add a custom ribbon to a SharePoint site. Use this solution if you want to:
 

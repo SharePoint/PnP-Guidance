@@ -2,18 +2,7 @@
 # Use remote event receivers in SharePoint
 Use remote event receivers to handle events in the SharePoint add-in model. Use AppInstalled and AppUninstalling events to set up or remove SharePoint objects and other event receivers your add-in needs.
 
- **Last modified:** March 16, 2015
-
  _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
-[Before you begin](#sectionSection0)
-
-[Use the Core.EventReceivers add-in](#sectionSection1)
-
-[Additional resources](#bk_addresources)
-
 
 The  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EventReceivers) sample shows how to use a provider-hosted add-in with a remote event receiver to handle the AppInstalled and AppUninstalling events. The AppInstalled and AppUninstalling events set up and remove SharePoint objects that the add-in uses when it runs. Additionally, the AppInstalled event handler adds the ItemAdded event handler to a list. Use this solution if you want to:
 
@@ -22,7 +11,6 @@ The  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/master/Samples/
 - Replace event receivers implemented using fully trusted code solutions. In fully trusted code solutions, you can run event receivers on the SharePoint server. In the new SharePoint add-in model, because you cannot run the event receiver on the SharePoint server, you need to implement a remote event receiver on a web server.
     
 - Receive notifications of changes occuring in SharePoint. For example, when a new item is added to a list, you want to perform a task.
-    
 
 **Note**  SharePoint-hosted add-ins do not support remote event receivers. To use remote event receivers, you need to use a provider-hosted add-in. You should not use remote event receivers for synchronization scenarios, or for long running processes. For more information, see  [How to: Create an add-in event receiver](https://msdn.microsoft.com/library/office/jj220052.aspx).
 
@@ -32,7 +20,6 @@ The  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/master/Samples/
 To get started, download the  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EventReceivers) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this add-in, do the following:
-
 
 1. In the properties on the Core.EventReceivers project, verify that  **Handle App Installed** and **Handle App Uninstalling** is set to **True**. Setting  **Handle App Installed** and **Handle App Uninstalling** to **True** creates a WCF service that defines the event handler for the **AppInstalled** and **AppUninstalling** event. In Core.EventReceivers, open the shortcut menu (right-click) on AppManifest.xml, and choose **Properties**. The  **InstalledEventEndpoint** and **UninstallingEventEndpoint** point to the remote event receiver that handles the **AppInstalled** and **AppUninstalling** events.
     

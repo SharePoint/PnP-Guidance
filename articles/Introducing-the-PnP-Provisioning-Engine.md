@@ -1,25 +1,8 @@
 # Introducing the PnP Provisioning Engine
 
-**Last modified:** July 24, 2015
-
 **Author:** Paolo Pialorsi - [www.piasys.com](http://www.piasys.com/) - [@PaoloPia](https://www.twitter.com/PaoloPia/)
 
  _**Applies to:** SharePoint 2013 | SharePoint Online | Office 365_
-
-
- **In this article**
-
- [The Goal](#thegoal)
-
- [Creating a Provisioning Template](#creatingtemplate)
-
- [Applying a Provisioning Template](#applyingtemplate)
-
- [Advanced Topics](#advancedtopics)
- 
- [Requirements and Wrap Up](#wrapup)
-
- [Additional resources](#bk_addresources)
 
 
 This short whitepaper introduces the PnP Provisioning Engine, which has been release in April 2015 within the [OfficeDev PnP](http://aka.ms/officedevpnp) project, and which will be updated on a monthly basis, accordingly to the release schedule of the Office Dev PnP Core Library. What you will see here is available thanks to the efforts of some of the Office Dev PnP Core Team members ([Vesa Juvonen](https://twitter.com/vesajuvonen), [Bert Jansen](https://twitter.com/O365Bert), [Frank Marasco](https://twitter.com/frank_marasco), [Erwin van Hunen](https://twitter.com/erwinvanhunen), and [me](https://twitter/paolopia)), as well as the whole OfficeDev PnP community.

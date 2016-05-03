@@ -3,8 +3,6 @@
 
 Find out about the SharePoint search architecture, search APIs, and search add-ins.
 
- **Last modified:** December 07, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 Search in SharePoint 2013 combines ease of configuration and deployment with the scalability and extensibility of the FAST Search Server on a single enterprise search platform.

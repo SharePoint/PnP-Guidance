@@ -2,20 +2,7 @@
 # Call web services from SharePoint workflows
 Deploy a SharePoint 2013 workflow to the host web from an add-in for SharePoint, and call web services from SharePoint workflows.
 
- **Last modified:** March 16, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [Call custom web services from a workflow](#bk1)
-
- [Call a custom web service from a workflow and update SharePoint by using the SharePoint web proxy](#bk2)
-
- [Associate a workflow with the host web](#bk3)
-
- [Additional resources](#bk_addresources)
-
 
 You can use the SharePoint 2013 add-in model to create and deploy workflows that run on either the add-in web or the host web. These workflows can interact with the remotely hosted portions of provider-hosted add-ins. The workflows can also call remote web services that contain important business data in one of two ways: 
 

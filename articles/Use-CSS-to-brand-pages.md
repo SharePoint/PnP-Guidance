@@ -2,24 +2,7 @@
 # Use CSS to brand SharePoint pages
 Use CSS to support branding and site design in SharePoint. Find out about CSS is master pages, the corev15.css file, and composed looks in custom branding.
 
- **Last modified:** March 30, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [CSS branding overview](#sectionSection0)
-
- [CSS in master pages](#sectionSection1)
-
- [Corev15.css file](#sectionSection2)
-
- [Composed looks in custom branding](#sectionSection3)
-
- [Applying custom CSS to a SharePoint page](#sectionSection4)
-
- [Additional resources](#bk_addresources)
-
 
 Cascading style sheet (CSS) plays a large role in SharePoint branding. To successfully customize the site design in SharePoint 2013 and SharePoint Online, it's useful to be familiar with how SharePoint uses CSS.
 

@@ -3,13 +3,9 @@
 
 Use provider-hosted SharePoint Add-ins to control user experience (UX) components in SharePoint 2013 and SharePoint Online.
 
- **Last modified:** August 21, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 ## In this section
-
-
 
 |**Article**|**Shows you how to**|
 |:-----|:-----|
@@ -20,7 +16,6 @@ Use provider-hosted SharePoint Add-ins to control user experience (UX) component
 
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 - [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
     

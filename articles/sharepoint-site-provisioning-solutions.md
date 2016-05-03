@@ -3,8 +3,6 @@
 
 Transition your SharePoint Online and SharePoint 2013 site provisioning solutions from full-trust code to the add-in model. 
 
- **Last modified:** August 07, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 The samples described in this section show you how to use provider-hosted add-ins to perform common site provisioning tasks such as site classification, creating content types, and managing permissions and users. The articles in this section will help you get started with and walk you through the primary scenarios that each sample illustrates. 

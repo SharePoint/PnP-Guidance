@@ -2,31 +2,12 @@
 # SharePoint development and design tools and practices
 You can use SharePoint design and development tools to apply branding to your SharePoint sites.
 
- **Last modified:** April 09, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [Key SharePoint development and design terms and concepts](#sectionSection0)
-
- [Development options](#sectionSection1)
-
- [Design tools](#sectionSection2)
-
- [Design tool options for SharePoint Online](#sectionSection3)
-
- [Additional resources](#bk_addresources)
-
 
 This article provides information about the development and design options that are available in SharePoint. You can also find information about how to use the remote provisioning pattern to apply branding assets to a SharePoint site.
 
 ## Key SharePoint development and design terms and concepts
 <a name="sectionSection0"> </a>
-
-
-
-
 
 |**Term or concept**|**Definition**|**More information**|
 |:-----|:-----|:-----|

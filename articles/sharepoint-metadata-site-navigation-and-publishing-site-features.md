@@ -3,16 +3,11 @@
 
 Use SharePoint Online metadata management features, site navigation, and publishing site features to support SharePoint publishing sites.
 
- **Last modified:** August 12, 2015
-
  _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 This article explains how to manage metadata and customize site navigation and publishing site features in SharePoint Online by using the add-in model. It also covers ways to work with common web programming patterns and libraries to help customize SharePoint publishing site branding.
 
-
 ## Key metadata, navigation, and publishing terms and concepts
-
-
 
 |**Term or concept**|**Description and guidance**|
 |:-----|:-----|

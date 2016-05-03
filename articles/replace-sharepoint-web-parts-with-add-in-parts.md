@@ -3,8 +3,6 @@
 
 Use the transformation process to replace Web Parts with add-in parts by using the SharePoint client object model (CSOM).
 
- **Last modified:** August 11, 2015
-
  _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 You can use the transformation process to replace SharePoint Web Parts with add-in parts on pages by using CSOM to find and remove specific Web Parts, and then adding the new add-in parts.

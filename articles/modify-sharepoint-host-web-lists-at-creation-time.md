@@ -3,8 +3,6 @@
 
 Modify a SharePoint list created in the host web at list creation time.
 
- **Last modified:** August 07, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
  When you create a new list in the host web, you can use a **ListAdded** remote event receiver to modify that list. For example, you can enable versioning, or add a content type to the list, or make any other changes implemented by the client object model (CSOM).

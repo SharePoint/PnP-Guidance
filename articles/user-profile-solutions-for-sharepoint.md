@@ -2,8 +2,6 @@
 
 The user profiles solution pack includes code samples and documentation that you can use to work with user profile properties and personalize your SharePoint solution.
 
-**Last modified:** August 07, 2015
-
 The samples in this solution pack show you how to use provider-hosted add-ins to work with SharePoint user profile data. The articles in this section will help you get started with and walk you through the primary scenarios that each sample illustrates. 
 
 ## In this section

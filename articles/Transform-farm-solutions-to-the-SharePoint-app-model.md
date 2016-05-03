@@ -2,20 +2,7 @@
 # Transform farm solutions to the SharePoint add-in model
 Transform or convert your farm solutions to the SharePoint add-in model. Learn how to convert web parts, page layouts, master pages, timer jobs, and so on to the SharePoint add-in model.
 
- **Last modified:** April 20, 2015
-
  _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [Plan the transformation process](#sectionSection0)
-
- [Transformation approaches to deploy your new add-in for SharePoint](#sectionSection1)
-
- [Best practices for specific farm solutions ](#sectionSection2)
-
- [Additional resources](#bk_addresources)
-
 
 If you have extended your SharePoint environment by using farm solutions and you want to migrate your extensions to the SharePoint add-in model to make your transition to SharePoint Online easier, you need to transform your farm solutions to the SharePoint add-in model. Transforming your farm solutions to the SharePoint add-in model involves analyzing your existing extensions, designing and developing your new add-in for SharePoint, and then testing and deploying your add-in in your production environment. This article describes the process and best practices to use when you transform your farm solutions to the SharePoint add-in model.
 

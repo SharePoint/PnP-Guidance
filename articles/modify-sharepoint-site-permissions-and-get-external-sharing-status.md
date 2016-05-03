@@ -3,8 +3,6 @@
 
 Modify properties of site collection administrators by using CSOM. Get the external sharing status and external users of a site collection or tenant.
 
- **Last modified:** August 12, 2015
-
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 You can use the [Core.SitePermissions](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SitePermissions) sample to modify the site collection administrators on any site collection, including those for OneDrive for Business on Office 365 tenants. This sample also shows you how to obtain external sharing status for Office 365 Multi-Tenant installations.
