@@ -10,7 +10,7 @@ The Office 365 Developer Patterns and Practices program provides samples and doc
 |:-----|:-----|
 |[Add a custom ribbon to your SharePoint site](Add-a-custom-ribbon-to-your-SharePoint-site.md)|Add or remove a custom ribbon on your SharePoint site, and use the embed JavaScript technique to handle your custom ribbon's events.|
 |[Authorize provider-hosted add-in users at run time](authorize-provider-hosted-add-in-users-at-run-time-by-using-oauth.md)|Provide authorized access to SharePoint resources by using OAuth in provider-hosted apps at run time.|
-|[Branding and site provisioning](Branding-and-site-provisioning-solutions-for-SharePoint.md)|Use apps for SharePoint to provision and manage SharePoint site branding.|
+|[Branding and site provisioning](Branding-and-site-provisioning-solutions-for-SharePoint.md)|Use SharePoint Add-ins to provision and manage SharePoint site branding.|
 |[Composite business add-ins](Composite-buisness-apps-for-SharePoint.md)|Use composite business apps to integrate your SharePoint solutions with your business processes and technologies. |
 |[Configure Office 365 Projects for Distribution](Configure-O365Api-Project-For-Distribution.md)|Know the steps developers should consider taking on their projects that leverage the Office 365 APIs prior to distributing them to other developers, their customers, or to source control systems such as Team Foundation Server, Git or Visual Studio Online.|
 |[Configure Provider-Hosted Add-ins for Distribution](Configure-SP-Provider-Hosted-Apps-For-Distribution.md)|Share a SharePoint Provider-Hosted application with other developers, or obtain a copy from a source control system such as Team Foundation Server, Git or Visual Studio Online.|
