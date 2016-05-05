@@ -262,7 +262,7 @@ When a user applies a composed look, SharePoint copies, transforms, and stores C
 
 When it applies a composed look, the engine maps the settings specified by specific CSS comments that the theming engine defines. Under the hood, the theming engine saves the background image to Site Assets, scales and compresses JPG and BMP images, and limits the size of GIF and PNG images. 
 
-When a composed look is applied to a SharePoint site, SharePoint finds and replaces CSS comment tokens by injecting a value derived from the composed look in the next line in the CSS file after the token. This new value is applied to the SharePoint site.
+When a composed look is applied to a SharePoint site, SharePoint finds and replaces CSS comment tokens by embedding a value derived from the composed look in the next line in the CSS file after the token. This new value is applied to the SharePoint site.
 
 The following table lists the CSS comment tokens.
 

@@ -26,7 +26,7 @@ As a rule of a thumb, we would like to provide the following high-level guidelin
 
 - Use Office 365 themes, SharePoint site theming experience components, and composed looks to apply branding to SharePoint sites whenever possible.
 - You can adjust some CSS settings using the alternate CSS option if the themes do not support your requirements.
-- You can use JavaScript injection to modify or hide elements of a SharePoint site.
+- You can use JavaScript embedding to modify or hide elements of a SharePoint site.
 - You can customize SharePoint sites using custom master pages, but keep in mind this will cause you additional long-term costs and challenges with future updates.
 	+ In most cases, you can achieve all common branding scenarios with themes, composed looks, and alternate CSS.
 	+ If you chose to use custom master pages, be prepared to apply changes to the custom master pages when major functional updates are applied to Office 365.
@@ -91,7 +91,7 @@ See the [Themes overview for SharePoint 2013](https://msdn.microsoft.com/en-us/l
 
 When applying custom branding to SharePoint sites you will encounter the need to brand both team sites and publishing sites. Generally speaking, intranets built on SharePoint in both on-premises and Office 365 scenarios use a combination of team sites and publishing sites.  
 
-Custom branding requirements often times require specific layout changes that themes and JavaScript injection techniques cannot accomplish.
+Custom branding requirements often times require specific layout changes that themes and JavaScript embedding techniques cannot accomplish.
 
 In such a scenario, team sites usually do not require the amount of custom branding that publishing sites do and the out-of-the-box SharePoint Contemporary View for mobile devices is usually sufficient to support mobile devices for team sites.  Since this is the case, it is best to only use custom master pages for publishing sites and to use custom SharePoint themes (.spcolor files), font schemes (.spfont files), and background images defined as composed looks to brand team sites.
 
@@ -110,7 +110,7 @@ You can choose from several options to apply brand customization to SharePoint s
 - Use Alternate CSS to brand a SharePoint site.
 - Create a color scheme for a SharePoint theme manually. 
 - Create a font scheme for a SharePoint theme manually.
-- Use JavaScript injection to show and hide components on a SharePoint site.
+- Use JavaScript embedding to show and hide components on a SharePoint site.
 - Create custom master pages and page layouts for a SharePoint site.
 - Create a composed look for a SharePoint site.
 
@@ -246,24 +246,24 @@ This option works well when your branding needs include a new font scheme but do
 
 You can use the web browser or the remote provisioning pattern to upload the .spfont file to a SharePoint site.
 
-Use JavaScript injection to show and hide components on a SharePoint site
+Use JavaScript embedding to show and hide components on a SharePoint site
 -------------------------------------------------------------------------
-You can use JavaScript injection to apply custom branding to SharePoint sites.  JavaScript injection registers JavaScript to execute for all pages on a SharePoint site.  Under the hood, JavaScript injection relies on custom actions assigned to script block definitions.  These custom actions are added to the SharePoint site and cause the JavaScript in the script blocks to execute.  In summary, this approach allows you to execute JavaScript code.  In a branding scenario, the JavaScript code typically uses JQuery to manipulate the Document Object Model (DOM).
+You can use JavaScript embedding to apply custom branding to SharePoint sites.  JavaScript embedding registers JavaScript to execute for all pages on a SharePoint site.  Under the hood, JavaScript embedding relies on custom actions assigned to script block definitions.  These custom actions are added to the SharePoint site and cause the JavaScript in the script blocks to execute.  In summary, this approach allows you to execute JavaScript code.  In a branding scenario, the JavaScript code typically uses JQuery to manipulate the Document Object Model (DOM).
 
 See this article to learn how to [Customize your SharePoint site UI by using JavaScript](Customize-your-SharePoint-site-UI-by-using-JavaScript.md).  
 
-- Using JavaScript injection for SharePoint sites requires a medium amount of time to implement and maintain in the short and long term.
-- Using JavaScript injection for SharePoint sites provides a good amount of flexibility to brand a SharePoint site.
-- You can apply JavaScript injection at a per-site level.
-- When Minimal Download /Strategy (MDS) is enabled for a SharePoint site you must take extra care to ensure any JavaScript injection you use will perform correctly.  The article referenced above describes this in depth.
+- Using JavaScript embedding for SharePoint sites requires a medium amount of time to implement and maintain in the short and long term.
+- Using JavaScript embedding for SharePoint sites provides a good amount of flexibility to brand a SharePoint site.
+- You can apply JavaScript embedding at a per-site level.
+- When Minimal Download /Strategy (MDS) is enabled for a SharePoint site you must take extra care to ensure any JavaScript embedding you use will perform correctly.  The article referenced above describes this in depth.
 
-**When is using JavaScript injection to show and hide components on a SharePoint site a good fit?**
+**When is using JavaScript embedding to show and hide components on a SharePoint site a good fit?**
 
-This option works well when you need to show or hide or modify elements that come with SharePoint.  For example, you could use JavaScript injection to replace the out-of-the-box top navigation control with your own custom client-side navigation control.
+This option works well when you need to show or hide or modify elements that come with SharePoint.  For example, you could use JavaScript embedding to replace the out-of-the-box top navigation control with your own custom client-side navigation control.
 
 **Recommended deployment approach**
 
-You can use the remote provisioning pattern to deploy JavaScript injection modifications to a SharePoint site.
+You can use the remote provisioning pattern to deploy JavaScript embedded modifications to a SharePoint site.
 
 Create custom master pages and page layouts for a SharePoint site
 -----------------------------------------------------------------

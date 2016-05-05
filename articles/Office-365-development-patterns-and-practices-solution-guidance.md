@@ -22,7 +22,7 @@ The Office 365 Developer Patterns and Practices program provides samples and doc
 |[ECM solutions](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)|Perform common ECM tasks such as setting site policies, uploading files, synchronizing term groups, and more.|
 |[Elevated privileges in SharePoint Add-ins](elevated-privileges-in-sharepoint-add-ins.md)|Use the app-only policy or service accounts to elevate privileges in SharePoint Add-ins.|
 |[Handle SharePoint Online throttling](Handle-SharePoint-Online-throttling-by-using-exponential-back-off.md)|Learn how to handle throttling in SharePoint Online by using the exponential back-off technique.|
-|[Injecting JavaScript the safe way](Injecting JavaScript into SharePoint the safe way.md)|Use namespaces in order to avoid conflicts of your JavaScript customizations with standard SharePoint JavaScripts and customizations deployed by other developers.|
+|[Embedding JavaScript the safe way](Embedding-JavaScript-into-SharePoint.md)|Use namespaces in order to avoid conflicts of your JavaScript customizations with standard SharePoint JavaScripts and customizations deployed by other developers.|
 |[Introducing the PnP Provisioning Engine](Introducing-the-PnP-Provisioning-Engine.md)|Get an introduction to the PnP Provisioning Engine.|
 |[JavaScript Patterns and Performance](javascript-patterns-and-performance.md)|Client-side JavaScript is now the way to go for UI control rendering.|
 |[Localization solutions](localization-solutions-for-sharepoint-2013-and-sharepoint-online.md)|Localize your SharePoint site contents and UI text.|

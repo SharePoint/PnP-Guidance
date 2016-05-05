@@ -124,7 +124,7 @@ The helper code displays the promoted links with a table inside an **XsltListVie
 
 ![Second wiki page with XsltListViewWeb part and promoted links table](media/customize-the-ux-by-using-sharepoint-provider-hosted-add-ins/6dc60a0b-b11a-4fe9-ad06-6b4d0d4b8b24.png)
 
-The **WpPromotedLinks** object on the **LabHelper** instance contains XML that defines the appearance of the Web Part that will be injected into the wiki page. The **AddWebPartToWikiPage** method then inserts the newly defined Web Part inside a new `div` tag on the wiki page.
+The **WpPromotedLinks** object on the **LabHelper** instance contains XML that defines the appearance of the Web Part that will be embedded into the wiki page. The **AddWebPartToWikiPage** method then inserts the newly defined Web Part inside a new `div` tag on the wiki page.
 
 
 

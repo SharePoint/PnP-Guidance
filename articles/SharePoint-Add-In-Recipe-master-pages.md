@@ -29,7 +29,7 @@ Team sites vs. publishing sites
 
 When applying custom branding to SharePoint sites, you will encounter the need to brand both team sites and publishing sites. Generally speaking, intranets built on SharePoint in both on-premises and Office 365 scenarios use a combination of team sites and publishing sites.  
 
-Custom branding requirements often times require specific layout changes that themes and JavaScript injection techniques cannot accomplish.
+Custom branding requirements often times require specific layout changes that themes and JavaScript embedding techniques cannot accomplish.
 
 In such a scenario, team sites usually do not require the amount of custom branding that publishing sites do and the out-of-the-box SharePoint Contemporary View for mobile devices is usually sufficient to support mobile devices for team sites. Since this is the case, it is best to only use custom master pages for publishing sites and to use AlternativeCSS and custom SharePoint themes (.spcolor files), font schemes (.spfont files) and background images defined as composed looks to brand team sites.
 

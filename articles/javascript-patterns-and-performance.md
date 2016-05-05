@@ -114,7 +114,7 @@ Data-heavy dashboards are also a candidate for a provider hosted app which can s
 
 ## <a name="LoaderPattern"></a> The Loader Pattern
 
-The goal of the loader pattern is to provide a way to inject an unknown number of remote scripts into a site without having to update the site. The updates can be done on the remote CDN and will update all sites.
+The goal of the loader pattern is to provide a way to embed an unknown number of remote scripts into a site without having to update the site. The updates can be done on the remote CDN and will update all sites.
 
 The Loader Pattern constructs a URL with date and time stamp at the end so that the file will not be cached. It sets up jQuery as a dependency on the loader file, then executes a function in the loader. This ensures your custom JavaScript will load after jQuery finishes loading.
 
