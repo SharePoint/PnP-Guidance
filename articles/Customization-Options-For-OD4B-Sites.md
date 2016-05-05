@@ -12,14 +12,14 @@ There are numerous different aspects on applying customizations to OneDrive for 
 - Avoid customizing OD4B sites using custom master pages, since this will cause you additional long term costs and challenges with future updates
   + In most of the cases, you can achieve all common branding scenarios with themes and alternate CSS, so this is not really that limiting factor
   + If you chose to use custom master pages, be prepared on applying changes to the sites when major functional updates are applied to Office 365
-- You can use JavaScript injection to modify or hide functionalities from the site
+- You can use JavaScript embedding to modify or hide functionalities from the site
 - You can use CSOM to control for example language or regional settings in the OD4B sites (see new APIs)
 - We do not recommend usage of content types and site columns in OD4B sites to avoid challenges with the 
   + Think OD4B sites as for personal un-structural data and documents. Team sites and collaboration sits are then for company data and documents where you can certainly use whatever information management policies and metadata you want.
 
 As a summary, customizations are definitely supported in Office 365 and you can keep on using them with OD4B sites. We just truly want to ensure that you consider the short and long term impact of these customizations from operational and maintenance perspective. This is not really specific for SharePoint, rather a rule of thumb for any IT solution build with any platform. 
 
-Here’s an example of OD4B site, which has been customized using above guidelines. In this case the end result has been achieved with combination of Office 365 themes, site theme and usage of so called JavaScript injection pattern.
+Here’s an example of OD4B site, which has been customized using above guidelines. In this case the end result has been achieved with combination of Office 365 themes, site theme and usage of so called JavaScript embedding pattern.
 
 ![](media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-01.png)
 

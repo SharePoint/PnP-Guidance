@@ -70,7 +70,7 @@ Each default SharePoint master page includes controls that are required for comm
 
 Content placeholders hold the place for information defined in content pages. Content placeholders correspond to areas of a page. Each area of a .master page is defined by between a few and hundreds of content placeholders.
 
-SharePoint master pages use a mix of ASP.NET ( `<asp:`) and SharePoint ( `<SharePoint:`) declarations. The text after the colon in a declaration defines the control's functionality; for example,  `SharePoint:PlaceholderGlobalNavigation` injects the global navigation of a SharePoint page into the relevant HTML tags on that page. Content controls in a master page bind content placeholders to content with the **ContentPlaceHolderID**.
+SharePoint master pages use a mix of ASP.NET ( `<asp:`) and SharePoint ( `<SharePoint:`) declarations. The text after the colon in a declaration defines the control's functionality; for example,  `SharePoint:PlaceholderGlobalNavigation` embeds the global navigation of a SharePoint page into the relevant HTML tags on that page. Content controls in a master page bind content placeholders to content with the **ContentPlaceHolderID**.
 
 SharePoint provides two types of master pages: system master pages andsite master pages. System master pages are applied to all form pages and view pages on a SharePoint site. Site master pages, on the other hand, are used by all pages in a Publishing site. You can tell which kind of master page a site is using by opening the .master page file and viewing the  **Page** directive. A system master page has a page directive as follows: `~masterurl/default.master`. A site master page has the following page directive:  `~masterurl/custom.master`.
 

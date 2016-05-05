@@ -22,14 +22,14 @@ As a rule of a thumb, we would like to provide the following high level guidelin
 - Avoid customizing OD4B sites using custom master pages, since this will cause you additional long term costs and challenges with future updates
 	+ In most of the cases, you can achieve all common branding scenarios with themes and alternate CSS, so this is not really that limiting factor
 	+ If you chose to use custom master pages, be prepared on applying changes to the sites when major functional updates are applied to Office 365
-- You can use JavaScript injection to modify or hide functionality in the site
+- You can use JavaScript embedding to modify or hide functionality in the site
 - You can use CSOM to control for example language or regional settings in the OD4B sites (see [new APIs](http://blogs.msdn.com/b/vesku/archive/2014/12/15/latest-api-updates-in-client-side-object-model-dec-2014-cu-for-sp2013.aspx))
 - We do not recommend usage of content types and site columns in OD4B sites to avoid challenges with the required fields or other elements, which could cause issues for normal use cases with OD4B sites
 	+ Think OD4B sites as for personal unstructured data and documents. Team sites and collaboration sits are then for company data and documents where you can certainly use whatever information management policies and metadata you want.
 
 As a summary, customization is definitely supported in Office 365 and you can keep on using them with OD4B sites. We just truly want to ensure that you consider the short and long term impact of the customization from operational and maintenance perspective. This is not really specific for SharePoint, rather a rule of thumb for any IT solution build with any platform.
 
-Here’s an example of OD4B site, which has been customized using above guidelines. In this case the end result has been achieved with combination of Office 365 themes, site theme and usage of so called JavaScript injection pattern.
+Here’s an example of OD4B site, which has been customized using above guidelines. In this case the end result has been achieved with combination of Office 365 themes, site theme and usage of so called JavaScript embedding pattern.
 
 ![](media/Recipes/OD4BCustomization/OD4B-branded.png)
 
@@ -131,7 +131,7 @@ Since this app part will be executed each time user lands to front page of the i
 
 **Location of the assets**
 
-There are few different solutions for this. In the reference code example we use JavaScript injection in each of the OD4B sites to provide company policy message and to remove the possibility to create sub sites (or hide the link). In this particular solution we are uploading the needed JavaScript file to root site collection of the OneDrive for Business address scheme and we reference that file directly from that one location in the individual OD4B sites. This means that you only have one location to maintain and update the JavaScript file, if any changes are needed.
+There are few different solutions for this. In the reference code example we use JavaScript embedding in each of the OD4B sites to provide company policy message and to remove the possibility to create sub sites (or hide the link). In this particular solution we are uploading the needed JavaScript file to root site collection of the OneDrive for Business address scheme and we reference that file directly from that one location in the individual OD4B sites. This means that you only have one location to maintain and update the JavaScript file, if any changes are needed.
 
 In this reference implementation we actually also refresh this file each time the WebJob is executed, which is certainly not needed, but sample code was meant to be working as easily without any additional steps and possible. Just as well you could upload the JavaScript file manually to root site collection and then reference that from there. Alternative solution would be also to use some CND to store the needed file or reference JavaScript from the provider hosted app side. As long as you have only one copy of the file, you will have
 
@@ -462,7 +462,7 @@ In this reference implementations we are performing following customizations to 
 - Hide create sub site link option from site content page
 - Apply custom theme to the OD4B site to match company branding
 
-Company policy and hiding the create sub site link are being achieved using so called JavaScript injection pattern where we add custom user action to the site level with reference to specific JavaScript file, which is then being executed in every page request. This means that we can control the page processing using client side technologies by adding, removing or updating any element in any page. Using this approach we do not need to introduce a custom master page, which could cause us more significant long term maintenance costs, especially if the needed changes are pretty minimal.
+Company policy and hiding the create sub site link are being achieved using so called JavaScript embedding pattern where we add custom user action to the site level with reference to specific JavaScript file, which is then being executed in every page request. This means that we can control the page processing using client side technologies by adding, removing or updating any element in any page. Using this approach we do not need to introduce a custom master page, which could cause us more significant long term maintenance costs, especially if the needed changes are pretty minimal.
 
 Second operation with the custom themes require that we upload some additional files to the site and then set those to be used as theme settings. We do use strictly CSOM to upload all needed files to the sites to avoid any future complications with feature framework element associations. Since uploading a file to the SharePoint using the CSOM is really simple, this is definitely the easiest way to perform the automation and you do not needed to worry about any xml specific configurations dependency to Sandbox solutions.Here’s the actual site configuration method from OD4B.Configuration.Async.Common.SiteModificationManager class. Notice that we use the Office 365 Developer PnP core component to simplify some of the needed operations.
 
