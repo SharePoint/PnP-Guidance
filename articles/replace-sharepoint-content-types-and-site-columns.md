@@ -1,4 +1,3 @@
-
 # Replace SharePoint content types and site columns
 
 Use CSOM to replace SharePoint content types and site columns, add site columns to new content types, and replace the content types with new content types.
@@ -221,7 +220,7 @@ In the following code,  **ReplaceContentType** checks all items in all libraries
     
 6. For each list in  **listsWithContentType**:
     
-      1. Determining whether the new content type is attached to the list. If the new content type is not attached to the list, use [ContentTypeCollection.AddExistingContentType ](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.contenttypecollection.addexistingcontenttype.aspx) to attach the new content type to the list.
+  1. Determining whether the new content type is attached to the list. If the new content type is not attached to the list, use [ContentTypeCollection.AddExistingContentType ](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.contenttypecollection.addexistingcontenttype.aspx) to attach the new content type to the list.
     
   2. Getting all list items in the list.
     

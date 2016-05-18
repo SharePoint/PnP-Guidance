@@ -1,4 +1,3 @@
-
 # Use composed looks to brand SharePoint sites
 Apply composed looks, including colors, fonts, and a background image, to your SharePoint 2013 and SharePoint Online sites by using the SharePoint theming engine.
 
@@ -26,8 +25,8 @@ The following table lists the elements of a composed look.
 |:-----|:-----|:-----|:-----|
 |Color palette|.spcolor|Theme Gallery\15 folder|Yes|
 |Font scheme|.spfont|Theme Gallery\15 folder|No|
-|Site layout|.master.preview|Master Page Gallery|Yes|
-|Background image|.jpg.bmp.png.gif|Site assets|No|
+|Site layout|<p>.master</p><p>.preview</p>|Master Page Gallery|Yes|
+|Background image|<p>.jpg</p><p>.bmp</p><p>.png</p><p>.gif</p>|Site assets|No|
 Users can select composed looks by using the Change the look wizard (**Site Settings** > **Look and Feel** > **Change the Look**), the Getting Started UI, or directly in the site actions menu. When a user selects a composed look, the theming engine applies colors, fonts, background images, the associated .master page, and the .preview file associated with the .master page to the site. 
 
 ### Color palettes
@@ -174,15 +173,15 @@ To create a custom theme:
    The following table maps colors and page elements to their code in the .spcolor file. It is a subset of the mappings that are available in the .spcolor file.
     
 
-|**Element**|**Color**|**Code**|
-|:-----|:-----|:-----|
-|Body text|Black| `<s:color name="BodyText" value="000000" />`|
-|Global navigation background|Blue| `<s:color name="HeaderBackground" value="018dff" />`|
-|Global navigation text|White| `<s:color name="HeaderNavigationText" value="ffffff" />`|
-|Current navigation background|Red| `<s:color name="NavigationHoverBackground" value="e51400" />`|
-|Current navigation text|White| `<s:color name="Navigation" value="ffffff" />`|
-|Title|White| `<s:color name="SiteTitle" value="FFFFFF" />`|
-|Footer background|Black| `<s:color name="FooterBackground" value="000000" />`|
+	|**Element**|**Color**|**Code**|
+	|:-----|:-----|:-----|
+	|Body text|Black| `<s:color name="BodyText" value="000000" />`|
+	|Global navigation background|Blue| `<s:color name="HeaderBackground" value="018dff" />`|
+	|Global navigation text|White| `<s:color name="HeaderNavigationText" value="ffffff" />`|
+	|Current navigation background|Red| `<s:color name="NavigationHoverBackground" value="e51400" />`|
+	|Current navigation text|White| `<s:color name="Navigation" value="ffffff" />`|
+	|Title|White| `<s:color name="SiteTitle" value="FFFFFF" />`|
+	|Footer background|Black| `<s:color name="FooterBackground" value="000000" />`|
 
 6. To customize .spfont, download a copy of a .spfont file and open it in a text editor. Notice that the .spfont file is laid out a bit differently than .spcolor, but that both files share a similar structure. 
     

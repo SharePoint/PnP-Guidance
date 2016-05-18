@@ -57,9 +57,9 @@ When you start the add-in, you see a console application, as shown in Figure 2. 
     
 - The type of operation you want to perform. You can either:
     
-      - Move a term group (scenario 1) by using the  **TermStore** object.
+	- Move a term group (scenario 1) by using the  **TermStore** object.
     
-  - Process changes (scenario 2) by using the  **ChangeInformation** object.
+	- Process changes (scenario 2) by using the  **ChangeInformation** object.
     
 
 **Important**  This sample add-in works with both SharePoint Online and SharePoint Server 2013 on-premises.
@@ -331,6 +331,11 @@ foreach (ChangedItem _changeItem in termStoreChanges)
 The changed item type might be a term group, term set, or term. Each changed item type has different operations you can perform on it. The following table lists the operations that you can perform on each changed item type. 
 
 
+|What changed? (ChangedItemType) | Operations you can perform on changed item type (ChangedOperationType)|
+|---|---|
+|Group|<p>Delete group</p><p>Add group</p><p>Edit group|
+|TermSet|</p>Delete term set</p><p>Move term set</p><p>Copy term set</p><p>Add term set</p><p>Edit term set<p>|
+|Term|</p>Delete term</p><p>Move term</p><p>Copy term</p><p>Path change term</p><p>Merge term</p><p>Add term</p><p>Edit term<p>|
 
 The following code shows how to perform a delete operation when a term group was deleted in the source managed metadata service.
 

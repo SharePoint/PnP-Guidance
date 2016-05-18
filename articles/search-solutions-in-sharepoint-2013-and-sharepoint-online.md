@@ -431,8 +431,8 @@ The Search query REST service supports both HTTP **POST** and **GET** requests. 
 
  **JSON GET and POST requests**
 
-
-
+|Verb|URI|
+|:---|:---|
 | **GET** requests| `http://server/_api/search/query`|
 | **POST** requests| `http://server/_api/search/postquery`|
  **Sample GET requests for Search REST service**

@@ -1,4 +1,3 @@
-
 # Upload large files sample add-in for SharePoint
 Upload files larger than 2MB to SharePoint and SharePoint Online using SaveBinaryDirect, ContentStream, StartUpload, ContinueUpload and FinishUpload. 
 
@@ -146,20 +145,24 @@ In FileUploadService.cs,  **UploadFileSlicePerSlice** uploads a large file to a 
     
 3. Tests if the size of the file to upload ( **fileSize**) is less than or equal to the chunk size ( **blockSize**).
     
-      1. If  **fileSize** is less than or equal to the chunk size, the sample ensures that the file is still uploaded by using the **FileCreationInformation.ContentStream** property. Remember that the recommended chunk size is 10 MB or larger.
+    1. If  **fileSize** is less than or equal to the chunk size, the sample ensures that the file is still uploaded by using the **FileCreationInformation.ContentStream** property. Remember that the recommended chunk size is 10 MB or larger.
+      
+    2. If  **fileSize** is larger than the chunk size:
     
-  2. If  **fileSize** is larger than the chunk size:
+        1. A chunk of the file is read into  **buffer**.
     
-      1. A chunk of the file is read into  **buffer**.
+        2. If the chunk size is equal to the file size, the entire file was read. The chunk is copied to  **lastBuffer**.  **lastBuffer** then uses **File.FinishUpload** to upload the chunk.
     
-  2. If the chunk size is equal to the file size, the entire file was read. The chunk is copied to  **lastBuffer**.  **lastBuffer** then uses **File.FinishUpload** to upload the chunk.
-    
-  3. If the chunk size is not equal to the file size, there is more than one chunk to read from the file.  **File.StartUpload** is called to upload the first chunk. **fileoffset**, which is used as the starting point of the next chunk, is then set to the amount of bytes uploaded from the first chunk. When the next chunk is read, if the last chunk has not been reached,  **File.ContinueUpload** is called to upload the next chunk of the file. The process repeats until the last chunk is read. When the last chunk is read, **File.FinishUpload** uploads the last chunk and commits the file. The file content is then changed when this method is finished.
+    3. If the chunk size is not equal to the file size, there is more than one chunk to read from the file.  **File.StartUpload** is called to upload the first chunk. **fileoffset**, which is used as the starting point of the next chunk, is then set to the amount of bytes uploaded from the first chunk. When the next chunk is read, if the last chunk has not been reached,  **File.ContinueUpload** is called to upload the next chunk of the file. The process repeats until the last chunk is read. When the last chunk is read, **File.FinishUpload** uploads the last chunk and commits the file. The file content is then changed when this method is finished.
     
 
 **Note**  Consider the following best practices:
+- Use a retry mechanism in case your upload is interrupted. When an uploaded file is interrupted, the file is called an unfinished file. You may restart uploading an unfinished file soon after the upload was interrupted. Unfinished files are removed from the server between 6 hours to 24 hours after the unfinished file was interrupted. This removal period might change without notice.
+- When uploading a file in chunks to SharePoint Online, a lock is placed on the file in SharePoint Online. When an interruption occurs, the file remains locked for 15 minutes. If the next chunk of the file is not uploaded to SharePoint Online within 15 minutes, the lock is removed. After the lock is removed, you can resume uploading, or another user can start uploading the file. If another user starts uploading the file, your unfinished file is removed from SharePoint Online. The period of time the lock remains on a file after an upload is interrupted can change without notice.
+- You might change the chunk size. We recommend using a chunk size of 10 MB.
+- Resume an interrupted chunk by tracking which chunks uploaded successfully.
 
-
+Chunks must be uploaded in sequential order. You cannot upload slices concurrently (for example, by using a multithreaded approach).
 
 
 ```

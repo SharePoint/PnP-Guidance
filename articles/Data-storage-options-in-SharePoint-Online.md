@@ -1,4 +1,3 @@
-
 # Data storage options in SharePoint Online
 When you develop SharePoint Online add-ins, you have a number of different options for data storage. You can use the sample described in this article to explore the differences between each option, and to learn about the advantages to using remote data storage. 
 
@@ -102,12 +101,13 @@ Also, you need to deploy the Northwind database to Microsoft Azure.
     
 22. In the Visual Studio **Solution Explorer**, locate the Web.config file.
     
-23. In the Web.config file, locate the add  `name="NorthWindEntities"` element and replace the existing connectionString value with the connection string information that you saved locally in step 19. Save the Web.config file.
+23. In the Web.config file, locate the add  `name="NorthWindEntities"` element and replace the existing connectionString value with the connection string information that you saved locally in step 19. 
     
-```XML
-  <add name="NorthWindEntities" connectionString="metadata=res://*/Northwind.csdl|res://*/Northwind.ssdl|res://*/Northwind.msl;provider=System.Data.SqlClient;provider connection string=&amp;quot;data source=<Your Server Here>.database.windows.net;initial catalog=NorthWind;user id=<Your Username Here>@<Your Server Here>;password=<Your Password Here>;MultipleActiveResultSets=True;App=EntityFramework&amp;quot;" providerName="System.Data.EntityClient" />
-
-```
+	```XML
+	  <add name="NorthWindEntities" connectionString="metadata=res://*/Northwind.csdl|res://*/Northwind.ssdl|res://*/Northwind.msl;provider=System.Data.SqlClient;provider connection string=&amp;quot;data source=<Your Server Here>.database.windows.net;initial catalog=NorthWind;user id=<Your Username Here>@<Your Server Here>;password=<Your Password Here>;MultipleActiveResultSets=True;App=EntityFramework&amp;quot;" providerName="System.Data.EntityClient" />
+	
+	```
+24. Save the Web.config file.
 
 ## SharePoint list on the app web (Notes scenario)
 <a name="sectionSection1"> </a>
@@ -217,7 +217,7 @@ To load enough data to exceed the list query threshold limit:
     
     **Figure 6. List query thresold exceeded error message**
 
-    ![A screenshot that shows an error message that states that the operation exceeded the list view threshol.](..\images\90202b64-4b14-4764-9a4c-8fb236f8d10b.png)
+    ![A screenshot that shows an error message that states that the operation exceeded the list view threshol.](media/90202b64-4b14-4764-9a4c-8fb236f8d10b.png)
 
 5. Choose  **View Notes List in App Web** and page through the list to see that it includes 500 rows. Note that although SharePoint list views can accommodate browsing of this many entries, the REST API fails due to the list query throttling threshold.
     
@@ -241,7 +241,7 @@ To load enough data to exceed the data storage limit:
     
     **Figure 7. Data storage threshold exceeded error message**
 
-    ![A screenshot that shows the error message that occurs when the data storage limit is exceeded](..\images\0bc55483-0ee1-487a-ba34-e827ec47aadd.png)
+    ![A screenshot that shows the error message that occurs when the data storage limit is exceeded](media/0bc55483-0ee1-487a-ba34-e827ec47aadd.png)
 
 5. After you exceed the data storage limit, choose the back button in the web browser, and then choose the  **Notes** link in the left menu.
     

@@ -1,4 +1,3 @@
-
 # Call web services from SharePoint workflows
 Deploy a SharePoint 2013 workflow to the host web from an add-in for SharePoint, and call web services from SharePoint workflows.
 
@@ -375,7 +374,7 @@ If the user selected Canada for the new supplier list item, for example, the JSO
             CompanyName: "Ma Maison"
         },
         {
-            CompanyName: "ForÃªts d'Ã©rables"
+            CompanyName: "Forêts d'érables"
         }
     ]
 }
@@ -473,9 +472,9 @@ When you open this project in Visual Studio, you'll see that it is a simple, gen
 
 1 - Open the shortcut menu (right-click) for the  [Workflow.AssociateToHostWeb](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.AssociateToHostWeb) add-in project in the project explorer, and select **Publish**. You'll see a window that contains a  **Package the app** button, as shown in Figure 15.
     
-    **Figure 15. Publish your add-in screen**
+**Figure 15. Publish your add-in screen**
 
-    ![Screenshot that shows the Publish your app page for publishing the sample app](media/b003cc8b-90dc-4d49-8cb7-8b563f25f056.png)
+![Screenshot that shows the Publish your app page for publishing the sample app](media/b003cc8b-90dc-4d49-8cb7-8b563f25f056.png)
 
 2 - When you choose  **Package the app**, Visual Studio creates a Workflow.AssociateToHostWeb.app file in the  `bin\Debug\app.publish\1.0.0.0` directory of your solution. This .app file is a type of zip file.
     
@@ -502,17 +501,17 @@ When you open this project in Visual Studio, you'll see that it is a simple, gen
     
 10 - Go to a list on your host site and select the  **List** editing option at the top left of the page. You'll see a **Workflow Settings** drop-down menu (Figure 16).
     
-    **Figure 16. Workflow settings for a list**
+**Figure 16. Workflow settings for a list**
 
-    ![Screenshot that shows workflow settings for a list](media/195d2d5b-091e-46aa-aefd-e1b883b1c33e.png)
+![Screenshot that shows workflow settings for a list](media/195d2d5b-091e-46aa-aefd-e1b883b1c33e.png)
 
 11 - Select ** Add a Workflow** from the drop-down menu.
     
 12 - You will now see a selection option similar to the image in Figure 17. Select the  **Workflow.AssociateToHostWeb** app from the list of available options.
     
-    **Figure 17. Add a workflow settings**
+**Figure 17. Add a workflow settings**
 
-    ![Screenshot that shows the Add a Workflow settings page](media/08317057-4546-4ad9-b8c5-d5b33bc4350d.png)
+![Screenshot that shows the Add a Workflow settings page](media/08317057-4546-4ad9-b8c5-d5b33bc4350d.png)
 
 You have now deployed the workflow to the host web and associated it with a list on the host web. You can trigger a workflow manually, or you can update the workflow in Visual Studio so that it is triggered in other ways.
 

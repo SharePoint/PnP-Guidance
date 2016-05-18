@@ -1,12 +1,9 @@
 # Information management sample add-in for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can get or set site policies to manage the lifecycle of your SharePoint site.
-
     
  _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-    
 The [Core.InformationManagement](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.InformationManagement) sample shows you how to use an ASP.NET provider-hosted SharePoint add-in to get and set a site policy on a site. Use this solution if you want to:
-    
 
 - Apply policy settings during your custom site provisioning process. 
     
@@ -14,10 +11,6 @@ The [Core.InformationManagement](https://github.com/OfficeDev/PnP/tree/master/Sa
     
 - Create a custom expiration formula. 
     
- **Contribute to this content**
-
-    
-
 ## Before you begin
 <a name="sectionSection0"> </a>
 
@@ -31,7 +24,6 @@ We recommend that you create at least one site policy, and assign it to your sit
 
 When you start the app, the start page displays the following information, as shown in Figure 1:
 
-
 - The site's closure and expiration dates. These dates are specific to a site and are based on the configuration settings of the site policy that is applied.
     
 - All site policies that can be applied to the site.
@@ -39,7 +31,6 @@ When you start the app, the start page displays the following information, as sh
 - The site policy that is currently applied.
     
 - The option box to select and apply a new site policy to the site.
-    
 
 **Figure 1. Information Management add-in start page**
 

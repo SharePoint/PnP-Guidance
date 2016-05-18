@@ -1,4 +1,3 @@
-
 # Transform farm solutions to the SharePoint add-in model
 Transform or convert your farm solutions to the SharePoint add-in model. Learn how to convert web parts, page layouts, master pages, timer jobs, and so on to the SharePoint add-in model.
 
@@ -59,7 +58,7 @@ Apply the following best practices when transforming specific solutions:
 
 - Page layouts and master pages. Custom page layouts and master pages might exist in publishing sites, or team sites with the publishing features turned on. To replace page layouts and master pages:
     
-      1. Upload the new page layout or master page to your site. Upload new master pages and page layouts to your site collection either manually or by using remote APIs. Remote APIs include the client-side object model (CSOM) or REST. This ensures that the master pages and page layouts do not have dependencies on a farm solution. 
+  1. Upload the new page layout or master page to your site. Upload new master pages and page layouts to your site collection either manually or by using remote APIs. Remote APIs include the client-side object model (CSOM) or REST. This ensures that the master pages and page layouts do not have dependencies on a farm solution. 
     
   2. Configure your site to use the new page layouts and master pages.
     
@@ -67,11 +66,12 @@ Apply the following best practices when transforming specific solutions:
     
 - Web parts and controls. To replace web parts and controls:
     
-      1. Scan all your existing pages to determine which pages have web parts.
+  1. Scan all your existing pages to determine which pages have web parts.
     
   2. (Optional) Review out-of-the-box web parts to determine if any can replace your custom web part.
     
   3. Replace existing web parts with app part instances, or using other techniques (such as embedded JavaScript in pages or page layouts) to achieve the same functionality.
+
   4. Use embedded JavaScript to manipulate UI elements.
     
     **Note**  To replace your existing web parts with app parts, you need to:

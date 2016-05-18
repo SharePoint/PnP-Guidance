@@ -1,4 +1,3 @@
-
 # Localize UI elements sample add-in for SharePoint
 You can localize SharePoint UI elements by using JavaScript to replace the text value of a UI element value with a translated text value loaded from a JavaScript resource file. 
 
@@ -131,7 +130,7 @@ Figure 6 shows the start page for Scenario 1.
 
 **Figure 6. Scenario 1 start page**
 
-![Screenshot of the start page for Scenario 1](..\media\16972165-5f94-497f-b58c-0e1075d9616a.png)
+![Screenshot of the start page for Scenario 1](media/16972165-5f94-497f-b58c-0e1075d9616a.png)
 
 The  **AddJSLink** method is part of the JavaScriptExtensions.cs file in **OfficeDevPnP.Core**.  **AddJSLink** requires that you supply a string representing the identifier to assign to the custom action, and a string containing a semicolon delimited list of URLs to the JavaScript files that you want to add to the host web. Note that this code sample adds a reference to Scripts\scenario1.js, which adds a status bar message to the host web.
 

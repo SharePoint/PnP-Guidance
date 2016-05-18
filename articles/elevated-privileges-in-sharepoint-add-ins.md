@@ -10,7 +10,7 @@ You might want to use elevated privileges in your add-in when:
 
 * Your add-in performs actions for users that the users don't have adequate individual permissions to complete. Administrators might not assign users certain permissions because the permission level is too high.
 
-	Your organization might, for example, implement a custom site collection provisioning solution that users must use to create site collections. Your organization might specify that all new site collections must have certain lists, content types, or fields associated with them. If users create site collections on their own, they might or might not remember to create these objects on their new site collection. In this scenario, users create site collections by using the add-in, but users aren't individually assigned permissions to create site collections.
+   Your organization might, for example, implement a custom site collection provisioning solution that users must use to create site collections. Your organization might specify that all new site collections must have certain lists, content types, or fields associated with them. If users create site collections on their own, they might or might not remember to create these objects on their new site collection. In this scenario, users create site collections by using the add-in, but users aren't individually assigned permissions to create site collections.
 
 * Your add-in is not acting on behalf of any user; for example, a governance or management process.
 
@@ -79,7 +79,9 @@ catch (Exception ex)
 
 ### High-trust authorization
 
-If your add-in uses the high-trust authorization system (also known as S2S protocol), it calls a different TokenHelper method: TokenHelper.GetS2SAccessTokenWithWindowsIdentity.
+If your add-in uses the high-trust authorization system (also known as S2S protocol), it calls a different **TokenHelper** method: **TokenHelper.GetS2SAccessTokenWithWindowsIdentity**.
+
+**Important:** The **TokenHelper.GetS2SAccessTokenWithWindowsIdentity** is used for both app-only and user+app calls. The second parameter of the method, which holds the user identity, determines which policy is used. Pass **null** to use the app-only policy.
 
 ## Service accounts
 
@@ -104,6 +106,18 @@ When planning to use service accounts in your add-in, consider the following:
 **Note:** Add-ins purchased from the Office Store cannot use service accounts.
 
 The following code shows how to authenticate by using [SharePointOnlineCredentials](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.sharepointonlinecredentials.aspx) with a service account.
+
+```cs
+using (ClientContext context = new ClientContext("https://contoso.sharepoint.com"))
+{
+
+    // Use default authentication mode.
+    context.AuthenticationMode = ClientAuthenticationMode.Default;  
+
+    // Specify the credentials for the service account.
+    context.Credentials = new SharePointOnlineCredentials("User Name", "Password");
+}
+```
 
 ## Additional resources
 

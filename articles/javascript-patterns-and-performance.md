@@ -13,13 +13,13 @@ Since client-side JavaScript is the path, what are the best ways to implement cl
 There are several options:
 
 |Option|Description|
-|---|---|
-JavaScript Embedding | [Site.UserCustomActions](https://msdn.microsoft.com/EN-US/library/office/microsoft.sharepoint.client.site.usercustomactions.aspx) or [Web.UserCustomActions](https://msdn.microsoft.com/EN-US/library/office/microsoft.sharepoint.client.web.usercustomactions.aspx) allow for the inclusion of script directly into the page markup. This is used in the [Loader Pattern](#LoaderPattern) discussed below
-Display Templates | Applies to Views and Search. You don't have to deploy any kind of an app or provider hosted code. It's simply a JavaScript file that can be uploaded to (for example) the style library to customize views. You can create any view required by using JavaScript
-SharePoint Hosted Add-Ins | Uses JSOM to communicate back to the host web or the add-in web. It gives access to the Web Proxy for cross domain calls
-Provider Hosted Add-Ins | Enables the creation of complex applications across a variety of technology stacks - while maintaining secure integration with SharePoint
-JSLink | Allows you to load one or more JavaScript files in many OOTB web parts and views
-ScriptEditor Webpart | Include script directly or loaded through script tags with markup to create complex single page applications hosted entirely within the SharePoint site
+|:---|:---|
+|JavaScript Embedding | [Site.UserCustomActions](https://msdn.microsoft.com/EN-US/library/office/microsoft.sharepoint.client.site.usercustomactions.aspx) or [Web.UserCustomActions](https://msdn.microsoft.com/EN-US/library/office/microsoft.sharepoint.client.web.usercustomactions.aspx) allow for the inclusion of script directly into the page markup. This is used in the [Loader Pattern](#LoaderPattern) discussed below|
+|Display Templates | Applies to Views and Search. You don't have to deploy any kind of an app or provider hosted code. It's simply a JavaScript file that can be uploaded to (for example) the style library to customize views. You can create any view required by using JavaScript|
+|SharePoint Hosted Add-Ins | Uses JSOM to communicate back to the host web or the add-in web. It gives access to the Web Proxy for cross domain calls|
+|Provider Hosted Add-Ins | Enables the creation of complex applications across a variety of technology stacks - while maintaining secure integration with SharePoint|
+|JSLink | Allows you to load one or more JavaScript files in many OOTB web parts and views|
+|ScriptEditor Webpart | Include script directly or loaded through script tags with markup to create complex single page applications hosted entirely within the SharePoint site|
 
 Don't think you are locked into these choices if you feel a different option would be better for your situation. 
 
@@ -27,14 +27,14 @@ Don't think you are locked into these choices if you feel a different option wou
 
 At each step of the development process, it's important to keep performance in mind. Here are a few things that make a big difference in JavaScript performance:
 
-Option|Description
----|---
-[Reduce the number of requests](#ReduceTheNumberOfRequests) | Fewer requests means fewer round-trips to the server, reducing latency.
-[Retrieve only the data you need](#RetrieveOnlyTheDataYouNeed) | Reduce the amount of data sent over the wire. Also reduces server load.
-[Provide a good page load experience](#ProvideAGoodUserExperience) | Keep your UI responsive to the user. For example, update the menus on the page *before* you start the download of 100+ records.
-[Use asynchronous calls and patterns whenever possible](#EverythingIsAsynchronous) | Polling is a heavier burden on performance than using an asynchronous call or callback. 
-[Caching is key](#ClientSideCaching) | Caching further reduces the burden on the server while giving immediate performance improvement.
-[Prepare for more page views than you ever imagined](#PriceOfPopularity) | A data-heavy landing page is okay when you only have a few hits. But if you get thousands of hits, that can really impact performance.
+|Option|Description|
+|:---|:---|
+|[Reduce the number of requests](#ReduceTheNumberOfRequests) | Fewer requests means fewer round-trips to the server, reducing latency.|
+|[Retrieve only the data you need](#RetrieveOnlyTheDataYouNeed) | Reduce the amount of data sent over the wire. Also reduces server load.|
+|[Provide a good page load experience](#ProvideAGoodUserExperience) | Keep your UI responsive to the user. For example, update the menus on the page *before* you start the download of 100+ records.|
+|[Use asynchronous calls and patterns whenever possible](#EverythingIsAsynchronous) | Polling is a heavier burden on performance than using an asynchronous call or callback.| 
+|[Caching is key](#ClientSideCaching) | Caching further reduces the burden on the server while giving immediate performance improvement.|
+|[Prepare for more page views than you ever imagined](#PriceOfPopularity) | A data-heavy landing page is okay when you only have a few hits. But if you get thousands of hits, that can really impact performance.|
 
 ## <a name="WhatIsMyCodeDoing"></a> What is my code doing
 
@@ -92,11 +92,11 @@ Client side caching is one of the most often missed performance enhancements you
 
 There are three different places you can cache your data:
 
-Option|Description
----|---
-Session Storage|Stores data as a key/value pair on the client. This is per session storage which is always stored as strings. <br /> JSON.stringify() will convert your JavaScript objects to strings which helps to store objects.
-Local Storage|Stores data as a key/value pair on the client. This is persistent across sessions which is always stored as strings. <br /> JSON.stringify() will convert your JavaScript objects to strings which helps to store objects.
-Local Database|Stores relational data on the client. Frequently uses SQL-Lite as the database engine.<br>Local Database storage is not always available on all browsers&mdash;Check target browser support
+|Option|Description|
+|:---|:---|
+|Session Storage|Stores data as a key/value pair on the client. This is per session storage which is always stored as strings. <br /> JSON.stringify() will convert your JavaScript objects to strings which helps to store objects.
+|Local Storage|<p>Stores data as a key/value pair on the client. This is persistent across sessions which is always stored as strings.</p><p>JSON.stringify() will convert your JavaScript objects to strings which helps to store objects.</p>|
+|Local Database|Stores relational data on the client. Frequently uses SQL-Lite as the database engine.<br>Local Database storage is not always available on all browsers&mdash;Check target browser support
 
 When caching, keep in mind the storage limits available to you, and the freshness of your data. 
 - If you are reaching the end of your storage limits, it might be wise to remove the older or less important cached data. 
