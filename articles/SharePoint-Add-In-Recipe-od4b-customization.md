@@ -53,7 +53,7 @@ In practice we do have four different mechanisms to apply centralized customizat
 2. Hidden app part with user context
 3. Pre-create and apply configuration
 4. Remote timer job based on user profile updates
-5. 
+
 Each of the options have advantages and disadvantages in them and the right option depends on your detailed business requirements. Some of the settings you can also apply from the Office 365 suite level, but often you would be looking for some more specifics, so actual customizations are needed. It obviously all comes down on exact requirements and business case analyses on their impact on short and long term.
 
 Office 365 suite level settings

@@ -1,8 +1,7 @@
-
 # Use CSS to brand SharePoint pages
 Use CSS to support branding and site design in SharePoint. Find out about CSS is master pages, the corev15.css file, and composed looks in custom branding.
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 Cascading style sheet (CSS) plays a large role in SharePoint branding. To successfully customize the site design in SharePoint 2013 and SharePoint Online, it's useful to be familiar with how SharePoint uses CSS.
 
@@ -15,7 +14,6 @@ In SharePoint 2013, SharePoint uses the seattle.master page by default for Team 
 
 All default master pages use corev15.css when processing styles, and rely on the CSS cascade and CSS file sharing to resolve which styles are applied to specific controls and elements in regions of a page. Multiple CSS files are also combined to build the oslo.css file, which is used with the oslo.master master page.
 
-
 ## CSS in master pages
 <a name="sectionSection1"> </a>
 
@@ -23,24 +21,17 @@ The  `<SharePoint:CssRegistration>` content placeholder, which corresponds to th
 
 Consider the following example.
 
-
-
-
 ```
 <SharePoint:CssRegistration name="<% $SPUrl:~SiteCollection/Style Library/~language/Core Styles/contoso.css%>" runat="server"/>
 ```
 
 At runtime, this code is rendered as follows.
 
-
-
-
 ```
 <link rel="stylesheet" type="text/css" href="/sites/nopub/Style%20Library/en-US/Core%20Styles/contoso.css">
 ```
 
 The  **CSSLink** class renders all style sheets when the page is rendered. If you define styles in a custom .css file that are also defined in corev15.css, they are overwritten.
-
 
 ## Corev15.css file
 <a name="sectionSection2"> </a>
@@ -53,15 +44,11 @@ Styles defined in corev15.css use the .ms- , and .s4- prefixes, which indicate s
 
 When you view the file, you'll notice many comments in this format:  `/* [ReplaceFont ( themeFont:"body")] */`. SharePoint reads these comments when a composed look is applied. The comments tell SharePoint to change the attribute of the CSS that immediately follows the comment. Applying a composed look might change many of the default colors, fonts, and background images that are applied, and subsequently update the settings in corev15.css.
 
-
 **Note**  Selecting the corev15.css file this way loads the rendered CSS rather than the saved CSS. Sometimes you might find discrepancies between the two. User agents such as browsers can also change rendering in response to user actions.
-
 
 **Important**  Do not log on to the server and edit or customize core SharePoint CSS files in the SharePoint root. Doing so will negatively impact support and upgrade. Never edit the corev15.css directly; always create a copy, rename it, and edit the new file instead. Editing corev15.css will apply branding to all web applications on the server.
 
-
 ### To create a custom style sheet for SharePoint
-
 
 1. Make a copy of corev15.css and name it contosov15.css.
     
@@ -79,12 +66,10 @@ runat="server">
 
   ```
 
-
 ## Composed looks in custom branding
 <a name="sectionSection3"> </a>
 
 You can use composed looks in custom branding when CSS is called from a master page. The CSS file is stored in the SharePoint file system in one of the following locations: 
-
 
 -  `15\TEMPLATE\LAYOUTS\{LCID}\STYLES\Themable`
     
@@ -94,9 +79,7 @@ You can use composed looks in custom branding when CSS is called from a master p
     
 You can place custom branding files in  `/Style Library/Themable/` and `/Style Library/{culture}/Themable/`, but  `15\TEMPLATE\LAYOUTS\{LCID}\STYLES\Themable` is not editable, so you can't store custom files in that location.
 
-
 **Note**  If these locations don't exist by default, you can create them manually and SharePoint will recognize them as themable.
-
 
 ## Applying custom CSS to a SharePoint page
 <a name="sectionSection4"> </a>
@@ -106,9 +89,6 @@ You can add custom CSS to rich text fields and Web Part zones. To add CSS to a r
 Apply CSS to a SharePoint site by using an external style sheet and including a reference to the style sheet in the  `<link>` tag inside the `<head>` tags of the SharePoint page.
 
 The following code example shows how to upload custom CSS to the asset library, apply a reference to the CSS URL with a custom action, and then create a custom action to build a link to the new CSS file. This code is part of the  [Branding.AlternateCSSAndSiteLogo ](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo) sample on GitHub.
-
-
-
 
 ```C#
 using System;
@@ -202,15 +182,11 @@ namespace AlternateCSSAppAutohostedWeb.Services
         }
     }
 }
-
 ```
-
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
 -  [SharePoint site branding and page customization solutions](SharePoint-site-branding-and-page-customization-solutions.md)
     
 -  [Branding.AlternateCSSAndSiteLogo sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)
-    

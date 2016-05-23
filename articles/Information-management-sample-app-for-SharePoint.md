@@ -1,7 +1,7 @@
 # Information management sample add-in for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can get or set site policies to manage the lifecycle of your SharePoint site.
     
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 The [Core.InformationManagement](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.InformationManagement) sample shows you how to use an ASP.NET provider-hosted SharePoint add-in to get and set a site policy on a site. Use this solution if you want to:
 
@@ -17,7 +17,6 @@ The [Core.InformationManagement](https://github.com/OfficeDev/PnP/tree/master/Sa
 To get started, download the  [Core.InformationManagement](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.InformationManagement) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 We recommend that you create at least one site policy, and assign it to your site before you run this add-in. Otherwise, the add-in will start without displaying sample data. For more information, see  [Overview of site policies in SharePoint 2013](http://technet.microsoft.com/en-US/library/jj219569%28v=office.15%29.aspx).
-
 
 ## Using the Core.InformationManagement sample app
 <a name="sectionSection1"> </a>
@@ -41,13 +40,8 @@ From your SharePoint site, you can go to the app, which runs on the remote host,
 The Pages\Default.aspx.cs file in the Core.InformationManagementWeb project contains the code for the page displayed in Figure 1. 
 
 The following code in the  **Page_Load** method of the Default.aspx.cs page fetches and displays the closure and expiration dates of the site, based on the applied site policy. This code calls the **GetSiteExpirationDate** and **GetSiteCloseDate** extension methods of the OfficeDevPnP.Core project.
-
-
     
 **Note**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
-
-
 
 ```C#
 // Get site expiration and closure dates.
@@ -60,9 +54,6 @@ if (cc.Web.HasSitePolicyApplied())
 ```
 
 The following code in the  **Page_Load** method of the Default.aspx.cs page displays the names of all site policies that can be applied to the site (including the currently applied site policy). This code calls the **GetSitePolicies** extension method of the OfficeDevPnP.Core project.
-
-
-
 
 ```C#
 // List the defined policies.
@@ -78,9 +69,6 @@ lblSitePolicies.Text = policiesString;
 ```
 
 The following code in the  **Page_Load** method of the Default.aspx.cs page displays the name of the site policy currently applied to the site. This calls the **GetAppliedSitePolicy** extension method of the OfficeDevPnP.Core project.
-
-
-
 
 ```C#
 // Show the assigned policy.
@@ -98,9 +86,6 @@ else
 
 The following code in the  **Page_Load** method of the Default.aspx.cs page populates the drop-down list with the site policies that are available, except for the site policy that is currently assigned to the site.
 
-
-
-
 ```C#
 // Fill the policies combo.
 foreach (var policy in policies)
@@ -112,13 +97,9 @@ if (appliedPolicy == null || !policy.Name.Equals(appliedPolicy.Name, StringCompa
 }
 btnApplyPolicy.Enabled = drlPolicies.Items.Count > 0;
 
-
 ```
 
 The following code in the Default.aspx.cs page applies the selected site policy to the site. The original site policy is replaced by the new site policy. 
-
-
-
 
 ```C#
 protected void btnApplyPolicy_Click(object sender, EventArgs e)
@@ -132,10 +113,8 @@ if (drlPolicies.SelectedItem != null)
 
 ```
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 -  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
@@ -148,4 +127,3 @@ if (drlPolicies.SelectedItem != null)
 -  [ECM.DocumentLibraries sample app](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries)
     
 -  [ECM.RecordsManagement sample app](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.RecordsManagement)
-    

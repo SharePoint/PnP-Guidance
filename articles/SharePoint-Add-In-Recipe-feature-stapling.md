@@ -122,4 +122,3 @@ Version history
 Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | June 23, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-

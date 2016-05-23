@@ -1,8 +1,8 @@
-
 # Office 365 development patterns and practices solution guidance
+
 The Office 365 Developer Patterns and Practices program provides samples and documentation to help you transition your development solutions from full-trust code to the add-in model.
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 ## In this section
 
@@ -39,14 +39,11 @@ The Office 365 Developer Patterns and Practices program provides samples and doc
 |[Use Azure WebJobs with Office 365](Use-Microsoft-Azure-WebJobs-with-Office-365.md)|Use Azure WebJobs to implement timer jobs that can access SharePoint Online.|
 |[Use remote event receivers in SharePoint](Use-remote-event-receivers-in-SharePoint.md)|Use a provider-hosted app with a remote event receiver to handle the AppInstalled and AppUninstalling events. |
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 -  [Office 365 Development Patterns and Practices on GitHub](https://github.com/OfficeDev/PnP)
     
 -  [Developing on the Office 365 platform](http://msdn.microsoft.com/en-us/office/office365/howto/platform-development-overview)
     
 -  [Office development](http://msdn.microsoft.com/en-us/library/office/dn467914%28v=office.15%29.aspx)
-    

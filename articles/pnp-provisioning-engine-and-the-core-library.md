@@ -65,7 +65,6 @@ Console.WriteLine("{0:00}/{1:00} - {2}", progress, total, message);
 
 // Execute actual extraction of the tepmplate
 ProvisioningTemplate template = ctx.Web.GetProvisioningTemplate(ptci);
-
 ```
 
 ### Apply the provisioning template
@@ -148,4 +147,3 @@ The Core library (OfficeDevPnP.Core) is a CSOM/REST object model that supports t
 - [OfficeDev/PnP-Provisioning-Schema](https://github.com/OfficeDev/Pnp-Provisioning-Schema/)
     
 - [Extension Methods](https://msdn.microsoft.com/en-us/library/bb383977.aspx)
-    

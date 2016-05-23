@@ -8,7 +8,6 @@ Specifically this page will look at two steps:
 - [Fixup Azure AD Graph Client NuGet Package Reference](#fixup-azure-ad-graph-client-nuget-package-reference)
 - [Cleaning the `web.config` for app-specific details](#cleaning-the-webconfig-for-app-specific-details)
 
-
 # Fixup Azure AD Graph Client NuGet Package Reference
 
 All projects that leverage the Office 365 API SDKs by way of adding a connected service include a NuGet package that adds Office 365 & Azure AD references to the project created in Visual Studio. 

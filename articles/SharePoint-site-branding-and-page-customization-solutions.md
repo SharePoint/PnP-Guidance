@@ -1,7 +1,8 @@
 # SharePoint site branding and page customization solutions
+
 Use the SharePoint page model and composed looks, the SharePoint 2013 theming engine, and CSS to brand your SharePoint site and pages.
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 You can customize the look and feel of a SharePoint site in two ways:
 
@@ -51,8 +52,6 @@ This section builds on your knowledge about [SharePoint development and design t
 ## In this section
 <a name="sectionSection1"> </a>
 
-
-
 |**Article**|**Shows you how to...**|
 |:-----|:-----|
 | [Use composed looks to brand SharePoint sites](Use-composed-looks-to-brand-SharePoint-sites.md)|Apply composed looks, including colors, fonts, and a background image, to your SharePoint 2013 and SharePoint Online sites.|
@@ -64,7 +63,6 @@ This section builds on your knowledge about [SharePoint development and design t
 
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 -  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
 

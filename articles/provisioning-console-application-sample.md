@@ -254,4 +254,3 @@ Once we extract, save, and persist the provisioning template, the next and final
 - [PnP provisioning framework](pnp-provisioning-framework.md)
     
 - [PnP provisioning engine and the core library](pnp-provisioning-engine-and-the-core-library.md)
-    

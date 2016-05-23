@@ -107,4 +107,3 @@ Version  | Date | Comments | Author
 0.2  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)
 0.3  | July 15, 2015 | Copy edits | Todd Baginski (Canviz LLC)
 1.0  | August 24, 2015 | Sign-off | Vesa Juvonen (Microsoft)
-

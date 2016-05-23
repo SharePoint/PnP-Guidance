@@ -1,9 +1,8 @@
-
 # PnP provisioning framework
 
 Get a high-level overview of remote provisioning features available for your Office 365 and SharePoint Online site collections as well as an understanding about why creating sandboxed and full-trust solutions is no longer recommended.
 
- Provide a code-centric and template-based platform for provisioning your site collections. The new provisioning engine allows you to persist and reuse provisioning models in your Office 365 and SharePoint Online as well as on-premises site collections.
+Provide a code-centric and template-based platform for provisioning your site collections. The new provisioning engine allows you to persist and reuse provisioning models in your Office 365 and SharePoint Online as well as on-premises site collections.
 
 ## Why the new approach?
 
@@ -12,7 +11,6 @@ This begs the question &mdash; _Why the need for a new approach?_ And the questi
 The answer to the first question concerns the introduction of SharePoint Add-ins and the add-in model (formerly known as the "App model"). With this change, Microsoft has moved away from sandboxed and full-trust solutions in favor of provider-hosted add-ins and on-premises solutions. These innovations have driven a retooling of the provisioning model and the introduction of a new provisioning engine.
 
 Regarding the second question &mdash; _What are the advantages of the new provisioning model?_ &mdash; there are several:
-
 
 - Customize templates. Because site collections always start with an out-of-the-box template, the customizations that you introduce using the new remote provisioning model will incorporate automatic updates without any further maintenance required by you. Furthermore, this approach avoids problems that result from having different templates used across different site collections.
     
@@ -33,19 +31,16 @@ Regarding the second question &mdash; _What are the advantages of the new provis
 - Extend the provision engine. You can easily extend the provisioning engine by using custom extensibility providers that allow you to execute custom logic that you have written using CSOM/REST managed code.
     
 - Work across on-premises and Office 365 deployments. The provisioning engine now allows you to work seamlessly across both on-premises and Office 365 deployments. This is an improvement over previous provisioning techniques, where custom site definitions were not supported in Office 365 because they required farm-scoped deployments.
-    
 
 ## Remote provisioning in a nutshell
 
 In this section we go into depth on each piece of remote provisioning. However, it may be useful to first look at the big picture and grasp remote provisioning in its simplest form. Looked at that way, remote provisioning involves just three elements:
-
 
 1. Design and create your site customization.
     
 2. Create and optionally persist your provisioning template in a serialized format that you choose.
     
 3. Apply the provisioning template to a new or existing site collection that was created using an out-of-the-box site template.
-    
 
 ### 1. Model your site and the site artifacts
 
@@ -55,20 +50,16 @@ You also can manually create your provisioning template as an XML file or by usi
 
 You'll find more detail about modeling your site in the [PnP provisioning engine and the core library](pnp-provisioning-engine-and-the-core-library.md) article.
 
-
 ### 2. Export and persist your provisioning template
 
 Export your customized site model in your preferred serialized format; the provisioning engine is agnostic with respect to persistence format. This saved instance of your customization is your provisioning template, which, with minimal effort, you then can apply to new site collections. Note that serializing and persisting your template is an optional step that is required only if you wish to persist the template. It is not necessary to serialize the template in order to apply it to a new site collection.
-
 
 ### 3. Apply your provisioning template to a new site collection
 
 You can use either a Windows PowerShell script or CSOM/REST code to apply your provisioning template to new or existing site collections. You also can provision an entire site collection or only a portion of it. To see a sample of remote provisioning in action, including serialization of the provisioning template to XML, see [Provisioning console application sample](provisioning-console-application-sample.md).
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 - [PnP remote provisioning](pnp-remote-provisioning.md)
     
@@ -77,4 +68,3 @@ You can use either a Windows PowerShell script or CSOM/REST code to apply your p
 - [PnP provisioning engine and the core library](pnp-provisioning-engine-and-the-core-library.md)
     
 - [PnP provisioning schema](pnp-provisioning-schema.md)
-    

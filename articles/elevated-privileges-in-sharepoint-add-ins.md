@@ -126,4 +126,3 @@ using (ClientContext context = new ClientContext("https://contoso.sharepoint.com
 [Add-in authorization policy types in SharePoint 2013](https://msdn.microsoft.com/en-us/library/office/fp179892.aspx).
 
 [Use an Office 365 SharePoint site to authorize provider-hosted add-ins on an on-premises SharePoint site](https://msdn.microsoft.com/en-us/library/office/dn155905.aspx).
-

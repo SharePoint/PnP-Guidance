@@ -32,7 +32,6 @@ The following video walks through the code sample.
 
 - [Information management policy with app model (O365 PnP Video)](http://channel9.msdn.com/blogs/OfficeDevPnP/Information-management-policy-wtih-app-model)
 
-
 Related links
 =============
 - [Information management policy with app model (O365 PnP Video)](http://channel9.msdn.com/blogs/OfficeDevPnP/Information-management-policy-wtih-app-model)

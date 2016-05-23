@@ -1,12 +1,10 @@
-
 # Create UX controls by using SharePoint provider-hosted add-ins
 
 Create UX controls in SharePoint provider-hosted add-ins that work and behave like UX controls on the host web. 
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 The article describes three samples that show you how to implement UX controls in your provider-hosted add-in:
-
 
 - [Core.PeoplePicker](https://github.com/OfficeDev/PnP/tree/dev/Components/Core.PeoplePicker) - Shows you how to add a people picker control.
     
@@ -21,21 +19,15 @@ These samples use JavaScript and the JSOM to communicate with SharePoint and use
 
 The [Core.PeoplePicker](https://github.com/OfficeDev/PnP/tree/dev/Components/Core.PeoplePicker) sample shows you how to implement a people picker control in a provider-hosted add-in. When the user starts typing a name into the text input box, the control searches the user profile store for potential matches, and displays them in the UI. The add-in displays a configurable and extensible people picker control that runs on a remote host and queries the user profile store on the host site to match user inputs.
 
-
 **Figure 1. People picker control**
 
 ![People picker control](media/create-ux-controls-by-using-sharepoint-provider-hosted-add-ins/ae6e2198-6f63-4ea1-a739-34f64ecd9117.png)
     
- **Note:**  The Visual Studio 2013 solution for the sample contains a module named "Dummy" to ensure that when the add-in is deployed, it creates an add-in web. An add-in web is required for cross-domain calls.
+**Note:**  The Visual Studio 2013 solution for the sample contains a module named "Dummy" to ensure that when the add-in is deployed, it creates an add-in web. An add-in web is required for cross-domain calls.
 
 The Scripts folder of the Core.PeoplePickerWeb project contains app.js and peoplepickercontrol.js files (along with people picker resource files for additional language support). The app.js file fetches client context by using the cross-domain library and hooks the HTML in the Default.aspx file into the people picker control. The Default.aspx file contains the  `<div>` tags that implement both the text box and the people search capability.
 
-
-    
- **Note:**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
-
-
+**Note:**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
 
 ```
 <div id="divAdministrators" class="cam-peoplepicker-userlookup ms-fullWidth">
@@ -48,9 +40,6 @@ The Scripts folder of the Core.PeoplePickerWeb project contains app.js and peopl
 ```
 
 The app.js file then creates and configures a people picker control.
-
-
-
 
 ```
 //Make a people picker control.
@@ -69,11 +58,7 @@ peoplePicker.Initialize();
 
 The people picker control queries the  **ClientPeoplePickerWebServiceInterface** object in the JSOM library to initiate searches for users whose names match the character strings entered.
 
-
-
-
 ```
-
 if (searchText.length >= parent.GetMinimalCharactersBeforeSearching()) {
                             resultDisplay = 'Searching...';
                             if (typeof resultsSearching != 'undefined') {
@@ -104,7 +89,6 @@ if (searchText.length >= parent.GetMinimalCharactersBeforeSearching()) {
 
 ```
 
-
 ## Taxonomy menu control
 <a name="bmTaxMenu"> </a>
 
@@ -114,14 +98,11 @@ The add-in implements a  **TaxonomyHelper** class (CSOM) that sets up the term s
 
 The add-in sets up the term store on the host site. It uses CSOM objects and methods to create a term group and set, and then populates the term set with four terms. 
 
-
 **Figure 2. Term store setup screen**
 
 ![Term store setup screen](media/create-ux-controls-by-using-sharepoint-provider-hosted-add-ins/011ba839-7bc3-4a12-819a-6436deab2e34.png)
 
 When you choose the  **Setup term store** button, the add-in:
-
-
 
 - Makes sure that the required languages (English, German, French, and Swedish) are enabled in the term store.
     
@@ -129,11 +110,7 @@ When you choose the  **Setup term store** button, the add-in:
     
 The following code in the  **TaxonomyHelper** class verifies that the required languages are enabled, and if they're not, it enables them.
 
-
-
-
 ```
-
 var languages = new int[] { 1031, 1033, 1036, 1053 };
             Array.ForEach(languages, l => { 
                 if (!termStore.Languages.Contains(l)) 
@@ -147,47 +124,32 @@ var languages = new int[] { 1031, 1033, 1036, 1053 };
 termGroup = termStore.CreateGroup("Taxonomy Navigation", groupId);
                 clientContext.Load(termGroup);
                 clientContext.ExecuteQuery();
-
 ```
 
 Finally, the following code in the same  **TaxonomyHelper** class creates each new term, along with labels for the German, French, and Swedish languages. It also sets a value for the **_Sys_Nav_SimpleLinkUrl** property, which is equivalent to the **Simple Link or Header** property in the Term Store Management Tool. In this case, the URL for each term points back to the root site.
 
-
-
-
 ```
-
 var term = termSet.CreateTerm(termName, 1033, Guid.NewGuid());
 term.CreateLabel(termNameGerman, 1031, false);
 term.CreateLabel(termNameFrench, 1036, false);
 term.CreateLabel(termNameSwedish, 1053, false);
 term.SetLocalCustomProperty("_Sys_Nav_SimpleLinkUrl", clientContext.Web.ServerRelativeUrl);
-
 ```
 
 Next, the add-in inserts the topnav.js file into the root folder of the host site. This file contains the JavaScript that inserts the links from this term set into the navigation of the host site's home page. The add-in UI also shows you how the navigational links will appear on the host site after the add-in uploads the JavaScript file.
 
 The following code in the topnav.js file uses JSOM to check for the user's preferred language.
 
-
-
-
 ```
-
 var targetUser = "i:0#.f|membership|" + _spPageContextInfo.userLoginName;
         context = new SP.ClientContext.get_current();
 var peopleManager = new SP.UserProfiles.PeopleManager(context);
 var userProperty = peopleManager.getUserProfilePropertyFor(targetUser, "SPS-MUILanguages");
-
 ```
 
 The add-in then determines whether the user's language preference matches one of the enabled languages. If it finds a match, the following code gets the terms and the associated labels for the user's preferred language.
 
-
-
-
 ```
-
 while (termEnumerator.moveNext()) {
     var currentTerm = termEnumerator.get_current();
     var label = currentTerm.getDefaultLabel(lcid);
@@ -195,16 +157,11 @@ while (termEnumerator.moveNext()) {
     termItems.push(currentTerm);
     termLabels.push(label);
     context.load(currentTerm);
-
 ```
 
 Finally, the following code in the topnav.js file inserts links that contain the terms into the top navigational element of the host site.
 
-
-
-
 ```
-
 html += "<ul style='margin-top: 0px; margin-bottom: 0px;'>"
         for (var i in termItems) {
             var term = termItems[i];
@@ -218,9 +175,7 @@ html += "<ul style='margin-top: 0px; margin-bottom: 0px;'>"
 
         $('#DeltaTopNavigation').html(html);
         SP.UI.Notify.removeNotification(nid);
-
 ```
-
 
 ## Taxonomy picker control
 <a name="bmTaxPicker"> </a>
@@ -231,11 +186,7 @@ The add-in creates an HTML page that conforms to the JSOM taxonomy picker requir
 
 The Scripts folder of the [Core.TaxonomyPicker](https://github.com/OfficeDev/PnP/tree/dev/Components/Core.TaxonomyPicker) project contains app.js and taxonomypickercontrol.js files (along with a taxonomy picker resource file for additional language support). The app.js file fetches client context by using the cross-domain library and hooks the HTML in the Default.aspx file into the taxonomy picker control. The Default.aspx file contains the hidden field that implements both the text box and the taxonomy picker capability. It also adds a bulleted list to display suggestions returned from the term store.
 
-
-
-
 ```
-
 <div style="left: 50%; width: 600px; margin-left: -300px; position: absolute;">
             <table>
                 <tr>
@@ -252,13 +203,9 @@ The Scripts folder of the [Core.TaxonomyPicker](https://github.com/OfficeDev/PnP
 
             <asp:BulletedList runat="server" ID="SelectedValues" DataTextField="Label" />
 </div>
-
 ```
 
 The app.js file then creates and configures a taxonomy picker control.
-
-
-
 
 ```
 // Load scripts for calling taxonomy APIs.
@@ -274,9 +221,6 @@ The app.js file then creates and configures a taxonomy picker control.
 ```
 
 The taxonomy picker control uses the following code to open a  **TaxonomySession** instance in the JSOM to load all the terms from the term store.
-
-
-
 
 ```
 // Get the taxonomy session by using CSOM.
@@ -302,12 +246,9 @@ The taxonomy picker control uses the following code to open a  **TaxonomySession
 
 The taxonomy picker control then looks for potential matches from the loaded terms, and adds new terms to the term store as needed.
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 - [UX Components in SharePoint 2013 and SharePoint Online](ux-components-in-sharepoint-2013-and-sharepoint-online.md)
     
 - [Access SharePoint 2013 data from add-ins using the cross-domain library](http://msdn.microsoft.com/library/bc37ff5c-1285-40af-98ae-01286696242d%28Office.15%29.aspx)
-    

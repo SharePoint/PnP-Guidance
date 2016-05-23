@@ -1,24 +1,20 @@
-
 # Implement a SharePoint site classification solution
 
 Implement a site classification solution in SharePoint.
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 Even with good governance, SharePoint sites can proliferate and grow out of control. Sites are created as they are needed, but are rarely deleted. Search crawl is burdened by unused site collections, and search produces outdated and irrelevant results. Site classification allows you to identify and preserve sensitive data. This article shows you how to use the [Core.SiteClassification](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SiteClassification) sample to implement a site classification solution, as well as use SharePoint site policies to enforce deletion. You can integrate this solution into your existing site provisioning solution to better manage your sites.
-
 
 ## Before you begin
 
 To get started, download the [Core.SiteClassification](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SiteClassification) sample from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
-
 
 ## Define and set site policies
 
 Initially, you need to define and set the site policies that will be available in all your site collections. The Core.SiteClassification sample applies to SharePoint Online MT, but can be used as well in SharePoint Online Dedicated or SharePoint on-premises. Site polices are set in the Content Type Hub, which in SharePoint Online MT is located at  `https://[tenanatname]/sites/contentTypeHub`. To set site policies, go to  **Settings** > **Site Collection Administration** > **Site Policies** > ** create**. The  **New Site Policy** page appears. For more information about site policy options, see [Overview of site policies in SharePoint 2013](http://technet.microsoft.com/en-US/library/jj219569%28v=office.15%29.aspx).
 
 On the  **New Site Policy** page, enter the following fields:
-
 
 -  **Name:** HBI
     
@@ -38,14 +34,11 @@ On the  **New Site Policy** page, enter the following fields:
     
 Repeat these steps two more times, for the names  **MBI** and **LBI**. Use different settings for deletion or retention policies. When you're finished, you can publish the new policies.
 
-
 ## Insert a custom action
 
 You can insert a custom action for site classification to the  **Settings** page and the **SharePoint gear** icon. This action is only available to users with **ManageWeb** permission. For more information, see [Default Custom Action Locations and IDs](http://msdn.microsoft.com/en-us/library/office/bb802730%28v=office.15%29.aspx).
 
-
- **Note:**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
+**Note:**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
 
 ```C#
 /// <summary>
@@ -86,15 +79,11 @@ static void AddCustomAction(ClientContext ctx, string hostUrl)
     _web.AddCustomAction(_entity);
     _web.AddCustomAction(_siteActionSC);
 }
-
-
 ```
-
 
 ## Custom site classification
 
 You can use the  **Edit Site Information** page to choose the following specific classification options:
-
 
 -  **Audience Scope:** Set to **Enterprise**,  **Organization**, or  **Team**.
     
@@ -103,9 +92,6 @@ You can use the  **Edit Site Information** page to choose the following specific
 -  **Expiration Date:** Override the default expiration date, which is based on the classification previously entered.
     
 Both  **Audience Reach** and **Site Classification** are searchable and will have managed properties associated with them after a crawl takes place. You can then use these properties to search for specific types of sites by using a custom hidden list within the site collection. This list is implemented in the [Core.SiteClassification.Common](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SiteClassification/Core.SiteClassification.Common) project in the **SiteManagerImpl** class.
-
-
-
 
 ```C#
 private void CreateSiteClassificationList(ClientContext ctx)
@@ -168,14 +154,9 @@ private void CreateSiteClassificationList(ClientContext ctx)
   this.RemoveFromQuickLaunch(ctx, SiteClassificationList.SiteClassificationListTitle);
 
 }
-
-
 ```
 
 By default, when you create a list either out of the box or by using CSOM, the list will be available in the  **Recent** menu. The list needs to be hidden, however. The following code removes the item from the Recent menu.
-
-
-
 
 ```C#
 private void RemoveFromQuickLaunch(ClientContext ctx, string listName)
@@ -200,15 +181,11 @@ private void RemoveFromQuickLaunch(ClientContext ctx, string listName)
  _cNode.DeleteObject();
   ctx.ExecuteQuery();    
   }
-
 ```
 
 The Core.SiteClassification sample provides for the possibility that a site administrator or someone with permission can remove the new list. When this page is accessed, the list is created again, but the sample doesn't set the properties back. You can avoid this by extending the sample to modify the permissions on the list so that only site collection administrators have access. Alternatively, you can use the [Core.SiteEnumeration](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SiteEnumeration) PnP sample to do checks on the list and notify site administrators accordingly.
 
 The list verification check is also implemented in the  **SiteManagerImpl** class, in the **Initialize** member.
-
-
-
 
 ```C#
 internal void Initialize(ClientContext ctx)
@@ -230,21 +207,15 @@ try {
          }
      }
 }
-
 ```
 
-
- **Note:**  For more information, see [Create a list in the host web when your SharePoint add-in is installed, and remove it from the recent stuff list](http://blogs.technet.com/b/speschka/archive/2014/05/07/create-a-list-in-the-host-web-when-your-sharepoint-app-is-installed-and-remove-it-from-the-recent-stuff-list.aspx).
-
+**Note:**  For more information, see [Create a list in the host web when your SharePoint add-in is installed, and remove it from the recent stuff list](http://blogs.technet.com/b/speschka/archive/2014/05/07/create-a-list-in-the-host-web-when-your-sharepoint-app-is-installed-and-remove-it-from-the-recent-stuff-list.aspx).
 
 ## Add a classification indicator to site page
 
 You can add an indicator to a site page to show its classification. The Core.SiteClassificationsample shows how an image showing classification is embedded next to the  **Site Title**. In earlier versions of SharePoint, this is done via a server-side delegate control. Although you can use a custom master page with JavaScript, this sample uses an embedded JavaScript pattern. When you change the **Site Policy** in the **Edit Site Information** page, this changes the site indicator to show a small box using different background colors for each of the site classification options.
 
 The following method is defined in the Core.SiteClassificationWeb project, scripts, and classifier.js. The images are stored in a Microsoft Azure website. You will have to change the hard-coded URLs to match your environment.
-
-
-
 
 ```C#
 function setClassifier() {
@@ -291,22 +262,17 @@ function setClassifier() {
             }
         }));
     }
-
 ```
-
 
 ## Alternative approach
 
 You can use extension method  **Web.AddIndexedPropertyBagKey** in the ObjectPropertyBagEntry.cs file in[OfficeDevPnP.Core](https://github.com/OfficeDev/PnP/tree/96eff6153389d6d21358480878de9cc8fa21abab/OfficeDevPnP.Core) to store the classification values in site property bags instead of a list. The method enables property bags to be crawled or searchable.
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 - [SharePoint site provisioning solutions](sharepoint-site-provisioning-solutions.md)
     
 - [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP/tree/96eff6153389d6d21358480878de9cc8fa21abab/OfficeDevPnP.Core)
     
 - [Core.SiteEnumeration sample](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SiteEnumeration)
-    

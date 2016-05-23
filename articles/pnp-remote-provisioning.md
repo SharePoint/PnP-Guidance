@@ -1,18 +1,12 @@
-
 # PnP remote provisioning
 
 Learn about remote provisioning for your Office 365 and SharePoint Online site collections using features of the add-in model. Note that remote provisioning is also supported on SharePoint 2013 and SharePoint 2016.
 
 Microsoft SharePoint 2013 and the new Add-in model allow you to use remote provisioning for your Office 365 and SharePoint Online site collections, as well as for SharePoint 2013 and SharePoint 2016. You can easily create a provisioning template, and then apply and reuse the template by using simple Windows PowerShell scripts or C# code.
 
-## 
-
-
- **Important**  There are two pathways to documentation, samples, and support for using PnP remote provisioning. One is this MSDN documentation provided in this section. The other is the set of documentation and samples provided on GitHub. The key GitHub resources are listed in the "PnP remote provisioning resources on GitHub" table below.
-
+**Important**  There are two pathways to documentation, samples, and support for using PnP remote provisioning. One is this MSDN documentation provided in this section. The other is the set of documentation and samples provided on GitHub. The key GitHub resources are listed in the "PnP remote provisioning resources on GitHub" table below.
 
 ## PnP remote provisioning resources on GitHub
-
 
 |**Article**|**Shows you how to**|
 |:-----|:-----|
@@ -25,6 +19,4 @@ Microsoft SharePoint 2013 and the new Add-in model allow you to use remote provi
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
 - [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
-    

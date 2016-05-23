@@ -8,7 +8,6 @@ The approach you take to create list definitions / list templates is different i
 
 In a SharePoint Add-in model scenario, one cannot actually create custom list definitions.  It is simply impossible to do this.  However, the remote provisioning pattern may used to deploy custom list templates (.stp files) to Office 365.
 
-
 High Level Guidelines
 ---------------------
 
@@ -25,7 +24,6 @@ You have a couple of options to ensure standardized settings (templates) are app
 
 - Override the out of the box list creation behavior.	
 - Create a SharePoint Add-in. 
-	
 
 Override the out of the box list creation behavior
 --------------------------------------------------

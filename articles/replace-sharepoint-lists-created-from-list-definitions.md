@@ -1,10 +1,9 @@
 # Replace SharePoint lists created from list definitions
 Replace lists and libraries that were created by using list definitions in SharePoint. 
 
- _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
+_**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 If you used list definitions to create lists in your farm solution, learn how to transform them into new solutions that provide similar functionality using the client object model (CSOM). This article describes how to use the client object model (CSOM) to:
-
 
 - Find lists and libraries that were created by using list definitions.
     
@@ -14,9 +13,7 @@ If you used list definitions to create lists in your farm solution, learn how to
     
 - Migrate content from the original list to the new list.
 
- **Important** 
- <p>Farm solutions cannot be migrated to SharePoint Online. By applying the techniques and code described in this article, you can build a new solution with similar functionality that your farm solutions provide, which can then be deployed to SharePoint Online. If you are using an in-place transformation approach, you may need to deploy the new solution to SharePoint Online. If you are using the Swing or content migration approach, the third-party tools may create the lists for you. For more information, see [Transformation approaches to deploy your new SharePoint Add-in](https://msdn.microsoft.com/library/dn986827.aspx#sectionSection1). The code in this article requires additional code to provide a fully working solution. For example, this article does not discuss how to authenticate to Office 365, how to implement required exception handling, and so on. For additional code samples, see the [Office 365 Developer Patterns and Practices project](https://github.com/OfficeDev/PnP).</p>
- <p>Use the techniques described in this article to update only a few lists at a time. Also, when finding lists to update, you should not filter the lists by list type.</p>
+**Important** <p>Farm solutions cannot be migrated to SharePoint Online. By applying the techniques and code described in this article, you can build a new solution with similar functionality that your farm solutions provide, which can then be deployed to SharePoint Online. If you are using an in-place transformation approach, you may need to deploy the new solution to SharePoint Online. If you are using the Swing or content migration approach, the third-party tools may create the lists for you. For more information, see [Transformation approaches to deploy your new SharePoint Add-in](https://msdn.microsoft.com/library/dn986827.aspx#sectionSection1). The code in this article requires additional code to provide a fully working solution. For example, this article does not discuss how to authenticate to Office 365, how to implement required exception handling, and so on. For additional code samples, see the [Office 365 Developer Patterns and Practices project](https://github.com/OfficeDev/PnP).</p><p>Use the techniques described in this article to update only a few lists at a time. Also, when finding lists to update, you should not filter the lists by list type.</p>
 
 ## Before you begin
 
@@ -24,7 +21,8 @@ Ideally, you should review your existing farm solutions, learn about the techniq
 
 1. Download the [Contoso.Intranet solution](https://github.com/OfficeDev/PnP/tree/master/Reference%20Material/Contoso.Intranet). Review [Examine the initial state of the site and library for replacement](https://github.com/OfficeDev/TrainingContent/blob/master/O3658/10%20Transformation%20guidance%20from%20farm%20solutions%20to%20app%20model/10-2%20Replacing%20Lists%20Created%20from%20Custom%20Templates/Lab.md#examine-the-initial-state-of-the-site-and-library-for-replacement) to get a quick understanding of how lists were created declaratively using list definitions.
     
-     **Note:**  In Contoso.Intranet, in the elements.xml file for SP\ListTemplate\LTContosoLibrary, the ID for the custom list template is 10003. You will use this to identify the template that was used to create the list. Also review the configuration settings and views that are defined on your list.
+    **Note:**  In Contoso.Intranet, in the elements.xml file for SP\ListTemplate\LTContosoLibrary, the ID for the custom list template is 10003. You will use this to identify the template that was used to create the list. Also review the configuration settings and views that are defined on your list.
+
 2. Learn about farm solutions. For more information, see [SharePoint 2010 Architectures Overview](https://msdn.microsoft.com/en-us/library/office/gg552610%28v=office.14%29.aspx) and [Build farm solutions in SharePoint 2013](https://msdn.microsoft.com/library/jj163902.aspx).
     
 ## Replace lists created from list definitions
@@ -51,7 +49,7 @@ In the following code, the method shows how to find lists that were created usin
     
 2. For each list in the collection of returned lists, if the  **List.BaseTemplate** is equal to 10003, adds the list to a collection of lists to be replaced, called **listsToReplace**. Remember that 10003 was the custom list template's identifier we reviewed in the Contoso.Intranet sample.
 
- **Note:**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
+**Note:**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
 
 ```C#
 static void Main(string[] args)
@@ -82,7 +80,7 @@ static void Main(string[] args)
 }
 ```
 
- **Important:**  In the previous code, you first iterate over the ListCollection to select which lists need to be modified, and then call ReplaceList, which starts modifying the lists. This pattern is required because modifying the content of a collection while iterating over the collection will throw an exception.
+**Important:**  In the previous code, you first iterate over the ListCollection to select which lists need to be modified, and then call ReplaceList, which starts modifying the lists. This pattern is required because modifying the content of a collection while iterating over the collection will throw an exception.
 
 After identifying a list that should be replaced,  **ReplaceList** shows the order of operations to perform to replace the list.
 
@@ -119,7 +117,7 @@ private static List CreateReplacementList(ClientContext clientContext, ListColle
 }
 ```
 
- **SetListSettings** applies the original list settings to the new list by:
+**SetListSettings** applies the original list settings to the new list by:
 
 1. Getting various list settings from the original list.
     
@@ -143,9 +141,9 @@ private static void SetListSettings(ClientContext clientContext, List listToBeRe
 }
 ```
 
- **Note:**  Based on your requirements, the list settings of your original lists might be different. Review your list settings and change  **SetListSettings** to ensure that your original list settings are applied to your new lists.
+**Note:**  Based on your requirements, the list settings of your original lists might be different. Review your list settings and change  **SetListSettings** to ensure that your original list settings are applied to your new lists.
 
- **SetContentTypes** sets the content types on the new list by:
+**SetContentTypes** sets the content types on the new list by:
 
 1. Getting content type information from the original list.
     
@@ -161,9 +159,10 @@ private static void SetListSettings(ClientContext clientContext, List listToBeRe
     
 7. Deleting the content type by calling [ContentType.DeleteObject](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.contenttype.deleteobject.aspx).
 
- **Note:**  If you are using an in-place transformation approach, and your content types were deployed declaratively using the Feature framework, you need to: 
+**Note:**  If you are using an in-place transformation approach, and your content types were deployed declaratively using the Feature framework, you need to: 
 
  1. Create new content types.
+
  2. Set the content type on the list items when migrating the content from the original list to the new list in MigrateContent.
 
 
@@ -216,7 +215,7 @@ private static void SetContentTypes(ClientContext clientContext, List listToBeRe
 }
 ```
 
- **Note:**  At this point, the new list can accept content from the original list. You can also optionally add and remove views. 
+**Note:**  At this point, the new list can accept content from the original list. You can also optionally add and remove views. 
 
 Users can add or remove views defined on a list to meet their business needs. For this reason, you might need to add or remove views on the new list.  **AddViews** adds views from the original list to the new list by:
 
@@ -323,8 +322,7 @@ private static void RemoveViews(ClientContext clientContext, List listToBeReplac
 }
 ```
 
- **MigrateContent** migrates the content from the original list to the new list by:
-
+**MigrateContent** migrates the content from the original list to the new list by:
 
 1. Retrieving the destination to copy the files to, or the root folder of the new list, by using [List.RootFolder](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.list.rootfolder.aspx). The server-relative URL of the destination list folder is retrieved by using [Folder.ServerRelativeUrl](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.folder.serverrelativeurl.aspx).
     
@@ -334,8 +332,7 @@ private static void RemoveViews(ClientContext clientContext, List listToBeReplac
     
 4. Using [File.CopyTo](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.file.copyto.aspx) to copy the file to the URL of the destination root folder. Alternatively, you might choose to use the [File.MoveTo](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.file.moveto.aspx) method to move the file to the destination URL.
     
-
- **Note:**  The following code returns all list items. In your production environment, consider optimizing the following code by implementing a loop, and using multiple iterations to migrate small amounts of list items.
+**Note:**  The following code returns all list items. In your production environment, consider optimizing the following code by implementing a loop, and using multiple iterations to migrate small amounts of list items.
 
 ```C#
 private static void MigrateContent(ClientContext clientContext, List listToBeReplaced, List newList)
@@ -363,7 +360,7 @@ private static void MigrateContent(ClientContext clientContext, List listToBeRep
 }
 ```
 
- **Note:**  The previous code shows how to migrate files stored in the root folder of a list. If your list has subfolders, you will need to add additional code to migrate the subfolders and their contents. If your list uses workflows, additional code is required to associate the workflow to the new list.
+**Note:**  The previous code shows how to migrate files stored in the root folder of a list. If your list has subfolders, you will need to add additional code to migrate the subfolders and their contents. If your list uses workflows, additional code is required to associate the workflow to the new list.
 
 ## Additional resources
 <a name="bk_addresources"> </a>
@@ -371,4 +368,3 @@ private static void MigrateContent(ClientContext clientContext, List listToBeRep
 - [Transform farm solutions to the SharePoint add-in model](Transform-farm-solutions-to-the-SharePoint-app-model.md)
     
 - [SharePoint 2013](https://msdn.microsoft.com/library/office/jj162979.aspx)
-    

@@ -443,4 +443,3 @@ For a more complex usage of asynchronous and Deferred, you can refer to the deve
 
 - [Performance.Caching](https://github.com/OfficeDev/PnP/tree/master/Samples/Performance.Caching)
 - [Core.JavaScript](https://github.com/OfficeDev/Pnp/tree/master/Samples/Core.JavaScript)
-

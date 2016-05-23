@@ -253,4 +253,3 @@ public static void ProcessQueueMessage(
 - [Use remote event receivers in SharePoint](Use-remote-event-receivers-in-SharePoint.md)
     
 - [Query SharePoint change log with ChangeQuery and ChangeToken](query-sharepoint-change-log-with-changequery-and-changeToken.md)
-    

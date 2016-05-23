@@ -2,7 +2,7 @@
 
 Use remote event receivers to handle events in the SharePoint add-in model. Use AppInstalled and AppUninstalling events to set up or remove SharePoint objects and other event receivers your add-in needs.
 
- _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
+_**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
 The  [Core.EventReceivers](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EventReceivers) sample shows how to use a provider-hosted add-in with a remote event receiver to handle the AppInstalled and AppUninstalling events. The AppInstalled and AppUninstalling events set up and remove SharePoint objects that the add-in uses when it runs. Additionally, the AppInstalled event handler adds the ItemAdded event handler to a list. Use this solution if you want to:
 

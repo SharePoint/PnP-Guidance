@@ -2,7 +2,7 @@
 
 You can use a provider-hosted add-in to do a bulk upload of user profile data from either a file share or SharePoint Online URL.
     
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
     
 The [Core.ProfilePictureUploader](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfilePictureUploader) sample add-in shows how to do a bulk upload of user profile data from either a file share or SharePoint Online URL, and how to link user profile properties to uploaded images.
     
@@ -428,4 +428,3 @@ static void SetAdditionalProfileProperties(string UserName)
 -  [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfileProperty.Migration)
     
 -  [UserProfile.Manipulation.CSOM.Console](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM.Console)
-    

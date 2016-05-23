@@ -2,7 +2,7 @@
 
 You can use a provider-hosted add-in to read or update SharePoint single and multivalued user profile properties.
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
     
 The [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM) sample shows you how to read and update user profile properties for a particular user. This sample uses a provider-hosted add-in to:
 
@@ -27,7 +27,6 @@ To get started, download the  [UserProfile.Manipulation.CSOM](https://github.com
 
 Before you run Scenario 1:
 
-
 1. At the top of your Office 365 site, choose your profile picture, and then choose  **About me**, as shown in Figure 1. 
     
 2. On the  **About me** page, choose **edit your profile**.
@@ -47,7 +46,6 @@ Before you run Scenario 3:
 4. In  **Skills**, enter C#, JavaScript.
     
 5. Choose  **Save all and close**. 
-    
 
 **Figure 1. Navigating to a user's profile page by choosing About me**
 
@@ -80,18 +78,11 @@ When you choose  **Run scenario 1**, the add-in reads all user profile propertie
 
 Choosing  **Run scenario 1** calls the **btnScenario1_Click** method in CodeSample1.aspx.cs to perform the following tasks:
 
-
-
 - Use  **PeopleManager** to retrieve all the user profile properties for the current user.
     
 - Iterate over  **PersonProperties.UserProfileProperties** to list the values of the user profile properties in a text box.
     
-
-    
 **Note**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
-
-
 
 ```C#
 protected void btnScenario1_Click(object sender, EventArgs e)
@@ -115,14 +106,11 @@ protected void btnScenario1_Click(object sender, EventArgs e)
                 }
             }
         }
-
 ```
-
 
 ### Scenario 2: Update a single-valued user profile property
 
 Scenario 2 shows how to update a single-valued user profile property. As shown in Figure 4, the current value of the  **About me** user profile property for the user running this add-in is **I work at Contoso**. To update the value of the  **About me** user profile property, in the **About me new value** box, enterI am a software engineer at Contoso and then choose **Run scenario 2**. The code updates the value of the  **About me** property to **I am a software engineer at Contoso**. As shown in Figure 5, the add-in updates  **About me current value** with the new value of the **About me** user profile property.
-
 
 **Figure 4. Scenario 2 start page**
 
@@ -133,8 +121,6 @@ Scenario 2 shows how to update a single-valued user profile property. As shown i
 ![Screenshot of the updated About Me user profile property](media/9ffc34d9-b9b5-481c-8b63-fa28bc883d04.png)
 
 Choosing  **Run scenario 2** calls the **btnScenario2_Click** method in CodeSample2.aspx.cs to do the following:
-
-
 
 - Use  **PeopleManager** to get the user profile properties of the current user.
     
@@ -170,7 +156,6 @@ protected void btnScenario2_Click(object sender, EventArgs e)
 
             }
         }
-
 ```
     
 **Note**  If you use custom user profile properties, configure the property to be editable by users. The technique used in this scenario will work for custom user profile properties. 
@@ -238,13 +223,10 @@ Choosing  **Run scenario 3** calls **btnScenario3_Click** in CodeSample3.aspx.cs
             }
 
         }
-
 ```
-
 ## Additional resources
 <a name="bk_addresources"> </a>
 
 -  [User profile solutions for SharePoint 2013 and SharePoint Online](user-profile-solutions-for-sharepoint.md)
     
 -  [ Search.PersonalizedResults sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults)
-    

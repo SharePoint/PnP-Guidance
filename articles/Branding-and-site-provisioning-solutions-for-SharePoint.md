@@ -1,7 +1,8 @@
 # Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online
+
 The introduction of the Cloud Add-in Model and add-ins for SharePoint provides alternatives to existing, established ways of branding and provisioning SharePoint sites. 
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 Up to now, you might have used the SharePoint feature framework, site templates, web templates, and site definitions to provision your sites and site collections. The remote provisioning pattern shows you how to create custom add-ins for SharePoint that provision site branding and perform other site provisioning tasks.
 The articles in this section provide information about using add-ins for SharePoint to provision and manage site branding, a pattern that is sometimes referred to as remote provisioning.
@@ -10,7 +11,6 @@ The articles in this section provide information about using add-ins for SharePo
 <a name="sectionSection0"> </a>
 
 To use the branding and site provisioning capabilities in SharePoint, you'll need to be familiar with the following:
-
 
 - Key SharePoint terms and concepts.
     
@@ -25,16 +25,13 @@ To use the branding and site provisioning capabilities in SharePoint, you'll nee
 - add-ins for SharePoint.
     
 - Client-side programming in SharePoint with the .NET client-side object model (CSOM) and REST APIs.
-    
 
 ## Key SharePoint terms and concepts
 <a name="sectionSection1"> </a>
 
 The following table lists terms and concepts that are useful to know as you start to work with SharePoint site provisioning and branding with the remote provisioning pattern.
 
- **SharePoint terms and concepts**
-
-
+**SharePoint terms and concepts**
 
 |**Term or concept**|**Description**|**For more information**|
 |:-----|:-----|:-----|
@@ -62,8 +59,7 @@ The following table lists terms and concepts that are useful to know as you star
 
 Conceptually, the hierarchy of SharePoint objects is expressed in terms of containers: the types of objects and the type of the hierarchy contain all the types of objects below them in the hierarchy. Table 2 lists the hierarchy of SharePoint structural elements.
 
- **Table 2. SharePoint structural elements**
-
+**Table 2. SharePoint structural elements**
 
 |**Object type (in hierarchical order)**|**Description**|
 |:-----|:-----|
@@ -78,21 +74,18 @@ Conceptually, the hierarchy of SharePoint objects is expressed in terms of conta
 
 add-ins for SharePoint are lightweight solutions that don't install on the SharePoint host server, which means they don't make excessive API calls to the host server. You can build add-ins for SharePoint by using the Cloud Add-in Model. Users can discover and download add-ins from the Office Store or from the enterprise's App Catalog. For more information, see  [Overview of add-ins for SharePoint](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70.aspx). 
 
-
 ## File system and content databases, and how they work together
 <a name="sectionSection4"> </a>
 
 To understand your branding options and the implications that site customization can have on upgrade and migration, you'll need to understand the SharePoint file system and content databases.
 
-
 ### File system
 
 SharePoint stores files in the file system ("hive"). In SharePoint 2013, this location is called the "15-hive". The following is the path to the 15-hive. 
 
- `%program files%/Common Files/Microsoft Shared/Web Server Extensions/15/`
+	`%program files%/Common Files/Microsoft Shared/Web Server Extensions/15/`
 
 The 15-hive includes several subfolders that store files you'll use when branding and provisioning sites.
-
 
 ### Content databases
 
@@ -100,15 +93,12 @@ Content databases store SharePoint content objects, such as site collections. A 
 
 Some characteristics of a content database vary depending on how the site collection is used. For example, sites are often write-intensive, while other types of content, such as read-only documents, are read-intensive. How content is used affects aspects of the content database, such as size and performance. 
 
-
 ## File customization states and their effects on upgrade
 <a name="sectionSection5"> </a>
 
 The state of SharePoint files and content affects how easy it is to apply updates, and controls whether SharePoint serves the file from the content database or the file system. By default, all SharePoint files are uncustomized and ghosted, and reside in matching states in the SharePoint file system and in the content database. When a file, a content database entry, or both are used in specific ways or changed, the state of that content might be affected.
 
- **Table 3. File and content states**
-
-
+**Table 3. File and content states**
 
 |**File or content state**|**Definition**|**Comment**|
 |:-----|:-----|:-----|
@@ -119,17 +109,14 @@ The state of SharePoint files and content affects how easy it is to apply update
 
 **Note**  If a file has been customized, it won't be updated when you install new service packs or the SharePoint Online service is updated.
 
-
 ## Site branding and provisioning with the Cloud Add-in Model
 <a name="sectionSection6"> </a>
 
 In SharePoint 2013, you can use custom CSOM code in add-ins for SharePoint to provision SharePoint site collections, sites, and subsites with branding elements. This site provisioning pattern is called remote provisioning. SharePoint is increasingly focused on cloud-based deployments, so this pattern was created to help you use SharePoint's out-of-the-box capabilities to provision site branding in a way that reduces complexity and long-term operational costs.
 
-
 ### What can I do with the Cloud Add-in Model?
 
 Sometimes, there is no correlation between features in full-trust code and the Cloud Add-in Model. When developing a customization based on add-ins for SharePoint and the Cloud Add-in Model, consider an alternative approach rather than a direct conversion, and strive to keep customizations as simple as possible. Here are some examples:
-
 
 - Replace event receivers with remote event receivers (see  [How to: Create a remote event receiver](http://msdn.microsoft.com/library/628c6103-52f9-4d85-9464-4a6862b36640.aspx)).
     
@@ -139,11 +126,9 @@ Sometimes, there is no correlation between features in full-trust code and the C
     
 Some things, such as HTTP modules and HTTP handlers can not be built with the Cloud Add-in Model. Before you try to replicate an existing customization in the Cloud Add-in Model, first consider why these customizations were built and whether an out-of-the-box SharePoint feature can work.
 
-
 ### Remote provisioning pattern
 
 Remote provisioning uses new add-in patterns to move provisioning logic outside of the SharePoint farm entirely. This approach eliminates the need to use the feature framework or other customizations in the SharePoint farm, and instead enables you to control customizations outside of SharePoint. This approach makes it possible to update and change the provisioning engine without affecting SharePoint availability. For more information about the feature framework, see  [Site Definitions and Provisioning: the Feature Framework](https://msdn.microsoft.com/en-us/library/ms454453%28v=office.12%29.aspx). Aspects and implementations of the remote provisioning pattern are documented in detail in this section. You may find it useful to get started with the following introductions to the pattern:
-
 
 -  [Self-service site provisioning using add-ins for SharePoint 2013](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
     
@@ -155,9 +140,7 @@ In the simplest implementation of the remote provisioning pattern, provisioning 
 
 The branding and provisioning code samples follow this sequence of events to show the remote provisioning pattern.
 
- **Table 4. Basic remote provisioning sequence and associated samples**
-
-
+**Table 4. Basic remote provisioning sequence and associated samples**
 
 |**Step**|**Description**|**Samples**|**Article**|
 |:-----|:-----|:-----|:-----|
@@ -167,11 +150,9 @@ The branding and provisioning code samples follow this sequence of events to sho
 
 **Note**  Table 4 lists the steps that might be typical of a remote provisioning scenario. The samples you use depend on the approach that works best for your enterprise. For example, if you don't have a business need to create a custom approval workflow, you won't use that sample. 
 
-
 **Figure 1. Example of a site provisioning and branding workflow using the remote provisioning pattern**
 
 ![A flowchart that shows the site provisioning and branding workflow using remote provisioning](media/747cb1ba-2ea7-45ba-b3dd-a87912f8477f.png)
-
 
 ### How remote provisioning affects pre-existing site content
 
@@ -179,22 +160,18 @@ Depending on the specific site elements you want to provision, your code will ov
 
 The basic remote provisioning pattern is the same regardless of additional requirements. However, when you plan to use this pattern to provision site branding, map your brand development strategy in the context of the customization capabilities that SharePoint CSOM, JSOM, and REST APIs provide (the code samples described in this section use CSOM). Also consider: 
 
-
 - Site architecture. Are you building an Internet-facing site, an intranet site, or an extranet that requires authorized users to log on through the Internet-facing site to access company data?
     
 - The degree of control that specific users have to define and request provisioning requirements. Should users be able to specify custom provisioning options using a form? Are changes applied to the site automatically, only after people with decision-making power approve the changes, or are they managed by a governance policy?
     
 - The types of branding customizations you want to apply (structural, look and feel, or both).
-    
 
 ## Branding and site provisioning code samples
 <a name="sectionSection7"> </a>
 
 The code samples described in this section show the core scenario and extend it to cover some more specific use cases. The articles in this section also include some code examples. The following tables list and describe the samples.
 
- **Table 5. Site provisioning samples**
-
-
+**Table 5. Site provisioning samples**
 
 |**Sample**|**Description**|**Related article**|
 |:-----|:-----|:-----|
@@ -205,9 +182,7 @@ The code samples described in this section show the core scenario and extend it 
 
 **Note**  The BatchProvisioning, SiteProvisioningWorkflow, and SiteProvisioningWorkflowAppWeb samples demonstrate the core concepts and functions of the remote provisioning pattern. The ProvisionWikiPages sample addresses a specific use case (Wiki page provisioning).
 
- **Table 6. Branding samples**
-
-
+**Table 6. Branding samples**
 
 |**Sample**|**Description**|**Related article**|
 |:-----|:-----|:-----|
@@ -225,7 +200,6 @@ SharePoint provides several Web Parts you can use to incorporate data views, ima
 
 The branding design and development workflow for SharePoint websites closely resembles the design workflow the industry uses:
 
-
 - Plan your site architecture and design.
     
 - Create design assets using familiar web design tools and technologies.
@@ -233,38 +207,30 @@ The branding design and development workflow for SharePoint websites closely res
 - Build your site using SharePoint tools such as Design Manager.
     
 - Package your site design, and use add-ins for SharePoint and the remote provisioning pattern to provision site branding.
-    
 
 **Note**  Applying branding in SharePoint means modifying the look and feel of a default SharePoint site. This can include making both structural and cosmetic changes to the site's appearance
-
 
 ### Branding cost and complexity
 
 Branding changes range from low-cost and simple to high-cost and complex. Through the UI, users can apply composed looks, which include a background image, color palette, fonts, and a master page associated with these elements, and a preview file associated with the master page. You can use the SharePoint 2013 theming engine to create your own themes, and you can create custom CSS to modify the look and feel of your site. 
 
-
 **Important**  Although it's possible to create custom master pages and other structural elements as part of a custom branding project, the long-term cost of supporting structural customizations can be high, and might make it more costly for your organization to apply upgrades and support the long-term applicability of short-term investments in customization.
-
 
 ### Branding SharePoint sites hosted on-premises or on a dedicated farm
 
 You can use the remote provisioning pattern to brand Team sites, Publishing sites, and OneDrive for Business sites that are hosted on-premises or on a dedicated farm at both the site collection and subsite level. 
 
-
 ### SharePoint Online
 
 Part of planning a SharePoint branding project is deciding which types of site(s) you want to build, brand, and provision. SharePoint Online licensing affects whether publishing site capabilities are available to you. While all licenses enable you to specify at least one public website that has some of the features of a SharePoint Server Publishing site, not all licenses provide full Publishing site capabilities.
 
- **Table 7. Site options in SharePoint Online**
-
-
+**Table 7. Site options in SharePoint Online**
 
 |**Office 365 edition**|**Team site**|**Public website**|**Publishing site**|**Notes**|
 |:-----|:-----|:-----|:-----|:-----|
 |Small Business|Yes|Yes|No|Includes one Team site and the public website. Does not include Publishing site functionality. The public website capabilities were designed with small business in mind.|
 |Enterprise|Yes|No|Yes|Includes a Team site collection at the root web application for the domain that does not include Publishing, and you can create new Publishing site collections under that root web application. |
 For more information, see  [Select an Office 365 plan for business](https://products.office.com/en-us/business/compare-office-365-for-business-plans?legRedir=true&amp;CorrelationId=b633601e-1b0f-46cf-a4f8-1bfa8645376e) and [Model: Design and branding in SharePoint 2013](http://www.microsoft.com/en-us/download/details.aspx?id=30715).
-
 
 ## When should I customize?
 <a name="sectionSection9"> </a>
@@ -275,9 +241,7 @@ When working with an existing custom SharePoint solution and weighing whether an
 
 When considering moving an existing customization from full-trust code to the Cloud Add-in Model, there usually isn't a one-to-one relationship between features and functionality. Rather than trying to find a one-to-one match between server-side and client-side code, consider alternative approaches. Table 8 maps some commonly used concepts and functionality of SharePoint solutions to their equivalents in add-ins for SharePoint.
 
- **Table 8. Mapping SharePoint concepts to add-ins**
-
-
+**Table 8. Mapping SharePoint concepts to add-ins**
 
 |**Task**|**In SharePoint solution**|**In add-ins for SharePoint**|**Guidance**|
 |:-----|:-----|:-----|:-----|
@@ -291,17 +255,14 @@ When considering moving an existing customization from full-trust code to the Cl
 ## In this section
 <a name="sectionSection10"> </a>
 
-
 -  [SharePoint pages and the page model](7d1ca7d4-f229-40e8-b2a3-08fb5e113483.md)
     
 -  [SharePoint development and design tools and practices](6ec1cef5-05ff-4b6a-9a7b-d02c5e9b30b8.md)
     
 -  [SharePoint site branding and page customization solutions](SharePoint-site-branding-and-page-customization-solutions.md)
-    
 
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 -  [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     

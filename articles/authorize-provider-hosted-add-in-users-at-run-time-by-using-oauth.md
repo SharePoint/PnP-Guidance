@@ -1,4 +1,3 @@
-
 # Authorize provider-hosted add-in users at run time by using OAuth
 
 Provide authorized access to SharePoint resources by using OAuth in provider-hosted add-ins at run time.
@@ -122,7 +121,6 @@ public void Callback(string code)
 ```
 
 Your add-in now has the access token for this user and can proceed to create lists on the SharePoint site. 
-
 
 ## Additional resources
 <a name="bk_addresources"> </a>

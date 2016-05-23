@@ -1,7 +1,8 @@
 # Replace files deployed using modules in SharePoint farm solutions
+
 Replace files, like master pages and page layouts in SharePoint, that were deployed using modules in farm solutions by uploading and updating references to use new files.
 
- _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
+_**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 If you deployed files declaratively using modules in farm solutions, learn how to transform them into new solutions that update references to files and provide similar functionality using the client object model (CSOM). In the past, modules were used to deploy files such as master pages and page layouts. This article describes how to use the transformation process to:
 
@@ -17,19 +18,17 @@ Use this transformation process when:
     
 - You have set document content types on master pages or page layouts in your farm solution declaratively.
 
- **Important:**  Farm solutions cannot be migrated to SharePoint Online. By applying the techniques and code described in this article, you can build a new solution with similar functionality that your farm solutions provide, update references to files, and then the new solution can be deployed to SharePoint Online. You can then disable the feature and retract the previous farm solution. The code in this article requires additional code to provide a fully working solution. For example, this article does not discuss how to authenticate with Office 365, how to implement required exception handling, and so on. For additional code samples, see the [Office 365 Developer Patterns and Practices project](https://github.com/OfficeDev/PnP).
+**Important:**  Farm solutions cannot be migrated to SharePoint Online. By applying the techniques and code described in this article, you can build a new solution with similar functionality that your farm solutions provide, update references to files, and then the new solution can be deployed to SharePoint Online. You can then disable the feature and retract the previous farm solution. The code in this article requires additional code to provide a fully working solution. For example, this article does not discuss how to authenticate with Office 365, how to implement required exception handling, and so on. For additional code samples, see the [Office 365 Developer Patterns and Practices project](https://github.com/OfficeDev/PnP).
 
 ## Before you begin
 
 Ideally, you should review your existing farm solutions, learn about the techniques described in this article, and then plan how to apply these techniques to your scenarios. If you are unfamiliar with farm solutions or do not have an existing farm solution to work with, it might be helpful for you to:
-
 
 - Download the [Contoso.Intranet solution](https://github.com/OfficeDev/PnP/tree/master/Reference%20Material/Contoso.Intranet). Review exercise 1 in [Replacement of files provisioned via Modules in Full Trust Solutions](https://github.com/OfficeDev/TrainingContent/blob/master/O3658/10%20Transformation%20guidance%20from%20farm%20solutions%20to%20app%20model/10-1%20Replacement%20of%20files%20deployed%20via%20Modules/Lab.md) to get a quick understanding of how master pages and page layouts might have been built in the past.
     
 - Learn about farm solutions. For more information, see [SharePoint 2010 Architectures Overview](https://msdn.microsoft.com/en-us/library/office/gg552610%28v=office.14%29.aspx) and[Build farm solutions in SharePoint 2013](https://msdn.microsoft.com/library/jj163902.aspx).
     
 Before running your code sample, enable the publishing features on the site collection and site with the following procedures.
-
 
 1. To enable the  **SharePoint Server Publishing Infrastructure** feature on the site collection:
     
@@ -49,7 +48,6 @@ Before running your code sample, enable the publishing features on the site coll
     
 To set up your Visual Studio project:
 
-
 1. Download the [sample project](https://github.com/OfficeDev/TrainingContent/blob/master/O3658/10%20Transformation%20guidance%20from%20farm%20solutions%20to%20app%20model/Student.zip). Choose  **View Raw** to start downloading the sample project, extract the files from the zip file, and then navigate to the Module9/ModuleReplacement folder.
     
 2. Open ModuleReplacement.sln.
@@ -59,7 +57,6 @@ To set up your Visual Studio project:
 	1.  **masterpage** element - Uses the **file** attribute to specify the new master page to deploy to the master page gallery, and the **replaces** attribute specifies the existing master page in the master page gallery.
     
 	2.  **pagelayout** element - Uses the **file** attribute to specify the new page layout file, the **replaces** attribute to specify the existing page layout file, and several other attributes to specify additional page layout information.
-    
 
 	**Note:**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
 
@@ -77,18 +74,15 @@ To set up your Visual Studio project:
 	```
 
 4. In MasterPageGalleryFiles.cs, the  **MasterPageGalleryFile** and **LayoutFile** classes define business objects that store information about the new master pages and page layouts to be uploaded to SharePoint.
-    
 
 ## Upload and update references to master pages
 
 To upload and update references to the new master pages on your SharePoint site:
 
-
 1. In Program.cs, add the following  **using** statement.
     
 	```C#
 		using System.Security;
-	
 	```
 
 2. In Program.cs, add the following methods to perform authentication to Office 365.
@@ -146,7 +140,6 @@ To upload and update references to the new master pages on your SharePoint site:
             }
             return strUserName;
         }
-
   ```
 
 3. In Program.cs, add the following code to the  **Main** method, which performs the following tasks:
@@ -232,7 +225,6 @@ To upload and update references to the new master pages on your SharePoint site:
 	        UploadAndSetMasterPage(web, folder, clientContext, masterPage);
 	    }
 	}
-	
 	```
 
 5. In Program.cs, add the  **UploadAndSetMasterPage** method, which performs the following tasks:
@@ -295,12 +287,9 @@ To upload and update references to the new master pages on your SharePoint site:
 	        clientContext.ExecuteQuery();
 	    }
 	}
-	
 	```
 
-
 ## Upload and update references to page layouts
-
 
 **Note:**  The code examples in this section build on the code examples in the previous section of this article. 
 
@@ -365,9 +354,6 @@ To replace page layouts that were deployed using modules in farm solutions, uplo
 	        }
 	
 	    }
-			
-			
-	
 	```
 
 2. In Program.cs, add the  **UploadPageLayoutsAndUpdateReferences** method, which performs the following steps:
@@ -381,7 +367,6 @@ To replace page layouts that were deployed using modules in farm solutions, uplo
   		2. Calls  **UploadPageLayout**.
     
   		3. Calls  **UpdatePages** to update existing pages to use the new page layouts.
-    
 
   ```C#
   		private static void UploadPageLayoutsAndUpdateReferences(Web web, Folder folder, ClientContext clientContext, XDocument settings, string contentTypeId)
@@ -466,7 +451,6 @@ To replace page layouts that were deployed using modules in farm solutions, uplo
 	        }
 	    }
 	}
-	
 	```
 
 4. In Program.cs, add the  **UpdatePages** method, which performs the following tasks:
@@ -480,7 +464,6 @@ To replace page layouts that were deployed using modules in farm solutions, uplo
 		2. Updates the URL of the page layout to refer to the new page layout file, and then updates the  **PublishingPageLayout** field of the list item.
     
 		3. Checks in, publishes, and approves the file referenced by the list item.
-    
 
 	```C#
 	private static void UpdatePages(Web web, ClientContext clientContext, IList<LayoutFile> pageLayouts)
@@ -521,15 +504,11 @@ To replace page layouts that were deployed using modules in farm solutions, uplo
 	        }
 	    }
 	}
-	
 	```
-
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
 - [Transform farm solutions to the SharePoint add-in model](Transform-farm-solutions-to-the-SharePoint-app-model.md)
     
 - [SharePoint 2013](https://msdn.microsoft.com/library/office/jj162979.aspx)
-    

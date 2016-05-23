@@ -1,9 +1,8 @@
-
 # Localization solutions for SharePoint 2013 and SharePoint Online
 
 Localize content in your SharePoint site.
 
- _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
+_**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 The code samples described in this section show you how to use provider-hosted add-ins to localize site features and UI elements in your SharePoint solution. The articles in this section will help you get started with and walk you through the primary scenarios that each sample illustrates. 
 
@@ -17,10 +16,8 @@ The code samples described in this section show you how to use provider-hosted a
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
 - [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
 - [Patterns and Practices developer center](http://dev.office.com/patterns-and-practices)
     
 - [Office 365 Development Patterns and Practices on GitHub](https://github.com/OfficeDev/PnP)
-    

@@ -1,4 +1,3 @@
-
 # PnP remote timer job framework
 
 Timer jobs are background tasks that operate on a timed or recurrent basis to manage your SharePoint sites.

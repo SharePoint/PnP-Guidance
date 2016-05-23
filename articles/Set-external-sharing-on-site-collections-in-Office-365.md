@@ -117,7 +117,7 @@ When you run this code sample,  **Main** in Program.cs performs the following ta
         }
 ```
 
- **SetSiteSharing** does the following:
+**SetSiteSharing** does the following:
 
 -  Uses the **Tenant.GetSitePropertiesByUrl** to retrieve **SiteProperties** on your site collection.
     
@@ -178,4 +178,3 @@ public static void SetSiteSharing(ClientContext adminCC, string siteCollectionUR
 -  [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
 -  [Manage external sharing for your SharePoint Online environment](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)
-    

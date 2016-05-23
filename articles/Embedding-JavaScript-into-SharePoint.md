@@ -43,6 +43,7 @@ MySolution.MyClass1 = (function () {
 ```
 
 Functions defined in public interface can be invoked as:
+
 ```JavaScript
 MySolution.MyClass1.myFunction1();
 

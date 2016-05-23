@@ -2,7 +2,7 @@
 
 You can use a provider-hosted add-in to migrate and import SharePoint user profile data.
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
     
 The [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfileProperty.Migration) sample add-in shows you how to migrate user profile data from SharePoint Server 2010 or SharePoint Server 2013 into SharePoint Online.
     
@@ -67,7 +67,7 @@ For the  **Contoso.ProfileProperty.Migration.Import** project
 
 - Edit the App.config file using the configuration settings listed in Table 2.
     
- **Table 2. App.config file configuration settings**
+**Table 2. App.config file configuration settings**
 
 |**Configuration setting name**|**Description**|Example|
 |:-----|:-----|:-----|
@@ -166,7 +166,6 @@ static void Main(string[] args)
             {
                 LogMessage("Exception trying to get profile properties:\n" + ex.Message, LogLevel.Error);
             }
- 
 ```
 
 Note that the  **GetSingleValuedProperty** method uses userprofileservice.asmx to retrieve a single-valued user profile property. **GetSingleValuedProperty** does the following, as shown in the next code example:
@@ -201,7 +200,6 @@ private static string GetSingleValuedProperty(UserProfile spUser,string userProp
             return returnString;
             
         }
-
 ```
 
 Note that the  **GetMultiValuedProperty** method uses userprofileservice.asmx to retrieve a multivalued user profile property. **GetMultiValuedProperty** does the following, as shown in the next code example:
@@ -244,7 +242,6 @@ private static string GetMultiValuedProperty(UserProfile spUser, string userProp
             return sb.ToString();
 
         }
-
 ```
 
 ## Using Contoso.ProfileProperty.Migration.Import
@@ -305,7 +302,6 @@ static bool InitializeWebService()
             }
             
         }
-
 ```
 
 The  **SetSingleMVProfileProperty** method sets a multivalued user profile property, such as **SPS-Responsibility**, by doing the following:
@@ -388,4 +384,3 @@ static void SetSingleProfileProperty(string UserName, string PropertyName, strin
 -  [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM)
     
 -  [UserProfile.Manipulation.CSOM.Console](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM.Console)
-    

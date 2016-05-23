@@ -172,4 +172,3 @@ private static void DoWork()
 - [ChangeQuery members](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.changequery_members.aspx)
     
 - [Patterns and Practices developer center](http://dev.office.com/patterns-and-practices)
-    
