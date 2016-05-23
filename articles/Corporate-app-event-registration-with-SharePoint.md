@@ -1,8 +1,8 @@
-
 # Corporate event app integration with SharePoint
+
 Integrate add-ins for SharePoint into your business operations by using a provider-hosted add-in that can implement multiple complex business tasks.
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 The  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement a centralized corporate events management system as a provider-hosted add-in that integrates with your existing line-of-business (LOB) applications.
 
@@ -15,13 +15,11 @@ When you start the BusinessApps.CorporateEventApp sample app, the Home page prov
 
 When you choose  **Start configuration**, you go to the Configuration page, as shown in Figure 1. When you choose  **Initialize the data store** on the Configuration page, the sample deploys the SharePoint entities and sample data that support the sample.
 
-
 **Figure 1. Configuration page**
 
 ![Screenshot that shows the initialize data screen](media/ee213035-b014-45cc-94f4-d8c1c58a047e.png)
 
 After you initialize the data store, you can go back to your site to see a new welcome page (the EventsHome.aspx page), which is populated by two web parts that the add-in deployed, as shown in Figure 2. In the left column, you'll see the four new lists installed by the app, The Corporate Events list is populated by sample data.
-
 
 **Figure 2. Welcome page with web parts initialized**
 
@@ -29,21 +27,17 @@ After you initialize the data store, you can go back to your site to see a new w
 
 Each web part contains links to each of the displayed events, where you can see the event details. When you choose a link, the event details page runs separately on the remote host, as shown in Figure 3. You can choose  **Back to Site** on the page to return to the SharePoint site, and also to register yourself for the event.
 
-
 **Figure 3. Event details page**
 
 ![Screenshot that shows the add-in UI with corporate event screen showing event details](media/b967e4ec-e0a6-4aae-af81-e22b92cef0d9.png)
 
 The registration page also runs separately on the remote host, and also contains a link back to the SharePoint host site (see Figure 4). When you finish registering for the event, your name will appear on the newly installed  **Event Registration** list.
 
-
 **Figure 4. Event registration page**
 
 ![Screenshot that shows the app Corporate events event registration screen](media/d2ec4156-5806-4b20-ab5b-3d25fcc33f1a.png)
 
 The Models\DataInitializer.cs file contains the code that runs when you choose this button. The code in this file creates and deploys four new SharePoint lists, along with four corresponding content types:
-
-
 
 - Corporate events
     
@@ -54,9 +48,6 @@ The Models\DataInitializer.cs file contains the code that runs when you choose t
 - Event sessions
     
 The code in this file uses a method similar to the one that is used in the  [Core.ModifyPages](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ModifyPages) sample to add a custom page to the site.
-
-
-
 
 ```
             // Create default wiki page.
@@ -84,10 +75,7 @@ AddWikiPage is an extension method from the Core.DevPnPCore project to add a new
 
 The Models\DataInitializer.cs file also defines the XML for both web parts that are displayed on the new welcome page and then adds each one to the page. The following examples show how this works for the Featured Events web part.
 
- **Define web part XML**
-
-
-
+**Define web part XML**
 
 ```XML
             var webPart1 = new WebPartEntity(){
@@ -117,10 +105,7 @@ The Models\DataInitializer.cs file also defines the XML for both web parts that 
 
 ```
 
- **Add the web parts to the page**
-
-
-
+**Add the web parts to the page**
 
 ```XML
             var limitedWebPartManager = webPartPage.GetLimitedWebPartManager(Microsoft.SharePoint.Client.WebParts.PersonalizationScope.Shared);
@@ -144,8 +129,6 @@ The Models\DataInitializer.cs file also defines the XML for both web parts that 
 
 In the Models directory of your web project, you'll notice that this MVC ASP.NET web application contains four class names that correspond to the lists and content types that the app installed:
 
-
-
 - Event.cs (Corporate Events)
     
 - Registration.cs (Event Registration)
@@ -160,7 +143,7 @@ The DataInitializer.cs file adds sample data for the  **Corporate Events** list 
 
 The following table lists the properties need to be implemented by the classes that inherit from the  **BaseListItem** abstract class.
 
- **Table 1. Methods to implement in classes inheriting from  **BaseListItem****
+**Table 1. Methods to implement in classes inheriting from  **BaseListItem****
 
 |**Member**|**Description**|
 |:-----|:-----|
@@ -179,7 +162,7 @@ The following table lists the methods that have to be implemented by the classes
 
 The following table lists the helper methods from the  **BaseListItem** class that the subclasses need to implement the **ReadProperties** and **SetProperties** methods.
 
- **Table 3. BaseListItem helper methods**
+**Table 3. BaseListItem helper methods**
 
 |**Helper method**|**Description**|
 |:-----|:-----|
@@ -190,10 +173,7 @@ The following table lists the helper methods from the  **BaseListItem** class th
 
 The Event.cs file contains the following implementations of the  **ReadProperties** and **SetProperties** methods.
 
- **ReadProperties**
-
-
-
+**ReadProperties**
 
 ```C#
         protected override void ReadProperties(ListItem item) {
@@ -225,10 +205,7 @@ SetProperties:
 
 The following code examples show how the underlying  **BaseGet** and **BaseSet** methods are defined in BaseListItem.cs.
 
- **BaseGet**
-
-
-
+**BaseGet**
 
 ```
 protected T BaseGet<T>(ListItem item, string internalName){
@@ -239,10 +216,7 @@ protected T BaseGet<T>(ListItem item, string internalName){
 
 ```
 
- **BaseSet**
-
-
-
+**BaseSet**
 
 ```
 protected void BaseSet(ListItem item, string internalName, object value) {
@@ -258,14 +232,9 @@ protected void BaseSet(ListItem item, string internalName, object value) {
             }
             item[internalName] = value;
         }
-
-
 ```
 
 The  **BaseListItem** class also contains a **Save** method that is used to save each LOB entity that the app creates and manipulates. This method loads the list and determines whether the current item has an ID that is greater than 0. If the ID is not greater than 0, it assumes that it's not valid and creates a new list item. It uses the **SetProperties** method to set properties on the **ListItem** and then sets the properties on the subclass by using the **ReadProperties** method.
-
-
-
 
 ```
 public void Save(Web web) {
@@ -311,10 +280,8 @@ public void Save(Web web) {
 
 ```
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 -  [Composite business add-ins for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
     

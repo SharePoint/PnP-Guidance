@@ -48,9 +48,7 @@ Give Azure a few moments to create the site. After creating the site you can spe
 
 At this point the Azure website is setup and configured to host the Office 365 API web project that you will deploy in a later step.
 
-
 [back to top](#deploying-development-office-365-sites-to-microsoft-azure)
-
 
 # Configure the Azure AD Application
 
@@ -73,9 +71,7 @@ In this step you will modify the Azure AD application used in the development & 
 
 At this point, the Azure AD application used by the Office 365 API web project has been configured to work with the new Azure website.
 
-
 [back to top](#deploying-development-office-365-sites-to-microsoft-azure)
-
 
 # Configure the ASP.NET Project
 
@@ -99,16 +95,13 @@ In a previous step outlined in this page, when you created the Azure website you
 
 At this point the web application, Azure website & application in Azure AD are all configured correctly and ready to be deployed.
 
-
 [back to top](#deploying-development-office-365-sites-to-microsoft-azure)
-
 
 # Deploy the Office 365 API ASP.NET Web Application
 
 In this step you will publish the Office 365 API web application to the Azure website. Once the site has been deployed you will test it to ensure everything works as desired.
 
 > This step assumes you have he Microsoft [Azure SDK](http://azure.microsoft.com/en-us/downloads/), version 2.0 or higher, installed. 
-
 
 ## Deploy the ASP.NET Web Application
 
@@ -144,7 +137,6 @@ By default this is the HTTP endpoint. Recall from the previous step when you con
 At this point you have successfully deployed your Office 365 API web application project to run in an Azure website.
 
 [back to top](#deploying-development-office-365-sites-to-microsoft-azure)
-
 
 ----------
 

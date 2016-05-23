@@ -1,21 +1,16 @@
-
 # Use localization features in Office 365 sample add-in
+
 You can use the localization features in Office 365 to provide localized values for SharePoint sites, lists, content types, and site columns. 
-
     
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
     
 The [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes) sample shows you how to use the localization features of Office 365 on sites, lists, content types, and site columns. This code sample uses a console application to do the following:
-    
 
 - Create content types, site columns, and lists, and associate site columns with content types.
     
 - Localize the content type, site column, list, and a user-supplied site.
-    
 
 **Note**  The localization features described in this article are only available in Office 365. For information about the localization features that are available in Office 365 Dedicated or SharePoint Server 2013 on-premises, see  [How to: Localize add-ins for SharePoint](http://msdn.microsoft.com/library/907a9189-7ce3-469a-8c87-4cef26f03c73.aspx) and [Localizing SharePoint solutions](https://msdn.microsoft.com/en-us/library/ee696750.aspx).
-
 
 ## Before you begin
 <a name="sectionSection0"> </a>
@@ -23,7 +18,6 @@ The [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Sampl
 To get started, download the  [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this code sample:
-
 
 1. Configure the language settings on your site. To do this:
     
@@ -46,10 +40,8 @@ Before you run this code sample:
       d. In  **My Display Languages**, choose a new language similar to the one you set on the site using the  **Pick a new language** dropdown, then choose **Add**. For example, choose French and Finnish, as shown in Figure 3. You can move your preferred language up or down by choosing the up and down arrows.
     
       e. Choose  **Save all and close**.
-    
 
 **Note**  It might take a few minutes for your site to render in the selected language(s). 
-
 
 **Figure 1. Language settings for a site**
 
@@ -63,12 +55,10 @@ Before you run this code sample:
 
 ![Screenshot of the Language and Region section of the user's profile page](media/ae5f565d-c932-43dd-9dc3-87630cee3692.png)
 
-
 ## Using the Core.CreateContentTypes sample app
 <a name="sectionSection1"> </a>
 
 When you run this code sample, a console application displays, as shown in Figure 4. You need to supply the site to localize, and your Office 365 administrator's credentials. When the console application runs, the  **Main** method in Program.cs performs the following tasks:
-
 
 - Calls the  **CreateContentTypeIfDoesNotExist** method to create a content type called **Contoso Document**.
     
@@ -77,7 +67,6 @@ When you run this code sample, a console application displays, as shown in Figur
 - Calls the  **AddSiteColumnToContentType** method to link the **Contoso String** site column to the **Contoso Document** content type.
     
 - Calls the  **CreateCustomList** method to create a new list called **MyList**.
-    
 
 **Figure 4. Core.CreateContentTypes console application**
 
@@ -85,26 +74,17 @@ When you run this code sample, a console application displays, as shown in Figur
 
 The  **Main** method then calls the **LocalizeSiteAndList** and **LocalizeContentTypeAndField** methods. The **LocalizeSiteAndList** method shows you how to do the following:
 
-
-
 - Set different localized values for the title and description of a site, by using the  **SetValueForUICulture** method on the **TitleResource** and **DescriptionResource** properties on the **Web** object.
     
 - Set different localized values for the title and description of a site, by using the  **SetValueForUICulture** method on the **TitleResource** and **DescriptionResource** properties on the **Web** object.
     
 The  **LocalizeContentTypeAndField** method shows you how to do the following:
 
-
-
 - Set different localized values for the name and description of a content type, by using the  **SetValueForUICulture** method on the **NameResource** and **DescriptionResource** properties on the **ContentType** object.
     
 - Set different localized values for the title and description of a site, by using the  **SetValueForUICulture** method on the **TitleResource** and **DescriptionResource** properties on the **Field** object.
     
-
-    
 **Note**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
-
-
 
 ```C#
 private static void LocalizeSiteAndList(ClientContext cc, Web web)
@@ -172,19 +152,15 @@ private static void LocalizeContentTypeAndField(ClientContext cc, Web web)
 
 As shown in Figure 5, your site displays your custom French title  **Hello World - French**, which was set using the  **LocalizeSiteAndList** method.
 
-
 **Figure 5. Customized page title updated by the LocalizeSiteAndList method**
 
 ![Screenshot of the updated customized page title](media/14471283-f7b6-49ca-a507-a3e28e43ee22.png)
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 -  [Localization solutions for SharePoint 2013 and SharePoint Online](localization-solutions-for-sharepoint-2013-and-sharepoint-online.md)
     
 -  [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes)
     
 -  [Enterprise content management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
-    

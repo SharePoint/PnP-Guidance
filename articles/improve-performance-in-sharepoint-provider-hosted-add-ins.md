@@ -1,9 +1,8 @@
-
 # Improve performance in SharePoint provider-hosted add-ins
 
 Improve the performance of your SharePoint provider-hosted add-in by limiting remote calls.
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 You can improve the performance of your SharePoint provider-hosted add-in by limiting the number and frequency of remote calls to SharePoint. Too many calls to the host site degrades performance. To limit the number of remote calls, you can implement either HTTP cookies or HTML5 local storage.
 
@@ -13,7 +12,6 @@ The [Performance.Caching](https://github.com/OfficeDev/PnP/tree/dev/Samples/Perf
 
 The start page of the HTTP cookie sample displays information from the  **About Me** section of your user profile in a text box. A second text box tells you whether a new cookie was created and when the existing cookie will expire. The information stored in cookies can't be larger than 4095 bytes.
 
-
 **Figure 1. Data rendered in the HTTP cookie caching sample**
 
 ![Data rendered in the HTTP cookie caching sample](media/improve-performance-in-sharepoint-provider-hosted-add-ins/c9427295-4242-48df-9aa8-392b58d7f4c6.png)
@@ -21,9 +19,6 @@ The start page of the HTTP cookie sample displays information from the  **About 
 The app.js file, which is located in the Scripts folder of the web project, defines the behavior of the  **Save for later** button. The code first verifies that cookies are enabled in the browser by setting a test cookie. If cookies are enabled, the code determines whether the user profile information is already stored in a cookie. If it isn't, it uses JSON to look up the **About Me** information, store it in a cookie, and then display the information in the browser.
 
 The following function sets the cookie and its expiration date.
-
-
-
 
 ```c#
 function setCookie(key, value, expiry, path, domain, secure) {
@@ -52,17 +47,12 @@ function setCookie(key, value, expiry, path, domain, secure) {
 
 ```
 
-
 ## Use HTML5 local storage for caching
 
 The start page of the HTML5 local storage sample displays information from the  **About Me** section of your user profile information about the cached data. The text box displays this information as well as the expiration time (if any) of the cached information.
 
-
 **Figure 2. Data rendered in the HTML 5 local storage caching sample**
 The app.js file, which is located in the Scripts folder of the web project, defines the behavior of the  **Save for later** button. The add-in first verifies that local storage is enabled by using the following function.
-
-
-
 
 ```c#
 isHtml5StorageSupported = function () {
@@ -78,9 +68,6 @@ isHtml5StorageSupported = function () {
 
 If local storage is supported, the function determines whether the user profile information is already stored there. If it isn't, it uses JSOM to look up the  **About Me** information, to store it locally, and then to display the information in the browser. The following code stores the **About Me** information in a key named "aboutMeValue".
 
-
-
-
 ```c#
 var aboutMeValue = personProperties.get_userProfileProperties()['AboutMe'];
     $('#aboutMeText').val(aboutMeValue);
@@ -95,9 +82,6 @@ var aboutMeValue = personProperties.get_userProfileProperties()['AboutMe'];
 ```
 
 The  **Clear the cache** button removes that key, looks up the **About Me** information in your user profile, and creates a fresh local storage key to store that information. The add-in doesn't set an expiration time by default, but the app.js file does contain the following function, which sets an expiration time for the cached data.
-
-
-
 
 ```c#
 function setLocalStorageKeyExpiry(key) {
@@ -130,10 +114,8 @@ function setLocalStorageKeyExpiry(key) {
 
 Before looking for the information stored in the local storage key, the code uses the  **isKeyExpired** function to determine whether the key is expired. For more information, see [Customize the UX by using SharePoint provider-hosted add-ins](customize-the-ux-by-using-sharepoint-provider-hosted-add-ins.md).
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 - [UX Components in SharePoint 2013 and SharePoint Online](ux-components-in-sharepoint-2013-and-sharepoint-online.md)
     
@@ -142,4 +124,3 @@ Before looking for the information stored in the local storage key, the code use
 - [Branding.UIElementPersonalization](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.UIElementPersonalization)
     
 - [Performance.Caching](https://github.com/OfficeDev/PnP/tree/dev/Samples/Performance.Caching)
-    

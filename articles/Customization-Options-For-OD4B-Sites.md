@@ -37,15 +37,12 @@ In Office 365 there is no centralized event raised, which we could attach our cu
 
 In practice we do have four different mechanisms to apply centralized customizations to OD4B sites in the Office 365. You could also consider manual option as the fifth one, but in the case of having hundreds or thousands of OD4B sites, using manual options is not really a realistic option. Here’s the different options we have.
  
-1. Office 365 suite level s
-ettings (Office 365 themes and other settings)
+1. Office 365 suite level settings (Office 365 themes and other settings)
 2. Hidden app part with user context
 3. Pre-create and apply configuration
 4. Remote timer job based on user profile updates
 
 Each of the options have advantages and disadvantages in them and the right option depends on your detailed business requirements. Some of the settings you can also apply from the Office 365 suite level, but often you would be looking for some more specifics, so actual customizations are needed. It obviously all comes down on exact requirements and business case analyses on their impact on short and long term.
-
- 
 
 ## Office 365 suite level settings ##
 
@@ -58,8 +55,6 @@ Following picture shows the different settings right now for the Office 365 them
 ![](media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-03.png)
 
 Since by default Office 365 theme settings are for controlling OD4B site suite bar, you will most likely be using this options together with other options to ensure that you can provide at least the right branding elements cross your OD4B sites. Notice that when you change for example Office 365 theme settings in Office 365 admin tool, it does take a quite a long time to get the settings applied for OD4B sites, so be patience. 
-
- 
 
 ## Hidden app part with user context ##
 
@@ -81,8 +76,6 @@ This is definitely the most reliable process of ensuring that there’s right co
 
 If you are familiar of classic SharePoint development models with farm solutions, this is pretty similar process as one time executing timer jobs.
 
- 
-
 ## Pre-create and apply configuration ##
 
 This option relies on the pre-creation of the OD4B sites before users will access them. This can be achieved by using relatively new API which provides us away to create OD4B sites for specific users in batch process, using either CSOM or REST. Needed code can be initiated using a PowerShell script or by writing actual code which is calling the remote APIs. 
@@ -94,8 +87,6 @@ This option relies on the pre-creation of the OD4B sites before users will acces
 
 In some sense this is also really reliable process, but you would have to manage new persons and updates “manually”, which could mean more work then using the hidden app part approach. This is definitely valid approach which can be taken and especially useful if you are migrating from some other file sharing solution to the OD4B and want to avoid the need of end users to access the OD4B site once, before actuals site creation is started.
 
- 
-
 ## Remote timer job based on user profile updates ##
 
 This approach means scanning through user profiles for checking to whom the OD4B site has been created and then apply the changes to the sites as needed. This would mean scheduled job running outside of the SharePoint, which will periodically check the status and perform needed customizations. Scheduled job could be running as a WebJob in Azure or as simple as PowerShell script scheduled in your own windows scheduler. Obviously the scale of the deployment has huge impact on the chosen scheduling option.
@@ -106,7 +97,6 @@ This approach means scanning through user profiles for checking to whom the OD4B
 2.Actual sites are customized one-by-one based on the business requirements
 
 One of the key downsides of this option is that there can clearly be a situations where user can access the OD4B sites before the customizations have been applied. At the same time this option is interesting add-on for other options to ensure that end users have not changed any of the required settings on the sites or to check that the OD4B site content aligns with the company policies.
-
 
 ----------
 
@@ -132,5 +122,3 @@ Vesa Juvonen (Microsoft) - [@vesajuvonen](https://twitter.com/vesajuvonen)
 Version  | Date | Comments
 ---------| -----| --------
 1.0  | January 2nd, 2015 | Initial release | Vesa Juvonen (Microsoft)
-
-

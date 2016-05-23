@@ -1,15 +1,14 @@
-
 # Add a custom ribbon to your SharePoint site
+
 Add or remove a custom ribbon on your SharePoint site. Add JavaScript event handlers using the embed JavaScript technique to handle your custom ribbon's events.
 
- _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
+_**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
 The  [Core.RibbonCommands](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.RibbonCommands) code sample shows you how to add a custom ribbon to a SharePoint site. Use this solution if you want to:
 
 - Add a custom ribbon, group, or button to your SharePoint site or list.
     
 - Display a custom ribbon for specific content types, sites, or lists.
-    
 
 **Note**  This code sample shows how to call the JavaScript functions that handle events raised by the ribbon's buttons. This code sample does not provide the implementation of the JavaScript event handler functions for the ribbon's buttons. To implement the JavaScript event handler functions, use the embed JavaScript technique to embed the JavaScript event handler functions on all pages where your custom ribbon appears. For more information about embedding JavaScript, see  [Customize your SharePoint site UI by using JavaScript](Customize-your-SharePoint-site-UI-by-using-JavaScript.md).
 
@@ -17,7 +16,6 @@ The  [Core.RibbonCommands](https://github.com/OfficeDev/PnP/tree/master/Samples/
 <a name="sectionSection0"> </a>
 
 To get started, download the  [Core.RibbonCommands](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.RibbonCommands) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
-
 
 ## Using the Core.RibbonCommands app
 <a name="sectionSection1"> </a>
@@ -28,11 +26,7 @@ This code sample defines a custom ribbon by using Models\RibbonCommands.xml. Rib
 
 The custom ribbon displays on all sites and lists on the host web because  **RegistrationId="0x01"** and **RegistrationType="ContentType"**.  **RegistrationId="0x01"** and **RegistrationType="ContentType"** specify that the ribbon will appear for all content types that inherit from type **"0x01"**, which are content types that inherit from the  **Item** class. To apply your ribbon to a custom content type, replace "0x01" with your custom content type's ID. To apply your ribbon to a list, change the value of RegistrationType to **List**. 
 
-
 **Note**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
-
-
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -238,11 +232,9 @@ The custom ribbon displays on all sites and lists on the host web because  **Reg
 </Elements>
 ```
 
-
 **Note**  If you use the embed JavaScript technique to implement event handling for your ribbons' buttons, your JavaScript file must implement the methods defined in the  **CommandUIHandler** elements. For example, your embedded JavaScript file should implement functions like **GetCurrentItem** and **AddNewCustom**.
 
- **InitializeButton_Click** in Default.aspx performs the following tasks:
-
+**InitializeButton_Click** in Default.aspx performs the following tasks:
 
 1. Calls  **GetCustomActionXmlNode** to read the XML file and return the **CustomAction** object defined in RibbonCommands.xml. The **CustomAction** object contains the ribbon customization markup.
     
@@ -255,9 +247,6 @@ The custom ribbon displays on all sites and lists on the host web because  **Reg
 5. Adds the ribbon customization markup (in  **xmlContent**) to the SharePoint site using the  **CustomAction.CommandUIExtension**.
     
 6. Registers the custom ribbon by setting the  **CustomAction.RegistrationId** and **CustomAction.RegistrationType** to the attribute values of the **CustomAction** object read in step 2.
-    
-
-
 
 ```C#
  protected void InitializeButton_Click(object sender, EventArgs e) {
@@ -306,10 +295,8 @@ The custom ribbon displays on all sites and lists on the host web because  **Reg
         }
 ```
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 -  [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     

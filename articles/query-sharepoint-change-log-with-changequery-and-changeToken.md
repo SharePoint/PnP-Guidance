@@ -1,9 +1,8 @@
-
 # Query SharePoint change log with ChangeQuery and ChangeToken
 
 Use  **ChangeQuery** and **ChangeToken** to query the SharePoint change log for changes made to a SharePoint content database, site collection, site, or list.
 
- _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
+_**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 You can query the SharePoint change log by using [ChangeQuery](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.changequery.aspx) and [ChangeToken](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.changetoken.aspx) to find and process changes made on a SharePoint content database, site collection, site, or list.
 
@@ -15,15 +14,11 @@ The [Core.ListItemChangeMonitor](https://github.com/OfficeDev/PnP/tree/dev/Sampl
     
 - Complement your remote event receiver. Using the change log pattern with a remote event receiver pattern provides a more reliable architecture for handling all changes made to SharePoint content databases, site collections, sites, or lists. Remote event receivers run immediately, but because they run on a remote server, you might encounter a communication failure. The change log pattern ensures that all changes are available for processing, but the application processing the changes usually runs on a schedule (for example, a timer job). This means that changes are not processed immediately. If you use these two patterns together, ensure you use a mechanism to prevent processing the same change twice. For more information, see [Use remote event receivers in SharePoint](Use-remote-event-receivers-in-SharePoint.md).
     
- **Contribute to this content**
-You can get the latest updates or contribute to this [article on Github](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/query-sharepoint-change-log-with-changequery-and-changeToken.md). You can also contribute to this and other [samples on GitHub](https://github.com/OfficeDev/PnP). For a complete list of samples, see the [Patterns and Practices developer center](http://dev.office.com/patterns-and-practices). We welcome your [contributions](https://github.com/OfficeDev/PnP/wiki/contributing-to-Office-365-developer-patterns-and-practices). 
-
 ## Before you begin
 
 To get started, download the [Core.ListItemChangeMonitor](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.ListItemChangeMonitor) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this code sample, do the following:
-
 
 1. Sign in to your Office 365 site where you want to create the list.
     
@@ -39,36 +34,33 @@ Before you run this code sample, do the following:
     
 To see a demo of this code sample, perform the following steps:
 
-
 1. Choose  **Start** in Visual Studio.
     
 2. Enter your Office 365 site's URL, the name of the list (**TestList**), and your Office 365 credentials. The console application now waits for changes to be made to **TestList**. By default, the console application checks the change log and updates the display every 30 seconds.
     
 3. Add a new item to  **TestList**:
     
-      1. Open your Office 365 site and go to  **Site Contents** > **TestList**.
+	1. Open your Office 365 site and go to  **Site Contents** > **TestList**.
     
-  2. Choose  **new item**.
-    
-  3. Enter  **MyTitle** in **Title**, and then choose  **Save**.
+	2. Choose  **new item**.
+	
+	3. Enter  **MyTitle** in **Title**, and then choose  **Save**.
     
 4. Verify that your change appears in the console application. You can force the console application to read SharePoint's change log by entering  **r** in the console application.
-    
 
 ## Use the Core.ListItemChangeMonitor add-in
 
 In Program.cs,  **Main** calls **DoWork** to read and process SharePoint's change log:
 
-
 1. Create a  **ChangeQuery** object to access SharePoint's change log.
     
 2. Use the change log to return changes to items by using  **cq.Item = true**. Changes include:
     
-      - New items added by using  **cq.Add= true**.
+	- New items added by using  **cq.Add= true**.
     
-  - Deleted items by using  **cq.DeleteObject = true**.
-    
-  - Modified items by using  **cq.Update=true**.
+	- Deleted items by using  **cq.DeleteObject = true**.
+	
+	- Modified items by using  **cq.Update=true**.
     
 3. Create a  **ChangeToken** object to read changes from the change log from a certain point in time.
     
@@ -76,15 +68,13 @@ In Program.cs,  **Main** calls **DoWork** to read and process SharePoint's chang
     
 5.  Read the change log either every 30 seconds (which is the default waiting period set by the constant **WaitSeconds**), or when the user enters **r**. When reading the change log, the console application performs the following steps:
     
-      1.  Uses [List.GetChanges](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.list.getchanges.aspx) to return the [ChangeCollection](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.changecollection.aspx), which is a collection of changes made to the list since the last time changes were processed.
+	1.  Uses [List.GetChanges](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.list.getchanges.aspx) to return the [ChangeCollection](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.changecollection.aspx), which is a collection of changes made to the list since the last time changes were processed.
     
-  2. Calls  **DisplayChanges** to display the changes in the **ChangeCollection** object.
-    
-  3. Sets the new point in time to read changes from the change log. If there are changes to the list (which was returned in  **coll**), set **ChangeTokenStart** to the last change's date and time.
-    
+	2. Calls  **DisplayChanges** to display the changes in the **ChangeCollection** object.
+	
+	3. Sets the new point in time to read changes from the change log. If there are changes to the list (which was returned in  **coll**), set **ChangeTokenStart** to the last change's date and time.
 
- **Note:**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
+**Note:**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
 
 ```C#
 private static void DoWork()
@@ -172,10 +162,8 @@ private static void DoWork()
         }
 ```
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 - [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
@@ -184,4 +172,3 @@ private static void DoWork()
 - [ChangeQuery members](https://msdn.microsoft.com/library/office/microsoft.sharepoint.client.changequery_members.aspx)
     
 - [Patterns and Practices developer center](http://dev.office.com/patterns-and-practices)
-    

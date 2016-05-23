@@ -1,22 +1,20 @@
 # Synchronize term groups sample add-in for SharePoint
-As part of your Enterprise Content Management (ECM) strategy, you can synchronize term groups across multiple SharePoint term stores.
 
+As part of your Enterprise Content Management (ECM) strategy, you can synchronize term groups across multiple SharePoint term stores.
     
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 The [Core.MMSSync](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMS) sample shows you how to use a provider-hosted add-in to synchronize a source and target taxonomy. This add-in synchronizes two term stores in the managed metadata service - a source and a target term store. The following objects are used to synchronize term groups:
 
-• **TermStore** 
+- **TermStore** 
 
-• **ChangeInformation** 
+- **ChangeInformation** 
 
 Use this solution if you want to:
 
 - Synchronize two taxonomies. For example, you might use both SharePoint Online and SharePoint Server 2013 on-premises for different sets of data, but they use the same taxonomy.
     
 - Synchronize changes made to a specific term group only.
-    
- 
 
 ## Before you begin
 <a name="sectionSection0"> </a>
@@ -25,27 +23,22 @@ To get started, download the  [Core.MMSSync](https://github.com/OfficeDev/PnP/tr
 
 Before you run this add-in, you'll need permission to access the term store in the managed metadata service. Figure 1 shows the Office 365 admin center where these permissions are assigned.
 
-
 **Figure 1. Assigning permissions to the term store in the SharePoint admin center**
 
 ![Screenshot that shows the SharePoint admin center, with the term store, the taxonomy term store search box, and the term store administrators boxes highlighted.](media/93a19898-6ae2-4176-b030-2546f4c86c5c.png)
 
 To assign permissions to the term store:
 
-
-
 1. From the Office 365 admin center, choose  **term store**.
     
 2. In  **TAXONOMY TERM STORE**, choose the term set that you want to assign an administrator to.
     
 3. In  **Term Store Administrators**, enter the organizational account that requires term store administrator permissions.
-    
 
 ## Using the Core.MMSSync sample app
 <a name="sectionSection1"> </a>
 
 When you start the add-in, you see a console application, as shown in Figure 2. You are prompted to enter the following information:
-
 
 - The URL of the Office 365 admin center that contains the source term store (this is the URL of the source managed metadata service). For example, you might enter https://contososource-admin.sharepoint.com.
     
@@ -57,13 +50,11 @@ When you start the add-in, you see a console application, as shown in Figure 2. 
     
 - The type of operation you want to perform. You can either:
     
-      - Move a term group (scenario 1) by using the  **TermStore** object.
+	- Move a term group (scenario 1) by using the  **TermStore** object.
     
-  - Process changes (scenario 2) by using the  **ChangeInformation** object.
-    
+	- Process changes (scenario 2) by using the  **ChangeInformation** object.
 
 **Important**  This sample add-in works with both SharePoint Online and SharePoint Server 2013 on-premises.
-
 
 **Figure 2. Core.MMSSync console application**
 
@@ -71,14 +62,12 @@ When you start the add-in, you see a console application, as shown in Figure 2. 
 
 After you select your scenario, enter the name of the term group you want to synchronize from your source to your target managed metadata service, as shown in Figure 3. For example, you might enter Enterprise.
 
-
 **Figure 3. Term groups in the managed metadata service**
 
 ![Screenshot of the taxonomy term store drop-down list.](media/5202fd88-4f2f-4b68-8083-165e6702bc86.png)
 ### Scenario 1 - Move term group
 
 When you select  **Move Term Group**, the add-in prompts you to enter a term group to synchronize and then calls the  **CopyNewTermGroups** method in MMSSyncManager.cs. **CopyNewTermGroups** then does the following to copy a term group from the source term store to the target term store:
-
 
 1. Retrieves the source and target term store objects.
     
@@ -90,11 +79,7 @@ You can set the  _TermGroupExclusions_,  _TermGroupToCopy_, and  _TermSetInclusi
 
 The following code shows the  **CopyNewTermGroups** and **CreateNewTargetTermGroup** methods in MMSSyncManager.cs.
 
-
 **Note**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
-
-
 
 ```C#
 public bool CopyNewTermGroups(ClientContext sourceContext, ClientContext targetContext, List<string> termGroupExclusions = null, string termGroupToCopy = null)
@@ -265,18 +250,13 @@ private void CreateNewTargetTermGroup(ClientContext sourceClientContext, ClientC
 
 ```
 
-
 ### Scenario 2 - Process changes
 
 When you select  **Process Changes**, the add-in prompts you to enter a Term Group to synchronize, and then calls the  **ProcessChanges** method in MMSSyncManager.cs. **ProcessChanges** uses the **GetChanges** method of the **ChangedInformation** class to retrieve all changes made to groups, term sets, and terms in the source managed metadata service. Changes are then applied to the target managed metadata service.
 
-
 **Note**  This document includes only some parts of the  **ProcessChanges** method. To review the entire method, open the Core.MMSSync solution in Visual Studio.
 
 The  **ProcessChanges** method starts by creating a **TaxonomySession** object.
-
-
-
 
 ```C#
 Log.Internal.TraceInformation((int)EventId.TaxonomySession_Open, "Opening the taxonomy session");
@@ -293,9 +273,6 @@ Log.Internal.TraceInformation((int)EventId.TaxonomySession_Open, "Opening the ta
 
 Next, it retrieves changes by using the  **ChangeInformation** object, and setting the start date on the **ChangeInformation** object. This example retrieves all changes that were made within the last year.
 
-
-
-
 ```C#
 Log.Internal.TraceInformation((int)EventId.TermStore_GetChangeLog, "Reading the changes");
             ChangeInformation changeInformation = new ChangeInformation(sourceClientContext);
@@ -307,9 +284,6 @@ Log.Internal.TraceInformation((int)EventId.TermStore_GetChangeLog, "Reading the 
 ```
 
 The  **GetChanges** method returns a **ChangedItemCollection**, which enumerates all changes occurring in the term store, as shown in the following code example. The last line of the example checks to determine whether the  **ChangedItem** was a term group. **ProcessChanges** includes code to perform similar checks on the **ChangedItem** for term sets and terms.
-
-
-
 
 ```C#
 foreach (ChangedItem _changeItem in termStoreChanges)
@@ -330,12 +304,13 @@ foreach (ChangedItem _changeItem in termStoreChanges)
 
 The changed item type might be a term group, term set, or term. Each changed item type has different operations you can perform on it. The following table lists the operations that you can perform on each changed item type. 
 
-
+|What changed? (ChangedItemType) | Operations you can perform on changed item type (ChangedOperationType)|
+|---|---|
+|Group|<p>Delete group</p><p>Add group</p><p>Edit group|
+|TermSet|</p>Delete term set</p><p>Move term set</p><p>Copy term set</p><p>Add term set</p><p>Edit term set<p>|
+|Term|</p>Delete term</p><p>Move term</p><p>Copy term</p><p>Path change term</p><p>Merge term</p><p>Add term</p><p>Edit term<p>|
 
 The following code shows how to perform a delete operation when a term group was deleted in the source managed metadata service.
-
-
-
 
 ```C#
 #region Delete group
@@ -359,14 +334,11 @@ The following code shows how to perform a delete operation when a term group was
 
 ```
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 -  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
 -  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP-Sites-Core/blob/master/Core)
     
 -  [Core.MMS sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMS)
-    

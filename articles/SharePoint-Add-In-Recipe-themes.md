@@ -232,7 +232,6 @@ You can also define the fonts your SharePoint site uses by making a font scheme 
             <s:font script="Arab" typeface="Segoe UI Light" />
 ```
 
-
 - Creating custom font schemes for SharePoint sites is very easy and inexpensive to implement and maintain in the short and long term.  
 	+ Keep in mind, a custom font scheme is just one piece of a composed look.
 - Custom font schemes provide a fair amount of flexibility to brand a SharePoint site.
@@ -364,4 +363,3 @@ Version  | Date | Comments | Author
 1.2  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
 1.3  | June 18, 2015 | Adding links to additional resources and copy edits | Todd Baginski (Canviz LLC)
 1.4  | August 24, 2015 | Added chapter on specific challenges compared on different branding options | Vesa Juvonen (Microsoft)
-

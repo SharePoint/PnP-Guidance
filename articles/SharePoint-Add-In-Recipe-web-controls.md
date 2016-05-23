@@ -68,7 +68,6 @@ In this pattern, JavaScript is embedded directly in custom master pages.
 
 When you need to embed JavaScript on a per master page basis, this is a good option because it allows you to control which master pages the JavaScript is embedded in.
 
-
 Related links
 =============
 - [Cross site collection navigation (O365 PnP Video)](http://channel9.msdn.com/blogs/OfficeDevPnP/Cross-site-collection-navigation)

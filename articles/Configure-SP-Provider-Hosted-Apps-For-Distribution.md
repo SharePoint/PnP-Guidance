@@ -4,7 +4,6 @@
 
 This page explains issues that may arise when sharing a SharePoint Provider-Hosted application with other developers or when obtaining a copy from a source control system such as Team Foundation Server, Git or Visual Studio Online.
 
-
 # Configure SharePoint Provider-Hosted Add-ins for Distribution
 
 All SharePoint Provider-Hosted add-ins created using Visual Studio 2013 include a NuGet package that adds SharePoint-specific code and references to the web application that serves as the RemoteWeb for the SharePoint add-in. 
@@ -51,7 +50,6 @@ Now, install the public version of the same NuGet package from the public regist
 - [NuGet: App for SharePoint Web Toolkit](http://www.nuget.org/packages/AppForSharePointWebToolkit)
 - [NuGet: Package Restore](http://docs.nuget.org/docs/reference/package-restore)
 
-
 ### Applies to ###
 -  Office 365 Multi Tenant (MT)
 -  Office 365 Dedicated (D)
@@ -64,5 +62,3 @@ Andrew Connell - [@andrewconnell](https://twitter.com/andrewconnell)
 Version  | Date | Comments
 ---------| -----| --------
 0.1  | December 31, 2014 | First draft
-
-

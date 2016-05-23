@@ -53,14 +53,14 @@ More Examples
 	+ See the following MSDN blog post for more information about this pattern. [Attaching Remote Event Receivers to Lists in the Host Web (MSDN Blog Post)](http://blogs.msdn.com/b/kaevans/archive/2014/02/26/attaching-remote-event-receivers-to-lists-in-the-host-web.aspx)
 - [Core.AppEvents.HandlerDelegation (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppEvents.HandlerDelegation)
 	+ This sample shows how to implement handlers for the AppInstalled and AppUninstalling events that:
-	1. Incorporate rollback logic if the handler encounters an error.
-	2. Incorporate "already done" logic to accommodate the fact that SharePoint retries the handler up to three more times if it fails or takes more than 30 seconds to complete.
-	3. Use the handler delegation strategy to minimize calls from the handler web service to SharePoint.
-	4. Use the CSOM classes ExceptionHandlingScope and ConditionalScope.
+		1. Incorporate rollback logic if the handler encounters an error.
+		2. Incorporate "already done" logic to accommodate the fact that SharePoint retries the handler up to three more times if it fails or takes more than 30 seconds to complete.
+		3. Use the handler delegation strategy to minimize calls from the handler web service to SharePoint.
+		4. Use the CSOM classes ExceptionHandlingScope and ConditionalScope.
 - [Core.AppEvents (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppEvents)
 	+ This sample shows how to implement handlers for the AppInstalled and AppUninstalling events that:
-	1. Incorporate rollback logic if the handler encounters an error.
-	2. Incorporate "already done" logic to accommodate the fact that SharePoint retries the handler up to three more times if it fails or takes more than 30 seconds to complete.
+		1. Incorporate rollback logic if the handler encounters an error.
+		2. Incorporate "already done" logic to accommodate the fact that SharePoint retries the handler up to three more times if it fails or takes more than 30 seconds to complete.
 
 Related links
 =============
@@ -99,4 +99,3 @@ Version  | Date | Comments | Author
 0.2  | June 10, 2015 | Updates based on Vesa's feedback | Todd Baginski (Canviz LLC)
 0.3  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
 1.0  | June 18, 2015 | Signoff and updates on details around access tokens with different registration routes | Vesa Juvonen (Microsoft)
-

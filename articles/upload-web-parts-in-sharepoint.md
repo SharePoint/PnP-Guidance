@@ -1,11 +1,10 @@
-
 # Upload Web Parts in SharePoint
+
 Deploy pre-configured, standard SharePoint Web Parts for your users.
 
- _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
+_**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 You can upload pre-configured, standard SharePoint Web Parts for users to add to their SharePoint sites. For example, you can upload a pre-configured:
-
 
 - Script Editor Web Part that uses JavaScript files on the remote web.
     
@@ -20,17 +19,14 @@ This article discusses pre-configuring the Script Editor Web Part to use JavaScr
 - Automatically load filtered content in your Web Parts for your users. For example, your script file can display local news information read from an external system.
     
 - Allow users to add additional functionality to their site by using Web Parts from the **Web Part Gallery**.
-    
 
 ## Before you begin
 
 To get started, download the [Core.AppScriptPart ](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.AppScriptPart) sample add-in from the [Office365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
-
 ## Using the Core.AppScriptPart add-in
 
 When you run the code sample and choose **Run Scenario**:
-
 
 1. Choose **Back to Site**.
     
@@ -53,15 +49,14 @@ When you run the code sample and choose **Run Scenario**:
   ```XML
   <property name="Content" type="string">&amp;lt;script type="text/javascript" src="https://localhost:44361/scripts/userprofileinformation.js"&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;div id="UserProfileAboutMe"&amp;gt;&amp;lt;div&amp;gt;
-</property>
+  </property>
   ```
 
 8. Choose **Cancel**.
     
 9. Choose **Save**.
-    
 
- **Note:** If your user profile image does not display, open your OneDrive for Business site, and then return to the host web.
+**Note:** If your user profile image does not display, open your OneDrive for Business site, and then return to the host web.
 
 In Core.AppScriptPartWeb\Pages\Default.aspx, **Run Scenario** runs **btnScenario_Click**, which does the following:
 
@@ -123,4 +118,3 @@ protected void btnScenario_Click(object sender, EventArgs e)
 - [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
 - [Customize your SharePoint site UI by using JavaScript](Customize-your-SharePoint-site-UI-by-using-JavaScript.md)
-    

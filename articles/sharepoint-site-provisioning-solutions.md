@@ -1,9 +1,8 @@
-
 # SharePoint site provisioning solutions
 
 Transition your SharePoint Online and SharePoint 2013 site provisioning solutions from full-trust code to the add-in model. 
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 The samples described in this section show you how to use provider-hosted add-ins to perform common site provisioning tasks such as site classification, creating content types, and managing permissions and users. The articles in this section will help you get started with and walk you through the primary scenarios that each sample illustrates. 
 
@@ -20,10 +19,8 @@ The samples described in this section show you how to use provider-hosted add-in
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
 - [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
     
 - [Patterns and Practices developer center](http://dev.office.com/patterns-and-practices)
     
 - [Office 365 Development Patterns and Practices on GitHub](https://github.com/OfficeDev/PnP)
-    

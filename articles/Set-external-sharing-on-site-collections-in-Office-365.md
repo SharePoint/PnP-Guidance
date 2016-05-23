@@ -1,29 +1,26 @@
-
 # Set external sharing on site collections in Office 365
- You can control external sharing settings on a SharePoint site collection in Office 365, allowing external users (users who don't have an organization account in your Office 365 subscription) access to your site collection.
 
- _**Applies to:** add-ins for SharePoint | SharePoint Online | Office 365_
+You can control external sharing settings on a SharePoint site collection in Office 365, allowing external users (users who don't have an organization account in your Office 365 subscription) access to your site collection.
+
+_**Applies to:** add-ins for SharePoint | SharePoint Online | Office 365_
 
 The  [Core.ExternalSharing](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ExternalSharing) code sample shows you how to control your external sharing settings on a SharePoint site collection. Use this solution to:
 
 - Control external sharing settings during your site provisioning process.
     
 - Prepare your site collection for sharing with external users.
-    
 
-External sharing settings are only available in Office 365.
+**Note:** External sharing settings are only available in Office 365.
 
 ## Before you begin
 <a name="sectionSection0"> </a>
 
 To get started, download the  [Core.ExternalSharing](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ExternalSharing) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
-
 ## Using the Core.ExternalSharing app
 <a name="sectionSection1"> </a>
 
 Verify that your Office 365 subscription allows external sharing. To do this:
-
 
 1. Open your  **Office 365 admin center**.
     
@@ -34,7 +31,6 @@ Verify that your Office 365 subscription allows external sharing. To do this:
 4. In  **Sites**, ensure that  **Let external people access your sites** is **On**.
     
 Verify your external site settings on your SharePoint site collection. To do this:
-
 
 1. Open your  **Office 365 admin center**.
     
@@ -48,7 +44,6 @@ Verify your external site settings on your SharePoint site collection. To do thi
     
 When you run this code sample,  **Main** in Program.cs performs the following tasks:
 
-
 - Gets the Office 365 admin center URL.
     
 - Gets the site collection URL to configure external sharing settings on.
@@ -57,19 +52,15 @@ When you run this code sample,  **Main** in Program.cs performs the following ta
     
 - Calls  **GetInputSharing**, which prompts the user to choose an external sharing setting ( [SharingCapabilities](https://msdn.microsoft.com/library/office/microsoft.online.sharepoint.tenantmanagement.sharingcapabilities.aspx)) to apply to the site collection. The external sharing settings choices include:
     
-      -  **Disabled**, which turns off external sharing on the site.
+	-  **Disabled**, which turns off external sharing on the site.
     
-  -  **ExternalUserAndGuestSharing**, which enables external user and guest sharing on the site.
+	-  **ExternalUserAndGuestSharing**, which enables external user and guest sharing on the site.
     
-  -  **ExternalUserSharingOnly**, which enables external user sharing only.
+	-  **ExternalUserSharingOnly**, which enables external user sharing only.
     
 - Calls  **SetSiteSharing**.
-    
 
 **Note**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
-
-
 
 ```C#
  static void Main(string[] args)
@@ -126,17 +117,13 @@ When you run this code sample,  **Main** in Program.cs performs the following ta
         }
 ```
 
- **SetSiteSharing** does the following:
-
+**SetSiteSharing** does the following:
 
 -  Uses the **Tenant.GetSitePropertiesByUrl** to retrieve **SiteProperties** on your site collection.
     
 - Uses  **Tenant.SharingCapability** to determine whether external sharing is enabled on your Office 365 subscription.
     
 -  If sharing is enabled in your Office 365 subscription, sets the **SiteProperties.SharingCapability** to the external sharing settings the user entered.
-    
-
-
 
 ```C#
 public static void SetSiteSharing(ClientContext adminCC, string siteCollectionURl, SharingCapabilities shareSettings)
@@ -185,12 +172,9 @@ public static void SetSiteSharing(ClientContext adminCC, string siteCollectionUR
         }
 ```
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 -  [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
 -  [Manage external sharing for your SharePoint Online environment](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)
-    

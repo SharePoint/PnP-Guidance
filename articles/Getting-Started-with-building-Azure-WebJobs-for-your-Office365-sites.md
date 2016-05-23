@@ -1,4 +1,4 @@
-﻿# Getting Started with azure WebJobs ("timer jobs") for your Office 365 Sites #
+# Getting Started with azure WebJobs ("timer jobs") for your Office 365 Sites #
 
 ### Summary ###
 In this post I’ll talk about how you can build an Azure WebJob to act as a scheduled job for your Office 365 (or on-prem, should you like) SharePoint installation. With Office 365, if you’re running and utilizing the SharePoint Online service, you’ll need to re-think the way you run the things that used to be *timer jobs* in your traditional Farm-solutions. Follow along while we walk through the basic concepts of getting started with building custom jobs for Office 365 sites.
@@ -7,7 +7,6 @@ In this post I’ll talk about how you can build an Azure WebJob to act as a sch
 In traditional SharePoint development we have [Timer Jobs](http://tz.nu/1DNtqH8), which performs scheduled tasks in your SharePoint farms. A commonly used technique is to develop custom timer jobs in order to continuously or iteratively perform certain tasks in your environment.
 
 With Office 365 and SharePoint Online, you don’t have the luxury to deploy your farm solutions, which is where your traditional timer jobs normally live. Instead, we have to find another way to schedule our tasks – this brings us to the concept of an [Azure WebJob](http://tz.nu/1ueFvMZ).
-
 
 ## Steps for building the WebJob using Visual Studio 2015 (Preview)  ##
 In order to build a new WebJob from scratch, all we need to do is create a new console application and make sure we add the required assemblies to the project. In this sample I’ll use [Visual Studio 2015 (preview)](http://tz.nu/1CagngX), which as its name implies is currently in a beta release.
@@ -35,7 +34,7 @@ At this point we’ve created our Console Application and we’ve added the requ
 
 ***Note:*** In the finished sample I’ll be using an account+password approach (like a service account). We’ll discuss authentication options further down in the article and check out links to other alternatives.
 
-####Wire up the calls to the SharePoint Online site collection ####
+#### Wire up the calls to the SharePoint Online site collection ####
 
 The following code demonstrates how to wire up the call to your site quite easily now that we’ve added the helper classes from our NuGet package.
 
@@ -130,7 +129,6 @@ If you review the first code snippet, I’m fetching these settings from the app
 
 #### The job runs under the specified account ####
 Once the application runs, you will see that it runs using the account specified in the SharePointOnlineCredentials() constructor:
-
 
 ![](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/5.Running-Job-Overview.png)
 
@@ -352,7 +350,6 @@ If you bump into that problem, just make sure your job is executing under the co
 
 # Summary #
 While there’s not very much to building an Azure WebJob, you can make them quite complex. The overall concept is very straight forward – but then as with all complex projects comes the decisions around authentication, code stability and reliability, high availability scenarios, maintainability and so on. These are variables unique to each project and should be carefully considered before "just deploying" a job to Azure.
-
 
 ### Related links ###
 -  [Original blog post on Azure WebJobs](http://zimmergren.net/technical/getting-started-with-building-azure-webjobs-timer-jobs-for-your-office-365-sites) by Tobias Zimmergren

@@ -1,4 +1,3 @@
-
 # SharePoint Add-in recipes
 
 The articles in this section show you how to use the SharePoint Add-in model to customize your SharePoint sites. The following table lists the articles that are included.
@@ -38,4 +37,3 @@ The articles in this section show you how to use the SharePoint Add-in model to 
 <a name="bk_addresources"> </a>
 
 - [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
-    

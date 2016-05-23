@@ -83,7 +83,6 @@ The [Core.UserProfilePropertyUpdater (O365 PnP Sample)](https://github.com/Offic
 
 The [Core.MMSSync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMSSync) demonstrates how to build a synchronization tool for Managed Metadata Service (MMS data).  Although this sample focuses on the MMS APIs, the overall pattern used for synchronization may be applied to UPS data as well.
 
-
 Office 365 - Use CSOM to copy data
 ----------------------------------
 If you have an Office 365 SharePoint environment you can use CSOM to copy UPS data from one tenancy to another.  
@@ -148,4 +147,3 @@ Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | July 6, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 1.0  | August 24, 2015 | Sign-off | Vesa Juvonen (Microsoft)
-

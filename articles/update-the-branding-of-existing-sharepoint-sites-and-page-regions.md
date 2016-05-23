@@ -1,9 +1,8 @@
-
 # Update the branding of existing SharePoint sites and page regions
 
 Customize and then refresh the branding of existing SharePoint sites or regions of SharePoint pages, including the ribbon, the site navigation, the Settings menu, the tree view, and the page content.
 
- _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
+_**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 You can refresh the branding on your existing SharePoint sites and site collections, as well as customize regions of SharePoint pages. You might want to do this, for example, when you update to a new version of the site. 
 
@@ -13,7 +12,6 @@ The [Branding.Refresh](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Brand
 
 The operation involves two steps:
 
-
 - Get the sites you want to update.
     
 - Update the sites.
@@ -21,7 +19,6 @@ The operation involves two steps:
 ### Step one: Get the sites you want to update
 
 First, get a list of sites and subsites that you want to update. The sample shows how to do this by using the search functionality, but other options include reading from a site directory, or providing a management UI where administrators can specify the list. The following example shows you how to use search functionality to generate the list.
-
 
 ```
 // Get a list of sites. Search is one way to get this list, an alternative can be a site directory.
@@ -48,20 +45,15 @@ if (applyChangesToAllWebs)
   }
   sites = sitesAndSubSites;
 }
-
 ```
 
 The call to  **GetSubSites** is recursive so it fetches the subsite tree. After the tree has been fetched, verify that the number returned is correct before you continue.
-
 
 ### Step two: Update the branding
 
 After you select a site for processing, you can use OfficeDevPnP.Core methods to manipulate the site. The sample shows how to do this for site branding, but you can process any type of change in the same way.
 
 The sample uses a pattern that leverages the web property bag to store information about the current settings. The code first reads the web property bag values and then takes an action that is appropriate for each value.
-
-
-
 
 ```
 // Verify that you have a property bag entry.
@@ -93,13 +85,9 @@ if (!String.IsNullOrEmpty(themeName))
     }
   }
 }
-
 ```
 
 The code that then updates the theme is straightforward and is based on OfficeDevPnP.Core methods.
-
-
-
 
 ```
 string themeRoot = Path.Combine(AppRootPath, String.Format(@"Themes\{0}", themeName));
@@ -123,17 +111,13 @@ else
   cc.Web.DeployThemeToWeb(themeName, spColorFile, spFontFile, backgroundFile, "");
   cc.Web.SetThemeToWeb(themeName);
 }
-
 ```
-
 
 ## Customize regions of a SharePoint page
 
 When your objective is to customize regions of a SharePoint page, you can use a combination of remote provisioning and custom cascading style sheets (CSS) on files associated with regions of the page. Initially, then, you must be aware of which SharePoint files are associated with the various regions of a SharePoint page. 
 
- **Table 1. SharePoint page regions and associated files**
-
-
+**Table 1. SharePoint page regions and associated files**
 
 |**Page region**|**Associated files **|**More information**|
 |:-----|:-----|:-----|
@@ -155,19 +139,15 @@ When your objective is to customize regions of a SharePoint page, you can use a 
 
 For samples related to customizing regions of a page, see the following in the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub:
 
-
 - [Branding.AlternateCSSAndSiteLogo](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)
     
 - [Branding.Themes](https://github.com/Lauragra/PnP/tree/master/Scenarios/Branding.Themes)
-    
 
 ### Required "minimal" content placeholders in default SharePoint master pages
 
 SharePoint .master pages require that you use content placeholders, which render the basic content and structural elements that a SharePoint page needs to support the page lifecycle. Table 2 lists and describes the content placeholders.
 
- **Table 2. Minimum required content placeholders for a SharePoint master page**
-
-
+**Table 2. Minimum required content placeholders for a SharePoint master page**
 
 |**Content placeholder**|**Holds content for**|
 |:-----|:-----|
@@ -215,19 +195,15 @@ Both the  **Themes** and **CssRegistration** controls run during the page lifecy
 
 Content placeholders that are not visible still work as expected, but any content they generate will be omitted from the HTML source that browsers recognize. A content placeholder with  `Visible="false"` is hidden.
 
-
- **Important:**  Do not create custom placeholders in custom master pages that exist in out-of-the-box .master pages such as Seattle.master and Oslo.master. This will cause catastrophic exceptions.
-
+**Important:**  Do not create custom placeholders in custom master pages that exist in out-of-the-box .master pages such as Seattle.master and Oslo.master. This will cause catastrophic exceptions.
 
 ### SharePoint Online Suite Navigation control
 
 SharePoint Online introduces new master page markup for the  **Suite Navigation** control, which renders the top navigation. The default markup for the **Suite Navigation** control differs depending on whether the site is an intranet or public-facing. To learn more about the **Suite Navigation** control and see code examples for both intranet and public-facing sites that you can add to your master pages, see [SharePoint Online Suite Navigation control](http://msdn.microsoft.com/library/ba93e5c0-e591-48d0-a716-a08ec7ef6cea%28Office.15%29.aspx).
 
-
 ### Use CSOM to customize the regions of a SharePoint page
 
 Generally, we recommend that you use the [UserCustomAction](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.usercustomaction.aspx) class to add or remove links and other elements. This is a variant of SharePoint using the [CustomAction](https://msdn.microsoft.com/en-us/library/office/ms460194.aspx) element, which you might recognize as part of the feature framework if you're familiar with the full-trust code model. Although the **CustomAction** element and feature framework provisioning pattern are not specifically supported in the client-side object model (CSOM), the same location identifiers available to the **CustomAction** element can be used in CSOM code.
-
 
 ```
 <CustomAction
@@ -255,14 +231,11 @@ Generally, we recommend that you use the [UserCustomAction](https://msdn.microso
   Title = "Text"
   UIVersion = "Integer">
 </CustomAction>
-
 ```
-
 
 ### Customize the SharePoint ribbon
 
 When you customize the ribbon, the HTML that the server renders is assigned to the class name that you assign to a custom style. To use this feature, go to the Style Library and create a new CSS file for each style that you want to add to the ribbon. You can add custom styles to two sections of the ribbon:  **Page Elements** and **Text Styles.** Use the following syntax for the styles you add:
-
 
 - For the ** Page Elements** section: `span.ms-rteElement-<yourowndefinedname>`. Alternatively, you can use styles H1, H2, H3, or H4, which will be wrapped around the text that the style is applied to.
     
@@ -270,10 +243,9 @@ When you customize the ribbon, the HTML that the server renders is assigned to t
     
 Then, in your CSS class definition, add the following line: 
 
- `-ms-name:"The name visual in the ribbon for your style";`
+`-ms-name:"The name visual in the ribbon for your style";`
 
 Now you can finish defining the details of your custom CSS class in your custom .css file.
-
 
 ### Customize Suite Navigation on a Web Part page
 
@@ -281,11 +253,9 @@ In SharePoint 2013, the UI has a modern look and feel that is based on page tile
 
 After you create a Web Part page, add a Script Editor Web Part (SEWP) to an available Web Part zone. You can use this Web Part to add JavaScript to your page. You can add JavaScript code to the SEWP that identifies the top navigation bar by its  **ElementId**, and then hide it by setting its visibility property to hidden.
 
-
 ### Customize the Settings menu or gear
 
 You can use the [UserCustomAction](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.usercustomaction.aspx) class and property bag entries to customize the settings menu of any SharePoint site, as shown in the following code example.
-
 
 ```
 public void AddCustomActions(ClientContext clientContext)
@@ -319,22 +289,17 @@ public void AddCustomActions(ClientContext clientContext)
         clientContext.ExecuteQuery();
     }
 }
-
 ```
-
 
 ### Customize the tree view
 
 To modify the width of the tree view, add a  `<div>` tag around the tree tag in the .master page and assign a CSS class with a style width attribute to the `<div>`. You can increase the width of the  **Quick Launch** navigation by adding the following style definition to the .css file.
 
-
 ```
 .ms-nav {
   width: 220 px;
 }
-
 ```
-
 
 ### Customize page content
 
@@ -342,12 +307,9 @@ Requirements for customizing page content depend on the content you're including
 
 If you are building a publishing site, see [How to: Create a page layout in SharePoint 2013](http://msdn.microsoft.com/library/5447e6a1-2f14-4667-81d0-7514b468be80%28Office.15%29.aspx) to learn the basics. Page layouts depend on the availability of the [ContentTypeId](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.contenttypeid.aspx) class in CSOM. As for other members that aren't available in CSOM, you can use a Windows Communication Foundation (WCF) service to work with **ContentTypeId** as a temporary workaround.
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 - [SharePoint site branding and page customization solutions](SharePoint-site-branding-and-page-customization-solutions.md)
     
 - [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
-    

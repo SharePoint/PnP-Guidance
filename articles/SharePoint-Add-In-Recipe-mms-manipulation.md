@@ -103,4 +103,3 @@ Version  | Date | Comments | Author
 0.2  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
 0.3  | June 30, 2015 | Copy edits | Todd Baginski (Canviz LLC)
 1.0  | July 20, 2015 | Sign-off for v1.0 | Vesa Juvonen
-

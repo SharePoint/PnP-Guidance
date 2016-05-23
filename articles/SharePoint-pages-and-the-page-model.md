@@ -1,8 +1,8 @@
-
 # SharePoint pages and the page model
+
 This article introduces the SharePoint page model, including master pages, content pages, parts of a SharePoint page, and default page file types. 
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 A rendered SharePoint page is a combination of three page types: 
 
@@ -16,8 +16,6 @@ This article provides an overview of the SharePoint page model, including the pa
 
 ## Key terms and concepts related to the SharePoint page model
 <a name="sectionSection0"> </a>
-
-
 
 |**Term or concept**|**Definition**|**Access via**|**More information**|
 |:-----|:-----|:-----|:-----|
@@ -50,9 +48,7 @@ A master page is an ASP.NET file with a .master extension. It includes a  `<%@ M
 
 SharePoint includes several master pages by default. These master pages provide the default structure and chrome of a given SharePoint page that is appropriate for the SKU and site type, where these are applicableâ€”specifically, on the top and left sides of the page. Table 2 lists the default SharePoint 2013 and SharePoint Online master pages.
 
- **Table 2. Default SharePoint master pages**
-
-
+**Table 2. Default SharePoint master pages**
 
 |**Master page**|**Description**|
 |:-----|:-----|
@@ -80,25 +76,21 @@ Content placeholders often include dynamic tokens, which are important pieces of
 
 SharePoint uses dynamic tokens to bind the master page to the content page, which is defined in  `<asp:content>` declaration of .master page code. Table 3 lists dynamic tokens that are found in SharePoint master pages, and either the CSOM properties that replace them when the page is processed, or the form of the URL string that SharePoint renders for that content placeholder.
 
- **Table 3. Dynamic tokens in master pages replaced by property values**
-
-
+**Table 3. Dynamic tokens in master pages replaced by property values**
 
 |**Dynamic token**|**Replaced with**|
 |:-----|:-----|
 |~masterurl/default.master|SPWeb.MasterUrl|
 |~masterurl/custom.master|SPWeb.CustomMasterUrl|
-|~site/<xyz>.master|http://<siteColl>/<subsite1>/<subsite2>/<xyz>.master|
-|~sitecollection/<abc>.master|http://<siteColl>/<abc>.master|
+|~site/&lt;xyz&gt;.master|http://&lt;siteColl&gt;/&lt;subsite1&gt;/&lt;subsite2&gt;/&lt;xyz&gt;.master|
+|~sitecollection/&lt;abc&gt;.master|http://&lt;siteColl&gt;/&lt;abc&gt;.master|
 
 **Note**  The dynamic tokens in content placeholders correspond to server-side API properties and methods. When using remote provisioning, write code in CSOM or REST.To learn more about dynamic tokens and SharePoint URLs, see  [URLs and Tokens in SharePoint 2013](http://msdn.microsoft.com/library/161418d7-8123-4c4e-91a1-97e43c17f0e6.aspx). Add-ins for SharePoint use some tokens that apply to site URLs.
-
 
 ## Web Part pages and Wiki pages
 <a name="sectionSection2"> </a>
 
 Web Part pages can contain structured and unstructured information. They are made up of Web Part zones. Web Parts placed in Web Part zones can display data from lists, search results, and queries, and can present custom views of data from multiple sources. A Web Part page contains most of the same elements as a standard SharePoint Team site. The Title bar can contain a title, caption, description, company logo, or other image. The Web Part Page adds the following elements:
-
 
 - A Web Part Page menu that can be used to add or modify Web Parts, design the page layout, and switch between personal and shared views.
     
@@ -110,12 +102,10 @@ Enterprise wiki functionality is available in all versions of SharePoint. The En
 
 You can use the remote provisioning pattern to create a wiki page. The [WikiPageCreationInformation](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.utilities.wikipagecreationinformation.aspx) class provides methods you can use to create the wiki page, while the **WikiHtmlContent** property gets and sets HTML content on the page. The [Utility](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.utilities.utility.aspx) class includes a **CreateWikiPageInContextWeb** method, which SharePoint uses to create the wiki page in the client runtime context using parameters from the **WikiPageCreationInformation** class.
 
-
 ## Page layouts
 <a name="sectionSection3"> </a>
 
 The page layout is the content page of choice for Publishing sites. Page layouts are templates that define different kinds of pages in a SharePoint site, such as articles, by customizing the structure of the body of the page. Just as the Web Part page is a template that exists to arrange Web Part zones and Web Parts on a page, page layouts exist to arrange fields on a page. The field controls defined in a page layout will contain content that an author creates, and the structure of that content will be based on the page layout.
-
 
 **Note**  Page layouts can include Web Part zones.
 
@@ -125,9 +115,7 @@ In SharePoint, content types are reusable collections of metadata (also known as
 
 To learn more about content types, see  [Introduction to Content Types](https://msdn.microsoft.com/en-us/library/office/ms472236%28v=office.14%29.aspx),  [Columns](https://msdn.microsoft.com/en-us/library/office/ms196085%28v=office.14%29.aspx), and  [Custom Information in Content Types](https://msdn.microsoft.com/en-us/library/office/ms468437%28v=office.14%29.aspx).
 
-
 **Important**   Currently, you can use the remote provisioning pattern to apply out-of-the-box page layouts to a SharePoint site. Although you can provision custom content types on a site by using CSOM code via custom add-ins for SharePoint code, and setting custom **ContentTypeId** via CSOM is supported in SharePoint Online, setting the ContentTypeId for a custom content type via remote provisioning on on-premises SharePoint sites is not currently supported. For more information, see [How to: Create a page layout in SharePoint 2013](http://msdn.microsoft.com/library/5447e6a1-2f14-4667-81d0-7514b468be80.aspx).
-
 
 ## SharePoint page processing model
 <a name="sectionSection4"> </a>
@@ -136,16 +124,13 @@ SharePoint is a template-based page rendering system that combines master pages,
 
 The page processing model interprets and runs all the requests that user agents such as web browsers make to the server. For example, consider a user requesting a page called contoso.aspx. To complete the request, the ASP.NET engine retrieves two pages: the content page associated with contoso.aspx, and the master page that the file provider associated with the SharePoint site. The engine also retrieves the field controls and Web Parts from fields and renders them on the page.
 
-
 **Note**  The page processing logic for Team sites and sites is similar to that for Publishing pages. 
-
 
 ### Page processing
 
 When a SharePoint user loads a Web Part page, SharePoint gets it by parsing the path to its template, page content, and context. It also sets the Web Parts associated with the Web Part page, assigns a  [WebPartCollection](http://msdn2.microsoft.com/EN-US/library/k41e9930) instance to the page, and populates the Web Part page and its Web Parts with content.
 
 When a SharePoint user loads a wiki page (either by using the Enterprise Wiki template on a Team site or a Publishing site), SharePoint gets it by parsing the path to its template, page content, and context. It also sets the text layout control associated with the wiki page, and populates the enterprise wiki page and its text layout with content. To learn more about how to provision a wiki page by using the remote provisioning pattern, see the  [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages) sample.
-
 
 ### Minimal download strategy and <AjaxDelta> controls
 
@@ -155,20 +140,16 @@ You can enable or disable the minimal download strategy through central site adm
 
 The minimal download strategy feature is enabled by default on SharePoint Team sites, and disabled by default on SharePoint Publishing sites and SharePoint Team sites with Publishing enabled.
 
-
 ### Creating a custom master page based on seattle.master
 
 You can use remote provisioning to provision site branding elements such as themes to a site, and you can use CSS or JavaScript to show or hide elements or page controls. Customizing a master page provides an additional level of control over the page structure. When you create a custom master page, do not edit and then save a default master pageby using its default name (for example, seattle.master). Instead, make a copy of the default master page you want to modify, and rename it.
-
 
 **Important**   Because of the potential long-term impact of ongoing support costs and maintenance, we recommend that you do not change the structure of a new master page. You can make changes to the master page that support branding that don't affect the structure, such as changing colors in the header, adding a color background to specific elements of a page, or showing and hiding a site logo. If the default .master page you're using does not include a structural element, such as a footer, that you want to include on your page, use a different out-of-the-box master page.
 
 To help maintain consistency in a custom master page, follow the existing coding pattern. For example, in areas of the page that use tables, reinforce the coding pattern by using tables. In areas where  `<DIV>` tags or HTML5 are used, match any custom code with `<DIV>` tags or HTML5. In the long run, this will make any custom master pages that you have to create easier to maintain, and therefore, less expensive.
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 -  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
     
@@ -181,4 +162,3 @@ To help maintain consistency in a custom master page, follow the existing coding
 -  [Minimal Download Strategy overview](http://msdn.microsoft.com/library/9caa7d99-1e74-4889-96c7-ba5a10772ad7.aspx)
     
 -  [Introduction to Content Types](https://msdn.microsoft.com/en-us/library/office/ms472236%28v=office.14%29.aspx)
-    

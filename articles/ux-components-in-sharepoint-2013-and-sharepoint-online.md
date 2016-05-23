@@ -1,9 +1,8 @@
-
 # UX Components in SharePoint 2013 and SharePoint Online
 
 Use provider-hosted SharePoint Add-ins to control user experience (UX) components in SharePoint 2013 and SharePoint Online.
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 ## In this section
 
@@ -22,4 +21,3 @@ Use provider-hosted SharePoint Add-ins to control user experience (UX) component
 - [Add a custom ribbon to your SharePoint site](Add-a-custom-ribbon-to-your-SharePoint-site.md)
     
 - [Composite business add-ins for SharePoint 2013 and SharePoint Online](Composite-buisness-apps-for-SharePoint.md)
-    

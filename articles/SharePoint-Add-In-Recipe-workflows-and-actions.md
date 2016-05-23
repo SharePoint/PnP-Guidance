@@ -279,4 +279,3 @@ Version  | Date | Comments | Author
 ---------| -----| ---------| ------
 0.1  | July 7, 2015 | Initial draft | Todd Baginski (Canviz LLC)
 1.0  | August 24, 2015 | Sign-off| Vesa Juvonen (Microsoft)
-

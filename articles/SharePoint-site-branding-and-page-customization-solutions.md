@@ -1,8 +1,8 @@
-
 # SharePoint site branding and page customization solutions
+
 Use the SharePoint page model and composed looks, the SharePoint 2013 theming engine, and CSS to brand your SharePoint site and pages.
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 You can customize the look and feel of a SharePoint site in two ways:
 
@@ -23,8 +23,8 @@ This section builds on your knowledge about [SharePoint development and design t
 |:-----|:-----|:-----|
 |Alternate CSS|A CSS file other than the default that you can apply to the look and feel of your site.|Use alternate CSS to apply custom CSS to a site and all of its subsites. |
 |CSS|A language that tells a browser how to render an HTML or XML document's styles. CSS separates document content (HTML or XML) from how the content is presented.||
-|Composed look|A combination of fonts, a color palette, a background image, and an associated master page that are applied to the site. Font scheme and color images are optional. The following is the default file location for composed looks: Theme Gallery\15 folder|Composed looks are a convenient way to change the look and feel of sites without making any changes to the structure of a site.<br/>SharePoint 2013 ships several composed looks by default. When a user applies a composed look, SharePoint applies all the associated design elements of the composed look to a site.|
-|Content Search Web Part (CSWP)|Renders content from search results based on a specified query.| [Content Search Web Part in SharePoint 2013](http://social.technet.microsoft.com/wiki/contents/articles/15843.content-search-web-part-in-sharepoint-2013.aspx) (TechNet) <br/>[Content Search Web Part in SharePoint 2013](http://msdn.microsoft.com/library/6fb4bf41-0846-4dca-ad9e-906afdfd3d2b.aspx) (MSDN)|
+|Composed look|A combination of fonts, a color palette, a background image, and an associated master page that are applied to the site. Font scheme and color images are optional. The following is the default file location for composed looks: Theme Gallery\15 folder|<p>Composed looks are a convenient way to change the look and feel of sites without making any changes to the structure of a site.</p><p>SharePoint 2013 ships several composed looks by default. When a user applies a composed look, SharePoint applies all the associated design elements of the composed look to a site.</p>|
+|Content Search Web Part (CSWP)|Renders content from search results based on a specified query.| <p>[Content Search Web Part in SharePoint 2013](http://social.technet.microsoft.com/wiki/contents/articles/15843.content-search-web-part-in-sharepoint-2013.aspx) (TechNet) </p><p>[Content Search Web Part in SharePoint 2013](http://msdn.microsoft.com/library/6fb4bf41-0846-4dca-ad9e-906afdfd3d2b.aspx) (MSDN)</p>|
 |corev15.css|The CSS file that contains most of the main functionality for SharePoint. The following is the default file location:_layouts\15 folder||
 |CSSRegistration|A reference in a master page, such as seattle.master, that loads most CSS that is applied to most of the default UI.|Use the  **CSSRegistration** control in a master page to override default CSS.|
 |Custom action|Actions you can use to customize and interact with lists and the ribbon on the host web.| [How to: Create custom actions to deploy with SharePoint Add-ins](http://msdn.microsoft.com/library/bbd11f94-1798-453e-bbb0-e5eb0df8dc75.aspx)|
@@ -44,15 +44,13 @@ This section builds on your knowledge about [SharePoint development and design t
 |Seattle.master|The default .master page for SharePoint 2013 team sites and publishing sites.||
 |Site layout|See master page.|The site layout combines the .master page of a theme with its corresponding .preview file.|
 |Structured navigation|A navigation structure for publishing sites that is based on the site hierarchy of the publishing site. You can add headers and links to manually replace or customize the structured navigation that SharePoint automatically generates.| [How to: Customize Navigation in SharePoint Server 2010 (ECM)](https://msdn.microsoft.com/en-us/library/office/ms558975%28v=office.14%29.aspx)|
-|Theme|A simple way to apply light branding to a SharePoint site. The default file location for themes is the _themes folder of the site.|Themes are an easy way to apply custom branding to SharePoint sites.<br/> [Themes overview for SharePoint 2013](http://msdn.microsoft.com/library/ae585dd3-82fe-46bb-ac93-065edc0a16f4.aspx)<br/> [How to: Deploy a custom theme in SharePoint 2013](http://msdn.microsoft.com/library/f703df24-8e56-4e6a-bc37-95acbb3c83e8.aspx)|
+|Theme|A simple way to apply light branding to a SharePoint site. The default file location for themes is the _themes folder of the site.|<p>Themes are an easy way to apply custom branding to SharePoint sites.</p><p>[Themes overview for SharePoint 2013](http://msdn.microsoft.com/library/ae585dd3-82fe-46bb-ac93-065edc0a16f4.aspx)</p><p> [How to: Deploy a custom theme in SharePoint 2013](http://msdn.microsoft.com/library/f703df24-8e56-4e6a-bc37-95acbb3c83e8.aspx)</p>|
 |Theming engine|A set of files and functionality that define the look, feel, behavior, and file associations of composed looks.||
 |User Agent String|Information that a browser passes to a website that identifies the software that makes the request from the server.| [SharePoint 2013 Design Manager device channels](http://msdn.microsoft.com/library/a924bd7b-a5e3-41bf-b0a7-3e43945fa951.aspx)|
-|User Custom Action|A CSOM property that returns the collection of custom actions for a website, list, or site collection. The default file location is the following: 15\TEMPLATE\FEATURES |[UserCustomAction class](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.usercustomaction.aspx)<br/>[How to: Create custom actions to deploy with SharePoint Add-ins](http://msdn.microsoft.com/library/bbd11f94-1798-453e-bbb0-e5eb0df8dc75.aspx)<br> [How to: Work with User Custom Actions](https://msdn.microsoft.com/en-us/library/office/ee538686%28v=office.14%29.aspx) [Default Custom Action Locations and IDs](http://msdn.microsoft.com/library/6889686e-f6e6-4da0-bfd4-099878614980.aspx)|
+|User Custom Action|A CSOM property that returns the collection of custom actions for a website, list, or site collection. The default file location is the following: 15\TEMPLATE\FEATURES<p>For example:</p><p>&lt;HideCustomAction GroupId="Galleries"<br />&nbsp;&nbsp;&nbsp;HideActionId="Themes"<br />&nbsp;&nbsp;&nbsp;Location="Microsoft.SharePoint.SiteSettings"&gt;</p>|<p>[UserCustomAction class](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.usercustomaction.aspx)</p><p>[How to: Create custom actions to deploy with SharePoint Add-ins](http://msdn.microsoft.com/library/bbd11f94-1798-453e-bbb0-e5eb0df8dc75.aspx)</p><p>[How to: Work with User Custom Actions](https://msdn.microsoft.com/en-us/library/office/ee538686%28v=office.14%29.aspx) [Default Custom Action Locations and IDs](http://msdn.microsoft.com/library/6889686e-f6e6-4da0-bfd4-099878614980.aspx)</p>|
 
 ## In this section
 <a name="sectionSection1"> </a>
-
-
 
 |**Article**|**Shows you how to...**|
 |:-----|:-----|
@@ -65,7 +63,6 @@ This section builds on your knowledge about [SharePoint development and design t
 
 ## Additional resources
 <a name="bk_addresources"> </a>
-
 
 -  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)
 

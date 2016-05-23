@@ -78,4 +78,3 @@ Version  | Date | Comments
 ---------| -----| --------
 1.0  | March 27, 2015 | Initial release | Todd Baginski (Canviz LLC)
 1.1  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
-
