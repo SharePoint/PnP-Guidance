@@ -94,7 +94,6 @@
 ## [Configure Provider-Hosted Add-ins for Distribution](Configure-SP-Provider-Hosted-Apps-For-Distribution.md)
 ## [Connect SharePoint add-in parts](Connect-SharePoint-app-parts-by-using-SignalR.md)
 ## [Cross-domain images in SharePoint provider-hosted add-ins](cross-domain-images-in-sharepoint-provider-hosted-add-ins.md)
-## [CSOM releases and new capabilities](CSOM-Releases-And-New-Capabilities.md)
 ## [Customize your SharePoint site UI](Customize-your-SharePoint-site-UI-by-using-JavaScript.md)
 ## [Deploy Sites to Microsoft Azure](Move-O365Api-Project-from-Dev-To-Prod.md)
 ## [Elevated privileges in SharePoint Add-ins](elevated-privileges-in-sharepoint-add-ins.md)

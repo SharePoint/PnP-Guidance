@@ -22,7 +22,7 @@ The way Visual Studio works is that it, or addins, typically contain a local cop
 
 When projects are committed to source control, typically the packages are not included as part of the commit because they can add a lot of extra storage space demands and unnecessarily increase the size of a package when sharing it with other developers. Therefore one of the first tasks developers do after getting a copy of the project from source control is to run [NuGet package restore](http://docs.nuget.org/docs/reference/package-restore).
 
-The challenge is that a package with the same ID does not exist in the NuGet package registry; there is no package with an ID of **AppForSharePoint16WebToolkit**. Instead the exact same package was added to the NuGet package registry as **[AppForSharePointWebToolkit](www.nuget.org/packages/AppForSharePointWebToolkit)** (*notice the lack of the '16' in the ID*).
+The challenge is that a package with the same ID does not exist in the NuGet package registry; there is no package with an ID of **AppForSharePoint16WebToolkit**. Instead the exact same package was added to the NuGet package registry as **AppForSharePointWebToolkit** ([http://www.nuget.org/packages/AppForSharePointWebToolkit](http://www.nuget.org/packages/AppForSharePointWebToolkit))** (*notice the lack of the '16' in the ID*).
 
 ## Preparing a SharePoint Provider-Hosted Add-in Project for Source Control / Distribution ##
 
