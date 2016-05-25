@@ -176,7 +176,7 @@ The code samples described in this section show the core scenario and extend it 
 |**Sample**|**Description**|**Related article**|
 |:-----|:-----|:-----|
 |Batch Provisioning|Provisions site collections in a console app.| [SharePoint 2013 site provisioning](sharepoint-site-provisioning-solutions.md)|
-| [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages)|Shows how to use the remote provisioning model to provision a Wiki page and add remote Web Parts and HTML from the Wiki page.| [SharePoint pages and the page model](7d1ca7d4-f229-40e8-b2a3-08fb5e113483.md)|
+| [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages)|Shows how to use the remote provisioning model to provision a Wiki page and add remote Web Parts and HTML from the Wiki page.| [SharePoint pages and the page model](SharePoint-pages-and-the-page-model.md)|
 |SiteProvisioningWorkflow|Provisions site collections with a workflow on the host web and a remote event receiver.| [SharePoint 2013 site provisioning](sharepoint-site-provisioning-solutions.md)|
 |SiteProvisioningWorkflowAppWeb|Provisions site collections with a workflow on the add-in web and a remote event receiver.| [SharePoint 2013 site provisioning](sharepoint-site-provisioning-solutions.md)|
 
@@ -255,7 +255,7 @@ When considering moving an existing customization from full-trust code to the Cl
 ## In this section
 <a name="sectionSection10"> </a>
 
--  [SharePoint pages and the page model](7d1ca7d4-f229-40e8-b2a3-08fb5e113483.md)
+-  [SharePoint pages and the page model](SharePoint-pages-and-the-page-model.md)
     
 -  [SharePoint development and design tools and practices](SharePoint-development-and-design-tools-and-practices.md)
     
