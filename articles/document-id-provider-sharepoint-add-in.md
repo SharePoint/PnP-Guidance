@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Document ID Provider
-===============================================
+Document ID provider in the SharePoint add-in model
+===================================================
 
 Summary
 -------
@@ -50,7 +50,7 @@ When you need to set unique identifiers for documents quickly after they are upl
 
 **Getting started**
 
-The [Event Receivers & List Event Receivers (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-event-receiver-and-list-event-receiver.md) describes how to implement event receivers in the Add-in model and provides links to several samples and articles.
+The [Event Receivers and List Event Receivers (SharePoint Add-in Recipe)](event-receiver-and-list-event-receiver-sharepoint-add-in.md) describes how to implement event receivers in the Add-in model and provides links to several samples and articles.
 
 Use a background process
 ------------------------
@@ -63,7 +63,7 @@ In this pattern, a background process checks documents in SharePoint to determin
 	+ This pattern eliminates custom query logic from the background service.
 	+ This pattern requires some search configuration.
 
-		To learn more about search configuration, see the [Search Configuration (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-search-configuration.md).
+		To learn more about search configuration, see the [Search Configuration (SharePoint Add-in Recipe)](search-configuration-sharepoint-add-in.md).
 - It is not recommended to recursively query and return metadata about all the documents in a SharePoint environment by looping through web and list objects.
 	+ This pattern performs the slowest and scales worse than any other query pattern.  
 	+ You may encounter API throttle limits when using this pattern.
@@ -80,13 +80,13 @@ In this pattern, a background process checks documents in SharePoint to determin
 
 **Getting Started**
 
-The [Remote Timer Jobs (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-remote-timer-jobs.md) describes how to implement remote timer jobs in the Add-in model and provides links to several samples and articles.
+The [Remote Timer Jobs (SharePoint Add-in Recipe)](remote-timer-jobs-sharepoint-add-in.md) describes how to implement remote timer jobs in the Add-in model and provides links to several samples and articles.
 
 Related links
 =============
-- [Event Receivers & List Event Receivers (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-event-receiver-and-list-event-receiver)
-- [Search Configuration (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-search-configuration)
-- [Remote Timer Jobs (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-remote-timer-jobs.md)
+- [Event Receivers and List Event Receivers (SharePoint Add-in Recipe)](event-receiver-and-list-event-receiver-sharepoint-add-in.md)
+- [Search Configuration (SharePoint Add-in Recipe)](search-configuration-sharepoint-add-in.md)
+- [Remote Timer Jobs (SharePoint Add-in Recipe)](remote-timer-jobs-sharepoint-add-in.md)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")
@@ -102,16 +102,3 @@ Applies to
 - Office 365 Multi Tenant (MT)
 - Office 365 Dedicated (D)
 - SharePoint 2013 on-premises
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | June 22, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.2  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)
-0.3  | July 15, 2015 | Copy edits | Todd Baginski (Canviz LLC)
-1.0  | July 20, 2015 | Sign-off for v1.0 | Vesa Juvonen

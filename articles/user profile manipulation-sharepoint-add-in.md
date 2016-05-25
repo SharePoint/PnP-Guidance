@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - User Profile Manipulation
-====================================================
+User profile manipulation in the SharePoint add-in model
+========================================================
 
 Summary
 -------
@@ -27,7 +27,7 @@ As a rule of a thumb, we recommend the following high-level guidelines for perfo
 	DELETE | User Profile Web Service | Supported | Not Supported
 
 - You typically will not deploy an Add-in to a SharePoint tenancy to handle UPS data copying or synchronization.  Usually, the Add-in takes the form of a console application running as a scheduled task, or a long-running cloud service such as an Azure Web Job.
-	+ See the [Remote Timer Jobs (SharePoint Add-in Model Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-remote-timer-jobs.md) for more information about these technologies and how to use them in the SharePoint Add-in model.
+	+ See the [Remote timer jobs (SharePoint Add-in Model Recipe)](remote-timer-jobs-sharepoint-add-in.md) for more information about these technologies and how to use them in the SharePoint Add-in model.
 - Using AppOnly authentication is not supported for any User Profile service operations.
 - Execute the CSOM code with an account that has the appropriate permissions to perform UPS CRUD operations.
 - When synchronizing Active Directory to the User Profile Service some attributes are synchronized by default.
@@ -117,7 +117,7 @@ In a scenario where you have both on-premises and Office 365 SharePoint environm
 Related links
 =============
 - [User profile CSOM for reading and updates (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/User-profile-CSOM-for-reading-and-updates)
-- [Remote Timer Jobs (SharePoint Add-in Model Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-remote-timer-jobs.md)
+- [Remote timer jobs (SharePoint Add-in Model Recipe)](remote-timer-jobs-sharepoint-add-in.md)
 - [Default user profile property mappings in SharePoint Server 2013 (TechNet article)](https://technet.microsoft.com/en-us/library/hh147510.aspx)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
@@ -136,14 +136,3 @@ Applies to
 - Office 365 Multi Tenant (MT)
 - Office 365 Dedicated (D)
 - SharePoint 2013 on-premises
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | July 6, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-1.0  | August 24, 2015 | Sign-off | Vesa Juvonen (Microsoft)

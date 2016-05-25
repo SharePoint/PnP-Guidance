@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Delegate controls
-============================================
+Delegate controls in the SharePoint add-in model
+================================================
 
 Summary
 -------
@@ -17,7 +17,7 @@ As a rule of a thumb, we would like to provide the following high level guidelin
 - Use embedded JavaScript to implement the same functionality as delegate controls from an end-user's perspective.
 - Use the SharePoint JavaScript Client Side Object Model (JSOM), and/or the SharePoint/Office365 REST APIs to interact with SharePoint data and services.
 
-See the [User controls and web controls (SharePoint Add-in Model Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-web-controls.md) to learn how to embed JavaScript to all SharePoint pages with custom user actions and how to embed JavaScript directly into page layouts and master pages.
+See the [User controls and web controls (SharePoint Add-in Model Recipe)](user-controls-and-web-controls-sharepoint-add-in.md) to learn how to embed JavaScript to all SharePoint pages with custom user actions and how to embed JavaScript directly into page layouts and master pages.
 
 Related links
 =============
@@ -36,16 +36,3 @@ Applies to
 - Office 365 Multi Tenant (MT)
 - Office 365 Dedicated (D)
 - SharePoint 2013 on-premises
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | May 21, 2015 | Initial draft | Todd Baginski
- (Canviz LLC)
-0.2  | May 26, 2015 | Updates based on Vesa's feedback| Todd Baginski (Canviz LLC)
-0.3  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)

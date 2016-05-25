@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - List instance
-==============================================
+List instance in the SharePoint add-in model
+============================================
 
 Summary
 -------
@@ -77,7 +77,7 @@ The following code sample illustrates how to create a list instance with the Sha
 Related links
 =============
 - [Lists and list items REST API reference (MSDN Article)](https://msdn.microsoft.com/en-us/library/office/dn531433.aspx)
-- [List Definitions / List Templates (SharePoint Add-in model recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-list-definition-template.md)
+- [List Definitions / List Templates (SharePoint Add-in model recipe)](list-definition-template-sharepoint-add-in.md)
 - [Document and list templates with app model (O365 PnP Video)](http://channel9.msdn.com/blogs/OfficeDevPnP/Document-and-list-templates-with-app-model)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
@@ -96,16 +96,3 @@ Applies to
 - SharePoint 2013 on-premises – *partly*
 
 *Patterns for dedicated and on-premises are identical with SharePoint Add-in model techniques, but there are differences on the possible technologies that can be used.*
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | June 11, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.2  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
-0.3  | July 17, 2015 | Copy edits | Todd Baginski (Canviz LLC)
-1.0  | August 24, 2015 | Sign-off | Vesa Juvonen (Microsoft)

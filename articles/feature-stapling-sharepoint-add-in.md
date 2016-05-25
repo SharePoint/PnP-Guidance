@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Feature Stapling
-===========================================
+Feature Stapling in the SharePoint add-in model
+===============================================
 
 Summary
 -------
@@ -63,7 +63,7 @@ In this pattern you use the SharePoint Client Side Object Model (CSOM) to create
 
 - This pattern does not require packaging artifacts, configurations, and branding assets in separate features, or Add-ins.  Everything may be packaged in a single Add-in.
 - When you use this pattern for site provisioning you typically override the out of the box page to create a new site.
-- For more information about this pattern see the [Site Provisioning (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-site-provisioning.md)
+- For more information about this pattern see the [Site Provisioning (SharePoint Add-in Recipe)](site-provisioning-sharepoint-add-in.md)
 - If you wish to deploy Add-ins to a SharePoint site, this can be done via CSOM.  Here is an example which loads an Office Add-in via a .app manifest file and installs it in a SharePoint site.
 
 	```
@@ -92,7 +92,7 @@ Related links
 - [Feature Stapling In SharePoint 2010 (MSDN Blog Article)](http://blogs.msdn.com/b/kunal_mukherjee/archive/2011/01/11/feature-stapling-in-sharepoint-2010.aspx)
 - [Self-Service Site Provisioning using add-ins for SharePoint 2013 (MSDN Blog)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
 - [SharePoint 2013 App Deployment through 'App Stapling' (MSDN Blog Article - Richard DiZerega)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/09/18/10399333.aspx)
-- [Site Provisioning (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-site-provisioning.md)
+- [Site Provisioning (SharePoint Add-in Recipe)](site-provisioning-sharepoint-add-in.md)
 - [Creating Cloud Hosted Line Of Business Applications with Add-ins for Office, O365, Azure, and WP8 (Todd Baginski, Michael Sherman - SharePoint Conference 2014)](https://channel9.msdn.com/Events/SharePoint-Conference/2014/SPC361)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
@@ -112,13 +112,3 @@ Applies to
 - Office 365 Multi Tenant (MT)
 - Office 365 Dedicated (D)
 - SharePoint 2013 on-premises
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | June 23, 2015 | Initial draft | Todd Baginski (Canviz LLC)

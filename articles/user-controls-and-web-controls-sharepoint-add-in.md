@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - User controls and Web controls
-=========================================================
+User controls and Web controls in the SharePoint add-in model
+=============================================================
 
 Summary
 -------
@@ -89,17 +89,3 @@ Applies to
 - Office 365 Multi Tenant (MT)
 - Office 365 Dedicated (D)
 - SharePoint 2013 on-premises
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | May 21, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.2  | May 26, 2015 | Updates based on Vesa's feedback| Todd Baginski (Canviz LLC)
-0.21  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
-0.3  | July 15, 2015 | Copy edits | Todd Baginski (Canviz LLC)
-1.0  | July 20, 2015 | Sign-off for v1.0 | Vesa Juvonen
