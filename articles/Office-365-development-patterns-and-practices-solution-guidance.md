@@ -24,7 +24,6 @@ _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 |[Configure Provider-Hosted Add-ins for Distribution](Configure-SP-Provider-Hosted-Apps-For-Distribution.md)|Share a SharePoint Provider-Hosted application with other developers, or obtain a copy from a source control system such as Team Foundation Server, Git or Visual Studio Online.|
 |[Connect SharePoint add-in parts](Connect-SharePoint-app-parts-by-using-SignalR.md)|Implement real-time communication between SharePoint app parts by using SignalR. |
 |[Cross-domain images in SharePoint provider-hosted add-ins](cross-domain-images-in-sharepoint-provider-hosted-add-ins.md)|Use images across domains in provider-hosted apps.|
-|[CSOM releases and new capabilities](CSOM-Releases-And-New-Capabilities.md)|Know all the provided updates to the the Client Side Object Model (CSOM), with specific samples for each of the updates.|
 |[Customize your SharePoint site UI](Customize-your-SharePoint-site-UI-by-using-JavaScript.md)|Use to JavaScriptupdate the UI of your SharePoint site.|
 |[Deploy Sites to Microsoft Azure](Move-O365Api-Project-from-Dev-To-Prod.md)|Take an Office 365 API development project and launch it to a working sample hosted entirely in Microsoft Azure.|
 |[Elevated privileges in SharePoint Add-ins](elevated-privileges-in-sharepoint-add-ins.md)|Use the app-only policy or service accounts to elevate privileges in SharePoint Add-ins.|
