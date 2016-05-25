@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Master Pages
-=======================================
+Master pages in the SharePoint add-in model
+===========================================
 
 Summary
 -------
@@ -16,7 +16,7 @@ As a rule of a thumb, we would like to provide the following high-level guidelin
 - You can customize SharePoint sites using custom master pages, but keep in mind this will cause you additional long-term costs and challenges with future updates.
 	+ In most cases, you can achieve all common branding scenarios with themes, composed looks and alternate CSS.
 	
-		See the [Themes (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-themes.md) to learn all about the different branding options you have for SharePoint sites with the SharePoint Add-in model.  The recipe will help you consider the short and long-term impact of customization from an operational and a maintenance perspective. You may discover that a custom master page is not required to implement your specific branding requirements. 
+		See the [Branding SharePoint Sites (SharePoint Add-in Recipe)](branding-sharepoint-sites-sharepoint-add-in.md) to learn all about the different branding options you have for SharePoint sites with the SharePoint Add-in model.  The recipe will help you consider the short and long-term impact of customization from an operational and a maintenance perspective. You may discover that a custom master page is not required to implement your specific branding requirements. 
 
 	+ If you chose to use custom master pages, be prepared to apply changes to the custom master pages when major functional updates are applied to Office 365.
 - Use remote provisioning to deploy and register custom master pages with SharePoint sites.
@@ -42,7 +42,7 @@ In such a scenario, team sites usually do not require the amount of custom brand
 
 Custom master pages are typically applied when a site is provisioned. The remote provisioning process fits very well with this approach. Usually the only time you will use the web browser to manually apply SharePoint branding customization is when you are prototyping or modifying a single SharePoint site that is not planned to grow to include other site collections or sub sites. 
 
-+ See the [Modules (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-modules.md) and [Site Provisioning (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-site-provisioning.md) for more deployment details and additional samples.
++ See the [Modules (SharePoint Add-in Recipe)](modules-sharepoint-add-in.md) and [Site Provisioning (SharePoint Add-in Recipe)](site-provisioning-sharepoint-add-in.md) for more deployment details and additional samples.
 
 More details about custom master pages and page layouts for SharePoint sites
 ----------------------------------------------------------------------------
@@ -65,13 +65,13 @@ This option works well when your branding needs are very specific or you are usi
 
 - Custom master pages may be uploaded manually via the web browser and manually assigned to composed looks.
 - Custom master pages may be uploaded and assigned to a SharePoint site via the remote provisioning pattern as well.
-	+ See the [Modules (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-modules.md) and [Site Provisioning (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-site-provisioning.md) for more deployment details and additional samples.
+	+ See the [Modules (SharePoint Add-in Recipe)](modules-sharepoint-add-in.md) and [Site Provisioning (SharePoint Add-in Recipe)](site-provisioning-sharepoint-add-in.md) for more deployment details and additional samples.
 
 Related links
 =============
-- [Modules (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-modules.md)
-- [Site Provisioning (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-site-provisioning.md)
-- [Themes (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-themes.md)
+- [Modules (SharePoint Add-in Recipe)](modules-sharepoint-add-in.md)
+- [Site Provisioning (SharePoint Add-in Recipe)](site-provisioning-sharepoint-add-in.md)
+- [Branding SharePoint Sites (SharePoint Add-in Recipe)](branding-sharepoint-sites-sharepoint-add-in.md)
 - Ignite 2015 - [Deep Dive into Safe SharePoint Branding in Office 365 Using Repeatable Patterns and Practices](https://channel9.msdn.com/Events/Ignite/2015/BRK3164)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
@@ -94,16 +94,3 @@ Applies to
 - SharePoint 2013 on-premises – *partly*
 
 *Patterns for dedicated and on-premises are identical with SharePoint Add-in model techniques, but there are differences on the possible technologies that can be used.*
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | June 18, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.2  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)
-0.3  | July 15, 2015 | Copy edits | Todd Baginski (Canviz LLC)
-1.0  | August 24, 2015 | Sign-off | Vesa Juvonen (Microsoft)

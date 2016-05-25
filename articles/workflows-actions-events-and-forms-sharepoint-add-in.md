@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Workflows, Actions (Activities), Events, and Forms
-=============================================================================
+Workflows, actions (activities), events, and forms in the SharePoint add-in model
+=================================================================================
 
 Summary
 -------
@@ -34,7 +34,7 @@ In this option custom workflows are created, deployed, and associated with the H
 - Custom workflows may be deployed and associated with the Host-web in SharePoint in several ways.
 	- Workflows created in Visual Studio are automatically packaged inside features for deployment.
 	- Workflows created in SharePoint designer must be exported and imported to deploy them from a development server to a production server.
-	- Workflows may also be deployed and associated with the Host-web in SharePoint via the remote provisioning pattern.  See the [Site Provisioning (SharePoint Add-in Recipe)](SharePoint-Add-In-Recipe-site-provisioning.md) for more details about the remote provisioning pattern.
+	- Workflows may also be deployed and associated with the Host-web in SharePoint via the remote provisioning pattern.  See the [Site provisioning (SharePoint Add-in Recipe)](site-provisioning-sharepoint-add-in.md) for more details about the remote provisioning pattern.
 
 The following code sample demonstrates how to use CSOM to provision a workflow and the lists which support the workflow.
 
@@ -242,14 +242,14 @@ Related links
 - [Common error messages in SharePoint workflow development (MSDN Article)](https://msdn.microsoft.com/EN-US/library/office/dn449112.aspx)
 - [Use workflow interop for SharePoint 2013 (MSDN Article)](https://msdn.microsoft.com/EN-US/library/office/jj670125.aspx)
 - [Develop SharePoint 2013 workflows using Visual Studio (MSDN Article)](https://msdn.microsoft.com/en-us/library/office/jj163199.aspx)
-- [Site Provisioning (SharePoint Add-in Recipe)](SharePoint-Add-In-Recipe-site-provisioning.md)
+- [Site provisioning (SharePoint Add-in Recipe)](site-provisioning-sharepoint-add-in.md)
 - [Create a SharePoint workflow app using Visual Studio 2012 (MSDN Article)](https://msdn.microsoft.com/EN-US/library/office/dn456545.aspx)
 - [How to: Create SharePoint 2013 Workflows using Visual Studio (MSDN Article)](https://msdn.microsoft.com/EN-US/library/office/dn584771.aspx)
 - [How to: Build and deploy workflow custom actions (MSDN Article)](https://msdn.microsoft.com/en-us/library/office/jj163911.aspx)
 - [How to: Create Custom SharePoint Server 2013 Workflow Forms with Visual Studio 2012 (MSDN Article)](https://msdn.microsoft.com/EN-US/library/office/dn518136.aspx)
 - [Query a remote service using the web proxy in SharePoint 2013 (MSDN Article)](https://msdn.microsoft.com/en-us/library/office/fp179895.aspx)
-- [Modules (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-modules.md)
-- [Site Provisioning (SharePoint Add-in Recipe)](SharePoint-Add-In-Recipe-site-provisioning.md)
+- [Modules (SharePoint Add-in Recipe)](modules-sharepoint-add-in.md)
+- [Site provisioning (SharePoint Add-in Recipe)](site-provisioning-sharepoint-add-in.md)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")
@@ -268,14 +268,3 @@ Applies to
 - Office 365 Multi Tenant (MT)
 - Office 365 Dedicated (D)
 - SharePoint 2013 on-premises
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | July 7, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-1.0  | August 24, 2015 | Sign-off| Vesa Juvonen (Microsoft)

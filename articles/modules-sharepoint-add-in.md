@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Modules
-========================================
+Modules in the SharePoint add-in model
+======================================
 
 Summary
 -------
@@ -513,7 +513,7 @@ This sample has a little of everythign in it.  It demonstrates how to activate t
 Related links
 =============
 
-- [Master Pages (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-master-pages.md)
+- [Master Pages (SharePoint Add-in Recipe)](master-pages-sharepoint-add-in.md)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")
@@ -533,16 +533,3 @@ Applies to
 - SharePoint 2013 on-premises – *partly*
 
 *Patterns for dedicated and on-premises are identical with SharePoint Add-in model techniques, but there are differences on the possible technologies that can be used.*
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | June 18, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.2  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)
-0.3  | July 15, 2015 | Copy edits | Todd Baginski (Canviz LLC)
-1.0  | August 24, 2015 | Sign-off | Vesa Juvonen (Microsoft)

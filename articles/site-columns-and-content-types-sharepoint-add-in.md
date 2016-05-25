@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Site Columns and Content Types
-=========================================================
+Site columns and content types in the SharePoint add-in model
+=============================================================
 
 Summary
 -------
@@ -16,7 +16,7 @@ As a rule of a thumb, we recommend the following high-level guidelines for creat
 - You should use the SharePoint CSOM or REST APIs to create site columns and content types.
 - You should not use Feature framework elements to create site columns and content types.
 	+ The only exception to this guideline is when you are using declarative XML-based provisioning to an SharePoint Add-in web in a SharePoint-hosted SharePoint Add-in. This is due to the fact that the CSOM is not available in a SharePoint-hosted SharePoint Add-in.
-- You can automate the creation of site columns and content types as part of the site provisioning process. See the [site provisioning recipe](/articles/SharePoint-Add-in-Recipe-site-provisioning.md) for more details.
+- You can automate the creation of site columns and content types as part of the site provisioning process. See the [Site provisioning recipe](site-provisioning-sharepoint-add-in.md) for more details.
 
 Challenges creating site columns and content types in SharePoint sites
 ----------------------------------------------------------------------
@@ -64,7 +64,7 @@ You could apply this example to Content By Search Web Parts, SharePoint add-ins,
 Options to create site columns and content types in SharePoint sites
 --------------------------------------------------------------------
 
-There are several ways you can call the CSOM/REST code to create site columns and content types. These patterns all fall into the **Creating with code** approach described above. You'll see each one of these patterns described in detail in the [site provisioning recipe](/articles/SharePoint-Add-In-Recipe-site-provisioning.md).
+There are several ways you can call the CSOM/REST code to create site columns and content types. These patterns all fall into the **Creating with code** approach described above. You'll see each one of these patterns described in detail in the [Site provisioning recipe](site-provisioning-sharepoint-add-in.md).
 
 - Override the create site link
 - Override the create sub site link
@@ -94,7 +94,7 @@ This option works well in Dev-Ops scenarios. It allows you to create custom appl
 
 Related links
 =============
-- [SharePoint Add-in Model Recipe - Site Provisioning (O365 PnP Recipe)](/articles/SharePoint-Add-In-Recipe-site-provisioning.md)
+- [Site provisioning in the SharePoint add-in model (O365 PnP Recipe)](site-provisioning-sharepoint-add-in.md)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")
@@ -116,17 +116,3 @@ Applies to
 - SharePoint 2013 on-premises – *partly*
 
 *Patterns for dedicated and on-premises are identical with SharePoint Add-in model techniques, but there are differences on the possible technologies that can be used.*
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | April 2, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.2  | April 5, 2015 | Trimmed article and updated content | Todd Baginski (Canviz LLC)
-0.3  | April 8, 2015 | Trimmed article | Todd Baginski (Canviz LLC)
-0.4  | May 12, 2015 | Copy edits | Todd Baginski (Canviz LLC)
-0.5  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)

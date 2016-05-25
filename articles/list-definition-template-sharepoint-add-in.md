@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - List definition / list template
-================================================================
+List definition / list template in the SharePoint add-in model
+==============================================================
 
 Summary
 -------
@@ -49,7 +49,7 @@ When you need to apply multiple different templates options to lists.
 
 The following SharePoint Add-in model recipe describes how to implement event receivers.
 
-- [Event Receivers (SharePoint Add-in model recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-event-receiver-and-list-event-receiver.md)
+- [Event Receivers (SharePoint Add-in model recipe)](event-receiver-and-list-event-receiver-sharepoint-add-in.md)
 
 Create a SharePoint Add-in
 --------------------------
@@ -77,8 +77,8 @@ The following video walks through the code sample.
 Related links
 =============
 
-- [List Instance (SharePoint Add-in model recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-list-instance.md)
-- [Event Receivers (SharePoint Add-in model recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-event-receiver-and-list-event-receiver.md)
+- [List Instance (SharePoint Add-in model recipe)](list-instance-sharepoint-add-in.md)
+- [Event Receivers (SharePoint Add-in model recipe)](event-receiver-and-list-event-receiver-sharepoint-add-in.md)
 - [Document and list templates with app model (O365 PnP Video)](http://channel9.msdn.com/blogs/OfficeDevPnP/Document-and-list-templates-with-app-model)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
@@ -97,16 +97,3 @@ Applies to
 - SharePoint 2013 on-premises – *partly*
 
 *Patterns for dedicated and on-premises are identical with SharePoint Add-in model techniques, but there are differences on the possible technologies that can be used.*
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | June 11, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.2  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
-0.3  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)
-1.0  | August 24, 2015 | Sign-off | Vesa Juvonen (Microsoft)

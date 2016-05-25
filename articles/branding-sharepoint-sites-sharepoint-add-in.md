@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Branding SharePoint Sites
-=================================
+Branding SharePoint sites in the SharePoint add-in model
+========================================================
 
 Summary
 -------
@@ -347,19 +347,3 @@ Applies to
 - SharePoint 2013 on-premises – *partly*
 
 *Patterns for dedicated and on-premises are identical with SharePoint Add-in model techniques, but there are differences on the possible technologies that can be used.*
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | March 27, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.2  | March 30, 2015 | Revisions based on feedback from Vesa | Todd Baginski (Canviz LLC)
-1.0  | March 31, 2015 | Final revisions after discussion with Vesa | Todd Baginski (Canviz LLC)
-1.1  | April 2, 2015 | Copy edits | Todd Baginski (Canviz LLC)
-1.2  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
-1.3  | June 18, 2015 | Adding links to additional resources and copy edits | Todd Baginski (Canviz LLC)
-1.4  | August 24, 2015 | Added chapter on specific challenges compared on different branding options | Vesa Juvonen (Microsoft)

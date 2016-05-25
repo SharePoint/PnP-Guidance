@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Event Receivers & List Event Receivers
-=================================================================
+Event receivers and list event receivers in the SharePoint add-in model
+=======================================================================
 
 Summary
 -------
@@ -85,17 +85,3 @@ Applies to
 - Office 365 Multi Tenant (MT)
 - Office 365 Dedicated (D) 
 - SharePoint 2013 on-premises
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-Vesa Juvonen (Microsoft) - [@vesajuvonen](https://twitter.com/veajuvonen)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | June 6, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.2  | June 10, 2015 | Updates based on Vesa's feedback | Todd Baginski (Canviz LLC)
-0.3  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
-1.0  | June 18, 2015 | Signoff and updates on details around access tokens with different registration routes | Vesa Juvonen (Microsoft)

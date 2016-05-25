@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - XYZ
-==============================
+XYZ in the SharePoint add-in model
+==================================
 
 Summary
 -------
@@ -23,7 +23,7 @@ Let’s start with defining what is the challenge and what are we trying to solv
 
 **Sample Image**
 
-![](media/Recipes/Themes/Agenda.png)
+![Sample image alt text](media/Recipes/Themes/Agenda.png)
 
 This section contains the following information:
 - Challenges
@@ -67,14 +67,3 @@ Applies to
 *Patterns for Dedicated and on-premises are identical with SharePoint Add-in model techniques, but there are differences on the possible technologies which can be used.*
 
 **Are there any other standard notes like this we might use across articles?**
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments
----------| -----| --------
-1.0  | March 27, 2015 | Initial release | Todd Baginski (Canviz LLC)
-1.1  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)

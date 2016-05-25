@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Performance Considerations
-=====================================================
+Performance considerations in the SharePoint add-in model
+=========================================================
 
 Summary
 -------
@@ -160,16 +160,3 @@ Applies to
 - Office 365 Multi Tenant (MT)
 - Office 365 Dedicated (D)
 - SharePoint 2013 on-premises
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | June 22, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.2  | June 23, 2015 | Updates based on feedback | Todd Baginski (Canviz LLC)
-0.3  | July 15, 2015 | Copy edits | Todd Baginski (Canviz LLC)
-1.0  | July 20, 2015 | Sign-off for v1.0 | Vesa Juvonen

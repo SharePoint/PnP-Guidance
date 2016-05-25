@@ -437,7 +437,7 @@ For a more complex usage of asynchronous and Deferred, you can refer to the deve
 - [Client-side rendering (JS Link) code samples](https://code.msdn.microsoft.com/office/Client-side-rendering-JS-2ed3538a)
 - [JavaScript Embedding (Customize your SharePoint site UI by using JavaScript)](https://msdn.microsoft.com/EN-US/library/dn913116.aspx)
 - [Search customizations for SharePoint](https://msdn.microsoft.com/EN-US/library/mt210901.aspx)
-- [SharePoint Add-in Recipe – Custom field type (by using Client Side Rendering)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-custom-field-type.md)
+- [SharePoint Add-in Recipe – Custom field type (by using Client Side Rendering)](custom-field-type-sharepoint-add-in.md)
 
 ### Samples
 

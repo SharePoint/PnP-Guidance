@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - OneDrive for Business customization
-==============================================================
+OneDrive for Business customization in the SharePoint add-in model
+==================================================================
 
 Summary
 -------
@@ -573,18 +573,3 @@ Applies to
 - SharePoint 2013 on-premises – *partly*
 
 *Patterns for dedicated and on-premises are identical with SharePoint Add-in model techniques, but there are differences on the possible technologies that can be used.*
-
-Authors
--------
-Vesa Juvonen (Microsoft) - [@vesajuvonen](https://twitter.com/vesajuvonen)
-
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | May 19, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.2  | May 26, 2015 | Updates based on Vesa's feedback| Todd Baginski (Canviz LLC)
-0.3  | June 18, 2015 | Changing app to Add-in | Todd Baginski (Canviz LLC)
-1.0  | August 18, 2015 | Sign-off | Vesa Juvonen (Microsoft)

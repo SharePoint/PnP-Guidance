@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Search API Usage
-===========================================
+Search API usage in the SharePoint add-in model
+===============================================
 
 Summary
 -------
@@ -248,14 +248,3 @@ Applies to
 - Office 365 Multi Tenant (MT)
 - Office 365 Dedicated (D)
 - SharePoint 2013 on-premises
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | July 6 2015 | Initial draft | Todd Baginski (Canviz LLC)
-1.0  | August 24 2015 | Sign-off | Vesa Juvonen (Microsoft)

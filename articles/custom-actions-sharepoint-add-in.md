@@ -1,5 +1,5 @@
-SharePoint Add-in Recipe - Custom Actions
-=========================================
+Custom actions in the SharePoint add-in model
+=============================================
 
 Summary
 -------
@@ -36,7 +36,7 @@ The following sample demonstrates how to add a custom action to the site setting
 Related links
 =============
 
-- [User controls and Web controls (SharePoint Add-in Recipe)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/SharePoint-Add-In-Recipe-web-controls.md)
+- [User controls and Web controls (SharePoint Add-in Recipe)](user-controls-and-web-controls-sharepoint-add-in.md)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
 - Videos at [http://aka.ms/OfficeDevPnPVideos](http://aka.ms/OfficeDevPnPVideos "Videos")
@@ -52,14 +52,3 @@ Applies to
 - Office 365 Multi Tenant (MT)
 - Office 365 Dedicated (D)
 - SharePoint 2013 on-premises
-
-Author
-------
-Todd Baginski (Canviz LLC) - [@toddbaginski](https://twitter.com/toddbaginski)
-
-Version history
----------------
-Version  | Date | Comments | Author
----------| -----| ---------| ------
-0.1  | June 22, 2015 | Initial draft | Todd Baginski (Canviz LLC)
-0.3  | July 21, 2015 | Copy edits | Todd Baginski (Canviz LLC)
