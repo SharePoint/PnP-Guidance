@@ -67,7 +67,7 @@ Before you run this code sample, configure the language settings on your site, a
 
 ![Screenshot of the Language and Region section of the Edit Details page](media/ff41b24e-42eb-48ca-83cd-00d88ef753bd.png)
 
-Before you run  [Scenario 2](6786c43a-8d9e-4a51-90c2-999fcffe4295.md#bk_Scenario2) of this code sample, complete the following tasks.
+Before you run  [Scenario 2](#bk_Scenario2) of this code sample, complete the following tasks.
 
 ### To create a Quick Launch link
 

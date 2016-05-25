@@ -207,7 +207,7 @@ public override void IterateCollection(Collection<string> entries, LogHelper log
 ## Additional resources
 <a name="bk_addresources"> </a>
 
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](..\api\Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
+-  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
 -  [Core.LargeFileUpload sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.LargeFileUpload)
     

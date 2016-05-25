@@ -83,7 +83,7 @@ In Program.cs, add the following code to the console application.
 
 2. Add the following methods to your class:
     
-	-  **Main** signs into your SharePoint site, and then uses the CSOM to perform tasks on your site or content. This code sample uses the CSOM to find a list and output the total number of items that are in the list to the console window. When using Azure WebJobs, you can see the console window output in the WebJob Run Details, which is explained in [Run and verify your Azure WebJob](ea962814-e430-424b-b45f-4bcda7fe9eab.md#runandverify).
+	-  **Main** signs into your SharePoint site, and then uses the CSOM to perform tasks on your site or content. This code sample uses the CSOM to find a list and output the total number of items that are in the list to the console window. When using Azure WebJobs, you can see the console window output in the WebJob Run Details, which is explained in [Run and verify your Azure WebJob](Use-Microsoft-Azure-WebJobs-with-Office-365.md#runandverify).
     
   -  **GetSPOSecureStringPassword** reads your password from app.config.
     

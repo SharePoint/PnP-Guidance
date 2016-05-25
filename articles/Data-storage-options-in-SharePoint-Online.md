@@ -110,7 +110,6 @@ Also, you need to deploy the Northwind database to Microsoft Azure.
     
 	```XML
 	  <add name="NorthWindEntities" connectionString="metadata=res://*/Northwind.csdl|res://*/Northwind.ssdl|res://*/Northwind.msl;provider=System.Data.SqlClient;provider connection string=&amp;quot;data source=<Your Server Here>.database.windows.net;initial catalog=NorthWind;user id=<Your Username Here>@<Your Server Here>;password=<Your Password Here>;MultipleActiveResultSets=True;App=EntityFramework&amp;quot;" providerName="System.Data.EntityClient" />
-	
 	```
 24. Save the Web.config file.
 
@@ -162,7 +161,6 @@ function getNotesAndShow() {
 
     );
 }
-
 ```
 
 The following code adds a note for a given customer to the notes list.
@@ -189,7 +187,6 @@ function addNoteToList(note, customerID) {
         error: addNoteFailed
     });
 }
-
 ```
 
 You can add 5000 items to the list to show that list queries that generate a result set of 5000 or more items will hit the list query threshold and fail. You can also add so much data to your list on the app web that you exceed the storage limit for your site collection (which depends on how much storage space you've allocated to it). These scenarios show two of the most important limitations of this approach: list query size limits and storage space limits. If your business needs require you to work with large data sets and query result sets, this approach won't work.
@@ -307,7 +304,6 @@ method: "GET",
    }
 );
 }
-
 ```
 
 You can add 5000 items to the list to show that list queries that generate a result set of 5000 or more items will hit the list query threshold and fail. This scenario shows one of the most important limitations of this approach: list query size limits. If your business needs require you to work with large data and query result sets, this approach won't work. For more information, see  [List query threshold](#bk_listquerythreshold) earlier in this article.
@@ -343,7 +339,6 @@ var getCustomerIDsUrl = "https://odatasampleservices.azurewebsites.net/V3/Northw
         .error(function (jqXHR, textStatus, errorThrown) {
             $('#topErrorMessage').text('Can\'t get customers. An error occurred: ' + jqXHR.statusText);
         });
-
 ```
 
 The following code runs when you select a customer name from the drop-down menu. It uses the OData  **$filter** argument to specify the customer ID and other query string arguments to retrieve information related to this customer.
@@ -356,7 +351,6 @@ $.get(url).done(getCustomersDone)
           alert('Can\'t get customer ' + customerID + '. An error occurred: ' + 
                  jqXHR.statusText);
 });
-
 ```
 
 ## Azure table storage (Customer Service Survey scenario)
@@ -397,7 +391,6 @@ public ActionResult Home()
 
     return View();
 }
-
 ```
 
 The following code from the SurveyRatingService.cs file defines the  **SurveyRatingsService** constructor, which sets up the connection to the Azure storage account.
@@ -413,7 +406,6 @@ public SurveyRatingsService(string storageConnectionStringConfigName =
     this.surveyRatingsTable = this.tableClient.GetTableReference("SurveyRatings");
     this.surveyRatingsTable.CreateIfNotExists();
 }
-
 ```
 
 The following code from the same file defines the  **GetUserScore** method, which retrieves the user's survey score from the Azure storage table.
@@ -435,7 +427,6 @@ public float GetUserScore(string userName)
 
     return (float)items.Average(c => c.Score);
 }
-
 ```
 
 If the table doesn't contain any survey data related to the current user, the  **AddSurveyRating** method randomly assigns a score for the user.
@@ -459,7 +450,6 @@ private float AddSurveyRatings(string userName)
     }
     return sum / count;
 }
-
 ```
 
 ## Azure queue storage (Customer Call Queue scenario)
@@ -520,7 +510,6 @@ public class CallQueueController : Controller
         return RedirectToAction("Index", new { SPHostUrl = spHostUrl });
     }
 }
-
 ```
 
 The CallQueueService.cs file defines the  **CallQueueService** class, which establishes the connection to the Azure storage queue. That class also contains the methods for adding, removing (dequeuing), and retrieving the calls from the queue.
@@ -597,7 +586,6 @@ public class CallQueueService
         return count;
     }
 }
-
 ```
 
 ## SQL Azure database (Recent Orders scenario)
@@ -646,12 +634,11 @@ public ActionResult Orders(string customerId)
 
     return View(orders);
 }
-
 ```
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
--  [Composite business add-ins for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
+-  [Composite business add-ins for SharePoint 2013 and SharePoint Online](Composite-buisness-apps-for-SharePoint.md)
     
 -  [Office 365 Development Patterns and Practices on GitHub](https://github.com/OfficeDev/PnP)

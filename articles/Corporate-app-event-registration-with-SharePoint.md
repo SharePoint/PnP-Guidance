@@ -283,7 +283,7 @@ public void Save(Web web) {
 ## Additional resources
 <a name="bk_addresources"> </a>
 
--  [Composite business add-ins for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
+-  [Composite business add-ins for SharePoint 2013 and SharePoint Online](Composite-buisness-apps-for-SharePoint.md)
     
 -  [Core.ModifyPages sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ModifyPages)
     
