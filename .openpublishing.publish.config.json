@@ -15,5 +15,5 @@
         }
     ],
     "notification_subscribers": ["lauragra@microsoft.com", "vesaj@microsoft.com", "v-roharp@microsoft.com"],
-    "branches_to_filter": ["live"]
+    "branches_to_filter": [""]
 }
