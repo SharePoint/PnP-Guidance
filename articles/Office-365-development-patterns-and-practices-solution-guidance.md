@@ -1,6 +1,6 @@
-# Office 365 development patterns and practices solution guidance
+# Office 365 development and SharePoint patterns and practices solution guidance
 
-The Office 365 Developer Patterns and Practices program provides samples and documentation to help you transition your development solutions from full-trust code to the add-in model.
+The Office 365 Developer and SharePoint Patterns and Practices (PnP) initiative provides samples and documentation to help you to implement typical customizations for Office 365 or for SharePoint (Online and on-premises) based on your functional requirements.
 
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
