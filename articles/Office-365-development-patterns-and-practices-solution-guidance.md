@@ -1,6 +1,6 @@
-# Office 365 development patterns and practices solution guidance
+# Office 365 development and SharePoint patterns and practices solution guidance
 
-The Office 365 Developer Patterns and Practices program provides samples and documentation to help you transition your development solutions from full-trust code to the add-in model.
+The Office 365 Developer and SharePoint Patterns and Practices (PnP) initiative provides samples and documentation to help you to implement typical customizations for Office 365 or for SharePoint (Online and on-premises) based on your functional requirements.
 
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
@@ -14,7 +14,7 @@ _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 |[Localization solutions](localization-solutions-for-sharepoint-2013-and-sharepoint-online.md)|Localize your SharePoint site contents and UI text.|
 |[Search solutions](search-solutions-in-sharepoint-2013-and-sharepoint-online.md)|Find out about the SharePoint search architecture, search APIs, and search add-ins.|
 |[SharePoint Add-In Recipes](sharepoint-add-in-recipes.md)|Find a list of SharePoint add-in recipes.|
-|[Transform farm solutions to the SharePoint add-in model](Transform-farm-solutions-to-the-SharePoint-app-model.md)|Convert your farm solutions to the SharePointadd-in model.|
+|[Transform farm solutions to the SharePoint add-in model](Transform-farm-solutions-to-the-SharePoint-app-model.md)|Convert your farm solutions to the SharePoint add-in model.|
 |[User Profile Solutions](user-profile-solutions-for-sharepoint.md)|Work with SharePoint user profile data.|
 |[PnP remote provisioning](pnp-remote-provisioning.md)|Learn about remote provisioning for your Office 365 and SharePoint Online site collections using features of the add-in model.|
 |[PnP remote timer job framework](pnp-remote-timer-job-framework.md)|Describes timer jobs which are background tasks that operate on your SharePoint sites.|
