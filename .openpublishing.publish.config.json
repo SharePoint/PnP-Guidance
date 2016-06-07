@@ -1,7 +1,7 @@
 {
     "build_entry_point": "",
     "need_generate_pdf": false,
-    "git_repository_url_open_to_public_contributors": "",
+    "git_repository_url_open_to_public_contributors": "https://github.com/OfficeDev/PnP-Guidance",
     "git_repository_branch_open_to_public_contributors": "master",
     "docsets_to_publish": [
         {
