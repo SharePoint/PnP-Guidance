@@ -27,11 +27,11 @@ The following sample demonstrates how to add a custom action to the site setting
 
 	Here you can see the link the custom action in the sample adds to the Site Settings menu.
 	
-	![](media/Recipes/CustomActions/Custom-Action-In-Site-Settings.png)
+	![The Office 365 settings menu is displayed with the menu option, "Modify Site" highlighted.](media/Recipes/CustomActions/Custom-Action-In-Site-Settings.png)
 	
 	Here you can see the popup window opened via the Modify Site link.
 	
-	![](media/Recipes/CustomActions/Custom-Action-Popup-Menu.png)
+	![The Modify Site popup window is displayed with a check box group named Lists which contains two check boxes, Projects and Contacts. Below Lists is a check box group named Various which contains the check box named Apply theme. Below this are two buttons named Confirm and Cancel.](media/Recipes/CustomActions/Custom-Action-Popup-Menu.png)
 
 Related links
 =============
