@@ -37,7 +37,7 @@ In this option you embed a Yammer feed in a SharePoint web page.
 
 Using embed looks like this in your SharePoint page:
 
-![](media/Recipes/Yammer/YammerEmbed.png)
+![A standard SharePoint team site page with a text box that contains the text, "Start a conversation". Below the text box is a list box displaying a Yammer conversation thread.](media/Recipes/Yammer/YammerEmbed.png)
 
 The following table describes each type of Yammer feed you can access with embed out-of-the-box.
 
