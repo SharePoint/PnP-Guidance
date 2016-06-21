@@ -20,7 +20,7 @@ Here are some examples of custom field type that implements a Google map. These 
 ![Two Google maps. One view showing the Microsoft Campus Location Point with a link to Select Location, the other view showing the Microsoft Campus Location Area with a link to Edit Shape.](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps_Edit.png)
 
 **A dialog enabling inline editing:**
-![A Google Map showing the Microsoft Campus Shape. Text on the image reads, "Click on the map to place markers and create your shape. Finish by clicking on the first marker. You can drag each of the markers around, or click on them for more options. You can use the Clear Map button above to remove all markers."](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps_Shape_Edit.png)
+![A Google Map showing the Microsoft Campus Shape. Text on the image reads, Click on the map to place markers and create your shape. Finish by clicking on the first marker. You can drag each of the markers around, or click on them for more options. You can use the Clear Map button above to remove all markers.](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps_Shape_Edit.png)
 
 High-Level Guidelines
 ---------------------

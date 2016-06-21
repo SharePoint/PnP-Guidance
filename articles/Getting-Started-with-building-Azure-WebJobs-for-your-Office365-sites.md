@@ -25,7 +25,7 @@ If you’re using Visual Studio 2015 as I’m doing, the NuGet package manager d
    install the required helper classes for working with the SharePoint
    Client Object Model.
 
-![The NuGet Package Manager dialog showing the search term, "App for SharePoint". App For SharePoint Web Toolkit is highlighted and the Install button is ready to be clicked.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/2.Add-App-For-SharePoint-Web-Toolkit-from-Nuget.png)
+![The NuGet Package Manager dialog showing the search term, App for SharePoint. App For SharePoint Web Toolkit is highlighted and the Install button is ready to be clicked.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/2.Add-App-For-SharePoint-Web-Toolkit-from-Nuget.png)
 Make sure the NuGet package worked by making sure there’s these two new classes in your console application project:
 ![The Solution Explorer shows the newly added classes, Share Point Context and Token Helper.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/3.Project-Overview-With-Added-Files.png)
 
@@ -232,18 +232,18 @@ In my case, I already have an Azure WebSite for some of my Office 365 demos so I
 
 If you scroll down in the settings pane for your website, you’ll find a something called "**WebJobs**" under the "**Operations**" header:
 
-![The author's Azure Portal is displayed, with an arrow pointing to, "WebJobs".](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/8.Find-WebJobs-in-Azure-Portal.png)
+![The author's Azure Portal is displayed, with an arrow pointing to WebJobs.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/8.Find-WebJobs-in-Azure-Portal.png)
 **Click where the arrow points!**
 
 #### Upload your WebJob ####
 
 Upload your web job by clicking the **[+ Add]** sign:
 
-![The WebJobs Azure portal is displayed, with an arrow pointing to, "Add".](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/9.Upload-Azure-WebJob-from-Azure-Portal.png)
+![The WebJobs Azure portal is displayed, with an arrow pointing to Add.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/9.Upload-Azure-WebJob-from-Azure-Portal.png)
 
 Choose a Name, how the job should run and the actual zip file:
 
-![The Add WebJob dialog is displayed. The Name field contains the text, "Zimmergren-O365-WebJobSample", and the How to Run field contains the text, "On Demand".](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/10.Configure-Name-of-Uploaded-WebJob.png)
+![The Add WebJob dialog is displayed. The Name field contains the text Zimmergren-O365-WebJobSample, and the How to Run field contains the text On Demand.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/10.Configure-Name-of-Uploaded-WebJob.png)
 
 ***Important:*** The "How To Run" alternative only offers "On Demand" or "Continuous" at this point, but soon there will be support for "Scheduled" as well – which is what we really want.
 
@@ -264,11 +264,11 @@ This is my favorite one at this point because I can use the tooling in Visual St
 
 Simply right-click your project and select "**Publish as an Azure WebJob…**":
 
-![The Solution Explorer context menu is displayed with the "Publish as Azure WebJob" option highlighted.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/12.Publish-WebJob-from-Visual-Studio-2015.png)
+![The Solution Explorer context menu is displayed with the Publish as Azure WebJob option highlighted.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/12.Publish-WebJob-from-Visual-Studio-2015.png)
 
 #### Add Azure WebJob ####
 This will bring you to a new dialog where you can configure the job, and since we want a recurring job that should be executed on a schedule (in my case once every night) you can configure the schedule directly from the dialogs:
-![The Add Azure WebJob dialog is displayed. The WebJob name field contains the text "Zimmergren-O365-WebJobSample", the "WebJob run mode" field contains the option "Run on a Schedule", the Recurrence field contains the option "Recurring job" and the check box "No end date" is checked, the "Recur every" field is set to 1 days, and the "Starting on" date is 9 Januari 2015.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/13.Add-Azure-WebJob-Dialog.png)
+![The Add Azure WebJob dialog is displayed. The WebJob name field contains the text Zimmergren-O365-WebJobSample, the WebJob run mode field contains the option Run on a Schedule, the Recurrence field contains the option Recurring job and the check box No end date is checked, the Recur every field is set to 1 days, and the Starting on date is 9 Januari 2015.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/13.Add-Azure-WebJob-Dialog.png)
 
  - Make sure the name is web friendly
  - Select your run mode, I’m on "Run on a Schedule" because we want to have it occur on a specific time every day
@@ -279,7 +279,7 @@ This will bring you to a new dialog where you can configure the job, and since w
 Hit **OK** and you’ll see that Visual Studio will drop you a message saying "**Installing WebJobs Publishing NuGet Package**".
 
 #### Visual Studio added WebJobs Publishing NuGet Package ####
-![The WebJobs NuGet Package Install dialog is displayed which displays a spinner and the text, "Installing WebJobs Publishing NuGet Package".](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/14.WebJobs-NuGet-Package-Install.png)
+![The WebJobs NuGet Package Install dialog is displayed which displays a spinner and the text, Installing WebJobs Publishing NuGet Package.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/14.WebJobs-NuGet-Package-Install.png)
 
 This actually adds a new file called "**webjob-publish-settings.json**" to our project, containing the configuration for the job.
 
@@ -302,16 +302,16 @@ The next step in the dialog will be where to publish/deploy your WebJob. You can
 
 Since I’ve got a habit of always downloading my publishing profiles from my Azure Portal, I’ll go ahead and select "**Import**" and simply specify the publishing profile file that I’ve downloaded from my Azure website:
 
-![The dialog "Publish Web" is displayed with the "Connection" tab visible.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/15.Publish-Web-Dialog.png)
+![The dialog Publish Web is displayed with the Connection tab visible.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/15.Publish-Web-Dialog.png)
 
 With that done, all we need to do is click the button called "Publish". Don’t be afraid, it wont bite. I think.
 
 #### Publish ####
 Once you hit Publish, the Web Publish Activity dialog will display the progress of your Web Job deployment:
-![The dialog "Web Publish Activity" is displayed."](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/16.Publish-Progress-Visual-Studio-2015.png)
+![The dialog Web Publish Activity is displayed.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/16.Publish-Progress-Visual-Studio-2015.png)
 
 Once it’s done, you should see the WebJob in your Azure Portal:
-![The Azure Portal shows "Zimmergren-O365-WebJobSample" in the list of WebJobs with the status of "Completed 2 min ago".](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/17.Web-Job-Published-as-seen-in-Azure-Portal.png)
+![The Azure Portal shows Zimmergren-O365-WebJobSample in the list of WebJobs with the status of, Completed 2 min ago.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/17.Web-Job-Published-as-seen-in-Azure-Portal.png)
 
 The WebJob status is now displayed as Completed. It would say failure/error if it would throw any unhandled exceptions or otherwise provide unhealthy behavior.
 
@@ -322,7 +322,7 @@ If you’ve done all the previous steps, you’ve got a job working for you as a
 
 ### View all job executions and status ###
 If you want to review when the job last ran, what the outcome of every execution of the job was or review what happened during execution of the job, you can click on the link under "Logs" when you’re in the WebJobs overview:
-![The WebJobs dialog, with an arrow pointing to the "Logs" link.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/18.View-All-WebJobs-and-status-of-execution.png)
+![The WebJobs dialog, with an arrow pointing to the Logs link.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/18.View-All-WebJobs-and-status-of-execution.png)
 
 This will give you an overview of all the executions of the selected jobs, including the status /outcome:
 
@@ -346,7 +346,7 @@ Running the job locally works fine, since .NET Framework 4.5.3 exist on my dev m
 It took a while before I realized that Azure didn’t like .NET Framework version 4.5.3, but when I changed to **.NET Framework 4.5**, it works.
 
 If you bump into that problem, just make sure your job is executing under the correct .NET framework version.
-![Displays the Visual Studio Project Properties page, Application tab, showing the "Target framework" drop down, highlighting "dot NET Framework 4.5".](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/21.Change-NET-Framework-In-Visual-Studio-2015.png)
+![Displays the Visual Studio Project Properties page, Application tab, showing the Target framework drop down, highlighting dot NET Framework 4.5.](media/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites/21.Change-NET-Framework-In-Visual-Studio-2015.png)
 
 # Summary #
 While there’s not very much to building an Azure WebJob, you can make them quite complex. The overall concept is very straight forward – but then as with all complex projects comes the decisions around authentication, code stability and reliability, high availability scenarios, maintainability and so on. These are variables unique to each project and should be carefully considered before "just deploying" a job to Azure.

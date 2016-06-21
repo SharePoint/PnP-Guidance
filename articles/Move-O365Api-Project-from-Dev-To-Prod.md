@@ -60,12 +60,12 @@ In this step you will modify the Azure AD application used in the development & 
 1. Next, click the **APPLICATIONS** item in the top navigation.
 1. Within the **Properties** section, update the **SIGN-ON URL** to point to the default URL of the Azure Website you created. Take note to use the HTTPS endpoint that is provided with all Azure websites.
 
-  ![Name is set to "O365-WebApp-SingleTenant.Office365App, Sign-on URL is set to "https://o365api-01.azurewebsites.net"](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-03.png)
+  ![Name is set to O365-WebApp-SingleTenant.Office365App, Sign-on URL is set to https://o365api-01.azurewebsites.net](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-03.png)
 
 1. Within the **Single Sign-On** section, update the **App ID URI** to use the domain for the Azure website (shown in the following figure).
 1. Next, update the **REPLY URL** so the only URL listed is the homepage of the Azure website:
 
-  ![App ID URI is "https://o365api-01.azurewebsites.net/O365-WebApp-SingleTenant, Reply URL is "https://o365api-01.azurewebsites.net/"](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-04.png)
+  ![App ID URI is https://o365api-01.azurewebsites.net/O365-WebApp-SingleTenant, Reply URL is https://o365api-01.azurewebsites.net/](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-04.png)
 
 1. In the footer, click the **SAVE** button to save your changes.
 
@@ -113,11 +113,11 @@ In this step you will publish the Office 365 API web application to the Azure we
 
 1. After logging in, select the website that you created in a previous step from this page and click **OK**.
 
-  ![The "Select Existing Website dialog shows "Existing Websites" set to o365api-01.](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-05.png)
+  ![The Select Existing Website dialog shows Existing Websites set to o365api-01.](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-05.png)
 
 1. On the **Connection** tab, click the **Validate Connection** button to ensure the connection profile was successfully downloaded and applied.
 
-  ![An arrow points to the "Validate Connection" button near the bottom of the dialog box, with a green check mark next to the button.](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-06.png)
+  ![An arrow points to the Validate Connection button near the bottom of the dialog box, with a green check mark next to the button.](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-06.png)
 
 1. Click the **Publish** button to publish the web application to the Azure website.
 

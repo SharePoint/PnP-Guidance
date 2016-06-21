@@ -27,7 +27,7 @@ Here’s an example of OD4B site, which has been customized using above guidelin
 
 Let’s start with defining what is the challenge and what are we trying to solve here. Technically each OneDrive for Business site is currently using identical architecture as what the personal or my sites used  back in SharePoint 2007 or 2010 version. This means that technically each OneDrive for Business site is their own site collection and we do not have any centralized location to apply branding or any other customizations.
 
-![Each OneDrive for Business site is its own site collection under the personal managed path, and the url is created based on the assigned user profile. In the image, three sites are listed as child sites. The URL of the first child site ends with "/bill_contoso_com". The second ends with "/vesa_contoso_com". The third ends with "/john_contoso_com".](media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-02.png)
+![Each OneDrive for Business site is its own site collection under the personal managed path, and the url is created based on the assigned user profile. In the image, three sites are listed as child sites. The URL of the first child site ends with /bill_contoso_com. The second ends with /vesa_contoso_com. The third ends with /john_contoso_com.](media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-02.png)
 
 Classic solution to apply needed configuration to the OneDrive for Business sites (including my or personal sites) was based on feature stapling in farm level. This meant that you deployed farm solution to your SharePoint farm and used feature framework to associate your custom feature to be activated each time a my site is crated, which was then responsible of applying needed customizations. This similar approach does not work in Office 365, since it requires farm solution to be deployed and that is simply impossible with Office 365 sites. Therefore we need to look alternatives to apply the needed changes to the sites.
 
@@ -64,7 +64,7 @@ When user arrives to the intranet, we will have hidden app part in the page, whi
 
 Let’s have a closer look on the logical design of this approach.
 
-![Diagram to show relationships. The App part on the SharePoint site uses "instantiate" to go to Provider Hosted Apps. Provider Hosted Apps uses "Add Message" to go to Storage Queue. Storage Queue uses "instantiate" to go to WebJob. WebJob uses "Apply modifications" to go to the OD4B site.](media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-04.png)
+![Diagram to show relationships. The App part on the SharePoint site uses instantiate to go to Provider Hosted Apps. Provider Hosted Apps uses Add Message to go to Storage Queue. Storage Queue uses instantiate to go to WebJob. WebJob uses Apply modifications to go to the OD4B site.](media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-04.png)
 
 1. Place hidden app part to centralized site where end users will land. Typically this is the corporate intranet front page.
 2. App part is hosting a page from provider hosted add-in, where in the server side code we initiate the customization process by adding needed metadata to the azure storage queue. This means that this page will only receive the customization request, but will not actually apply any changes to keep the processing time normal.
@@ -80,7 +80,7 @@ If you are familiar of classic SharePoint development models with farm solutions
 
 This option relies on the pre-creation of the OD4B sites before users will access them. This can be achieved by using relatively new API which provides us away to create OD4B sites for specific users in batch process, using either CSOM or REST. Needed code can be initiated using a PowerShell script or by writing actual code which is calling the remote APIs. 
 
-![An administrator uses "pre-create and customize" to create an OD4B site.](media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-05.png)
+![An administrator uses, pre-create and customize, to create an OD4B site.](media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-05.png)
 
 1. Administrator is using the remote creation APIs to create OD4B sites for users and is applying the needed customizations to the OD4B sites as part of the script process.
 2. Actual OD4B sites are created to the Office 365 for specific users and associated to their user profiles
@@ -91,7 +91,7 @@ In some sense this is also really reliable process, but you would have to manage
 
 This approach means scanning through user profiles for checking to whom the OD4B site has been created and then apply the changes to the sites as needed. This would mean scheduled job running outside of the SharePoint, which will periodically check the status and perform needed customizations. Scheduled job could be running as a WebJob in Azure or as simple as PowerShell script scheduled in your own windows scheduler. Obviously the scale of the deployment has huge impact on the chosen scheduling option.
 
-![A Remote timer job uses "Loop through site collections" to customize each site.](media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-06.png)
+![A Remote timer job uses, Loop through site collections, to customize each site.](media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-06.png)
 
 1.Scheduled task is initiated which will access user profiles of the users for checking who has OD4B site provisioned
 2.Actual sites are customized one-by-one based on the business requirements
