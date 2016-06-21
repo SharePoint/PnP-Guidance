@@ -27,7 +27,7 @@ The following sample demonstrates how to add a custom action to the site setting
 
 	Here you can see the link the custom action in the sample adds to the Site Settings menu.
 	
-	![The Office 365 settings menu is displayed with the menu option, "Modify Site" highlighted.](media/Recipes/CustomActions/Custom-Action-In-Site-Settings.png)
+	![The Office 365 settings menu is displayed with the menu option, Modify Site, highlighted.](media/Recipes/CustomActions/Custom-Action-In-Site-Settings.png)
 	
 	Here you can see the popup window opened via the Modify Site link.
 	

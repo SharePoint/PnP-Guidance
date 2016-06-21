@@ -78,7 +78,7 @@ When user arrives to the intranet, we will have hidden app part in the page, whi
 
 Let’s have a closer look on the logical design of this approach.
 
-![Diagram to show relationships. The App part on the SharePoint site uses "instantiate" to go to Provider Hosted Apps. Provider Hosted Apps uses "Add Message" to go to Storage Queue. Storage Queue uses "instantiate" to go to WebJob. WebJob uses "Apply modifications" to go to the OD4B site.](media/Recipes/OD4BCustomization/hidden-app-part-logical-diagram.png)
+![Diagram to show relationships. The App part on the SharePoint site uses instantiate to go to Provider Hosted Apps. Provider Hosted Apps uses Add Message to go to Storage Queue. Storage Queue uses instantiate to go to WebJob. WebJob uses Apply modifications to go to the OD4B site.](media/Recipes/OD4BCustomization/hidden-app-part-logical-diagram.png)
 
 1. Place hidden app part to centralized site where end users will land. Typically this is the corporate intranet front page.
 2. App part is hosting a page from provider hosted app, where in the server side code we initiate the customization process by adding needed metadata to the azure storage queue. This means that this page will only receive the customization request, but will not actually apply any changes to keep the processing time normal.
@@ -94,7 +94,7 @@ Pre-create and apply configuration
 
 This option relies on the pre-creation of the OD4B sites before users will access them. This can be achieved by using [relatively new API](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.OneDriveProvisioning) which provides us away to create OD4B sites for specific users in batch process, using either CSOM or REST. Needed code can be initiated using a PowerShell script or by writing actual code which is calling the remote APIs.
 
-![An administrator uses "pre-create and customize" to create an OD4B site.](media/Recipes/OD4BCustomization/pre-create-and-apply.png)
+![An administrator uses, pre-create and customize, to create an OD4B site.](media/Recipes/OD4BCustomization/pre-create-and-apply.png)
 
 1. Administrator is using the remote creation APIs to create OD4B sites for users and is applying the needed customizations to the OD4B sites as part of the script process.
 2. Actual OD4B sites are created to the Office 365 for specific users and associated to their user profiles
@@ -106,7 +106,7 @@ Remote timer job based on user profile updates
 
 This approach means scanning through user profiles for checking to whom the OD4B site has been created and then apply the changes to the sites as needed. This would mean scheduled job running outside of the SharePoint, which will periodically check the status and perform needed customizations. Scheduled job could be running as a WebJob in Azure or as simple as PowerShell script scheduled in your own windows scheduler. Obviously the scale of the deployment has huge impact on the chosen scheduling option.
 
-![A Remote timer job uses "Loop through site collections" to customize each site.](media/Recipes/OD4BCustomization/remote-timer-job.png)
+![A Remote timer job uses, Loop through site collections, to customize each site.](media/Recipes/OD4BCustomization/remote-timer-job.png)
 
 1. Scheduled task is initiated which will access user profiles of the users for checking who has OD4B site provisioned
 2. Actual sites are customized one-by-one based on the business requirements
@@ -281,7 +281,7 @@ Key requirement for this sample to work properly is that you have created Azure 
 
 When storage has been created, you need to go and copy the key which is needed for the connection string. When you move to the storage detail page, you can access key information by clicking “*Manage Access Keys*”  from the bottom of the page.
 
-![The link to "Manage Access Keys" is highlighted at the bottom of the page.](media/Recipes/OD4BCustomization/azure-config-2.png)
+![The link to, Manage Access Keys, is highlighted at the bottom of the page.](media/Recipes/OD4BCustomization/azure-config-2.png)
 
 You will need to update App.config file for following projects in the Visual Studio solution. Each of the projects are more detailed explained later in this blog post.
 
@@ -289,20 +289,20 @@ OD4B.Configuration.Async.WebJob
 OD4B.Configuration.Async.Console.SendMessage
 WebJob project has two keys, which can be updated to point to the same connection and the SendMessage has only one key to update.
 
-![The App.config file is open in Visual Studio at the appSettings element. Two child elements named Add are listed under the appSettings element. For the first Add element, the attribute key="ClientId" and the value attribute is equal to a pair of double-quotes. For the second Add element, the attribute key="ClientSecret" and the value attribute is also equal to a pair of double-quotes.](media/Recipes/OD4BCustomization/app-config.png)
+![The App.config file is open in Visual Studio at the appSettings element. Two child elements named Add are listed under the appSettings element. For the first Add element, the attribute key=ClientId and the value attribute is equal to a pair of double-quotes. For the second Add element, the attribute key=ClientSecret and the value attribute is also equal to a pair of double-quotes.](media/Recipes/OD4BCustomization/app-config.png)
 
 Reference solution structure
 ----------------------------
 
 This Visual Studio solution consists from quite a few solutions, but each of them have pretty reasonable reason to be there. Here’s introduction to each of the projects in the solution and why they exists or what they are for.
 
-![The Solution Explorer displays a folder named "Documentation" followed by six projects which are described in detail below.](media/Recipes/OD4BCustomization/solution-explorer.png)
+![The Solution Explorer displays a folder named Documentation followed by six projects which are described in detail below.](media/Recipes/OD4BCustomization/solution-explorer.png)
 
 **OD4B.Configuration.Async**
 
 This is the actual SharePoint app project, which will introduce the provider hosted app to SharePoint and will ask the needed permissions. Notice that even though we do not actually perform tenant level operations from the app part it self, we are asking pretty high permissions for the add-in. This is because we will use the same  client ID and secret from this app file in our WebJob execution. Using this approach, you do not have to manually register app id and secret to the SharePoint, we rather just use the same identifier and secret cross solution.
 
-![The list of permissions: The scope "Tenant" has the permission "FullControl". The scope "User Profiles (Social)" has the permission "FullControl". The check box "Allow the app to make app-only calls to SharePoint" is checked.](media/Recipes/OD4BCustomization/app-permissions.png)
+![The list of permissions: The scope Tenant has the permission FullControl. The scope User Profiles (Social) has the permission FullControl. The check box Allow the app to make app-only calls to SharePoint is checked.](media/Recipes/OD4BCustomization/app-permissions.png)
 
 This project also contains the app part definition which will be then deployed to the host web.
 
@@ -351,7 +351,7 @@ You can easily execute the project by right clicking the project and choosing De
 
 This is the actual WebJob project, which was created using WebJob project template, introduced in the Visual Studio 2013 Update 4. This template makes it easier to create WebJob projects by adding right references in place and it also provides nice deployment automation with right click support for the project. You can simply deploy initial version or new version of the project to the Azure by right clicking and selecting Publish as Azure Web Job… which will open up the publishing wizard.
 
-![The Publish Web dialog box is displayed, and shows the Connection tab. The "Server" field contains the value "vesaj-od4bconf.scm.azurewebsites.net:443", the "Site name" field contains the value "vesaj-0d4bconf", the "User name" field is redacted, the "Password" field displays bullets, the "Save password" check box is checked, and the "Destination URL" field contains the value "http://vesaj-od4bconf.azurewebsites.net".](media/Recipes/OD4BCustomization/publish-to-azure.png)
+![The Publish Web dialog box is displayed, and shows the Connection tab. The Server field contains the value vesaj-od4bconf.scm.azurewebsites.net:443, the Site name field contains the value vesaj-0d4bconf, the User name field is redacted, the Password field is masked, the Save password check box is checked, and the Destination URL field contains the value http://vesaj-od4bconf.azurewebsites.net.](media/Recipes/OD4BCustomization/publish-to-azure.png)
 
 This WebJob is created as a continuous WebJob, which is needed for the queue based processing. This means that in the Main method, we only set the process to be executing continuous like follows.
 
@@ -520,7 +520,7 @@ This meant that during development time we could use OD4B.Configuration.Async.Co
 
 One of the great improvements from the debugging perspective for the WebJobs was introduced in the Visual Studio 2014 Update 4. With the newly introduced Azure connections and project templates, you can actually do remote debugging with WebJob running in the Azure side. You will need to deploy the WebJob to the Azure and after that you can start the debugging session by right clicking WebJob instance from the *Server Explorer* and choose *Attach Debugger* from the context menu.
 
-![The Server Explorer is open to "Websites", "vesaj-od4bconf", "WebJobs", "Continuous", "OD4BConfigurationAsyncWebJob". A context menu appears over "OD4BConfigurationAsyncWebJob" and the context menu option "Attach Debugger" is highlighted.](media/Recipes/OD4BCustomization/server-explorer.png)
+![The Server Explorer expanded the nested objects Websites, vesaj-od4bconf, WebJobs, Continuous, OD4BConfigurationAsyncWebJob. A context menu appears over OD4BConfigurationAsyncWebJob and the context menu option Attach Debugger is highlighted.](media/Recipes/OD4BCustomization/server-explorer.png)
 
 There’s even a tester for sending rightly formatted messages to the queue in the reference solution. *OD4B.Configuration.Async.Console.SendMessage* project was created simply to have the opportunity to debug the WebJob process without being forced to deploy the app part to anywhere. This came back again on debugging and testing the whole process step-by-step.
 
@@ -531,7 +531,7 @@ One of the interesting things about the WebJobs are that they are running under 
 
 In this case we had one JavaScript file and few files for the custom theme, which were deployed to the Azure web site, so that they could be uploaded to the SharePoint sites as needed. You can see those files in the Azure if you extend the Files branch under specific web site.
 
-![The Server Explorer is open to "Websites", "vesaj-od4bconf", "Files", "Resources", "Themes", "Garage", and displays files in the "Garage" folder.](media/Recipes/OD4BCustomization/azure-web-site.png)
+![The Server Explorer expanded the nested objects Websites, vesaj-od4bconf, Files, Resources, Themes, Garage, and displays files in the Garage folder.](media/Recipes/OD4BCustomization/azure-web-site.png)
 
 Typically in Azure web sites, you could reference to those files by using following format
 
