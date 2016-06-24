@@ -13,7 +13,7 @@ _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 |[ECM solutions](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)|Perform common ECM tasks such as setting site policies, uploading files, synchronizing term groups, and more.|
 |[Localization solutions](localization-solutions-for-sharepoint-2013-and-sharepoint-online.md)|Localize your SharePoint site contents and UI text.|
 |[Search solutions](search-solutions-in-sharepoint-2013-and-sharepoint-online.md)|Find out about the SharePoint search architecture, search APIs, and search add-ins.|
-|[Security and Performance](security-and-performance.md)|Shows you how to improve the security and performance of your SharePoint sites.|
+|[Security and Performance](security-and-performance.md)|Shows you how to improve the security and performance of your SharePoint sites with OAuth, cross-domain images, elevated privileges, and external sharing.|
 |[SharePoint Add-In Recipes](sharepoint-add-in-recipes.md)|Find a list of SharePoint add-in recipes.|
 |[Transform farm solutions to the SharePoint add-in model](Transform-farm-solutions-to-the-SharePoint-app-model.md)|Convert your farm solutions to the SharePoint add-in model.|
 |[User Profile Solutions](user-profile-solutions-for-sharepoint.md)|Work with SharePoint user profile data.|
