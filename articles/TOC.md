@@ -107,3 +107,4 @@
 ## [Use asynchronous operations in SharePoint Add-ins](use-asynchronous-operations-in-sharepoint-add-ins.md)
 ## [Use Azure WebJobs with Office 365](Use-Microsoft-Azure-WebJobs-with-Office-365.md)
 ## [Use remote event receivers in SharePoint](Use-remote-event-receivers-in-SharePoint.md)
+## [How to provide add-in app only tenant administrative permissions in SharePoint Online](how-to-provide-add-in-app-only-tenant-administrative-permissions-in-sharepoint-online.md)
