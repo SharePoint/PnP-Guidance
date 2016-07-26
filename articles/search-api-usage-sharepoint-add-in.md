@@ -44,7 +44,7 @@ The following sample demonstrates how to execute searches with the SharePoint Se
 
 - [Search.PersonalizedResults (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults)
 
-![](media/Recipes/SearchAPI/Search.PersonalizedResults.png)
+![The Search API and personalization page. Text in image: Perform Search API search. Provide search filter for tenant wide search query: Text box contains the word, Test. Button text: Perform Simple Search. Perform personalized search of all site templates using profile data. If About me does NOT contain text AppTest we search only sites which are team sites (WebTemplate = STS). If AppTest is present, we search all sites. Scenario: show sites or aggregated data from specific locations based on the user profile. Example would be to aggregate news pages which are only tagged with identifier matching current user location or city. Button text: Perform Personalized Search.](media/Recipes/SearchAPI/Search.PersonalizedResults.png)
 
 The [How to perform personalized search queries with CSOM (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/How-to-perform-personalized-search-queries-with-CSOM) walks you through the [Search.PersonalizedResults (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults).
 

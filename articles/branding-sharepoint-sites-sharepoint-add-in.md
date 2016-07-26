@@ -39,7 +39,7 @@ Here’s an example of an Office 365 SharePoint site, which has been customized 
 
 This example comes from the [Theme management using CSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.DeployCustomThemeWeb).
 
-![](media/Recipes/Themes/example-custom-theme.png)
+![A SharePoint site with an Office 365 theme.](media/Recipes/Themes/example-custom-theme.png)
 
 Challenges applying brand customization to SharePoint sites
 -----------------------------------------------------------
@@ -159,7 +159,7 @@ Use the SharePoint color palette tool to create a color palette for a SharePoint
 --------------------------------------------------------------------------------------
 The [SharePoint color palette tool](http://www.microsoft.com/en-gb/download/details.aspx?id=38182) (pictured below) is easy to use and allows you to create the color scheme for a SharePoint theme.  This tool provides a *what you see is what you get* editing experience.  When you save the color schemes this tool creates it generates a .spcolor file.
 
-![](media/Recipes/Themes/color-palette-tool.png)
+![The SharePoint Color Palette Tool](media/Recipes/Themes/color-palette-tool.png)
 
 - Creating custom color schemes for SharePoint sites is very easy and inexpensive to implement and maintain in the short and long term.
 	+ Keep in mind, a custom color scheme is just one piece of a composed look.
@@ -291,7 +291,7 @@ A composed look includes the .spcolor and .spfont files described above.  It als
 
 The following figure illustrates creating a composed look for an Office 365 SharePoint site via the web browser. Notice the portions highlighted in orange.  These highlights indicate the .spcolor and .spfont files described above.  It is important to note that the .spcolor file is referred to as the Theme URL.  This is consistent with the description of a SharePoint theme for an Office 365 SharePoint site.
 
-![](media/Recipes/Themes/new-theme-browser.png)
+![The composed look fields: Title contains My Theme. Name contains My Theme's Name. Master Page URL contains https://site.sharepoint.com/_catalogs/masterpage/seattle.master. Theme URL contains https://site.sharepoint.com/_catalogs/theme/15/custom.spcolor with .spcolor highlighted in orange. Image URL contains https://site.sharepoint.com/_catalogs/theme/15/custom-bg.jpg. Font Scheme URL contains https://site.sharepoint.com/_catalogs/theme/15/custom.spfont with .spfont highlighted in orange. Display order contains 100.](media/Recipes/Themes/new-theme-browser.png)
 
 - Using composed looks for SharePoint sites provides a good level of customization.
 - Using composed looks for SharePoint sites requires a small amount of time to implement and maintain in the short and long term.
@@ -319,7 +319,7 @@ Summary
 -------
 The following chart summarizes all your options to brand a SharePoint site at a high level.
 
-![](media/Recipes/Themes/option-comparison-chart.png)
+![A bar graph of Branding Options, Capability vs. Cost. Office 365 Themes have very low customization cost, maintenance cost and capability. Composed looks (color schemes, font schemes), have low customization cost and maintenance cost with low-to-medium capability. Color schemes have low customization cost, maintenance cost, and capability. Font schemes have low customization cost, maintenance cost, and capability. Alternate CSS has medium customization cost, maintenance cost, and capability. JavaScript embedding/injection has medium customization cost, maintenance cost, and capability. Custom Master has high customization cost, maintenance cost, and capability.](media/Recipes/Themes/option-comparison-chart.png)
 
 Related links
 =============

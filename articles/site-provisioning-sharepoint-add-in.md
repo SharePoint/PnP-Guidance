@@ -10,7 +10,7 @@ In an SharePoint Add-in model scenario, you can use the SharePoint Client Side O
 
 At a high level, the remote provisioning pattern looks like this:
 
-![](media/Recipes/SiteProvisioning/overview.png)
+![1) A remote timer job, goes to 2) Initial provisioning based on the out of the box site. Usually either team site or publishing site. Assets are uploaded from the provisioning engine using CSOM/REST. 3) Apply the needed changes (configurations etc.) on top of the out of the box site based on the user selection to create the Project site, Organizational site, or Workgroup site. This is the specialization part, but since we start from OOB site, we always get the latest improvements to it as a base line.](media/Recipes/SiteProvisioning/overview.png)
 
 High Level Guidelines
 ---------------------
@@ -94,15 +94,15 @@ In this pattern, the link to create a site collection is overridden with a link 
 
 To override the create site link open the settings page in the SharePoint admin center (shown below).
 
-![](media/Recipes/SiteProvisioning/sp-admin-center.png)
+![The SharePoint admin center menu, with the settings menu option highlighted.](media/Recipes/SiteProvisioning/sp-admin-center.png)
 
 Then, check the Use the form at this URL checkbox and enter the URL to the Provider-hosted SharePoint Add-in that implements the site creation functionality (shown below).
 
-![](media/Recipes/SiteProvisioning/override-warning.png)
+![An OK Cancel dialog box entitled Message from webpage which says, By changing the location where users create sites, you may be permitting them to run custom script which can access other sites (for more details, see http://go.microsoft.com/fwlink/?LinkId=164264). To prevent this, run the following SharePoint Online Management Shell command: Set-SPOsite <SiteURL> -DenyAddAndCustomizePages 1 Do you still want to change the location where users create sites?](media/Recipes/SiteProvisioning/override-warning.png)
 
 Notice SharePoint warns you (in the dialog below) about the security implications associated with this approach and provides you with an option to disable this type of functionality.
 
-![](media/Recipes/SiteProvisioning/override-form.png)
+![On this page, an arrow points to the check box entitled, Use the form at this URL, which is not checked. Other text and controls on this page: Give users a shortcut to create new Team Sites at a defined location. Radio button Hide the link is not selected, radio button Show the link is selected. Site classification field is Hidden from users. Secondary contact field is Not required.](media/Recipes/SiteProvisioning/override-form.png)
 
 **When is it a good fit?**
 
