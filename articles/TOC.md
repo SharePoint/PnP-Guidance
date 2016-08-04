@@ -79,6 +79,7 @@
 ### [Replace files deployed using modules in farm solutions](replace-files-deployed-using-modules-in-sharepoint-farm-solutions.md)
 ### [Replace lists created from list definitions](replace-sharepoint-lists-created-from-list-definitions.md)
 ### [Replace Web Parts with add-in parts](replace-sharepoint-web-parts-with-add-in-parts.md)
+## [Sandbox Solution Transformation Guidance](Sandbox-Solution-Transformation-Guidance.md)
 ## [User Profile Solutions](user-profile-solutions-for-sharepoint.md)
 ### [Read or update user profile properties](Read-or-update-user-profile-properties-sample-app-for-SharePoint.md)
 ### [Migrate user profile properties](Migrate-user-profile-properties-sample-app-for-SharePoint.md)
