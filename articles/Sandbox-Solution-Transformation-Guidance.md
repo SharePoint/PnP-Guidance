@@ -1,11 +1,11 @@
 # Sandbox Solution transformation guidance 
-Transform or convert your code-behind sandbox solutions to the SharePoint add-in model. Learn about the options and strategies on converting existing code-behind functionalities to SharePoint add-in model or alternative solutions.
+Transform or convert your code-based sandbox solutions to the SharePoint add-in model. Learn about the options and strategies on converting existing code-based functionalities to SharePoint add-in model or alternative solutions.
 
 _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
-Code-behind sandbox solutions [were deprecated](https://blogs.msdn.microsoft.com/sharepointdev/2014/01/14/deprecation-of-custom-code-in-sandboxed-solutions/) back in 2014 and SharePoint online has started the process to completely remove this capability. 
+Code-based sandbox solutions [were deprecated](https://blogs.msdn.microsoft.com/sharepointdev/2014/01/14/deprecation-of-custom-code-in-sandboxed-solutions/) back in 2014 and SharePoint online has started the process to completely remove this capability. 
 
-If you have extended your SharePoint Online environment by using code-behind sandbox solutions, you'll need to transform away from code-behind sandbox solutions, due the deprecation of. Transforming your sandbox solutions to the SharePoint add-in model involves analyzing your existing extensions, designing and developing your new add-in for SharePoint, and then testing and deploying your add-in in your production environment. 
+If you have extended your SharePoint Online environment by using code-based sandbox solutions, you'll need to transform away from code-based sandbox solutions, due the deprecation of. Transforming your sandbox solutions to the SharePoint add-in model involves analyzing your existing extensions, designing and developing your new add-in for SharePoint, and then testing and deploying your add-in in your production environment. 
 
 ## Steps to perform transformation
 <a name="sectionSection0"> </a>
