@@ -1,21 +1,8 @@
-
 # Use remote provisioning to brand SharePoint pages
+
 Use remote provisioning to interact with themes in SharePoint.
 
- **Last modified:** March 24, 2015
-
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [ApplyTheme method](#sectionSection0)
-
- [ThemeInfo class](#sectionSection1)
-
- [Using ApplyTheme and ThemeInfo in CSOM code](#sectionSection2)
-
- [Additional resources](#bk_addresources)
-
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 You can apply and interact with themes by using remote provisioning features in SharePoint. These features are provided by the following APIs:
 
@@ -32,7 +19,6 @@ For a sample that shows you how to apply an existing or custom theme, see  [Bran
 
 Use the  **ApplyTheme** client-side method when you use remote provisioning to apply themes, as shown in the following example.
 
-
 ```
 public void ApplyTheme(
 	    	string colorPaletteUrl,
@@ -40,11 +26,9 @@ public void ApplyTheme(
 	    	string backgroundImageUrl,
 		    bool shareGenerated
              )
-
 ```
 
 The  **ApplyTheme** method uses the following parameters:
-
 
 - colorPaletteUrl - The server-relative URL of the color palette file (for example, spcolor).
     
@@ -53,16 +37,13 @@ The  **ApplyTheme** method uses the following parameters:
 - backgroundImageUrl - The server-relative URL of the background image. If there is no background image, this parameter returns a **null** reference.
     
 - shareGenerated - A Boolean value. **True** if the generated theme files should be applied to the root web; **false** if they are to be stored in the current web.
-    
 
 **Note**  The shareGenerated parameter determines whether the themed output files are stored in a web-specific location or a location that is accessible across the site collection. We recommend that you keep the default value for your site type.
-
 
 ## ThemeInfo class
 <a name="sectionSection1"> </a>
 
 You can use CSOM code to get information about the composed looks that are applied to a site. The  [ThemeInfo](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.themeinfo.aspx) class gets the context associated with the themes, as shown in the following example.
-
 
 ```
 public ThemeInfo ThemeInfo { get; }
@@ -70,12 +51,10 @@ public ThemeInfo ThemeInfo { get; }
 
 You can use the  **ThemeInfo** class to get details about themes that are applied to a site, including descriptions, context, object data, colors, and fonts for the specified name (and fonts for the specified language code), as well as the URI for the background image defined for the composed look.
 
-
 ## Using ApplyTheme and ThemeInfo in CSOM code
 <a name="sectionSection2"> </a>
 
 The following code example shows how to use  **ApplyTheme** and **ThemeInfo** in CSOM code. You can use this code in the remote provisioning pattern. For example, you might decide to create composed looks programmatically, as specified by a designer, and provision them to sites in your web application.
-
 
 ```C#
 using System;
@@ -289,18 +268,13 @@ namespace ApplyThemeAppWeb.Pages
         }
     }
 }
-
-
 ```
-
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
--  [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)
+-  [SharePoint site branding and page customization solutions](SharePoint-site-branding-and-page-customization-solutions.md)
     
--  [Use composed looks to brand SharePoint sites](97342600-351b-4438-9a6f-0d71b926c6d9.md)
+-  [Use composed looks to brand SharePoint sites](Use-composed-looks-to-brand-SharePoint-sites.md)
     
 -  [Branding.Themes sample](https://github.com/Lauragra/PnP/tree/master/Samples/Branding.Themes)
-    

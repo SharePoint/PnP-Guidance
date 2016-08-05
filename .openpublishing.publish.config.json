@@ -1,0 +1,20 @@
+{
+    "build_entry_point": "",
+    "need_generate_pdf": false,
+    "git_repository_url_open_to_public_contributors": "https://github.com/OfficeDev/PnP-Guidance",
+    "git_repository_branch_open_to_public_contributors": "master",
+    "docsets_to_publish": [
+        {
+            "docset_name": "PnP_articles",
+            "build_output_subfolder": "articles",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "true",
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        }
+    ],
+  "notification_subscribers": [ "lauragra@microsoft.com", "vesaj@microsoft.com", "v-roharp@microsoft.com", "bjansen@microsoft.com" ],
+    "branches_to_filter": [""]
+}

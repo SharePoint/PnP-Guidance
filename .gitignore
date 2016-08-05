@@ -182,3 +182,17 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 *.db
+
+# Open Publishing
+log/
+xhtml/
+packages/
+obj/
+_site/
+Tools/NuGet/
+.optemp/
+.vscode/
+
+.openpublishing.build.mdproj
+.openpublishing.buildcore.ps1
+packages.config

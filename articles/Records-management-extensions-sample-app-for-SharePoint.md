@@ -1,15 +1,14 @@
 # Records management extensions sample app for SharePoint
+
 As part of your Enterprise Content Management (ECM) strategy, you can enable and change in-place records management settings on your SharePoint sites and lists.
 
-    
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 The [ECM.RecordsManagement](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.RecordsManagement) sample shows you how to use a provider-hosted SharePoint app to control the in-place records management settings for a site or list.    
 
 Use this solution if you want to:
 
 - Configure in-place records management settings during your custom site provisioning process.
-    
  
 ## Before you begin
 <a name="sectionSection0"> </a>
@@ -17,7 +16,6 @@ Use this solution if you want to:
 To get started, download the  [ECM.RecordsManagement](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.RecordsManagement) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this app:
-
 
 - Activate the In-Place Records Management feature on the site collection, as shown in Figure 1.
     
@@ -31,17 +29,14 @@ Before you run this app:
 
     ![Screenshot of the Site Settings page with Record declaration settings highlighted.](media/13a6a490-68cd-4f70-8714-cd6222325890.png)
 
-
 ## Using the ECM.RecordsManagement sample app
 <a name="sectionSection1"> </a>
 
  When you start the app, the start page displays the two scenarios that are available:
 
-
 - Enabling in-place records management for sites
     
 - Enabling in-place records management for lists
-    
 
 **Figure 3. ECM.RecordsManagement app start page**
 
@@ -49,9 +44,7 @@ Before you run this app:
 
 You can use scenario 1 to build a UI to control the records management settings on your site collection. The UI in this app is similar to the UI found in **Records declaration settings** in **Site Settings** (see Figure 2). You can also activate or deactivate the In-Place Records Management feature on your site collection.
 
-
 You can use Scenario 2 to build a UI to control the records management settings on lists. The UI in this app is similar to the UI found in  **Records declaration settings** in the library settings on your list.
-
 
 **Figure 4. Record declaration settings on a list**
 
@@ -60,19 +53,13 @@ You can use Scenario 2 to build a UI to control the records management settings 
 
 Scenario 1 addresses in-place records management features and settings for sites. The app UI includes a  **Deactivate** (or **Activate**) button, as shown in Figure 5. Choosing this button deactivates (or activates) the In-Place Records Management feature on the site collection. 
 
-
 **Figure 5. Deactivate button for the In-Place Records Management feature**
 
 ![Screenshot that shows the deactivate or activate button for in-place records management.](media/b1a29cad-4239-4f49-a3e8-ca4e8ca99667.png)
 
 The following code activates or deactivates the In-Place Records Management feature on the site collection. The  **DisableInPlaceRecordsManagementFeature** and **EnableSiteForInPlaceRecordsManagement** methods are part of the AppModelExtensions\RecordsManagementExtensions.cs file in the [OfficeDevPnP.Core](https://github.com/OfficeDev/PnP/tree/master/OfficeDevPnP.Core).
-
-
     
 **Note**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
-
-
 
 ```C#
 protected void btnToggleIPRStatus_Click(object sender, EventArgs e)
@@ -88,13 +75,9 @@ protected void btnToggleIPRStatus_Click(object sender, EventArgs e)
                 IPRStatusUpdate(true);
             }
         }
-
 ```
 
 OfficeDevPnP.Core includes extension methods to get and set all site-scoped in-place records management settings. The following code from the  **EnableSiteForInPlaceRecordsManagement** method shows how to use these extension methods to set restrictions, and specify who can declare or undeclare records on your site.
-
-
-
 
 ```C#
 public static void EnableSiteForInPlaceRecordsManagement(this Site site)
@@ -120,13 +103,9 @@ public static void EnableSiteForInPlaceRecordsManagement(this Site site)
             site.SetRecordUnDeclarationBy(EcmRecordDeclarationBy.OnlyAdmins);
 
         }
-
 ```
 
 When the user changes their in-place records management settings and chooses the  **Save changes** button, the following code in the **btnSaveSiteScopedIPRSettings_Click** method runs.
-
-
-
 
 ```C#
 protected void btnSaveSiteScopedIPRSettings_Click(object sender, EventArgs e)
@@ -139,13 +118,9 @@ protected void btnSaveSiteScopedIPRSettings_Click(object sender, EventArgs e)
             EcmRecordDeclarationBy unDeclareBy = (EcmRecordDeclarationBy)Convert.ToInt32(rdUndeclarationBy.SelectedValue);
             cc.Site.SetRecordUnDeclarationBy(unDeclareBy);
         }
-
 ```
 
 In the previous code, a call is made to the  **SetRecordRestrictions** method in RecordsManagementExtensions.cs. The **SetRecordRestrictions** method in the next example shows how to set restrictions on the records.
-
-
-
 
 ```C#
 public static void SetRecordRestrictions(this Site site, EcmSiteRecordRestrictions restrictions)
@@ -169,21 +144,15 @@ public static void SetRecordRestrictions(this Site site, EcmSiteRecordRestrictio
             // Set property bag entry.
             site.RootWeb.SetPropertyBagValue(ECM_SITE_RECORD_RESTRICTIONS, restrictionsProperty);
         }
-
 ```
-
 
 ### Scenario 2
 
 Scenario 2 shows how to interact with in-place records management settings for lists. When the app installs, it creates a document library called IPRTest. When you use this app to change and save the in-place records management settings, the changes are applied to IPRTest. 
 
-
 **Note**  To use in-place records management settings on a list, you must activate the In-place Records Management feature on your site collection, as shown in Figure 1 earlier in this article. 
 
 The following code in Default.aspx.cs runs when a user chooses the  **Save Changes** button.
-
-
-
 
 ```C#
 protected void btnSaveListScopedIPRSettings_Click(object sender, EventArgs e)
@@ -202,18 +171,13 @@ protected void btnSaveListScopedIPRSettings_Click(object sender, EventArgs e)
             }
 
         }
-
 ```
 
 The code calls the following two methods in the RecordsManagementExtensions.cs file of OfficeDevPnP.Core:
 
-
 -  **SetListManualRecordDeclaration** - Defines the manual records declaration setting for this list.
     
 -  **SetListAutoRecordDeclaration** - Automatically declares items added to this list as a record. If records declaration is set to automatic on this list, the manual records declaration settings on the list no longer apply. Event receivers are added to the list to start specific records management actions when events occur.
-    
-
-
 
 ```C#
 public static void SetListManualRecordDeclaration(this List list, EcmListManualRecordDeclaration settings)
@@ -330,15 +294,11 @@ public static void SetListAutoRecordDeclaration(this List list, bool autoDeclare
                 //Note: Existing list event handlers will just stay as they are, no need to remove them.
             }
         }
-
 ```
-
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](https://msdn.microsoft.com/en-us/library/dn904530(v=office.15).aspx)
+-  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
 -  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core)
-    

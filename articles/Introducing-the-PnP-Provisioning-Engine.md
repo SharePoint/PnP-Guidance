@@ -1,26 +1,8 @@
 # Introducing the PnP Provisioning Engine
 
-**Last modified:** July 24, 2015
-
 **Author:** Paolo Pialorsi - [www.piasys.com](http://www.piasys.com/) - [@PaoloPia](https://www.twitter.com/PaoloPia/)
 
- _**Applies to:** SharePoint 2013 | SharePoint Online | Office 365_
-
-
- **In this article**
-
- [The Goal](#thegoal)
-
- [Creating a Provisioning Template](#creatingtemplate)
-
- [Applying a Provisioning Template](#applyingtemplate)
-
- [Advanced Topics](#advancedtopics)
- 
- [Requirements and Wrap Up](#wrapup)
-
- [Additional resources](#bk_addresources)
-
+_**Applies to:** SharePoint 2013 | SharePoint Online | Office 365_
 
 This short whitepaper introduces the PnP Provisioning Engine, which has been release in April 2015 within the [OfficeDev PnP](http://aka.ms/officedevpnp) project, and which will be updated on a monthly basis, accordingly to the release schedule of the Office Dev PnP Core Library. What you will see here is available thanks to the efforts of some of the Office Dev PnP Core Team members ([Vesa Juvonen](https://twitter.com/vesajuvonen), [Bert Jansen](https://twitter.com/O365Bert), [Frank Marasco](https://twitter.com/frank_marasco), [Erwin van Hunen](https://twitter.com/erwinvanhunen), and [me](https://twitter/paolopia)), as well as the whole OfficeDev PnP community.
 
@@ -65,7 +47,6 @@ Let's target the Microsoft SharePoint Online, which so far has been more tested 
 ![The architecture of the PnP Provisioning Engine Framework](./media/Introducing-the-PnP-Provisioning-Engine/Figure-4-PnP-Provisioning-Framework-Outline.png)
 
 The result of extracting and saving a *ProvisioningTemplate* instance object will be for instance an XML file like the one shown in the following XML code excerpt:
-
     
     <?xml version="1.0"?>
     <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/05/ProvisioningSchema">
@@ -243,7 +224,7 @@ On an average, the library will take around a couple of minutes to apply the tem
 <a name="advancedtopics"> </a>
 ## Advanced Topics
 
-This is just an introductory article, in the near future we will go deeper about some more advanced topics. Nevertheless, it is important to underline that using the new PnP Provisioning Engine you can also provision Taxonomies, you can use variables and tokens, which can be replaced at runtime, based on what you are provisioning (List IDs, Parameters, Terms’ IDs, etc.). You can invoke the provisioning engine from timer job services, provider hosted apps, external sites, or whatever else. Lastly, you can use the PnP Provisioning Engine to move artifacts from test/staging environments to production environments.
+This is just an introductory article, in the near future we will go deeper about some more advanced topics. Nevertheless, it is important to underline that using the new PnP Provisioning Engine you can also provision Taxonomies, you can use variables and tokens, which can be replaced at runtime, based on what you are provisioning (List IDs, Parameters, Terms’ IDs, etc.). You can invoke the provisioning engine from timer job services, provider hosted add-ins, external sites, or whatever else. Lastly, you can use the PnP Provisioning Engine to move artifacts from test/staging environments to production environments.
 
 Moreover, on Channel 9 there is a [section dedicated to OfficeDev PnP](http://aka.ms/OfficeDevPnPVideos), where you can watch some videos about the PnP Provisioning Engine and the PnP PowerShell Extensions:
 
@@ -264,4 +245,3 @@ Please, play with the PnP Provisioning Engine, give us feedbacks, and enjoy the 
 -  [Office 365 Development Patterns & Practices on GitHub](https://github.com/OfficeDev/PnP/)
     
 -  [Yammer Network for Office 365 Professionals](https://www.yammer.com/itpronetwork/)
-    

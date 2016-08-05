@@ -26,7 +26,7 @@ In this step you will create an Azure website that will be used to host the web 
 1. On the **websites** page, click the **NEW** link in the footer found in the lower-left corner of the page.
 1. In the wizard that appears, select **Quick Create**, enter a name for the site in the **URL** field, select a **Web Hosting Plan** and **Subscription**. 
 
-  ![](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-01.png)
+  ![The Quick Create settings: The URL field is set to o365api-01, Web Hosting Plan is set to Default1 (East US, Standard), Subscription is set to Azure MSDN (primary).](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-01.png)
 
   > Make sure to keep a note of the name of the website you create as it will be needed later.
 
@@ -42,15 +42,13 @@ Give Azure a few moments to create the site. After creating the site you can spe
   - **ida:TenantID** 
 1. Copy the corresponding values from the working project's `web.config` to these settings values in your Azure website as shown in the following figure:
 
-  ![](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-02.png)
+  ![WEBSITE_NODE_DEFAULT_VERSION is 0.10.32, ida:ClientID is 92b1e137-c36f-4bfe-9e1c-01ef546ce4a9, ida:Password is Bns06N18ZiyYfMcyU9qUfGnZbnkBiPZfUptLDsU6cml, ida:TenantId is partially redacted. The center numbers of the GUID are -45ee-8afc-.](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-02.png)
 
 1. In the footer, click the **SAVE** button to save your changes.
 
 At this point the Azure website is setup and configured to host the Office 365 API web project that you will deploy in a later step.
 
-
 [back to top](#deploying-development-office-365-sites-to-microsoft-azure)
-
 
 # Configure the Azure AD Application
 
@@ -62,20 +60,18 @@ In this step you will modify the Azure AD application used in the development & 
 1. Next, click the **APPLICATIONS** item in the top navigation.
 1. Within the **Properties** section, update the **SIGN-ON URL** to point to the default URL of the Azure Website you created. Take note to use the HTTPS endpoint that is provided with all Azure websites.
 
-  ![](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-03.png)
+  ![Name is set to O365-WebApp-SingleTenant.Office365App, Sign-on URL is set to https://o365api-01.azurewebsites.net](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-03.png)
 
 1. Within the **Single Sign-On** section, update the **App ID URI** to use the domain for the Azure website (shown in the following figure).
 1. Next, update the **REPLY URL** so the only URL listed is the homepage of the Azure website:
 
-  ![](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-04.png)
+  ![App ID URI is https://o365api-01.azurewebsites.net/O365-WebApp-SingleTenant, Reply URL is https://o365api-01.azurewebsites.net/](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-04.png)
 
 1. In the footer, click the **SAVE** button to save your changes.
 
 At this point, the Azure AD application used by the Office 365 API web project has been configured to work with the new Azure website.
 
-
 [back to top](#deploying-development-office-365-sites-to-microsoft-azure)
-
 
 # Configure the ASP.NET Project
 
@@ -83,10 +79,10 @@ In this step you will configure the ASP.NET project in your application to use t
 
 For the sample application used in the example for this guidance, no extra work is actually required. However the web application does contain the settings within the `web.config` file for the Azure AD application and Azure AD tenant used during development. Some developers may choose to use different Azure AD applications or even different Azure subscriptions for their development and production instances.
 
-In a previous step outlined in this page, when you created the Azure website you set the app settings for the application that are typically found in the `web.config`. To ensure the web application receives these values from the Azure website configuration, it's recommended you replace the values within the `web.config` with placeholder values instead.
+In a previous step outlined in this page, when you created the Azure website you set the add-in settings for the application that are typically found in the `web.config`. To ensure the web application receives these values from the Azure website configuration, it's recommended you replace the values within the `web.config` with placeholder values instead.
 
 1. Open the project's `web.config` file.
-1. Locate the app settings for the **ida:ClientID**, **ida:Password** and **ida:TenantId**.
+1. Locate the add-in settings for the **ida:ClientID**, **ida:Password** and **ida:TenantId**.
 1. Replace the values of these settings with a placeholder value:
 
   ````xml
@@ -95,20 +91,17 @@ In a previous step outlined in this page, when you created the Azure website you
   <add key="ida:Password" value="set-in-azure-website-config" />
   ````
 
-1. Save you changes.
+1. Save your changes.
 
 At this point the web application, Azure website & application in Azure AD are all configured correctly and ready to be deployed.
 
-
 [back to top](#deploying-development-office-365-sites-to-microsoft-azure)
-
 
 # Deploy the Office 365 API ASP.NET Web Application
 
 In this step you will publish the Office 365 API web application to the Azure website. Once the site has been deployed you will test it to ensure everything works as desired.
 
 > This step assumes you have he Microsoft [Azure SDK](http://azure.microsoft.com/en-us/downloads/), version 2.0 or higher, installed. 
-
 
 ## Deploy the ASP.NET Web Application
 
@@ -120,11 +113,11 @@ In this step you will publish the Office 365 API web application to the Azure we
 
 1. After logging in, select the website that you created in a previous step from this page and click **OK**.
 
-  ![](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-05.png)
+  ![The Select Existing Website dialog shows Existing Websites set to o365api-01.](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-05.png)
 
 1. On the **Connection** tab, click the **Validate Connection** button to ensure the connection profile was successfully downloaded and applied.
 
-  ![](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-06.png)
+  ![An arrow points to the Validate Connection button near the bottom of the dialog box, with a green check mark next to the button.](media/Move-O365Api-Project-from-Dev-To-Prod/Move-O365Api-Project-from-Dev-To-Prod-06.png)
 
 1. Click the **Publish** button to publish the web application to the Azure website.
 
@@ -137,14 +130,13 @@ By default this is the HTTP endpoint. Recall from the previous step when you con
 1. In the browser, update the URL to go to the HTTPS homepage for the Azure website. In the example in this page, that is https://o365api-01.azurewebsites.net.
 1. Click the **Sign In** link in the header at the top-right of the page. This will redirect you to the Azure AD sign on page.
 
-  > If you get an error at this point, it's likely an issue with the three app settings you created for the Azure website. Go back and make sure the values are the correct values from the Azure AD tenant & application. You should see a URL that looks 
+  > If you get an error at this point, it's likely an issue with the three add-in settings you created for the Azure website. Go back and make sure the values are the correct values from the Azure AD tenant & application. You should see a URL that looks 
 
 1. After successfully logging in, you will be redirected back to the homepage for the web application of the Azure website you created.
 
 At this point you have successfully deployed your Office 365 API web application project to run in an Azure website.
 
 [back to top](#deploying-development-office-365-sites-to-microsoft-azure)
-
 
 ----------
 

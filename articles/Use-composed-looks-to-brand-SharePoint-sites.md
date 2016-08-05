@@ -1,23 +1,8 @@
-
 # Use composed looks to brand SharePoint sites
+
 Apply composed looks, including colors, fonts, and a background image, to your SharePoint 2013 and SharePoint Online sites by using the SharePoint theming engine.
 
- **Last modified:** April 03, 2015
-
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
- [SharePoint theming engine](#sectionSection0)
-
- [Create custom themes](#sectionSection1)
-
- [Add a custom theme to SharePoint](#sectionSection2)
-
- [What does the theming engine do when a user applies a composed look?](#sectionSection3)
-
- [Additional resources](#bk_addresources)
-
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 You can apply composed looks to your SharePoint sites. Composed looks are out-of-the-box themes that are included in SharePoint 2013 and SharePoint Online. 
 To apply a composed look to a SharePoint site, select **Site Settings** > **Look and Feel** > **Change the look**. You can then use the Change the look wizard to customize the colors, fonts, master page, and background image of a composed look. The Change the look wizard copies, transforms, and stores CSS in SharePoint's content database. It also recolors images and stores them in the content database. 
@@ -29,7 +14,6 @@ You can use the SharePoint 2013 theming engine to apply colors, fonts, and a bac
 
 In SharePoint 2013 and SharePoint Online, a theme is a connected set of XML definition files, an image file, and an associated master page that you can use to apply custom CSS to a site. The following XML files define color slots and font slots that define the details of specific colors and fonts as they're applied to styles: 
 
-
 - .spcolor
     
 - .spfont
@@ -38,21 +22,17 @@ You can create your own color and font files in your favorite text editor.
 
 The following table lists the elements of a composed look.
 
-
-
 |**Element**|**File or files**|**Where it's stored**|**Required?**|
 |:-----|:-----|:-----|:-----|
 |Color palette|.spcolor|Theme Gallery\15 folder|Yes|
 |Font scheme|.spfont|Theme Gallery\15 folder|No|
-|Site layout|.master.preview|Master Page Gallery|Yes|
-|Background image|.jpg.bmp.png.gif|Site assets|No|
+|Site layout|<p>.master</p><p>.preview</p>|Master Page Gallery|Yes|
+|Background image|<p>.jpg</p><p>.bmp</p><p>.png</p><p>.gif</p>|Site assets|No|
 Users can select composed looks by using the Change the look wizard (**Site Settings** > **Look and Feel** > **Change the Look**), the Getting Started UI, or directly in the site actions menu. When a user selects a composed look, the theming engine applies colors, fonts, background images, the associated .master page, and the .preview file associated with the .master page to the site. 
-
 
 ### Color palettes
 
 The theming engine stores colors in color palettes defined by the .spcolor file, as shown in Figure 1. Color palettes are stored in the Theme Gallery of the root site. A color palette is an editable XML file made up of color palette definitions and color slots. Color palette metadata ( `<s:colorPalette>`) defines the following:
-
 
 - Three preview slots that define what color slots to use in composed look previews.
     
@@ -62,8 +42,7 @@ The theming engine stores colors in color palettes defined by the .spcolor file,
     
 Color slots are defined by two attributesâ€”color name and valueâ€”that define a name for the color and its RGB value. Color slots have semantic names, such as BodyText or SiteTitle, that help you identify which slots correspond to a region of a SharePoint page.
 
- `<s:color name="BodyText" value="444444" />`
-
+`<s:color name="BodyText" value="444444" />`
 
 **Figure 1. .spcolor file**
 
@@ -74,7 +53,6 @@ Line 2 of the .spcolor file defines the XML namespace, preview slots, and whethe
 The .spcolor file contains 89 color slots. You can use color slots to define richer aspects of color, including opacity, by using 8-digit hexadecimal values. For example, if green is RRGGBB 00FF00, a 70 percent opaque green is AARRGGBB 7F00FF00. If SharePoint uses a slot that you don't define, any CSS that references it won't change color. If a slot is defined that is never referenced in CSS, the color is never shown in the UI.
 
 You can edit the .spcolor file in Notepad. You cannot edit it in PowerPoint.
-
 
 ### Color palette tool
 
@@ -89,13 +67,11 @@ The tool displays the colors in hexadecimal format, so you can easily copy and p
 
 The .spcolor file is the only file that is required for a new theme, but you might need to add some custom font declarations, depending on the depth of your design. To do that, you need to access the .spfont file.
 
-
 ### Font schemes
 
 In the same way that color palettes define how colors are used in composed looks, font schemes define the fonts in composed looks. 
 
 Font schemes are defined in the .spfont file stored in the Theme Gallery. The .spfont file includes the following font slots that define the name, typeface, and script values of a composed look:
-
 
 - Title
     
@@ -113,7 +89,6 @@ Font schemes are defined in the .spfont file stored in the Theme Gallery. The .s
     
 Fonts are further scoped by script type (for example, Latin, Arabic, Cyrillic). Web fonts support is included in four file types:
 
-
 - Embedded open type (EOT)
     
 - Web open font format file (WOFF)
@@ -124,13 +99,9 @@ Fonts are further scoped by script type (for example, Latin, Arabic, Cyrillic). 
     
 The font scheme defines a large preview image and a small preview image. They are required only for web fonts.
 
-
 **Note**  You can edit the .spfont file in Notepad. You cannot edit it in PowerPoint.
 
 The following is an example of an .spfont file.
-
-
-
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -151,9 +122,7 @@ The following is an example of an .spfont file.
         </s:fontSlot>
     </s:fontSlots>
 </s:fontScheme>
-
 ```
-
 
 ### Site layout: master pages and corresponding preview files
 
@@ -163,17 +132,14 @@ The site layout is pulled from the Master Page Gallery of any master pages that 
 
 To make a master page available from the Site Layout drop-down menu, create a .preview file that corresponds to the .master page. The .preview file displays thumbnail images for the composed look and the preview section to the right of the **Change the look** options on the designbuilder.aspx page.
 
-
 ### Background image
 
 You can change the background image of a composed look by choosing **Change**. This opens an upload dialog box that you can use to upload an image file. You can also drag your own image onto the background preview.
-
 
 ## Create custom themes
 <a name="sectionSection1"> </a>
 
 To create a custom theme:
-
 
 1. Go to **Site settings**, and under the Web Designer Galleries heading, select **Themes** > **15**. A list of .spcolor and .spfont files appears, as shown in Figure 3.
     
@@ -194,15 +160,15 @@ To create a custom theme:
    The following table maps colors and page elements to their code in the .spcolor file. It is a subset of the mappings that are available in the .spcolor file.
     
 
-|**Element**|**Color**|**Code**|
-|:-----|:-----|:-----|
-|Body text|Black| `<s:color name="BodyText" value="000000" />`|
-|Global navigation background|Blue| `<s:color name="HeaderBackground" value="018dff" />`|
-|Global navigation text|White| `<s:color name="HeaderNavigationText" value="ffffff" />`|
-|Current navigation background|Red| `<s:color name="NavigationHoverBackground" value="e51400" />`|
-|Current navigation text|White| `<s:color name="Navigation" value="ffffff" />`|
-|Title|White| `<s:color name="SiteTitle" value="FFFFFF" />`|
-|Footer background|Black| `<s:color name="FooterBackground" value="000000" />`|
+	|**Element**|**Color**|**Code**|
+	|:-----|:-----|:-----|
+	|Body text|Black| `<s:color name="BodyText" value="000000" />`|
+	|Global navigation background|Blue| `<s:color name="HeaderBackground" value="018dff" />`|
+	|Global navigation text|White| `<s:color name="HeaderNavigationText" value="ffffff" />`|
+	|Current navigation background|Red| `<s:color name="NavigationHoverBackground" value="e51400" />`|
+	|Current navigation text|White| `<s:color name="Navigation" value="ffffff" />`|
+	|Title|White| `<s:color name="SiteTitle" value="FFFFFF" />`|
+	|Footer background|Black| `<s:color name="FooterBackground" value="000000" />`|
 
 6. To customize .spfont, download a copy of a .spfont file and open it in a text editor. Notice that the .spfont file is laid out a bit differently than .spcolor, but that both files share a similar structure. 
     
@@ -219,7 +185,6 @@ To create a custom theme:
     **Note**  Save the file with a new file name (for example, custom_font.spfont).
 
     The following table maps page elements to fonts as they're defined in the .spfont file.
-    
 
 |**Element**|**Font**|**Code**|
 |:-----|:-----|:-----|
@@ -228,20 +193,16 @@ To create a custom theme:
 |Headings|Trajan Pro| `<s:cs typeface="Trajan Pro" />`|
 |Body|Open Sans| `<s:cs typeface="Open Sans" />`|
 
-   You might have to ensure that some custom fonts are available to users' browsers. For example, if the headings refer to a Trajan Pro font, which is uncommon on most users' computers, add the following font declarations at the top of the <s:fontSlot> declaration. This will ensure that the correct font is displayed. 
-    
+You might have to ensure that some custom fonts are available to users' browsers. For example, if the headings refer to a Trajan Pro font, which is uncommon on most users' computers, add the following font declarations at the top of the <s:fontSlot> declaration. This will ensure that the correct font is displayed. 
 
-
-  ```XML
-  <s:latin typeface=" Trajan Pro" eotsrc="/SiteAssets/Trajan Pro.eot" woffsrc="/SiteAssets/Trajan Pro.woff" ttfsrc="/SiteAssets/Trajan Pro.ttf" svgsrc="/SiteAssets/Trajan Pro.svg"  />
-  ```
-
+```XML
+<s:latin typeface=" Trajan Pro" eotsrc="/SiteAssets/Trajan Pro.eot" woffsrc="/SiteAssets/Trajan Pro.woff" ttfsrc="/SiteAssets/Trajan Pro.ttf" svgsrc="/SiteAssets/Trajan Pro.svg"  />
+```
 
 ## Add a custom theme to SharePoint
 <a name="sectionSection2"> </a>
 
 After you make your customizations to the master page, .spcolor, and .spfont files, add them to the Composed Looks directory so that SharePoint can access them. 
-
 
 1. Go to **Site settings**, and under **Web Designer Galleries**, select **Composed Looks**. 
     
@@ -255,25 +216,23 @@ After you make your customizations to the master page, .spcolor, and .spfont fil
     
 4. Complete the remaining field:
     
-      - In the **Master Page URL** field, add the URL of the master page you would like the theme to use.
+	- In the **Master Page URL** field, add the URL of the master page you would like the theme to use.
     
-  - In the **Theme URL** field, add the URL of the .spcolor file.
+	- In the **Theme URL** field, add the URL of the .spcolor file.
     
-  - In the **Image URL** field, include the URL of an image that you want to use as a background. This is not required if your design doesn't call for a background image.
+	- In the **Image URL** field, include the URL of an image that you want to use as a background. This is not required if your design doesn't call for a background image.
     
-  - In the **Font Scheme URL** field, include the URL of the .spfont file.
+	- In the **Font Scheme URL** field, include the URL of the .spfont file.
     
-  - In the **Display Order** field, indicate the order in which the composed look should be displayed.
+	- In the **Display Order** field, indicate the order in which the composed look should be displayed.
     
 5. Choose **Save**. Your theme entry will now appear in the  **Composed Looks** list.
     
 After you add your custom theme to as a composed look, users can access the theme and apply it to a site by going to **Site settings** > **Look and Feel** > **Change the look**. Figure 6 shows an example of a **Change the look** section in **Site Settings**.
 
-
 **Figure 6. Composed looks available in Change the look**
 
 ![Screenshot that shows the composed looks that are available in Site Settings > Change the look](media/11acb4ea-cff6-483c-890f-8c574e14f29d.png)
-
 
 ## What does the theming engine do when a user applies a composed look?
 <a name="sectionSection3"> </a>
@@ -282,11 +241,9 @@ When a user applies a composed look, SharePoint copies, transforms, and stores C
 
 When it applies a composed look, the engine maps the settings specified by specific CSS comments that the theming engine defines. Under the hood, the theming engine saves the background image to Site Assets, scales and compresses JPG and BMP images, and limits the size of GIF and PNG images. 
 
-When a composed look is applied to a SharePoint site, SharePoint finds and replaces CSS comment tokens by injecting a value derived from the composed look in the next line in the CSS file after the token. This new value is applied to the SharePoint site.
+When a composed look is applied to a SharePoint site, SharePoint finds and replaces CSS comment tokens by embedding a value derived from the composed look in the next line in the CSS file after the token. This new value is applied to the SharePoint site.
 
 The following table lists the CSS comment tokens.
-
-
 
 |**Token**|**Description**|**Corresponding ApplyTheme parameter**|
 |:-----|:-----|:-----|
@@ -298,8 +255,6 @@ The following table lists the CSS comment tokens.
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
--  [SharePoint site branding and page customization solutions](9a3f639b-8b01-4a9b-8d27-2f041913b2a4.md)
+-  [SharePoint site branding and page customization solutions](SharePoint-site-branding-and-page-customization-solutions.md)
     
--  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](347f4d3d-5657-42da-ae01-3b5aea3a16c7.md)
-    
+-  [Branding and site provisioning solutions for SharePoint 2013 and SharePoint Online](Branding-and-site-provisioning-solutions-for-SharePoint.md)

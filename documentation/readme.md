@@ -1,8 +1,5 @@
 # Documentation and Presentations #
-
-This folder contains the following documentation:
-*  Community Calls - in own folder
-*  Community information - Presentations around PnP cross different seminars
+All community call and other presentations have been moved from these folders to http://docs.com/OfficeDevPnP.
 
 Other resources
 - Generic guidance is available from the MSDN under http://aka.ms/OfficeDevPnPMSDN.

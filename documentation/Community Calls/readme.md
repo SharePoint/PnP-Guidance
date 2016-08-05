@@ -1,5 +1,5 @@
 # Community call presentations #
-This folder contains an archive of the decks used in the past community calls.
+All community call presentations have been moved to http://docs.com/OfficeDevPnP
 
 ----------
 *Office 365 Dev PnP Core Team*

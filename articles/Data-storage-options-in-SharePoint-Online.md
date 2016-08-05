@@ -1,29 +1,8 @@
-
 # Data storage options in SharePoint Online
-When you develop SharePoint Online apps, you have a number of different options for data storage. You can use the sample described in this article to explore the differences between each option, and to learn about the advantages to using remote data storage. 
 
- **Last modified:** March 16, 2015
+When you develop SharePoint Online add-ins, you have a number of different options for data storage. You can use the sample described in this article to explore the differences between each option, and to learn about the advantages to using remote data storage. 
 
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
- **In this article**
-
-[Before you begin](#sectionSection0)
-
-[SharePoint list on the app web (Notes scenario)](#sectionSection1)
-
-[SharePoint list on the host web (Support Cases scenario)](#sectionSection2)
-
-[Northwind OData web service (Customer Dashboard scenario)](#sectionSection3)
-
-[Azure table storage (Customer Service Survey scenario)](#sectionSection4)
-
-[Azure queue storage (Customer Call Queue scenario)](#sectionSection5)
-
-[SQL Azure database (Recent Orders scenario)](#sectionSection6)
-
-[Additional resources](#bk_addresources)
-
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 This article describes the  [Core.DataStorageModels](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.DataStorageModels) sample app, which shows you each of the following data storage options and the advantages and disadvantages of each:
 
@@ -42,22 +21,26 @@ This article describes the  [Core.DataStorageModels](https://github.com/OfficeDe
 The  [Core.DataStorageModels](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.DataStorageModels) sample app is a provider-hosted app written in C# and JavaScript that deploys a number of SharePoint artifacts (lists, app part, web part) to both the host web and the app web. It interacts with SharePoint lists on the app web and host web, and also makes calls to a SQL Azure database, an Azure queue and table storage, and a remote web service that implements OData. This sample uses the Model-View-Controller (MVC) pattern.
 The  [Core.DataStorageModels](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.DataStorageModels) sample app applies each data storage option to a specific function for which the option is well suited, as described in the following table.
 
+|Sample app storage option|Used for|
+|:--|:--|
+|SharePoint list app web|Customer notes|
+|SharePoint list host web|Support cases|
+|Northwind OData service|Customers|
+|Azure table storage|CSR ratings|
+|Azure queue storage|Call queue|
+|SQL Azure Northwind database|Orders, order details, products|
 
 The app implements a customer service dashboard and related interfaces that show recent orders, customer representative survey ratings, customer notes, support cases, and a customer representative call queue. 
 The first two scenarios let you retrieve data by using relatively simply client object model code or REST queries, but are limited by list query thresholds. The next four scenarios uses different types of remote storage. 
 
 **Figure 1. Data storage models start page prompts you to deploy SharePoint components**
 
-
 ![Screenshot of app sample UI](media/bb3b58ca-b983-4ec4-b36d-18a911edb5d5.png)
-
-**Note**  You can [view this article](https://msdn.microsoft.com/EN-US/library/dn957893.aspx) in the [Solutions guidance](https://msdn.microsoft.com/en-us/library/dn904529.aspx) node on MSDN.
 
 ## Before you begin
 <a name="sectionSection0"> </a>
 
 Before you use this sample, make sure that you have the following:
-
 
 - A Microsoft Azure account where you can deploy a SQL Azure database and create an Azure storage account. 
     
@@ -65,9 +48,7 @@ Before you use this sample, make sure that you have the following:
     
 Also, you need to deploy the Northwind database to Microsoft Azure.
 
-
 ### To deploy the Northwind database
-
 
 1. Log on to the Azure Management Portal and choose  **SQL Databases**> **Servers**.
     
@@ -125,12 +106,12 @@ Also, you need to deploy the Northwind database to Microsoft Azure.
     
 22. In the Visual Studio **Solution Explorer**, locate the Web.config file.
     
-23. In the Web.config file, locate the add  `name="NorthWindEntities"` element and replace the existing connectionString value with the connection string information that you saved locally in step 19. Save the Web.config file.
+23. In the Web.config file, locate the add  `name="NorthWindEntities"` element and replace the existing connectionString value with the connection string information that you saved locally in step 19. 
     
-```XML
-  <add name="NorthWindEntities" connectionString="metadata=res://*/Northwind.csdl|res://*/Northwind.ssdl|res://*/Northwind.msl;provider=System.Data.SqlClient;provider connection string=&amp;quot;data source=<Your Server Here>.database.windows.net;initial catalog=NorthWind;user id=<Your Username Here>@<Your Server Here>;password=<Your Password Here>;MultipleActiveResultSets=True;App=EntityFramework&amp;quot;" providerName="System.Data.EntityClient" />
-
-```
+	```XML
+	  <add name="NorthWindEntities" connectionString="metadata=res://*/Northwind.csdl|res://*/Northwind.ssdl|res://*/Northwind.msl;provider=System.Data.SqlClient;provider connection string=&amp;quot;data source=<Your Server Here>.database.windows.net;initial catalog=NorthWind;user id=<Your Username Here>@<Your Server Here>;password=<Your Password Here>;MultipleActiveResultSets=True;App=EntityFramework&amp;quot;" providerName="System.Data.EntityClient" />
+	```
+24. Save the Web.config file.
 
 ## SharePoint list on the app web (Notes scenario)
 <a name="sectionSection1"> </a>
@@ -139,19 +120,17 @@ The Notes list scenario, which uses a SharePoint list on an app web, shows how l
 
 Using lists in the app web has one important advantage over other storage solutions: you can use simple SharePoint REST API calls to query data. However, there are some disadvantages:
 
-
 - To update list metadata, you must update and redeploy the app.
     
 - To update the data structure, you must rewrite application logic for storing and updating data.
     
-- Information stored in the list cannot be shared easily with other apps.
+- Information stored in the list cannot be shared easily with other add-ins.
     
 - You cannot search for data in SharePoint.
     
 - The amount of data that you can store in lists and the size of query result sets are limited.
     
 The code that underlies the Notes section of the customer dashboard uses REST queries to retrieve data from a list that is deployed to the app web. This list contains fields for titles, authors, customer IDs, and descriptions. You can use the app's interface to add and retrieve notes for a specified customer, as shown in Figure 5.
-
 
 **Figure 5. User interface for the Notes app**
 
@@ -160,9 +139,6 @@ The code that underlies the Notes section of the customer dashboard uses REST qu
 The  **View Notes List in App Web** link provides an "out of the box" view of the list data.
 
 This app uses the Model-View-Controller (MVC) pattern. You can see the code for the notes scenario in the Views/CustomerDashboard/Notes.cshtml file. It uses simple REST calls to add and retrieve data. The following code retrieves notes from the Notes list for a specified customer.
-
-
-
 
 ```C#
 function getNotesAndShow() {
@@ -185,13 +161,9 @@ function getNotesAndShow() {
 
     );
 }
-
 ```
 
 The following code adds a note for a given customer to the notes list.
-
-
-
 
 ```C#
 function addNoteToList(note, customerID) {
@@ -215,11 +187,9 @@ function addNoteToList(note, customerID) {
         error: addNoteFailed
     });
 }
-
 ```
 
 You can add 5000 items to the list to show that list queries that generate a result set of 5000 or more items will hit the list query threshold and fail. You can also add so much data to your list on the app web that you exceed the storage limit for your site collection (which depends on how much storage space you've allocated to it). These scenarios show two of the most important limitations of this approach: list query size limits and storage space limits. If your business needs require you to work with large data sets and query result sets, this approach won't work.
-
 
 ### List query threshold
 <a name="bk_listquerythreshold"> </a>
@@ -240,16 +210,14 @@ To load enough data to exceed the list query threshold limit:
     
     **Figure 6. List query thresold exceeded error message**
 
-    ![A screenshot that shows an error message that states that the operation exceeded the list view threshol.](..\images\90202b64-4b14-4764-9a4c-8fb236f8d10b.png)
+    ![A screenshot that shows an error message that states that the operation exceeded the list view threshol.](media/90202b64-4b14-4764-9a4c-8fb236f8d10b.png)
 
 5. Choose  **View Notes List in App Web** and page through the list to see that it includes 500 rows. Note that although SharePoint list views can accommodate browsing of this many entries, the REST API fails due to the list query throttling threshold.
     
-
 ### Data storage limit
 <a name="bk_listquerythreshold"> </a>
 
 To load enough data to exceed the data storage limit:
-
 
 1. In the left menu, choose  **Sample Home Page**.
     
@@ -264,14 +232,13 @@ To load enough data to exceed the data storage limit:
     
     **Figure 7. Data storage threshold exceeded error message**
 
-    ![A screenshot that shows the error message that occurs when the data storage limit is exceeded](..\images\0bc55483-0ee1-487a-ba34-e827ec47aadd.png)
+    ![A screenshot that shows the error message that occurs when the data storage limit is exceeded](media/0bc55483-0ee1-487a-ba34-e827ec47aadd.png)
 
 5. After you exceed the data storage limit, choose the back button in the web browser, and then choose the  **Notes** link in the left menu.
     
 6. Choose  **View Notes List in App Web**.
     
     When the page loads, an error message appears at the top of the page that indicates that the site is out of storage space.
-    
 
 ## SharePoint list on the host web (Support Cases scenario)
 <a name="sectionSection2"> </a>
@@ -279,7 +246,6 @@ To load enough data to exceed the data storage limit:
 The Support Cases scenario displays data that is stored in a SharePoint list in the host web. This scenario uses two different patterns to access and interact with the data. The first pattern includes the SharePoint Search Service and the Content By Search Web Part with a custom Display Template applied. The second pattern includes an App Part (Client Web Part) that displays an MVC view, which uses the  **SP.RequestExecutor** class to call the SharePoint REST API.
 
 There are several advantages to using this approach:
-
 
 - You can query data easily using simple REST queries or client object model code.
     
@@ -291,7 +257,6 @@ There are several advantages to using this approach:
     
 Offsetting these advantages are the following disadvantages:
 
-
 - The host web limits both the amount of data you can store in lists and the size of the query results. If your business needs require storing and/or querying large data sets, this is not a recommended approach.
     
 - For complex queries, lists do not perform as well as databases.
@@ -299,7 +264,6 @@ Offsetting these advantages are the following disadvantages:
 - For backing up and restoring data, lists do not perform as well as databases.
     
 The data for this scenario is stored in a SharePoint list deployed to the host web. Data is retrieved and displayed by means of the following: 
-
 
 - A  [Content Search Web Part](https://msdn.microsoft.com/en-us/library/office/jj163789%28v=office.15%29.aspx).
     
@@ -309,22 +273,17 @@ The code in this view uses REST queries to retrieve information from the list, w
 
 When you select a customer from the support cases drop-down, you'll see the support case data for that customer displayed in both the web part and the app part (Figure 8). The web part might not return content right away, because it can take up to 24 hours for the SharePoint search service to index the data. You can also choose the  **View Support Cases List in Host Web** link to see a conventional view of the list data.
 
-
 **Figure 8. User interface for the support case scenario**
 
 ![A screenshot that shows the UI for interacting with the support case scenario](media/eac41f5c-90b7-4fe3-b47e-0d65b79cbf1c.png)
 
 The content search web part deployed by this app uses a custom display template. Figure 9 shows where in the  **Assets** directory of the web project you can find the web part and the associated template.
 
-
 **Figure 9. Contents of the Assets directory of the web project**
 
 ![Screenshot of the Assets directory](media/95db9118-9e56-4e39-84b1-271e54447792.png)
 
 The following JavaScript code that you'll find in the Views/SupportCaseAppPart\Index.cshtml file uses the cross-domain library to invoke a REST query on the SharePoint list on the host web. 
-
-
-
 
 ```C#
 function execCrossDomainRequest() {
@@ -345,11 +304,9 @@ method: "GET",
    }
 );
 }
-
 ```
 
 You can add 5000 items to the list to show that list queries that generate a result set of 5000 or more items will hit the list query threshold and fail. This scenario shows one of the most important limitations of this approach: list query size limits. If your business needs require you to work with large data and query result sets, this approach won't work. For more information, see  [List query threshold](#bk_listquerythreshold) earlier in this article.
-
 
 ## Northwind OData web service (Customer Dashboard scenario)
 <a name="sectionSection3"> </a>
@@ -358,8 +315,7 @@ The Customer Dashboard scenario uses JQuery AJAX to invoke the NorthWind OData s
 
 The following are the advantages to using this approach:
 
-
-- A given web service can support multiple apps.
+- A given web service can support multiple add-ins.
     
 - You can update your web service without having to update and redeploy your app.
     
@@ -377,22 +333,15 @@ This UI page is a Model-View-Controller view. The display is defined in the View
 
 The following code runs when you choose the  **Customer Dashboard** link. It retrieves all the customer names and IDs in order to populate the drop-down menu.
 
-
-
-
 ```C#
 var getCustomerIDsUrl = "https://odatasampleservices.azurewebsites.net/V3/Northwind/Northwind.svc/Customers?$format=json&amp;$select=CustomerID";
     $.get(getCustomerIDsUrl).done(getCustomerIDsDone)
         .error(function (jqXHR, textStatus, errorThrown) {
             $('#topErrorMessage').text('Can\'t get customers. An error occurred: ' + jqXHR.statusText);
         });
-
 ```
 
 The following code runs when you select a customer name from the drop-down menu. It uses the OData  **$filter** argument to specify the customer ID and other query string arguments to retrieve information related to this customer.
-
-
-
 
 ```C#
 var url = "https://odatasampleservices.azurewebsites.net/V3/Northwind/Northwind.svc/Customers?$format=json" +  "&amp;$select=CustomerID,CompanyName,ContactName,ContactTitle,Address,City,Country,Phone,Fax" + "&amp;$filter=CustomerID eq '" + customerID + "'";
@@ -402,9 +351,7 @@ $.get(url).done(getCustomersDone)
           alert('Can\'t get customer ' + customerID + '. An error occurred: ' + 
                  jqXHR.statusText);
 });
-
 ```
-
 
 ## Azure table storage (Customer Service Survey scenario)
 <a name="sectionSection4"> </a>
@@ -412,7 +359,6 @@ $.get(url).done(getCustomersDone)
 The Customer Service Survey scenario allows a customer service representative to see their rating based on customer surveys and uses Azure table storage and the Microsoft.WindowsAzure.Storage.Table.CloudTable API to store and interact with the data.
 
 The following are the advantages to using this approach:
-
 
 - Azure storage tables support more than one app.
     
@@ -430,9 +376,6 @@ The app's interface displays the current user's survey rating in the center page
 
 The following code from the CSRInfoController.cs defines the  **Home** method that retrieves the user's **nameId**.
 
-
-
-
 ```C#
 [SharePointContextFilter]
 public ActionResult Home()
@@ -448,13 +391,9 @@ public ActionResult Home()
 
     return View();
 }
-
 ```
 
 The following code from the SurveyRatingService.cs file defines the  **SurveyRatingsService** constructor, which sets up the connection to the Azure storage account.
-
-
-
 
 ```C#
 public SurveyRatingsService(string storageConnectionStringConfigName = 
@@ -467,13 +406,9 @@ public SurveyRatingsService(string storageConnectionStringConfigName =
     this.surveyRatingsTable = this.tableClient.GetTableReference("SurveyRatings");
     this.surveyRatingsTable.CreateIfNotExists();
 }
-
 ```
 
 The following code from the same file defines the  **GetUserScore** method, which retrieves the user's survey score from the Azure storage table.
-
-
-
 
 ```C#
 public float GetUserScore(string userName)
@@ -492,13 +427,9 @@ public float GetUserScore(string userName)
 
     return (float)items.Average(c => c.Score);
 }
-
 ```
 
 If the table doesn't contain any survey data related to the current user, the  **AddSurveyRating** method randomly assigns a score for the user.
-
-
-
 
 ```C#
 private float AddSurveyRatings(string userName)
@@ -519,9 +450,7 @@ private float AddSurveyRatings(string userName)
     }
     return sum / count;
 }
-
 ```
-
 
 ## Azure queue storage (Customer Call Queue scenario)
 <a name="sectionSection5"> </a>
@@ -529,7 +458,6 @@ private float AddSurveyRatings(string userName)
 The Customer Call Queue scenario lists callers in the support queue and simulates taking calls. The scenario uses Azure storage queues to store data and the  **Microsoft.WindowsAzure.Storage.Queue.CloudQueue** API with Model-View-Controller.
 
 The following are the advantages to using this approach:
-
 
 - Azure storage queues support more than one app.
     
@@ -546,9 +474,6 @@ The following are the advantages to using this approach:
 The app's interface displays a support call queue in the center pane when you choose the  **Call Queue** link. You can simulate receiving calls (adding a call to the queue) by choosing **Simulate Calls**, and you can simulate taking the oldest call (removing a call from the queue) by choosing the  **Take Call** action associated with a given call.
 
 This page is a Model-View-Controller view that is defined in the Views\CallQueue\Home.cshmtl file. The Controllers\CallQueueController.cs file defines the  **CallQueueController** class, which contains methods for retrieving all calls in the queue, adding a call to the queue (simulating a call), and removing a call from the queue (taking a call). Each of these methods calls methods defined in the Services\CallQueueService.cs file, which uses the Azure storage queue API to retrieve the underlying information in the storage queue.
-
-
-
 
 ```C#
 public class CallQueueController : Controller
@@ -585,13 +510,9 @@ public class CallQueueController : Controller
         return RedirectToAction("Index", new { SPHostUrl = spHostUrl });
     }
 }
-
 ```
 
 The CallQueueService.cs file defines the  **CallQueueService** class, which establishes the connection to the Azure storage queue. That class also contains the methods for adding, removing (dequeuing), and retrieving the calls from the queue.
-
-
-
 
 ```C#
 public class CallQueueService
@@ -665,9 +586,7 @@ public class CallQueueService
         return count;
     }
 }
-
 ```
-
 
 ## SQL Azure database (Recent Orders scenario)
 <a name="sectionSection6"> </a>
@@ -675,7 +594,6 @@ public class CallQueueService
 The Recent Orders scenario uses a direct call to the Northwind SQL Azure database to return all the orders for a given customer.
 
 The following are the advantages to using this approach:
-
 
 - A database can support more than one app.
     
@@ -697,9 +615,6 @@ This page is a Model-View-Controller view defined in the Views\CustomerDashboard
 
 The following code from the CustomerDashboardController.cs file performs the database query and returns the data to the view.
 
-
-
-
 ```C#
 public ActionResult Orders(string customerId)
 {            
@@ -719,15 +634,11 @@ public ActionResult Orders(string customerId)
 
     return View(orders);
 }
-
 ```
-
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
--  [Composite business apps for SharePoint 2013 and SharePoint Online](a0505811-a5f8-4aba-b7dd-7d50cbe99b53.md)
+-  [Composite business add-ins for SharePoint 2013 and SharePoint Online](Composite-buisness-apps-for-SharePoint.md)
     
 -  [Office 365 Development Patterns and Practices on GitHub](https://github.com/OfficeDev/PnP)
-    

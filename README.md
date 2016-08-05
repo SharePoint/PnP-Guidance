@@ -1,11 +1,12 @@
 # PnP-Guidance
 A collection of community contributed [Office 365 Developer Patterns and Practices](https://github.com/OfficeDev/PnP) guidance articles that are published to MSDN.
 
-- [Contribution guidance](CONTRIBUTING.md) (work in progress)
-
-*Please follow the structure of the existing articles under [articles](https://github.com/OfficeDev/PnP-Guidance/tree/master/articles) folder. We will update the guidance and other details soon.*
+- [Contribution guidance](CONTRIBUTING.md)
 
 
+## Copyright
+
+Copyright (c) 2016 Microsoft Corporation. All rights reserved.
 
 ---
 

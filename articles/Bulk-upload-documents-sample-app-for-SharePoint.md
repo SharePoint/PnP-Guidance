@@ -1,44 +1,38 @@
+# Bulk upload documents sample add-in for SharePoint
 
-# Bulk upload documents sample app for SharePoint
 As part of your Enterprise Content Management (ECM) strategy, you can bulk upload documents to document libraries, including OneDrive for Business.
-
     
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
-    
-
-    
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 **Note**  The sample uploads one file to a document library. To upload multiple files, you'll need to extend the sample.
 
-This app uses a console application to upload files by using REST API calls. Configuration settings are specified in an XML and a CSV file. Use this solution if you want to:
+This add-in uses a console application to upload files by using REST API calls. Configuration settings are specified in an XML and a CSV file. Use this solution if you want to:
 
 - Upload files to SharePoint Online.
     
 - Migrate to Office 365 and use a custom migration tool to move your files.
-    
 
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.BulkDocumentUploader](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.BulkDocumentUploader) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.BulkDocumentUploader](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.BulkDocumentUploader) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run the code sample, do the following:
 
 
 1. Edit the OneDriveUploader.xml file with the following information:
     
-      - The location where you want to save your text and CSV log files.
+	- The location where you want to save your text and CSV log files.
     
-  - The file path to your CSV mapping file (for example, C:\PnP\Samples\Core.BulkDocumentUploader\Input\SharePointSites.csv).
+	- The file path to your CSV mapping file (for example, C:\PnP\Samples\Core.BulkDocumentUploader\Input\SharePointSites.csv).
     
-  - The location of the company policy files to upload (for example, C:\PnP\Samples\Core.BulkDocumentUploader\Input\OneDriveFiles).
+	- The location of the company policy files to upload (for example, C:\PnP\Samples\Core.BulkDocumentUploader\Input\OneDriveFiles).
     
-  - Your SharePoint Online credentials.
+	- Your SharePoint Online credentials.
     
-  - The document action to perform (either upload or delete).
+	- The document action to perform (either upload or delete).
     
-  - The new file name to apply to the file after the file is uploaded to the document library (for example, COMPANY POLICY DOCUMENT.xlsx).
+	- The new file name to apply to the file after the file is uploaded to the document library (for example, COMPANY POLICY DOCUMENT.xlsx).
     
 2. In the SharePointSites.csv mapping file, list the document library URL to upload files to, and the name of the company policy file to upload. 
     
@@ -54,9 +48,7 @@ Before you run the code sample, do the following:
 
 From the  **Main** method in Program.cs, the **RecurseActions** method calls the **Run** method in OneDriveMapper.cs. The **Run** method gets the location of the file to upload from SharePointSites.csv, and then calls the **IterateCollection** method.
 
-
 **Note**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
 
 ```C#
 public override void Run(BaseAction parentAction, DateTime CurrentTime, LogHelper logger)
@@ -75,7 +67,6 @@ public override void Run(BaseAction parentAction, DateTime CurrentTime, LogHelpe
 
 The SharePointSite.csv file lists a file to upload and the document library to upload that file to. The  **IterateCollection** method then does the following to upload the file to the document library:
 
-
 1. Gets the file to upload. 
     
 2. Ensures that the user has permissions to add items.
@@ -83,12 +74,8 @@ The SharePointSite.csv file lists a file to upload and the document library to u
 3. Creates the  **HttpWebRequest** object with the authentication cookie, the REST string request to upload the document, and the HTTP request action method.
     
 4. Performs the file upload.
-    
 
 **Note**  The file name is overwritten with the value of  **FileUploadName** specified in OneDriveUploader.xml.
-
-
-
 
 ```C#
 public override void IterateCollection(Collection<string> entries, LogHelper logger)
@@ -217,12 +204,10 @@ public override void IterateCollection(Collection<string> entries, LogHelper log
 
 ```
 
-
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
--  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](..\api\Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
+-  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
 -  [Core.LargeFileUpload sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.LargeFileUpload)
     

@@ -1,17 +1,14 @@
+# Localize UI elements sample add-in for SharePoint
 
-# Localize UI elements sample app for SharePoint
 You can localize SharePoint UI elements by using JavaScript to replace the text value of a UI element value with a translated text value loaded from a JavaScript resource file. 
 
+_**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
     
- _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
-
-    
-The [Core.JavaScriptCustomization](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization) sample app shows you how to use JavaScript to replace the text value of a SharePoint UI element with a translated text value, which is read from a JavaScript resource file. 
-    
+The [Core.JavaScriptCustomization](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization) sample add-in shows you how to use JavaScript to replace the text value of a SharePoint UI element with a translated text value, which is read from a JavaScript resource file. 
 
 **Note**  You are responsible for maintaining the translated text values in the JavaScript resource file. 
 
-This code sample uses a provider-hosted app to:
+This code sample uses a provider-hosted add-in to:
 
 - Localize a site page or Quick Launch link title with specific text values.
     
@@ -24,18 +21,15 @@ This code sample uses a provider-hosted app to:
 - Check the UI culture of the site and then load culture-specific text values from a JavaScript resource file.
     
 - Overwrite site page and Quick Launch link titles with culture-specific text values using jQuery.
-    
 
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.JavaScriptCustomization](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization) sample app from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.JavaScriptCustomization](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
 
 Before you run this code sample, configure the language settings on your site, and set the display language on your user's profile page.
 
-
 ### To configure the language settings on your site
-
 
 1. On your team site, choose  **Settings** > **Site settings**.
     
@@ -44,10 +38,8 @@ Before you run this code sample, configure the language settings on your site, a
 3. On the  **Language Settings** page, in **Alternate language(s)**, choose the alternate languages your site should support. For example, choose  **French** and **Finnish**, as shown in Figure 1.
     
 4. Choose  **OK**.
-    
 
 ### To set the display language on your user's profile page
-
 
 1. At the top of your Office 365 site, choose your profile picture, and then choose  **About me,** as shown in Figure 2.
     
@@ -58,13 +50,10 @@ Before you run this code sample, configure the language settings on your site, a
 4. In  **My Display Languages**, choose a new language in the  **Pick a new language** dropdown, then choose **Add**. For example, choose French and Finnish, as shown in Figure 3. You might need to move your preferred language up or down by choosing the up and down arrows.
     
 5. Choose  **Save all and close**.
-    
 
 **Note**  It might take a few minutes for your site to render in the selected language(s).
 
-
 **Important**  The CSOM is periodically updated with new features. If the CSOM provides new features to update site page or Quick Launch link titles, we recommend that you use the new features in the CSOM instead of the options discussed here.
-
 
 **Figure 1. Setting the language for a site**
 
@@ -78,11 +67,9 @@ Before you run this code sample, configure the language settings on your site, a
 
 ![Screenshot of the Language and Region section of the Edit Details page](media/ff41b24e-42eb-48ca-83cd-00d88ef753bd.png)
 
-Before you run  [Scenario 2](6786c43a-8d9e-4a51-90c2-999fcffe4295.md#bk_Scenario2) of this code sample, complete the following tasks.
-
+Before you run  [Scenario 2](#bk_Scenario2) of this code sample, complete the following tasks.
 
 ### To create a Quick Launch link
-
 
 1. On the host web, choose  **EDIT LINKS**.
     
@@ -93,14 +80,12 @@ Before you run  [Scenario 2](6786c43a-8d9e-4a51-90c2-999fcffe4295.md#bk_Scenario
 4. In  **Address**, enter the URL of a website.
     
 5. Choose  **OK** > **Save**.
-    
 
 **Figure 4. Adding a link to the Quick Launch**
 
 ![Screenshot of the EDIT LINKS page, with link highlighted](media/fcb28647-1576-4e86-8ca7-15f3ce8d85fb.png)
 
 ### To create a site page
-
 
 1. On the host web, choose  **Site Contents** > **Site Pages** > **new**.
     
@@ -111,13 +96,11 @@ Before you run  [Scenario 2](6786c43a-8d9e-4a51-90c2-999fcffe4295.md#bk_Scenario
 4. Enter  **Test page** in the body of the page.
     
 5. Choose  **Save**.
-    
 
 ## Using the Core.JavaScriptCustomization sample app
 <a name="sectionSection1"> </a>
 
 When you run this code sample, a provider-hosted application appears, as shown in Figure 5. This article describes Scenario 1 and Scenario 2 because you might use the techniques in Scenario 1 and Scenario 2 to provide localized versions of your site page and Quick Launch link titles. 
-
 
 **Figure 5. Start page of the Core.JavaScriptCustomization app**
 
@@ -128,19 +111,13 @@ Scenario 1 shows how to add a reference to a JavaScript file on a SharePoint sit
 
 Figure 6 shows the start page for Scenario 1.
 
-
 **Figure 6. Scenario 1 start page**
 
-![Screenshot of the start page for Scenario 1](..\media\16972165-5f94-497f-b58c-0e1075d9616a.png)
+![Screenshot of the start page for Scenario 1](media/16972165-5f94-497f-b58c-0e1075d9616a.png)
 
 The  **AddJSLink** method is part of the JavaScriptExtensions.cs file in **OfficeDevPnP.Core**.  **AddJSLink** requires that you supply a string representing the identifier to assign to the custom action, and a string containing a semicolon delimited list of URLs to the JavaScript files that you want to add to the host web. Note that this code sample adds a reference to Scripts\scenario1.js, which adds a status bar message to the host web.
-
-
     
 **Note**  The code in this article is provided as-is, without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
-
-
-
 
 ```
 protected void btnSubmit_Click(object sender, EventArgs e)
@@ -151,15 +128,9 @@ protected void btnSubmit_Click(object sender, EventArgs e)
                 cc.Web.AddJsLink(Utilities.Scenario1Key, Utilities.BuildScenarioJavaScriptUrl(Utilities.Scenario1Key, this.Request));
             }
         }
-
 ```
-
-
-    
+   
 **Note**  SharePoint 2013 uses Minimal Download Strategy to reduce the amount of data the browser downloads when users navigate between pages on a SharePoint site. For more information, see  [Minimal Download Strategy overview](http://msdn.microsoft.com/library/9caa7d99-1e74-4889-96c7-ba5a10772ad7.aspx). In scenario1.js, the following code ensures that whether or not Minimal Download Strategy is used on your SharePoint site, the  **RemoteManager_Inject** method is always called to run the JavaScript code to add the status bar message to the host web.
-
-
-
 
 ```
 if ("undefined" != typeof g_MinimalDownload &amp;&amp; g_MinimalDownload &amp;&amp; (window.location.pathname.toLowerCase()).endsWith("/_layouts/15/start.aspx") &amp;&amp; "undefined" != typeof asyncDeltaManager) {
@@ -169,15 +140,9 @@ if ("undefined" != typeof g_MinimalDownload &amp;&amp; g_MinimalDownload &amp;&a
 } else {
     RemoteManager_Inject();
 }
-
 ```
 
-
-    
 **Note**  Some JavaScript files may depend on other JavaScript files to be loaded first, before they can run and complete successfully. The following code construct from  **RemoteManager_Inject** uses the **loadScript** function in scenario1.js to first load jQuery, then continue running the remaining JavaScript code.
-
-
-
 
 ```
 var jQuery = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.2.min.js";
@@ -186,22 +151,18 @@ var jQuery = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.2.min.js";
     loadScript(jQuery, function () {
    	 // Add additional JavaScript code here to complete your task. 
 });
-
 ```
 
 Choose  **Back to Site**. As shown in Figure 7, the host web now displays a status bar message that was added by scenario1.js.
-
 
 **Figure 7. Status bar message added to a team site using JavaScript**
 
 ![Screenshot of the status bar message added to a team site by using JavaScript](media/c5d6fb6d-f05f-49aa-a3c5-af1240ee9135.png)
 
-
 ### Scenario 2
 <a name="bk_Scenario2"> </a>
 
 Scenario 2 uses the technique described in Scenario 1 to replace UI text with translated text read from a JavaScript resource file. Scenario 2 replaces the Quick Launch link title ( **My quicklaunch entry**) and site page title ( **Hello SharePoint**) that you created earlier. Scenario 2 attaches a JavaScript file which reads translated text values from variables in culture-specific JavaScript resource files. Scenario 2 then updates the UI. Figure 8 shows the start page for Scenario 2.
-
 
 **Figure 8. Scenario 2 start page**
 
@@ -209,12 +170,9 @@ Scenario 2 uses the technique described in Scenario 1 to replace UI text with tr
 
 As shown in Figure 8, choosing  **Inject customization** applies the following changes to the site:
 
-
-
 - The Quick Launch link title  **My quicklaunch entry** is changed to **Contoso link**.
     
 - The  **Hello SharePoint** site page title is changed to **Contoso page**.
-    
 
 **Figure 9. Scenario 2 customizations**
 
@@ -224,16 +182,11 @@ As shown in Figure 8, choosing  **Inject customization** applies the following c
 
 Similar to Scenario 1,  **btnSubmit_Click** in scenario2.aspx.cs calls **AddJsLink** to add a reference to the Scripts\scenario2.js file. In scenario2.js, the **RemoteManager_Inject** function calls the **TranslateQuickLaunch** function, which performs the following tasks:
 
-
-
 - Determines the site's culture using  **_spPageContextInfo.currentUICultureName**.
     
 - Loads the JavaScript resource file containing culture specific resources that match the UI culture of the site. For example, if the site's culture was English (United States), the scenario2.en-us.js file is loaded.
     
 - Replaces  **my quicklaunch entry** with the value of the **quickLauch_Scenario2** variable read from the JavaScript resource file.
-    
-
-
 
 ```
 function RemoteManager_Inject() {
@@ -293,15 +246,11 @@ function TranslateQuickLaunch() {
 
     });
 }
-
 ```
-
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-
--  [Localization solutions for SharePoint 2013 and SharePoint Online](http://msdn.microsoft.com/library/96bd4678-1962-4f5a-9231-ce8bc2a904b4.aspx)
+-  [Localization solutions for SharePoint 2013 and SharePoint Online](localization-solutions-for-sharepoint-2013-and-sharepoint-online.md)
     
 -  [Core.JavaScriptCustomization](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization)
-    
