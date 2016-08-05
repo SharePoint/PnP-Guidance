@@ -1,12 +1,11 @@
 # Sandbox solution transformation guidance 
-Transform or convert your code-behind sandbox solutions to the SharePoint add-in model. Learn about the options and strategies on converting existing code-behind functionalities to SharePoint add-in model or alternative solutions.
+Transform or convert your code-based sandbox solutions to the SharePoint add-in model. Learn about the options and strategies on converting existing code-based functionalities to SharePoint add-in model or alternative solutions.
 
 _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
 Code-behind sandbox solutions [were deprecated](https://blogs.msdn.microsoft.com/sharepointdev/2014/01/14/deprecation-of-custom-code-in-sandboxed-solutions/) back in 2014 and SharePoint online has started the process to completely remove this capability. Code-behind sandox solutions are also deprecated in SharePoint 2013 and in SharePoint 2016.
 
 Transforming your sandbox solutions to the SharePoint add-in model involves analyzing your existing extensions, designing and developing your new add-in(s) for SharePoint, and then testing and deploying your add-in in your production environment. 
-
 
 ## What is a code-based sandbox solution in SharePoint
 <a name="sectionSection0"> </a>

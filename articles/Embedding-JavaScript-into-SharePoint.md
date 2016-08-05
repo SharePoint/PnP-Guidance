@@ -51,3 +51,33 @@ MySolution.MyClass1.myFunction2();
 ```
 
 Because all your code uses the custom *MySolution* namespace, you can avoid any naming conflicts.
+
+## Namespaces and Minimal Download Strategy (MDS)
+
+With the [Minimal Download Strategy Feature](https://msdn.microsoft.com/en-us/library/office/dn456544.aspx) enabled, Global Namespaces and Variables are cleared on MDS navigation.   
+To retain your Namespace, declare it as:
+
+```JavaScript
+    Type.registerNamespace('MySolution');
+```
+
+The Type Namespace is specific to SharePoint,  for a generic JavaScript library use:
+
+```JavaScript
+if (window.hasOwnProperty('Type')) {
+    Type.registerNamespace('MySolution');
+} else {
+    window.MySolution = window.MySolution || {};
+}
+```
+
+#### Namespaces, MDS and CSR (Client Side Rendering)
+
+The ``RegisterModuleInit`` function declares a proper ``Type`` Namespace.  
+Files attached with JSLink are **not** re-executed on MDS navigation, use the AsyncDeltaManager functions for that.
+
+### Resources:
+
+* [Wictor Wilén - The correct way to execute javascript functions in SharePoint MDS enabled sites](http://www.wictorwilen.se/the-correct-way-to-execute-javascript-functions-in-sharepoint-2013-mds-enabled-sites)
+* [Hugh Wood - SharePoint JavaScript context development - AsyncDeltaManager](https://www.spcaf.com/blog/sharepoint-javascript-context-development-part-4-the-way-of-the-async-delta-manager/)
+* [Marc Anderson - Execute JavaScript after MDS (re)load](http://blog.symprogress.com/2013/09/sharepoint-2013-execute-javascript-function-after-mds-load/)
