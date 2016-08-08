@@ -18,6 +18,7 @@ There are two types of Sandbox solutions
 Declarative (xml based) sandbox solutions can be further divided to following types based on their use case.
 - Site template – Generated using the “Save site as a template” functionality from existing sites
 - Design package – Generated using Design Manager from publishing site
+- Custom sandbox solutions - Created in Visual Studio for example for branding assets and do not contain assemblies
 
 Code-based sandbox solutions can be further divided to following types based on the use cases. 
 - Declarative sandbox solution with empty assembly
@@ -81,7 +82,7 @@ We are looking for adding specific articles on the transformation techniques for
 
 ## Removing your sandbox code  from your site
 <a name="sectionSection3"> </a>
-When you deactivate your existing sandbox solution from sites, any assets or files deployed using declarative options will not be removed. If you have used sandbox solutions to introduce new code-based web parts, those functionalities will be disabled from the sites, but pages are still rendering normally, so there's no direct end user impact when solution is deactivated.
+When you deactivate your existing sandbox solution from sites, any assets or files deployed using declarative options will not be removed. If you have used sandbox solutions to introduce new code-based web parts, those functionalities will be disabled from the sites. This means that the pages are still rendering normally, so there's no direct end user impact when solution is deactivated, except removal of the code-based functionalities, like web parts.
 
 ## Additional resources
 <a name="bk_addresources"> </a>
