@@ -3,7 +3,7 @@ Transform or convert your code-based sandbox solutions to the SharePoint add-in 
 
 _**Applies to:** add-ins for SharePoint | SharePoint 2013 | SharePoint Online_
 
-Code-based sandbox solutions [were deprecated](https://blogs.msdn.microsoft.com/sharepointdev/2014/01/14/deprecation-of-custom-code-in-sandboxed-solutions/) back in 2014 and SharePoint online has started the process to completely remove this capability. Code-based sandox solutions are also deprecated in SharePoint 2013 and in SharePoint 2016.
+Code-based sandbox solutions [were deprecated](https://blogs.msdn.microsoft.com/sharepointdev/2014/01/14/deprecation-of-custom-code-in-sandboxed-solutions/) back in 2014 and SharePoint online has started the process to completely remove this capability. Code-based sandbox solutions are also deprecated in SharePoint 2013 and in SharePoint 2016.
 
 Transforming your sandbox solutions to the SharePoint add-in model involves analyzing your existing extensions, designing and developing your new add-in(s) for SharePoint, and then testing and deploying your add-in in your production environment. 
 
