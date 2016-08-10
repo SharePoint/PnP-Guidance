@@ -44,7 +44,9 @@ The approach you take to handle events in SharePoint is slightly different in th
 
 ## Removing your sandbox code from your site
 <a name="sectionSection3"> </a>
-When you deactivate your existing sandbox solution from sites, any assets or files deployed using declarative options will not be removed. If you have used sandbox solutions to introduce event receivers, upon deactivation of the sandbox solution, the features will automatically be deactivated and the event receiver will be removed from the object.
+When you deactivate your existing sandbox solution from your sites, any assets or files deployed using declarative options will not be removed however, the feature will automatically be deactivated and the event receiver will be removed. 
+
+
 
 ## Additional Resources
 <a name="bk_addresources"> </a>
