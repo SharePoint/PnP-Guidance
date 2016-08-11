@@ -28,7 +28,6 @@ The approach you take to handle events in SharePoint is slightly different in th
 - Remote Event Receivers that are attached out-side the context of add-in, attached using a console application or PowerShell; will not receive a SharePoint context token when invoked and you must differ to app-only permissions or use the SharePointOnlineCredentials class
 - There is no retry mechanism 
 
-
 ### WebHooks
 - Requires hosting infrastructure
 - Hosting infrastructure must be highly available
@@ -36,16 +35,14 @@ The approach you take to handle events in SharePoint is slightly different in th
 - Process changes after the event has occurred
 - Public preview available in late 2016
 
-
 ### Remote Timer Job
 - Requires hosting infrastructure
 - Process changes after the event has occurred
 - Uses a polling mechanism to process changes
 
 ## Removing your sandbox code from your site
-<a name="sectionSection3"> </a>
-When you deactivate your existing sandbox solution from your sites, any assets or files deployed using declarative options will not be removed however, the features in sandbox solution will automatically be deactivated and the event receiver will be removed. 
-
+<a name="sectionSection3"></a>
+When you deactivate your existing sandbox solution from your sites, any assets or files deployed using declarative options will not be removed however, the features in the sandbox solution will automatically be deactivated and the event receiver will be removed. 
 
 ## Additional Resources
 <a name="bk_addresources"> </a>
