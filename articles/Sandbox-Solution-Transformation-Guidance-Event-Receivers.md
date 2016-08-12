@@ -33,8 +33,8 @@ The approach you take to handle events in SharePoint is slightly different in th
 - Hosting infrastructure must be highly available
 - Does not support synchronous events
 - Process changes after the event has occurred
-- Public preview available in late 2016
-- Not available in SharePoint On-premises builds
+- Public preview available in late 2016 for SharePoint Online
+- Not available in SharePoint on-premises builds at this time.
 
 ### Remote Timer Job
 - Requires hosting infrastructure
