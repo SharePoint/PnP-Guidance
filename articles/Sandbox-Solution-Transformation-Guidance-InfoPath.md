@@ -11,7 +11,7 @@ Code-based sandbox solutions [were deprecated](https://blogs.msdn.microsoft.com/
 In this section we show you an analysis and fixing model that you can apply to your InfoPath forms. Depending on your form you can simply **fix** the form and redeploy it or you need to **move away from InfoPath** and use an alternative approach to realize the needed functionality. However before taking those actions **it's important to assess the business need for your form**: we often see a lot of old forms which are not business relevant anymore and in those cases it's easier to simply drop the form. 
 
 ### How do I know that I've InfoPath forms with code behind?
-You can use **[specific sandbox solution inventory script](https://github.com/OfficeDev/PnP-Tools/tree/master/Scripts/SharePoint.Sandbox.ListSolutionsFromTenant)** provided by the PnP initiative for getting list of installed sandbox solutions in your tenant. Once you've that list you can check the **WSPName column**: typically WSP's that **start with "InfoPath Form_"** are coming from deployed InfoPath forms with code behind.
+The recommended option is to use the **[SharePoint SandBox Solution scanner tool](https://github.com/OfficeDev/PnP-Tools/tree/master/Solutions/SharePoint.SandBoxTool)** as the report from this tool will indicate if the sandbox solution is coming from an InfoPath file. Additionally the tool will also tell you if the used assembly in the solution is "useless" as described later on in this article.
 
 ### Are my forms still relevant?
 Before diving into the remediation/transformation work it's important to ask the question: is this form still critical for my business. If so then please continue to the next chapter, if not you need to think about the data created using this form. Typically the data was created as InfoPath XML files which live in a SharePoint list. If you remove the form you'll not be able to visualize the data anymore: sometimes that's fine since form and data are not relevant anymore but in case you want to ensure access to the data you can convert the InfoPath XML files to SharePoint list (items) data. The [PnP-Transformation repository contains a sample showing how you can achieve this](https://github.com/OfficeDev/PnP-Transformation/tree/master/InfoPath/Migration/EmpRegConsole "Sample showing how to transform from InfoPath XML to list data").
@@ -33,7 +33,7 @@ Previous sections have shown and given you the InfoPath forms with code behind b
 Once you've done this you'll have code behind...but this code behind is not doing anything and by removing it you can convert your InfoPath form with code behind to a regular InfoPath form which has no code behind and as such no dependency on sandbox solutions!
 
 #### How do I know the code behind is "useless"?
-You might wonder how to distinguish between useless and needed code behind as you can only fix the first category. If you still have the original deployed form (so not the one you've downloaded in previous steps) you can simply have a peek at the code. The default empty code is shown below and if you've similar code then this form can be fixed by dropping the code:
+The [SharePoint Sandbox Solution scanner](https://github.com/OfficeDev/PnP-Tools/tree/master/Solutions/SharePoint.SandBoxTool) will tell you if your InfoPath has useless code, but if you want to learn more then continue reading. You might wonder how to distinguish between useless and needed code behind as you can only fix the first category. If you still have the original deployed form (so not the one you've downloaded in previous steps) you can simply have a peek at the code. The default empty code is shown below and if you've similar code then this form can be fixed by dropping the code:
 
 ```C#
 using Microsoft.Office.InfoPath;
@@ -83,6 +83,8 @@ If you've confirmed your code behind is useless you can easily drop it by:
 - **Deactivate the linked sandbox solution** via Site Settings - Solutions
 - **Confirm** the form works as expected
 - **Delete** the sandbox solution
+
+If you don't have access to the InfoPath XSN file and source code anymore **you can still fix these forms by simply deactivating the sandbox solutions that have "useless" code only**. Only do this for the ones mentioned in the sandbox solution report output with IsEmptyInfoPathAssembly = true.
 
 ## Migrate your InfoPath forms
 <a name="sectionSection2"> </a>

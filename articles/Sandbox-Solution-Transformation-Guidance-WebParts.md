@@ -18,7 +18,7 @@ Another method is to re-write the web part as a client side solution. This will 
 |**Approach**|**Additional Information**|
 |:-----|:-----|
 |Provider Hosted Add-In Client Webpart|<ul><li>[Get started creating provider-hosted SharePoint Add-ins](https://msdn.microsoft.com/en-us/library/office/fp142381.aspx)</li><li>[Create add-in parts to install with your SharePoint Add-in](https://msdn.microsoft.com/en-us/library/a2664289-6c56-4cb1-987a-22367fad55eb)</li><li>[Client Web Part Definition Schema](https://msdn.microsoft.com/en-us/library/office/dn481208.aspx)</li><li>[Set up an on-premises development environment for SharePoint Add-ins](https://msdn.microsoft.com/en-us/library/office/fp179923.aspx)</li></ul>|
-|Client Side Solution|<ul><li>[Simple React Form Sample](#)</li><li>[JavaScript Embedding Samples](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScript) [*](#actionsupportnote)</li><li>[Patterns and Practices JS Core](https://github.com/OfficeDev/PnP-JS-Core/)</li></ul>|
+|Client Side Solution|<ul><li>[Simple React Form Sample](https://github.com/OfficeDev/PnP/tree/dev/Samples/SharePoint.React.SupportTicket)</li><li>[JavaScript Embedding Samples](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScript) [*](#actionsupportnote)</li><li>[Patterns and Practices JS Core](https://github.com/OfficeDev/PnP-JS-Core/)</li></ul>|
 
 
 ## Design Considerations
