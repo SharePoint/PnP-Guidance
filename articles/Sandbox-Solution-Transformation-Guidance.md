@@ -41,7 +41,7 @@ When you transform your sandbox solutions to the SharePoint add-in model, you wa
 
 2. Solution assessment. Analyze the functional and business requirements by: 
     
-	- Identifying deployed sandbox solutions in your current environment for which you either can use the [SharePoint Sandbox Solution scanner](https://github.com/OfficeDev/PnP-Tools/tree/master/Solutions/SharePoint.SandBoxTool) or use [specific sandbox solution inventory script](https://github.com/OfficeDev/PnP-Tools/tree/master/Scripts/SharePoint.Sandbox.ListSolutionsFromTenant). The first one is a tool offering a lot of options and a detailed inventory, the latter is a PowerShell script giving you a basic inventory. Both tools are provided to you as open source by the SharePoint PnP team.
+	- Identifying deployed sandbox solutions in your current environment for which you either can use the [SharePoint Sandbox Solution scanner](https://github.com/OfficeDev/PnP-Tools/tree/master/Solutions/SharePoint.SandBoxTool) ([video](https://www.youtube.com/watch?v=pK4p2mGYXpU)) or use [specific sandbox solution inventory script](https://github.com/OfficeDev/PnP-Tools/tree/master/Scripts/SharePoint.Sandbox.ListSolutionsFromTenant). The first one is a tool offering a lot of options and a detailed inventory, the latter is a PowerShell script giving you a basic inventory. Both tools are provided to you as open source by the SharePoint PnP team.
     
 	- Reviewing requirements with your users. Consider asking your users to demonstrate how they use the existing sandbox solutions to perform their daily work.
     
