@@ -115,7 +115,7 @@ The following articles describe the override create site link pattern and provid
 - [Self-Service Site Provisioning using add-ins for SharePoint 2013 (MSDN Blog)](http://blogs.msdn.com/b/richard_dizeregas_blog/archive/2013/04/04/self-service-site-provisioning-using-apps-for-sharepoint-2013.aspx)
 	+ End-to-end article about this pattern with accompanying video.
 - [Provisioning.Cloud.Sync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Provisioning.Cloud.Sync)
-	+ This solution shows the model for providing synchronous site collection or sub site creation experience to introduce model for site templates without using actual sandbox solutions or stp files. **{Todd, please re-read the previous sentence and consider rewriting. You might just be missing "a" before the word model, or more text is missing.}**
+	+ This solution shows the model for providing synchronous site collection or sub site creation experience to introduce model for site templates without using actual sandbox solutions or stp files. 
 
 Override the create sub site link
 ---------------------------------

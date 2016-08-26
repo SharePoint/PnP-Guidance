@@ -1257,7 +1257,7 @@ List<WebTemplateEntity> templates = new List<WebTemplateEntity>();
 
 ```
 
-All three of these extension methods - **SetAvailablePageLayouts**, **SetDefaultPageLayoutForSite**, and **SetAvailableWebTemplates** - work in the same way. They create XML documents that contain key/value pairs that define the available and default layouts and the available templates. They then pass these documents to an additional extension method called **SetPropertyBagValue**. This method is implemented in [OfficeDevPnPCore extension](https://github.com/OfficeDev/PnP/tree/dev/OfficeDevPnP.Core). After it sets up the appropriate property bags, these property bags are then used to filter options in the interface.
+All three of these extension methods - **SetAvailablePageLayouts**, **SetDefaultPageLayoutForSite**, and **SetAvailableWebTemplates** - work in the same way. They create XML documents that contain key/value pairs that define the available and default layouts and the available templates. They then pass these documents to an additional extension method called **SetPropertyBagValue**. This method is implemented in [OfficeDevPnPCore extension](hhttps://github.com/OfficeDev/PnP-sites-core). After it sets up the appropriate property bags, these property bags are then used to filter options in the interface.
 
 Of the three methods, **SetAvailableWebTemplates** shows the full pattern.
 
@@ -1308,6 +1308,6 @@ The **InheritWebTemplates** property bag makes sure that any templates that are 
 
 - [UX Components in SharePoint 2013 and SharePoint Online](ux-components-in-sharepoint-2013-and-sharepoint-online.md)
     
-- [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Provisioning.Pages)
+- [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages)
     
-- [Branding.ApplyBranding](https://github.com/OfficeDev/PnP/tree/dev/Samples/Branding.ApplyBranding)
+- [Branding.ApplyBranding](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.ApplyBranding)
