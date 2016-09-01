@@ -82,6 +82,12 @@ We are looking for adding specific articles on the transformation techniques for
 <a name="sectionSection3"> </a>
 When you deactivate your existing sandbox solution from sites, any assets or files deployed using declarative options will not be removed. If you have used sandbox solutions to introduce new code-based web parts, those functionalities will be disabled from the sites. This means that the pages are still rendering normally, so there's no direct end user impact when solution is deactivated, except removal of the code-based functionalities, like web parts.
 
+## How will support of code-based sandbox solution be removed from SharePoint Online?
+<a name="howremoved"> </a>
+Support will be removed by disabling code-based operations to be executed from sandbox-solution-based code. This means that your sandbox solutions will not be explicitly deactivated from the solution store, but any code based operation will no longer be performed. Sandbox solutions will ‘remain in activated’ status in the solution gallery. Features deployed using sandbox solutions will not get deactivated automatically, which means that possible code associated to feature deactivation or uninstall handlers won't be run. 
+
+All declarative definitions in the sandbox solution will continue working after this change is be applied in SharePoint Online. 
+
 ## Additional resources
 <a name="bk_addresources"> </a>
 
