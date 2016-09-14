@@ -120,3 +120,12 @@ To better help you with converting your InfoPath form **we've listed 11 common I
 
 ### Migrating your InfoPath data
 Once you've moved over your InfoPath form to a new solution you might also want to migrate your data from InfoPath XML to regular SharePoint list data or to the data layer of your choice. Since InfoPath files are XML files it's fairly easy to read and transform those. The [PnP-Transformation repository contains a sample showing how you can achieve this](https://github.com/OfficeDev/PnP-Transformation/tree/master/InfoPath/Migration/EmpRegConsole "Sample showing how to transform from InfoPath XML to list data").
+
+### Code-based operations are disabled and now my existing forms don't open anymore
+As soon as code based operations are disabled it means that no code can run anymore in the sandbox. If you've forms that execute code it also means that opening of existing forms will not work anymore. Below steps will help you handle this:
+ - If you've migrated your InfoPath form to a new solution then you've most likely already converted your data and as such you're good
+ -  If you opted to keep the form as is (e.g. since it's not business critical anymore) but you still want to open the existing forms then you can take one of the following steps:
+	- Remove the code behind from your form and republish it (see the **Dropping code behind from InfoPath forms to fix them** section above)
+	- Use InfoPath Client to open the forms
+	- Migrate the form data to plain SharePoint list data (see the **Migrating your InfoPath data** section above)
+
