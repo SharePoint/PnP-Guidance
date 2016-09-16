@@ -98,6 +98,8 @@
 ### [The Timer Job Framework](timerjob-framework.md)
 ### [Create remote timer jobs in SharePoint](create-remote-timer-jobs-in-sharepoint.md)
 ### [Getting Started with WebJobs ("timer jobs")](Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites.md)
+## [How to provide add-in app only tenant administrative permissions in SharePoint Online](how-to-provide-add-in-app-only-tenant-administrative-permissions-in-sharepoint-online.md)
+### [Developing using Tenant permissions with App-Only](development-experience-tenant-apponly-permissions-in-sharepoint-online.md)
 ## [Add a custom ribbon to your SharePoint site](Add-a-custom-ribbon-to-your-SharePoint-site.md)
 ## [Configure Office 365 Projects for Distribution](Configure-O365Api-Project-For-Distribution.md)
 ## [Configure Provider-Hosted Add-ins for Distribution](Configure-SP-Provider-Hosted-Apps-For-Distribution.md)
@@ -113,4 +115,3 @@
 ## [Use asynchronous operations in SharePoint Add-ins](use-asynchronous-operations-in-sharepoint-add-ins.md)
 ## [Use Azure WebJobs with Office 365](Use-Microsoft-Azure-WebJobs-with-Office-365.md)
 ## [Use remote event receivers in SharePoint](Use-remote-event-receivers-in-SharePoint.md)
-## [How to provide add-in app only tenant administrative permissions in SharePoint Online](how-to-provide-add-in-app-only-tenant-administrative-permissions-in-sharepoint-online.md)
