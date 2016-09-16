@@ -1,14 +1,15 @@
-Developer Experience using Tenant Permissions in SharePoint Online
-================================================
-The developer experience has changed for SharePoint Provider-hosted Add-ins that require Tenant permission. This article walks you through the new experience for developing and debugging these solutions. 
+# Developing using Tenant permissions with App-Only in SharePoint Online
 
-_**Applies to:** Add-ins for SharePoint Online_
+The developer experience has changed for SharePoint **Provider-hosted Add-ins** that require **Tenant permission in combination with app-only**. This article walks you through the new experience for developing and debugging these solutions. 
+
+_**Applies to:** Provider Hosted Add-ins for SharePoint Online_
 
 
 ## Understanding the Problem
 In Visual Studio, you navigate to Debug, start debugging and receive a message that "**Your tenant administrator has to approve this app**" as depicted below.
 ![](http://i.imgur.com/oFH9oqb.png). 
 
+The reason why you can't click **trust it** is because Visual Studio is working against the dev site collection you've specified in your project settings whereas tenant level permissions with app-only can only be granted via [trusting it against your tenant administration site](https://msdn.microsoft.com/en-us/pnp_articles/how-to-provide-add-in-app-only-tenant-administrative-permissions-in-sharepoint-onlin).
 
 ## Walkthrough
 ### Step 1: Create a new service principal
@@ -62,6 +63,11 @@ Once the request has been approved the add-in may now be installed.
 In Visual Studio right click your web project and select **Debug** Start new instance. Once started, navigate to your site and launch the add-in.
 
 ![](http://i.imgur.com/Y5vAlDr.png)
+
+>**Note**
+> - If for some reason your app package file changes you'll need to redeploy it to the app catalog and re-install it to your development site collection
+> - If you're add-in has an appinstalled event receiver you'll need to ensure that you've done step 6 before you do step 5
+
 
 ## Additional resources
 <a name="bk_addresources"> </a>
