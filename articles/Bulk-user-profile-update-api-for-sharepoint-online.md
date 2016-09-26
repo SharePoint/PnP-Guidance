@@ -23,11 +23,7 @@ Since many enterprises however have business requirements to replicate custom at
 
 Here's quick demo video on using the new CSOM API from managed code or from PowerShell. You can find used code sample, including sample PowerShell script, from the [Office Dev PnP Code Gallery](http://dev.office.com/patterns-and-practices-detail/7202).
 
-<iframe id="ytplayer" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/-X_2T0SRUBk?autoplay=1&origin=https://msdn.microsoft.com" frameborder="0"></iframe>
-
-Video in the [PnP YouTube channel](https://www.youtube.com/watch?v=-X_2T0SRUBk).
-
-
+<iframe id="ytplayer" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/-X_2T0SRUBk?autoplay=0&origin=https://msdn.microsoft.com" frameborder="0"></iframe>
 
 ## Import file format
 <a name="sectionSection1"> </a>

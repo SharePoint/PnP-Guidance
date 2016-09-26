@@ -86,6 +86,7 @@
 ### [InfoPath forms with code](Sandbox-Solution-Transformation-Guidance-InfoPath.md)
 ## [User Profile Solutions](user-profile-solutions-for-sharepoint.md)
 ### [Read or update user profile properties](Read-or-update-user-profile-properties-sample-app-for-SharePoint.md)
+### [Bulk User Profile update API](bulk-user-profile-update-api-for-sharepoint-online.md)
 ### [Migrate user profile properties](Migrate-user-profile-properties-sample-app-for-SharePoint.md)
 ### [Personalize search results](Personalize-search-results-sample-app-for-SharePoint.md)
 ### [Upload user profile pictures](Upload-user-profile-pictures-sample-app-for-SharePoint.md)
