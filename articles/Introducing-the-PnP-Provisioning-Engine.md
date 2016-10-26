@@ -243,5 +243,4 @@ Please, play with the PnP Provisioning Engine, give us feedbacks, and enjoy the 
 ## Additional resources
 
 -  [Office 365 Development Patterns & Practices on GitHub](https://github.com/OfficeDev/PnP/)
-    
--  [Yammer Network for Office 365 Professionals](https://www.yammer.com/itpronetwork/)
+-  [SharePoint Developer Group](http://aka.ms/sppnp-community) at Microsoft Tech Community
