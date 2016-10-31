@@ -28,7 +28,7 @@ Here's quick demo video on using the new CSOM API from managed code or from Pow
 ## Import file format
 <a name="sectionSection1"> </a>
 
-Information to be processed is provided with JSON formatted file. Here’s a structure for the file format. Notice that `AttributeName_m` is demonstrating how multi-value properties are defined in the source file.  
+Information to be processed is provided with JSON formatted file. Here’s a structure for the file format.   
 
 ```JSON
 {
@@ -37,19 +37,16 @@ Information to be processed is provided with JSON formatted file. Here’s a str
        "<IdName>": "<UserIdValue_1>",
        "<AttributeName_1>": "<User1_AttributedValue_1>",
        "<AttributeName_2>": "<User1_AttributedValue_2>",
-       "<AttributeName_m>": ["<User1_Value_m1>", "<User1_Value_m2>"]
      },
      {
        "<IdName>": "<UserIdValue_2>",
        "<AttributeName_1>": "<User2_AttributedValue_1>",
        "<AttributeName_2>": "<User2_AttributedValue_2>",
-       "<AttributeName_m>": "<User2_AttributedValue_m>"
      },
      {
        "<IdName>": "<UserIdValue_n>",
        "<AttributeName_1>": "<Usern_AttributedValue_1>",
        "<AttributeName_2>": "<Usern_AttributedValue_2>",
-       "<AttributeName_m>": ["<Usern_Value_m1>", "<Usern_Value_m2>"]
      }
    ]
 }
@@ -372,10 +369,10 @@ This capability is unfortunately only for SharePoint Online at least for now. In
 Yes. On-premises SharePoint would be considered as any source system. You’d have to export the user profile values from your on-premises SharePoint to JSON file format and process would be exactly the same as importing values from any other system.
 
 **Can I import string based multi-value properties?**
-Yes. You’ll need to adjust the data file accordingly. See details on the data file format on how to define multi-value properties in the JSON objects.
+No. This is not currently supported with this API.
 
 **Can I import taxonomy based multi-value properties?**
-No. This is not supported with this API currently.
+No. This is not currently supported with this API.
 
 **What if I define mapping in the code which is not used or have property in the JSON which is not mapped?**
 If your code/script defines a mapping which is not used or data file does not contain properties for that mapping, execution will continue without any exceptions and import will be applied based on mapped properties. If you however have property in the JSON file which is not mapped, import process will be aborted and exception details will be provided in the log file for the specific job execution.
