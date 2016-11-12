@@ -9,7 +9,7 @@ _**Applies to:** Provider Hosted Add-ins for SharePoint Online_
 In Visual Studio, you navigate to Debug, start debugging and receive a message that "**Your tenant administrator has to approve this app**" as depicted below.
 ![](http://i.imgur.com/oFH9oqb.png). 
 
-The reason why you can't click **trust it** is because Visual Studio is working against the dev site collection you've specified in your project settings whereas tenant level permissions with app-only can only be granted via [trusting it against your tenant administration site](https://msdn.microsoft.com/en-us/pnp_articles/how-to-provide-add-in-app-only-tenant-administrative-permissions-in-sharepoint-onlin).
+The reason why you can't click **trust it** is because Visual Studio is working against the dev site collection you've specified in your project settings whereas tenant level permissions with app-only can only be granted via [trusting it against your tenant administration site](https://msdn.microsoft.com/en-us/pnp_articles/how-to-provide-add-in-app-only-tenant-administrative-permissions-in-sharepoint-online).
 
 ## Walkthrough
 ### Step 1: Create a new service principal
