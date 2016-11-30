@@ -78,7 +78,7 @@ web.SetComposedLookByUrl("Green");
 
 ```
 
-When you are using code based approaches, we recommend using [PnP Provisioning Engine](dev.office.com/blogs/sharepoint-pnp-remote-provisioning-engine-august-2016) for the template management, which will dramatically simplify the development efforts. 
+When you are using code based approaches, we recommend using [PnP Provisioning Engine](http://dev.office.com/blogs/sharepoint-pnp-remote-provisioning-engine-august-2016) for the template management, which will dramatically simplify the development efforts. 
 
 ## Removing sandbox solution containing feature receiver code from your site
 <a name="sectionSection3"> </a>
