@@ -15,15 +15,15 @@ _**Applies to:** SharePoint Online_
 ## Overview of the customization options
 Below table gives a quick overview of the supportability of "modern" lists and libraries, in this article we'll provide more details and examples on the supported options. The SharePoint team is working to support more options in the future.
 
-|**Supported options**|**Not supported**|
+|**Not Supported **|**Supported options**|
 |:-----|:-----|
-| Subset of User Custom Actions | JSLink based field customizations |
-| Custom branding | JSLink based view customizations |
-|  | Custom CSS via AlternateCSSUrl web property |
-|  | Custom JavaScript embedded via User Custom Actions |
-|  | Customization via InfoPath |
-|  | Minimal Download Strategy (MDS) |
-|  | SharePoint Server Publishing |
+| JSLink based field customizations| Subset of User Custom Actions  |
+| JSLink based view customizations | Custom branding  |
+| Custom CSS via AlternateCSSUrl web property |  |
+| Custom JavaScript embedded via User Custom Actions |  |
+| Customization via InfoPath |  |
+| Minimal Download Strategy (MDS) |  |
+| SharePoint Server Publishing |  |
 
 
 ## User Custom Actions
@@ -281,3 +281,6 @@ context.ExecuteQuery();
 <a name="bk_addresources"> </a>
 
 -  [Switch the default experience for lists or document libraries from new or classic](https://support.office.com/en-us/article/Switch-the-default-experience-for-lists-or-document-libraries-from-new-or-classic-66dac24b-4177-4775-bf50-3d267318caa9)
+- [Overview of the "modern" document library experience](https://blogs.office.com/2016/06/07/modern-document-libraries-in-sharepoint)
+- [Overview of the "modern" list experience](https://blogs.office.com/2016/07/25/modern-sharepoint-lists-are-here-including-integration-with-microsoft-flow-and-powerapps) 
+- [Differences between "modern" and "classic" experiences](https://support.office.com/en-us/article/Differences-between-classic-and-new-experiences-for-lists-and-document-libraries-30e1aab0-a5cc-4363-b7f2-09e2ae07d4dc?ui=en-US&rs=en-US&ad=US)
