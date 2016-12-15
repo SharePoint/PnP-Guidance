@@ -212,7 +212,7 @@ When developing user custom actions that need to work in modern experiences plea
 
 ## Custom branding
 <a name="themingimpact"> </a>
-If you're site happens to use a custom theme then this custom will be respected in the "modern" list and library experiences as shown in below sample:
+If you're site happens to use a custom theme then this custom theme will be respected in the "modern" list and library experiences as shown in below sample:
 
 ![](http://i.imgur.com/jSzKsvo.png)
 
