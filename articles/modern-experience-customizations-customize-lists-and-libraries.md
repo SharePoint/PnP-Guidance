@@ -15,7 +15,7 @@ _**Applies to:** SharePoint Online_
 ## Overview of the customization options
 Below table gives a quick overview of the supportability of "modern" lists and libraries, in this article we'll provide more details and examples on the supported options. The SharePoint team is working to support more options in the future.
 
-|**Not Supported **|**Supported options**|
+| **Not Supported** | **Supported options** |
 |:-----|:-----|
 | JSLink based field customizations| Subset of User Custom Actions  |
 | JSLink based view customizations | Custom branding  |
@@ -207,7 +207,7 @@ When developing user custom actions that need to work in modern experiences plea
  - Command actions cannot contain JavaScript...using for example `CommandAction="javascript:alert('My custom Action');"` will mean the user custom action will not show up
  - Using the `ScriptLink` or `ScriptBlock` properties is not possible since they can only be used with user custom action location `ScriptLink`, which is not supported
  - The `RegistrationId` cannot refer to specific library ID (e.g. {7A46F86F-D6CC-4263-8A1B-1BC1658B506C}) or a specific content type id (e.g. 0x0101), only out of the box template types (e.g. 100 for a List or 101 for a Document Library) are allowed
- - Using image maps (e.g. `Image16by16="/_layouts/15/1033/images/formatmap16x16.png?rev=33" Image16by16Left="-144" Image16by16Top="-107"`) does not work, you'll need to specify individual images. Also not that only 16x16 images are relevant
+ - Using image maps (e.g. `Image16by16="/_layouts/15/1033/images/formatmap16x16.png?rev=33" Image16by16Left="-144" Image16by16Top="-107"`) does not work, you'll need to specify individual images. Also note that only 16x16 images are relevant
 
 
 ## Custom branding
