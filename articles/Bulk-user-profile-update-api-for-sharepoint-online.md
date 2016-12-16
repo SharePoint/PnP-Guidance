@@ -371,6 +371,9 @@ Yes. On-premises SharePoint would be considered as any source system. You’d ha
 **Can I import string based multi-value properties?**
 No. This is not currently supported with this API.
 
+**What permissions are required for executing this API??**
+You will need to have Global Admin permissions currently. SharePoint Admin is not sufficient.
+
 **Can I import taxonomy based multi-value properties?**
 No. This is not currently supported with this API.
 
