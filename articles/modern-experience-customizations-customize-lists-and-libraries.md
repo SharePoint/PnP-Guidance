@@ -21,6 +21,7 @@ Below table gives a quick overview of the supportability of "modern" lists and l
 | JSLink based view customizations | Custom branding  |
 | Custom CSS via AlternateCSSUrl web property |  |
 | Custom JavaScript embedded via User Custom Actions |  |
+| Custom master pages |  |
 | Customization via InfoPath |  |
 | Minimal Download Strategy (MDS) |  |
 | SharePoint Server Publishing |  |
@@ -216,7 +217,7 @@ If you're site happens to use a custom theme then this custom theme will be resp
 
 ![](http://i.imgur.com/jSzKsvo.png)
 
-## How to govern the end user experience
+## How to configure the end user experience
 <a name="configuremodernlibrariesandlists"> </a>
 You do have multiple options to control whether the "modern" or "classic" library and list experience will be used. 
 
