@@ -39,9 +39,9 @@ If you completely want to disable the "modern" experience then it's best to use 
 
 ![](http://i.imgur.com/3tbsxuO.png)
 
->Notes:
-> - The tenant level setting is little bit confusing: "preventing users from creating Site Pages" will actually bring back the "classic" experience.
-> - The current configuration is cached, logging off the session will show the effect of this change
+>**Notes:**
+> - The tenant level setting is a little bit confusing: "Preventing users from creating Site Pages" will actually bring back the "classic" experience.
+> - The current configuration is cached, logging off the session will immediately show the effect of this change
 
 ### Site level configuration
 You can prevent a site collection or web to use the "modern" page experience by disabling a feature the site collection scoped feature with ID **B6917CB1-93A0-4B97-A84D-7CF49975D4EC**. To again enable the "modern" page experience at site level you'll need to activate the feature again
