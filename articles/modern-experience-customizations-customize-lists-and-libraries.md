@@ -35,12 +35,12 @@ The "modern" experiences do allow certain user custom actions to be surfaced in 
 |:-----|:-----|
 | `EditControlBlock` | Yes, these entries show up as custom menu items|
 | `CommandUI.Ribbon` | Yes, these entries show up as toolbar items |
-| All other locations (e.g. `scriptlink`) | Sorry, these custom actions won't work |
+| All other locations (e.g. `scriptlink`) | Sorry, these user custom actions won't work |
 
 
 ### EditControlBlock User Custom Actions 
 <a name="editcontrolblockcustomactions"> </a>
-Adding custom links to the context menu can be done by using the EditControlBlock as location for your custom action. The shown PnP provisioning XML creates 2 custom entries. 
+Adding custom links to the context menu can be done by using the `EditControlBlock` as location for your custom action. The below PnP provisioning XML creates 2 custom entries. 
 
 ```XML
 <pnp:ProvisioningTemplate ID="EditControlBlockSamples" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
@@ -53,7 +53,7 @@ Adding custom links to the context menu can be done by using the EditControlBloc
 </pnp:ProvisioningTemplate>
 ```
 
-You can apply this PnP provisioning template to a site using the PnP Core library or PnP PowerShell. We've opted to show the PowerShell approach in this article. A first step is installing the PnP PowerShell module as described in https://github.com/SharePoint/PnP-PowerShell. Once that's, save the PnP provisioning xml to a file done 2 simple lines of PnP PowerShell are enough to apply the template:
+You can apply this PnP provisioning template to a site using the PnP Core library or PnP PowerShell. We've opted to show the PowerShell approach in this article. A first step is installing the PnP PowerShell module as described in https://github.com/SharePoint/PnP-PowerShell. Once that's done, save the PnP provisioning xml to a file and then 2 simple lines of PnP PowerShell are enough to apply the template:
 
 ```PowerShell
 Connect-PnPOnline -Url <url_to_your_SharePoint_Online_site>
@@ -178,7 +178,7 @@ If you want to extend the toolbar in the "modern" list and library experiences y
 </pnp:ProvisioningTemplate>
 ```
 
-After adding these user custom actions you'll see them appearing in the toolbar. Notice that custom tabs are transformed into a fly-out menu:
+After adding these user custom actions you'll see them appearing in the toolbar. Notice that custom tabs are transformed into a dropdown menu:
 
 ![](http://i.imgur.com/fb9pQqD.png)
 
@@ -204,7 +204,7 @@ After adding these user custom actions you'll see them appearing in the toolbar.
 <a name="customactionlimitations"> </a>
 
 When developing user custom actions that need to work in modern experiences please take in account the following limitations:
- - You can't completely control the order in which the user custom actions show up because the sequence attribute is not respected: the user custom actions are added in the order the `_api/web/Lists(guid'listid')/CustomActionElements` does return the user custom actions. Buttons defined inside a custom tab can be ordered by adding them in the correct order in the CommandUIDefinition xml. Our sample shows Button 3 as first and that's because of the order in the XMl
+ - You can't completely control the order in which the user custom actions show up: the user custom actions are added in the order the `_api/web/Lists(guid'listid')/CustomActionElements` does return the user custom actions...and this API currently does not take in account the sequence attributes. Buttons defined inside a custom tab can be ordered by adding them in the correct order in the CommandUIDefinition xml. Our sample shows Button 3 as first and that's because of the order in the XML
  - Command actions cannot contain JavaScript...using for example `CommandAction="javascript:alert('My custom Action');"` will mean the user custom action will not show up
  - Using the `ScriptLink` or `ScriptBlock` properties is not possible since they can only be used with user custom action location `ScriptLink`, which is not supported
  - The `RegistrationId` cannot refer to specific library ID (e.g. {7A46F86F-D6CC-4263-8A1B-1BC1658B506C}) or a specific content type id (e.g. 0x0101), only out of the box template types (e.g. 100 for a List or 101 for a Document Library) are allowed
