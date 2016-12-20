@@ -252,7 +252,11 @@ Use following PnP PowerShell to apply this template:
 
 ```PowerShell
 
-Connect-PnPOnline -Url https://[tenant].sharepoint.com/sites/siteurl
+# Connect to a previously created Modern Site
+$cred = Get-Credential
+Connect-PnPOnline -Url https://[tenant].sharepoint.com/sites/siteurl -Credentials $cred
+
+# Apply the PnP provisioning template
 Apply-PnPProvisioningTemplate -Path c:\experiencecontrol.xml -Handlers Features
 
 ```
