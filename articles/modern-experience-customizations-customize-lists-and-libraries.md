@@ -62,7 +62,7 @@ Apply-PnPProvisioningTemplate -Path c:\customaction_modern_editcontrolblock.xml 
 
 If you refresh the "modern" view of a document library in your site you'll see the new entries appear
 
-![EditControlBlock actions](http://i.imgur.com/ELrG5Sb.png)
+![Custom EditControlBlock actions visible in the menu](media/modern-experiences/custom-editcontrolblock-actions.png)
 
 
 >**Note**:
@@ -180,7 +180,7 @@ If you want to extend the toolbar in the "modern" list and library experiences y
 
 After adding these user custom actions you'll see them appearing in the toolbar. Notice that custom tabs are transformed into a dropdown menu:
 
-![](http://i.imgur.com/fb9pQqD.png)
+![Custom action visible in the toolbar](media/modern-experiences/custom-actions-toolbar.png)
 
 >**Note**:
 >If you want to use this sample for a list then please set the `RegistrationId` attributes to 100 and use the below XML for the CA_4 user custom action
@@ -215,7 +215,7 @@ When developing user custom actions that need to work in modern experiences plea
 <a name="themingimpact"> </a>
 If you're site happens to use a custom theme then this custom theme will be respected in the "modern" list and library experiences as shown in below sample:
 
-![](http://i.imgur.com/jSzKsvo.png)
+![Modern list with custom branding coming from custom theme](media/modern-experiences/modern-list-with-custom-theme.png)
 
 ## How to configure the end user experience
 <a name="configuremodernlibrariesandlists"> </a>
@@ -224,7 +224,7 @@ You do have multiple options to control whether the "modern" or "classic" librar
 ### Tenant level configuration
 If you completely want to disable the "modern" experience then it's best to use the tenant setting for this. navigate to your tenant admin center (e.g. contoso-admin.sharepoint.com), go to settings and select the "classic" experience:
 
-![](http://i.imgur.com/VlqKDh7.png)
+![SharePoint Lists and Libraries experience settings in the SharePoint Admin UI](media/modern-experiences/lists-libraries-tenant-settings.png)
 
 ### Site/Web level configuration
 You can prevent a site collection or web to use the "modern" experience by enabling a feature:
@@ -258,7 +258,7 @@ Apply-PnPProvisioningTemplate -Path c:\experiencecontrol.xml -Handlers Features
 ### List/Library configuration
 If you want to control the experience on library level then you can use go to list settings, advanced settings and change the behavior:
 
-![](http://i.imgur.com/Uebb6AV.png)
+![List experience configuration in the SharePoint tenant level settings in admin ui](media/modern-experiences/list-experience-setting.png)
 
 The same can also be done using CSOM as shown in below snippet:
 

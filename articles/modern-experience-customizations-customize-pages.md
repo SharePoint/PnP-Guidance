@@ -28,7 +28,7 @@ Below table gives a quick overview of the supportability of "modern" pages, in t
 <a name="themingimpact"> </a>
 If you're site happens to use a custom theme then this custom theme will be respected in the "modern" page experience as shown in below sample:
 
-![](http://i.imgur.com/dmEWSvg.png)
+![Modern page with custom branding coming from theme settings](media/modern-experiences/modern-page-with-custom-theme.png)
 
 ## How to configure the end user experience
 <a name="configuremodernpages"> </a>
@@ -37,7 +37,7 @@ You do have multiple options to control whether the "modern" or "classic" page e
 ### Tenant level configuration
 If you completely want to disable the "modern" experience then it's best to use the tenant setting for this. navigate to your tenant admin center (e.g. contoso-admin.sharepoint.com), go to settings and select the "classic" experience:
 
-![](http://i.imgur.com/3tbsxuO.png)
+![Site Pages section in the SharePoint tenant scoped settings in admin UI](media/modern-experiences/site-pages-setting-admin-ui.png)
 
 >**Notes:**
 > - The tenant level setting is a little bit confusing: "Preventing users from creating Site Pages" will actually bring back the "classic" experience.

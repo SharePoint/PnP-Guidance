@@ -14,15 +14,16 @@ Explain different options in provisioning - reference existing support article
 <a name="sectionSection0"> </a>
 Introduction
 
-## Provisioning a modern team site with PnP CSOM core component
+### Provisioning a modern team site with PnP CSOM core component
 <a name="sectionSection0"> </a>
 Introduction
 
-## Provisioning a modern team site with PnP PowerShell
+### Provisioning a modern team site with PnP PowerShell
 <a name="sectionSection0"> </a>
 Introduction
 
-## Considerations
+## Additional Considerations
+You cannot provision "modern" team sites using so called app-only approach, since Microsoft  
 Considerations and things to be aware
 - Modern team site provisioning does not support app only provisioning - call out options
 - Modern team sites - sub site situation

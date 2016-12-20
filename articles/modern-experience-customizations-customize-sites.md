@@ -11,7 +11,7 @@ _**Applies to:** SharePoint Online_
 
 ## Supported customizations in modern team sites
 <a name="supportedcustomizations"> </a>
-Below list gives a quick overview of the supported capabilities for "modern" team sites.
+"Modern" sites have different level customization options compared to "classic" team sites. There will be gradually additional customization options from the extensibility and branding perspective. Below list gives a quick overview of the supported capabilities for "modern" team sites. 
 
 - Apply a custom theme 
 - Apply out of the box theme
