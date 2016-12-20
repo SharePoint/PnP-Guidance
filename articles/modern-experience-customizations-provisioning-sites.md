@@ -1,14 +1,16 @@
 # Provisioning modern team sites programmatically
-Take a look on the options around provisioning modern team sites in SharePoint Online. Modern team sites have been introduced in SharePoint Online during autumn 2016 and usage of them can be controlled on tenant level.
+Take a look on the options around provisioning modern team sites in SharePoint Online. Modern team sites have been introduced in SharePoint Online during autumn 2016 and usage of them can be controlled on tenant level. This article explains different options and considerations to create modern team sites in SharePoint Online. 
 
 _**Applies to:** SharePoint Online_
 
 ## Provisioning a modern team site from user interface
 <a name="sectionSection0"> </a>
 There are numerous routes for a modern team site to get provisioned. You can start the provisioning directly from the SharePoint Online side or alternatively provision a Office 365 group for other locations, which will also provision a modern team site. 
+- If modern team sites are enabled in SharePoit Online admin side, you can create modern team sites from the SharePoint home page
+- You can create Office 365 group from the Office 365 Outlook and when you access the 'site' tab of a group, you will land on modern team site 
 
 ### How to control default provisioning flow
-Explain different options in provisioning - reference existing support article
+You can control SharePoint site creation process from the SharePoint Online admin settings. You can control if the modern experience is available for the end users or if you'd like to keep on using the classic experience.
 
 ![Site Creation options from the SharePoint Online admin UI](media/modern-experiences/site-creation-options-admin-ui.png)
 
@@ -86,7 +88,7 @@ $group = New-PnPUnifiedGroup -DisplayName "Awesome Group" -Description "Awesome 
 # Since we are connecting now to SP side, credentials will be asked
 Connect-PnPOnline $group.SiteUrl 
 
-# And play with it
+# Now we have access on the SharePoint site for any operations
 $context = Get-PnPContext
 $web = Get-PnPWeb
 $context.Load($web, $web.WebTemplate)
@@ -96,11 +98,12 @@ $web.WebTemplate + "#" + $web.Configuration
 > Notice. There is currently no support to provision "modern" team sites using [SharePoint Online Management Shell](https://www.microsoft.com/en-us/download/details.aspx?id=35588).
 
 ## Additional Considerations
-You cannot provision "modern" team sites using so called app-only approach, since Microsoft  
-Considerations and things to be aware
-- Modern team site provisioning does not support app only provisioning - call out options
-- Modern team sites - sub site situation
-- Not visible in the SharePoint Admin UI - they are groups
+You cannot provision "modern" team sites using so called app-only approach, since Groups endpoint in Microsoft Graph does not currently support that. This means that you will always need to use specific account when you operated with the modern team sites. This is being looked at, but there's no schedule to provide app-only support for the modern team site creation.
+
+If you provision a sub site under root site of a modern site collection, sub sites are using classic templates. There are currently no modern sub site templates available. You can transform a classic sub site as a modern team site by creating a modern page to the site and updating welcome page of the site to newly created page.  
+
+Modern team sites are not visible in the SharePoint admin UI. You can access the list of modern team sites from the Office 365 Groups admin user interface under Office 365 admin portal. SharePoint Online admin user interface only lists classic SharePoint sites. 
+
 
 ## Additional resources
 <a name="bk_addresources"> </a>
