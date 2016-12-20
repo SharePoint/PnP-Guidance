@@ -46,7 +46,7 @@ Since "modern" team sites have also the scripting capabilities disabled, there a
 
 ### Using PnP Provisioning Engine with "modern" team sites
 <a name="pnpprovisioningengine"> </a>
-You can use the PnP Provisioning Engine with modern team sites. PnP Provisioning Engine will detect if site is a "modern" team site and will automatically adjust it's behaviour based on the supported capabilities. Process is exactly the same if you use PnP Provisioning Engine with "classic" sites where the scripting capabilities are disabled.
+You can use the [PnP Provisioning Engine](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) with "modern" team sites. PnP Provisioning Engine will detect automatically if site is a "modern" team site and will adjust it's behaviour based on the supported capabilities. Process is exactly the same if you use PnP Provisioning Engine with "classic" sites where the scripting capabilities are disabled.
 
 Following elements are ignored when a remote template is applied to a "modern" team site or a site which has "no scripting" enabled.
 - Site collection AuditLogTrimmingRetention configuration in the auditing settings
@@ -130,11 +130,10 @@ Since there's no direct property to check if the scripting is enabled or not, yo
             return false;
         }
 
-'''
+```
 
-## Considerations
-Considerations and things to be aware
-- We will add additional customization capabilities to modern team sites gradually
+## Additional Considerations
+There will be gradually additional customization support for "modern" team sites when additional capabilities of the SharePoint Framework will be released. There's no exact schedule currently for additional capabilities, but we will be updating these articles when new capabilities will be available.
 
 
 ## Additional resources
