@@ -83,6 +83,11 @@ Apply-PnPProvisioningTemplate -Path c:\experiencecontrol.xml -Handlers Features
 
 ```
 
+## Additional Considerations
+<a name="sectionSection22"> </a>
+
+We'll gradually introduce more customization options for "modern" pages experience. This introduction will be aligned with the release of additional SharePoint framework capabilities. Currently there's no exact schedule available, but note that we'll be updating the "modern" experience articles whenever new capabilities are being released.
+
 ## Additional resources
 <a name="bk_addresources"> </a>
 

@@ -283,6 +283,10 @@ context.ExecuteQuery();
 > - The settings at library level override the settings at web, site or tenant level
 > - The current configuration is cached, so changes are not immediately visible
 
+## Additional Considerations
+<a name="sectionSection22"> </a>
+
+We'll gradually introduce more customization options for "modern" list and library experiences. This introduction will be aligned with the release of additional SharePoint framework capabilities. Currently there's no exact schedule available, but note that we'll be updating the "modern" experience articles whenever new capabilities are being released.
 
 ## Additional resources
 <a name="bk_addresources"> </a>
