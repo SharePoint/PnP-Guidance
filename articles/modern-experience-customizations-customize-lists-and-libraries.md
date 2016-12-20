@@ -1,4 +1,4 @@
-# Customizing modern lists and libraries
+# Customizing "modern" lists and libraries
 During summer 2016 the SharePoint Online team released "modern" document libraries and lists which brings a better user experience which is faster, more intuitive and responsive. This article focuses on the extensibility options there are in the "modern" library and list experiences, if you however want to learn more about the functionalities offered by the "modern" experiences then following links will help:
 - Overview of the "modern" document library experience: https://blogs.office.com/2016/06/07/modern-document-libraries-in-sharepoint
 - Overview of the "modern" list experience: https://blogs.office.com/2016/07/25/modern-sharepoint-lists-are-here-including-integration-with-microsoft-flow-and-powerapps 

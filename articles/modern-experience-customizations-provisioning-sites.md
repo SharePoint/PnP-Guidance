@@ -1,12 +1,15 @@
 # Provisioning "modern" team sites programmatically
-This article explains different options and considerations for provisioning "modern" team sites in SharePoint Online. "Modern" team sites have been introduced in SharePoint Online during autumn 2016 and the option to use them can be controlled at tenant level.
+"Modern" team sites have been introduced in SharePoint Online during autumn 2016 and the option to use them can be controlled at tenant level. There are different options and considerations for provisioning "modern" team sites in SharePoint Online, which is the topic of this article.
+
+>**Important:** 
+We're not deprecating the "classic" experience, both "classic" and "modern" will coexist.
 
 _**Applies to:** SharePoint Online_
 
 ## Provisioning a "modern" team site from user interface
 <a name="sectionSection0"> </a>
 
-There are numerous ways for a "modern" team site to get provisioned. You can start the provisioning directly from the SharePoint Online side or alternatively provision a Office 365 group for other locations (e.g. from Outlook), which will then also trigger the provisioning of a "modern" team site. 
+There are numerous routes for a "modern" team site to get provisioned. You can start the provisioning directly from the SharePoint Online side or alternatively provision a Office 365 group for other locations (e.g. from Outlook), which will then also trigger the provisioning of a "modern" team site. 
 - If your administrator enabled "modern" team sites in your tenant then you can create "modern" team sites from the SharePoint home page
 - You can also create an Office 365 group from the Office 365 Outlook and when you access the 'site' tab of that group, you will land on a "modern" team site 
 

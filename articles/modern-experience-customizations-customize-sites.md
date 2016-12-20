@@ -7,6 +7,9 @@ This article concentrates on the available extensibility options in "modern" tea
 - Create connected SharePoint Online team sites in seconds: https://blogs.office.com/2016/11/08/create-connected-sharepoint-online-team-sites-in-seconds
 - [Turn scripting capabilities on or off](https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f) - Notice that you cannot enable scripting capabilities in the "modern" team sites, but this article defines the features, which are affected when scripting is disabled
 
+>**Important:** 
+We're not deprecating the "classic" experience, both "classic" and "modern" will coexist.
+
 _**Applies to:** SharePoint Online_
 
 ## Supported customizations in "modern" team sites

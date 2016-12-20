@@ -1,4 +1,4 @@
-# Customizing modern site pages
+# Customizing "modern" site pages
 During autumn 2016 the "modern" page experience was released by the SharePoint team. Modern team site pages are fast, easy to author and support rich multimedia content. And pages look great on any device, in a browser or from within the SharePoint mobile app. This article focuses on the extensibility options there are in the "modern" page experience, if you however want to learn more about the functionalities offered by the "modern" experiences then following links will help:
  - New capabilities in SharePoint Online team sites: https://blogs.office.com/2016/08/31/new-capabilities-in-sharepoint-online-team-sites-including-integration-with-office-365-groups
 
