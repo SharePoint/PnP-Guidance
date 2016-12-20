@@ -251,8 +251,10 @@ You can use below PnP provisioning XML to enable this feature on site or web lev
 Use following PnP PowerShell to apply this template:
 
 ```PowerShell
-Connect-PnPOnline -Url <url_to_your_SharePoint_Online_site>
+
+Connect-PnPOnline -Url https://[tenant].sharepoint.com/sites/siteurl
 Apply-PnPProvisioningTemplate -Path c:\experiencecontrol.xml -Handlers Features
+
 ```
 
 ### List/Library configuration
