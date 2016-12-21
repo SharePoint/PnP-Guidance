@@ -124,7 +124,7 @@ If you provision a sub site under root site of a "modern" site collection, sub s
 ### Sites are not listed in the SharePoint Admin UI / Tenant API
 <a name="sectionSection7"> </a>
 
-"Modern" team sites are not visible in the SharePoint admin UI. You can access the list of "modern" team sites from the Office 365 Groups admin user interface under Office 365 admin portal. SharePoint Online admin user interface only lists "classic" SharePoint sites. This same limitation also applies to the tenant API: you cannot use this API to enumerate "modern" team sites.
+"Modern" team sites are not visible in the SharePoint admin UI. You can access the list of "modern" team sites from the Office 365 Groups admin user interface under Office 365 admin portal. SharePoint Online admin user interface only lists "classic" SharePoint sites. This same limitation also applies to the tenant API: you cannot use this API to enumerate "modern" team sites. You can get list of "modern" team sites programatically by using the Groups end point from Microsoft Graph.
 
 
 ## Additional resources
