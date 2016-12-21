@@ -35,7 +35,7 @@ There are numerous areas in the "modern" team sites where the typical customizat
 - Custom page layouts - We are looking to have support for multiple canvases in in future
 - Welcome page modifications - There are no APIs to modify the welcome page current, this will be introduced later
 - User custom actions / Custom JavaScript - There will be more controlled way to embed JavaScript on the pages through SharePoint Framework (not only client-side web parts)
-- "Modern" sub sites - Sub sites created in "modern" team sites are using "classic" experience
+- "Modern" sub sites - Sub sites created in "modern" team sites are using "classic" experience, but you can change the user experience to similar as with "modern" sites
 - Control available sub site template options
 - "Classic" publishing features (WCM)
 - Accessing or updating site property bag entries
