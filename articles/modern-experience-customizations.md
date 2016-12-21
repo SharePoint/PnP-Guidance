@@ -15,7 +15,7 @@ The modern experiences in SharePoint Online are:
 
 "Modern" experiences are gradually released in SharePoint Online and you can control how they are taken into use from tenant or site level. If you have a lot of existing important customizations, you can defer taking new experiences into use until needed customizations scenarios can be enabled with them as well. 
 
-We recommend using the following process for adopting to the "modern" experiences:
+We recommend using the following process for adopting to the "modern" experiences, if you have existing customizations which are business critical for your deployment:
 
 1. **Readiness**: Understand the "modern" experiences, know what features they offer but equally important understand what's features are not (yet) available
 2. **Assess**: Assess to what extend your current customizations can work in the "modern" experience. Also assess which of your sites do have customizations or features that will not work in the "modern" experiences, these sites and their customizations should be updated or need to stay in "classic". However all other sites should work fine using the "modern" experiences.
