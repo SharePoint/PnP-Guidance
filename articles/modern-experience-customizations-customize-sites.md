@@ -99,6 +99,7 @@ $web.Context.RequestTimeout = [System.Threading.Timeout]::Infinite
 $web.Context.ExecuteQuery()
 
 ```
+!["Modern team site with custom theme"](media/modern-experiences/modern-site-with-custom-theme.png)
 
 > **Note:**
 > You can use [SharePoint Color Palette Tool](https://www.microsoft.com/en-us/download/details.aspx?id=38182) to create a custom theme file (.spcolor) with the custom color definition.

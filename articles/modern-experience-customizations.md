@@ -38,7 +38,7 @@ Existing collaborations sites cannot, at least currently, be converted to "moder
 
 "Modern" lists and library usage can be controlled from tenant, site, web and in list/library level. You can find more details on the available options in our [modern list and libraries](local://base_request.html/modern-experience-customizations-customize-lists-and-libraries.md) article.
 
-By default "classic" SharePoint sites will also use "modern" pages for any newly added page and you do have the option to change the welcome page to be a "modern" page. 
+By default "classic" SharePoint sites will also use "modern" pages for any newly added page and you do have the option to change the welcome page to be a "modern" page. Setting a new "modern" page for "classic" SharePoint site can be done programatically using CSOM or REST APIs. 
 
 ## SharePoint "modern" experiences support for on-premises
 <a name="onpremisessupport"> </a>
