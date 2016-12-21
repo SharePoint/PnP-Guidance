@@ -9,7 +9,7 @@ _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 |**Read this content**|**If you want to...**|
 |:-----|:-----|
 |[Branding and site provisioning](Branding-and-site-provisioning-solutions-for-SharePoint.md)|Use SharePoint Add-ins to provision and manage SharePoint site branding.|
-|[Customizing the "Modern" Experiences in SharePoint Online](modern-experience-customizations.md)|Customization options with SharePoint Online "modern" experiences.|
+|[Customizing the "modern" experiences in SharePoint Online](modern-experience-customizations.md)|Customization options with SharePoint Online "modern" experiences.|
 |[Composite business add-ins](Composite-buisness-apps-for-SharePoint.md)|Use composite business apps to integrate your SharePoint solutions with your business processes and technologies. |
 |[ECM solutions](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)|Perform common ECM tasks such as setting site policies, uploading files, synchronizing term groups, and more.|
 |[Localization solutions](localization-solutions-for-sharepoint-2013-and-sharepoint-online.md)|Localize your SharePoint site contents and UI text.|
