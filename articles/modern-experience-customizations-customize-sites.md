@@ -1,4 +1,4 @@
-# Customizing modern team sites
+# Customizing "modern" team sites
 During autumn 2016 the SharePoint Online team released "modern" collaboration sites. These modern team sites are integrated with Office 365 groups and they bring a greatly improved end user experience. "Modern" team sites are responsive by design and they are much faster to create and use from end user perspective. 
 
 This article concentrates on the available extensibility options in "modern" team sites. Here are key links around the key capabilities:
