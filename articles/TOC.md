@@ -21,7 +21,7 @@
 #### [Create UX controls](create-ux-controls-by-using-sharepoint-provider-hosted-add-ins.md)
 #### [Display information from a host site](display-information-from-a-host-site-by-using-office-web-widgets.md)
 #### [Improve performance](improve-performance-in-sharepoint-provider-hosted-add-ins.md)
-## [Customizing the "Modern" Experiences in SharePoint Online](modern-experience-customizations.md)
+## [Customizing the "modern" experiences in SharePoint Online](modern-experience-customizations.md)
 ### [Provisioning "modern" team sites programmatically](modern-experience-customizations-provisioning-sites.md)
 ### [Customizing "modern" team sites](modern-experience-customizations-customize-sites.md)
 ### [Customizing "modern" lists and libraries](modern-experience-customizations-customize-lists-and-libraries.md)
