@@ -13,22 +13,26 @@ We're not deprecating the "classic" experience, both "classic" and "modern" will
 _**Applies to:** SharePoint Online_
 
 ## Overview of the customization options
-Below table gives a quick overview of the supportability of "modern" lists and libraries, in this article we'll provide more details and examples on the supported options. The SharePoint team is working to support more options in the future.
+<a name="customizationoptions"> </a>
 
-| **Not Supported** | **Supported options** |
-|:-----|:-----|
-| JSLink based field customizations| Subset of User Custom Actions  |
-| JSLink based view customizations | Custom branding  |
-| Custom CSS via AlternateCSSUrl web property |  |
-| Custom JavaScript embedded via User Custom Actions |  |
-| Custom master pages |  |
-| Customization via InfoPath |  |
-| Minimal Download Strategy (MDS) |  |
-| SharePoint Server Publishing |  |
+"Modern" list and libraries do not support as many customization options as "classic" lists and libraries. In this article we'll provide more details and examples on the supported options. The SharePoint team is working to support more options in the future. Below list gives a quick overview of the supported capabilities for "modern" list and libraries:
+ - Subset of User Custom Actions
+ - Custom branding
+ - PowerApps and Flow integration
 
+There are numerous customizations which currently are not supported for "modern" lists and libraries:
+ - JSLink based field customizations - More options will become available in the future
+ - JSLink based view customizations - More options will become available in the future
+ - Custom CSS via AlternateCSSUrl web property
+ - Custom JavaScript embedded via User Custom Actions - There will a be more controlled way to embed JavaScript on the pages through SharePoint Framework (not only client-side web parts)
+ - Custom master pages - More extensive branding will be supported later using alternative options
+ - Customization via InfoPath
+ - Minimal Download Strategy (MDS)
+ - SharePoint Server Publishing
 
 ## User Custom Actions
 <a name="supportedcustomactions"> </a>
+
 The "modern" experiences do allow certain user custom actions to be surfaced in the new user interface, but not all user action configurations which are supported by "classic" mode are supported in the "modern" experience. Below table gives a high level overview of the supported custom action locations and how they're surfaced in the "modern" UI:
 
 |**User Custom Action location**|**Visible in "modern" UI**|
@@ -40,6 +44,7 @@ The "modern" experiences do allow certain user custom actions to be surfaced in 
 
 ### EditControlBlock User Custom Actions 
 <a name="editcontrolblockcustomactions"> </a>
+
 Adding custom links to the context menu can be done by using the `EditControlBlock` as location for your custom action. The below PnP provisioning XML creates 2 custom entries. 
 
 ```XML
@@ -53,11 +58,17 @@ Adding custom links to the context menu can be done by using the `EditControlBlo
 </pnp:ProvisioningTemplate>
 ```
 
-You can apply this PnP provisioning template to a site using the PnP Core library or PnP PowerShell. We've opted to show the PowerShell approach in this article. A first step is installing the PnP PowerShell module as described in https://github.com/SharePoint/PnP-PowerShell. Once that's done, save the PnP provisioning xml to a file and then 2 simple lines of PnP PowerShell are enough to apply the template:
+You can apply this [PnP provisioning template](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) to a site using the PnP Core library or PnP PowerShell. We've opted to show the PowerShell approach in this article. A first step is installing the PnP PowerShell module as described in https://github.com/SharePoint/PnP-PowerShell. Once that's done, save the PnP provisioning xml to a file and then 2 simple lines of PnP PowerShell are enough to apply the template:
 
 ```PowerShell
-Connect-PnPOnline -Url <url_to_your_SharePoint_Online_site>
+
+# Connect to a previously created Modern Site
+$cred = Get-Credential
+Connect-PnPOnline -Url https://[tenant].sharepoint.com/sites/siteurl -Credentials $cred
+
+# Apply the PnP provisioning template
 Apply-PnPProvisioningTemplate -Path c:\customaction_modern_editcontrolblock.xml -Handlers CustomActions
+
 ```
 
 If you refresh the "modern" view of a document library in your site you'll see the new entries appear
@@ -70,7 +81,8 @@ If you refresh the "modern" view of a document library in your site you'll see t
 
 ### CommandUI.Ribbon User Custom Actions 
 <a name="ribboncustomactions"> </a>
-If you want to extend the toolbar in the "modern" list and library experiences you can do so via adding a user custom action targeting the CommandUI.Ribbon location as shown in the PnP provisioning XML sample
+
+If you want to extend the toolbar in the "modern" list and library experiences you can do so via adding a user custom action targeting the CommandUI.Ribbon location as shown in the PnP provisioning XML sample.
 
 ```XML
 <pnp:ProvisioningTemplate ID="CommandUIRibbonSamples" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
@@ -231,7 +243,7 @@ You can prevent a site collection or web to use the "modern" experience by enabl
 - Site collection scoped feature with ID **E3540C7D-6BEA-403C-A224-1A12EAFEE4C4** for site collection control
 - Web scoped feature with ID **52E14B6F-B1BB-4969-B89B-C4FAA56745EF** for web scoped control
 
-You can use below PnP provisioning XML to enable this feature on site or web level
+You can use below [PnP provisioning XML](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) to enable this feature on site or web level
 
 ```XML
 <pnp:ProvisioningTemplate ID="experiencecontrol" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
@@ -269,18 +281,21 @@ If you want to control the experience on library level then you can use go to li
 The same can also be done using CSOM as shown in below snippet:
 
 ```C#
+// Load the list you want to update
 var list = context.Web.Lists.GetByTitle(title);
 context.Load(list);
 context.ExecuteQuery();
 
+// Possible options are Auto (= what it's defined at tenant level), NewExperience (= "modern") and ClassicExperience
 list.ListExperienceOptions = ListExperience.ClassicExperience;
 
+// Persist the changes
 list.Update();
 context.ExecuteQuery();
 ```
 
 >**Note**:
-> - The settings at library level override the settings at web, site or tenant level
+> - The settings at library level **override** the settings at web, site or tenant level
 > - The current configuration is cached, so changes are not immediately visible
 
 ## Additional Considerations

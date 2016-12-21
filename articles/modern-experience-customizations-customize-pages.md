@@ -10,19 +10,19 @@ We're not deprecating the "classic" experience, both "classic" and "modern" will
 _**Applies to:** SharePoint Online_
 
 
-## Overview of the customization options
-Below table gives a quick overview of the supportability of "modern" pages, in this article we'll provide more details and examples on the supported options. The SharePoint team is working to support more options in the future.
+## Supported customizations for "modern" pages
+The number of customizations that you can do for "modern" pages is limited and in this article we'll provide more details and examples on the supported options. The SharePoint team is working to support more options in the future. Below list gives a quick overview of the supported capabilities for "modern" team sites:
+ - Custom branding
 
-| **Not Supported** | **Supported options** |
-|:-----|:-----|
-| Alternative layouts| Custom branding  |
-| Custom page templates (layout templates) |   |
-| Custom CSS via AlternateCSSUrl web property |  |
-| Custom JavaScript embedded via User Custom Actions |  |
-| Custom master pages |  |
-| Minimal Download Strategy (MDS) |  |
-| SharePoint Server Publishing |  |
-
+There are numerous customizations which currently are not supported for "modern" pages:
+ - Alternative layouts -  We are looking to have support for multiple canvases in in future
+ - Custom page templates (layout templates) - We are looking to have support for multiple canvases in in future
+ - Custom CSS via AlternateCSSUrl web property
+ - Custom JavaScript embedded via User Custom Actions - There will a be more controlled way to embed JavaScript on the pages through SharePoint Framework (not only client-side web parts)
+ - Custom master pages - More extensive branding will be supported later using alternative options
+ - Programmatically adding "modern" pages - More options will become available in the future
+ - Minimal Download Strategy (MDS)
+ - SharePoint Server Publishing
 
 ## Custom branding
 <a name="themingimpact"> </a>
@@ -46,7 +46,7 @@ If you completely want to disable the "modern" experience then it's best to use 
 ### Site level configuration
 You can prevent a site collection or web to use the "modern" page experience by disabling a feature the site collection scoped feature with ID **B6917CB1-93A0-4B97-A84D-7CF49975D4EC**. To again enable the "modern" page experience at site level you'll need to activate the feature again
 
-You can use below PnP provisioning XML to **disable** this feature on your site collection:
+You can use below [PnP provisioning XML](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) to **disable** this feature on your site collection:
 
 ```XML
 <pnp:ProvisioningTemplate ID="disablemodernpages" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
@@ -58,7 +58,7 @@ You can use below PnP provisioning XML to **disable** this feature on your site 
 </pnp:ProvisioningTemplate>
 ```
 
-You can use below PnP provisioning XML to **enable** this feature on your site collection:
+You can use below [PnP provisioning XML](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) to **enable** this feature on your site collection:
 
 ```XML
 <pnp:ProvisioningTemplate ID="enablemodernpages" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
