@@ -1,7 +1,7 @@
 # Customizing the "modern" experiences in SharePoint Online
 SharePoint Online has started the gradual introduction of "modern" experiences cross the SharePoint service, which has a direct impact on the end user experience but also on the customization options that can be used. This article provides an overview of the "modern" experiences to get you started and there are links to articles containing all the customization options for each of the "modern" experiences.
 
-There are numerous benefits in the "modern" experiences called out on referenced materials, but if you have specific customization requirements, you need to be aware of the currently supported options for customization.
+There are numerous benefits in the "modern" experiences called out on referenced materials, but if you have specific customization requirements, you need to be aware of the currently supported options for customizations.
 
 >**Important:** 
 We're not deprecating the "classic" experience, both "classic" and "modern" will coexist.
