@@ -1,5 +1,15 @@
 # Customizing "modern" lists and libraries
-During summer 2016 the SharePoint Online team released "modern" document libraries and lists which brings a better user experience which is faster, more intuitive and responsive. This article focuses on the extensibility options there are in the "modern" library and list experiences, if you however want to learn more about the functionalities offered by the "modern" experiences then following links will help:
+During summer 2016 the SharePoint Online team released "modern" document libraries and lists which brings a better user experience which is faster, more intuitive and responsive. **The "modern" experiences are having many benefits and we highly recommend using them**. If your current customizations do not yet work with the "modern" experience then it's time to revisit those so your users can benefit from these great improvements:
+ - "Modern" document libraries have an updated user interface that offers an experience similar to OneDrive, so it’s more intuitive to create a new folder and upload files in the browser
+ - Click Pin to top to add documents “above the fold” in any onscreen view
+ - Copying isn’t new, but the copy and move gestures are intelligent about displaying your information architecture and letting you create new folders on the fly
+ - You may not have to make as many copies any more. Document libraries are also intelligent about remembering other files you’ve been using in SharePoint. That’s why you can import other files from other libraries as links, without having to duplicate files between multiple sites
+ - The new document libraries let you group files directly in the main page without clicking to a separate admin screen. You can also click and drag to change the size of your columns, as well as sort, filter and group from any column header
+ - Mobile browsers have the same features as the desktop, making SharePoint productive for every user—whether they interact via mouse, keyboard, touch or screen reader
+ - You can now edit metadata directly from the main view in the information panel. No more clicking into multiple screens to apply an update!
+ - Thanks to Office Online integration, you can navigate a complete document preview at the top of the information panel. The panel offers metadata, including the history of recent activity, updates to the file and who received a share to the file
+
+This article focuses on the extensibility options there are in the "modern" library and list experiences, if you however want to learn more about the functionalities offered by the "modern" experiences then following links will help:
 - Overview of the "modern" document library experience: https://blogs.office.com/2016/06/07/modern-document-libraries-in-sharepoint
 - Overview of the "modern" list experience: https://blogs.office.com/2016/07/25/modern-sharepoint-lists-are-here-including-integration-with-microsoft-flow-and-powerapps 
 - Differences between "modern" and "classic" experiences: https://support.office.com/en-us/article/Differences-between-classic-and-new-experiences-for-lists-and-document-libraries-30e1aab0-a5cc-4363-b7f2-09e2ae07d4dc?ui=en-US&rs=en-US&ad=US
