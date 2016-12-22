@@ -1,5 +1,9 @@
 # Customizing "modern" site pages
-During autumn 2016 the "modern" page experience was released by the SharePoint team. Modern team site pages are fast, easy to author and support rich multimedia content. And pages look great on any device, in a browser or from within the SharePoint mobile app. This article focuses on the extensibility options there are in the "modern" page experience, if you however want to learn more about the functionalities offered by the "modern" experiences then following links will help:
+During autumn 2016 the "modern" page experience was released by the SharePoint team. Modern team site pages are fast, easy to author and support rich multimedia content. And pages look great on any device, in a browser or from within the SharePoint mobile app. SharePoint pages are built with web parts, which you can customize according to your needs. You can add documents, videos, images, site activities, Yammer feeds and more. Just click the + sign and pick a web part from the toolbox to add content to your page. The new “highlighted content” web part lets you set criteria so that specific content will automatically and dynamically populate in that area of the page. And using the SharePoint Framework, developers can build custom web parts that will show up right in the toolbox.
+
+![](https://blogs.office.com/wp-content/uploads/2016/08/New-capabilities-in-SharePoint-Online-team-sites-including-integration-with-Office-365-Groups-1.gif)
+
+This article focuses on the extensibility options there are in the "modern" page experience, if you however want to learn more about the functionalities offered by the "modern" experiences then following links will help:
  - New capabilities in SharePoint Online team sites: https://blogs.office.com/2016/08/31/new-capabilities-in-sharepoint-online-team-sites-including-integration-with-office-365-groups
 
 In remainder of this article we'll use "modern" for the new user experience and "classic" for the legacy user experience. 
