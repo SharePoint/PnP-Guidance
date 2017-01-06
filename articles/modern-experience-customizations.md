@@ -38,7 +38,7 @@ Here are the key scenarios currently supported by the "modern" experiences. We w
 <a name="convertingexisting"> </a>
 Existing collaborations sites cannot, at least currently, be converted to "modern" team sites with associated Office 365 group. You can however start using "modern" experiences in the "classic" collaboration sites as well by enabling the new capabilities at tenant level and then modify the sites based on the functional requirements. 
 
-"Modern" lists and library usage can be controlled from tenant, site, web and in list/library level. You can find more details on the available options in our [modern list and libraries](local://base_request.html/modern-experience-customizations-customize-lists-and-libraries.md) article.
+"Modern" lists and library usage can be controlled from tenant, site, web and in list/library level. You can find more details on the available options in our [modern list and libraries](modern-experience-customizations-customize-lists-and-libraries.md) article.
 
 By default "classic" SharePoint sites will also use "modern" pages for any newly added page and you do have the option to change the welcome page to be a "modern" page. Setting a new "modern" page for "classic" SharePoint site can be done programatically using CSOM or REST APIs. 
 
