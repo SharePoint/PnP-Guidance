@@ -2,7 +2,7 @@
 
 Take a high-level look at the remote provisioning process, including a closer look at the OfficeDevPnP.Core library.
 
-The PnP provisioning engine is the heart of the provisioning framework is the, and at its foundation is the OfficeDevPnP.Core library. The provisioning engine is part of the Core library and it leverages the Core library extensions in the implementation of provisioning tasks. Comprised of extension methods on the SharePoint CSOM/REST object model, the Core library enables provisioning tasks like enumerating and getting provisioning templates as well as storing and then applying templates to new and existing sites. It also allows you to automate provisioning tasks and to introduce coded logic into your provisioning routines.
+The PnP provisioning engine is the heart of the provisioning framework, and at its foundation is the OfficeDevPnP.Core library. The provisioning engine is part of the Core library and it leverages the Core library extensions in the implementation of provisioning tasks. Comprised of extension methods on the SharePoint CSOM/REST object model, the Core library enables provisioning tasks like enumerating and getting provisioning templates as well as storing and then applying templates to new and existing sites. It also allows you to automate provisioning tasks and to introduce coded logic into your provisioning routines.
 
 **Note:**  To see a video walkthrough of creating and persisting, and applying a provisioning template, go to [Getting Started with PnP Provisioning Engine](https://channel9.msdn.com/blogs/OfficeDevPnP/Getting-Started-with-PnP-Provisioning-Engine).
 
@@ -12,15 +12,15 @@ The PnP provisioning engine is the structured implementation of classes in the C
 
 The PnP provisioning engine allows you to model the design of site columns, content types, list definitions, composed looks, and pages. You can design those features and much more by pointing to existing site design features, by crafting the design my hand, or by using a mix of both approaches. You can then, optionally, persist the design as a provisioning template that you can save and reuse.
 
-You can use one of two approaches for extracting your site design as a provisioning template. Use CSOM/REST code that implements extension methods provided by the Core library (OfficeDevPnP.Core), or use Windows PowerShell scripts (OfficeDevPnP.PowerShell).
+You can use one of two approaches for extracting your site design as a provisioning template. Use CSOM/REST code that implements extension methods provided by the Core library (OfficeDevPnP.Core), or use Windows PowerShell scripts (SharePointPnP.PowerShell).
 
 ### Using Windows PowerShell scripting to extract a provisioning template
 
-To use Windows PowerShell scripts with the provisioning engine, you first must download and install the OfficeDevPnP.PowerShell commands. Everything you need to run Windows PowerShell, including download and installation instructions as well as the Windows PowerShell command documentation, is available in the [OfficeDevPnP.PowerShell Commands](https://github.com/OfficeDev/PnP-PowerShell) repository on GitHub.
+To use Windows PowerShell scripts with the provisioning engine, you first must download and install the PnP PowerShell cmdlets. Everything you need to run Windows PowerShell, including download and installation instructions as well as the Windows PowerShell command documentation, is available in the [SharePointPnP.PowerShell Commands](https://github.com/SharePoint/PnP-PowerShell) repository on GitHub.
 
-**Note:**  The OfficeDevPnP.PowerShell Commands repository contains two versions of the Windows PowerShell commands MSI. One is for on-premises, and the other is for SharePoint Online.
+**Note:**  The SharePointPnP.PowerShell Commands repository contains three versions of the Windows PowerShell commands MSI. Two are for on-premises use (one for SharePoint 2013 and one for SharePoint 2016), and the third one is for SharePoint Online.
 
-The OfficeDevPnP.PowerShell Commands repository contains contents that enable you to build a library of Windows PowerShell commands that target SharePoint Online. The commands use CSOM and can work against both SharePoint Online and SharePoint on-premises, depending on which MSI package you install.
+The SahrePointPnP.PowerShell Commands repository contains contents that enable you to build a library of Windows PowerShell commands that target SharePoint Online. The commands use CSOM and can work against both SharePoint Online and SharePoint on-premises, depending on which MSI package you install.
 
 Additionally, there is a short [Channel 9](https://channel9.msdn.com/) video&mdash;Introduction to [PnP PowerShell Cmdlets](https://channel9.msdn.com/blogs/OfficeDevPnP/Introduction-to-PnP-PowerShell-Cmdlets)&mdash;that discusses installing the Windows PowerShell package and connecting to your Office 365 site. Besides installation and connection activities, the video covers other valuable information about using Windows PowerShell for remote provisioning.
 
@@ -42,7 +42,7 @@ While detailed instructions for using CSOM are in the [Provisioning console appl
     
 	**Note:**  Because the template provider and the serialization formatter objects can be customized, you can implement whatever persistence storage and serialization format you like. Out-of-the-box, the PnP provisioning engine provides support for file system, SharePoint, and Azure blob storage template providers. It also supports XML and JSON serialization formatters.
 
-You can see an example of the XML serialization output and learn more about the XML serialization schema in the [PnP provisioning schema](pnp-provisioning-schema.md) article. You also can get the schema and its documentation on GitHub:[OfficeDev/PnP-Provisioning-Schema](https://github.com/OfficeDev/Pnp-Provisioning-Schema/). There also is a [Channel 9](https://channel9.msdn.com/) video&mdash;[Deep dive into PnP provisioning engine schema](https://channel9.msdn.com/blogs/OfficeDevPnP/Deep-dive-to-PnP-provisioning-engine-schema)&mdash;that introduces and discusses the schema.
+You can see an example of the XML serialization output and learn more about the XML serialization schema in the [PnP provisioning schema](pnp-provisioning-schema.md) article. You also can get the schema and its documentation on GitHub:[SharePoint/PnP-Provisioning-Schema](https://github.com/SharePoint/PnP-Provisioning-Schema/). There also is a [Channel 9](https://channel9.msdn.com/) video&mdash;[Deep dive into PnP provisioning engine schema](https://channel9.msdn.com/blogs/OfficeDevPnP/Deep-dive-to-PnP-provisioning-engine-schema)&mdash;that introduces and discusses the schema.
 
 It is important to note, however, that the provisioning engine supports a serialization-format-independent domain model. In fact, the provisioning engine is completely decoupled from any serialization format. It is up to you to manually define the  **ProvisioningTemplate** instance. Either point to a model site or compose an XML document that validates against the PnP provisioning schema, or write .NET code and construct the hierarchy of objects. You can even mix these approaches. You also can design the provisioning template using a model site, and then save it into an XML file and do some in-memory customizations while handling the **ProvisioningTemplate** instance in your code.
 
@@ -69,7 +69,7 @@ ProvisioningTemplate template = ctx.Web.GetProvisioningTemplate(ptci);
 
 ### Apply the provisioning template
 
-As with extracting the provisioning template, you can apply your customized  **ProvisioningTemplate** object instance by using either CSOM/REST code or Windows PowerShell commands. You can download the [OfficeDevPnP.PowerShell Commands](https://github.com/OfficeDev/PnP-PowerShell) from the repository on GitHub.
+As with extracting the provisioning template, you can apply your customized  **ProvisioningTemplate** object instance by using either CSOM/REST code or Windows PowerShell commands. You can download the [SharePointPnP.PowerShell Commands](https://github.com/SharePoint/PnP-PowerShell) from the repository on GitHub.
 
 If applying the provisioning template by using extension methods of the Core library, you have a code block similar to the example here. In the example, the template is applied to the target site by using the  **ApplyProvisioningTemplate** extension method of the **Web** type.
 
@@ -95,17 +95,17 @@ using (var context = new ClientContext(destinationUrl))
   // Apply the template to another site
   Console.WriteLine("Start: {0:hh.mm.ss}", DateTime.Now);
 
-  // We can also use Apply-SPOProvisioningTemplate
+  // We can also use Apply-PnPProvisioningTemplate
   web.ApplyProvisioningTemplate(template);
 
   Console.WriteLine("End: {0:hh.mm.ss}", DateTime.Now);
 }
 ```
 
-Once you have created a connection to SharePoint Online using the Windows PowerShell commands, employ the  **Apply-SPOProvisioningTemple** cmdlet as shown here.
+Once you have created a connection to SharePoint Online using the Windows PowerShell commands, employ the  **Apply-PnPProvisioningTemple** cmdlet as shown here.
 
 ```
-Apply-SPOProvisioningTemplate -Path "PnP-Provisioning-File.xml"
+Apply-PnProvisioningTemplate -Path "PnP-Provisioning-File.xml"
 ```
 
 Note that the  `-Path` argument refers to the file path to the provisioning template file that you persisted to the file system. In the code block above, the persisted file is an XML file, but these template files can be persisted in any serialized format that you wish.
@@ -140,10 +140,10 @@ The Core library (OfficeDevPnP.Core) is a CSOM/REST object model that supports t
 
 - [Provisioning console application sample](provisioning-console-application-sample.md)
     
-- [OfficeDevPnP.PowerShell Commands](https://github.com/OfficeDev/PnP-PowerShell)
+- [SharePointPnP.PowerShell Commands](https://github.com/SharePoint/PnP-PowerShell)
     
 - [Provisioning console application sample](provisioning-console-application-sample.md)
     
-- [OfficeDev/PnP-Provisioning-Schema](https://github.com/OfficeDev/Pnp-Provisioning-Schema/)
+- [SharePoint/PnP-Provisioning-Schema](https://github.com/SharePoint/Pnp-Provisioning-Schema/)
     
 - [Extension Methods](https://msdn.microsoft.com/en-us/library/bb383977.aspx)
