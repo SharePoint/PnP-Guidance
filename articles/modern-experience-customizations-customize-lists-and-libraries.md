@@ -62,7 +62,7 @@ Adding custom links to the context menu can be done by using the `EditControlBlo
   <pnp:CustomActions>
     <pnp:SiteCustomActions>
       <pnp:CustomAction Name="CA_1" Description="ca 1" Location="EditControlBlock" RegistrationType="List" RegistrationId="101" Title="CA 1 Title" Sequence="3000" Url="https://contoso.azurewebsites.net/pages/index.aspx" Enabled="true"/>
-      <pnp:CustomAction Name="CA_2" Description="ca 2" Location="EditControlBlock" RegistrationType="List" RegistrationId="101" Title="CA 2 Title" Sequence="4000" Url="https://contoso.azurewebsites.net/pages/index.aspx" Enabled="true"/>
+      <pnp:CustomAction Name="CA_2" Description="ca 2" Location="EditControlBlock" RegistrationType="ContentType" RegistrationId="0x0101" Title="CA 2 Title" Sequence="4000" Url="https://contoso.azurewebsites.net/pages/index.aspx" Enabled="true"/>
     </pnp:SiteCustomActions>
   </pnp:CustomActions>
 </pnp:ProvisioningTemplate>
@@ -121,7 +121,7 @@ If you want to extend the toolbar in the "modern" list and library experiences y
           </CommandUIHandlers>
         </pnp:CommandUIExtension>
       </pnp:CustomAction>
-      <pnp:CustomAction Name="CA_6" Description="ca 6" Location="CommandUI.Ribbon" RegistrationType="List" RegistrationId="101" Title="CA 6 Title" Sequence="5000" Enabled="true">
+      <pnp:CustomAction Name="CA_6" Description="ca 6" Location="CommandUI.Ribbon" RegistrationType="ContentType" RegistrationId="0x0101" Title="CA 6 Title" Sequence="5000" Enabled="true">
         <pnp:CommandUIExtension>
             <CommandUIDefinitions>
               <CommandUIDefinition Location="Ribbon.CustomTabs._children">
@@ -229,7 +229,7 @@ When developing user custom actions that need to work in modern experiences plea
  - You can't completely control the order in which the user custom actions show up: the user custom actions are added in the order the `_api/web/Lists(guid'listid')/CustomActionElements` does return the user custom actions...and this API currently does not take in account the sequence attributes. Buttons defined inside a custom tab can be ordered by adding them in the correct order in the CommandUIDefinition xml. Our sample shows Button 3 as first and that's because of the order in the XML
  - Command actions cannot contain JavaScript...using for example `CommandAction="javascript:alert('My custom Action');"` will mean the user custom action will not show up
  - Using the `ScriptLink` or `ScriptBlock` properties is not possible since they can only be used with user custom action location `ScriptLink`, which is not supported
- - The `RegistrationId` cannot refer to specific library ID (e.g. {7A46F86F-D6CC-4263-8A1B-1BC1658B506C}) or a specific content type id (e.g. 0x0101), only out of the box template types (e.g. 100 for a List or 101 for a Document Library) are allowed
+ - The `RegistrationId` cannot refer to specific library ID (e.g. {7A46F86F-D6CC-4263-8A1B-1BC1658B506C}), only out of the box template types (e.g. 100 for a List or 101 for a Document Library) or content type id's (e.g. 0x0101 for the Document content type) are allowed
  - Using image maps (e.g. `Image16by16="/_layouts/15/1033/images/formatmap16x16.png?rev=33" Image16by16Left="-144" Image16by16Top="-107"`) does not work, you'll need to specify individual images. Also note that only 16x16 images are relevant
 
 
