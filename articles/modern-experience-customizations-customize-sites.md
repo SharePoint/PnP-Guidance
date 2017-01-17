@@ -110,7 +110,7 @@ $web.Context.ExecuteQuery()
 !["Modern team site with custom theme"](media/modern-experiences/modern-site-with-custom-theme.png)
 
 > **Note:**
-> You can use [SharePoint Color Palette Tool](https://www.microsoft.com/en-us/download/details.aspx?id=38182) to create a custom theme file (.spcolor) with the custom color definition.
+> You can use [SharePoint Color Palette Tool](https://www.microsoft.com/en-us/download/details.aspx?id=38182) to create a custom theme file (.spcolor) with the custom color definition. In general modern team sites try to preserve the feel of the theme by automatically converting classic site theming elements to modern side. Preserved areas are background image and following theme slots: ContentAccent1, PageBackground and BackgroundOverlay.
 
 ## How to determine if a site is a "modern" team site?
 <a name="sectionSection1"> </a>
