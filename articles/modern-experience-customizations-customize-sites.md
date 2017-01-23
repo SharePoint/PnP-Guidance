@@ -96,6 +96,7 @@ Add-PnPFile -Path .\sppnp.spcolor -Folder SiteAssets
 Add-PnPFile -Path .\sppnp-bg.png -Folder SiteAssets
 
 # Second, apply theme assets to site
+$web = Get-PnPWeb
 $palette = $web.ServerRelativeUrl + "/SiteAssets/sppnp.spcolor"
 $background = $web.ServerRelativeUrl + "/SiteAssets/sppnp-bg.png"
 
