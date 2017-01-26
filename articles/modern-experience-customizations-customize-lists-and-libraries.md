@@ -308,6 +308,29 @@ context.ExecuteQuery();
 > - The settings at library level **override** the settings at web, site or tenant level
 > - The current configuration is cached, so changes are not immediately visible
 
+## When does the built-in auto-detect automatically switch rendering back to "classic"?
+<a name="autodetect"> </a>
+SharePoint will use an auto-detect system to automatically switch the rendering of a list to "classic" assuming you've not disabled the "modern" experience for your list using either the site, web or list scoped overrides explained in the previous chapter. This auto-detect system will automatically switch you back to "classic" whenever SharePoint detects you're list is using features which are not (yet) supported in "modern".
+
+Below are the settings that are evaluated as part of the auto-detect system and which make the list to render in "classic" mode:
+- If the requested list aspx page has zero or more than 1 web part on it
+- If the Web scoped feature "Metadata Navigation and Filtering" is enabled
+- In case the available webpart is an **XSLTListViewWebPart** (default way to render the list) and:
+	- When there's a non standard JSLink or XslLink value set for the web part properties
+	- When the page is shown in a dialog (IsDlg=1)
+	- When the JSLink property is set on one of the fields to render
+	- When one of the fields to render is of type "BCS external data", "Geolocation", "OutcomeChoice" or a publishing field types "Image", "Html", "SummaryLinks"
+	- When the list has customized content type ordering
+	- When there are list scoped custom actions which have their ScriptSrc value set
+- In case the available webpart is a **ListFormWebPart** and:
+	- When the page is shown in a dialog (IsDlg=1)
+	- When it's a "New" form page for a document library 
+	- When the fields to render are not any of these supported types (Attachments, TaxonomyField, Boolean, Choice, Currency, DateTime, File, Lookup, MultiChoice, MultiLine except when Append with versioning is on, Number, Text, User and Url)
+
+>**Note**:
+>In the future there will be an API that you can use to verify if a page can render in "modern" mode. If the page can't render in "modern" the API will tell you why it can't, essentially the API will tell you which of the above reasons caused the page to render in "classic" mode.
+
+
 ## Additional Considerations
 <a name="sectionSection22"> </a>
 
