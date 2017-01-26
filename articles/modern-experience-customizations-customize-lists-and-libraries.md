@@ -313,15 +313,15 @@ context.ExecuteQuery();
 SharePoint will use an auto-detect system to automatically switch the rendering of a list to "classic" assuming you've not disabled the "modern" experience for your list using either the site, web or list scoped overrides explained in the previous chapter. This auto-detect system will automatically switch you back to "classic" whenever SharePoint detects you're list is using features which are not (yet) supported in "modern".
 
 Below are the settings that are evaluated as part of the auto-detect system and which make the list to render in "classic" mode:
-- If the requested list aspx page has zero or more than 1 web part on it
+- If the requested list form page has zero or more than 1 web part on it
 - If the Web scoped feature "Metadata Navigation and Filtering" is enabled
 - In case the available webpart is an **XSLTListViewWebPart** (default way to render the list) and:
 	- When there's a non standard JSLink or XslLink value set for the web part properties
 	- When the page is shown in a dialog (IsDlg=1)
 	- When the JSLink property is set on one of the fields to render
-	- When one of the fields to render is of type "BCS external data", "Geolocation", "OutcomeChoice" or a publishing field types "Image", "Html", "SummaryLinks"
+	- When one of the fields to render is of type "BCS external data", "Geolocation", "OutcomeChoice" or one of these publishing field types "Image", "Html", "SummaryLinks"
 	- When the list has customized content type ordering
-	- When there are list scoped custom actions which have their ScriptSrc value set
+	- When there are list scoped user custom actions which have their ScriptSrc property set
 - In case the available webpart is a **ListFormWebPart** and:
 	- When the page is shown in a dialog (IsDlg=1)
 	- When it's a "New" form page for a document library 
