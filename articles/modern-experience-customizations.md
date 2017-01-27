@@ -19,7 +19,7 @@ The modern experiences in SharePoint Online are:
 
 We recommend using the following process for adopting to the "modern" experiences, if you have existing customizations which are business critical for your deployment:
 
-1. **Readiness**: Understand the "modern" experiences, know what features they offer but equally important understand what's features are not (yet) available
+1. **Readiness**: Understand the "modern" experiences, know what features they offer but equally important understand which features are not (yet) available
 2. **Assess**: Assess to what extend your current customizations can work in the "modern" experience. Also assess which of your sites do have customizations or features that will not work in the "modern" experiences, these sites and their customizations should be updated or need to stay in "classic". However all other sites should work fine using the "modern" experiences.
 3. **Solution planning**: Plan the needed work on both custom solutions as sites to prepare them to be used with the "modern" experiences 
 4. **Develop and test**: Apply the needed changes to your customizations and test them 
