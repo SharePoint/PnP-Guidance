@@ -1,11 +1,11 @@
-# SharePoint Online extensibility scenarios for German, China or US Government environments
+# Extending SharePoint Online for a tenant hosted in the Germany, China or US Government environment
 
-When your Office 365 tenant is hosted in an specific environment like the German, China or US Government environments then you'll need to take this in account when you're developing against your tenant. 
+When your Office 365 tenant is hosted in an specific environment like the Germany, China or US Government environments then you'll need to take this in account when you're developing against your tenant. 
 
-_**Applies to:** Office 365 in German, China or US Government environments_
+_**Applies to:** Office 365 hosted in the Germany, China or US Government environments_
 
 
-# Introduction
+## Introduction
 <a name="introduction"> </a>
 
 Microsoft has specific Office 365 deployments in Germany, China and for US Government to fulfill the specific regulations for those areas. Below links provide more context:
@@ -15,10 +15,10 @@ Microsoft has specific Office 365 deployments in Germany, China and for US Gover
 
 If you are a developer targeting applications for SharePoint Online hosted in these environments then you'll need to take in account that these environments have their own dedicated Azure AD authentication endpoints that you as developer need to use. Below chapters explain how do use these dedicated endpoints for the typical SharePoint Online customization options.
 
-# Using Azure AD to authorize
+## Using Azure AD to authorize
 <a name="usingazureadtoauthorize"> </a>
 
-## Azure AD endpoints
+### Azure AD endpoints
 <a name="adendpoints"> </a>
 
 When your Azure AD application needs to authorize it needs to use the correct endpoint. Below table describes the endpoints to use depending on where your Azure AD application has been defined:
@@ -30,7 +30,7 @@ When your Azure AD application needs to authorize it needs to use the correct en
 | China | https://login.chinacloudapi.cn |
 | US Government | https://login-us.microsoftonline.com |
 
-## Using PnP to authorize using Azure AD
+### Using PnP to authorize using Azure AD
 <a name="adpnp"> </a>
 
 The PnP [AuthenticationManager](https://github.com/SharePoint/PnP-Sites-Core/blob/dev/Core/OfficeDevPnP.Core/AuthenticationManager.cs) offers an easy way to obtain an SharePoint ClientContext object when you're using an Azure AD application. The impacted methods have been extended with an optional `AzureEnvironment` enum
@@ -67,13 +67,13 @@ ClientContext cc = new AuthenticationManager().GetAzureADNativeApplicationAuthen
 			aadAppId, "https://contoso.com/test", environment: AzureEnvironment.Germany);
 ```
 
-# Using Azure ACS to authorize your SharePoint add-in
+## Using Azure ACS to authorize your SharePoint add-in
 <a name="usingazureacs"> </a>
 
 When you create SharePoint add-ins they'll typically low-trust authorization which depends on Azure ACS as descrived in [Creating SharePoint Add-ins that use low-trust authorization](https://msdn.microsoft.com/en-us/library/office/dn790707.aspx).
 
 
-## Azure ACS endpoints
+### Azure ACS endpoints
 <a name="endpointsacs"> </a>
 
 
@@ -86,7 +86,7 @@ When you create SharePoint add-ins they'll typically low-trust authorization whi
 
 Using this model the ACS endpoint url to use is formatted like https:// + endpoint prefix + / + endpoint. So the URL for production will be https://accounts.accesscontrol.windows.net, the one for Germany will be https://login.microsoftonline.de.
 
-## Updating tokenhelper.cs in your applications
+### Updating tokenhelper.cs in your applications
 <a name="tokenhelperacs"> </a>
 
 When you want to do SharePoint add-in authorization using Azure ACS then you're using `tokenhelper.cs` (or `tokenhelper.vb`). The default tokenhelper class will have hardcoded references to the Azure ACS endpoints and methods to acquire the ACS endpoint as shown below:
@@ -100,8 +100,8 @@ private static string AcsHostUrl = "accesscontrol.windows.net";
 ...
 ```
 
-### Tokenhelper.cs updates for Germany
-Update the static variables `GlobalEndPointPrefix` and `AcsHostUrl` to the German Azure ACS values.
+#### Tokenhelper.cs updates for Germany
+Update the static variables `GlobalEndPointPrefix` and `AcsHostUrl` to the Germany Azure ACS values.
 
 ```C#
 ...
@@ -112,7 +112,7 @@ private static string AcsHostUrl = "microsoftonline.de";
 ...
 ```
 
-### Tokenhelper.cs updates for China
+#### Tokenhelper.cs updates for China
 Update the static variables `GlobalEndPointPrefix` and `AcsHostUrl` to the China Azure ACS values:
 
 ```C#
@@ -124,7 +124,7 @@ private static string AcsHostUrl = "accesscontrol.chinacloudapi.cn";
 ...
 ```
 
-## Using PnP to authorize your add-in using Azure ACS
+### Using PnP to authorize your add-in using Azure ACS
 <a name="pnpacs"> </a>
 
 The PnP [AuthenticationManager](https://github.com/SharePoint/PnP-Sites-Core/blob/dev/Core/OfficeDevPnP.Core/AuthenticationManager.cs) offers an easy way to obtain an SharePoint ClientContext object when you're using Azure ACS to authorize. The impacted methods have been extended with an optional `AzureEnvironment` enum
@@ -153,7 +153,7 @@ ClientContext cc = new AuthenticationManager().GetAppOnlyAuthenticatedContext(si
 ```
 
 
-## Additional resources
+### Additional resources
 <a name="bk_addresources"> </a>
 
 - [Learn about Office 365 Germany](https://support.office.com/en-US/article/Learn-about-Office-365-Germany-8a5a4bbc-667a-4cac-8769-d8ac9015db4c) 
