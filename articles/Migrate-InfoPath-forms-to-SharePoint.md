@@ -9,10 +9,10 @@ If you're using InfoPath as the basis for creating forms in your add-ins, now is
 To replace your InfoPath forms, you can choose one of the following alternatives:
 
 - Use Access applications.
+
+- Use Microsoft Flow and Microsoft PowerApps.
     
-- Convert InfoPath forms to sandbox solutions.
-    
-- Move complex behaviors to the add-in model.
+- Move complex behaviors to new add-in model and client side developments.
     
 We recommend the first two solutions, because information workers who don't know how to write and deploy code-based alternatives can implement them. The following table describes the scenarios for which each alternative is best suited.
 
@@ -21,11 +21,13 @@ We recommend the first two solutions, because information workers who don't know
 |**Alternative**|**Scenario**|
 |:-----|:-----|
 |Access applications|This option supports multiple forms that handle relational data contained in multiple Access tables, Excel tables, and/or SharePoint lists.|
-|Convert InfoPath to Sandbox solutions|This is a viable option if your forms are simple, don’t require any server components, and don’t make any calls to external web services.|
-|Convert to the add-in model|You can convert complex forms driven by extensive code into provider-hosted add-ins. This option requires developer resources.|
+|Use Microsoft Flow and Microsoft PowerApps|This is the our recommended approach for extending lists by SharePoint power users .|
+|New add-in model and client side developments |You can convert complex forms driven by extensive code into provider-hosted add-ins or client side web parts. This option requires developer resources.|
 
 ## Additional resources
 <a name="bk_addresources"> </a>
+
+-  [Patterns and Practices InfoPath transformation guidance](https://github.com/SharePoint/PnP-Transformation/tree/master/InfoPath) 
 
 -  [Office 365 development patterns and practices solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
