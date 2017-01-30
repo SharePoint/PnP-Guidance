@@ -11,6 +11,7 @@ Microsoft SharePoint 2013 and the new Add-in model allow you to use remote provi
 |**Article**|**Shows you how to**|
 |:-----|:-----|
 |[Office365 Developer Patterns and Practices (PnP)](https://github.com/OfficeDev/PnP)|The root site for SharePoint and Office 365 PnP resources on GitHub. Contains the Core library.|
+|[Introducing the PnP Provisioning Engine](Introducing-the-PnP-Provisioning-Engine.md)| A short white paper that introduces the PnP provisioning engine.|
 |[Getting Started with PnP Provisioning Engine](https://channel9.msdn.com/blogs/OfficeDevPnP/Getting-Started-with-PnP-Provisioning-Engine)|A Microsoft Channel 9 audio/video introduction to the PnP provisioning engine delivered by Paolo Pialorsi.|
 |[Introducing the PnP Provisioning Engine](https://github.com/OfficeDev/PnP-Guidance/blob/551b9f6a66cf94058ba5497e310d519647afb20c/articles/Introducing-the-PnP-Provisioning-Engine.md)|A GitHub article that provides a detailed introduction to the PnP provisioning engine.|
 |[OfficeDevPnP.Core ](https://github.com/OfficeDev/PnP/tree/master/OfficeDevPnP.Core)|The Office 365 Developer PnP Core Component is an extension that encapsulates commonly used remote CSOM/REST operations as reusable extension methods to support CSOM provisioning objects.|
