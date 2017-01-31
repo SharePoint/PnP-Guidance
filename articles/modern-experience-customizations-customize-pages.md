@@ -21,6 +21,7 @@ The number of customizations that you can do for "modern" pages is limited and i
 There are numerous customizations which currently are not supported for "modern" pages:
  - Alternative layouts -  We are looking to have support for multiple canvases in in future
  - Custom page templates (layout templates) - We are looking to have support for multiple canvases in in future
+ - Adding "classic" web parts on "modern" pages
  - Custom CSS via AlternateCSSUrl web property
  - Custom JavaScript embedded via User Custom Actions - There will a be more controlled way to embed JavaScript on the pages through SharePoint Framework (not only client-side web parts)
  - Custom master pages - More extensive branding will be supported later using alternative options
