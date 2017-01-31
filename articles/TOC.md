@@ -47,7 +47,7 @@
 ### [Search customizations](search-customizations-for-sharepoint.md)
 ## [Security and Performance](security-and-performance.md)
 ### [Authorize provider-hosted add-in users at run time](authorize-provider-hosted-add-in-users-at-run-time-by-using-oauth.md)
-### [Extending SharePoint Online for tenants hosted in the Germany, China or US Government environments](Extending-SharePoint-Online-for-Germany-China-USGovernment-environments.md)
+### [Authorization considerations for tenants hosted in the Germany, China or US Government environments](Extending-SharePoint-Online-for-Germany-China-USGovernment-environments.md)
 ### [Cross-domain images in SharePoint provider-hosted add-ins](cross-domain-images-in-sharepoint-provider-hosted-add-ins.md)
 ### [Elevated privileges in SharePoint Add-ins](elevated-privileges-in-sharepoint-add-ins.md)
 ### [How to provide add-in app only tenant administrative permissions in SharePoint Online](how-to-provide-add-in-app-only-tenant-administrative-permissions-in-sharepoint-online.md)

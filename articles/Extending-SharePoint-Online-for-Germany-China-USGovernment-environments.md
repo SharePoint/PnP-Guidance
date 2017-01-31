@@ -1,4 +1,4 @@
-# Extending SharePoint Online for a tenant hosted in the Germany, China or US Government environment
+# Authorization considerations for tenants hosted in the Germany, China or US Government environments
 
 When your Office 365 tenant is hosted in an specific environment like the Germany, China or US Government environments then you'll need to take this in account when you're developing against your tenant. 
 
