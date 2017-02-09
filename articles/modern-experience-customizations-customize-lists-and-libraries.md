@@ -1,20 +1,20 @@
 # Customizing "modern" lists and libraries
-During summer 2016 the SharePoint Online team released "modern" document libraries and lists which brings a better user experience which is faster, more intuitive and responsive. **The "modern" experiences are having many benefits and we highly recommend using them**. If your current customizations do not yet work with the "modern" experience then it's time to revisit those so your users can benefit from these great improvements:
+During the summer of 2016 the SharePoint Online team released "modern" document libraries and lists which bring a better user experience which is faster, more intuitive, and responsive. **The "modern" experiences have many benefits and we highly recommend using them**. If your current customizations do not yet work with the "modern" experience then it's time to revisit those so your users can benefit from these great improvements:
  - "Modern" document libraries have an updated user interface that offers an experience similar to OneDrive, so it’s more intuitive to create a new folder and upload files in the browser
  - Click Pin to top to add documents “above the fold” in any onscreen view
  - Copying isn’t new, but the copy and move gestures are intelligent about displaying your information architecture and letting you create new folders on the fly
- - You may not have to make as many copies any more. Document libraries are also intelligent about remembering other files you’ve been using in SharePoint. That’s why you can import other files from other libraries as links, without having to duplicate files between multiple sites
+ - You may not have to make as many copies anymore. Document libraries are also intelligent about remembering other files you’ve been using in SharePoint. That’s why you can import other files from other libraries as links, without having to duplicate files between multiple sites
  - The new document libraries let you group files directly in the main page without clicking to a separate admin screen. You can also click and drag to change the size of your columns, as well as sort, filter and group from any column header
- - Mobile browsers have the same features as the desktop, making SharePoint productive for every user—whether they interact via mouse, keyboard, touch or screen reader
+ - Mobile browsers have the same features as the desktop, making SharePoint productive for every user — whether they interact via mouse, keyboard, touch, or screen reader
  - You can now edit metadata directly from the main view in the information panel. No more clicking into multiple screens to apply an update!
- - Thanks to Office Online integration, you can navigate a complete document preview at the top of the information panel. The panel offers metadata, including the history of recent activity, updates to the file and who received a share to the file
+ - Thanks to Office Online integration, you can navigate a complete document preview at the top of the information panel. The panel offers metadata, including the history of recent activity, updates to the file, and who received a share to the file
 
-This article focuses on the extensibility options there are in the "modern" library and list experiences, if you however want to learn more about the functionalities offered by the "modern" experiences then following links will help:
+This article focuses on the extensibility options within the "modern" library and list experiences. If, however, you want to learn more about the functionalities offered by the "modern" experiences then the following links will help:
 - Overview of the "modern" document library experience: https://blogs.office.com/2016/06/07/modern-document-libraries-in-sharepoint
 - Overview of the "modern" list experience: https://blogs.office.com/2016/07/25/modern-sharepoint-lists-are-here-including-integration-with-microsoft-flow-and-powerapps 
 - Differences between "modern" and "classic" experiences: https://support.office.com/en-us/article/Differences-between-classic-and-new-experiences-for-lists-and-document-libraries-30e1aab0-a5cc-4363-b7f2-09e2ae07d4dc?ui=en-US&rs=en-US&ad=US
 
-In remainder of this article we'll use "modern" for the new user experience and "classic" for the legacy user experience. 
+In the remainder of this article we'll use "modern" for the new user experience and "classic" for the legacy user experience. 
 
 >**Important:** 
 We're not deprecating the "classic" experience, both "classic" and "modern" will coexist.
@@ -25,7 +25,7 @@ _**Applies to:** SharePoint Online_
 ## Overview of the customization options
 <a name="customizationoptions"> </a>
 
-"Modern" list and libraries do not support as many customization options as "classic" lists and libraries. In this article we'll provide more details and examples on the supported options. The SharePoint team is working to support more options in the future. Below list gives a quick overview of the supported capabilities for "modern" list and libraries:
+"Modern" list and libraries do not support as many customization options as "classic" lists and libraries. In this article we'll provide details and examples of the supported options. The SharePoint team is working to support more options in the future. The list below gives a quick overview of the supported capabilities for "modern" lists and libraries:
  - Subset of User Custom Actions
  - Custom branding
  - PowerApps and Flow integration
@@ -34,7 +34,7 @@ There are numerous customizations which currently are not supported for "modern"
  - JSLink based field customizations - More options will become available in the future
  - JSLink based view customizations - More options will become available in the future
  - Custom CSS via AlternateCSSUrl web property
- - Custom JavaScript embedded via User Custom Actions - There will a be more controlled way to embed JavaScript on the pages through SharePoint Framework (not only client-side web parts)
+ - Custom JavaScript embedded via User Custom Actions - There will a be more controlled way to embed JavaScript on the pages through the SharePoint Framework (not only client-side web parts)
  - Custom master pages - More extensive branding will be supported later using alternative options
  - Customization via InfoPath
  - Minimal Download Strategy (MDS)
@@ -43,7 +43,7 @@ There are numerous customizations which currently are not supported for "modern"
 ## User Custom Actions
 <a name="supportedcustomactions"> </a>
 
-The "modern" experiences do allow certain user custom actions to be surfaced in the new user interface, but not all user action configurations which are supported by "classic" mode are supported in the "modern" experience. Below table gives a high level overview of the supported custom action locations and how they're surfaced in the "modern" UI:
+The "modern" experiences allow certain user custom actions to be surfaced in the new user interface, but not all user action configurations which are supported by "classic" mode are supported in the "modern" experience. The table below gives a high level overview of the supported custom action locations and how they're surfaced in the "modern" UI:
 
 |**User Custom Action location**|**Visible in "modern" UI**|
 |:-----|:-----|
@@ -55,7 +55,7 @@ The "modern" experiences do allow certain user custom actions to be surfaced in 
 ### EditControlBlock User Custom Actions 
 <a name="editcontrolblockcustomactions"> </a>
 
-Adding custom links to the context menu can be done by using the `EditControlBlock` as location for your custom action. The below PnP provisioning XML creates 2 custom entries. 
+Adding custom links to the context menu can be done by using the `EditControlBlock` as the location for your custom action. The below PnP provisioning XML creates 2 custom entries. 
 
 ```XML
 <pnp:ProvisioningTemplate ID="EditControlBlockSamples" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
@@ -92,7 +92,7 @@ If you refresh the "modern" view of a document library in your site you'll see t
 ### CommandUI.Ribbon User Custom Actions 
 <a name="ribboncustomactions"> </a>
 
-If you want to extend the toolbar in the "modern" list and library experiences you can do so via adding a user custom action targeting the CommandUI.Ribbon location as shown in the PnP provisioning XML sample.
+If you want to extend the toolbar in the "modern" list and library experiences you can do so via adding a user custom action targeting the CommandUI.Ribbon location as shown in this PnP provisioning XML sample.
 
 ```XML
 <pnp:ProvisioningTemplate ID="CommandUIRibbonSamples" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
@@ -200,7 +200,7 @@ If you want to extend the toolbar in the "modern" list and library experiences y
 </pnp:ProvisioningTemplate>
 ```
 
-After adding these user custom actions you'll see them appearing in the toolbar. Notice that custom tabs are transformed into a dropdown menu:
+After adding these user custom actions you'll see them appear in the toolbar. Notice that custom tabs are transformed into a dropdown menu:
 
 ![Custom action visible in the toolbar](media/modern-experiences/custom-actions-toolbar.png)
 
@@ -225,31 +225,31 @@ After adding these user custom actions you'll see them appearing in the toolbar.
 ### User Custom Action limitations 
 <a name="customactionlimitations"> </a>
 
-When developing user custom actions that need to work in modern experiences please take in account the following limitations:
- - You can't completely control the order in which the user custom actions show up: the user custom actions are added in the order the `_api/web/Lists(guid'listid')/CustomActionElements` does return the user custom actions...and this API currently does not take in account the sequence attributes. Buttons defined inside a custom tab can be ordered by adding them in the correct order in the CommandUIDefinition xml. Our sample shows Button 3 as first and that's because of the order in the XML
- - Command actions cannot contain JavaScript...using for example `CommandAction="javascript:alert('My custom Action');"` will mean the user custom action will not show up
+When developing user custom actions that need to work in modern experiences please take into account the following limitations:
+ - You can't completely control the order in which the user custom actions show up: the user custom actions are added in the order the `_api/web/Lists(guid'listid')/CustomActionElements` returns the user custom actions... and this API currently does not take in account the sequence attributes. Buttons defined inside a custom tab can be ordered by adding them in the correct order in the CommandUIDefinition xml. Our sample shows Button 3 as first and that's because of the order in the XML
+ - Command actions cannot contain JavaScript... using for example `CommandAction="javascript:alert('My custom Action');"` will mean the user custom action will not show up
  - Using the `ScriptLink` or `ScriptBlock` properties is not possible since they can only be used with user custom action location `ScriptLink`, which is not supported
- - The `RegistrationId` cannot refer to specific library ID (e.g. {7A46F86F-D6CC-4263-8A1B-1BC1658B506C}), only out of the box template types (e.g. 100 for a List or 101 for a Document Library) or content type id's (e.g. 0x0101 for the Document content type) are allowed
+ - The `RegistrationId` cannot refer to a specific library ID (e.g. {7A46F86F-D6CC-4263-8A1B-1BC1658B506C}), only out of the box template types (e.g. 100 for a List or 101 for a Document Library) or content type id's (e.g. 0x0101 for the Document content type) are allowed
  - Using image maps (e.g. `Image16by16="/_layouts/15/1033/images/formatmap16x16.png?rev=33" Image16by16Left="-144" Image16by16Top="-107"`) does not work, you'll need to specify individual images. Also note that only 16x16 images are relevant
 
 
 ## Custom branding
 <a name="themingimpact"> </a>
-If you're site happens to use a custom theme then this custom theme will be respected in the "modern" list and library experiences as shown in below sample:
+If your site happens to use a custom theme then this custom theme will be respected in the "modern" list and library experiences as shown in below sample:
 
 ![Modern list with custom branding coming from custom theme](media/modern-experiences/modern-list-with-custom-theme.png)
 
 ## How to configure the end user experience
 <a name="configuremodernlibrariesandlists"> </a>
-You do have multiple options to control whether the "modern" or "classic" library and list experience will be used. 
+You have multiple options to control whether the "modern" or "classic" library and list experience will be used. 
 
 ### Tenant level configuration
-If you completely want to disable the "modern" experience then it's best to use the tenant setting for this. navigate to your tenant admin center (e.g. contoso-admin.sharepoint.com), go to settings and select the "classic" experience:
+If you want to completely disable the "modern" experience, then it's best to use the tenant setting for this. Navigate to your tenant admin center (e.g. contoso-admin.sharepoint.com), go to settings, and select the "classic" experience:
 
 ![SharePoint Lists and Libraries experience settings in the SharePoint Admin UI](media/modern-experiences/lists-libraries-tenant-settings.png)
 
 ### Site/Web level configuration
-You can prevent a site collection or web to use the "modern" experience by enabling a feature:
+You can prevent a site collection or web from using the "modern" experience by enabling a feature:
 - Site collection scoped feature with ID **E3540C7D-6BEA-403C-A224-1A12EAFEE4C4** for site collection control
 - Web scoped feature with ID **52E14B6F-B1BB-4969-B89B-C4FAA56745EF** for web scoped control
 
@@ -270,7 +270,7 @@ You can use below [PnP provisioning XML](https://msdn.microsoft.com/en-us/pnp_ar
 </pnp:ProvisioningTemplate>
 ```
 
-Use following PnP PowerShell to apply this template:
+Use the following PnP PowerShell to apply this template:
 
 ```PowerShell
 
@@ -284,11 +284,11 @@ Apply-PnPProvisioningTemplate -Path c:\experiencecontrol.xml -Handlers Features
 ```
 
 ### List/Library configuration
-If you want to control the experience on library level then you can use go to list settings, advanced settings and change the behavior:
+If you want to control the experience at the library level, you can use go to list settings, advanced settings, and change the behavior:
 
 ![List experience configuration in the SharePoint tenant level settings in admin ui](media/modern-experiences/list-experience-setting.png)
 
-The same can also be done using CSOM as shown in below snippet:
+The same can also be done using CSOM as shown in the below snippet:
 
 ```C#
 // Load the list you want to update
@@ -305,36 +305,36 @@ context.ExecuteQuery();
 ```
 
 >**Note**:
-> - The settings at library level **override** the settings at web, site or tenant level
+> - The settings at the library level **override** the settings at the web, site, or tenant level
 > - The current configuration is cached, so changes are not immediately visible
 
 ## When does the built-in auto-detect automatically switch rendering back to "classic"?
 <a name="autodetect"> </a>
-SharePoint will use an auto-detect system to automatically switch the rendering of a list to "classic" assuming you've not disabled the "modern" experience for your list using either the site, web or list scoped overrides explained in the previous chapter. This auto-detect system will automatically switch you back to "classic" whenever SharePoint detects you're list is using features which are not (yet) supported in "modern".
+SharePoint will use an auto-detect system to automatically switch the rendering of a list to "classic" assuming you've not disabled the "modern" experience for your list using either the site, web, or list scoped overrides explained in the previous chapter. This auto-detect system will automatically switch you back to "classic" whenever SharePoint detects your list is using features which are not (yet) supported in "modern".
 
-Below are the settings that are evaluated as part of the auto-detect system and which make the list to render in "classic" mode:
+Below are the settings that are evaluated as part of the auto-detect system and which make the list render in "classic" mode:
 - If the requested list form page has zero or more than 1 web part on it
 - If the Web scoped feature "Metadata Navigation and Filtering" is enabled
-- In case the available webpart is an **XSLTListViewWebPart** (default way to render the list) and:
-	- When there's a non standard JSLink or XslLink value set for the web part properties
-	- When the page is shown in a dialog (IsDlg=1)
-	- When the JSLink property is set on one of the fields to render
-	- When one of the fields to render is of type "BCS external data", "Geolocation", "OutcomeChoice" or one of these publishing field types "Image", "Html", "SummaryLinks"
-	- When the list has customized content type ordering
-	- When there are list scoped user custom actions which have their ScriptSrc property set
-- In case the available webpart is a **ListFormWebPart** and:
-	- When the page is shown in a dialog (IsDlg=1)
-	- When it's a "New" form page for a document library 
-	- When the fields to render are not any of these supported types (Attachments, TaxonomyField, Boolean, Choice, Currency, DateTime, File, Lookup, MultiChoice, MultiLine except when Append with versioning is on, Number, Text, User and Url)
+- If the available webpart is an **XSLTListViewWebPart** (default way to render the list) and:
+	- There's a non standard JSLink or XslLink value set for the web part properties
+	- The page is shown in a dialog (IsDlg=1)
+	- The JSLink property is set on one of the fields to render
+	- One of the fields to render is of type "BCS external data", "Geolocation", "OutcomeChoice" or one of these publishing field types "Image", "Html", or "SummaryLinks"
+	- The list has customized content type ordering
+	- There are list scoped user custom actions which have their ScriptSrc property set
+- If the available webpart is a **ListFormWebPart** and:
+	- The page is shown in a dialog (IsDlg=1)
+	- It's a "New" form page for a document library 
+	- The fields to render are not any of these supported types (Attachments, TaxonomyField, Boolean, Choice, Currency, DateTime, File, Lookup, MultiChoice, MultiLine except when Append with versioning is on, Number, Text, User, or Url)
 
 >**Note**:
->In the future there will be an API that you can use to verify if a page can render in "modern" mode. If the page can't render in "modern" the API will tell you why it can't, essentially the API will tell you which of the above reasons caused the page to render in "classic" mode.
+>In the future there will be an API that you can use to verify if a page can render in "modern" mode. If the page can't render in "modern" the API will tell you why it can't. Essentially the API will tell you which of the above reasons caused the page to render in "classic" mode.
 
 
 ## Additional Considerations
 <a name="sectionSection22"> </a>
 
-We'll gradually introduce more customization options for "modern" list and library experiences. This introduction will be aligned with the release of additional SharePoint framework capabilities. Currently there's no exact schedule available, but note that we'll be updating the "modern" experience articles whenever new capabilities are being released.
+We'll gradually introduce more customization options for "modern" list and library experiences. These will be aligned with the release of additional SharePoint framework capabilities. Currently, there's no exact schedule available, but we'll be updating the "modern" experience articles whenever new capabilities are released.
 
 ## Additional resources
 <a name="bk_addresources"> </a>
