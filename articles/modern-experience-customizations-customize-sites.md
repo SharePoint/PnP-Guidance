@@ -1,15 +1,15 @@
 # Customizing "modern" team sites
-During autumn 2016 the SharePoint Online team released "modern" collaboration sites. These modern team sites are integrated with Office 365 groups and they bring a greatly improved end user experience. "Modern" team sites are responsive by design and they are much faster to create and use from end user perspective. Here are some of the key benefits in the "modern" team sites.
+During the autumn of 2016 the SharePoint Online team released "modern" collaboration sites. These modern team sites are integrated with Office 365 groups and bring a greatly improved end user experience. "Modern" team sites are responsive by design and they are much faster to create and use from an end user perspective. Here are some of the key benefits in the "modern" team sites.
 
 - Designed to scale for any device natively without customizations - fully responsive experience
-- Native news, quick links and activity capabilities 
+- Native news, quick links, and activity capabilities 
 - Office 365 group integration 
 - Significantly faster to create compared to "classic" team sites
 - Modern lists and libraries with support for Microsoft Flow and PowerApps
 - Modern page editing capabilities
-- Updated site contents page with additional insights on the site usage
+- Updated site contents page with additional insights on site usage
 
-This article concentrates on the available extensibility options in "modern" team sites. Here are key links around the key capabilities:
+This article concentrates on the available extensibility options within "modern" team sites. Here are key links around the key capabilities:
 
 - New capabilities in SharePoint Online team sites including integration with Office 365 Groups: https://blogs.office.com/2016/08/31/new-capabilities-in-sharepoint-online-team-sites-including-integration-with-office-365-groups
 - Create connected SharePoint Online team sites in seconds: https://blogs.office.com/2016/11/08/create-connected-sharepoint-online-team-sites-in-seconds
@@ -23,7 +23,7 @@ _**Applies to:** SharePoint Online_
 ## Supported customizations in "modern" team sites
 <a name="supportedcustomizations"> </a>
 
-"Modern" sites have a different level of customization options compared to "classic" team sites. Overtime there we'll introduce additional customization options, mainly focusing on extensibility and branding. Below list gives a quick overview of the supported capabilities for "modern" team sites. 
+"Modern" sites have a different level of customization options compared to "classic" team sites. Over time we'll introduce additional customization options, mainly focusing on extensibility and branding. The list below gives a quick overview of the supported capabilities for "modern" team sites.
 
 - Apply a custom theme 
 - Apply an out of the box theme
@@ -32,23 +32,23 @@ _**Applies to:** SharePoint Online_
 - Site configurations, like regional settings, languages and auditing settings
 
 > **Note:**
-> You can apply a custom theme, but you cannot introduce a custom theme to theme gallery as an option for the end users.
+> You can apply a custom theme, but you cannot introduce a custom theme to the theme gallery as an option for end users.
 
 ### What's not supported with "modern" team sites?
 <a name="notsupported"> </a>
 
-There are numerous areas in the "modern" team sites where the typical customizations are not yet available. There will be further support for some of these specific topics when they are ready to be released. Below is a list of not supported customizations in "modern" team sites:
+There are numerous areas in the "modern" team sites where the typical customizations are not yet available. There will be further support for some of these specific topics when they are ready to be released. Below is a list of currently unsupported customizations in "modern" team sites:
 
 - Custom master pages - More extensive branding will be supported later using alternative options
-- Custom page layouts - We are looking to have support for multiple canvases in in future
-- Welcome page modifications - There are no APIs to modify the welcome page current, this will be introduced later
-- User custom actions / Custom JavaScript - There will be more controlled way to embed JavaScript on the pages through SharePoint Framework (not only client-side web parts)
-- "Modern" sub sites - Sub sites created in "modern" team sites are using "classic" experience, but you can change the user experience to similar as with "modern" sites
+- Custom page layouts - We are looking to have support for multiple canvases in the future
+- Welcome page modifications - There are no APIs to modify the welcome page currently, this will be introduced later
+- User custom actions / Custom JavaScript - There will be a more controlled way to embed JavaScript on the pages through the SharePoint Framework (not only client-side web parts)
+- "Modern" sub sites - Sub sites created in "modern" team sites use the "classic" experience, but you can change the user experience to be similar to "modern" sites
 - Control available sub site template options
 - "Classic" publishing features (WCM)
 - Accessing or updating site property bag entries
 
-Since "modern" team sites also have the scripting capabilities disabled (it's a so called noscript site), there are numerous additional areas which cannot be customized. The impact of noscript is the same for "modern" or "classic" sites, the only difference with "modern" sites is that you cannot turn off "noscript" whereas this is possible for "classic" sites. Here are some key areas to take in account when you design your solutions:
+Since "modern" team sites also have scripting capabilities disabled (it's a so called noscript site), there are numerous additional areas which cannot be customized. The impact of noscript is the same for "modern" or "classic" sites, the only difference with "modern" sites is that you cannot turn off "noscript" whereas this is possible for "classic" sites. Here are some key areas to take in account when you design your solutions:
 
 - Sandbox solutions are not supported
 - Custom JavaScript cannot be enabled in the sites using "classic" extensibility options (e.g. via user custom actions)
@@ -56,24 +56,24 @@ Since "modern" team sites also have the scripting capabilities disabled (it's a 
 - Some web parts are not available for end users
 
 > **Note:**
-> You can find full list of impacted capabilities from the [Microsoft Support article](https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f) under the "Features affected when scripting is disabled" chapter.
+> You can find the full list of impacted capabilities from the [Microsoft Support article](https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f) under the "Features affected when scripting is disabled" chapter.
 
 
 ### Using PnP Provisioning Engine with "modern" team sites
 <a name="pnpprovisioningengine"> </a>
 
-You can use the [PnP Provisioning Engine](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) with "modern" team sites. The PnP Provisioning Engine will automatically detect if site is a "modern" team site and will adjust its behavior based on the supported capabilities. The process is exactly the same as if you would be using the PnP Provisioning Engine with "classic" sites where the scripting capabilities are not disabled.
+You can use the [PnP Provisioning Engine](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) with "modern" team sites. The PnP Provisioning Engine will automatically detect if a site is a "modern" team site and will adjust its behavior based on the supported capabilities. The process is exactly the same as using the PnP Provisioning Engine with "classic" sites where the scripting capabilities are not disabled.
 
-Following elements are ignored when a remote template is applied to a "modern" team site or a site which has noscript enabled.
+The following elements are ignored when a remote template is applied to a "modern" team site or a site which has noscript enabled.
 - Site collection AuditLogTrimmingRetention configuration in the auditing settings
 - Apply a custom theme from the template - Current implementation has dependency on storing custom theme to catalog, which is not supported
 - Form settings for content types
-- Adding custom user actions to site, web or list level 
+- Adding custom user actions to site, web, or list level 
 - Adding files with file types of ".asmx", ".ascx", ".aspx", ".htc", ".jar", ".master", ".swf", ".xap", ".xsf"
-- Adding files to libraries with following url  "_catalogs/theme", "style library", "_catalogs/lt", "_catalogs/wp" 
+- Adding files to libraries with the following urls  "_catalogs/theme", "style library", "_catalogs/lt", "_catalogs/wp" 
 - Adding web parts to site pages
-- Storing provisioning template information to property bag of the provisioned site
-- Adding or updating property bag entries to site property bag
+- Storing provisioning template information to the property bag of the provisioned site
+- Adding or updating property bag entries to the site property bag
 - "Classic" publishing settings and assets
 - Site No Crawl settings
 - Site master page settings
@@ -81,7 +81,7 @@ Following elements are ignored when a remote template is applied to a "modern" t
 ## Applying custom theme to "modern" team site
 <a name="sectionSection0"> </a>
 
-"Modern" team sites do support custom themes even though you cannot upload a new gallery entry for end users. This can be achieved by uploading the needed assets to the site and then executing ApplyTheme method. Following PowerShell script shows how to perform this for a "modern" team site.
+"Modern" team sites support custom themes even though you cannot upload a new gallery entry for end users. This can be achieved by uploading the needed assets to the site and then executing ApplyTheme method. The following PowerShell script shows how to perform this for a "modern" team site.
 
 ```PowerShell
 
@@ -91,16 +91,16 @@ Connect-PnPOnline https://[tenant].sharepoint.com/sites/siteurl -Credentials $cr
 
 # Apply a custom theme to a Modern Site
 
-# First, upload theme assets
+# First, upload the theme assets
 Add-PnPFile -Path .\sppnp.spcolor -Folder SiteAssets
 Add-PnPFile -Path .\sppnp-bg.png -Folder SiteAssets
 
-# Second, apply theme assets to site
+# Second, apply the theme assets to the site
 $web = Get-PnPWeb
 $palette = $web.ServerRelativeUrl + "/SiteAssets/sppnp.spcolor"
 $background = $web.ServerRelativeUrl + "/SiteAssets/sppnp-bg.png"
 
-# We use oob CSOM operation for this
+# We use OOTB CSOM operation for this
 $web.ApplyTheme($palette, [NullString]::Value, $background, $true)
 $web.Update()
 # Set timeout as high as possible and execute
@@ -111,12 +111,12 @@ $web.Context.ExecuteQuery()
 !["Modern team site with custom theme"](media/modern-experiences/modern-site-with-custom-theme.png)
 
 > **Note:**
-> You can use [SharePoint Color Palette Tool](https://www.microsoft.com/en-us/download/details.aspx?id=38182) to create a custom theme file (.spcolor) with the custom color definition. In general modern team sites try to preserve the feel of the theme by automatically converting classic site theming elements to modern side. Preserved areas are background image and following theme slots: ContentAccent1, PageBackground and BackgroundOverlay.
+> You can use [SharePoint Color Palette Tool](https://www.microsoft.com/en-us/download/details.aspx?id=38182) to create a custom theme file (.spcolor) with the custom color definition. In general, modern team sites try to preserve the feel of the theme by automatically converting classic site theming elements to the modern side. Preserved areas are background image and the following theme slots: ContentAccent1, PageBackground, and BackgroundOverlay.
 
 ## How to determine if a site is a "modern" team site?
 <a name="sectionSection1"> </a>
 
-You can detect that a site is a "modern" team site by checking the 'Web.WebTemplate' value of the site. "Modern" team sites are using the "GROUP" template. Since supported capabilities are the same for "classic" team site when the scripting is disabled, you should be checking both settings in your code to determine the right behavior or supported capabilities.
+You can detect that a site is a "modern" team site by checking the 'Web.WebTemplate' value of the site. "Modern" team sites are using the "GROUP" template. Since the supported capabilities are the same for a "classic" team site when the scripting is disabled, you should be checking both settings in your code to determine the right behavior or supported capabilities.
 
 Since there's no direct property to check if the scripting is enabled or not, you can use permissions to determine the current status. When scripting is enabled, there's no AddAndCustomizePages permission in the base permissions of the site.
 
@@ -155,7 +155,7 @@ public static bool IsNoScriptSite(Web web)
 ## Additional Considerations
 <a name="sectionSection2"> </a>
 
-We'll gradually introduce more customization options for "modern" team sites. This introduction will be aligned with the release of additional SharePoint framework capabilities. Currently there's no exact schedule available, but note that we'll be updating the "modern" experience articles whenever new capabilities are being released.
+We'll gradually introduce more customization options for "modern" team sites. These will be aligned with the release of additional SharePoint framework capabilities. Currently there is no exact schedule available, but we'll be updating the "modern" experience articles whenever new capabilities are released.
 
 ## Additional resources
 <a name="bk_addresources"> </a>
