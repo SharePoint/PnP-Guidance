@@ -11,6 +11,8 @@ Server Side Object Model code and deployed via Solutions.  In this scenario, the
 In an SharePoint Add-in model scenario, event receivers are created outside of SharePoint inside a web service and registered with SharePoint.  
 These are called as *Remote Event Recivers (RER)*. In this scenario, the event receiver code runs on the web server where the web service is hosted.
 
+> Notice that SharePoint WebHooks are available in SharePoint Online, which could be more suitable option for your business requirements. Please read more details around SharePoint WebHooks from [dev.office.com](https://dev.office.com/sharepoint/docs/apis/webhooks/overview-sharepoint-webhooks) 
+
 High-Level Guidelines
 ---------------------
 
