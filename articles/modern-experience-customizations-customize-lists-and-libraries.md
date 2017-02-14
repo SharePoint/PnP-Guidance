@@ -250,7 +250,7 @@ If you want to completely disable the "modern" experience, then it's best to use
 
 
 >**Note**:
-> - When you've selected "New experience (auto detect)" then you'll still see the "Return to classic SharePoint" option. This is by design given today not all functionalities of "classic" libraries and lists are implemented in the "modern" libraries and lists.
+> - When you've selected "New experience (auto detect)" then you'll always see the "Return to classic SharePoint" option. This is by design given today not all functionalities of "classic" libraries and lists are implemented in the "modern" libraries and lists. There's no option to change this behavior.
 
 ### Site/Web level configuration
 You can prevent a site collection or web from using the "modern" experience by enabling a feature:
