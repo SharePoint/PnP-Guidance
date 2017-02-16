@@ -1,3 +1,4 @@
+# Information Management 
 Cmdlet|Description
 :-----|:----------
 **[Get&#8209;PnPSiteClosure](GetPnPSiteClosure.md)** |Get the site closure status of the site which has a site policy applied

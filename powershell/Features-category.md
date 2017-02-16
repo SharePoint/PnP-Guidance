@@ -1,3 +1,4 @@
+# Features 
 Cmdlet|Description
 :-----|:----------
 **[New&#8209;PnPExtensbilityHandlerObject](NewPnPExtensbilityHandlerObject.md)** |Creates an ExtensibilityHandler Object, to be used by the Get-SPOProvisioningTemplate cmdlet

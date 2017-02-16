@@ -1,3 +1,4 @@
+# Publishing 
 Cmdlet|Description
 :-----|:----------
 **[Set&#8209;PnPAvailablePageLayouts](SetPnPAvailablePageLayouts.md)** |Sets the available page layouts for the current site

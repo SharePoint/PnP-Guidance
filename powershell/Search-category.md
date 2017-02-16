@@ -1,3 +1,4 @@
+# Search 
 Cmdlet|Description
 :-----|:----------
 **[Get&#8209;PnPSearchConfiguration](GetPnPSearchConfiguration.md)** |Returns the search configuration
