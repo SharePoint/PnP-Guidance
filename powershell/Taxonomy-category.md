@@ -1,3 +1,4 @@
+# Taxonomy 
 Cmdlet|Description
 :-----|:----------
 **[Get&#8209;PnPSiteCollectionTermStore](GetPnPSiteCollectionTermStore.md)** |Returns the site collection term store
