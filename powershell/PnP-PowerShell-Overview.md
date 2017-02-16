@@ -7,11 +7,7 @@ SharePoint Patterns and Practices (PnP) contains a library of PowerShell command
 
 _**Applies to:** Office 365 | SharePoint 2016 | SharePoint 2013 | SharePoint Online_
 
-## In this section
 
-|**Read this content**|**If you want to...**|
-|:-----|:-----|
-|[SharePoint Online PnP PowerShell cmdlets](pnp-powershell-reference-for-sharepoint-online.md)|Learn how to use the PnP PowerShell cmdlets with SharePoint Online|
 
 
 ## Additional resources
