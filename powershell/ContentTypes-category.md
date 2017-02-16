@@ -1,3 +1,4 @@
+# Content Types 
 Cmdlet|Description
 :-----|:----------
 **[Add&#8209;PnPContentType](AddPnPContentType.md)** |Adds a new content type

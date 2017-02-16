@@ -1,3 +1,4 @@
+# Apps 
 Cmdlet|Description
 :-----|:----------
 **[Get&#8209;PnPAppInstance](GetPnPAppInstance.md)** |Returns a SharePoint AddIn Instance in the site

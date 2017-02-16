@@ -1,3 +1,4 @@
+# Document Sets 
 Cmdlet|Description
 :-----|:----------
 **[Remove&#8209;PnPContentTypeFromDocumentSet](RemovePnPContentTypeFromDocumentSet.md)** |Removes a content type from a document set
