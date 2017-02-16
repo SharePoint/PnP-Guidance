@@ -1,36 +1,24 @@
 {
   "build": {
-    "content": [
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE"
-        ]
-      }
-    ],
+    "content":
+      [
+        {
+          "files": ["**/**.md"],
+          "exclude": ["**/obj/**"]
+        }
+      ],
     "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      }
+        {
+          "files": ["media/**", "**/images/**"],
+          "exclude": ["**/obj/**"]
+        }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
-    "template": [],
-    "dest": "pnp_powershell"
+    "globalMetadata": {
+        "ROBOTS": "INDEX, FOLLOW"
+    },
+    "externalReference": [
+    ],
+    "template": "op.html",
+    "dest": "powershell"
   }
 }
