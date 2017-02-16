@@ -5,7 +5,7 @@ SharePoint Patterns and Practices (PnP) contains a library of PowerShell command
 ![SharePoint Patterns and Practices](https://devofficecdn.azureedge.net/media/Default/PnP/sppnp.png)
 
 
-_**Applies to:** Office 365 | SharePoint 2016 | SharePoint 2013 | SharePoint Online_
+_**Applies to:** SharePoint Online | SharePoint 2016 | SharePoint 2013_
 
 
 
