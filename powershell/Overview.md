@@ -6,7 +6,6 @@ SharePoint Patterns and Practices (PnP) contains a library of PowerShell command
 
 _**Applies to:** SharePoint Online | SharePoint 2016 | SharePoint 2013_
 
-
 ## INSTALLATION #
 
 There are 3 ways to install the cmdlets. We recommend, where possible, to install them from the [PowerShell Gallery](https://www.powershellgallery.com). Alternatively you can download the setup files or run a PowerShell script to download the PowerShellGet module and install the cmdlets subsequently.
