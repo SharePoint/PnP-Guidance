@@ -19,6 +19,7 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "powershell"
+    "dest": "powershell",
+	"contributors_to_exclude": ["jansenbe","VesaJuvonen"]
   }
 }

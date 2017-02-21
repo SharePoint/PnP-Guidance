@@ -17,6 +17,8 @@ _**Applies to:** SharePoint Online_
 ## Supported customizations for "modern" pages
 The number of customizations available for "modern" pages is limited and in this article we'll provide details and examples of the supported options. The SharePoint team is working to support more options in the future. The list below gives a quick overview of the supported capabilities for "modern" team sites:
  - Custom branding
+ - Adding "modern" pages programmatically
+ - Adding, deleting, updating client side web parts on "modern" pages
 
 There are numerous customizations which currently are not supported for "modern" pages:
  - Alternative layouts -  We are looking to have support for multiple canvases in the future
@@ -25,7 +27,6 @@ There are numerous customizations which currently are not supported for "modern"
  - Custom CSS via AlternateCSSUrl web property
  - Custom JavaScript embedded via User Custom Actions - There will a be more controlled way to embed JavaScript on the pages through SharePoint Framework (not only client-side web parts)
  - Custom master pages - More extensive branding will be supported later using alternative options
- - Programmatically adding "modern" pages - More options will become available in the future
  - Minimal Download Strategy (MDS)
  - SharePoint Server Publishing
 
@@ -86,6 +87,33 @@ Connect-PnPOnline -Url https://[tenant].sharepoint.com/sites/siteurl -Credential
 # Apply the PnP provisioning template
 Apply-PnPProvisioningTemplate -Path c:\experiencecontrol.xml -Handlers Features
 
+```
+
+## Programming "modern" pages
+### Adding "modern" pages
+Creating a "modern" page comes down to creating a list item in the site pages library and assinging it the correct content type combined with setting some additional properties as shown in below code snippet:
+
+```C#
+// pagesLibrary is List object for the "site pages" library of the site
+item = pagesLibrary.RootFolder.Files.AddTemplateFile(serverRelativePageName, TemplateFileType.ClientSidePage).ListItemAllFields;
+
+// Make this page a "modern" page
+item["ContentTypeId"] = "0x0101009D1CB255DA76424F860D91F20E6C4118005F055C2EA17FCC41905778C5B1EF773A";
+item["Title"] = System.IO.Path.GetFileNameWithoutExtension("mypage.aspx");
+item["ClientSideApplicationId"] = "b6917cb1-93a0-4b97-a84d-7cf49975d4ec";
+item["PageLayoutType"] = "Article";
+item["PromotedState"] = "0";
+item["BannerImageUrl"] = "/_layouts/15/images/sitepagethumbnail.png";
+item.Update();
+clientContext.Load(item);
+clientContext.ExecuteQuery();
+
+```
+
+When using PnP (as of March 2017 release) you can leverage our extension methods resulting in an really easy model to add a page:
+
+```C#
+cc.Web.AddClientSidePage("mypage.aspx", true);
 ```
 
 ## Additional Considerations
