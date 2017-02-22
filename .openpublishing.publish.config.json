@@ -1,20 +1,45 @@
 {
-    "build_entry_point": "",
-    "need_generate_pdf": false,
-    "git_repository_url_open_to_public_contributors": "https://github.com/OfficeDev/PnP-Guidance",
-    "git_repository_branch_open_to_public_contributors": "master",
-    "docsets_to_publish": [
-        {
-            "docset_name": "PnP_articles",
-            "build_output_subfolder": "articles",
-            "locale": "en-us",
-            "version": 0,
-            "open_to_public_contributors": "true",
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        }
-    ],
-  "notification_subscribers": [ "lauragra@microsoft.com", "vesaj@microsoft.com", "v-roharp@microsoft.com", "bjansen@microsoft.com" ],
-    "branches_to_filter": [""]
+  "build_entry_point": "",
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "docsets_to_publish": [
+    {
+      "docset_name": "PnP_articles",
+      "build_source_folder": "articles",
+      "build_output_subfolder": "articles",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      }
+    },
+    {
+      "docset_name": "pnp_powershell",
+      "build_source_folder": "powershell",
+      "build_output_subfolder": "powershell",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "op"
+    }
+  ],
+  "notification_subscribers": [
+    "lauragra@microsoft.com",
+    "vesaj@microsoft.com",
+    "bjansen@microsoft.com"
+  ],
+  "branches_to_filter": [
+    ""
+  ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/OfficeDev/PnP-Guidance",
+  "git_repository_branch_open_to_public_contributors": "master",
+  "skip_source_output_uploading": false,
+  "dependent_repositories": [],
+  "need_generate_pdf_url_template": false
 }

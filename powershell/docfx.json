@@ -1,0 +1,25 @@
+{
+  "build": {
+    "content":
+      [
+        {
+          "files": ["**/**.md"],
+          "exclude": ["**/obj/**"]
+        }
+      ],
+    "resource": [
+        {
+          "files": ["media/**", "**/images/**"],
+          "exclude": ["**/obj/**"]
+        }
+    ],
+    "globalMetadata": {
+        "ROBOTS": "INDEX, FOLLOW"
+    },
+    "externalReference": [
+    ],
+    "template": "op.html",
+    "dest": "powershell",
+	"contributors_to_exclude": ["jansenbe","VesaJuvonen"]
+  }
+}
