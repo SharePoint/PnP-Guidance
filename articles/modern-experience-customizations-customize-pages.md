@@ -103,7 +103,7 @@ item["Title"] = System.IO.Path.GetFileNameWithoutExtension("mypage.aspx");
 item["ClientSideApplicationId"] = "b6917cb1-93a0-4b97-a84d-7cf49975d4ec";
 item["PageLayoutType"] = "Article";
 item["PromotedState"] = "0";
-item["CanvasContent1"] = "<div></div>
+item["CanvasContent1"] = "<div></div>"
 item["BannerImageUrl"] = "/_layouts/15/images/sitepagethumbnail.png";
 item.Update();
 clientContext.Load(item);
@@ -223,7 +223,7 @@ Let's start with showing a sample and then discuss it:
 	- The div with the **data-sp-htmlproperties** attribute will hold the specific client side web part html. You'll not need to populate this data as it's the control's responsibility to do this
 
 ### Using the PnP support for "modern" pages and client side web parts
-As of the March 2017 release the PnP Sites core library offers support for creating, updating and deleting client side pages. This chapter will give you insight in how work with client side pages using the PnP core library
+As of the [March 2017 release the PnP Sites core library](http://aka.ms/sppnp) offers support for creating, updating and deleting client side pages. This chapter will give you insight in how to work with client side pages using the [PnP Sites core library](https://github.com/SharePoint/PnP-Sites-Core).
 
 #### Creating a new page and adding a text web part
 In this sample we create a new client side page in memory, add a rich text editor control and finally save the page to the site pages library as mypage.aspx. First step is creating a ClientSidePage instance, then we instantiate a control which we add on the page using the `AddControl` method. Once that's done the page will be saved.
@@ -270,7 +270,7 @@ page5.Save("page5.aspx");
 ```
 
 #### Adding a custom client side web part
-Previous samples showed how to work with out of the box web parts, but obviously you can also add your custom built client side web parts to a page. You would start from getting your web part information using the `AvailableClientSideComponents` method, then you find your web part and use the found information to instantiate `ClientSideWebPart` instance which then can be added to the page.
+Previous samples showed how to work with out of the box web parts, but obviously you can also add your custom built client side web parts to a page. You would start from getting your web part information using the `AvailableClientSideComponents` method, then you search for your web part and use the found information to instantiate a `ClientSideWebPart` instance which in a last step will be added to the page.
 
 ```C#
 ClientSidePage p = new ClientSidePage(cc);
@@ -293,7 +293,7 @@ p.Save("PnPRocks.aspx");
 ```
 
 #### Adjusting control order
-You have different methods to control the order in which the controls will appear on the page. The key aspect is the `Order` attribute on the actual control as the list of controls is sorted by that order when the page html is generated...and the order in the html is also the order at page rendering time.
+You have different methods to control the order in which the controls will appear on the page. The key aspect is the `Order` attribute on the actual control: the list of controls is sorted by the value of that `Order` attribute when the page html is generated...and the order in the html is also the order at page rendering time.
 
 ```C#
 // Set the order when initiating the control
@@ -303,7 +303,7 @@ ClientSideText txt1 = new ClientSideText() { Text = "PnP Rocks", Order = 5 };
 myPage.AddControl(txt1, -1);
 
 // Manipulate the control order on the page...e.g. move a control to the back
-myPage.Controls[1].Order = 10
+myPage.Controls[1].Order = 10;
 
 ```
 
