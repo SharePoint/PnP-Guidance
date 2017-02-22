@@ -125,7 +125,7 @@ In this article you add a Web Part to the default page of the Employee Orientati
 
  
 
-     ![Default page of the add-in with the "New Employees in Seattle" list displayed in a Web Part.](media//31e8e4b1-e2e6-416b-b360-9979a1f16fc7.PNG)
+     ![Default page of the add-in with the "New Employees in Seattle" list displayed in a Web Part.](media/31e8e4b1-e2e6-416b-b360-9979a1f16fc7.PNG)
  
 
     
