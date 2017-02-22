@@ -111,25 +111,13 @@ In this article you add a Web Part to the default page of the Employee Orientati
 
 ## Run and test the add-in
 
-
- 
-
- 
-
 1. Use the F5 key to deploy and run your add-in. Visual Studio makes a temporary installation of the add-in on your test SharePoint site and immediately runs the add-in. 
     
  
 2. When the add-in's default page opens, the list view Web Part is on it and the list is displayed. 
     
     **Default page with list view Web part**
-
- 
-
-     ![Default page of the add-in with the "New Employees in Seattle" list displayed in a Web Part.](media/31e8e4b1-e2e6-416b-b360-9979a1f16fc7.PNG)
- 
-
-    
-    
+  ![Default page of the add-in with the "New Employees in Seattle" list displayed in a Web Part.](media/31e8e4b1-e2e6-416b-b360-9979a1f16fc7.PNG)
  
 3. Try adding new items to the list and editing existing items.
     
