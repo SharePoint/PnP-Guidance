@@ -98,7 +98,7 @@ Creating a "modern" page comes down to creating a list item in the site pages li
 ListItem item = pagesLibrary.RootFolder.Files.AddTemplateFile(serverRelativePageName, TemplateFileType.ClientSidePage).ListItemAllFields;
 
 // Make this page a "modern" page
-item["ContentTypeId"] = "0x0101009D1CB255DA76424F860D91F20E6C4118005F055C2EA17FCC41905778C5B1EF773A";
+item["ContentTypeId"] = "0x0101009D1CB255DA76424F860D91F20E6C4118";
 item["Title"] = System.IO.Path.GetFileNameWithoutExtension("mypage.aspx");
 item["ClientSideApplicationId"] = "b6917cb1-93a0-4b97-a84d-7cf49975d4ec";
 item["PageLayoutType"] = "Article";
