@@ -310,7 +310,7 @@ context.ExecuteQuery();
 
 >**Note**:
 > - The settings at the library level **override** the settings at the web, site, or tenant level
-> - The current configuration is cached, so changes are not immediately visible
+> - If you're not able to get the "modern" experience to show up then inspect the cookies being passed to SharePoint as it could be possible that the opt out of modern experiences cookie (splnu with value set to 0) is still present. Clearing the browser cookies should get this fixed.
 
 ## When does the built-in auto-detect automatically switch rendering back to "classic"?
 <a name="autodetect"> </a>
@@ -331,8 +331,64 @@ Below are the settings that are evaluated as part of the auto-detect system and 
 	- It's a "New" form page for a document library 
 	- The fields to render are not any of these supported types (Attachments, TaxonomyField, Boolean, Choice, Currency, DateTime, File, Lookup, MultiChoice, MultiLine except when Append with versioning is on, Number, Text, User, or Url)
 
+### Programmatically detecting if your library/list will be shown using "modern" or "classic" 
+The previous chapter explained the reasoning behind our auto-detect mechanism, but luckily there's an easy way for you as a developer to understand how a library/list will be rendered. Getting this information is as simple as getting the value of the **PageRenderType** file property which you can obtain using CSOM or REST. Below samples show how to first load the page rendering the list and then get the **PageRenderType**:
+
+*CSOM sample:*
+```C#
+using (var cc = new ClientContext(siteUrl))
+{
+    cc.Credentials = new SharePointOnlineCredentials(userName, password);
+    
+    // Load the AllItems.aspx file from the list
+    File file = cc.Web.GetFileByServerRelativeUrl("/sites/dev/ECMTest/Forms/AllItems.aspx");
+    cc.Load(file, f => f.PageRenderType);
+    cc.ExecuteQuery();
+
+    // Check page render type
+    Console.WriteLine($"Status = {file.PageRenderType}");
+}
+```
+
+
 >**Note**:
->In the future there will be an API that you can use to verify if a page can render in "modern" mode. If the page can't render in "modern" the API will tell you why it can't. Essentially the API will tell you which of the above reasons caused the page to render in "classic" mode.
+> The PageRenderType property was introduced in [January 2017 CSOM release (16.1.6112.1200)](https://dev.office.com/blogs/new-sharepoint-csom-version-released-for-Office-365-january-2017).
+
+*REST request:*
+```Html
+GET _api/web/getfilebyserverrelativeurl('/sites/dev/ECMTest/Forms/AllItems.aspx')/pageRenderType
+```
+
+The REST call will get you integer value which is explained in below table:
+
+Value | Reason
+:------:|-------
+0 | Undefined = 0, (there's enough information to know the render mode)
+1 | MultipeWePart
+2 | JSLinkCustomization
+3 | XslLinkCustomization
+4 | NoSPList
+5 | HasBusinessDataField
+6 | HasTaskOutcomeField
+7 | HasPublishingfield
+8 | HasGeolocationField
+9 | HasCustomActionWithCode
+10 | HasMetadataNavFeature 
+11 | SpecialViewType
+12 | ListTypeNoSupportForModernMode
+13 | AnonymousUser
+14 | ListSettingOff
+15 | SiteSettingOff
+16 | WebSettingOff
+17 | TenantSettingOff
+18 | CustomizedForm
+19 | DocLibNewForm
+20 | UnsupportedFieldTypeInForm
+21 | InvalidFieldTypeInForm 
+22 | InvalidControModeInForm
+23 | CustomizedPage
+24 | ListTemplateNotSupported
+100 | Modern
 
 
 ## Additional Considerations
