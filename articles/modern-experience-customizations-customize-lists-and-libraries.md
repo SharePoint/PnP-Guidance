@@ -363,7 +363,7 @@ The REST call will get you integer value which is explained in below table:
 
 Value | Reason
 :------:|-------
-0 | Undefined = 0, (there's enough information to know the render mode)
+0 | Undefined = 0, (there's not enough information to know the render mode)
 1 | MultipeWePart
 2 | JSLinkCustomization
 3 | XslLinkCustomization
