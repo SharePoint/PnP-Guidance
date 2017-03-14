@@ -250,6 +250,7 @@ If you want to completely disable the "modern" experience, then it's best to use
 
 
 >**Note**:
+> - When you switch from between "New experience (auto detect)" and "Classic experience" the change will not be immediately visible.
 > - When you've selected "New experience (auto detect)" then you'll always see the "Return to classic SharePoint" option. This is by design given today not all functionalities of "classic" libraries and lists are implemented in the "modern" libraries and lists. There's no option to change this behavior.
 
 ### Site/Web level configuration
@@ -309,8 +310,9 @@ context.ExecuteQuery();
 ```
 
 >**Note**:
-> - The settings at the library level **override** the settings at the web, site, or tenant level
+> - The settings at the library level **override** the settings at the web, site, or tenant level. This also implies that you could pilot the "modern" list and library experience to a sub site of sites by having the "modern" experience turned off at tenant level but enabled at list level in the pilot sites.
 > - If you're not able to get the "modern" experience to show up then inspect the cookies being passed to SharePoint as it could be possible that the opt out of modern experiences cookie (splnu with value set to 0) is still present. Clearing the browser cookies should get this fixed.
+
 
 ## When does the built-in auto-detect automatically switch rendering back to "classic"?
 <a name="autodetect"> </a>
