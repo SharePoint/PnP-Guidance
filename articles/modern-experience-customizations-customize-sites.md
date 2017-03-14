@@ -40,6 +40,7 @@ _**Applies to:** SharePoint Online_
 There are numerous areas in the "modern" team sites where the typical customizations are not yet available. There will be further support for some of these specific topics when they are ready to be released. Below is a list of currently unsupported customizations in "modern" team sites:
 
 - Custom master pages - More extensive branding will be supported later using alternative options
+- Changing "modern" site to use classic seattle.master or oslo.master
 - Custom page layouts - We are looking to have support for multiple canvases in the future
 - Welcome page modifications - There are no APIs to modify the welcome page currently, this will be introduced later
 - User custom actions / Custom JavaScript - There will be a more controlled way to embed JavaScript on the pages through the SharePoint Framework (not only client-side web parts)
