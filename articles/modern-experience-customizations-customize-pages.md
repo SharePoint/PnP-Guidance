@@ -50,16 +50,16 @@ If you want to completely disable the "modern" experience, then it's best to use
 > - The current configuration is cached, logging off the session will immediately show the effect of this change.
 
 ### Site level configuration
-You can prevent a site collection or web from using the "modern" page experience by disabling the site collection scoped feature with ID **B6917CB1-93A0-4B97-A84D-7CF49975D4EC**. To re-enable the "modern" page experience at the site level you'll need to activate the feature again.
+You can prevent a web from using the "modern" page experience by disabling the web scoped feature with ID **B6917CB1-93A0-4B97-A84D-7CF49975D4EC**. To re-enable the "modern" page experience at the web level you'll need to activate the feature again.
 
-You can use the [PnP provisioning XML](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) below to **disable** this feature on your site collection:
+You can use the [PnP provisioning XML](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) below to **disable** this feature on your site:
 
 ```XML
 <pnp:ProvisioningTemplate ID="disablemodernpages" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
   <pnp:Features>
-    <pnp:SiteFeatures>
-      <pnp:Feature ID="B6917CB1-93A0-4B97-A84D-7CF49975D4EC" Deactivate="true" Description="Disable modern list experience"/>
-    </pnp:SiteFeatures>
+    <pnp:WebFeatures>
+      <pnp:Feature ID="B6917CB1-93A0-4B97-A84D-7CF49975D4EC" Deactivate="true" Description="Enable modern page experience"/>
+    </pnp:WebFeatures>
   </pnp:Features>
 </pnp:ProvisioningTemplate>
 ```
@@ -69,9 +69,9 @@ You can use the [PnP provisioning XML](https://msdn.microsoft.com/en-us/pnp_arti
 ```XML
 <pnp:ProvisioningTemplate ID="enablemodernpages" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
   <pnp:Features>
-    <pnp:SiteFeatures>
-      <pnp:Feature ID="B6917CB1-93A0-4B97-A84D-7CF49975D4EC" Description="Disable modern list experience"/>
-    </pnp:SiteFeatures>
+    <pnp:WebFeatures>
+      <pnp:Feature ID="B6917CB1-93A0-4B97-A84D-7CF49975D4EC" Description="Enable modern page experience"/>
+    </pnp:WebFeatures>
   </pnp:Features>
 </pnp:ProvisioningTemplate>
 ```
