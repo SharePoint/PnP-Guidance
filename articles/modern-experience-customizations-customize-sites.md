@@ -42,7 +42,7 @@ There are numerous areas in the "modern" team sites where the typical customizat
 - Custom master pages - More extensive branding will be supported later using alternative options
 - Changing "modern" site to use classic seattle.master or oslo.master
 - Custom page layouts - We are looking to have support for multiple canvases in the future
-- Enabling site or site scoped publishing features. Technically features can be currently activated, but this is not supported configuration.
+- Enabling site or site collection scoped publishing features. Technically features can be currently activated, but this is not supported configuration.
 - Welcome page modifications - There are no APIs to modify the welcome page currently, this will be introduced later
 - User custom actions / Custom JavaScript - There will be a more controlled way to embed JavaScript on the pages through the SharePoint Framework (not only client-side web parts)
 - "Modern" sub sites - Sub sites created in "modern" team sites use the "classic" experience, but you can change the user experience to be similar to "modern" sites
