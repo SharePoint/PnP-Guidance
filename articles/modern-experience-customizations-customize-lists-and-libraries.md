@@ -324,14 +324,10 @@ Below are the settings that are evaluated as part of the auto-detect system and 
 - If the available webpart is an **XSLTListViewWebPart** (default way to render the list) and:
 	- There's a non standard JSLink or XslLink value set for the web part properties
 	- The page is shown in a dialog (IsDlg=1)
+	- The list is not based on one of the following types: Document library (101), Picture library (109), Web page library (119) or Generic list (100)
 	- The JSLink property is set on one of the fields to render
 	- One of the fields to render is of type "BCS external data", "Geolocation", "OutcomeChoice" or one of these publishing field types "Image", "Html", or "SummaryLinks"
-	- The list has customized content type ordering
 	- There are list scoped user custom actions which have their ScriptSrc property set
-- If the available webpart is a **ListFormWebPart** and:
-	- The page is shown in a dialog (IsDlg=1)
-	- It's a "New" form page for a document library 
-	- The fields to render are not any of these supported types (Attachments, TaxonomyField, Boolean, Choice, Currency, DateTime, File, Lookup, MultiChoice, MultiLine except when Append with versioning is on, Number, Text, User, or Url)
 
 ### Programmatically detecting if your library/list will be shown using "modern" or "classic" 
 The previous chapter explained the reasoning behind our auto-detect mechanism, but luckily there's an easy way for you as a developer to understand how a library/list will be rendered. Getting this information is as simple as getting the value of the **PageRenderType** file property which you can obtain using CSOM or REST. Below samples show how to first load the page rendering the list and then get the **PageRenderType**:
