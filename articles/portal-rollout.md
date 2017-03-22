@@ -24,7 +24,8 @@ A commonly used model for rolling out new functionality is using a phased approa
 - One of more **end user** waves: the number of waves you have is depending on how many users you'll be having combined with the model you're following. We see companies aligning their roll-out waves with their organization structure, other companies are aligning by country/region...in the end the thing that matters most is the fact that you're gradually adding new users to the portal
 
 Below picture shows a nice gradual roll-out plan. Note that this also takes in account that typically end-user waves have less actual users then invited users.
-![](https://support.content.office.net/en-us/media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
+
+![phased portal roll-out model](https://support.content.office.net/en-us/media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
 
 The above phased approach will give you time to absorb feedback and make adjustments to your portal if needed, but how do measure and follow-up on performance during this phased roll-out? The recommended approach for doing this is embedding portal telemetry in your implementation, as explained in [TODO: link to section in performance article]. Having a continuous flow of portal performance data will help you understand if the portal performance is changing when the number of users is growing, but also when you in the future make changes to the portal.
 
