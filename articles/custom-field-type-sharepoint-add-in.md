@@ -10,17 +10,17 @@ In a SharePoint Add-ins model scenario, customized end user experiences are impl
 
 From an end user's perspective the capability/result looks the same.
 
-Here are some examples of custom field type that implements a Google map. These come from the [Branding.JSLink](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.JSLink) Office 365 PnP Sample.
+Here are some examples of custom field type that implements a Google map. These come from the [Branding.JSLink](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.JSLink) Office 365 PnP Sample.
 
 **Thumbnail Google map images displayed in a list view:**
 
-![Two Google map views showing the Microsoft Campus Location Point, and Location Area.](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps.png)
+![Two Google map views showing the Microsoft Campus Location Point, and Location Area.](https://github.com/SharePoint/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps.png)
 
 **Inline editing showing a larger Google map thumbnail:**
-![Two Google maps. One view showing the Microsoft Campus Location Point with a link to Select Location, the other view showing the Microsoft Campus Location Area with a link to Edit Shape.](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps_Edit.png)
+![Two Google maps. One view showing the Microsoft Campus Location Point with a link to Select Location, the other view showing the Microsoft Campus Location Area with a link to Edit Shape.](https://github.com/SharePoint/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps_Edit.png)
 
 **A dialog enabling inline editing:**
-![A Google Map showing the Microsoft Campus Shape. Text on the image reads, Click on the map to place markers and create your shape. Finish by clicking on the first marker. You can drag each of the markers around, or click on them for more options. You can use the Clear Map button above to remove all markers.](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps_Shape_Edit.png)
+![A Google Map showing the Microsoft Campus Shape. Text on the image reads, Click on the map to place markers and create your shape. Finish by clicking on the first marker. You can drag each of the markers around, or click on them for more options. You can use the Clear Map button above to remove all markers.](https://github.com/SharePoint/PnP/blob/master/Samples/Branding.JSLink/readme-images/GoogleMaps_Shape_Edit.png)
 
 High-Level Guidelines
 ---------------------
@@ -60,7 +60,7 @@ When you need to define specific views for SharePoint list data and modify the r
 
 The following sample sets the JSLink property on a SharePoint List View Web Part.
 
-- [Branding.ClientSideRendering (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.ClientSideRendering)
+- [Branding.ClientSideRendering (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.ClientSideRendering)
 	+ Includes 9 samples that set the JSLink property on a SharePoint List View Web Part and an explanation of how each sample was implemented.
 	+ The RegisterJStoWebPart method sets the List View Web Part's JSLink property. 
 
@@ -126,9 +126,9 @@ Related links
 Related PnP samples
 ===================
 
-- [Branding.ClientSideRendering (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.ClientSideRendering)
-- [Branding.JSLink (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.JSLink)
-- Samples and content at https://github.com/OfficeDev/PnP
+- [Branding.ClientSideRendering (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.ClientSideRendering)
+- [Branding.JSLink (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.JSLink)
+- Samples and content at https://github.com/SharePoint/PnP
 
 Applies to
 ==========

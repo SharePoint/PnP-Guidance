@@ -5,7 +5,7 @@ Use CSS to customize SharePoint rich text fields and Web Part Zones.
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 You can use cascading style sheets (CSS) to customize SharePoint rich text fields and Web Part Zones. To customize rich text fields, you can do this right in the page you're editing. For Web Part Zones, you can use the Script Editor Web Part to add HTML or scripts, or associate a CSS style sheet.
-For a code sample that is associated with this article, see  [Branding.AlternateCSSAndSiteLogo](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo) in [Office 365 Developer Patterns and Practices](https://github.com/OfficeDev/PnP) on GitHub.
+For a code sample that is associated with this article, see  [Branding.AlternateCSSAndSiteLogo](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo) in [Office 365 Developer Patterns and Practices](https://github.com/SharePoint/PnP) on GitHub.
 
 ## Customize rich text fields
 <a name="sectionSection0"> </a>

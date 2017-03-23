@@ -20,13 +20,13 @@ As a rule of a thumb, we would like to provide the following high-level guidelin
 
 The following O365 PnP code sample and video demonstrates how to create a SharePoint Add-in that provides a user interface that allows end users to create new document libraries. It also demonstrates how to create a document library with specific configurations that collectively represent a template. In this sample you will find the code that creates a list instance.
 
-- [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries)
+- [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.DocumentLibraries)
 
 The following video walks through the code sample.
 
 - [Document and list templates with app model (O365 PnP Video)](http://channel9.msdn.com/blogs/OfficeDevPnP/Document-and-list-templates-with-app-model)
 
-Use the AddList method in the SharePoint CSOM to create a list instance via the remote provisioning pattern. The following code taken from the [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) illustrates how to do it.
+Use the AddList method in the SharePoint CSOM to create a list instance via the remote provisioning pattern. The following code taken from the [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.DocumentLibraries) illustrates how to do it.
 
 	private void CreateLibrary(ClientContext ctx, Library library, string associateContentTypeID) 
 	{
@@ -86,8 +86,8 @@ Related links
 Related PnP samples
 ===================
 
-- [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries)
-- Samples and content at [https://github.com/OfficeDev/PnP](https://github.com/OfficeDev/PnP)
+- [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.DocumentLibraries)
+- Samples and content at [https://github.com/SharePoint/PnP](https://github.com/SharePoint/PnP)
 
 Applies to
 ==========

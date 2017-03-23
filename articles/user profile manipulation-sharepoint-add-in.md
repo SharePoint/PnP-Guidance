@@ -67,7 +67,7 @@ When you have an on-premises SharePoint environment and you are copying UPS data
 
 The following sample demonstrates how to perform UPS CRUD operations with  the User Profile Web Service.
 
-- [Core.UserProfilePropertyUpdater (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.UserProfilePropertyUpdater)
+- [Core.UserProfilePropertyUpdater (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.UserProfilePropertyUpdater)
 
 On-premises - Use the User Profile Web Service to sync data
 -----------------------------------------------------------
@@ -79,9 +79,9 @@ When you have an on-premises SharePoint environment and you are synchronizing UP
 
 **Getting started**
 
-The [Core.UserProfilePropertyUpdater (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.UserProfilePropertyUpdater) demonstrates how to perform UPS CRUD operations with the User Profile Web Service.
+The [Core.UserProfilePropertyUpdater (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.UserProfilePropertyUpdater) demonstrates how to perform UPS CRUD operations with the User Profile Web Service.
 
-The [Core.MMSSync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMSSync) demonstrates how to build a synchronization tool for Managed Metadata Service (MMS data).  Although this sample focuses on the MMS APIs, the overall pattern used for synchronization may be applied to UPS data as well.
+The [Core.MMSSync (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.MMSSync) demonstrates how to build a synchronization tool for Managed Metadata Service (MMS data).  Although this sample focuses on the MMS APIs, the overall pattern used for synchronization may be applied to UPS data as well.
 
 Office 365 - Use CSOM to copy data
 ----------------------------------
@@ -93,9 +93,9 @@ When you have an Office 365 environment and you are copying UPS data between two
 
 **Getting started**
 
-The [UserProfile.Manipulation.CSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM) demonstrates how to perform UPS CRUD operations with CSOM.
+The [UserProfile.Manipulation.CSOM (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM) demonstrates how to perform UPS CRUD operations with CSOM.
 
-The [User profile CSOM for reading and updates (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/User-profile-CSOM-for-reading-and-updates) walks you through the [UserProfile.Manipulation.CSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM).
+The [User profile CSOM for reading and updates (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/User-profile-CSOM-for-reading-and-updates) walks you through the [UserProfile.Manipulation.CSOM (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM).
 
 Office 365 - Use CSOM to sync data
 ----------------------------------
@@ -107,7 +107,7 @@ When you have an Office 365 environment and you are synchronizing UPS data betwe
 
 **Getting started**
 
-The [Core.UserProfiles.Sync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.UserProfiles.Sync) demonstrates how to build a synchronization tool for User Profile Service data.
+The [Core.UserProfiles.Sync (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.UserProfiles.Sync) demonstrates how to build a synchronization tool for User Profile Service data.
 
 Hybrid Environments
 -------------------
@@ -125,10 +125,10 @@ Related links
 
 Related PnP samples
 ===================
-- [Core.UserProfilePropertyUpdater (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.UserProfilePropertyUpdater)
-- [Core.MMSSync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMSSync)
-- [UserProfile.Manipulation.CSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM)
-- [Core.UserProfiles.Sync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.UserProfiles.Sync) 
+- [Core.UserProfilePropertyUpdater (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.UserProfilePropertyUpdater)
+- [Core.MMSSync (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.MMSSync)
+- [UserProfile.Manipulation.CSOM (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM)
+- [Core.UserProfiles.Sync (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.UserProfiles.Sync) 
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to

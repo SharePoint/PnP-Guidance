@@ -4,7 +4,7 @@ As part of your Enterprise Content Management (ECM) strategy, you can synchroniz
     
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-The [Core.MMSSync](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMS) sample shows you how to use a provider-hosted add-in to synchronize a source and target taxonomy. This add-in synchronizes two term stores in the managed metadata service - a source and a target term store. The following objects are used to synchronize term groups:
+The [Core.MMSSync](https://github.com/SharePoint/PnP/tree/master/Samples/Core.MMS) sample shows you how to use a provider-hosted add-in to synchronize a source and target taxonomy. This add-in synchronizes two term stores in the managed metadata service - a source and a target term store. The following objects are used to synchronize term groups:
 
 - **TermStore** 
 
@@ -19,7 +19,7 @@ Use this solution if you want to:
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.MMSSync](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMSSync) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.MMSSync](https://github.com/SharePoint/PnP/tree/master/Samples/Core.MMSSync) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub.
 
 Before you run this add-in, you'll need permission to access the term store in the managed metadata service. Figure 1 shows the Office 365 admin center where these permissions are assigned.
 
@@ -339,6 +339,6 @@ The following code shows how to perform a delete operation when a term group was
 
 -  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
--  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP-Sites-Core/blob/master/Core)
+-  [OfficeDevPnP.Core sample](https://github.com/SharePoint/PnP-Sites-Core/blob/master/Core)
     
--  [Core.MMS sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMS)
+-  [Core.MMS sample](https://github.com/SharePoint/PnP/tree/master/Samples/Core.MMS)

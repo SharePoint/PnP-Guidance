@@ -18,7 +18,7 @@ As a rule of a thumb, we would like to provide the following high level guidelin
 - Use the SharePoint CSOM in a remote timer job to manage and apply information management policies.
 
 - Ensure you are not violating the Office 365 SharePoint API throttle limits when working with large data sets and recursive crawls as you inspect artifacts in your SharePoint sites and apply information management policies to them accordingly.
-	+ The [Core.Throttling (O365 Pnp Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.Throttling) demonstrates how to write intelligent code to handle Office 365 SharePoint API throttling.
+	+ The [Core.Throttling (O365 Pnp Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.Throttling) demonstrates how to write intelligent code to handle Office 365 SharePoint API throttling.
 
 **Note:** Currently, the CSOM does not have methods to set retention on content types (only on sites).
 
@@ -26,7 +26,7 @@ As a rule of a thumb, we would like to provide the following high level guidelin
 
 The following O365 PnP Code Sample and video demonstrates how to manage and apply information management policy for SharePoint sites.  In this example, the code iterates through the content types applied to document libraries in SharePoint site collections and applies a retention policy.
 
-- [Governance.ContentTypeEnforceRetention (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Governance.ContentTypeEnforceRetention)
+- [Governance.ContentTypeEnforceRetention (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Solutions/Governance.ContentTypeEnforceRetention)
 
 The following video walks through the code sample.
 
@@ -42,8 +42,8 @@ Related links
 Related PnP samples
 ===================
 
-- [Governance.ContentTypeEnforceRetention (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Governance.ContentTypeEnforceRetention)
-- Samples and content at https://github.com/OfficeDev/PnP
+- [Governance.ContentTypeEnforceRetention (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Solutions/Governance.ContentTypeEnforceRetention)
+- Samples and content at https://github.com/SharePoint/PnP
 
 Applies to
 ==========

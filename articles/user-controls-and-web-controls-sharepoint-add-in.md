@@ -38,8 +38,8 @@ When you need to embed JavaScript into all of your SharePoint pages, this option
 
 The following article and accompanying video demonstrates how to use custom user actions to embed JavaScript into SharePoint pages.
 
-- [Core.EmbedJavaScript (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScript)
-- [OD4B.NavLinksInjection (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/OD4B.NavLinksInjection)
+- [Core.EmbedJavaScript (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.EmbedJavaScript)
+- [OD4B.NavLinksInjection (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/OD4B.NavLinksInjection)
 - [Cross site collection navigation (O365 PnP Video)](http://channel9.msdn.com/blogs/OfficeDevPnP/Cross-site-collection-navigation)
 
 Embed JavaScript directly into page layouts
@@ -77,11 +77,11 @@ Related links
 
 Related PnP samples
 ===================
-- [Core.EmbedJavaScript (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScript)
-- [OD4B.NavLinksInjection (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/OD4B.NavLinksInjection)
-- [Core.EmbedJavaScript.WeekNumbers (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScript.WeekNumbers)
-- [Core.EmbedJavaScriptJSOM (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EmbedJavaScriptJSOM)
-- [Core.JavaScriptCustomization (O365 PnP Scenario using PnP Core component)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.JavaScriptCustomization)
+- [Core.EmbedJavaScript (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.EmbedJavaScript)
+- [OD4B.NavLinksInjection (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/OD4B.NavLinksInjection)
+- [Core.EmbedJavaScript.WeekNumbers (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.EmbedJavaScript.WeekNumbers)
+- [Core.EmbedJavaScriptJSOM (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.EmbedJavaScriptJSOM)
+- [Core.JavaScriptCustomization (O365 PnP Scenario using PnP Core component)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.JavaScriptCustomization)
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to

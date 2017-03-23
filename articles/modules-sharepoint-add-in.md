@@ -38,8 +38,8 @@ The following O365 PnP code samples demonstrate how to create a SharePoint Add-i
 
   This sample demonstrates how to create a new folders in the Style Library and add JavaScript files and images to the new files.
 
-- [Branding.ClientSideRendering (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.ClientSideRendering)
-	+ See the ***UploadJSFiles*** and the ***UploadFileToFolder*** methods in the [Default.aspx.cs class](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.ClientSideRendering/Branding.ClientSideRenderingWeb/Pages/Default.aspx.cs) for more details.
+- [Branding.ClientSideRendering (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.ClientSideRendering)
+	+ See the ***UploadJSFiles*** and the ***UploadFileToFolder*** methods in the [Default.aspx.cs class](https://github.com/SharePoint/PnP/blob/master/Samples/Branding.ClientSideRendering/Branding.ClientSideRenderingWeb/Pages/Default.aspx.cs) for more details.
 	+ These methods are also displayed below for quick reference.
 	
 		**Create a folder and upload JavaScript files to the folder:**
@@ -113,8 +113,8 @@ The following O365 PnP code samples demonstrate how to create a SharePoint Add-i
 
 This sample demonstrates how to upload master pages, set master page meta data and apply the master page to the site by setting the CustomMasterUrl property on the Web object.
 
-- [Branding.ApplyBranding (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.ApplyBranding)
-	+ See the ***UploadPageLayout***, ***CreatePublishingPage***, and ***SetSupportCaseContent*** methods in the [BrandingHelper.cs class](https://github.com/OfficeDev/PnP/blob/master/Samples/Branding.ApplyBranding/Branding.ApplyBranding.Console/BrandingHelper.cs) for more details.
+- [Branding.ApplyBranding (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.ApplyBranding)
+	+ See the ***UploadPageLayout***, ***CreatePublishingPage***, and ***SetSupportCaseContent*** methods in the [BrandingHelper.cs class](https://github.com/SharePoint/PnP/blob/master/Samples/Branding.ApplyBranding/Branding.ApplyBranding.Console/BrandingHelper.cs) for more details.
 	+ In addition to creating new items in SharePoint, this sample demonstrates how to remove items.  The methods which remove items are listed below for reference.  
 		**Delete a file:**
 	
@@ -196,8 +196,8 @@ This sample demonstrates how to upload master pages, set master page meta data a
 
 This sample has a little of everythign in it.  It demonstrates how to activate the publishing features, upload page layouts, create publishing pages, create lists, content types and list items, and creating pblishing pages and adding Web Parts and Add-in Parts to the pages.  It also demonstrates how to deploy list items to both the host web and the Add-in web.
 
-- [Branding.ClientSideRendering (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.ClientSideRendering)
-	+ See the methods in the [Utils.cs class](https://github.com/OfficeDev/PnP/blob/master/Samples/Core.DataStorageModels/Core.DataStorageModelsWeb/Util/Util.cs) for examples of these operations.
+- [Branding.ClientSideRendering (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.ClientSideRendering)
+	+ See the methods in the [Utils.cs class](https://github.com/SharePoint/PnP/blob/master/Samples/Core.DataStorageModels/Core.DataStorageModelsWeb/Util/Util.cs) for examples of these operations.
 	+ These methods are listed below for reference.  
 		**Activate site collection and site level publishing features:**
 		```
@@ -441,7 +441,7 @@ This sample has a little of everythign in it.  It demonstrates how to activate t
 	    }
 	```
 
-	+ See the ***FillHostWebSupportCasesToThreshold*** and the ***FillAppWebNotesListToThreshold*** methods in the [SharePointService.cs class](https://github.com/OfficeDev/PnP/blob/master/Samples/Core.DataStorageModels/Core.DataStorageModelsWeb/Services/SharePointService.cs) for more details about deploying list items to both the host web and the Add-in web.  
+	+ See the ***FillHostWebSupportCasesToThreshold*** and the ***FillAppWebNotesListToThreshold*** methods in the [SharePointService.cs class](https://github.com/SharePoint/PnP/blob/master/Samples/Core.DataStorageModels/Core.DataStorageModelsWeb/Services/SharePointService.cs) for more details about deploying list items to both the host web and the Add-in web.  
 	+ ***Important note:*** The same host web and Add-in web approaches demonstrated in this sample may be applied to any type of artifact to deploy them to the appropriate location.
 
 		**Add list items to a list in the host web:**
@@ -521,10 +521,10 @@ Related links
 Related PnP samples
 ===================
 
-- [Branding.ClientSideRendering (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.ClientSideRendering)
-- [Branding.ApplyBranding (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.ApplyBranding)
-- [Branding.ClientSideRendering (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.ClientSideRendering)
-- Samples and content at [https://github.com/OfficeDev/PnP](https://github.com/OfficeDev/PnP)
+- [Branding.ClientSideRendering (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.ClientSideRendering)
+- [Branding.ApplyBranding (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.ApplyBranding)
+- [Branding.ClientSideRendering (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.ClientSideRendering)
+- Samples and content at [https://github.com/SharePoint/PnP](https://github.com/SharePoint/PnP)
 
 Applies to
 ==========

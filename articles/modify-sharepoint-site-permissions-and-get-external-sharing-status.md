@@ -4,13 +4,13 @@ Modify properties of site collection administrators by using CSOM. Get the exter
 
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
-You can use the [Core.SitePermissions](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SitePermissions) sample to modify the site collection administrators on any site collection, including those for OneDrive for Business on Office 365 tenants. This sample also shows you how to obtain external sharing status for Office 365 Multi-Tenant installations.
+You can use the [Core.SitePermissions](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Core.SitePermissions) sample to modify the site collection administrators on any site collection, including those for OneDrive for Business on Office 365 tenants. This sample also shows you how to obtain external sharing status for Office 365 Multi-Tenant installations.
 
 Using a console application, you create a  **ClientContext** object to get permissions to list and/or modify administrators, and get external sharing status. You also create a registered add-in by using OAuth tokens.
 
 ## Before you begin
 
-To get started, download the [Core.SitePermissions](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SitePermissions) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the [Core.SitePermissions](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Core.SitePermissions) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub.
 
 ## Work with site collection administrators
 
@@ -90,4 +90,4 @@ List<ExternalUserEntity> externalUsers = ccTenant.Web.GetExternalUsersTenant();
 
 - [SharePoint site provisioning solutions](sharepoint-site-provisioning-solutions.md)
     
-- [Provisioning.Pages sample](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Provisioning.Pages)
+- [Provisioning.Pages sample](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Provisioning.Pages)

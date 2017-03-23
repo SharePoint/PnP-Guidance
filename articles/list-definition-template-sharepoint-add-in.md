@@ -68,7 +68,7 @@ When you need to apply multiple different templates options to lists.
 
 The following O365 PnP Code Sample and video demonstrates how to create a SharePoint Add-in that provides a user interface that allows end users to create new document libraries.  It also demonstrates how to create a document library with specific configurations that collectively represent a template.
 
-- [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries)
+- [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.DocumentLibraries)
 
 The following video walks through the code sample.
 
@@ -87,8 +87,8 @@ Related links
 Related PnP samples
 ===================
 
-- [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries)
-- Samples and content at https://github.com/OfficeDev/PnP
+- [ECM.DocumentLibraries (O365 PnP Code Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.DocumentLibraries)
+- Samples and content at https://github.com/SharePoint/PnP
 
 Applies to
 ==========

@@ -8,7 +8,7 @@ You can use Office Web Widgets to display information from a SharePoint-hosted s
 
 **Caution:**  Office Web Widgets are a third-party feature. Because they have some limitations, use them with caution. For more information, see:
 
-The [Core.OfficeWebWidgets](https://github.com/OfficeDev/PnP/tree/dev/Components/Core.OfficeWebWidgets) sample shows you how to implement the people picker and list view controls that are included in the Office Web Widgets library. This sample add-in inserts the controls into the HTML of the start page, and then configures the controls using the app.js JavaScript file that is located in the project's Scripts folder.
+The [Core.OfficeWebWidgets](https://github.com/SharePoint/PnP/tree/dev/Components/Core.OfficeWebWidgets) sample shows you how to implement the people picker and list view controls that are included in the Office Web Widgets library. This sample add-in inserts the controls into the HTML of the start page, and then configures the controls using the app.js JavaScript file that is located in the project's Scripts folder.
 
 The sample start page shows the people picker control. This page allows you to add multiple users, and it contains two text boxes for user input.
 

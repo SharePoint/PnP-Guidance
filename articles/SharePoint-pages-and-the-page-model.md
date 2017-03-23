@@ -39,7 +39,7 @@ This article provides an overview of the SharePoint page model, including the pa
 |Web Part|Server-side controls that run inside the context of site pages.|| [Custom actions and property bag entries from a SharePoint app](http://blogs.msdn.com/b/vesku/archive/2013/10/02/ftc-to-cam-custom-actions-and-property-bag-entries.aspx)|
 |Web Part page|A content page made up of Web part zones, which can contain Web Parts. Web Parts are represented on Web Part pages by  [WebPartDefinition](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.webparts.webpartdefinition.aspx) objects.|| [Microsoft.SharePoint.Client.WebParts namespace](https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.webparts.aspx)|
 |Web Part zone|An area on a page where a Web Part can be added.|||
-|Wiki page|A content page that uses the Enterprise Wiki site template.|| [Provisioning.Pages sample app](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages)|
+|Wiki page|A content page that uses the Enterprise Wiki site template.|| [Provisioning.Pages sample app](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.Pages)|
 
 ## SharePoint master pages
 <a name="sectionSection1"> </a>
@@ -130,7 +130,7 @@ The page processing model interprets and runs all the requests that user agents 
 
 When a SharePoint user loads a Web Part page, SharePoint gets it by parsing the path to its template, page content, and context. It also sets the Web Parts associated with the Web Part page, assigns a  [WebPartCollection](http://msdn2.microsoft.com/EN-US/library/k41e9930) instance to the page, and populates the Web Part page and its Web Parts with content.
 
-When a SharePoint user loads a wiki page (either by using the Enterprise Wiki template on a Team site or a Publishing site), SharePoint gets it by parsing the path to its template, page content, and context. It also sets the text layout control associated with the wiki page, and populates the enterprise wiki page and its text layout with content. To learn more about how to provision a wiki page by using the remote provisioning pattern, see the  [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages) sample.
+When a SharePoint user loads a wiki page (either by using the Enterprise Wiki template on a Team site or a Publishing site), SharePoint gets it by parsing the path to its template, page content, and context. It also sets the text layout control associated with the wiki page, and populates the enterprise wiki page and its text layout with content. To learn more about how to provision a wiki page by using the remote provisioning pattern, see the  [Provisioning.Pages](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.Pages) sample.
 
 ### Minimal download strategy and <AjaxDelta> controls
 

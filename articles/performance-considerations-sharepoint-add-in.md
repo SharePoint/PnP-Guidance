@@ -39,7 +39,7 @@ In this pattern, client-side caching techniques such as HTML5 LocalStorage and c
 - HTML5 LocalStorage is limited to 5MB of data.
 	- HTML5 LocalStorage does not have a built-in data expiration mechanism. However, such an expiration mechanism may be quickly and easily implemented in JavaScript.
 	
-		See the **setLocalStorageKeyExpiry** and **isLocalStorageExpired** functions in the [App.js JavaScript file](https://github.com/OfficeDev/PnP/blob/master/Samples/Performance.Caching/Performance.LocalStorage/Scripts/App.js) in the [Performance.LocalStorage (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Performance.Caching/Performance.LocalStorage) for an example.
+		See the **setLocalStorageKeyExpiry** and **isLocalStorageExpired** functions in the [App.js JavaScript file](https://github.com/SharePoint/PnP/blob/master/Samples/Performance.Caching/Performance.LocalStorage/Scripts/App.js) in the [Performance.LocalStorage (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Performance.Caching/Performance.LocalStorage) for an example.
 
 		**Setting an expiration key in LocalStorage:**
 
@@ -114,7 +114,7 @@ When you need to use the SharePoint ECMA Client-side Object Model API (sp.js) an
 
 **Getting started**
 
-The [Performance.Caching (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Performance.Caching) demonstrates how to implement both LocalStorage and cookie-based client-side caching in the Add-in model and provides links to several samples and articles.
+The [Performance.Caching (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Performance.Caching) demonstrates how to implement both LocalStorage and cookie-based client-side caching in the Add-in model and provides links to several samples and articles.
 
 Use server-side caching 
 -----------------------
@@ -127,7 +127,7 @@ In this pattern, server-side caching techniques such as session and server-side 
 - Cookies are limited to storing 4095 bytes of data.
 	+ Cookies have a built-in data expiration mechanism.
 	
-	See the **CookieCheckSkip** method in the [Customizer.aspx.cs Class](https://github.com/OfficeDev/PnP/blob/master/Solutions/OD4B.Configuration.Async/OD4B.Configuration.AsyncWeb/Pages/Customizer.aspx.cs) in the [OD4B.Configuration.Async (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/OD4B.Configuration.Async) to see how server-side code is used to evaluate cookies.
+	See the **CookieCheckSkip** method in the [Customizer.aspx.cs Class](https://github.com/SharePoint/PnP/blob/master/Solutions/OD4B.Configuration.Async/OD4B.Configuration.AsyncWeb/Pages/Customizer.aspx.cs) in the [OD4B.Configuration.Async (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Solutions/OD4B.Configuration.Async) to see how server-side code is used to evaluate cookies.
 
 **Implementing your own 'man-in-the-middle' cache layer**
 Sometimes, it makes sense to create your own custom cache layer. A good example is when you need to return information from a user's profile. The User Profile APIs sometimes take a long time to execute. To provide end users with a fast user interface experience, you can create a remote timer job to query the user profile service and store the information in a variety of data stores. Then, you can create a service to allow you to query the data stores via JavaScript calls from SharePoint Add-ins.  
@@ -142,7 +142,7 @@ Azure has many different storage mechanisms that may be used to store informatio
 
 **Getting started**
 
-The [Performance.Caching (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Performance.Caching) describes how to implement both LocalStorage and cookie-based client-side caching in the Add-in model and provides links to several samples and articles.
+The [Performance.Caching (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Performance.Caching) describes how to implement both LocalStorage and cookie-based client-side caching in the Add-in model and provides links to several samples and articles.
 
 Related links
 =============
