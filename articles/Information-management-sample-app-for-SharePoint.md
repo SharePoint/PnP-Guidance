@@ -3,7 +3,7 @@ As part of your Enterprise Content Management (ECM) strategy, you can get or set
     
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-The [Core.InformationManagement](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.InformationManagement) sample shows you how to use an ASP.NET provider-hosted SharePoint add-in to get and set a site policy on a site. Use this solution if you want to:
+The [Core.InformationManagement](https://github.com/SharePoint/PnP/tree/master/Samples/Core.InformationManagement) sample shows you how to use an ASP.NET provider-hosted SharePoint add-in to get and set a site policy on a site. Use this solution if you want to:
 
 - Apply policy settings during your custom site provisioning process. 
     
@@ -14,7 +14,7 @@ The [Core.InformationManagement](https://github.com/OfficeDev/PnP/tree/master/Sa
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.InformationManagement](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.InformationManagement) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.InformationManagement](https://github.com/SharePoint/PnP/tree/master/Samples/Core.InformationManagement) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub.
 
 We recommend that you create at least one site policy, and assign it to your site before you run this add-in. Otherwise, the add-in will start without displaying sample data. For more information, see  [Overview of site policies in SharePoint 2013](http://technet.microsoft.com/en-US/library/jj219569%28v=office.15%29.aspx).
 
@@ -118,12 +118,12 @@ if (drlPolicies.SelectedItem != null)
 
 -  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
--  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core)
+-  [OfficeDevPnP.Core sample](https://github.com/SharePoint/PnP-Sites-Core/tree/master/Core)
     
--  [Core.SiteClassification sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.SiteClassification)
+-  [Core.SiteClassification sample](https://github.com/SharePoint/PnP/tree/master/Samples/Core.SiteClassification)
     
--  [ECM.AutoTagging sample app](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.AutoTagging)
+-  [ECM.AutoTagging sample app](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.AutoTagging)
     
--  [ECM.DocumentLibraries sample app](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries)
+-  [ECM.DocumentLibraries sample app](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.DocumentLibraries)
     
--  [ECM.RecordsManagement sample app](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.RecordsManagement)
+-  [ECM.RecordsManagement sample app](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.RecordsManagement)

@@ -62,9 +62,9 @@ When you are trying to integrate Yammer feeds with SharePoint sites and the out-
 
 The following sample demonstrates how to provision sites with a Yammer feed associated with the site in place of the default news feed for the site.
 
-- [Provisioning.Yammer (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Yammer)
+- [Provisioning.Yammer (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.Yammer)
 
-The **CreateYammerGroupDiscussionPartXml** method in the [YammerUtility.cs](https://github.com/OfficeDev/PnP-Sites-Core/blob/master/Core/OfficeDevPnP.Core/Utilities/YammerUtility.cs) class comes from the [OfficeDevPnP.Core](https://github.com/OfficeDev/PnP-Sites-Core/blob/master/Core/OfficeDevPnP.Core/OfficeDevPnP.Core) sample.  This method creates the XML for an Add-in Part definition that is added to a SharePoint page when a site is provisioned.  Notice the **feedType: 'group'** portion of the code.  Here you can see the feedType is set to use the out-of-the-box group feedType.
+The **CreateYammerGroupDiscussionPartXml** method in the [YammerUtility.cs](https://github.com/SharePoint/PnP-Sites-Core/blob/master/Core/OfficeDevPnP.Core/Utilities/YammerUtility.cs) class comes from the [OfficeDevPnP.Core](https://github.com/SharePoint/PnP-Sites-Core/blob/master/Core/OfficeDevPnP.Core/OfficeDevPnP.Core) sample.  This method creates the XML for an Add-in Part definition that is added to a SharePoint page when a site is provisioned.  Notice the **feedType: 'group'** portion of the code.  Here you can see the feedType is set to use the out-of-the-box group feedType.
 
 	public static string CreateYammerGroupDiscussionPartXml(string yammerNetworkName, int yammerGroupId, bool showHeader, bool showFooter, bool useSSO = true)
     {
@@ -103,7 +103,7 @@ The **CreateYammerGroupDiscussionPartXml** method in the [YammerUtility.cs](http
         return wp.ToString();
     }
 
-The **CreateYammerOpenGraphDiscussionPartXml** method in the [YammerUtility.cs](https://github.com/OfficeDev/PnP-Sites-Core/blob/master/Core/OfficeDevPnP.Core/Utilities/YammerUtility.cs) class comes from the [OfficeDevPnP.Core](https://github.com/OfficeDev/PnP-Sites-Core/blob/master/Core/OfficeDevPnP.Core/OfficeDevPnP.Core) sample.  This method creates the XML for an Add-in Part definition that is added to a SharePoint page when a site is provisioned.  Notice the **feedType: 'open-graph'** portion of the code.  Here you can see the feedType is set to use the OpenGraph API.
+The **CreateYammerOpenGraphDiscussionPartXml** method in the [YammerUtility.cs](https://github.com/SharePoint/PnP-Sites-Core/blob/master/Core/OfficeDevPnP.Core/Utilities/YammerUtility.cs) class comes from the [OfficeDevPnP.Core](https://github.com/SharePoint/PnP-Sites-Core/blob/master/Core/OfficeDevPnP.Core/OfficeDevPnP.Core) sample.  This method creates the XML for an Add-in Part definition that is added to a SharePoint page when a site is provisioned.  Notice the **feedType: 'open-graph'** portion of the code.  Here you can see the feedType is set to use the OpenGraph API.
 
 	public static string CreateYammerOpenGraphDiscussionPartXml(string yammerNetworkName, string url, bool showHeader, 
                                                                     bool showFooter, string postTitle="", string postImageUrl="", 
@@ -162,7 +162,7 @@ The **CreateYammerOpenGraphDiscussionPartXml** method in the [YammerUtility.cs](
             return wp.ToString();
         }
 
-Watch the [Integrate Yammer feeds to SharePoint sites (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/Integrate-Yammer-feeds-to-SharePoint-sites) to see a walk through of the - [Provisioning.Yammer (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Yammer).
+Watch the [Integrate Yammer feeds to SharePoint sites (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/Integrate-Yammer-feeds-to-SharePoint-sites) to see a walk through of the - [Provisioning.Yammer (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.Yammer).
 
 For more information about Yammer embed see the [Yammer Embed Feed (Yammer Developer Center)](https://developer.yammer.com/v1.0/docs/embed) article.
 
@@ -215,8 +215,8 @@ Related links
 
 Related PnP samples
 ===================
-- [Provisioning.Yammer (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Yammer)
-- [OfficeDevPnP.Core](https://github.com/OfficeDev/PnP-Sites-Core/blob/master/Core)
+- [Provisioning.Yammer (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.Yammer)
+- [OfficeDevPnP.Core](https://github.com/SharePoint/PnP-Sites-Core/blob/master/Core)
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to

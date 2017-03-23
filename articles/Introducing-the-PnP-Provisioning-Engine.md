@@ -160,7 +160,7 @@ The result of extracting and saving a *ProvisioningTemplate* instance object wil
     </pnp:Provisioning>
     
 
-As you can see, the XML elements are almost self-explanatory. The XML schema used in the example references the 201505 version of the PnP Provisioning Schema (XML Namespace: *http://schemas.dev.office.com/PnP/2015/05/ProvisioningSchema*), which has been defined together with the whole OfficeDev PnP Community, and which can be found on GitHub at the following URL: [https://github.com/OfficeDev/Pnp-Provisioning-Schema/](https://github.com/OfficeDev/Pnp-Provisioning-Schema/). Within the same repository, you will also find a markdown (MD) auto-generated document, which describes the main elements, types and attributes available to manually define an XML provisioning template.
+As you can see, the XML elements are almost self-explanatory. The XML schema used in the example references the 201505 version of the PnP Provisioning Schema (XML Namespace: *http://schemas.dev.office.com/PnP/2015/05/ProvisioningSchema*), which has been defined together with the whole OfficeDev PnP Community, and which can be found on GitHub at the following URL: [https://github.com/SharePoint/Pnp-Provisioning-Schema/](https://github.com/SharePoint/Pnp-Provisioning-Schema/). Within the same repository, you will also find a markdown (MD) auto-generated document, which describes the main elements, types and attributes available to manually define an XML provisioning template.
 
 However, the real power of this provisioning engine is the availability of a high level and serialization format independent Domain Model. In fact, internally the PnP Provisioning Engine is completely decoupled from any kind of serialization format, and the whole engine simply handles instances of the *ProvisioningTemplate* type. For instance, in the following figure you can see the "Quick Watch" window of Microsoft Visual Studio 2013 showing a ProvisioningTemplate object instance.
 
@@ -242,5 +242,5 @@ Please, play with the PnP Provisioning Engine, give us feedbacks, and enjoy the 
 <a name="bk_addresources"> </a>
 ## Additional resources
 
--  [Office 365 Development Patterns & Practices on GitHub](https://github.com/OfficeDev/PnP/)
+-  [Office 365 Development Patterns & Practices on GitHub](https://github.com/SharePoint/PnP/)
 -  [SharePoint Developer Group](http://aka.ms/sppnp-community) at Microsoft Tech Community

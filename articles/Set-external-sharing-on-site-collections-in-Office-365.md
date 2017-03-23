@@ -4,7 +4,7 @@ You can control external sharing settings on a SharePoint site collection in Off
 
 _**Applies to:** add-ins for SharePoint | SharePoint Online | Office 365_
 
-The  [Core.ExternalSharing](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ExternalSharing) code sample shows you how to control your external sharing settings on a SharePoint site collection. Use this solution to:
+The  [Core.ExternalSharing](https://github.com/SharePoint/PnP/tree/master/Samples/Core.ExternalSharing) code sample shows you how to control your external sharing settings on a SharePoint site collection. Use this solution to:
 
 - Control external sharing settings during your site provisioning process.
     
@@ -15,7 +15,7 @@ The  [Core.ExternalSharing](https://github.com/OfficeDev/PnP/tree/master/Samples
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.ExternalSharing](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ExternalSharing) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.ExternalSharing](https://github.com/SharePoint/PnP/tree/master/Samples/Core.ExternalSharing) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub.
 
 ## Using the Core.ExternalSharing app
 <a name="sectionSection1"> </a>

@@ -4,7 +4,7 @@ You can use the localization features in Office 365 to provide localized values 
     
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
     
-The [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes) sample shows you how to use the localization features of Office 365 on sites, lists, content types, and site columns. This code sample uses a console application to do the following:
+The [Core.CreateContentTypes](https://github.com/SharePoint/PnP/tree/master/Samples/Core.CreateContentTypes) sample shows you how to use the localization features of Office 365 on sites, lists, content types, and site columns. This code sample uses a console application to do the following:
 
 - Create content types, site columns, and lists, and associate site columns with content types.
     
@@ -15,7 +15,7 @@ The [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Sampl
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.CreateContentTypes](https://github.com/SharePoint/PnP/tree/master/Samples/Core.CreateContentTypes) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub.
 
 Before you run this code sample:
 
@@ -161,6 +161,6 @@ As shown in Figure 5, your site displays your custom French title  **Hello World
 
 -  [Localization solutions for SharePoint 2013 and SharePoint Online](localization-solutions-for-sharepoint-2013-and-sharepoint-online.md)
     
--  [Core.CreateContentTypes](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.CreateContentTypes)
+-  [Core.CreateContentTypes](https://github.com/SharePoint/PnP/tree/master/Samples/Core.CreateContentTypes)
     
 -  [Enterprise content management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)

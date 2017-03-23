@@ -4,11 +4,11 @@ Implement a site classification solution in SharePoint.
 
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
-Even with good governance, SharePoint sites can proliferate and grow out of control. Sites are created as they are needed, but are rarely deleted. Search crawl is burdened by unused site collections, and search produces outdated and irrelevant results. Site classification allows you to identify and preserve sensitive data. This article shows you how to use the [Core.SiteClassification](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SiteClassification) sample to implement a site classification solution, as well as use SharePoint site policies to enforce deletion. You can integrate this solution into your existing site provisioning solution to better manage your sites.
+Even with good governance, SharePoint sites can proliferate and grow out of control. Sites are created as they are needed, but are rarely deleted. Search crawl is burdened by unused site collections, and search produces outdated and irrelevant results. Site classification allows you to identify and preserve sensitive data. This article shows you how to use the [Core.SiteClassification](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Core.SiteClassification) sample to implement a site classification solution, as well as use SharePoint site policies to enforce deletion. You can integrate this solution into your existing site provisioning solution to better manage your sites.
 
 ## Before you begin
 
-To get started, download the [Core.SiteClassification](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SiteClassification) sample from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the [Core.SiteClassification](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Core.SiteClassification) sample from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub.
 
 ## Define and set site policies
 
@@ -91,7 +91,7 @@ You can use the  **Edit Site Information** page to choose the following specific
     
 -  **Expiration Date:** Override the default expiration date, which is based on the classification previously entered.
     
-Both  **Audience Reach** and **Site Classification** are searchable and will have managed properties associated with them after a crawl takes place. You can then use these properties to search for specific types of sites by using a custom hidden list within the site collection. This list is implemented in the [Core.SiteClassification.Common](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SiteClassification/Core.SiteClassification.Common) project in the **SiteManagerImpl** class.
+Both  **Audience Reach** and **Site Classification** are searchable and will have managed properties associated with them after a crawl takes place. You can then use these properties to search for specific types of sites by using a custom hidden list within the site collection. This list is implemented in the [Core.SiteClassification.Common](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Core.SiteClassification/Core.SiteClassification.Common) project in the **SiteManagerImpl** class.
 
 ```C#
 private void CreateSiteClassificationList(ClientContext ctx)
@@ -183,7 +183,7 @@ private void RemoveFromQuickLaunch(ClientContext ctx, string listName)
   }
 ```
 
-The Core.SiteClassification sample provides for the possibility that a site administrator or someone with permission can remove the new list. When this page is accessed, the list is created again, but the sample doesn't set the properties back. You can avoid this by extending the sample to modify the permissions on the list so that only site collection administrators have access. Alternatively, you can use the [Core.SiteEnumeration](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SiteEnumeration) PnP sample to do checks on the list and notify site administrators accordingly.
+The Core.SiteClassification sample provides for the possibility that a site administrator or someone with permission can remove the new list. When this page is accessed, the list is created again, but the sample doesn't set the properties back. You can avoid this by extending the sample to modify the permissions on the list so that only site collection administrators have access. Alternatively, you can use the [Core.SiteEnumeration](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Core.SiteEnumeration) PnP sample to do checks on the list and notify site administrators accordingly.
 
 The list verification check is also implemented in the  **SiteManagerImpl** class, in the **Initialize** member.
 
@@ -266,13 +266,13 @@ function setClassifier() {
 
 ## Alternative approach
 
-You can use extension method  **Web.AddIndexedPropertyBagKey** in the ObjectPropertyBagEntry.cs file in[OfficeDevPnP.Core](https://github.com/OfficeDev/PnP/tree/96eff6153389d6d21358480878de9cc8fa21abab/OfficeDevPnP.Core) to store the classification values in site property bags instead of a list. The method enables property bags to be crawled or searchable.
+You can use extension method  **Web.AddIndexedPropertyBagKey** in the ObjectPropertyBagEntry.cs file in[OfficeDevPnP.Core](https://github.com/SharePoint/PnP/tree/96eff6153389d6d21358480878de9cc8fa21abab/OfficeDevPnP.Core) to store the classification values in site property bags instead of a list. The method enables property bags to be crawled or searchable.
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
 - [SharePoint site provisioning solutions](sharepoint-site-provisioning-solutions.md)
     
-- [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP/tree/96eff6153389d6d21358480878de9cc8fa21abab/OfficeDevPnP.Core)
+- [OfficeDevPnP.Core sample](https://github.com/SharePoint/PnP/tree/96eff6153389d6d21358480878de9cc8fa21abab/OfficeDevPnP.Core)
     
-- [Core.SiteEnumeration sample](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.SiteEnumeration)
+- [Core.SiteEnumeration sample](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Core.SiteEnumeration)

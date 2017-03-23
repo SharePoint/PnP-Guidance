@@ -4,7 +4,7 @@ You can personalize SharePoint by filtering information that is shown to the use
     
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
     
-The [Search.PersonalizedResults](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults) code sample shows how you can personalize SharePoint by filtering information based on the value of a user profile property. Some examples of pesonalization include:
+The [Search.PersonalizedResults](https://github.com/SharePoint/PnP/tree/master/Samples/Search.PersonalizedResults) code sample shows how you can personalize SharePoint by filtering information based on the value of a user profile property. Some examples of pesonalization include:
 
 - News articles or other content filtered by country or location.
     
@@ -23,7 +23,7 @@ This code sample uses a provider-hosted add-in to display search results to the 
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Search.PersonalizedResults](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Search.PersonalizedResults](https://github.com/SharePoint/PnP/tree/master/Samples/Search.PersonalizedResults) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub.
 
 ## Using the Search.PersonalizedResults app
 <a name="sectionSection1"> </a>
@@ -123,10 +123,10 @@ private ClientResult<ResultTableCollection> ProcessQuery(ClientContext ctx, stri
 
 -  [User profile solutions for SharePoint 2013 and SharePoint Online](user-profile-solutions-for-sharepoint.md)
     
--  [Search.PersonalizedResults app](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults)
+-  [Search.PersonalizedResults app](https://github.com/SharePoint/PnP/tree/master/Samples/Search.PersonalizedResults)
     
--  [UserProfile.Manipulation.CSOM](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM)
+-  [UserProfile.Manipulation.CSOM](https://github.com/SharePoint/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM)
     
--  [UserProfile.Manipulation.CSOM.Console](https://github.com/OfficeDev/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM.Console)
+-  [UserProfile.Manipulation.CSOM.Console](https://github.com/SharePoint/PnP/tree/master/Samples/UserProfile.Manipulation.CSOM.Console)
     
--  [Core.ProfileProperty.Migration](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ProfileProperty.Migration)
+-  [Core.ProfileProperty.Migration](https://github.com/SharePoint/PnP/tree/master/Samples/Core.ProfileProperty.Migration)

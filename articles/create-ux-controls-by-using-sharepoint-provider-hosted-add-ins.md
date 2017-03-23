@@ -6,18 +6,18 @@ _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
 The article describes three samples that show you how to implement UX controls in your provider-hosted add-in:
 
-- [Core.PeoplePicker](https://github.com/OfficeDev/PnP/tree/dev/Components/Core.PeoplePicker) - Shows you how to add a people picker control.
+- [Core.PeoplePicker](https://github.com/SharePoint/PnP/tree/dev/Components/Core.PeoplePicker) - Shows you how to add a people picker control.
     
-- [Core.TaxonomyMenu](https://github.com/OfficeDev/PnP/tree/dev/Components/Core.TaxonomyMenu) - Shows you how to implement a localizable taxonomy menu control.
+- [Core.TaxonomyMenu](https://github.com/SharePoint/PnP/tree/dev/Components/Core.TaxonomyMenu) - Shows you how to implement a localizable taxonomy menu control.
     
-- [Core.TaxonomyPicker](https://github.com/OfficeDev/PnP/tree/dev/Components/Core.TaxonomyPicker) - Shows you how to implement a taxonomy picker control.
+- [Core.TaxonomyPicker](https://github.com/SharePoint/PnP/tree/dev/Components/Core.TaxonomyPicker) - Shows you how to implement a taxonomy picker control.
     
 These samples use JavaScript and the JSOM to communicate with SharePoint and use the [cross-domain library](https://msdn.microsoft.com/en-us/library/office/fp179927%28v=office.15%29.aspx) to handle function calls from the add-in to the host site domain.
 
 ## People picker control
 <a name="bmPeoplePicker"> </a>
 
-The [Core.PeoplePicker](https://github.com/OfficeDev/PnP/tree/dev/Components/Core.PeoplePicker) sample shows you how to implement a people picker control in a provider-hosted add-in. When the user starts typing a name into the text input box, the control searches the user profile store for potential matches, and displays them in the UI. The add-in displays a configurable and extensible people picker control that runs on a remote host and queries the user profile store on the host site to match user inputs.
+The [Core.PeoplePicker](https://github.com/SharePoint/PnP/tree/dev/Components/Core.PeoplePicker) sample shows you how to implement a people picker control in a provider-hosted add-in. When the user starts typing a name into the text input box, the control searches the user profile store for potential matches, and displays them in the UI. The add-in displays a configurable and extensible people picker control that runs on a remote host and queries the user profile store on the host site to match user inputs.
 
 **Figure 1. People picker control**
 
@@ -92,7 +92,7 @@ if (searchText.length >= parent.GetMinimalCharactersBeforeSearching()) {
 ## Taxonomy menu control
 <a name="bmTaxMenu"> </a>
 
-The [Core.TaxonomyMenu](https://github.com/OfficeDev/PnP/tree/dev/Components/Core.TaxonomyMenu) sample shows you how to implement a localizable taxonomy menu control that is populated from the term store in a provider-hosted add-in. The add-in also sets up the required term store languages, groups, sets, and terms for populating the menu, and checks the user's language preference to set the display language.
+The [Core.TaxonomyMenu](https://github.com/SharePoint/PnP/tree/dev/Components/Core.TaxonomyMenu) sample shows you how to implement a localizable taxonomy menu control that is populated from the term store in a provider-hosted add-in. The add-in also sets up the required term store languages, groups, sets, and terms for populating the menu, and checks the user's language preference to set the display language.
 
 The add-in implements a  **TaxonomyHelper** class (CSOM) that sets up the term store and populates it with terms. It then uploads into the site's root folder a JavaScript file that displays the navigational links.
 
@@ -180,11 +180,11 @@ html += "<ul style='margin-top: 0px; margin-bottom: 0px;'>"
 ## Taxonomy picker control
 <a name="bmTaxPicker"> </a>
 
-The [Core.TaxonomyPicker](https://github.com/OfficeDev/PnP/tree/dev/Components/Core.TaxonomyPicker) sample shows you how to implement a taxonomy picker control in a provider-hosted add-in. When the user starts typing a term into the text input box, the control searches the term store for potential matches and displays them in a list under the input box.
+The [Core.TaxonomyPicker](https://github.com/SharePoint/PnP/tree/dev/Components/Core.TaxonomyPicker) sample shows you how to implement a taxonomy picker control in a provider-hosted add-in. When the user starts typing a term into the text input box, the control searches the term store for potential matches and displays them in a list under the input box.
 
 The add-in creates an HTML page that conforms to the JSOM taxonomy picker requirements, and then adds and configures the control. It uses the JSOM library to query the host site's term store. The taxonomy picker communicates with the SharePoint Managed Metadata Service, which requires write permission at the taxonomy permission scope so that it can read from closed term sets and write to open term sets. Make sure that the AppManifest.xml file has set the write permission at the appropriate scope.
 
-The Scripts folder of the [Core.TaxonomyPicker](https://github.com/OfficeDev/PnP/tree/dev/Components/Core.TaxonomyPicker) project contains app.js and taxonomypickercontrol.js files (along with a taxonomy picker resource file for additional language support). The app.js file fetches client context by using the cross-domain library and hooks the HTML in the Default.aspx file into the taxonomy picker control. The Default.aspx file contains the hidden field that implements both the text box and the taxonomy picker capability. It also adds a bulleted list to display suggestions returned from the term store.
+The Scripts folder of the [Core.TaxonomyPicker](https://github.com/SharePoint/PnP/tree/dev/Components/Core.TaxonomyPicker) project contains app.js and taxonomypickercontrol.js files (along with a taxonomy picker resource file for additional language support). The app.js file fetches client context by using the cross-domain library and hooks the HTML in the Default.aspx file into the taxonomy picker control. The Default.aspx file contains the hidden field that implements both the text box and the taxonomy picker capability. It also adds a bulleted list to display suggestions returned from the term store.
 
 ```
 <div style="left: 50%; width: 600px; margin-left: -300px; position: absolute;">

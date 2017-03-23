@@ -85,7 +85,7 @@ In this pattern you use the SharePoint Client Side Object Model (CSOM) to create
 
 	+ Watch the [Creating Cloud Hosted Line Of Business Applications with Add-ins for Office, O365, Azure, and WP8 (Todd Baginski, Michael Sherman - SharePoint Conference 2014)](https://channel9.msdn.com/Events/SharePoint-Conference/2014/SPC361) video to see how this approach was used to install Office Add-ins in SharePoint sites upon site provisioning.
 	+ Full automation is only possible with Add-ins that have full tenant permission that have already been trusted.
-		+ See the [Core.Sideloading (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.SideLoading) for an example. 
+		+ See the [Core.Sideloading (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.SideLoading) for an example. 
 
 Related links
 =============
@@ -101,10 +101,10 @@ Related links
 Related PnP samples
 ===================
 
-- [Provisioning.Cloud.Sync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Provisioning.Cloud.Sync)
-- [Provisioning.SubSiteCreationApp (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.SubSiteCreationApp)
-- [Provisioning.Services.SiteManager (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Services.SiteManager)
-- [Provisioning.SiteCollectionCreation (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.SiteCollectionCreation)
+- [Provisioning.Cloud.Sync (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Solutions/Provisioning.Cloud.Sync)
+- [Provisioning.SubSiteCreationApp (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.SubSiteCreationApp)
+- [Provisioning.Services.SiteManager (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.Services.SiteManager)
+- [Provisioning.SiteCollectionCreation (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.SiteCollectionCreation)
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to

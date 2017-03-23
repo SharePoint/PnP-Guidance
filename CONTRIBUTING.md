@@ -78,7 +78,7 @@ Pull requests are typically reviewed within 10 business days.
     Next, create a reference to the root repository by entering these commands:
 
         cd <repo name>
-        git remote add upstream https://github.com/OfficeDev/<repo name>.git
+        git remote add upstream https://github.com/SharePoint/<repo name>.git
         git fetch upstream
 
 Congratulations! You've now set up your repository. You won't need to repeat these steps again.

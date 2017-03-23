@@ -12,7 +12,7 @@ For a video introduction to Timer Jobs, [this PnP video](http://channel9.msdn.co
 ## Simple Timer Job example ##
 In this chapter you'll see how to create a very simple Timer Job: the goal of this sample is to provide the reader a quick view, later on we'll provide a more detailed explanation of the Timer Job Framework. 
 
-**Note:** For a more extensive PnP solution with ten individual Timer Job examples, from "Hello world" samples to actual content expiration jobs, see https://github.com/OfficeDev/PnP/tree/dev/Solutions/Core.TimerJobs.Samples
+**Note:** For a more extensive PnP solution with ten individual Timer Job examples, from "Hello world" samples to actual content expiration jobs, see https://github.com/SharePoint/PnP/tree/dev/Solutions/Core.TimerJobs.Samples
 
 The following describes how to create a simple Timer Job:
 
@@ -118,7 +118,7 @@ Also, the timer job can be run from the new [Azure portal](https://portal.azure.
 
 ![Azure portal](media/timerjob-framework/n4wGS5x.png)
 
-**Note:** For in-depth guidance on deploying an Azure WebJob, see [Getting Started with azure WebJobs ("Timer Jobs") for your Office 365 Sites](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites.md). 
+**Note:** For in-depth guidance on deploying an Azure WebJob, see [Getting Started with azure WebJobs ("Timer Jobs") for your Office 365 Sites](https://github.com/SharePoint/PnP-Guidance/blob/master/articles/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites.md). 
 
 ### Deploying Timer Jobs to Windows Server using the Windows Scheduler ###
 When deployed to Windows Server, the Timer Job must run without user interaction. Modify the `app.config` file as described in **Deploying Timer Jobs to Microsoft Azure using Azure WebJobs**. 

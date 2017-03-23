@@ -147,7 +147,7 @@ The following article demonstrates how to create a custom workflow activity with
 
 - [How to: Build and deploy workflow custom actions (MSDN Article)](https://msdn.microsoft.com/en-us/library/office/jj163911.aspx)
 
-The [Workflow.Activities (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.Activities) includes several custom workflow activities created with Visual Studio.  It also demonstrates how to use the custom workflow activities in a workflow.
+The [Workflow.Activities (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) includes several custom workflow activities created with Visual Studio.  It also demonstrates how to use the custom workflow activities in a workflow.
 
 Create custom workflow events
 -----------------------------
@@ -163,7 +163,7 @@ When you need to implement workflows in business processes whose requirements re
 
 **Getting Started**
 
-The [Workflow.CustomEvents (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CustomEvents) demonstrates how to create a workflow that waits for a custom even to fire before proceeding.  It also demonstrates how to use the JavaScript Client Side Object Model (JSOM) for the Workflow Services Manager to raise a custom event.
+The [Workflow.CustomEvents (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CustomEvents) demonstrates how to create a workflow that waits for a custom even to fire before proceeding.  It also demonstrates how to use the JavaScript Client Side Object Model (JSOM) for the Workflow Services Manager to raise a custom event.
 
 Create custom workflow forms
 ------------------------------------------------
@@ -183,7 +183,7 @@ The following article demonstrates how to create custom workflow association and
 
 - [How to: Create Custom SharePoint Server 2013 Workflow Forms with Visual Studio 2012 (MSDN Article)](https://msdn.microsoft.com/EN-US/library/office/dn518136.aspx)
 
-The [Workflow.CustomTasks (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CustomTasks) demonstrates how to create custom task and initiation forms and use them in a workflow.
+The [Workflow.CustomTasks (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CustomTasks) demonstrates how to create custom task and initiation forms and use them in a workflow.
 
 Options to update SharePoint data from a custom workflow
 --------------------------------------------------------
@@ -207,11 +207,11 @@ When you want the communication to SharePoint to occur at the client level.
 
 The following sample demonstrates how to use the context token and the Add-in web URL to authenticate to SharePoint and update SharePoint data.
 
-- [Workflow.CallCustomService (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService)
+- [Workflow.CallCustomService (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CallCustomService)
 
-See the [Call Web Api service](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService#call-web-api-service) section in the [Workflow.CallCustomService (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService) README for more details about passing the context token and the Add-in web URL from the workflow to the service.
+See the [Call Web Api service](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CallCustomService#call-web-api-service) section in the [Workflow.CallCustomService (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CallCustomService) README for more details about passing the context token and the Add-in web URL from the workflow to the service.
 
-The other sections in the [Workflow.CallCustomService (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService) README provide detailed information about the entire workflow and remote service and also walk you through setting up all of the components in Microsoft Azure.
+The other sections in the [Workflow.CallCustomService (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CallCustomService) README provide detailed information about the entire workflow and remote service and also walk you through setting up all of the components in Microsoft Azure.
 
 Use the Add-in web URL and the SharePoint web proxy to authenticate to SharePoint
 ---------------------------------------------------------------------------------
@@ -228,11 +228,11 @@ When you want the communication to SharePoint to occur at the server level.
 
 The following sample demonstrates how to use the Add-in web URL and the SharePoint web proxy to authenticate to SharePoint and update SharePoint data.
 
-- [Workflow.CallServiceUpdateSPViaProxy (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy)
+- [Workflow.CallServiceUpdateSPViaProxy (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy)
 
-See the [Call Web Api service via web proxy](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy#call-web-api-service-via-web-proxy) section in the [Workflow.CallServiceUpdateSPViaProxy (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy) README for more details about the SharePoint Web Proxy invocation.
+See the [Call Web Api service via web proxy](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy#call-web-api-service-via-web-proxy) section in the [Workflow.CallServiceUpdateSPViaProxy (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy) README for more details about the SharePoint Web Proxy invocation.
 
-The other sections in the [Workflow.CallServiceUpdateSPViaProxy (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy) README provide detailed information about the entire workflow and remote service and also walk you through setting up all of the components in Microsoft Azure.
+The other sections in the [Workflow.CallServiceUpdateSPViaProxy (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy) README provide detailed information about the entire workflow and remote service and also walk you through setting up all of the components in Microsoft Azure.
 
 See the [Query a remote service using the web proxy in SharePoint 2013 (MSDN Article)](https://msdn.microsoft.com/en-us/library/office/fp179895.aspx) for more information about the SharePoint Web Proxy.
 
@@ -256,11 +256,11 @@ Related links
 
 Related PnP samples
 ===================
-- [Workflow.Activities (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.Activities)
-- [Workflow.CustomEvents (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CustomEvents)
-- [Workflow.CustomTasks (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CustomTasks)
-- [Workflow.CallCustomService (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallCustomService)
-- [Workflow.CallServiceUpdateSPViaProxy (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy)
+- [Workflow.Activities (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities)
+- [Workflow.CustomEvents (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CustomEvents)
+- [Workflow.CustomTasks (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CustomTasks)
+- [Workflow.CallCustomService (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CallCustomService)
+- [Workflow.CallServiceUpdateSPViaProxy (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.CallServiceUpdateSPViaProxy)
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to
