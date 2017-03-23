@@ -8,6 +8,12 @@ After you've spent your time and energy in building that new SharePoint based po
 
 _**Applies to:** SharePoint Online_
 
+## Anti-patterns...or you shouldn't be doing this
+Below list contains the key things **not** to do when it comes to rolling out your portal:
+- Stress test your portal against your SharePoint Online tenant
+- Do a big bang release, essentially releasing your new portal to **all** your users
+
+
 ## How did you do this in the past
 <a name="sectionSection0"> </a>
 Often customers did run massive stress tests on their SharePoint on-premises based portals as they wanted to assess whether the infrastructure would handle the load while still giving decent page load times. With SharePoint Online however **doing a classical stress test is not allowed** anymore because:
