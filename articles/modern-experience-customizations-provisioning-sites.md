@@ -111,18 +111,13 @@ $web.WebTemplate + "#" + $web.Configuration
 ## Additional Considerations
 <a name="sectionSection4"> </a>
 
-### No app-only support
-<a name="sectionSection5"> </a>
-
-You cannot provision "modern" team sites using the so called app-only approach, since the Groups endpoint in Microsoft Graph does not currently support that option. This means that you will always need to use a specific account when you operate against "modern" team sites. This is being looked at, but there is currently no schedule to provide app-only support for the "modern" team site creation.
-
 ### Sub sites use "classic" templates
-<a name="sectionSection6"> </a>
+<a name="sectionSection5"> </a>
 
 If you provision a sub site under the root site of a "modern" site collection, sub sites will use "classic" templates. There are currently no "modern" sub site templates available. You can transform a "classic" sub site to a "modern" team site by creating a "modern" page on the site and updating the welcome page to the newly created page.  
 
 ### Sites are not listed in the SharePoint Admin UI / Tenant API
-<a name="sectionSection7"> </a>
+<a name="sectionSection6"> </a>
 
 "Modern" team sites are not visible in the SharePoint admin UI. You can access the list of "modern" team sites from the Office 365 Groups admin user interface under Office 365 admin portal. SharePoint Online admin user interface only list "classic" SharePoint sites. This same limitation also applies to the tenant API: you cannot use this API to enumerate "modern" team sites. You can get the list of "modern" team sites programatically by using the Groups end point from Microsoft Graph.
 
