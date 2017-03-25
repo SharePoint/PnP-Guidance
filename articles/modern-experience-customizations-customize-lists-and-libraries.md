@@ -51,6 +51,7 @@ The "modern" experiences allow certain user custom actions to be surfaced in the
 | `CommandUI.Ribbon` | Yes, these entries show up as toolbar items |
 | All other locations (e.g. `scriptlink`) | Sorry, these user custom actions won't work |
 
+Notice that the above custom actions show up in modern lists and libraries only when you are in classic sites with modern UI enabled, while they don't show up in modern sites.
 
 ### EditControlBlock User Custom Actions 
 <a name="editcontrolblockcustomactions"> </a>
