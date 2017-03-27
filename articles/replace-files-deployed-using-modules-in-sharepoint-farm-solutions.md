@@ -18,13 +18,13 @@ Use this transformation process when:
     
 - You have set document content types on master pages or page layouts in your farm solution declaratively.
 
-**Important:**  Farm solutions cannot be migrated to SharePoint Online. By applying the techniques and code described in this article, you can build a new solution with similar functionality that your farm solutions provide, update references to files, and then the new solution can be deployed to SharePoint Online. You can then disable the feature and retract the previous farm solution. The code in this article requires additional code to provide a fully working solution. For example, this article does not discuss how to authenticate with Office 365, how to implement required exception handling, and so on. For additional code samples, see the [Office 365 Developer Patterns and Practices project](https://github.com/OfficeDev/PnP).
+**Important:**  Farm solutions cannot be migrated to SharePoint Online. By applying the techniques and code described in this article, you can build a new solution with similar functionality that your farm solutions provide, update references to files, and then the new solution can be deployed to SharePoint Online. You can then disable the feature and retract the previous farm solution. The code in this article requires additional code to provide a fully working solution. For example, this article does not discuss how to authenticate with Office 365, how to implement required exception handling, and so on. For additional code samples, see the [Office 365 Developer Patterns and Practices project](https://github.com/SharePoint/PnP).
 
 ## Before you begin
 
 Ideally, you should review your existing farm solutions, learn about the techniques described in this article, and then plan how to apply these techniques to your scenarios. If you are unfamiliar with farm solutions or do not have an existing farm solution to work with, it might be helpful for you to:
 
-- Download the [Contoso.Intranet solution](https://github.com/OfficeDev/PnP/tree/master/Reference%20Material/Contoso.Intranet). Review exercise 1 in [Replacement of files provisioned via Modules in Full Trust Solutions](https://github.com/OfficeDev/TrainingContent/blob/master/O3658/10%20Transformation%20guidance%20from%20farm%20solutions%20to%20app%20model/10-1%20Replacement%20of%20files%20deployed%20via%20Modules/Lab.md) to get a quick understanding of how master pages and page layouts might have been built in the past.
+- Download the [Contoso.Intranet solution](https://github.com/SharePoint/PnP/tree/master/Reference%20Material/Contoso.Intranet). Review exercise 1 in [Replacement of files provisioned via Modules in Full Trust Solutions](https://github.com/SharePoint/TrainingContent/blob/master/O3658/10%20Transformation%20guidance%20from%20farm%20solutions%20to%20app%20model/10-1%20Replacement%20of%20files%20deployed%20via%20Modules/Lab.md) to get a quick understanding of how master pages and page layouts might have been built in the past.
     
 - Learn about farm solutions. For more information, see [SharePoint 2010 Architectures Overview](https://msdn.microsoft.com/en-us/library/office/gg552610%28v=office.14%29.aspx) and[Build farm solutions in SharePoint 2013](https://msdn.microsoft.com/library/jj163902.aspx).
     
@@ -48,7 +48,7 @@ Before running your code sample, enable the publishing features on the site coll
     
 To set up your Visual Studio project:
 
-1. Download the [sample project](https://github.com/OfficeDev/TrainingContent/blob/master/O3658/10%20Transformation%20guidance%20from%20farm%20solutions%20to%20app%20model/Student.zip). Choose  **View Raw** to start downloading the sample project, extract the files from the zip file, and then navigate to the Module9/ModuleReplacement folder.
+1. Download the [sample project](https://github.com/SharePoint/TrainingContent/blob/master/O3658/10%20Transformation%20guidance%20from%20farm%20solutions%20to%20app%20model/Student.zip). Choose  **View Raw** to start downloading the sample project, extract the files from the zip file, and then navigate to the Module9/ModuleReplacement folder.
     
 2. Open ModuleReplacement.sln.
     

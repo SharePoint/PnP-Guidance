@@ -142,8 +142,8 @@ Related links
 Related PnP samples
 ===================
 
-- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.SimpleTimerJob)
-- Samples and content at https://github.com/OfficeDev/PnP
+- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.SimpleTimerJob)
+- Samples and content at https://github.com/SharePoint/PnP
 
 Applies to
 ==========

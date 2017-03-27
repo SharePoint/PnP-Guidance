@@ -2,7 +2,7 @@
 
 You can use namespaces to avoid conflicts between your JavaScript customizations and standard SharePoint JavaScript or JavaScript customizations deployed by other developers. 
 
-The [OfficeDev/PnP](https://github.com/OfficeDev/PnP/) samples and solutions often include JavaScript code. In order to make the techniques easy to understand, these samples are usually simple and do not use namespaces when embedding JavaScript code into SharePoint. It is important to ensure that you follow the simple steps outlined in this article when you incorporate PnP samples into your solutions.
+The [OfficeDev/PnP](https://github.com/SharePoint/PnP/) samples and solutions often include JavaScript code. In order to make the techniques easy to understand, these samples are usually simple and do not use namespaces when embedding JavaScript code into SharePoint. It is important to ensure that you follow the simple steps outlined in this article when you incorporate PnP samples into your solutions.
 
 ## Why using namespaces is important
 <a name="sectionSection0"> </a>

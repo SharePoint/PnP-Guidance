@@ -28,7 +28,9 @@ There are numerous customizations which currently are not supported for "modern"
  - Custom JavaScript embedded via User Custom Actions - There will a be more controlled way to embed JavaScript on the pages through SharePoint Framework (not only client-side web parts)
  - Custom master pages - More extensive branding will be supported later using alternative options
  - Minimal Download Strategy (MDS)
- - SharePoint Server Publishing
+
+>**Note:**
+> We don't recommend combining the "modern" page functionality with "classic" SharePoint publishing portals. That's the reason why by default the "modern" page functionality is not enabled on "classic" SharePoint publishing portals.
 
 ## Custom branding
 <a name="themingimpact"> </a>

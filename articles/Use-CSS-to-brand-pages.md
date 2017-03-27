@@ -88,7 +88,7 @@ You can add custom CSS to rich text fields and Web Part zones. To add CSS to a r
 
 Apply CSS to a SharePoint site by using an external style sheet and including a reference to the style sheet in the  `<link>` tag inside the `<head>` tags of the SharePoint page.
 
-The following code example shows how to upload custom CSS to the asset library, apply a reference to the CSS URL with a custom action, and then create a custom action to build a link to the new CSS file. This code is part of the  [Branding.AlternateCSSAndSiteLogo ](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo) sample on GitHub.
+The following code example shows how to upload custom CSS to the asset library, apply a reference to the CSS URL with a custom action, and then create a custom action to build a link to the new CSS file. This code is part of the  [Branding.AlternateCSSAndSiteLogo ](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo) sample on GitHub.
 
 ```C#
 using System;
@@ -189,4 +189,4 @@ namespace AlternateCSSAppAutohostedWeb.Services
 
 -  [SharePoint site branding and page customization solutions](SharePoint-site-branding-and-page-customization-solutions.md)
     
--  [Branding.AlternateCSSAndSiteLogo sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)
+-  [Branding.AlternateCSSAndSiteLogo sample](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)

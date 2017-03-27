@@ -8,7 +8,7 @@ You can refresh the branding on your existing SharePoint sites and site collecti
 
 ## Refresh branding of existing sites and subsites
 
-The [Branding.Refresh](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Branding.Refresh) sample in the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub shows you how to use the OfficeDevPnP.Core library to iterate over existing sites and subsites to verify and update the applied branding. The sample shows how to update site branding, but the same concept can be used to do other things, such as deploy a new library to a list of sites, or update a custom action that was deployed during provisioning. You can use the same process to move existing sites to a newer version.
+The [Branding.Refresh](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Branding.Refresh) sample in the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub shows you how to use the OfficeDevPnP.Core library to iterate over existing sites and subsites to verify and update the applied branding. The sample shows how to update site branding, but the same concept can be used to do other things, such as deploy a new library to a list of sites, or update a custom action that was deployed during provisioning. You can use the same process to move existing sites to a newer version.
 
 The operation involves two steps:
 
@@ -137,9 +137,9 @@ When your objective is to customize regions of a SharePoint page, you can use a 
 |Tree view|.master|For more information, see [How to customize the built-in Treeview navigator](https://social.msdn.microsoft.com/Forums/sharepoint/en-US/dd4d49fd-e107-469d-b326-d37c86ff66b8/how-to-customize-the-builtin-treeview-navigator-?forum=sharepointcustomizationprevious).|
 |Page content|Page Layout/Content Pages<br>Web Part Zone/Web Parts<p>Corresponding CSS (Web Part Zone and Web Part):</p><ul xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><li><p>Web Part Zone: .ms-webpart-zone</p></li><li><p>Web Part Holder: .ms-webpartzone-cell</p></li><li><p>Web Part Title: .ms-webpart-titleText</p></li><li><p>Web Part Title with Link: .ms-webpart-titleText > a</p></li><li><p>Web Part Body: .ms-WPBody</p></li></ul>|For more information, see [How to: Create a page layout in SharePoint 2013](http://msdn.microsoft.com/library/5447e6a1-2f14-4667-81d0-7514b468be80%28Office.15%29.aspx)|
 
-For samples related to customizing regions of a page, see the following in the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub:
+For samples related to customizing regions of a page, see the following in the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub:
 
-- [Branding.AlternateCSSAndSiteLogo](https://github.com/OfficeDev/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)
+- [Branding.AlternateCSSAndSiteLogo](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.AlternateCSSAndSiteLogo)
     
 - [Branding.Themes](https://github.com/Lauragra/PnP/tree/master/Scenarios/Branding.Themes)
 

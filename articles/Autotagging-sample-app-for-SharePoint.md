@@ -4,7 +4,7 @@ As part of your Enterprise Content Management (ECM) strategy, you can automatica
     
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-The [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.AutoTagging) sample shows you how to use a provider-hosted add-in to automatically tag content added to a SharePoint library with data sourced from a custom user profile property. This add-in uses remote event receivers, hosted on an Azure Web Site, to:   
+The [ECM.AutoTagging](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.AutoTagging) sample shows you how to use a provider-hosted add-in to automatically tag content added to a SharePoint library with data sourced from a custom user profile property. This add-in uses remote event receivers, hosted on an Azure Web Site, to:   
 
 - Create fields, content types, and document libraries.
     
@@ -25,7 +25,7 @@ Use this solution if you want to:
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [ECM.AutoTagging](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.AutoTagging) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [ECM.AutoTagging](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.AutoTagging) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub.
 
 Before you run this add-in , do the following:
 
@@ -336,5 +336,5 @@ public static void RemoveEventReceiver(ClientContext ctx, List list, string rece
 
 -  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
--  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core)
+-  [OfficeDevPnP.Core sample](https://github.com/SharePoint/PnP-Sites-Core/tree/master/Core)
     

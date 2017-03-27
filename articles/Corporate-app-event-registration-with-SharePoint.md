@@ -4,9 +4,9 @@ Integrate add-ins for SharePoint into your business operations by using a provid
 
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-The  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement a centralized corporate events management system as a provider-hosted add-in that integrates with your existing line-of-business (LOB) applications.
+The  [BusinessApps.CorporateEventApp](https://github.com/SharePoint/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement a centralized corporate events management system as a provider-hosted add-in that integrates with your existing line-of-business (LOB) applications.
 
-More specifically, the  [BusinessApps.CorporateEventApp](https://github.com/OfficeDev/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement an ASP.NET web application that interacts with SharePoint as a data store for LOB entities. It also shows you how to implement multiple steps in a complex business task with a single provider-hosted add-in.
+More specifically, the  [BusinessApps.CorporateEventApp](https://github.com/SharePoint/PnP/tree/master/Solutions/BusinessApps.CorporateEventsApp) sample shows you how to implement an ASP.NET web application that interacts with SharePoint as a data store for LOB entities. It also shows you how to implement multiple steps in a complex business task with a single provider-hosted add-in.
 This sample app implements a centralized management system that consists of SharePoint entities (lists and content types). For each new content type, it creates corresponding LOB entities in an ASP.NET web application. Components of the web application run as remotely hosted add-in parts within the SharePoint interface and also as pages running entirely on the remote web host. The add-in overrides the default welcome page for your SharePoint site so that it can present a custom-branded interface on the site home page.
 
 ## Using the BusinessApps.CorporateEventApp sample
@@ -47,7 +47,7 @@ The Models\DataInitializer.cs file contains the code that runs when you choose t
     
 - Event sessions
     
-The code in this file uses a method similar to the one that is used in the  [Core.ModifyPages](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ModifyPages) sample to add a custom page to the site.
+The code in this file uses a method similar to the one that is used in the  [Core.ModifyPages](https://github.com/SharePoint/PnP/tree/master/Samples/Core.ModifyPages) sample to add a custom page to the site.
 
 ```
             // Create default wiki page.
@@ -285,9 +285,9 @@ public void Save(Web web) {
 
 -  [Composite business add-ins for SharePoint 2013 and SharePoint Online](Composite-buisness-apps-for-SharePoint.md)
     
--  [Core.ModifyPages sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ModifyPages)
+-  [Core.ModifyPages sample](https://github.com/SharePoint/PnP/tree/master/Samples/Core.ModifyPages)
     
--  [Provisioning.Pages sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Pages)
+-  [Provisioning.Pages sample](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.Pages)
     
--  [OfficeDevPnP.Core sample](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core)
+-  [OfficeDevPnP.Core sample](https://github.com/SharePoint/PnP-Sites-Core/tree/master/Core)
     

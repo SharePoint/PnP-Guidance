@@ -6,7 +6,7 @@ _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
 You can use the transformation process to replace SharePoint Web Parts with add-in parts on pages by using CSOM to find and remove specific Web Parts, and then adding the new add-in parts.
 
-**Important:**  Farm solutions cannot be migrated to SharePoint Online. By applying the techniques and code described in this article, you can build a new solution with similar functionality that your farm solutions provide, which can then be deployed to SharePoint Online. After you apply these techniques, your pages will be updated to use add-in parts, which can then be migrated to SharePoint Online. The code in this article requires additional code to provide a fully working solution. For example, this article does not discuss how to authenticate to Office 365, how to implement required exception handling, and so on. For additional code samples, see the [Office 365 Developer Patterns and Practices project](https://github.com/OfficeDev/PnP).
+**Important:**  Farm solutions cannot be migrated to SharePoint Online. By applying the techniques and code described in this article, you can build a new solution with similar functionality that your farm solutions provide, which can then be deployed to SharePoint Online. After you apply these techniques, your pages will be updated to use add-in parts, which can then be migrated to SharePoint Online. The code in this article requires additional code to provide a fully working solution. For example, this article does not discuss how to authenticate to Office 365, how to implement required exception handling, and so on. For additional code samples, see the [Office 365 Developer Patterns and Practices project](https://github.com/SharePoint/PnP).
 
 ## Before you begin
 
@@ -240,4 +240,4 @@ private static void ReplaceWebPart(Web web, ListItem item, LimitedWebPartManager
 
 - [Transform farm solutions to the SharePoint add-in model](Transform-farm-solutions-to-the-SharePoint-app-model.md)
     
-- [Provisioning.Pages](https://github.com/OfficeDev/PnP/tree/master/Scenarios/Provisioning.Pages)
+- [Provisioning.Pages](https://github.com/SharePoint/PnP/tree/master/Scenarios/Provisioning.Pages)

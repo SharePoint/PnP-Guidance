@@ -23,7 +23,7 @@ As a rule of a thumb, we would like to provide the following high-level guidelin
 
 The following sample demonstrates how to import and export search settings between SharePoint tenants, site collections and sites.
 
-- [Core.SearchSettingsPortability (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.SearchSettingsPortability)
+- [Core.SearchSettingsPortability (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.SearchSettingsPortability)
 
 Related links
 =============
@@ -35,7 +35,7 @@ Related links
 Related PnP samples
 ===================
 
-- [Core.SearchSettingsPortability (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.SearchSettingsPortability)
+- [Core.SearchSettingsPortability (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.SearchSettingsPortability)
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to

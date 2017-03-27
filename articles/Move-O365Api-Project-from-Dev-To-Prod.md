@@ -15,7 +15,7 @@ Deploying an Office 365 API web application to Microsoft Azure from a local deve
 - [Configure the ASP.NET Project](#configure-the-aspnet-project)
 - [Deploy the Office 365 API ASP.NET Web Application](#deploy-the-office-365-api-aspnet-web-application)
 
-> This page assumes that you have a local working ASP.NET application that uses the Office 365 APIs. For reference, it will use the **[O365-WebApp-SingleTenant](https://github.com/OfficeDev/O365-WebApp-SingleTenant)** project found in the **[OfficeDev](https://github.com/OfficeDev)** account in GitHub.
+> This page assumes that you have a local working ASP.NET application that uses the Office 365 APIs. For reference, it will use the **[O365-WebApp-SingleTenant](https://github.com/SharePoint/O365-WebApp-SingleTenant)** project found in the **[OfficeDev](https://github.com/SharePoint)** account in GitHub.
 
 # Create and Configure an Azure Website
 
@@ -141,7 +141,7 @@ At this point you have successfully deployed your Office 365 API web application
 ----------
 
 ### Related links ###
--  [O365-WebApp-SingleTenant](https://github.com/OfficeDev/O365-WebApp-SingleTenant)
+-  [O365-WebApp-SingleTenant](https://github.com/SharePoint/O365-WebApp-SingleTenant)
 
 ### Applies to ###
 -  Office 365 Multi Tenant (MT)

@@ -27,7 +27,7 @@ _**Applies to:** Office 365 | SharePoint 2016 | SharePoint 2013 | SharePoint Onl
 ## Additional resources
 <a name="bk_addresources"> </a>
 
--  [Office 365 Development Patterns and Practices on GitHub](https://github.com/OfficeDev/PnP)
+-  [Office 365 Development Patterns and Practices on GitHub](https://github.com/SharePoint/PnP)
     
 -  [Developing on the Office 365 platform](http://msdn.microsoft.com/en-us/office/office365/howto/platform-development-overview)
     

@@ -42,13 +42,13 @@ In this option you use the .Net CSOM API to execute searches with the SharePoint
 
 The following sample demonstrates how to execute searches with the SharePoint Search Service with the .Net CSOM API.  This example also demonstrates how to access a user's profile to personalize the search results.
 
-- [Search.PersonalizedResults (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults)
+- [Search.PersonalizedResults (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Search.PersonalizedResults)
 
 ![The Search API and personalization page. Text in image: Perform Search API search. Provide search filter for tenant wide search query: Text box contains the word, Test. Button text: Perform Simple Search. Perform personalized search of all site templates using profile data. If About me does NOT contain text AppTest we search only sites which are team sites (WebTemplate = STS). If AppTest is present, we search all sites. Scenario: show sites or aggregated data from specific locations based on the user profile. Example would be to aggregate news pages which are only tagged with identifier matching current user location or city. Button text: Perform Personalized Search.](media/Recipes/SearchAPI/Search.PersonalizedResults.png)
 
-The [How to perform personalized search queries with CSOM (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/How-to-perform-personalized-search-queries-with-CSOM) walks you through the [Search.PersonalizedResults (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults).
+The [How to perform personalized search queries with CSOM (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/How-to-perform-personalized-search-queries-with-CSOM) walks you through the [Search.PersonalizedResults (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Search.PersonalizedResults).
 
-The **btnPerformSearch_Click** method in the [Default.aspx.cs class](https://github.com/OfficeDev/PnP/blob/master/Samples/Search.PersonalizedResults/PersonalizedSearchResultsWeb/Pages/Default.aspx.cs) executes a search for the text value the user enters into the search box and scopes the search to all content that is stored in a site collection.  The contentclass:"STS_Site" parameter limits the search scope to site collections.
+The **btnPerformSearch_Click** method in the [Default.aspx.cs class](https://github.com/SharePoint/PnP/blob/master/Samples/Search.PersonalizedResults/PersonalizedSearchResultsWeb/Pages/Default.aspx.cs) executes a search for the text value the user enters into the search box and scopes the search to all content that is stored in a site collection.  The contentclass:"STS_Site" parameter limits the search scope to site collections.
 
 	protected void btnPerformSearch_Click(object sender, EventArgs e)
     {
@@ -63,7 +63,7 @@ The **btnPerformSearch_Click** method in the [Default.aspx.cs class](https://git
         }
     }
 
-The **btnPersonalizedSearch_Click** method in the [Default.aspx.cs class](https://github.com/OfficeDev/PnP/blob/master/Samples/Search.PersonalizedResults/PersonalizedSearchResultsWeb/Pages/Default.aspx.cs) executes the same search as the btnPerformSearch_Click method does and also adds an additional parameter based on the current user's profile.  The PeopleManager class is used to access the current user's profile properties.
+The **btnPersonalizedSearch_Click** method in the [Default.aspx.cs class](https://github.com/SharePoint/PnP/blob/master/Samples/Search.PersonalizedResults/PersonalizedSearchResultsWeb/Pages/Default.aspx.cs) executes the same search as the btnPerformSearch_Click method does and also adds an additional parameter based on the current user's profile.  The PeopleManager class is used to access the current user's profile properties.
 
 	protected void btnPersonalizedSearch_Click(object sender, EventArgs e)
     {
@@ -86,7 +86,7 @@ The **btnPersonalizedSearch_Click** method in the [Default.aspx.cs class](https:
         }
     }
 
-The **ResolveAdditionalFilter** method in the [Default.aspx.cs class](https://github.com/OfficeDev/PnP/blob/master/Samples/Search.PersonalizedResults/PersonalizedSearchResultsWeb/Pages/Default.aspx.cs) evaluates the current user's profile properties and returns an applicable search parameter. In this example, if the aboutMeValue user profile property contains AppTest then the search parameter WebTemplate=STS is returned.  This parameter limits the search scope to sites built with the STS (Team Site) template.
+The **ResolveAdditionalFilter** method in the [Default.aspx.cs class](https://github.com/SharePoint/PnP/blob/master/Samples/Search.PersonalizedResults/PersonalizedSearchResultsWeb/Pages/Default.aspx.cs) evaluates the current user's profile properties and returns an applicable search parameter. In this example, if the aboutMeValue user profile property contains AppTest then the search parameter WebTemplate=STS is returned.  This parameter limits the search scope to sites built with the STS (Team Site) template.
  
 	private string ResolveAdditionalFilter(string aboutMeValue)
     {
@@ -98,7 +98,7 @@ The **ResolveAdditionalFilter** method in the [Default.aspx.cs class](https://gi
         return "";
     }
 
-In both cases, the **ProcessQuery** method in the [Default.aspx.cs class](https://github.com/OfficeDev/PnP/blob/master/Samples/Search.PersonalizedResults/PersonalizedSearchResultsWeb/Pages/Default.aspx.cs) uses the SearchExecutor class to execute the search query and return the results. 
+In both cases, the **ProcessQuery** method in the [Default.aspx.cs class](https://github.com/SharePoint/PnP/blob/master/Samples/Search.PersonalizedResults/PersonalizedSearchResultsWeb/Pages/Default.aspx.cs) uses the SearchExecutor class to execute the search query and return the results. 
 
 	private ClientResult<ResultTableCollection> ProcessQuery(ClientContext ctx, string keywordQueryValue)
     {
@@ -181,9 +181,9 @@ This API is a great fit for SharePoint-hosted Add-ins and Provider-hosted Add-in
 
 The following sample demonstrates how to execute searches with the SharePoint Search Service with the REST API from managed .Net code.
 
-- [EmployeeDirectory (OfficeDev Training Content)](https://github.com/OfficeDev/TrainingContent/tree/master/O3656/O3656-6%20Deep%20Dive%20into%20Search%20Scenarios%20in%20Office%20365/Demos/EmployeeDirectory)
+- [EmployeeDirectory (OfficeDev Training Content)](https://github.com/SharePoint/TrainingContent/tree/master/O3656/O3656-6%20Deep%20Dive%20into%20Search%20Scenarios%20in%20Office%20365/Demos/EmployeeDirectory)
 
-The **Index** method in the [HomeController.cs class](https://github.com/OfficeDev/TrainingContent/blob/master/O3656/O3656-6%20Deep%20Dive%20into%20Search%20Scenarios%20in%20Office%20365/Demos/EmployeeDirectory/EmployeeDirectoryWeb/Controllers/HomeController.cs) executes a search for  all users whose last name begins with the text value the user clicks.
+The **Index** method in the [HomeController.cs class](https://github.com/SharePoint/TrainingContent/blob/master/O3656/O3656-6%20Deep%20Dive%20into%20Search%20Scenarios%20in%20Office%20365/Demos/EmployeeDirectory/EmployeeDirectoryWeb/Controllers/HomeController.cs) executes a search for  all users whose last name begins with the text value the user clicks.
 
 	var spContext = SharePointContextProvider.Current.GetSharePointContext(HttpContext);
 
@@ -210,7 +210,7 @@ The **Index** method in the [HomeController.cs class](https://github.com/OfficeD
 	//Set the response
     string responseString = await response.Content.ReadAsStringAsync();
 
-The [How to build SharePoint add-ins that leverage search (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/How-to-build-SharePoint-add-ins-that-leverage-search) walks you through the [EmployeeDirectory (OfficeDev Training Content)](https://github.com/OfficeDev/TrainingContent/tree/master/O3656/O3656-6%20Deep%20Dive%20into%20Search%20Scenarios%20in%20Office%20365/Demos/EmployeeDirectory).
+The [How to build SharePoint add-ins that leverage search (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/How-to-build-SharePoint-add-ins-that-leverage-search) walks you through the [EmployeeDirectory (OfficeDev Training Content)](https://github.com/SharePoint/TrainingContent/tree/master/O3656/O3656-6%20Deep%20Dive%20into%20Search%20Scenarios%20in%20Office%20365/Demos/EmployeeDirectory).
 
 **Client-side Option**
 
@@ -232,7 +232,7 @@ The following code example demonstrates how to execute searches with the SharePo
 Related links
 =============
 - [How to perform personalized search queries with CSOM (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/How-to-perform-personalized-search-queries-with-CSOM)
-- [EmployeeDirectory (OfficeDev Training Content)](https://github.com/OfficeDev/TrainingContent/tree/master/O3656/O3656-6%20Deep%20Dive%20into%20Search%20Scenarios%20in%20Office%20365/Demos/EmployeeDirectory)
+- [EmployeeDirectory (OfficeDev Training Content)](https://github.com/SharePoint/TrainingContent/tree/master/O3656/O3656-6%20Deep%20Dive%20into%20Search%20Scenarios%20in%20Office%20365/Demos/EmployeeDirectory)
 - [How to build SharePoint add-ins that leverage search (O365 PnP Video)](https://channel9.msdn.com/blogs/OfficeDevPnP/How-to-build-SharePoint-add-ins-that-leverage-search)
 - Guidance articles at [http://aka.ms/OfficeDevPnPGuidance](http://aka.ms/OfficeDevPnPGuidance "Guidance Articles")
 - References in MSDN at [http://aka.ms/OfficeDevPnPMSDN](http://aka.ms/OfficeDevPnPMSDN "References in MSDN")
@@ -240,7 +240,7 @@ Related links
 
 Related PnP samples
 ===================
-- [Search.PersonalizedResults (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Search.PersonalizedResults)
+- [Search.PersonalizedResults (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Search.PersonalizedResults)
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to

@@ -56,9 +56,9 @@ When you do not have access to an Azure subscription to schedule timer jobs with
 
 The following articles use the Windows Scheduler pattern and provide code samples to get you started.
 
-- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.SimpleTimerJob)
+- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.SimpleTimerJob)
 	+ End-to-end article about this pattern with accompanying video.
-- [Core.TimerJobs.Samples (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Core.TimerJobs.Samples)
+- [Core.TimerJobs.Samples (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Solutions/Core.TimerJobs.Samples)
 	+ Excellent code samples encompassing 10 different examples. *Note: Not all ten code examples are applicable to the Windows Scheduler pattern.*
 
 Azure WebJob
@@ -79,9 +79,9 @@ When you have access to an Azure subscription to schedule timer jobs with Azure 
 
 The following articles describe the Azure WebJob pattern and provide code samples to get you started.
 
-- [Getting Started with azure WebJobs ("timer jobs") for your Office 365 Sites (O365 PnP Article)](https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites.md)
+- [Getting Started with azure WebJobs ("timer jobs") for your Office 365 Sites (O365 PnP Article)](https://github.com/SharePoint/PnP-Guidance/blob/master/articles/Getting-Started-with-building-Azure-WebJobs-for-your-Office365-sites.md)
 	+ Describes how to build an Azure WebJob to act as a scheduled job for your Office 365 or on-premises SharePoint environment. Includes publishing and monitoring information.
-- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Core.TimerJobs.Samples)
+- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Solutions/Core.TimerJobs.Samples)
 	+ Excellent code samples encompassing 10 different examples. *Note: Not all ten code examples are applicable to the Azure WebJob pattern.*
 
 Authentication Options
@@ -123,9 +123,9 @@ The following articles describe how to use a service account authentication patt
 
 - [Building a SharePoint App as a Timer Job (MSDN Blog)](http://blogs.msdn.com/b/kaevans/archive/2014/03/02/building-a-sharepoint-app-as-a-timer-job.aspx)
 	+ End-to-end article about this pattern.
-- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.SimpleTimerJob)
+- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.SimpleTimerJob)
 	+ End-to-end article about this pattern with accompanying video.
-- [Core.TimerJobs.Samples (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Core.TimerJobs.Samples)
+- [Core.TimerJobs.Samples (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Solutions/Core.TimerJobs.Samples)
 	+ Excellent code samples encompassing 10 different examples. *Note: Not all ten code examples are applicable to the service account authentication pattern.*
 
 Use OAuth
@@ -165,7 +165,7 @@ The following articles describe the OAUth authentication pattern and provide cod
 
 - [Building a SharePoint App as a Timer Job (MSDN Blog)](http://blogs.msdn.com/b/kaevans/archive/2014/03/02/building-a-sharepoint-app-as-a-timer-job.aspx)
 	+ End-to-end article about this pattern.
-- [Core.TimerJobs.Samples (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Core.TimerJobs.Samples)
+- [Core.TimerJobs.Samples (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Solutions/Core.TimerJobs.Samples)
 	+ Excellent code samples encompassing 10 different examples. *Note: Not all ten code examples are applicable to the OAUth authentication pattern.*
 
 Related links
@@ -179,11 +179,11 @@ Related links
 Related PnP samples
 ===================
 
-- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.SimpleTimerJob)
-- [Core.TimerJobs.Samples (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/Core.TimerJobs.Samples)
-- [Provisioning.Services.SiteManager (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.Services.SiteManager)
-- [Provisioning.SiteCollectionCreation (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.SiteCollectionCreation)
-- Samples and content at https://github.com/OfficeDev/PnP
+- [Core.SimpleTimerJob (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.SimpleTimerJob)
+- [Core.TimerJobs.Samples (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Solutions/Core.TimerJobs.Samples)
+- [Provisioning.Services.SiteManager (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.Services.SiteManager)
+- [Provisioning.SiteCollectionCreation (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.SiteCollectionCreation)
+- Samples and content at https://github.com/SharePoint/PnP
 
 Applies to
 ==========
