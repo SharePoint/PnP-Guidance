@@ -51,7 +51,8 @@ The "modern" experiences allow certain user custom actions to be surfaced in the
 | `CommandUI.Ribbon` | Yes, these entries show up as toolbar items |
 | All other locations (e.g. `scriptlink`) | Sorry, these user custom actions won't work |
 
-Notice that the above custom actions show up in modern lists and libraries only when you are in classic sites with modern UI enabled, while they don't show up in modern sites.
+>**Note:** 
+>The above custom actions show up in "modern" lists and libraries only when you are in classic sites with "modern" UI enabled, while they by default don't show up in "modern" sites as it's not possible to add user custom actions to "modern" sites because they've the NoScript option enabled. You however can disable NoScript in "modern" sites to achieve the same behavior for "modern" list and libraries across "classic" and "modern" sites.
 
 ### EditControlBlock User Custom Actions 
 <a name="editcontrolblockcustomactions"> </a>
@@ -289,6 +290,10 @@ Apply-PnPProvisioningTemplate -Path c:\experiencecontrol.xml -Handlers Features
 
 ```
 
+>**Note:**
+>If you're trying this on a ["modern" team site](modern-experience-customizations-customize-sites.md) where you disabled the NoScript option then please use the April 2017 or later version from PnP-PowerShell. Alternatively use the current dev version.
+
+
 ### List/Library configuration
 If you want to control the experience at the library level, you can use go to list settings, advanced settings, and change the behavior:
 
@@ -329,6 +334,10 @@ Below are the settings that are evaluated as part of the auto-detect system and 
 	- The JSLink property is set on one of the fields to render
 	- One of the fields to render is of type "BCS external data", "Geolocation", "OutcomeChoice" or one of these publishing field types "Image", "Html", or "SummaryLinks"
 	- There are list scoped user custom actions which have their ScriptSrc property set
+- If the available webpart is a **ListFormWebPart** and: 
+	- The page is shown in a dialog (IsDlg=1) 
+	- It's a "New" form page for a document library  
+	- The fields to render are not any of these supported types (Attachments, TaxonomyField, Boolean, Choice, Currency, DateTime, File, Lookup, MultiChoice, MultiLine except when Append with versioning is on, Number, Text, User, or Url) 
 
 ### Programmatically detecting if your library/list will be shown using "modern" or "classic" 
 The previous chapter explained the reasoning behind our auto-detect mechanism, but luckily there's an easy way for you as a developer to understand how a library/list will be rendered. Getting this information is as simple as getting the value of the **PageRenderType** file property which you can obtain using CSOM or REST. Below samples show how to first load the page rendering the list and then get the **PageRenderType**:
