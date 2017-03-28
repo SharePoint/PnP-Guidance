@@ -11,6 +11,14 @@ _**Applies to:** SharePoint Online_
 <a name="sectionSection0"> </a>
 The growth of SharePoint Online has been phenomenal and as a result more and more customers are building portals using SharePoint Online as a platform. While working with SharePoint support and several large customers we've noticed that many customers built their portals like they would be building them for SharePoint on-premises and this approach is negatively impacting performance. Often these performance problems are resolved after portal go live, which off course is not ideal. We hope that by following the documented guidelines customers will be able to launch well performing portals on SharePoint Online.
 
+## What's included?
+The guidance currently mainly focuses on patterns and practices that will help you build well performing portals on SharePoint Online focusing on following topics: performance, information architecture, navigation, data aggregation, branding and portal roll-out. Each of the articles has the same layout:
+- We'll start with anti patterns: essentially telling you what you should **not** do anymore
+- We'll then provide best practice and patterns on how you should be implementing your portal
+- We'll give you a set of links to interesting resources where you can learn more
+
+Currently we're not having a lot of sample code, but the plan is complement these described patterns and practices with samples.
+
 ## I do want to provide feedback...how do I do that?
 This guidance is completely open source and we encourage the community to provide feedback. On the top right of the page you can click on "Contribute" which will bring you to the GitHub repository hosting this guidance. Once in GitHub you can: 
 - Create an issue in the issue list if you want to start a discussion on the content
