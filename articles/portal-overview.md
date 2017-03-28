@@ -17,7 +17,7 @@ This guidance is completely open source and we encourage the community to provid
 - Fork the repository, make changes to the articles and create a pull request. We would love to take your changes and our MSDN publishing system will credit you as page contributor once you're pull request has been accepted
 
 >**Note**:
->We'll be further evolving this guidance by adding samples, additional insights, integration of new SharePoint >Online capabilities,...and we would absolutely love community feedback and contributions.
+>We'll be further evolving this guidance by adding samples, additional insights, integration of new SharePoint Online capabilities,...and we would absolutely love community feedback and contributions.
 
 ## What's the audience we're targeting with these guidelines?
 <a name="sectionSection1"> </a>
