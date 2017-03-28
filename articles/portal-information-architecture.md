@@ -2,15 +2,27 @@
 
 Having a sound information architecture is an important prerequisite for realizing a well maintainable and performing portal.
 
+>**Note**:
+>Although this guidance is targeting SharePoint Online most of it also applies to portals hosted on a SharePoint on-premises environment.
+
 _**Applies to:** SharePoint Online_
 
-## todo
+## Anti-patterns...or you shouldn't be doing this
+<a name="sectionSectionAntiPatterns"> </a>
+Below list contains the key things **not** to do when it comes to designing your portal information architecture:
+- A
+- B
+
+## Main chapter
 <a name="sectionSection0"> </a>
 
-todo
+### Sub Chapter 1
+
+
+### Sub Chapter 2
 
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
-add links
+- [Link to be replaced](https://www.bing.com)
