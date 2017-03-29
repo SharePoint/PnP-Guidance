@@ -1,6 +1,6 @@
-# Proven Practices for SharePoint Online portal performance
+# Proven Practices for SharePoint Online portal information architecture
 
-Performance is a critical aspect of any portal and this article contains a ton of design patterns that will help you build well performing portals.
+Having a sound information architecture is an important prerequisite for realizing a well maintainable and performing portal.
 
 >**Note**:
 >Although this guidance is targeting SharePoint Online most of it also applies to portals hosted on a SharePoint on-premises environment.
@@ -9,7 +9,7 @@ _**Applies to:** SharePoint Online_
 
 ## Anti-patterns...or you shouldn't be doing this
 <a name="sectionSectionAntiPatterns"> </a>
-Below list contains the key things **not** to do when it comes to branding your portal:
+Below list contains the key things **not** to do when it comes to designing your portal information architecture:
 - A
 - B
 

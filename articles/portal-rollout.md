@@ -8,10 +8,11 @@ After you've spent your time and energy in building that new SharePoint based po
 
 _**Applies to:** SharePoint Online_
 
-## Anti-patterns...or you shouldn't be doing this
+## Anti-patterns (in other words, don't do these things)
+<a name="sectionSectionAntiPatterns"> </a>
 Below list contains the key things **not** to do when it comes to rolling out your portal:
 - Stress test your portal against your SharePoint Online tenant
-- Do a big bang release, essentially releasing your new portal to **all** your users
+- Do a big bang release, essentially releasing your new portal to **all** your users at the same moment
 
 
 ## How did you do this in the past
