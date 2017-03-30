@@ -70,7 +70,7 @@ Adding custom links to the context menu can be done by using the `EditControlBlo
 </pnp:ProvisioningTemplate>
 ```
 
-You can apply this [PnP provisioning template](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) to a site using the PnP Core library or PnP PowerShell. We've opted to show the PowerShell approach in this article. A first step is installing the PnP PowerShell module as described in https://github.com/SharePoint/PnP-PowerShell. Once that's done, save the PnP provisioning xml to a file and then 2 simple lines of PnP PowerShell are enough to apply the template:
+You can apply this [PnP provisioning template](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) to a site using the PnP Core library or [PnP PowerShell](aka.ms/sppnp-powershell). We've opted to show the PowerShell approach in this article. A first step is installing the PnP PowerShell module as described in https://github.com/SharePoint/PnP-PowerShell. Once that's done, save the PnP provisioning xml to a file and then 2 simple lines of PnP PowerShell are enough to apply the template:
 
 ```PowerShell
 
@@ -89,7 +89,8 @@ If you refresh the "modern" view of a document library in your site you'll see t
 
 
 >**Note**:
->If you want to use this sample for a list then please set the `RegistrationId` attribute to 100
+>- If you're trying this on a ["modern" team site](modern-experience-customizations-customize-sites.md) where you disabled the NoScript option then please use the April 2017 or later version from PnP-PowerShell. Alternatively use the current dev version.
+>- If you want to use this sample for a list then please set the `RegistrationId` attribute to 100
 
 ### CommandUI.Ribbon User Custom Actions 
 <a name="ribboncustomactions"> </a>
@@ -207,7 +208,8 @@ After adding these user custom actions you'll see them appear in the toolbar. No
 ![Custom action visible in the toolbar](media/modern-experiences/custom-actions-toolbar.png)
 
 >**Note**:
->If you want to use this sample for a list then please set the `RegistrationId` attributes to 100 and use the below XML for the CA_4 user custom action
+>- If you're trying this on a ["modern" team site](modern-experience-customizations-customize-sites.md) where you disabled the NoScript option then please use the April 2017 or later version from PnP-PowerShell. Alternatively use the current dev version.
+>- If you want to use this sample for a list then please set the `RegistrationId` attributes to 100 and use the below XML for the CA_4 user custom action.
 >
 ```XML
 <CommandUIDefinition Location="Ribbon.Templates._children">
@@ -260,39 +262,23 @@ You can prevent a site collection or web from using the "modern" experience by e
 - Site collection scoped feature with ID **E3540C7D-6BEA-403C-A224-1A12EAFEE4C4** for site collection control
 - Web scoped feature with ID **52E14B6F-B1BB-4969-B89B-C4FAA56745EF** for web scoped control
 
-You can use below [PnP provisioning XML](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) to enable this feature on site or web level
-
-```XML
-<pnp:ProvisioningTemplate ID="experiencecontrol" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
-  <pnp:Features>
-    <!-- for site collection scoped control -->
-    <pnp:SiteFeatures>
-      <pnp:Feature ID="E3540C7D-6BEA-403C-A224-1A12EAFEE4C4" Description="Disable modern list experience"/>
-    </pnp:SiteFeatures>
-    <!-- for web scoped control -->
-    <pnp:WebFeatures>
-      <pnp:Feature ID="52E14B6F-B1BB-4969-B89B-C4FAA56745EF" Description="Disable modern list experience"/>
-    </pnp:WebFeatures>
-  </pnp:Features>
-</pnp:ProvisioningTemplate>
-```
-
-Use the following PnP PowerShell to apply this template:
+Use the following [PnP PowerShell](aka.ms/sppnp-powershell) to enable/disable the needed features:
 
 ```PowerShell
-
-# Connect to a previously created Modern Site
+# Connect to a site
 $cred = Get-Credential
 Connect-PnPOnline -Url https://[tenant].sharepoint.com/sites/siteurl -Credentials $cred
 
-# Apply the PnP provisioning template
-Apply-PnPProvisioningTemplate -Path c:\experiencecontrol.xml -Handlers Features
+# Prevent modern list and libraries at site collection level
+Enable-PnPFeature -Identity E3540C7D-6BEA-403C-A224-1A12EAFEE4C4 -Scope Site 
+# And again enable modern list and libraries at site collection level
+#Disable-PnPFeature -Identity E3540C7D-6BEA-403C-A224-1A12EAFEE4C4 -Scope Site 
 
+# Prevent modern list and libraries at web level
+#Enable-PnPFeature -Identity 52E14B6F-B1BB-4969-B89B-C4FAA56745EF  -Scope Web 
+# And again enable modern list and libraries at web
+#Disable-PnPFeature -Identity 52E14B6F-B1BB-4969-B89B-C4FAA56745EF  -Scope Web 
 ```
-
->**Note:**
->If you're trying this on a ["modern" team site](modern-experience-customizations-customize-sites.md) where you disabled the NoScript option then please use the April 2017 or later version from PnP-PowerShell. Alternatively use the current dev version.
-
 
 ### List/Library configuration
 If you want to control the experience at the library level, you can use go to list settings, advanced settings, and change the behavior:
