@@ -51,44 +51,20 @@ If you want to completely disable the "modern" experience, then it's best to use
 > - The tenant level setting can be a little confusing: "Preventing users from creating Site Pages" will actually bring back the "classic" experience.
 > - The current configuration is cached, logging off the session will immediately show the effect of this change.
 
-### Site level configuration
+### Web level configuration
 You can prevent a web from using the "modern" page experience by disabling the web scoped feature with ID **B6917CB1-93A0-4B97-A84D-7CF49975D4EC**. To re-enable the "modern" page experience at the web level you'll need to activate the feature again.
 
-You can use the [PnP provisioning XML](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) below to **disable** this feature on your site:
-
-```XML
-<pnp:ProvisioningTemplate ID="disablemodernpages" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
-  <pnp:Features>
-    <pnp:WebFeatures>
-      <pnp:Feature ID="B6917CB1-93A0-4B97-A84D-7CF49975D4EC" Deactivate="true" Description="Enable modern page experience"/>
-    </pnp:WebFeatures>
-  </pnp:Features>
-</pnp:ProvisioningTemplate>
-```
-
-You can use the [PnP provisioning XML](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) below to **enable** this feature on your site collection:
-
-```XML
-<pnp:ProvisioningTemplate ID="enablemodernpages" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
-  <pnp:Features>
-    <pnp:WebFeatures>
-      <pnp:Feature ID="B6917CB1-93A0-4B97-A84D-7CF49975D4EC" Description="Enable modern page experience"/>
-    </pnp:WebFeatures>
-  </pnp:Features>
-</pnp:ProvisioningTemplate>
-```
-
-Use the following PnP PowerShell to apply this template:
+Use the following [PnP PowerShell](aka.ms/sppnp-powershell) to enable/disable the needed features:
 
 ```PowerShell
-
-# Connect to a previously created Modern Site
+# Connect to a site
 $cred = Get-Credential
 Connect-PnPOnline -Url https://[tenant].sharepoint.com/sites/siteurl -Credentials $cred
 
-# Apply the PnP provisioning template
-Apply-PnPProvisioningTemplate -Path c:\experiencecontrol.xml -Handlers Features
-
+# Prevent modern pages at web level
+Disable-PnPFeature -Identity B6917CB1-93A0-4B97-A84D-7CF49975D4EC -Scope Web 
+# And again enable modern pages at web
+#Enable-PnPFeature -Identity B6917CB1-93A0-4B97-A84D-7CF49975D4EC -Scope Web 
 ```
 
 ## Programming "modern" pages
