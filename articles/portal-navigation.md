@@ -49,7 +49,7 @@ You've evaluated the rationale for a Custom Navigation Solution and have decided
 
 The following diagram shows the logical architecture of a Custom Navigation Solution:
 
-![](\media\logicalNavSoln.png)
+-![Custom navigation solution logical architecture](./media/logicalNavSoln.png)
 
 The following sections describe the major components of the logical architecture:
 
