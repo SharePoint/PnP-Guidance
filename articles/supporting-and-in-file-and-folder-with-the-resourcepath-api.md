@@ -83,7 +83,7 @@ The following C# properties are added to return System.Uri with unambiguous enco
 
 Here are some sample code for basic scenarios in CSOM:
  
-1.	Add a file to a folder (.net)
+- Add a file to a folder (.net)
 
 ```C#
   ClientContext context = new ClientContext("http://site");
@@ -117,7 +117,7 @@ Here are some sample code for basic scenarios in CSOM:
 
 ```
 
-2.	Add a sub-folder to a folder  (.net)
+- Add a sub-folder to a folder  (.net)
 
 ```C#
     ClientContext context = new ClientContext("http://site");
@@ -147,7 +147,7 @@ Here are some sample code for basic scenarios in CSOM:
         addedFolder.ServerRelativePath.DecodedUrl);
 ```
 
-3.	Get a file in the web (.net)
+- Get a file in the web (.net)
 
 ```C#
     ClientContext context = new ClientContext("http://site");
@@ -171,7 +171,7 @@ Here are some sample code for basic scenarios in CSOM:
 
 Here are some sample code for basic scenarios in REST:
 
-1.	Get Folders
+- Get Folders
 
 ```
 url: http://site url/_api/web/GetFolderByServerRelativePath(decodedUrl='folder name')
@@ -182,7 +182,7 @@ headers:
 
 ```
 
-2.	Create Folder
+- Create Folder
  
 ```
 url: http://site url/_api/web/Folders/AddUsingPath(decodedurl='/document library relative url/folder name')
@@ -195,7 +195,7 @@ headers:
  
 ```
  
-3.	Get Files
+- Get Files
  
 ```
 url: http://site url/_api/web/GetFileByServerRelativePath(decodedUrl='folder name/file name')
@@ -206,7 +206,7 @@ Headers:
 
 ```
  
-4.	Add Files
+- Add Files
  
 ```
 url: http://site url/_api/web/GetFolderByServerRelativePath(decodedUrl='folder name')/Files/AddStubUsingPath(decodedurl='testfile.txt')
