@@ -70,7 +70,7 @@ See the [Customize the Office 365 theme for your organization](https://support.o
 
 *Notice a SharePoint theme in an Office 365 SharePoint site does not include a master page, master page preview, or composed look.* This aligns with the guidance mentioned above to not use custom master pages to implement branding on SharePoint sites.
 
-**Composed looks used for on-premises SharePoint 2013 sites** include one or more of the following components.  
+**Composed looks used for on-premises SharePoint 2013/2016 sites** include one or more of the following components.  
 
 - color palette (.spcolor file) - Also referred to as a SharePoint theme
 - font scheme (.spfont file)
@@ -80,7 +80,7 @@ See the [Customize the Office 365 theme for your organization](https://support.o
 
 See the [Themes overview for SharePoint 2013](https://msdn.microsoft.com/en-us/library/office/jj927174.aspx) article to learn more about these components.
 
-**Composed looks used for Office 365 SharePoint 2013 sites** include one or more of the following components.  
+**Composed looks used for Office 365 SharePoint sites** include one or more of the following components.  
 
 - color palette (.spcolor file) - Also referred to as a SharePoint theme
 - font scheme (.spfont file)
@@ -344,6 +344,6 @@ Applies to
 ==========
 - Office 365 Multi Tenant (MT)
 - Office 365 Dedicated (D) *partly*
-- SharePoint 2013 on-premises – *partly*
+- SharePoint 2013/2016 on-premises – *partly*
 
 *Patterns for dedicated and on-premises are identical with SharePoint Add-in model techniques, but there are differences on the possible technologies that can be used.*
