@@ -49,6 +49,7 @@ There are numerous areas in the "modern" team sites where the typical customizat
 - Control available sub site template options
 - "Classic" publishing features (WCM)
 - Accessing or updating site property bag entries
+- Activating community feature or creating community sub sites under modern" team site
 
 Since "modern" team sites also have scripting capabilities disabled (it's a so called noscript site), there are numerous additional areas which cannot be customized. The impact of noscript is the same for "modern" or "classic" sites, the only difference with "modern" sites is that you cannot turn off "noscript" whereas this is possible for "classic" sites. Here are some key areas to take in account when you design your solutions:
 
