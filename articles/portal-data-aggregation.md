@@ -25,8 +25,8 @@ If you wish to have problems with your portal in general, and your data aggregat
 
 It is important to establish a clear definition of Content Aggregation for the context of this article.
 
->**Content Aggregation** 
->- the concept of dynamically locating and retrieving content for display on the current page when that content exists apart from the current page in one or more locations within the portal
+>**Content Aggregation** the concept of dynamically locating and retrieving content for display on the current page when that content exists apart from the current page in one or more locations within the portal
+>
 >- Content Aggregation does not involve content authored within the current page
 >- Content Aggregation is primarily intended for the front-end user view of the Portal (as opposed to the back-end admin view)
 
@@ -35,7 +35,7 @@ Here are a few common examples in which data aggregation is used:
 - The Portal Home Page contains a Latest News control that renders a list of links to the most-recent articles published within the portal
 - Portal Pages contain a Global Navigation control that renders navigation links managed within a custom SharePoint list
 
-## The problem of the Real-Time Content Aggregation Requirement
+## The Problem with the Real-Time Content Aggregation Requirement
 <a name="sectionSection1"> </a>
 
 >**Real-Time Content Aggregation** - changes made to a content aggregation source immediately appear in the content aggregation controls targeting that source
@@ -98,7 +98,7 @@ If you must use CAML-based Content Aggregation, please observe the following gui
 
 - Avoid its use on high-volume pages
 - Constrain its use to a specific class of content (e.g., Alerts)
-- Define the simplest, most-efficient CAML query possible and verify it's performance
+- Define the simplest, most-efficient CAML query possible and verify its performance
 - Implement indexed columns on the target lists
 - Include row limits on the query
 - Ensure that custom client-side JavaScript controls provide a **Read more** link to redirect users to a low-volume View-All page 
