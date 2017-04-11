@@ -1,6 +1,6 @@
 # Proven Practices for SharePoint Online Portals - Performance
 
-Every portal design includes at least one aspect that requires the customization of SharePoint. The new customization model for SharePoint Online is the SharePoint Add-in Model, which is a distributed application architecture that can encompass a number of execution environments: SharePoint Online, Web Hoster(s), Service Provider(s), and the Client Browser. This architecture is predicated on the concept of client-to-server data requests.
+Every portal design includes at least one aspect that requires the customization of SharePoint. The customization model for SharePoint Online portals is the SharePoint Add-in Model, which is a distributed application architecture that can encompass a number of execution environments: SharePoint Online, Web Hoster(s), Service Provider(s), and the Client Browser. This architecture is predicated on the concept of client-to-server data requests.
 
 The SharePoint Add-in Model (and its distributed architecture) now places an even greater emphasis on effective design and development for web applications in general, and client-side web applications in particular, especially when it comes to the concept of application performance.
 
@@ -30,7 +30,7 @@ If you wish to have performance problems with SharePoint in general, and your cu
 
 The SharePoint Online customization model has evolved from the classic, server-based model where custom code executes on the server and performs server-side data requests into a modern, client-based model where custom code runs remotely and performs client-side data requests.  The natural solution architecture for this model is the distributed client-side web application.
 
-A natural consequence of the distributed client-side web application model, aside from an increase in the inherent complexity of the new custom solution, is a significant increase in client-to-server network traffic associated with the new custom solution and a greater dependency upon the client-side execution environment.
+A consequence of the distributed client-side web application model, aside from an increase in the inherent complexity of the new custom solution, is a significant increase in client-to-server network traffic associated with the new custom solution and a greater dependency upon the client-side execution environment.
 
 Consider the following comparison of the page load sequence associated with each web application model:
 
@@ -93,7 +93,7 @@ Capture critical information application metrics such as:
 
 Establish an objective performance baseline for your client-side web application and use that baseline to validate/tune your initial design decisions.  Once the application has been deployed, monitor ongoing performance and use the metrics to identify and resolve any issues that might arise.
 
-Please consider [Azure Application Insights](https://azure.microsoft.com/en-us/blog/understand-your-sharepoint-usage-with-application-insights-2/), which provides a JavaScript module that makes it easy to add telemetry to any client-side web application. 
+Please consider [Azure Application Insights](https://azure.microsoft.com/en-us/blog/understand-your-sharepoint-usage-with-application-insights-2/), which provides a JavaScript module that makes it easy to add telemetry to any client-side web application. You can also build your own telemetry back-end service, but do know that storing the telemetry data in SharePoint is not recommended at all as that will negatively impact your portal performance.
 
 ### Client Browser
 <a name="bk_clientBrowser"> </a>
@@ -169,7 +169,7 @@ Leverage the Client-Side Data Access Layer Framework (described later in this ar
 Be aware that some client-side data requests can negatively impact the SharePoint server in a severe manner.
 
 - Avoid the use of client-side CAML queries, especially those that would target the legacy Lists (SOAP) web service 
-- Client-side CAML queries generally bypass all server-side caching mechanisms, which results in negative  server performance under heavy loads
+- Client-side CAML queries generally bypass all server-side caching mechanisms, which results in negative server performance under heavy loads
 
 If you must use CAML queries, please observe the following guidelines:
 
@@ -324,8 +324,8 @@ The logical architecture of the Data Access Layer (DAL) Framework includes the f
 - Client-Side Data Cache, with Expiration
 	- Client-side Web Storage allows the client environment to store transient data (session storage) and long-term data (local storage), for a specified duration (i.e., expiry)
 		- Session storage supports caching of private data
-		- Local storage) supports caching of shared data
-	- Serving data from a local cache reduces requests to the actual data source and improves page performance (actual and perceived)
+		- Local storage supports caching of shared data
+	- Serving data from a local cache reduces requests to the actual data source and improves page performance
 
 ### Typical Call Sequence
 <a name="bk_dalCallSequence"> </a>
@@ -350,3 +350,4 @@ The logical architecture of the Data Access Layer (DAL) Framework includes the f
 
 - [Introduction to Performance Tuning for SharePoint Online](https://support.office.com/en-US/article/Introduction-to-performance-tuning-for-SharePoint-Online-81c4be5f-327e-435d-a568-526d68cffef0)
 - [Office Development Patterns and Practices (PnP) JavaScript Core](https://github.com/SharePoint/PnP-JS-Core)
+- [Learn how to build a fast, responsive SharePoint portal in SharePoint Online](https://channel9.msdn.com/Events/Ignite/2016/BRK3026)
