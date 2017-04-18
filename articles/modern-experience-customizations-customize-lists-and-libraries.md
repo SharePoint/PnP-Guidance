@@ -127,67 +127,50 @@ If you want to extend the toolbar in the "modern" list and library experiences y
       <pnp:CustomAction Name="CA_6" Description="ca 6" Location="CommandUI.Ribbon" RegistrationType="ContentType" RegistrationId="0x0101" Title="CA 6 Title" Sequence="5000" Enabled="true">
         <pnp:CommandUIExtension>
             <CommandUIDefinitions>
-              <CommandUIDefinition Location="Ribbon.CustomTabs._children">
+              <CommandUIDefinition Location="Ribbon.Tabs._children">
                 <Tab Id="Custom Tab" Title="Custom Tab" Description="Custom Tab">
                   <Scaling Id="Custom Tab.Scaling">
-                    <MaxSize Id="Custom Group.Scaling.MaxSize" GroupId="Custom Group" Size="LargeLarge" />
-                    <MaxSize Id="Custom Group 2.Scaling.MaxSize" GroupId="Custom Group 2" Size="LargeLarge" />
-                    <Scale Id="Custom Group.Scaling.Scale" GroupId="Custom Group" Size="LargeLarge" />
-                    <Scale Id="Custom Group 2.Scaling.Scale" GroupId="Custom Group 2" Size="LargeLarge" />
+                    <MaxSize Id="Custom Group.Scaling.MaxSize" GroupId="Custom Group" Size="TwoLarge" />
+                    <MaxSize Id="Custom Group 2.Scaling.MaxSize" GroupId="Custom Group 2" Size="OneLarge" />
+                    <Scale Id="Custom Group.Scaling.Scale" GroupId="Custom Group" Size="TwoLarge" />
+                    <Scale Id="Custom Group 2.Scaling.Scale" GroupId="Custom Group 2" Size="OneLarge" />
                   </Scaling>
                   <Groups Id="Custom Tab.Groups">
-                    <Group Id="Custom Group 2" Title="Custom Group 2" Description="Custom Group 2" Sequence="7888" Template="Ribbon.Templates.Flexible2">
+                    <Group Id="Custom Group 2" Title="Custom Group 2" Description="Custom Group 2" Sequence="7888" Template="Ribbon.Templates.OneLarge">
                       <Controls Id="Custom Group 2.Controls">
-                        <Button Id="CustomButton3" LabelText="Custom Button 3" Image16by16="/_layouts/15/images/attach16.png" ToolTipTitle="Custom Button 3" ToolTipDescription="Custom Button 3" Command="CustomButton3.Command" TemplateAlias="o1" />
+                        <Button Id="CustomButton3" LabelText="Custom Button 3" Image16by16="/_layouts/15/images/attach16.png" Image32by32="/_layouts/15/images/attach16.png" ToolTipTitle="Custom Button 3" ToolTipDescription="Custom Button 3" Command="CustomButton3.Command" TemplateAlias="c3" />
                       </Controls>
                     </Group>
-                    <Group Id="Custom Group 1" Title="Custom Group 1" Description="Custom Group 1" Sequence="10000" Template="Ribbon.Templates.Flexible2">
+                    <Group Id="Custom Group" Title="Custom Group 1" Description="Custom Group 1" Sequence="10000" Template="Ribbon.Templates.TwoLarge">
                       <Controls Id="Custom Group 1.Controls">
-                        <Button Id="CustomButton1" LabelText="Custom Button 1" Image16by16="/_layouts/15/images/itslidelibrary.png" ToolTipTitle="Custom Button 1" ToolTipDescription="Custom Button 1" Command="CustomButton1.Command" TemplateAlias="o1" />
-                        <Button Id="CustomButton2" LabelText="Custom Button 2" Image16by16="/_layouts/15/images/dldsln16.png" ToolTipTitle="Custom Button 2" ToolTipDescription="Custom Button 2" Command="CustomButton2.Command" TemplateAlias="o1" />
+                        <Button Id="CustomButton1" LabelText="Custom Button 1" Image16by16="/_layouts/15/images/itslidelibrary.png" Image32by32="/_layouts/15/images/itslidelibrary.png" ToolTipTitle="Custom Button 1" ToolTipDescription="Custom Button 1" Command="CustomButton1.Command" TemplateAlias="c1" />
+                        <Button Id="CustomButton2" LabelText="Custom Button 2" Image16by16="/_layouts/15/images/dldsln16.png" Image32by32="/_layouts/15/images/dldsln16.png" ToolTipTitle="Custom Button 2" ToolTipDescription="Custom Button 2" Command="CustomButton2.Command" TemplateAlias="c2" />
                       </Controls>
                     </Group>
                   </Groups>
                 </Tab>
               </CommandUIDefinition>
               <CommandUIDefinition Location="Ribbon.Templates._children">
-                <GroupTemplate Id="Ribbon.Templates.Flexible2">
-                  <Layout Title="LargeLarge" LayoutTitle="LargeLarge">
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o1" Type="OneRow" />
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o2" Type="OneRow" />
-                  </Layout>
-                  <Layout Title="LargeMedium" LayoutTitle="LargeMedium">
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o1" Type="OneRow" />
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
-                  <Layout Title="LargeSmall" LayoutTitle="LargeSmall">
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o1" Type="OneRow" />
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
-                  <Layout Title="MediumLarge" LayoutTitle="MediumLarge">
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o2" Type="OneRow" />
-                  </Layout>
-                  <Layout Title="MediumMedium" LayoutTitle="MediumMedium">
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
-                  <Layout Title="MediumSmall" LayoutTitle="MediumSmall">
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
-                  <Layout Title="SmallLarge" LayoutTitle="SmallLarge">
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o2" Type="OneRow" />
-                  </Layout>
-                  <Layout Title="SmallMedium" LayoutTitle="SmallMedium">
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
-                  <Layout Title="SmallSmall" LayoutTitle="SmallSmall">
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
+                <GroupTemplate Id="Ribbon.Templates.TwoLarge">
+                  <Layout Title="TwoLarge" LayoutTitle="TwoLarge"> 
+                    <Section Alignment="Top" Type="OneRow"> 
+                      <Row> 
+                        <ControlRef DisplayMode="Large" TemplateAlias="c1" /> 
+                        <ControlRef DisplayMode="Large" TemplateAlias="c2" /> 
+                      </Row> 
+                    </Section> 
+                  </Layout> 
+                </GroupTemplate>
+              </CommandUIDefinition>
+              <CommandUIDefinition Location="Ribbon.Templates._children">
+                <GroupTemplate Id="Ribbon.Templates.OneLarge">
+                  <Layout Title="OneLarge" LayoutTitle="OneLarge"> 
+                    <Section Alignment="Top" Type="OneRow"> 
+                      <Row> 
+                        <ControlRef DisplayMode="Large" TemplateAlias="c3" /> 
+                      </Row> 
+                    </Section> 
+                  </Layout> 
                 </GroupTemplate>
               </CommandUIDefinition>
             </CommandUIDefinitions>
