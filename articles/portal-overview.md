@@ -9,7 +9,7 @@ _**Applies to:** SharePoint Online_
 
 ## Why did we create these guidelines?
 <a name="sectionSection0"> </a>
-The growth of SharePoint Online has been phenomenal and as a result more and more customers are building portals using SharePoint Online as a platform. While working with SharePoint support and several large customers we've noticed that many customers built their portals like they would be building them for SharePoint on-premises and this approach is negatively impacting performance. Often these performance problems are resolved after portal go live, which off course is not ideal. We hope that by following the documented guidelines customers will be able to launch well performing portals on SharePoint Online.
+The growth of SharePoint Online is phenomenal and as a result more and more customers are building portals using SharePoint Online as their platform. While working with SharePoint support teams and several large customers we've noticed that many customers built their portals like they would be building them for SharePoint on-premises and this approach is negatively impacting portal performance. Often these performance problems are resolved after portal go live, which off course is not ideal. We hope that by following these guidelines customers will be better prepared for launching well performing portals on SharePoint Online.
 
 ## What's included?
 The guidance currently mainly focuses on patterns and practices that will help you build well performing portals on SharePoint Online focusing on following topics: performance, information architecture, navigation, data aggregation, branding and portal roll-out. Each of the articles has the same layout:
