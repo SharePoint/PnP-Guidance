@@ -66,6 +66,8 @@ Once one accepts that "real-time" content aggregation cannot occur, all that rem
 
 Content aggregation delays are inevitable in a well-performing portal solution; compromise on an acceptable delay and your portal users will thank you.
 
+> Notice that even though content aggregation cannot be in real time, in certainly cases you can absolutely have for example custom alerting capability with a timeout of 5 minutes and news aggregation with a timeout of 1 hour. This would not be a real time content aggregation, but would be considered almost as a real time aggregation by most of the end users. 
+
 ## Content Aggregation Techniques 
 <a name="sectionSection2"> </a>
 
@@ -92,7 +94,7 @@ By prohibiting the deployment of custom code, SharePoint Online has eliminated w
 	- Server-side CAML requests hit the Database Server for execution when a cache-miss occurs
 	- A cache-miss is a near-certainty in farms with a large number of web front ends
 
-**We recommend that you avoid CAML-based Content Aggregation.**
+**We recommend that you avoid CAML-based Content Aggregation, when possible.**
 
 If you must use CAML-based Content Aggregation, please observe the following guidelines:
 

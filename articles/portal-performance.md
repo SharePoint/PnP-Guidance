@@ -1,8 +1,8 @@
 # Proven Practices for SharePoint Online Portals - Performance
 
-Every portal design includes at least one aspect that requires the customization of SharePoint. The customization model for SharePoint Online portals is the SharePoint Add-in Model, which is a distributed application architecture that can encompass a number of execution environments: SharePoint Online, Web Hoster(s), Service Provider(s), and the Client Browser. This architecture is predicated on the concept of client-to-server data requests.
+Every portal design includes at least one aspect that requires the customization of SharePoint. The customization model for SharePoint Online portals is the SharePoint Add-in Model or the SharePoint Framework. These are both basically using a distributed application architecture that can encompass a number of execution environments: SharePoint Online, Web Hoster(s), Service Provider(s), and the Client Browser. This architecture is predicated on the concept of client-to-server data requests.
 
-The SharePoint Add-in Model (and its distributed architecture) now places an even greater emphasis on effective design and development for web applications in general, and client-side web applications in particular, especially when it comes to the concept of application performance.
+Implementing customizations to SharePoint Online places an even greater emphasis on effective design and development for web applications in general, and client-side web applications in particular, especially when it comes to the concept of application performance.
 
 >**Note**:
 >Although this guidance primarily targets SharePoint Online, most of it also applies to portals hosted in an on-premises SharePoint environment.
@@ -14,8 +14,8 @@ _**Applies to:** SharePoint Online_
 
 If you wish to have performance problems with SharePoint in general, and your custom Portal in particular, consider the following Anti-Pattern:
 
-- Build a custom portal home page for a large enterprise (50,000 users)
 - Build custom client-side controls that issue client-side data requests to SharePoint and add a dozen or more of them to the page
+- Implement your client-side controls without centralized data access to the SharePoint data, so that numerous controls are requesting exactly the same data numerous times in a page
 - Embed redundant custom JavaScript and CSS throughout the page body
 - Embed several 10MB thumbnail images throughout the page body
 - Execute all client-side data requests at page load time, even if the data is not initially needed/displayed, even if it might never be used
@@ -194,10 +194,11 @@ REST request traffic can be now be optimized via OData Batching.  Please refer t
 
 Make use of built-in functionality that can automatically deliver data to the client-side web application without the need for an explicit data request:
 
-- Use the global JavaScript variable named **spPageContextInfo**
+- Use the global JavaScript variable named **spPageContextInfo**, if available
 	- It is included in the global JavaScript namespace of every ***classic*** SharePoint Page
 	- It contains common context information needed by the client-side environment upon page loads 
 	- There is no need to make a call to SharePoint to get this data when the page loads
+- Use preloaded information from SharePoint Framework, if you are using modern pages and implementing your customization using SharePoint Framework
 - Use JavaScript files to store configuration settings used by the client-side web application
 	- Place these files in your resource file location (e.g., SharePoint Style Library)
 	- Reference these files as a JavaScript resource file in your client-side web application
@@ -230,7 +231,6 @@ A Content Delivery Network (CDN) is a Geo-dispersed network that allows an end-u
 - Consider a Content Delivery Network (CDN) to deliver your custom resource files
 	- [Azure CDN](https://azure.microsoft.com/en-us/services/cdn/)
 	- [SharePoint Online Public CDN](https://dev.office.com/blogs/office-365-public-cdn-developer-preview-release)
-	- [SharePoint Online Private CDN](https://dev.office.com/blogs/office-365-public-cdn-developer-preview-release) 
 	- SharePoint Portal Style Library - default option when a CDN is not used
 
 ### AJAX

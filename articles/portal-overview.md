@@ -13,16 +13,16 @@ The growth of SharePoint Online is phenomenal and as a result more and more cust
 
 ## What's included?
 The guidance currently mainly focuses on patterns and practices that will help you build well performing portals on SharePoint Online focusing on following topics: performance, information architecture, navigation, data aggregation, branding and portal roll-out. Each of the articles has the same layout:
-- We'll start with anti patterns: essentially telling you what you should **not** do anymore
+- We'll start with anti-patterns: essentially telling you what you should **not** do anymore
 - We'll then provide best practice and patterns on how you should be implementing your portal
 - We'll give you a set of links to interesting resources where you can learn more
 
 Currently we're not having a lot of sample code, but the plan is complement these described patterns and practices with samples.
 
-## I do want to provide feedback...how do I do that?
-This guidance is completely open source and we encourage the community to provide feedback. On the top right of the page you can click on "Contribute" which will bring you to the GitHub repository hosting this guidance. Once in GitHub you can: 
+## How to provide feedback around provided guidance?
+This guidance is completely open source and we encourage the community to provide feedback. On the top right of each page you can click on "Contribute" which will bring you to the GitHub repository hosting this guidance. Once in GitHub you can: 
 - Create an issue in the issue list if you want to start a discussion on the content
-- Fork the repository, make changes to the articles and create a pull request. We would love to take your changes and our MSDN publishing system will credit you as page contributor once you're pull request has been accepted
+- Fork the repository, make changes to the articles and create a pull request. We appreciate your contributions and our MSDN publishing system will credit you as page contributor once you're pull request has been accepted
 
 >**Note**:
 >We'll be further evolving this guidance by adding samples, additional insights, integration of new SharePoint Online capabilities,...and we would absolutely love community feedback and contributions.
@@ -37,10 +37,10 @@ Below table contains an overview of the individual articles that are part of the
 
 |**Portal design area**|**Introduction to options**|
 |:-----|:-----|
-|Performance|<p>Performance is a critical aspect of any portal and this article contains a ton of design patterns that will help you build well performing portals.</p><p>[Portal performance guidance](portal-performance.md)</p>|
+|Performance|<p>Performance is a critical aspect of any portal and this article contains numerous design patterns that will help you build well performing portals.</p><p>[Portal performance guidance](portal-performance.md)</p>|
 |Information architecture|<p>Having a sound information architecture is an important prerequisite for realizing good portal performance.</p><p>[Portal information architecture guidance](portal-information-architecture.md)</p>|
 |Navigation|<p>Each portal project needs to tackle the navigation question and for SharePoint Online you'll need to take in account specific guidelines which are described in this article.</p><p>[Portal navigation guidance](portal-navigation.md)</p>|
 |Data aggregation|<p>Aggregating and rolling up data from different locations, taking in account user preferences in something that almost all portals need. Check out this article to learn more about a flexible proven approach for aggregating data.</p><p>[Portal data aggregation guidance](portal-data-aggregation.md)</p>|
-|Branding|<p>Being able to apply a custom brand on a portal is a critical capability and this article provides you with an overview of the branding options and branding best practices.</p><p>[Portal branding guidance](portal-branding.md)</p>|
+|Branding|<p>Being able to apply a custom brand on a portal is a typical requirement and this article provides you with an overview of the branding options and branding best practices.</p><p>[Portal branding guidance](portal-branding.md)</p>|
 |Go Live|<p>Once you're portal has been developed and tested it's time to go live...but what strategy to follow for going live? This article will give you the Microsoft recommended approach.</p><p>[Portal go live guidance](portal-rollout.md)</p>|
 

@@ -14,7 +14,7 @@ _**Applies to:** SharePoint Online_
 
 If you wish to have problems with your portal in general, and your navigation solution in particular, consider the following Anti-Patterns:
 
-- Use Out-of-Box (OOB) **structural** site navigation when the site collections of your portal have complex  structure
+- Use Out-of-Box (OOB) **structural** site navigation when the site collections of your portal have complex structure (multiple level of sites and/or unique permissions)  
 - Use a custom navigation solution that requests all navigation nodes for all custom navigation controls as soon as the page loads, even for controls that are initially collapsed/hidden
 - Use a custom navigation solution that does not cache the navigation nodes it receives
 - Use a custom navigation solution that targets the legacy Lists (SOAP) web service
