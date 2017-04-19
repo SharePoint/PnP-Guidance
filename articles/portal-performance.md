@@ -15,7 +15,6 @@ _**Applies to:** SharePoint Online_
 If you wish to have performance problems with SharePoint in general, and your custom Portal in particular, consider the following Anti-Pattern:
 
 - Build a custom portal home page for a large enterprise (50,000 users)
-- Force lots of traffic to the page by mandating that all browsers open the portal page by default
 - Build custom client-side controls that issue client-side data requests to SharePoint and add a dozen or more of them to the page
 - Embed redundant custom JavaScript and CSS throughout the page body
 - Embed several 10MB thumbnail images throughout the page body
