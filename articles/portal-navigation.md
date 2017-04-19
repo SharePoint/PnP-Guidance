@@ -122,7 +122,7 @@ The Navigation Store API provides a programmatic interface to manage the configu
 
 You can choose to have the custom navigation control use either a custom Navigation Store API or an Out-of-Box (OOB) Navigation Store API. If you wish to develop and deploy a custom Navigation Store API, observe the following guidelines:
 
-- implement ASP.Net Web API 2.0
+- implement using the technology stack of your choice (ASP.Net Web API 2.0, Node.js,...)
 - host the API in an internet-accessible environment 
 - use Public DNS for name resolution
 - require SSL and obtain the SSL certificate from a Public Certificate Authority
@@ -131,7 +131,7 @@ You can choose to have the custom navigation control use either a custom Navigat
 
 For .Net client environments:
 
-- target SharePoint APIs via the SharePoint Client-Side Object Model (CSOM) 
+- target SharePoint APIs via the SharePoint Client-Side Object Model (CSOM or REST) 
 - target your custom Web APIs via REST
 - target third-party APIs via REST (use SOAP only if necessary)
 
