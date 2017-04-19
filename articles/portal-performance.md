@@ -230,7 +230,7 @@ A Content Delivery Network (CDN) is a Geo-dispersed network that allows an end-u
 - Consider a Content Delivery Network (CDN) to deliver your custom resource files
 	- [Azure CDN](https://azure.microsoft.com/en-us/services/cdn/)
 	- [SharePoint Online Public CDN](https://dev.office.com/blogs/office-365-public-cdn-developer-preview-release)
-	- [SharePoint Online Private CDN]() 
+	- [SharePoint Online Private CDN](https://dev.office.com/blogs/office-365-public-cdn-developer-preview-release) 
 	- SharePoint Portal Style Library - default option when a CDN is not used
 
 ### AJAX

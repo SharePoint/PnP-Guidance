@@ -26,7 +26,7 @@
 ### [Customizing "modern" team sites](modern-experience-customizations-customize-sites.md)
 ### [Customizing "modern" lists and libraries](modern-experience-customizations-customize-lists-and-libraries.md)
 ### [Customizing "modern" site pages](modern-experience-customizations-customize-pages.md)
-## [Publishing portal guidance](portal-overview.md)
+## [Building well performing SharePoint Online portals](portal-overview.md)
 ### [Performance guidance](portal-performance.md)
 ### [Information Architecture](portal-information-architecture.md)
 ### [Navigation considerations](portal-navigation.md)

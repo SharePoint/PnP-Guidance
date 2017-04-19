@@ -109,7 +109,7 @@ Content Aggregation can have significant impact on the performance of your porta
 ### Taxonomy
 Taxonomy covers both site **navigation** as well as **data**. Careful planning is required from a governance perspective, as well as a performance perspective. Think about core business functions to start, but also think about future growth and manageability. 
 
-##### Content Types
+**Content Types**
 Proper planning, configuration and implementation of content types and their associated metadata is fundamental to the ability to organize, manage, classify, and find information in SharePoint.
 
 Define a small set of global content types – which may be based on legal or records management team requirements, as well as authoring requirements for tagging, etc.
@@ -126,7 +126,7 @@ Create these in the content-type hub and use SharePoint CSOM to create content t
 For more information on Content Types and Content Type Publishing, see:
 [Introduction to Content Type and Content Type Publishing](https://support.office.com/en-US/article/Introduction-to-content-types-and-content-type-publishing-A5026D23-8DF8-42F6-B0D6-1920880C0D03)
 
-##### Managed Metadata
+**Managed Metadata**
 This is another topic similar to Content Types, that is too big for the scope of this article. For a good start and more information, see [Introduction to Managed Metadata](https://support.office.com/en-us/article/Introduction-to-managed-metadata-a180fa28-6405-4679-9ec3-81d2028c4efc)
 
 Metadata in SharePoint enables organizations to combine the advantages of formal, managed taxonomies with the dynamic benefits of social tagging in customized ways mapping to different information usage and management scenarios.
@@ -149,7 +149,7 @@ For planning managed metadata, the following worksheets are available:
 
 [Detailed term set planning worksheet](http://go.microsoft.com/fwlink/p/?LinkId=163487)
 
-##### Navigation
+**Navigation**
 Please refer to the [Portal Navigation Solutions article](portal-navigation.md) for more information on navigation best practices.
 
 ### Large Media
