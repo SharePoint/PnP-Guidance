@@ -13,7 +13,7 @@ _**Applies to:** SharePoint Online_
 Below list contains the key things **not** to do when it comes to branding your portal:
 - Override branding of Office 365 Suite Bar
 - Customize branding for personal sites
-- Start building branding solution by customizing masterpages
+- By default implement your custom branding by using custom master pages
 
 ## Overview
 <a name="sectionSection0"> </a>
@@ -32,14 +32,14 @@ Here are the typical branding requirements we hear from the customers, when buil
   - Customize the behavior of portal navigation
   - Add custom controls (web parts) on pages
 
-In the following sections we will discuss how to address these requirements.
+In the following sections, we will discuss how to address these requirements.
 
 ## General Principles
 <a name="sectionSection1"> </a>
 The following general principles should be considered when branding portals in an SharePoint Online environment:
-1. The SharePoint Online service is constantly improving. Updates provisioned to the service may affect DOM structure of out of the box pages, and the content of out of the box files (for example, masterpages). Developers must keep this in mind and should not rely on unsupported customization approaches (for example, position of specific element in DOM structure of the page).
-2. Avoid customizing masterpages. As mentioned above, updates to the service, may affect the structure of out of the box masterpages. If you have implemented custom masterpage copying the contents of any out of the box masterpage, you will need to further monitor if this out of the box masterpage is not updated, and re-implement these changes in your custom masterpage. Otherwise, some SharePoint functionality may start behaving incorrectly, when your custom masterpage is in use. That's why customizing masterpages leads to additional risks and maintenance costs, and we recommend to avoid it.
-3. Customized branding of personal sites is **not** supported. It is allowed to apply custom color schemes via Office 365 tenant level branding settings ([Customize the Office 365 theme for your organization](https://support.office.com/en-us/article/Customize-the-Office-365-theme-for-your-organization-8275da91-7a48-4591-94ab-3123a3f79530))
+1. The SharePoint Online service is constantly improving. Updates provisioned to the service may affect DOM structure of out of the box pages, and the content of out of the box files (for example, master pages). Developers must keep this in mind and should not rely on unsupported customization approaches (for example, position of specific element in DOM structure of the page).
+2. Avoid customizing master pages. As mentioned above, updates to the service, may affect the structure of out of the box master pages. If you have implemented custom master page copying the contents of any out of the box master page, you will need to further monitor if this out of the box master page is not updated, and re-implement these changes in your custom master page. Otherwise, some SharePoint functionality may start behaving incorrectly, when your custom master page is in use. That's why customizing master pages leads to additional risks and maintenance costs, and it's recommended to avoid it, when possible.
+3. Customized branding of personal sites (OneDrive for Business sites) is **not** supported. It is allowed to apply custom color schemes via Office 365 tenant level branding settings ([Customize the Office 365 theme for your organization](https://support.office.com/en-us/article/Customize-the-Office-365-theme-for-your-organization-8275da91-7a48-4591-94ab-3123a3f79530))
 4. SharePoint Online portals must be considered as a part of overall Office 365 ecosystem. That's why every portal now has Office 365 Suite Bar, and customizing it is **not** supported (see the section **Office 365 Suite Bar** below).
 5. When planning branding and structure of your navigation component, it is important to follow recommendations outlined in [Portal Navigation article](portal-navigation.md).
 6. When extending portal functionality via custom controls (web parts) it is important to follow recommendations from [Portal Performance article](portal-performance.md).
@@ -48,7 +48,7 @@ The following general principles should be considered when branding portals in a
 ## Customize The Look
 <a name="sectionSection2"> </a>
 There are several out of the box ways for customizing the look of SharePoint portals. First, administrators can customize the Office 365 theme for an entire tenant. Next, a custom theme can be applied to specific site. 
-These techniques can be used to "get" the needed colors / allow for flexible coloring across different portal sites. If more flexibility is needed, it is recommended that customers start from out of the box masterpage (seattle.master) and apply a custom theme and/or use the site custom CSS settings (``Web.AlternateCSSUrl``) to hookup the needed CSS files. Custom logo image can be set using the ``Web.SiteLogoUrl`` property. These techniques are demonstrated in the following articles and PnP samples:
+These techniques can be used to "get" the needed colors / allow for flexible coloring across different portal sites. If more flexibility is needed, it is recommended that customers start from out of the box master page (seattle.master) and apply a custom theme and/or use the site custom CSS settings (``Web.AlternateCSSUrl``) to hookup the needed CSS files. Custom logo image can be set using the ``Web.SiteLogoUrl`` property. These techniques are demonstrated in the following articles and PnP samples:
 - [Customize the Office 365 theme for your organization](https://support.office.com/en-us/article/Customize-the-Office-365-theme-for-your-organization-8275da91-7a48-4591-94ab-3123a3f79530)
 - [Theme management using CSOM](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.DeployCustomThemeWeb)
 - [Apply branding](https://github.com/SharePoint/PnP/tree/master/Samples/Branding.ApplyBranding)
@@ -59,6 +59,7 @@ There are several recommendations that should be followed when developing custom
 1. Limit overriding out of the box CSS classes
 2. Use the ``Web.AlternateCssUrl`` property to include custom CSS files
 3. Don't override the Office 365 Suite Bar branding as that will result in a disconnected experience when users navigate away from the portal
+
 
 ### Office 365 Sign-In Page
 Customers can apply company branding to Office 365 sign-in page. The process is described in the following article: [Add your company branding to Office 365 Sign In page](https://support.office.com/en-us/article/Add-your-company-branding-to-Office-365-Sign-In-Page-a1229cdb-ce19-4da5-90c7-2b9b146aef0a).
@@ -71,11 +72,11 @@ The guidance around the Suite Bar from the Microsoft perspective is the followin
 - You may modify/configure the Suite Bar, but only at the tenancy level, and only via the O365 Admin pages
 - You should NOT use code to alter (move, hide, etc.) the Suite Bar within your Application
 - You should NOT re-use aspects of the Suite Bar (e.g., the App Launcher icon) in your Application
-- If you decide to be "clever", you own the consequences of that decision
+- If you decide to be "clever", you will most likely run into unexpected issues in future
 
 ## Adjust The Layout
 <a name="sectionSection3"> </a>
-When talking about adjusting the layout of SharePoint portals, usually the first option that is considered by developers is creating a custom masterpage. Although custom masterpages are still supported, this approach is not recommended due to the reasons mentioned above - custom masterpages lead to additional risks and maintenance costs in long-term. That's why developers should consider alternative approaches that allow to adjust the layout of SharePoint portals. These include:
+When talking about adjusting the layout of SharePoint portals, usually the first option that is considered by developers is creating a custom master page. Although custom master pages are still supported, this approach is not recommended due to the reasons mentioned above - custom master pages lead to additional risks and maintenance costs in long-term. That's why developers should consider alternative approaches that allow to adjust the layout of SharePoint portals. These include:
 - Implementing custom CSS
 - Using custom page layouts
 - Implementing common branding elements (like "footer") by injecting client-side scripts (this approach is discussed in the next section)
@@ -87,16 +88,16 @@ Combining these approaches allows you to achieve your desired SharePoint portal 
 
 ## Add Functionality
 <a name="sectionSection4"> </a>
-Injecting client-side scripts in the pages can allow to further customize the look and functionality of the portal. For example, this approach can be used to customize navigation controls, to add custom headers and footers to all pages of the portal, or to implement other custom UI blocks.
+Embedding client-side scripts in the pages can allow to further customize the look and functionality of the portal. For example, this approach can be used to customize navigation controls, to add custom headers and footers to all pages of the portal, or to implement other custom UI blocks.
 
-The following approaches can be used to inject JavaScript:
-1. Add a custom action at site level. This can trigger the execution of a piece of JavaScript on all pages in the site.
+The following approaches can be used to embed JavaScript:
+1. Add a custom action at site or site collection level. This can trigger the execution of a piece of JavaScript on all pages in the site or site collection.
 2. Add Content Editor or Script Editor web part on a page with actual JavaScript code, or a link to JavaScript file. This can trigger the execution of JavaScript code on specific page.
 3. Include JavaScript code or a link to JavaScript file in contents of page layouts file. This can trigger execution of JavaScript on all publishing pages that use this page layouts file.
 
 It should be noted, that custom action approach works on "classic" sites only, including the current publishing portals.
 
-The following PnP samples demonstrate how JavaScript injection can be achieved:
+The following PnP samples demonstrate how JavaScript embedding can be achieved:
 - [Core.EmbedJavaScript](https://github.com/SharePoint/PnP/tree/master/Samples/Core.EmbedJavaScript)
 - [Core.EmbedJavaScriptJSOM](https://github.com/SharePoint/PnP/tree/master/Samples/Core.EmbedJavaScriptJSOM)
 - [Customization via JavaScript](https://github.com/SharePoint/PnP/tree/master/Samples/Core.JavaScriptCustomization)
