@@ -100,8 +100,11 @@ At the other end of the spectrum of custom Navigation Stores is the custom datab
 <a name="bk_oobNavStores"> </a> 
 
 - **OOB Managed Navigation (MMS)**: <a name="bk_managedNavStore"> </a> Managed Navigation allows you to use a Managed Metadata Service (MMS) Term set to configure the navigation nodes for a given site collection. OOB Navigation display controls automatically consume this data. The OOB Navigation Management Page provides an easy-to-use user interface to manage the navigation nodes within an *unconstrained* hierarchy (unlimited depth). Custom Navigation display controls can also consume this data, but must do so via JSOM as there is currently no REST API available to work with Managed Navigation.
+- 
 	>**Note:** It is quite cumbersome to configure and maintain a Global Navigation definition via Managed Navigation. As each new a site collection is created, you must duplicate the configuration for the site collection and its associated term set.
+
 - **OOB Structural Navigation (Site)**: <a name="bk_structuralNavStore"> </a> Structural Navigation allows you use the native structure of the site collection (its webs and pages), as well as authored headings and links, to configure the navigation nodes for a given site collection. The OOB Navigation Management Page provides a user interface to manage the navigation nodes within an *constrained* hierarchy (limited depth). Custom Navigation display controls can also consume this data, but must do so via JSOM as there is currently no REST API available to work with Structural Navigation.
+- 
 	>**Note:** The OOB Navigation display controls use database queries (i.e., content by query) to obtain the navigation data. They do this for each page load, which is very resource intensive for complex site collection structures. The use of Structural Navigation is recommended only for small portals with simple site collection structures.
 
 ### Navigation Management Page
