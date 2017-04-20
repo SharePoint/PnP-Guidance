@@ -1,14 +1,14 @@
 # Proven Practices for SharePoint Online Portal Information Architecture
 
-Having a sound information architecture is an important prerequisite for realizing a well maintainable and performing portal. Designing the optimal structure takes planning. If not done properly, there is a high risk of adversely affecting user adoption or possible significant performance issues and the likelihood of both is very possible. 
+Having a solid information architecture is an important prerequisite for realizing a well maintainable and performing portal. Designing the optimal structure requires detailed planning. If not done properly, there is a high risk of adversely affecting user adoption or possible significant performance issues and the likelihood of both is very possible. 
 
-Understand the business objectives and the organizational structure.
+You should be considering following factors:
 
-Understand what content you are dealing with, understand what the users requirements are, and how will they be using it. Is the content collaborative or published content? If so, it should be separated and then other considerations come into play such as classification levels. 
-
-Another important factor is the life-cycle of the content, and possible retention/disposition strategies. This also applies to sites as well. 
-
-Understand the users of the content, their behaviors, common tasks and expectations.
+- Business objectives and the organizational structure.
+- What kind of content you are dealing with. Is the content collaborative or published content? 
+- Content classification and confidentiality 
+- Life-cycle of the content, and possible retention/disposition strategies. This also applies to sites as well. 
+- Users of the content, their behaviors, common tasks and expectations.
 
 Once you know more about the users, the content, it's intended usage, you will have a good foundation to start with and can possibly avoid some of the common pitfalls around information architecture.
 
@@ -24,6 +24,7 @@ _**Applies to:** SharePoint Online_
 Below list contains the key things **not** to do when it comes to designing your portal information architecture:
 
 - Too many top-level parent portal site collections - This will cause confusion and can have adverse impacts on management, security considerations, usability, navigation and adoption in general.
+- Too deep hierarchies in single site collection with unique permissions - This can cause performance challenges.
 - Buried content - Content that is too deep impacts find-ability as well as adoption. If the user cannot find the content they are looking for, after a few levels deep, they will abandon their efforts and deem the portal as inefficient, which in turn, kills adoption. 
 - Stale content - Nobody likes stale content, and after a few times of seeing it, they won't come back for that reason. 
 - No use of content disposition strategies - This is needed to help avoiding stale content and to stay within the defined capacity boundaries. 
@@ -41,9 +42,9 @@ Information Architecture is not a one-time process, it a continuous process. Whi
 &nbsp;
 
 ### Site Organization Patterns
-Consider minimizing the number of top level Site Collection nodes and the number of sub-site levels within your IA.
+Consider minimizing the number of top level Site Collection nodes and the number of sub-site levels within your Information Architecture.
 
-The discussions have changed around horizontal/flat site collections vs vertical/hierarchical. In the past, we promoted flattening hierarchies into potentially several separate site collections. This was for many reasons such as IA best practices, menu structures, content database management, capacity, etc. As far as for capacity reasons, with SharePoint Online, that is not too relevant anymore. However there are other considerations now such as URL limitations and limits to the number of site collections with the exception of OneDrive. 
+The discussions have changed around horizontal/flat site collections vs vertical/hierarchical. In the past, we promoted flattening hierarchies into potentially several separate site collections. This was for many reasons such as IA best practices, menu structures, content database management, capacity, etc. As far as for capacity reasons, with SharePoint Online, that is not too relevant anymore. However there are other considerations now such as URL limitations. 
 
 For more information, refer to [SharePoint Online Software Boundaries and Limits](http://office.microsoft.com/en-us/office365-sharepoint-online-enterprise-help/sharepoint-online-software-boundaries-and-limits-HA102694293.aspx)
 
@@ -71,8 +72,6 @@ Sites considered as publishing portal sites might be structured as:
 		- Business Unit B
 		- ...
 
-
-&nbsp;
 
 Usually, not everything will migrate to the cloud immediately and all at once, so plan for a hybrid IA and evolve as necessary. Plan accordingly for Hybrid scenarios.
 
