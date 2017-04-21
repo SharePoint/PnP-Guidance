@@ -155,16 +155,13 @@ Please refer to the [Portal Navigation Solutions article](portal-navigation.md) 
 Large files, such as videos, images, PowerPoint files, can cause grief for users as they are expected to be retrieved fairly quickly. Files such as videos will need to stream at certain rates and some apps might not render until they have retrieved the file(s) needed. Consider externalizing large media files. This will help with user adoption. 
 
 Here are a few options to consider:
-
-[Meet Office 365 Video](https://support.office.com/en-us/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)
-
-[Manage your Office 365 Video portal](https://support.office.com/en-us/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da?ui=en-US&rs=en-US&ad=US)
+- [Meet Office 365 Video](https://support.office.com/en-us/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)
+- [Manage your Office 365 Video portal](https://support.office.com/en-us/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da?ui=en-US&rs=en-US&ad=US)
 
 The [Portal Branding](portal-branding.md) and [Portal Performance](portal-performance.md) articles highlight the use of CDN's as well.
 
 For more information on CDN's, see:
-
-- [Office 365 Public CDN Developer Preview Release](https://dev.office.com/blogs/office-365-public-cdn-developer-preview-release)
+- [Office 365 Public/Private CDN capability](https://dev.office.com/blogs/general-availability-of-office-365-cdn)
 - [Using content delivery networks with SharePoint Online](https://support.office.com/en-gb/article/Using-content-delivery-networks-with-SharePoint-Online-9a64268c-0b74-4eaa-b971-fb6380b1b165)
 - [CDN Manager](https://github.com/SharePoint/PnP/tree/master/Solutions/Core.CDNManager)
 

@@ -109,12 +109,12 @@ It is important to highlight, that when extending portal functionality by using 
 The final step in implementing branding solution is provisioning branding assets. Typically, these include images, CSS and JavaScript files. There are several approaches how these files can be deployed:
 1. Publish files to libraries in individual site collections. In this case each site collection can use its own version of branding assets. Access to files is controlled using standard SharePoint security mechanisms. However, updating files will require to re-upload these to every site collection.
 2. Publish files to library in one site collection (central location). In this scenario, all site collections can use the single latest version of branding assets. Updated files must be uploaded to one location only. Administrators must ensure that users of all site collections have access to the files published in central location.
-3. Publish files to CDN (web application, Azure CDN or Office 365 CDN). In this case, all site collections can use the single latest version of branding assets. Updated files must be uploaded to one location only. Using CDN's can improve performance, however the content is stored outside of SharePoint, and that's why assets cannot be protected using standard SharePoint security mechanisms.
+3. Publish files to CDN (web application, Azure CDN or Office 365 CDN). In this case, all site collections can use the single latest version of branding assets. Updated files must be uploaded to one location only. Using CDN's can improve performance, however the content is stored outside of SharePoint, and that's why assets cannot be protected using standard SharePoint security mechanisms, with the exception of the Office 365 private CDN capability which can secure files on a CDN.
 
-[PnP Provisioning Engine](https://dev.office.com/blogs/introduction-to-office-365-dev-pnp-provisioning-engine) can be used to deploy branding assets to SharePoint libraries. A custom provisioning approach is needed to publish files to CDN's.
+[PnP Provisioning Engine](https://dev.office.com/blogs/introduction-to-office-365-dev-pnp-provisioning-engine) can be used to deploy branding assets to SharePoint libraries. When using the Office 365 CDN capability the files are automatically provisioning in the CDN, when you use alternative CDN solutions a custom provisioning approach is needed to publish files to CDN's.
 
 For more information on CDN's, see:
-- [Office 365 Public CDN Developer Preview Release](https://dev.office.com/blogs/office-365-public-cdn-developer-preview-release)
+- [Office 365 Public/Private CDN capability](https://dev.office.com/blogs/general-availability-of-office-365-cdn)
 - [Using content delivery networks with SharePoint Online](https://support.office.com/en-gb/article/Using-content-delivery-networks-with-SharePoint-Online-9a64268c-0b74-4eaa-b971-fb6380b1b165)
 - [CDN Manager](https://github.com/SharePoint/PnP/tree/master/Solutions/Core.CDNManager)
 
