@@ -225,13 +225,15 @@ Use resource files effectively to improve the performance of your client-side we
 ### Content Delivery Network (CDN)
 <a name="bk_cdn"> </a>
 
-A Content Delivery Network (CDN) is a Geo-dispersed network that allows an end-user to obtain a given resource file from the closest CDN location.  Use of a CDN results in better download times and contributes to an improved perception of overall page performance.
+A Content Delivery Network (CDN) is a geo-dispersed network that allows an end-user to obtain a given resource file from the closest CDN location.  Use of a CDN results in better download times and contributes to an improved perception of overall page performance.
 
 - Leverage existing Content Delivery Networks to deliver third-party client-side frameworks (e.g., jQuery, Bootstrap, Knockout, AJAX, etc.)
 - Consider a Content Delivery Network (CDN) to deliver your custom resource files
 	- [Azure CDN](https://azure.microsoft.com/en-us/services/cdn/)
-	- [SharePoint Online Public CDN](https://dev.office.com/blogs/office-365-public-cdn-developer-preview-release)
+	- [Office 365 Public/Private CDN](https://dev.office.com/blogs/general-availability-of-office-365-cdn)
 	- SharePoint Portal Style Library - default option when a CDN is not used
+
+>**Note**: The [Office 365 private CDN capability](https://dev.office.com/blogs/general-availability-of-office-365-cdn) has a publishing feature auto URL rewriting to CDN urls. So once private CDN is enabled SharePoint will return your publishing pages with links pointing to your private CDN location without you as a developer having to built this. This applies to publishing pages, but also to data returned by the content by search web part, the picture library slideshow, image fields in SPList REST queries and SharePoint Image renditions. Your publishing portal can also combine both private and public CDN in the same portal.
 
 ### AJAX
 <a name="bk_ajax"> </a>
