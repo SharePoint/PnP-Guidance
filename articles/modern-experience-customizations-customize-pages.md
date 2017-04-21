@@ -38,6 +38,13 @@ If your site happens to use a custom theme, then this custom theme will be respe
 
 ![Modern page with custom branding coming from theme settings](media/modern-experiences/modern-page-with-custom-theme.png)
 
+## Why is my site not having the modern pages functionality?
+<a name="sitesversusmodernpages"> </a>
+The "modern" pages are delivered via the "Site Pages" web scoped feature (B6917CB1-93A0-4B97-A84D-7CF49975D4EC), so when this feature is activated your site will have the option to use "modern" pages. When Microsoft rolled out this feature we enabled this for all "modern" team sites (GROUP#0 sites) and for most "classic" team sites (STS#0). If a "classic" team site had a high count of web part or wiki pages the feature was not automatically enabled and the same applies to "classic" team sites with the publishing feature enabled. If you want "modern" page functionality in these sites you can still activate the "Site Pages" feature. This also implies that sites based on other templates do not have the "modern" pages functionality enabled. 
+
+Previous paragraph talked about how the "modern" page feature was enabled on existing sites, when you create a new "modern" or "classic" team sites (so GROUP#0 or STS#0) then the "modern" site pages feature will be enabled at provisioning time. Sites based on other templates will not get the "modern" site pages feature enabled.
+
+
 ## How to configure the end user experience
 <a name="configuremodernpages"> </a>
 You have multiple options to control whether the "modern" or "classic" page experience will be used. 
