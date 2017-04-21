@@ -101,11 +101,16 @@ At the other end of the spectrum of custom Navigation Stores is the custom datab
 
 - **OOB Managed Navigation (MMS)**: <a name="bk_managedNavStore"> </a> Managed Navigation allows you to use a Managed Metadata Service (MMS) Term set to configure the navigation nodes for a given site collection. OOB Navigation display controls automatically consume this data. The OOB Navigation Management Page provides an easy-to-use user interface to manage the navigation nodes within an *unconstrained* hierarchy (unlimited depth). Custom Navigation display controls can also consume this data, but must do so via JSOM as there is currently no REST API available to work with Managed Navigation.
 
-	>**Note:** It is quite cumbersome to configure and maintain a Global Navigation definition via Managed Navigation. As each new a site collection is created, you must duplicate the configuration for the site collection and its associated term set.
+	>**Note:** It is quite cumbersome to configure and maintain a Global Navigation definition via Managed Navigation. As each new a site collection is created, you must duplicate the configuration for the site collection and its associated term set. Also keep in mind that managed navigation is not security trimmed, so your users might see links which they cannot access.
 
 - **OOB Structural Navigation (Site)**: <a name="bk_structuralNavStore"> </a> Structural Navigation allows you use the native structure of the site collection (its webs and pages), as well as authored headings and links, to configure the navigation nodes for a given site collection. The OOB Navigation Management Page provides a user interface to manage the navigation nodes within an *constrained* hierarchy (limited depth). Custom Navigation display controls can also consume this data, but must do so via JSOM as there is currently no REST API available to work with Structural Navigation.
 
-	>**Note:** The OOB Navigation display controls use database queries (i.e., content by query) to obtain the navigation data. They do this for each page load, which is very resource intensive for complex site collection structures. The use of Structural Navigation is recommended only for small portals with simple site collection structures.
+	>**Note:** The OOB Navigation display controls use database queries (i.e., content by query) to obtain the navigation data. They do this for each page load, which is very resource intensive for complex site collection structures. The use of Structural Navigation is recommended only for small portals with simple site collection structures. Structural navigation is always returning security trimmed results.
+
+- **OOB Search driven Navigation (Search)**: <a name="bk_searchNavStore"> </a> Search driven navigation allows you query SharePoint for sites and pages by constructing the proper search query. There's no specific OOB navigation management page and you'll need to implement custom navigation display controls to consume the data retrieved from the search queries.
+
+	>**Note:** When using search driven navigation is important that you cache the obtained search results as you don't want to hit the server for each page load. Later in this article the client-side data access layer is explained which is the model to use in combination with search driven navigation. Just like structural navigation the search driven navigation is security trimmed, so your users will not see unreachable links. Downside of search driven navigation is that it's hard to control the order of the returned navigation items.
+
 
 ### Navigation Management Page
 <a name="bk_navManagementPage"> </a> 
@@ -158,6 +163,7 @@ Please refer to the [Portal Performance article](portal-performance.md) for more
 
 - [Portal performance guidance](portal-performance.md)
 - [Navigation Options for SharePoint Online](https://support.office.com/en-us/article/Navigation-options-for-SharePoint-Online-adb92b80-b342-4ecb-99a1-da2a2b4782eb?ui=en-US&rs=en-US&ad=US)
+- [Overview of managed navigation in SharePoint Server 2013](https://technet.microsoft.com/en-us/library/dn194311.aspx)
 - [PnP O365 Starter Intranet - Navigation details](http://thecollaborationcorner.com/2016/08/31/part-4-the-navigation-implementation/#.WNoU5oVOKiM)
 - [ASP.Net Web API 2.0](https://msdn.microsoft.com/en-us/library/dn448365(v=vs.118))
 - [Azure AD Authentication Library for JavaScript](https://github.com/AzureAD/azure-activedirectory-library-for-js)
