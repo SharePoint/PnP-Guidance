@@ -374,7 +374,7 @@ No. This is not currently supported with this API.
 **What permissions are required for executing this API??**
 You will need to have Global Admin permissions currently. SharePoint Admin is not sufficient.
 
-**Can I import taxonomy based multi-value properties?**
+**Can I import taxonomy based properties?**
 No. This is not currently supported with this API.
 
 **What if I define mapping in the code which is not used or have property in the JSON which is not mapped?**
