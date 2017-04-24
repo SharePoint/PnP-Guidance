@@ -59,7 +59,7 @@ If you want to completely disable the "modern" experience, then it's best to use
 > - The current configuration is cached, logging off the session will immediately show the effect of this change.
 
 ### Web level configuration
-You can prevent a web from using the "modern" page experience by disabling the web scoped feature with ID **B6917CB1-93A0-4B97-A84D-7CF49975D4EC**. To re-enable the "modern" page experience at the web level you'll need to activate the feature again.
+You can prevent a web from using the "modern" page experience by disabling the web scoped feature with ID **B6917CB1-93A0-4B97-A84D-7CF49975D4EC** (name = "Site Pages"). To re-enable the "modern" page experience at the web level you'll need to activate the feature again.
 
 Use the following [PnP PowerShell](aka.ms/sppnp-powershell) to enable/disable the needed features:
 
@@ -68,11 +68,15 @@ Use the following [PnP PowerShell](aka.ms/sppnp-powershell) to enable/disable th
 $cred = Get-Credential
 Connect-PnPOnline -Url https://[tenant].sharepoint.com/sites/siteurl -Credentials $cred
 
-# Prevent modern pages at web level
+# Prevent site pages at web level
 Disable-PnPFeature -Identity B6917CB1-93A0-4B97-A84D-7CF49975D4EC -Scope Web 
-# And again enable modern pages at web
+# And again enable site pages at web
 #Enable-PnPFeature -Identity B6917CB1-93A0-4B97-A84D-7CF49975D4EC -Scope Web 
 ```
+
+>**Notes:**
+> - When you disable the feature you'll not be able anymore to create new "modern" pages, but the already created pages stay working using the "modern" user experience. 
+
 
 ## Programming "modern" pages
 ### Adding "modern" pages
