@@ -107,7 +107,7 @@ At the other end of the spectrum of custom Navigation Stores is the custom datab
 
 	>**Note:** The OOB Navigation display controls use database queries (i.e., content by query) to obtain the navigation data. They do this for each page load, which is very resource intensive for complex site collection structures. The use of Structural Navigation is recommended only for small portals with simple site collection structures. Structural navigation is always returning security trimmed results.
 
-- **OOB Search driven Navigation (Search)**: <a name="bk_searchNavStore"> </a> Search driven navigation allows you query SharePoint for sites and pages by constructing the proper search query. There's no specific OOB navigation management page and you'll need to implement custom navigation display controls to consume the data retrieved from the search queries.
+- **OOB Search index (Search)**: <a name="bk_searchNavStore"> </a> Search driven navigation allows you query SharePoint search index for sites and pages by constructing the proper search query. There's no specific OOB navigation management page and you'll need to implement custom navigation display controls to consume the data retrieved from the search queries.
 
 	>**Note:** When using search driven navigation is important that you cache the obtained search results as you don't want to hit the server for each page load. Later in this article the client-side data access layer is explained which is the model to use in combination with search driven navigation. Just like structural navigation the search driven navigation is security trimmed, so your users will not see unreachable links. Downside of search driven navigation is that it's hard to control the order of the returned navigation items.
 
