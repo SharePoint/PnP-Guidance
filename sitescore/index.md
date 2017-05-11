@@ -1,1 +1,0 @@
-# Welcome to pnp_sites_core!
