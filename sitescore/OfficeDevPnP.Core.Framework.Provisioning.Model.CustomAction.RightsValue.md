@@ -3,8 +3,10 @@
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
+
 >This property is obsolete
 >Use Rights
+
 ## Syntax
 ```C#
 public int RightsValue { get; set; }

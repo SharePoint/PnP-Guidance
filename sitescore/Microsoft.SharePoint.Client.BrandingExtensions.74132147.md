@@ -3,8 +3,10 @@
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
+
 >This method is obsolete
 >Use DisableResponsiveUI(web)
+
 ## Syntax
 ```C#
 public static void DisableReponsiveUI(Web web)

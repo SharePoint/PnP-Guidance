@@ -12,7 +12,7 @@ public static class PublishingExtensions
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [AddPublishingPage(Web, String, String, String, Boolean, Folder, Nullable&lt;DateTime&gt;, Nullable&lt;DateTime&gt;, Boolean)](Microsoft.SharePoint.Client.PublishingExtensions.d99c5526.md) | Adds the publishing page.
+| [AddPublishingPage(Web, String, String, String, Boolean, Folder, Nullable&lt;DateTime&gt;, Nullable&lt;DateTime&gt;, Boolean)](Microsoft.SharePoint.Client.PublishingExtensions.d5677dfa.md) | Adds the publishing page.
 | [CreatePublishingImageRendition(Web, String, Int32, Int32)](Microsoft.SharePoint.Client.PublishingExtensions.9c5908ab.md) | Creates an Image Rendition if the name of the Image Rendition doesn't already exist.
 | [GetPublishingImageRenditions(Web)](Microsoft.SharePoint.Client.PublishingExtensions.a74cda31.md) | Returns all image renditions
 | [GetPublishingPage(Web, String)](Microsoft.SharePoint.Client.PublishingExtensions.369ba74.md) | Gets a Publishing Page from the root folder of the Pages library.

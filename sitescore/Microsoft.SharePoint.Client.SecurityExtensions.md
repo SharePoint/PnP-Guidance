@@ -12,7 +12,7 @@ public static class SecurityExtensions
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [AddAdministrators(Web, List&lt;UserEntity&gt;, Boolean)](Microsoft.SharePoint.Client.SecurityExtensions.7bea3925.md) | Add a site collection administrator to a site collection
+| [AddAdministrators(Web, List&lt;UserEntity&gt;, Boolean)](Microsoft.SharePoint.Client.SecurityExtensions.6ae7b819.md) | Add a site collection administrator to a site collection
 | [AddGroup(Web, String, String, Boolean, Boolean, Boolean)](Microsoft.SharePoint.Client.SecurityExtensions.6821c296.md) | Adds a group
 | [AddPermissionLevelToGroup(SecurableObject, String, RoleType, Boolean)](Microsoft.SharePoint.Client.SecurityExtensions.7e8844c.md) | Add a permission level (e.g.Contribute, Reader,...) to a group
 | [AddPermissionLevelToGroup(SecurableObject, String, String, Boolean)](Microsoft.SharePoint.Client.SecurityExtensions.e4482cf4.md) | Add a role definition (e.g.Contribute, Read, Approve) to a group
