@@ -21,7 +21,7 @@ public static Guid StartWorkflowInstance(ListItem item, Guid subscriptionId, IDi
   
 
 #### payload  
-&emsp;&emsp;Type: System.Collections.Generic.IDictionary<System.String, System.Object>  
+&emsp;&emsp;Type: System.Collections.Generic.IDictionary&lt;System.String, System.Object&gt;  
 &emsp;&emsp;Any input argument for the workflow instance  
 
   

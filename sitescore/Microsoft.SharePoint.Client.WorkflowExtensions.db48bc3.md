@@ -57,7 +57,7 @@ public static Guid AddWorkflowSubscription(List list, String workflowDefinitionN
   
 
 #### (optional) associationValues  
-&emsp;&emsp;Type: System.Collections.Generic.Dictionary<System.String, System.String>  
+&emsp;&emsp;Type: System.Collections.Generic.Dictionary&lt;System.String, System.String&gt;  
 &emsp;&emsp; Adds a workflow subscription   
 
   

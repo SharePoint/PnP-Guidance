@@ -15,7 +15,7 @@ public static void ProvisionTargetVariationLabels(ClientContext context, List<Va
   
 
 #### variationLabels  
-&emsp;&emsp;Type: System.Collections.Generic.List<OfficeDevPnP.Core.Entities.VariationLabelEntity>  
+&emsp;&emsp;Type: System.Collections.Generic.List&lt;OfficeDevPnP.Core.Entities.VariationLabelEntity&gt;  
 &emsp;&emsp;Variation labels  
 
   

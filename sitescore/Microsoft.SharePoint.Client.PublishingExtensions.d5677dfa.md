@@ -45,13 +45,13 @@ public static void AddPublishingPage(Web web, String pageName, String pageTempla
   
 
 #### (optional) startDate  
-&emsp;&emsp;Type: System.Nullable<System.DateTime>  
+&emsp;&emsp;Type: System.Nullable&lt;System.DateTime&gt;  
 &emsp;&emsp;Start date for scheduled publishing.  
 
   
 
 #### (optional) endDate  
-&emsp;&emsp;Type: System.Nullable<System.DateTime>  
+&emsp;&emsp;Type: System.Nullable&lt;System.DateTime&gt;  
 &emsp;&emsp;End date for scheduled publishing.  
 
   

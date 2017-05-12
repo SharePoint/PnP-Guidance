@@ -10,6 +10,6 @@ public interface ITypeResolver
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Resolve(Object, Dictionary<String, IResolver>, Boolean)](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.ITypeResolver.6cebf9bc.md) | Resolves a source type into a result
+| [Resolve(Object, Dictionary&lt;String, IResolver&gt;, Boolean)](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.ITypeResolver.9f519b2d.md) | Resolves a source type into a result
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.md)

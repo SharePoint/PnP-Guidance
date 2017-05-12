@@ -21,7 +21,7 @@ public static bool AddJsLink(Web web, String key, IEnumerable<String> scriptLink
   
 
 #### scriptLinks  
-&emsp;&emsp;Type: System.Collections.Generic.IEnumerable<System.String>  
+&emsp;&emsp;Type: System.Collections.Generic.IEnumerable&lt;System.String&gt;  
 &emsp;&emsp;IEnumerable list of links to javascript files  
 
   

@@ -15,7 +15,7 @@ public object Resolve(Object source, Dictionary<String, IResolver> resolvers, Bo
   
 
 #### (optional) resolvers  
-&emsp;&emsp;Type: System.Collections.Generic.Dictionary<System.String, OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.IResolver>  
+&emsp;&emsp;Type: System.Collections.Generic.Dictionary&lt;System.String, OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.IResolver&gt;  
 &emsp;&emsp; Resolves a source type into a result   
 
   

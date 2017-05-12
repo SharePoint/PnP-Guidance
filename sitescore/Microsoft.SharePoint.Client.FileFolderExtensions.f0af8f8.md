@@ -21,7 +21,7 @@ public static Folder EnsureFolder(Web web, String folderName, Expression<Func<Fo
   
 
 #### expressions  
-&emsp;&emsp;Type: System.Linq.Expressions.Expression<System.Func<Microsoft.SharePoint.Client.Folder, System.Object>>[]  
+&emsp;&emsp;Type: System.Linq.Expressions.Expression&lt;System.Func&lt;Microsoft.SharePoint.Client.Folder, System.Object&gt;&gt;[]  
 &emsp;&emsp;  
 
   

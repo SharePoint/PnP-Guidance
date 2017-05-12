@@ -9,13 +9,13 @@ public static void AddRange(IDictionary<TKey, TValue> dictionary, IDictionary<TK
 ```
 ### Parameters
 #### dictionary  
-&emsp;&emsp;Type: System.Collections.Generic.IDictionary<TKey, TValue>  
+&emsp;&emsp;Type: System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;  
 &emsp;&emsp;  
 
   
 
 #### range  
-&emsp;&emsp;Type: System.Collections.Generic.IDictionary<TKey, TValue>  
+&emsp;&emsp;Type: System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;  
 &emsp;&emsp;  
 
   

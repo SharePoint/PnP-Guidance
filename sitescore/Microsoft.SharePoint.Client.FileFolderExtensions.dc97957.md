@@ -15,7 +15,7 @@ public static void SetFileProperties(File file, IDictionary<String, String> prop
   
 
 #### properties  
-&emsp;&emsp;Type: System.Collections.Generic.IDictionary<System.String, System.String>  
+&emsp;&emsp;Type: System.Collections.Generic.IDictionary&lt;System.String, System.String&gt;  
 &emsp;&emsp;Dictionary of properties to set.  
 
   

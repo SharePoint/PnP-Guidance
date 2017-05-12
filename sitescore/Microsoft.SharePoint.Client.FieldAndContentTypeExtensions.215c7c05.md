@@ -15,7 +15,7 @@ public static void ReorderContentTypes(List list, IEnumerable<String> contentTyp
   
 
 #### contentTypeNamesOrIds  
-&emsp;&emsp;Type: System.Collections.Generic.IEnumerable<System.String>  
+&emsp;&emsp;Type: System.Collections.Generic.IEnumerable&lt;System.String&gt;  
 &emsp;&emsp;Content type names or ids to sort.  
 
   

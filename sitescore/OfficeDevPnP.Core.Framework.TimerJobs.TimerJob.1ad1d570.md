@@ -9,7 +9,7 @@ public List<String> UpdateAddedSites(List<String> addedSites)
 ```
 ### Parameters
 #### addedSites  
-&emsp;&emsp;Type: System.Collections.Generic.List<System.String>  
+&emsp;&emsp;Type: System.Collections.Generic.List&lt;System.String&gt;  
 &emsp;&emsp;List of added site Url's and/or wildcard site Url's  
 
   

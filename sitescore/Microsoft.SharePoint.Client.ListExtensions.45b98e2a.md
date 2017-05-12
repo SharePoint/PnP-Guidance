@@ -21,7 +21,7 @@ public static List GetListByUrl(Web web, String webRelativeUrl, Expression<Func<
   
 
 #### expressions  
-&emsp;&emsp;Type: System.Linq.Expressions.Expression<System.Func<Microsoft.SharePoint.Client.List, System.Object>>[]  
+&emsp;&emsp;Type: System.Linq.Expressions.Expression&lt;System.Func&lt;Microsoft.SharePoint.Client.List, System.Object&gt;&gt;[]  
 &emsp;&emsp;  
 
   

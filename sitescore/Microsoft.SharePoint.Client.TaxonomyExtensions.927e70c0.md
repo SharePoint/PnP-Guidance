@@ -21,7 +21,7 @@ public static void SetTaxonomyFieldValues(ListItem item, Guid fieldId, IEnumerab
   
 
 #### termValues  
-&emsp;&emsp;Type: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.Guid, System.String>>  
+&emsp;&emsp;Type: System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.Guid, System.String&gt;&gt;  
 &emsp;&emsp;The key and values of terms to set  
 
   

@@ -32,7 +32,7 @@ public static class CAML
 | [NotIncludes(String)](OfficeDevPnP.Core.Utilities.CAML.1518f754.md) | 
 | [Or(String, String[])](OfficeDevPnP.Core.Utilities.CAML.d687337d.md) | 
 | [OrderBy(OrderByField[])](OfficeDevPnP.Core.Utilities.CAML.e8e4df3.md) | 
-| [Today(Nullable<Int32>)](OfficeDevPnP.Core.Utilities.CAML.964aa169.md) | Creates the &lt;Today /&gt; node.
+| [Today(Nullable&lt;Int32&gt;)](OfficeDevPnP.Core.Utilities.CAML.21cdd2c8.md) | Creates the &lt;Today /&gt; node.
 | [ViewFields(String[])](OfficeDevPnP.Core.Utilities.CAML.4f215fe4.md) | 
 | [ViewQuery(String, String, Int32)](OfficeDevPnP.Core.Utilities.CAML.ca539507.md) | Root &lt;View&gt; and &lt;Query&gt; nodes.
 | [ViewQuery(ViewScope, String, String, String, Int32)](OfficeDevPnP.Core.Utilities.CAML.eb386895.md) | Root &lt;View&gt; and &lt;Query&gt; nodes.

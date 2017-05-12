@@ -27,13 +27,13 @@ public static Task SendEmailAsync(String servername, String fromAddress, String 
   
 
 #### to  
-&emsp;&emsp;Type: System.Collections.Generic.IEnumerable<System.String>  
+&emsp;&emsp;Type: System.Collections.Generic.IEnumerable&lt;System.String&gt;  
 &emsp;&emsp;List of TO addresses.  
 
   
 
 #### cc  
-&emsp;&emsp;Type: System.Collections.Generic.IEnumerable<System.String>  
+&emsp;&emsp;Type: System.Collections.Generic.IEnumerable&lt;System.String&gt;  
 &emsp;&emsp;List of CC addresses.  
 
   

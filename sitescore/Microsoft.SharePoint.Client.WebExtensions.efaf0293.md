@@ -15,7 +15,7 @@ public static void EnableRequestAccess(Web web, IEnumerable<String> emails)
   
 
 #### emails  
-&emsp;&emsp;Type: System.Collections.Generic.IEnumerable<System.String>  
+&emsp;&emsp;Type: System.Collections.Generic.IEnumerable&lt;System.String&gt;  
 &emsp;&emsp;The e-mail addresses to send access requests to.  
 
   

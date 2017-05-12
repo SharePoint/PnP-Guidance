@@ -27,43 +27,43 @@ public static void SetSiteProperties(Tenant tenant, String siteFullUrl, String t
   
 
 #### (optional) allowSelfServiceUpgrade  
-&emsp;&emsp;Type: System.Nullable<System.Boolean>  
+&emsp;&emsp;Type: System.Nullable&lt;System.Boolean&gt;  
 &emsp;&emsp; Sets tenant site Properties   
 
   
 
 #### (optional) sharingCapability  
-&emsp;&emsp;Type: System.Nullable<Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities>  
+&emsp;&emsp;Type: System.Nullable&lt;Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities&gt;  
 &emsp;&emsp; Sets tenant site Properties   
 
   
 
 #### (optional) storageMaximumLevel  
-&emsp;&emsp;Type: System.Nullable<System.Int64>  
+&emsp;&emsp;Type: System.Nullable&lt;System.Int64&gt;  
 &emsp;&emsp; Sets tenant site Properties   
 
   
 
 #### (optional) storageWarningLevel  
-&emsp;&emsp;Type: System.Nullable<System.Int64>  
+&emsp;&emsp;Type: System.Nullable&lt;System.Int64&gt;  
 &emsp;&emsp; Sets tenant site Properties   
 
   
 
 #### (optional) userCodeMaximumLevel  
-&emsp;&emsp;Type: System.Nullable<System.Double>  
+&emsp;&emsp;Type: System.Nullable&lt;System.Double&gt;  
 &emsp;&emsp; Sets tenant site Properties   
 
   
 
 #### (optional) userCodeWarningLevel  
-&emsp;&emsp;Type: System.Nullable<System.Double>  
+&emsp;&emsp;Type: System.Nullable&lt;System.Double&gt;  
 &emsp;&emsp; Sets tenant site Properties   
 
   
 
 #### (optional) noScriptSite  
-&emsp;&emsp;Type: System.Nullable<System.Boolean>  
+&emsp;&emsp;Type: System.Nullable&lt;System.Boolean&gt;  
 &emsp;&emsp; Sets tenant site Properties   
 
   
@@ -75,7 +75,7 @@ public static void SetSiteProperties(Tenant tenant, String siteFullUrl, String t
   
 
 #### (optional) timeoutFunction  
-&emsp;&emsp;Type: System.Func<OfficeDevPnP.Core.TenantOperationMessage, System.Boolean>  
+&emsp;&emsp;Type: System.Func&lt;OfficeDevPnP.Core.TenantOperationMessage, System.Boolean&gt;  
 &emsp;&emsp; Sets tenant site Properties   
 
   

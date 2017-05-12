@@ -33,7 +33,7 @@ public static void SaveFileToLocal(Web web, String serverRelativeUrl, String loc
   
 
 #### (optional) fileExistsCallBack  
-&emsp;&emsp;Type: System.Func<System.String, System.Boolean>  
+&emsp;&emsp;Type: System.Func&lt;System.String, System.Boolean&gt;  
 &emsp;&emsp;Optional callback function allowing to provide feedback if the file should be overwritten if it exists. The function requests a bool as return value and the string input contains the name of the file that exists.  
 
   

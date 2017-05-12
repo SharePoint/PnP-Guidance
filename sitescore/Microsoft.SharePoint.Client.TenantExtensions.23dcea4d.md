@@ -15,7 +15,7 @@ public static void AddAdministrators(Tenant tenant, IEnumerable<UserEntity> admi
   
 
 #### adminLogins  
-&emsp;&emsp;Type: System.Collections.Generic.IEnumerable<OfficeDevPnP.Core.Entities.UserEntity>  
+&emsp;&emsp;Type: System.Collections.Generic.IEnumerable&lt;OfficeDevPnP.Core.Entities.UserEntity&gt;  
 &emsp;&emsp;Array of admins loginnames to add  
 
   

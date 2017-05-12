@@ -9,7 +9,7 @@ public static string Today(Nullable<Int32> offset)
 ```
 ### Parameters
 #### (optional) offset  
-&emsp;&emsp;Type: System.Nullable<System.Int32>  
+&emsp;&emsp;Type: System.Nullable&lt;System.Int32&gt;  
 &emsp;&emsp;Time offset from today (+5 days or -5 days, for example).  
 
   

@@ -27,7 +27,7 @@ public static TermSet EnsureTermSet(TermGroup parentGroup, String termSetName, G
   
 
 #### (optional) lcid  
-&emsp;&emsp;Type: System.Nullable<System.Int32>  
+&emsp;&emsp;Type: System.Nullable&lt;System.Int32&gt;  
 &emsp;&emsp;(Optional) Default language of the term set; if not provided the default of the associate term store is used  
 
   
@@ -39,7 +39,7 @@ public static TermSet EnsureTermSet(TermGroup parentGroup, String termSetName, G
   
 
 #### (optional) isOpen  
-&emsp;&emsp;Type: System.Nullable<System.Boolean>  
+&emsp;&emsp;Type: System.Nullable&lt;System.Boolean&gt;  
 &emsp;&emsp;(Optional) Whether the term store is open for new term creation or not  
 
   

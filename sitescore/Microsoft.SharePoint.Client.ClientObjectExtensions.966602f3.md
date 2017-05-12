@@ -9,7 +9,7 @@ public static Expression<Func<TInput, Object>> ToUntypedPropertyExpression(Expre
 ```
 ### Parameters
 #### expression  
-&emsp;&emsp;Type: System.Linq.Expressions.Expression<System.Func<TInput, TOutput>>  
+&emsp;&emsp;Type: System.Linq.Expressions.Expression&lt;System.Func&lt;TInput, TOutput&gt;&gt;  
 &emsp;&emsp; to convert   
 
   

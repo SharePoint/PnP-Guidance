@@ -21,7 +21,7 @@ public static void SetAvailablePageLayouts(Web web, Web rootWeb, IEnumerable<Str
   
 
 #### pageLayouts  
-&emsp;&emsp;Type: System.Collections.Generic.IEnumerable<System.String>  
+&emsp;&emsp;Type: System.Collections.Generic.IEnumerable&lt;System.String&gt;  
 &emsp;&emsp;The page layouts to make available  
 
   

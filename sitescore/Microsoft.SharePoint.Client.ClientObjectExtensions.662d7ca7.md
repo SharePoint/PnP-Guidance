@@ -15,7 +15,7 @@ public static void EnsureProperties(T clientObject, Expression<Func<T, Object>>[
   
 
 #### propertySelector  
-&emsp;&emsp;Type: System.Linq.Expressions.Expression<System.Func<T, System.Object>>[]  
+&emsp;&emsp;Type: System.Linq.Expressions.Expression&lt;System.Func&lt;T, System.Object&gt;&gt;[]  
 &emsp;&emsp;Lamda expressions containing the properties to ensure (e.g. w => w.HasUniqueRoleAssignments, w => w.ServerRelativeUrl)  
 
   

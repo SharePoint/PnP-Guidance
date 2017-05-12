@@ -33,7 +33,7 @@ public static void SetSiteLockState(Tenant tenant, String siteFullUrl, SiteLockS
   
 
 #### (optional) timeoutFunction  
-&emsp;&emsp;Type: System.Func<OfficeDevPnP.Core.TenantOperationMessage, System.Boolean>  
+&emsp;&emsp;Type: System.Func&lt;OfficeDevPnP.Core.TenantOperationMessage, System.Boolean&gt;  
 &emsp;&emsp;An optional function that will be called while waiting for the site to be created. If set will override the wait variable. Return true to cancel the wait loop.  
 
   

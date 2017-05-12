@@ -3,6 +3,8 @@
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
+>This property is obsolete
+>Use PersistBrandingFiles instead
 ## Syntax
 ```C#
 public bool PersistComposedLookFiles { get; set; }

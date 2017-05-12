@@ -15,7 +15,7 @@ public static void SetAvailableWebTemplates(Web web, List<WebTemplateEntity> ava
   
 
 #### availableTemplates  
-&emsp;&emsp;Type: System.Collections.Generic.List<OfficeDevPnP.Core.Entities.WebTemplateEntity>  
+&emsp;&emsp;Type: System.Collections.Generic.List&lt;OfficeDevPnP.Core.Entities.WebTemplateEntity&gt;  
 &emsp;&emsp;List of objects that define the templates that are allowed  
 
   

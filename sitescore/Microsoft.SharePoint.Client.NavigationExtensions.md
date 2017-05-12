@@ -21,8 +21,8 @@ public static class NavigationExtensions
 | [DeleteCustomAction(Web, Guid)](Microsoft.SharePoint.Client.NavigationExtensions.4bb46a7f.md) | Removes a custom action
 | [DeleteCustomAction(Site, Guid)](Microsoft.SharePoint.Client.NavigationExtensions.f2016670.md) | Removes a custom action
 | [DeleteNavigationNode(Web, String, String, NavigationType)](Microsoft.SharePoint.Client.NavigationExtensions.54c91f2e.md) | Deletes a navigation node from the quickLaunch or top navigation bar
-| [GetCustomActions(Web, Expression<Func<UserCustomAction, Object>>[])](Microsoft.SharePoint.Client.NavigationExtensions.eac0e89b.md) | 
-| [GetCustomActions(Site, Expression<Func<UserCustomAction, Object>>[])](Microsoft.SharePoint.Client.NavigationExtensions.fc5b2546.md) | 
+| [GetCustomActions(Web, Expression&lt;Func&lt;UserCustomAction, Object&gt;&gt;[])](Microsoft.SharePoint.Client.NavigationExtensions.3ce8e31e.md) | 
+| [GetCustomActions(Site, Expression&lt;Func&lt;UserCustomAction, Object&gt;&gt;[])](Microsoft.SharePoint.Client.NavigationExtensions.4591c673.md) | 
 | [GetEditableNavigationTermSet(Web, ManagedNavigationKind)](Microsoft.SharePoint.Client.NavigationExtensions.12efa587.md) | Returns an editable version of the Global Navigation TermSet for a web site
 | [GetNavigationSettings(Web)](Microsoft.SharePoint.Client.NavigationExtensions.c72dbb5.md) | Returns the navigation settings for the selected web
 | [IsManagedNavigationEnabled(Web, ManagedNavigationKind)](Microsoft.SharePoint.Client.NavigationExtensions.60d1127.md) | Determines whether the current Web has the managed navigation enabled

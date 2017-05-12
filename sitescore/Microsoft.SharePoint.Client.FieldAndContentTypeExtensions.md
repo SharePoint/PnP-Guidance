@@ -78,7 +78,7 @@ public static class FieldAndContentTypeExtensions
 | [RemoveContentTypeFromListByName(Web, List, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.8aac8612.md) | Removes content type from list
 | [RemoveFieldById(Web, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.7f3bcd91.md) | Removes a field by specifying its ID
 | [RemoveFieldByInternalName(Web, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.d0b69cca.md) | Removes a field by specifying its internal name
-| [ReorderContentTypes(List, IEnumerable<String>)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.215c7c05.md) | Reorders content types on the list. The first one in the list is the default item. Any items left out from the list will still be on the content type, but will not be visible on the new button.
+| [ReorderContentTypes(List, IEnumerable&lt;String&gt;)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.f519245a.md) | Reorders content types on the list. The first one in the list is the default item. Any items left out from the list will still be on the content type, but will not be visible on the new button.
 | [SetDefaultContentTypeToList(Web, List, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.6b5dce6c.md) | Set default content type to list
 | [SetDefaultContentTypeToList(Web, List, ContentType)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.156c371a.md) | Set default content type to list
 | [SetDefaultContentTypeToList(Web, String, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.43df7b04.md) | Set default content type to list

@@ -15,7 +15,7 @@ public static void AddAdministrators(Web web, List<UserEntity> adminLogins, Bool
   
 
 #### adminLogins  
-&emsp;&emsp;Type: System.Collections.Generic.List<OfficeDevPnP.Core.Entities.UserEntity>  
+&emsp;&emsp;Type: System.Collections.Generic.List&lt;OfficeDevPnP.Core.Entities.UserEntity&gt;  
 &emsp;&emsp;Array of admins loginnames to add  
 
   

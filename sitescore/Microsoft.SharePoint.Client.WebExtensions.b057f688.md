@@ -15,7 +15,7 @@ public static ClientObjectList<AppInstance> GetAppInstances(Web web, Expression<
   
 
 #### expressions  
-&emsp;&emsp;Type: System.Linq.Expressions.Expression<System.Func<Microsoft.SharePoint.Client.AppInstance, System.Object>>[]  
+&emsp;&emsp;Type: System.Linq.Expressions.Expression&lt;System.Func&lt;Microsoft.SharePoint.Client.AppInstance, System.Object&gt;&gt;[]  
 &emsp;&emsp;  
 
   

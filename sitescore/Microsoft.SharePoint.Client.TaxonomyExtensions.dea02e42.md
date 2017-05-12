@@ -33,7 +33,7 @@ public static TermSet ImportTermSet(TermGroup termGroup, Stream termSetData, Gui
   
 
 #### (optional) termSetIsOpen  
-&emsp;&emsp;Type: System.Nullable<System.Boolean>  
+&emsp;&emsp;Type: System.Nullable&lt;System.Boolean&gt;  
 &emsp;&emsp;(Optional) Whether the term set should be marked open; if not passed, then the existing setting is not changed  
 
   

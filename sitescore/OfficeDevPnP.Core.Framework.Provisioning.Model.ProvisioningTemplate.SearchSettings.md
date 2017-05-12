@@ -3,6 +3,8 @@
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
+>This property is obsolete
+>Use SiteSearchSettings or WebSearchSettings. This property will be removed in the September 2016 release.
 ## Syntax
 ```C#
 public string SearchSettings { get; set; }

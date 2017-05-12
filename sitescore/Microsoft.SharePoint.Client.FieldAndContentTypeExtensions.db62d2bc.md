@@ -3,6 +3,8 @@
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
+>This method is obsolete
+>Use GetFieldByInternalName instead. This method returns field based on StaticName. This could lead to unexpected results due to StaticName property not necessarily being unique within a field collection. (https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spfield.staticname.aspx)
 ## Syntax
 ```C#
 public static Field GetFieldByName(FieldCollection fields, String internalName)

@@ -12,6 +12,6 @@ public static class DictionaryExtensions
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [AddRange(IDictionary<TKey, TValue>, IDictionary<TKey, TValue>)](OfficeDevPnP.Core.Extensions.DictionaryExtensions.3b1f6d7c.md) | 
+| [AddRange(IDictionary&lt;TKey, TValue&gt;, IDictionary&lt;TKey, TValue&gt;)](OfficeDevPnP.Core.Extensions.DictionaryExtensions.b7530dec.md) | 
 ## See also
 - [OfficeDevPnP.Core.Extensions](OfficeDevPnP.Core.Extensions.md)

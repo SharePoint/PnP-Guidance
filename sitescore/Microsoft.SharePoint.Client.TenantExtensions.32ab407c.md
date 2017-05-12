@@ -27,7 +27,7 @@ public static bool DeleteSiteCollection(Tenant tenant, String siteFullUrl, Boole
   
 
 #### (optional) timeoutFunction  
-&emsp;&emsp;Type: System.Func<OfficeDevPnP.Core.TenantOperationMessage, System.Boolean>  
+&emsp;&emsp;Type: System.Func&lt;OfficeDevPnP.Core.TenantOperationMessage, System.Boolean&gt;  
 &emsp;&emsp;An optional function that will be called while waiting for the site to be created. Return true to cancel the wait loop.  
 
   
