@@ -4,8 +4,8 @@
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Extensibility](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
 
->This method is obsolete
->Use ExecuteExtensibilityProvisionCallOut. This method will be removed in the June 2016 release.
+>**This method is obsolete**
+>:Use ExecuteExtensibilityProvisionCallOut. This method will be removed in the June 2016 release.
 
 ## Syntax
 ```C#

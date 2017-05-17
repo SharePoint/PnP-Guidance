@@ -4,8 +4,8 @@
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
 
->This property is obsolete
->Use ExtensibilityHandlers. This property will be removed in the June 2016 release.
+>**This property is obsolete**
+>:Use ExtensibilityHandlers. This property will be removed in the June 2016 release.
 
 ## Syntax
 ```C#
