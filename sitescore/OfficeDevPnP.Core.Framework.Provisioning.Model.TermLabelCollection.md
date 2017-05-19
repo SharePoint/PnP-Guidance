@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class TermLabelCollection: ProvisioningTemplateCollection<TermLabel>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [TermLabelCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabelCollection.ctor1.md) |  Collection of TermLabel objects 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

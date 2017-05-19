@@ -13,8 +13,8 @@ public class PnPClientContext: ClientContext
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [PnPClientContext(String, Int32, Int32)](OfficeDevPnP.Core.PnPClientContext.ctor1.md) |  
-| [PnPClientContext(Uri, Int32, Int32)](OfficeDevPnP.Core.PnPClientContext.ctor2.md) |  
+| [PnPClientContext(String, Int32, Int32)](OfficeDevPnP.Core.PnPClientContext.ctor1.md) | Creates a ClientContext allowing you to override the default retry and delay values of ExecuteQueryRetry 
+| [PnPClientContext(Uri, Int32, Int32)](OfficeDevPnP.Core.PnPClientContext.ctor2.md) | Creates a ClientContext allowing you to override the default retry and delay values of ExecuteQueryRetry 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

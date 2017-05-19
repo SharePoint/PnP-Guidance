@@ -1,5 +1,5 @@
 # ExternalSharingExtensions.ResolvePeoplePickerValueForEmail Method  
- Can be used to get needed people picker search result value for given email account. See &lt;a href="https://msdn.microsoft.com/en-us/library/office/jj179690.aspx"&gt;MSDN&lt;/a&gt;  
+ Can be used to get needed people picker search result value for given email account. See   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

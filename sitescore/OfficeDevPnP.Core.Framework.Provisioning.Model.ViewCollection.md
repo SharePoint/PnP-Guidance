@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class ViewCollection: ProvisioningTemplateCollection<View>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [ViewCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ViewCollection.ctor1.md) |  Collection of View objects 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

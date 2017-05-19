@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class SupportedUILanguageCollection: ProvisioningTemplateCollection<SupportedUILanguage>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [SupportedUILanguageCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.SupportedUILanguageCollection.ctor1.md) |  Collection of SupportedUILanguage objects 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

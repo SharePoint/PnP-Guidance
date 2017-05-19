@@ -1,5 +1,5 @@
 # PropertyContainerType.Properties PropertySpecified
- &lt;para xml:lang="en"&gt;Gets a value indicating whether the Property collection is empty.&lt;/para&gt;   
+Gets a value indicating whether the Property collection is empty.  
 
 **Namespace:** [OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

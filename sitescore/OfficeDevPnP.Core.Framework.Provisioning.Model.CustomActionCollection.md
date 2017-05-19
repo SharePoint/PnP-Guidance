@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class CustomActionCollection: ProvisioningTemplateCollection<CustomAction>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [CustomActionCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomActionCollection.ctor1.md) |  Collection of CustomAction objects 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

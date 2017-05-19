@@ -1,34 +1,27 @@
-# ProvisioningTemplateCollection.FindIndex Method  
-  
+# ProvisioningTemplateCollection.Find Method  
+ Finds an item matching a search predicate   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public int FindIndex(Int32 startIndex, Int32 count, Predicate match)
+public T Find(Predicate<T> match)
 ```
 ### Parameters
-#### startIndex  
-&emsp;&emsp;Type: System.Int32  
-&emsp;&emsp;  
-
-  
-
-#### count  
-&emsp;&emsp;Type: System.Int32  
-&emsp;&emsp;  
-
-  
-
 #### match  
-&emsp;&emsp;Type: System.Predicate  
-&emsp;&emsp;  
+&emsp;&emsp;Type: System.Predicate&lt;T&gt;  
+&emsp;&emsp;The matching predicate to use for finding any target item  
 
   
 
 ### Return Value
-Type: int  
+Type: T  
+The target item matching the find predicate  
 
+
+## Remarks
+We implemented this to adhere to the generic List of T behavior
+  
 ## See also
 - [ProvisioningTemplateCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

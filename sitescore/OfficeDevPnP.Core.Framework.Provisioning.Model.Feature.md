@@ -1,5 +1,5 @@
 # Feature Class
- Domain Object that represents an Feature.   
+ Domain Object that represents an Feature. / Domain Object that represents an Feature.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -13,7 +13,7 @@ public class Feature: BaseModel, IEquatable<Feature>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [Feature()](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.ctor1.md) |  Domain Object that represents an Feature. 
+| [Feature()](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.ctor1.md) |  Domain Object that represents an Feature. / Domain Object that represents an Feature. 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

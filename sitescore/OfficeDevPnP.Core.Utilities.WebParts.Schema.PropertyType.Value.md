@@ -1,5 +1,5 @@
 # PropertyType.Properties Value
- &lt;para xml:lang="en"&gt;Gets or sets the text value.&lt;/para&gt;   
+Gets or sets the text value.  
 
 **Namespace:** [OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

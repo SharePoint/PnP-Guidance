@@ -13,7 +13,7 @@ public class ProvisioningTemplateDictionary: KeyedCollection<TKey, TItem>, IProv
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ProvisioningTemplateDictionary(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateDictionary.ctor1.md) |  Generic keyed collection of items stored in the ProvisioningTemplate graph 
+| [ProvisioningTemplateDictionary(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateDictionary.ctor1.md) | Custom constructor to manage the ParentTemplate for the collection and all the children of the collection 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

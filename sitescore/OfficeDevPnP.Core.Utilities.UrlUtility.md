@@ -12,7 +12,7 @@ public static class UrlUtility
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [AppendQueryString(String, String)](OfficeDevPnP.Core.Utilities.UrlUtility.4066d2e4.md) |  Adds query string parameters to the end of a querystring and guarantees the proper concatenation with &lt;b&gt;?&lt;/b&gt; and &lt;b&gt;&amp;.&lt;/b&gt;
+| [AppendQueryString(String, String)](OfficeDevPnP.Core.Utilities.UrlUtility.4066d2e4.md) |  Adds query string parameters to the end of a querystring and guarantees the proper concatenation with 
 | [Combine(String, String[])](OfficeDevPnP.Core.Utilities.UrlUtility.855ffbf0.md) | Combines a path and a relative path.
 | [Combine(String, String)](OfficeDevPnP.Core.Utilities.UrlUtility.63559c31.md) | Combines a path and a relative path.
 | [ContainsInvalidUrlChars(String)](OfficeDevPnP.Core.Utilities.UrlUtility.7bcf7fd6.md) | 

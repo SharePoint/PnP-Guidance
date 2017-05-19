@@ -5,17 +5,17 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool DeepEquals(IEnumerable source, IEnumerable target)
+public static bool DeepEquals(IEnumerable<T> source, IEnumerable<T> target)
 ```
 ### Parameters
 #### source  
-&emsp;&emsp;Type: System.Collections.Generic.IEnumerable  
+&emsp;&emsp;Type: System.Collections.Generic.IEnumerable&lt;T&gt;  
 &emsp;&emsp;Source enumeration  
 
   
 
 #### target  
-&emsp;&emsp;Type: System.Collections.Generic.IEnumerable  
+&emsp;&emsp;Type: System.Collections.Generic.IEnumerable&lt;T&gt;  
 &emsp;&emsp;Target enumeration  
 
   

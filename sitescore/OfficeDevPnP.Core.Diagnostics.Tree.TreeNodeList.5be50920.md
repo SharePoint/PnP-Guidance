@@ -1,22 +1,22 @@
-# ITreeNodeList.Add Method  
+# TreeNodeList.Remove Method  
   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public ITreeNode Add(ITreeNode node)
+public bool Remove(ITreeNode<T> node)
 ```
 ### Parameters
 #### node  
-&emsp;&emsp;Type: [OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode.md)  
+&emsp;&emsp;Type: OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode&lt;T&gt;  
 &emsp;&emsp;  
 
   
 
 ### Return Value
-Type: ITreeNode  
+Type: bool  
 
 ## See also
-- [ITreeNodeList](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNodeList.md) 
+- [TreeNodeList](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.md) 
 - [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md) 

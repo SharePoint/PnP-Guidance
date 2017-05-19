@@ -13,8 +13,8 @@ public class AzureStorageConnector: FileConnectorBase
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [AzureStorageConnector()](OfficeDevPnP.Core.Framework.Provisioning.Connectors.AzureStorageConnector.ctor1.md) |  Connector for files in Azure blob storage 
-| [AzureStorageConnector(String, String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.AzureStorageConnector.ctor2.md) |  Connector for files in Azure blob storage 
+| [AzureStorageConnector()](OfficeDevPnP.Core.Framework.Provisioning.Connectors.AzureStorageConnector.ctor1.md) | Base constructor 
+| [AzureStorageConnector(String, String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.AzureStorageConnector.ctor2.md) | AzureStorageConnector constructor. Allows to directly set Azure Storage key and container 
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|

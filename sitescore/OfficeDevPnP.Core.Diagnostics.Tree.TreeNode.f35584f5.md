@@ -1,20 +1,20 @@
-# ITreeNode.SetParent Method  
+# TreeNode.SetParent Method  
   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void SetParent(ITreeNode Node, Boolean UpdateChildNodes)
+public void SetParent(ITreeNode<T> node, Boolean updateChildNodes)
 ```
 ### Parameters
-#### Node  
-&emsp;&emsp;Type: [OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode.md)  
+#### node  
+&emsp;&emsp;Type: OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode&lt;T&gt;  
 &emsp;&emsp;  
 
   
 
-#### (optional) UpdateChildNodes  
+#### (optional) updateChildNodes  
 &emsp;&emsp;Type: System.Boolean  
 &emsp;&emsp;  
 
@@ -24,5 +24,5 @@ public void SetParent(ITreeNode Node, Boolean UpdateChildNodes)
 Type: void  
 
 ## See also
-- [ITreeNode](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode.md) 
+- [TreeNode](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.md) 
 - [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md) 

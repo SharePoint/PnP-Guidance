@@ -1,5 +1,5 @@
 # UrlUtility.AppendQueryString Method  
- Adds query string parameters to the end of a querystring and guarantees the proper concatenation with &lt;b&gt;?&lt;/b&gt; and &lt;b&gt;&amp;.&lt;/b&gt;  
+ Adds query string parameters to the end of a querystring and guarantees the proper concatenation with   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,13 +10,13 @@ public static string AppendQueryString(String path, String queryString)
 ### Parameters
 #### path  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Adds query string parameters to the end of a querystring and guarantees the proper concatenation with &lt;b&gt;?&lt;/b&gt; and &lt;b&gt;&amp;.&lt;/b&gt;  
+&emsp;&emsp; Adds query string parameters to the end of a querystring and guarantees the proper concatenation with   
 
   
 
 #### queryString  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Adds query string parameters to the end of a querystring and guarantees the proper concatenation with &lt;b&gt;?&lt;/b&gt; and &lt;b&gt;&amp;.&lt;/b&gt;  
+&emsp;&emsp; Adds query string parameters to the end of a querystring and guarantees the proper concatenation with   
 
   
 

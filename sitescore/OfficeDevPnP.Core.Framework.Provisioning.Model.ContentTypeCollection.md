@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class ContentTypeCollection: ProvisioningTemplateCollection<ContentType>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [ContentTypeCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeCollection.ctor1.md) |  Collection of ContentType objects 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -1,5 +1,5 @@
 # ClientObjectExtensions.EnsureProperties Method  
- Ensures that particular properties are loaded on the Microsoft.SharePoint.Client.ClientObject  
+ Ensures that particular properties are loaded on the   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,7 +10,7 @@ public static void EnsureProperties(T clientObject, Expression<Func<T, Object>>[
 ### Parameters
 #### clientObject  
 &emsp;&emsp;Type: T  
-&emsp;&emsp; Ensures that particular properties are loaded on the Microsoft.SharePoint.Client.ClientObject  
+&emsp;&emsp; Ensures that particular properties are loaded on the   
 
   
 

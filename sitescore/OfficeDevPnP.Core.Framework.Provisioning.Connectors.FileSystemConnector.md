@@ -13,8 +13,8 @@ public class FileSystemConnector: FileConnectorBase
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [FileSystemConnector()](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.ctor1.md) |  Connector for files in file system 
-| [FileSystemConnector(String, String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.ctor2.md) |  Connector for files in file system 
+| [FileSystemConnector()](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.ctor1.md) | Base constructor 
+| [FileSystemConnector(String, String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.ctor2.md) | FileSystemConnector constructor. Allows to directly set root folder and sub folder 
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|

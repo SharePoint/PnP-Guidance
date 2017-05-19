@@ -13,8 +13,8 @@ public class MultipleSymmetricKeySecurityToken: SecurityToken
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [MultipleSymmetricKeySecurityToken(IEnumerable<Byte[]>)](OfficeDevPnP.Core.Utilities.MultipleSymmetricKeySecurityToken.ctor1.md) |  Represents a security token which contains multiple security keys that are generated using symmetric algorithms. 
-| [MultipleSymmetricKeySecurityToken(String, IEnumerable<Byte[]>)](OfficeDevPnP.Core.Utilities.MultipleSymmetricKeySecurityToken.ctor2.md) |  Represents a security token which contains multiple security keys that are generated using symmetric algorithms. 
+| [MultipleSymmetricKeySecurityToken(IEnumerable<Byte[]>)](OfficeDevPnP.Core.Utilities.MultipleSymmetricKeySecurityToken.ctor1.md) | Initializes a new instance of the MultipleSymmetricKeySecurityToken class. 
+| [MultipleSymmetricKeySecurityToken(String, IEnumerable<Byte[]>)](OfficeDevPnP.Core.Utilities.MultipleSymmetricKeySecurityToken.ctor2.md) | Initializes a new instance of the MultipleSymmetricKeySecurityToken class. 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

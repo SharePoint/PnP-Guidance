@@ -18,8 +18,8 @@ public class PropertyType
 |:-----|:-----|
 | [Name](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyType.Name.md) | 
 | [Null](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyType.Null.md) | 
-| [NullSpecified](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyType.NullSpecified.md) |  &lt;para xml:lang="en"&gt;Gets or sets a value indicating whether the Null property is specified.&lt;/para&gt; 
+| [NullSpecified](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyType.NullSpecified.md) | Gets or sets a value indicating whether the Null property is specified.
 | [Type](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyType.Type.md) | 
-| [Value](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyType.Value.md) |  &lt;para xml:lang="en"&gt;Gets or sets the text value.&lt;/para&gt; 
+| [Value](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyType.Value.md) | Gets or sets the text value.
 ## See also
 - [OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)

@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class DefaultDocumentCollection: ProvisioningTemplateCollection<DefaultDocument>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [DefaultDocumentCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.DefaultDocumentCollection.ctor1.md) |  
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

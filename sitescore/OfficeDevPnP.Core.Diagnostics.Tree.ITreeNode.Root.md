@@ -5,11 +5,11 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public ITreeNode Root { get; }
+public ITreeNode<T> Root { get; }
 ```
 
 ### Property Value
-Type: [OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode.md)  
+Type: OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode<T>  
 
 ## See also
 - [ITreeNode](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode.md) 

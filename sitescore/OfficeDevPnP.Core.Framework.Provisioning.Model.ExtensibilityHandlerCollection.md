@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class ExtensibilityHandlerCollection: ProvisioningTemplateCollection<ExtensibilityHandler>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [ExtensibilityHandlerCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ExtensibilityHandlerCollection.ctor1.md) |  Collection of ExtensibilityHandler objects 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)
