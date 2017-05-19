@@ -59,8 +59,6 @@ public static void SetComposedLookByUrl(Web web, String lookName, String palette
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [BrandingExtensions](Microsoft.SharePoint.Client.BrandingExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

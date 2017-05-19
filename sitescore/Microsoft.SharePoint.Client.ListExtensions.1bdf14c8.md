@@ -29,8 +29,6 @@ public static void CreateViewsFromXMLFile(Web web, String listUrl, String filePa
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

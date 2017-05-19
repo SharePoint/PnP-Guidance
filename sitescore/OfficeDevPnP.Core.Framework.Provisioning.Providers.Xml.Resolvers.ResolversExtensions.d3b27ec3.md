@@ -29,8 +29,6 @@ public static void SetPublicInstancePropertyValue(Object source, String property
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [ResolversExtensions](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.Resolvers.ResolversExtensions.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.Resolvers](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.Resolvers.md) 

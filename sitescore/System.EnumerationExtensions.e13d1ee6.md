@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool Missing(Enum obj, T value)
+public static bool Missing<T>(Enum obj, T value)
 ```
 ### Parameters
 #### obj  
@@ -23,8 +23,6 @@ public static bool Missing(Enum obj, T value)
 ### Return Value
 Type: bool  
 
-## Remarks
-  
 ## See also
 - [EnumerationExtensions](System.EnumerationExtensions.md) 
 - [System](System.md) 

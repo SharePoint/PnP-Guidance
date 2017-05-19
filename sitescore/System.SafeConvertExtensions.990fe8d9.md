@@ -23,8 +23,6 @@ public static Guid ToGuid(String input, Guid defaultValue)
 ### Return Value
 Type: Guid  
 
-## Remarks
-  
 ## See also
 - [SafeConvertExtensions](System.SafeConvertExtensions.md) 
 - [System](System.md) 

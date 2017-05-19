@@ -29,8 +29,6 @@ public IEnumerable<TokenDefinition> ExecuteTokenProviderCallOut(ClientContext ct
 ### Return Value
 Type: IEnumerable<TokenDefinition>  
 
-## Remarks
-  
 ## See also
 - [ExtensibilityManager](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.ExtensibilityManager.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Extensibility.ExtensiblityPipelineException](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.ExtensiblityPipelineException.md)

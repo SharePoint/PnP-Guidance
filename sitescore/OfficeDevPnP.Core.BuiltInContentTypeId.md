@@ -9,7 +9,7 @@ System.Object
 ```C#
 public static class BuiltInContentTypeId
 ```
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [Contains(String)](OfficeDevPnP.Core.BuiltInContentTypeId.30c4004e.md) | 

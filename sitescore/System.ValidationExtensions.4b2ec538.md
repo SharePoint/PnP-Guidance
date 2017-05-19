@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ValidateNotNullOrEmpty(T input, String variableName)
+public static void ValidateNotNullOrEmpty<T>(T input, String variableName)
 ```
 ### Parameters
 #### input  
@@ -23,8 +23,6 @@ public static void ValidateNotNullOrEmpty(T input, String variableName)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [ValidationExtensions](System.ValidationExtensions.md) 
 - System.ArgumentException

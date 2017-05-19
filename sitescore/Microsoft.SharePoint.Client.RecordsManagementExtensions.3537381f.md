@@ -17,8 +17,6 @@ public static void ActivateInPlaceRecordsManagementFeature(Site site)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [RecordsManagementExtensions](Microsoft.SharePoint.Client.RecordsManagementExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

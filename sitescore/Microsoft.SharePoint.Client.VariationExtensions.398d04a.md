@@ -23,8 +23,6 @@ public static void ProvisionSourceVariationLabel(ClientContext context, Variatio
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [VariationExtensions](Microsoft.SharePoint.Client.VariationExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

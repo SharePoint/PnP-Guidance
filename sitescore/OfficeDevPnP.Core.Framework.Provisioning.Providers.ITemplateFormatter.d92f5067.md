@@ -17,8 +17,6 @@ public void Initialize(TemplateProviderBase provider)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [ITemplateFormatter](OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateFormatter.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers](OfficeDevPnP.Core.Framework.Provisioning.Providers.md) 

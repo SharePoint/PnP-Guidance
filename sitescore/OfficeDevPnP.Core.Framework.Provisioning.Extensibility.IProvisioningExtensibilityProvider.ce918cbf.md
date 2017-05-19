@@ -29,8 +29,6 @@ public void ProcessRequest(ClientContext ctx, ProvisioningTemplate template, Str
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [IProvisioningExtensibilityProvider](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.IProvisioningExtensibilityProvider.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Extensibility](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.md) 

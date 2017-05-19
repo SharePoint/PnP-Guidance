@@ -73,8 +73,6 @@ Type: bool
 Declares whether the Office 365 Group has been updated or not  
 
 
-## Remarks
-  
 ## See also
 - [UnifiedGroupsUtility](OfficeDevPnP.Core.Framework.Graph.UnifiedGroupsUtility.md) 
 - [OfficeDevPnP.Core.Framework.Graph](OfficeDevPnP.Core.Framework.Graph.md) 

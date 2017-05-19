@@ -35,8 +35,6 @@ public static void DeleteUnifiedGroup(String groupId, String accessToken, Int32 
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [UnifiedGroupsUtility](OfficeDevPnP.Core.Framework.Graph.UnifiedGroupsUtility.md) 
 - [OfficeDevPnP.Core.Framework.Graph](OfficeDevPnP.Core.Framework.Graph.md) 

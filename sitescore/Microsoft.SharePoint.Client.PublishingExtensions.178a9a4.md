@@ -23,8 +23,6 @@ public static void RemovePublishingImageRendition(Web web, String imageRendition
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [PublishingExtensions](Microsoft.SharePoint.Client.PublishingExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

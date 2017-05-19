@@ -29,8 +29,6 @@ public static void ExecuteQueryRetry(ClientRuntimeContext clientContext, Int32 r
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [ClientContextExtensions](Microsoft.SharePoint.Client.ClientContextExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

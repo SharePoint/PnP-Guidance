@@ -47,8 +47,6 @@ public static void AddHtmlToWikiPage(Web web, String folder, String html, String
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [PageExtensions](Microsoft.SharePoint.Client.PageExtensions.md) 
 - System.ArgumentException

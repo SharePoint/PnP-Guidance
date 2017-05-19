@@ -53,8 +53,6 @@ public static Task SendEmailAsync(String servername, String fromAddress, String 
 ### Return Value
 Type: Task  
 
-## Remarks
-  
 ## See also
 - [MailUtility](OfficeDevPnP.Core.Utilities.MailUtility.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

@@ -34,7 +34,7 @@ public static class FileFolderExtensions
 | [GetFileAsString(Web, String)](Microsoft.SharePoint.Client.FileFolderExtensions.cccf4e5b.md) | Returns a file as string
 | [PublishFile(Web, String, String)](Microsoft.SharePoint.Client.FileFolderExtensions.1c9a167d.md) | Publishes a file existing on a server url
 | [PublishFileToLevel(File, FileLevel)](Microsoft.SharePoint.Client.FileFolderExtensions.be85f58d.md) | Publishes a file based on the type of versioning required on the parent library.
-| [ResolveSubFolder(Folder, String)](Microsoft.SharePoint.Client.FileFolderExtensions.228e8e66.md) |  Gets a folder with a given name in a given 
+| [ResolveSubFolder(Folder, String)](Microsoft.SharePoint.Client.FileFolderExtensions.228e8e66.md) |  Gets a folder with a given name in a given Microsoft.SharePoint.Client.Folder 
 | [SaveFileToLocal(Web, String, String, String, Func&lt;String, Boolean&gt;)](Microsoft.SharePoint.Client.FileFolderExtensions.b94118ad.md) | Saves a remote file to a local folder
 | [SetFileProperties(File, IDictionary&lt;String, String&gt;, Boolean)](Microsoft.SharePoint.Client.FileFolderExtensions.dc97957.md) | Sets file properties using a dictionary.
 | [UploadFile(Folder, String, String, Boolean)](Microsoft.SharePoint.Client.FileFolderExtensions.4188915.md) | Uploads a file to the specified folder.

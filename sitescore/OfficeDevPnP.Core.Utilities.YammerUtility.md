@@ -9,7 +9,7 @@ System.Object
 ```C#
 public static class YammerUtility
 ```
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [CreateYammerDiscussionPartXml(String, Int32, Boolean, Boolean, Boolean)](OfficeDevPnP.Core.Utilities.YammerUtility.4bbdbaf1.md) | Constructs the webpart XML for yammer group needed to inject as Yammer web part to SharePoint page

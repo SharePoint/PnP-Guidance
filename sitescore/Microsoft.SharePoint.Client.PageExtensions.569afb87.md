@@ -35,8 +35,6 @@ public static void DeleteWebPart(Web web, String folder, String title, String pa
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [PageExtensions](Microsoft.SharePoint.Client.PageExtensions.md) 
 - System.ArgumentException

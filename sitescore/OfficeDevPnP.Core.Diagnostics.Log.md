@@ -14,7 +14,7 @@ public static class Log
 |:-----|:-----|
 | [Logger](OfficeDevPnP.Core.Diagnostics.Log.Logger.md) | 
 | [LogLevel](OfficeDevPnP.Core.Diagnostics.Log.LogLevel.md) | 
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [Debug(String, String, Object[])](OfficeDevPnP.Core.Diagnostics.Log.515334b0.md) | 

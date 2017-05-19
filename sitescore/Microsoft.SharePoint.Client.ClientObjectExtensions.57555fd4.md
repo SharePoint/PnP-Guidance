@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Expression<Func<TInput, Object>> ToUntypedStaticMethodCallExpression(Expression<Func<TInput, TOutput>> expression)
+public static Expression<Func<TInput, Object>> ToUntypedStaticMethodCallExpression<T>(Expression<Func<TInput, TOutput>> expression)
 ```
 ### Parameters
 #### expression  
@@ -19,8 +19,6 @@ Type: Expression<Func<TInput,  Object>>
 New Expression where return type is object and not generic  
 
 
-## Remarks
-  
 ## See also
 - [ClientObjectExtensions](Microsoft.SharePoint.Client.ClientObjectExtensions.md) 
 - System.Linq.Expressions.Expression

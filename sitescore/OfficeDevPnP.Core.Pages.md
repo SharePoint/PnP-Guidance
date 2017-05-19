@@ -9,7 +9,7 @@
 |[ClientSideComponent](OfficeDevPnP.Core.Pages.ClientSideComponent.md)|Client side webpart object (retrieved via the _api/web/GetClientSideWebParts REST call)|
 |[CanvasControl](OfficeDevPnP.Core.Pages.CanvasControl.md)|Base control|
 |[ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md)|Controls of type 4 ( = text control)|
-|[ClientSideWebPart](OfficeDevPnP.Core.Pages.ClientSideWebPart.md)| This class is used to instantiate controls of type 3 (= client side web parts). Using this class you can instantiate a control and add it on a |
+|[ClientSideWebPart](OfficeDevPnP.Core.Pages.ClientSideWebPart.md)| This class is used to instantiate controls of type 3 (= client side web parts). Using this class you can instantiate a control and add it on a T:OfficeDevPnP.Core.Pages.ClientSidePage. |
 |[ClientSideCanvasControlData](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.md)|Abstract base class representing the json control data that will be included in each client side control (de-)serialization (data-sp-controldata attribute)|
 |[ClientSideTextControlData](OfficeDevPnP.Core.Pages.ClientSideTextControlData.md)|Control data for controls of type 4 (= text control)|
 |[ClientSideWebPartControlData](OfficeDevPnP.Core.Pages.ClientSideWebPartControlData.md)|Control data for controls of type 3 (= client side web parts)|

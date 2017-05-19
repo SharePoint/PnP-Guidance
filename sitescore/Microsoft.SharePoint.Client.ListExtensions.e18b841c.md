@@ -35,8 +35,6 @@ public static List CreateDocumentLibrary(Web web, String listName, Boolean enabl
 ### Return Value
 Type: List  
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - System.ArgumentException

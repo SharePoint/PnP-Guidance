@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsPropertyAvailable(T clientObject, Expression<Func<T, Object>> propertySelector)
+public static bool IsPropertyAvailable<T>(T clientObject, Expression<Func<T, Object>> propertySelector)
 ```
 ### Parameters
 #### clientObject  
@@ -25,8 +25,6 @@ Type: bool
 True if the property is available, false otherwise  
 
 
-## Remarks
-  
 ## See also
 - [ClientObjectExtensions](Microsoft.SharePoint.Client.ClientObjectExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

@@ -25,8 +25,6 @@ Type: ThemeEntity
 Entity with the attributes of the composed look, or null if the composed look does not exists or cannot be determined  
 
 
-## Remarks
-  
 ## See also
 - [BrandingExtensions](Microsoft.SharePoint.Client.BrandingExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

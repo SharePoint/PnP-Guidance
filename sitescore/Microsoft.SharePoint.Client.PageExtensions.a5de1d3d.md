@@ -29,8 +29,6 @@ public static void AddWikiPageByUrl(Web web, String serverRelativePageUrl, Strin
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [PageExtensions](Microsoft.SharePoint.Client.PageExtensions.md) 
 - System.ArgumentException

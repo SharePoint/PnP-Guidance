@@ -19,8 +19,6 @@ Type: SharePointOnlineCredentials
 Microsoft.SharePoint.Client.SharePointOnlineCredentials  
 
 
-## Remarks
-  
 ## See also
 - [CredentialManager](OfficeDevPnP.Core.Utilities.CredentialManager.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

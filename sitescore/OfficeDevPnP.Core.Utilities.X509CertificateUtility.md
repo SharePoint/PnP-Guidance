@@ -9,7 +9,7 @@ System.Object
 ```C#
 public static class X509CertificateUtility
 ```
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [Decrypt(Byte[], Boolean, X509Certificate2)](OfficeDevPnP.Core.Utilities.X509CertificateUtility.441713b6.md) | Decrypts data based on the RSACryptoServiceProvider

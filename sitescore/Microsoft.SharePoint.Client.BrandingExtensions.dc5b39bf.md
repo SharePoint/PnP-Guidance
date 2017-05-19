@@ -29,8 +29,6 @@ public static void SetAvailablePageLayouts(Web web, Web rootWeb, IEnumerable<Str
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [BrandingExtensions](Microsoft.SharePoint.Client.BrandingExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

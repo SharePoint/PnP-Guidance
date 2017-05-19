@@ -41,8 +41,6 @@ public static void SetPageOutputCache(Web web, Boolean enableOutputCache, Int32 
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [WebExtensions](Microsoft.SharePoint.Client.WebExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

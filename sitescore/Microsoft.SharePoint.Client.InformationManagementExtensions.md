@@ -1,5 +1,7 @@
 # InformationManagementExtensions Class
- Class that holds deprecated information management extension methods / Class that deals with information management features   
+ Class that holds deprecated information management extension methods 
+
+ Class that deals with information management features   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

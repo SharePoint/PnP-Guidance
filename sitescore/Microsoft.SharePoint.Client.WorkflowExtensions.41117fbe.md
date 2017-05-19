@@ -19,8 +19,6 @@ Type: WorkflowInstanceCollection
   
 
 
-## Remarks
-  
 ## See also
 - [WorkflowExtensions](Microsoft.SharePoint.Client.WorkflowExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

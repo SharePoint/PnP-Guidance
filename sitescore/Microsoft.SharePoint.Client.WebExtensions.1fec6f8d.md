@@ -17,8 +17,6 @@ public static void DisableRequestAccess(Web web)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [WebExtensions](Microsoft.SharePoint.Client.WebExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

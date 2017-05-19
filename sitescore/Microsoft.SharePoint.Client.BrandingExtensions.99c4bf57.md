@@ -23,8 +23,6 @@ public static void SetAvailableWebTemplates(Web web, List<WebTemplateEntity> ava
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [BrandingExtensions](Microsoft.SharePoint.Client.BrandingExtensions.md) 
 - [OfficeDevPnP.Core.Entities.WebTemplateEntity](OfficeDevPnP.Core.Entities.WebTemplateEntity.md)

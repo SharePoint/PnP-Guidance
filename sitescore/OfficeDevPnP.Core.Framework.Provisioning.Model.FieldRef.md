@@ -1,5 +1,7 @@
 # FieldRef Class
- Represents a Field XML Markup that is used to define information about a field / Represents a Field XML Markup that is used to define information about a field   
+ Represents a Field XML Markup that is used to define information about a field 
+
+ Represents a Field XML Markup that is used to define information about a field   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -13,8 +15,8 @@ public class FieldRef: BaseModel, IEquatable<FieldRef>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [FieldRef()](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.ctor1.md) |  Represents a Field XML Markup that is used to define information about a field / Represents a Field XML Markup that is used to define information about a field 
-| [FieldRef(String)](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.ctor2.md) |  Represents a Field XML Markup that is used to define information about a field / Represents a Field XML Markup that is used to define information about a field 
+| [FieldRef()](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.ctor1.md) |  Represents a Field XML Markup that is used to define information about a field Represents a Field XML Markup that is used to define information about a field 
+| [FieldRef(String)](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.ctor2.md) |  Represents a Field XML Markup that is used to define information about a field Represents a Field XML Markup that is used to define information about a field 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

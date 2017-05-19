@@ -55,8 +55,6 @@ Type: NavigationNode
 Newly added NavigationNode  
 
 
-## Remarks
-  
 ## See also
 - [NavigationExtensions](Microsoft.SharePoint.Client.NavigationExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

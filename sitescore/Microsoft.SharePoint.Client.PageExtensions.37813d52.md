@@ -23,8 +23,6 @@ public static IEnumerable<WebPartDefinition> GetWebParts(Web web, String serverR
 ### Return Value
 Type: IEnumerable<WebPartDefinition>  
 
-## Remarks
-  
 ## See also
 - [PageExtensions](Microsoft.SharePoint.Client.PageExtensions.md) 
 - System.ArgumentException

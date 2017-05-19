@@ -12,8 +12,6 @@ Type: List<String>
 List of files  
 
 
-## Remarks
-  
 ## See also
 - [OpenXMLConnector](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXMLConnector.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md) 

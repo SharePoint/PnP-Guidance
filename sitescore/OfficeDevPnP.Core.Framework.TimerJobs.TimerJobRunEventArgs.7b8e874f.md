@@ -23,8 +23,6 @@ public void SetProperty(String propertyKey, String propertyValue)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [TimerJobRunEventArgs](OfficeDevPnP.Core.Framework.TimerJobs.TimerJobRunEventArgs.md) 
 - [OfficeDevPnP.Core.Framework.TimerJobs](OfficeDevPnP.Core.Framework.TimerJobs.md) 

@@ -29,8 +29,6 @@ public static void SetTaxonomyFieldValues(ListItem item, Guid fieldId, IEnumerab
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [TaxonomyExtensions](Microsoft.SharePoint.Client.TaxonomyExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

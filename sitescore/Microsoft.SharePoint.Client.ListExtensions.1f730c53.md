@@ -29,8 +29,6 @@ public static void SetListPermission(List list, BuiltInIdentity user, RoleType r
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

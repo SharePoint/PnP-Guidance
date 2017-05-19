@@ -49,8 +49,6 @@ Type: ListItem
 The ListItem of the added package row  
 
 
-## Remarks
-  
 ## See also
 - [TenantExtensions](Microsoft.SharePoint.Client.TenantExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

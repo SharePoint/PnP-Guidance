@@ -29,8 +29,6 @@ public static void SetPropertyBagValue(Web web, String key, String value)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [WebExtensions](Microsoft.SharePoint.Client.WebExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

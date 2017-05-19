@@ -38,13 +38,10 @@ public class ClientSidePage
 | [AvailableClientSideComponents(DefaultClientSideWebParts)](OfficeDevPnP.Core.Pages.ClientSidePage.6beeff0e.md) | 
 | [AvailableClientSideComponents(String)](OfficeDevPnP.Core.Pages.ClientSidePage.fd6341ca.md) | 
 | [Delete()](OfficeDevPnP.Core.Pages.ClientSidePage.19cb6464.md) | 
+| [FromHtml(String)](OfficeDevPnP.Core.Pages.ClientSidePage.5145f098.md) | 
 | [InstantiateDefaultWebPart(DefaultClientSideWebParts)](OfficeDevPnP.Core.Pages.ClientSidePage.c91a53c3.md) | 
+| [Load(ClientContext, String)](OfficeDevPnP.Core.Pages.ClientSidePage.83cd9dec.md) | 
 | [Save(String)](OfficeDevPnP.Core.Pages.ClientSidePage.679ae7d1.md) | 
 | [ToHtml()](OfficeDevPnP.Core.Pages.ClientSidePage.7c2b006f.md) | 
-## Extension Methods
-|**Name**|**Description**|
-|:-----|:-----|
-| [FromHtml(String)](OfficeDevPnP.Core.Pages.ClientSidePage.5145f098.md) | 
-| [Load(ClientContext, String)](OfficeDevPnP.Core.Pages.ClientSidePage.83cd9dec.md) | 
 ## See also
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

@@ -1,5 +1,5 @@
 # ExternalSharingExtensions.CreateAnonymousLinkForDocument Method  
- Creates anonymous link to given document. See   
+ Creates anonymous link to given document. See MSDN  
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -31,8 +31,6 @@ Type: string
 Anonymous URL to the file as string  
 
 
-## Remarks
-  
 ## See also
 - [ExternalSharingExtensions](Microsoft.SharePoint.Client.ExternalSharingExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

@@ -12,8 +12,6 @@ Type: List<String>
 List of folders  
 
 
-## Remarks
-  
 ## See also
 - [AzureStorageConnector](OfficeDevPnP.Core.Framework.Provisioning.Connectors.AzureStorageConnector.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md) 

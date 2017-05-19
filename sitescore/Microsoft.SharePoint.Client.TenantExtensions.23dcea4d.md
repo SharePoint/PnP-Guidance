@@ -35,8 +35,6 @@ public static void AddAdministrators(Tenant tenant, IEnumerable<UserEntity> admi
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [TenantExtensions](Microsoft.SharePoint.Client.TenantExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

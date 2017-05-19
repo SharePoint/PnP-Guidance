@@ -19,8 +19,6 @@ Type: List
 The publishing pages library. Returns null if library was not found.  
 
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - System.InvalidOperationException

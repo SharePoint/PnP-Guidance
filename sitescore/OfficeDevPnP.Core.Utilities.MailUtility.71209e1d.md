@@ -41,8 +41,6 @@ public static void SendEmail(ClientContext context, IEnumerable<String> to, IEnu
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [MailUtility](OfficeDevPnP.Core.Utilities.MailUtility.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

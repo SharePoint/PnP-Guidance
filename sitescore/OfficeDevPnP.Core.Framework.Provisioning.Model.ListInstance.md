@@ -1,5 +1,7 @@
 # ListInstance Class
- This class holds deprecated ListInstance properties and methods / Domain Object that specifies the properties of the new list.   
+ This class holds deprecated ListInstance properties and methods 
+
+ Domain Object that specifies the properties of the new list.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -13,11 +15,11 @@ public class ListInstance: BaseModel, IEquatable<ListInstance>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ListInstance()](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor1.md) |  This class holds deprecated ListInstance properties and methods / Domain Object that specifies the properties of the new list. 
-| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor2.md) |  This class holds deprecated ListInstance properties and methods / Domain Object that specifies the properties of the new list. 
-| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor3.md) |  This class holds deprecated ListInstance properties and methods / Domain Object that specifies the properties of the new list. 
-| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity, List<Folder>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor4.md) |  This class holds deprecated ListInstance properties and methods / Domain Object that specifies the properties of the new list. 
-| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity, List<Folder>, List<CustomAction>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor5.md) |  This class holds deprecated ListInstance properties and methods / Domain Object that specifies the properties of the new list. 
+| [ListInstance()](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor1.md) |  This class holds deprecated ListInstance properties and methods Domain Object that specifies the properties of the new list. 
+| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor2.md) |  This class holds deprecated ListInstance properties and methods Domain Object that specifies the properties of the new list. 
+| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor3.md) |  This class holds deprecated ListInstance properties and methods Domain Object that specifies the properties of the new list. 
+| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity, List<Folder>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor4.md) |  This class holds deprecated ListInstance properties and methods Domain Object that specifies the properties of the new list. 
+| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity, List<Folder>, List<CustomAction>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor5.md) |  This class holds deprecated ListInstance properties and methods Domain Object that specifies the properties of the new list. 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

@@ -17,8 +17,6 @@ public static IList<ImageRendition> GetPublishingImageRenditions(Web web)
 ### Return Value
 Type: IList<ImageRendition>  
 
-## Remarks
-  
 ## See also
 - [PublishingExtensions](Microsoft.SharePoint.Client.PublishingExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

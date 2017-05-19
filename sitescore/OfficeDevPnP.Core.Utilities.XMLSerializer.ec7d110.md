@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static T Deserialize(XDocument xdoc)
+public static T Deserialize<T>(XDocument xdoc)
 ```
 ### Parameters
 #### xdoc  
@@ -19,8 +19,6 @@ Type: T
   
 
 
-## Remarks
-  
 ## See also
 - [XMLSerializer](OfficeDevPnP.Core.Utilities.XMLSerializer.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

@@ -25,7 +25,7 @@ public class SharePointContextToken: JsonWebSecurityToken
 | [RefreshToken](OfficeDevPnP.Core.Utilities.SharePointContextToken.RefreshToken.md) | The context token's "refreshtoken" claim
 | [SecurityTokenServiceUri](OfficeDevPnP.Core.Utilities.SharePointContextToken.SecurityTokenServiceUri.md) | The context token's "SecurityTokenServiceUri" claim
 | [TargetPrincipalName](OfficeDevPnP.Core.Utilities.SharePointContextToken.TargetPrincipalName.md) | The principal name portion of the context token's "appctxsender" claim
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [Create(JsonWebSecurityToken)](OfficeDevPnP.Core.Utilities.SharePointContextToken.34df5d13.md) | 

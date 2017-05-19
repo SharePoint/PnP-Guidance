@@ -49,8 +49,6 @@ Type: WebPartDefinition
 Returns the added Microsoft.SharePoint.Client.WebParts.WebPartDefinition object  
 
 
-## Remarks
-  
 ## See also
 - [PageExtensions](Microsoft.SharePoint.Client.PageExtensions.md) 
 - Microsoft.SharePoint.Client.WebParts.WebPartDefinition

@@ -23,8 +23,6 @@ public static void UpdateNavigationInheritance(Web web, Boolean inheritNavigatio
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [NavigationExtensions](Microsoft.SharePoint.Client.NavigationExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

@@ -29,8 +29,6 @@ public static void ApplyProvisioningTemplate(Web web, ProvisioningTemplate templ
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [WebExtensions](Microsoft.SharePoint.Client.WebExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

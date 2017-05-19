@@ -59,8 +59,6 @@ public static Web CreateWeb(Web parentWeb, String title, String leafUrl, String 
 ### Return Value
 Type: Web  
 
-## Remarks
-  
 ## See also
 - [WebExtensions](Microsoft.SharePoint.Client.WebExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

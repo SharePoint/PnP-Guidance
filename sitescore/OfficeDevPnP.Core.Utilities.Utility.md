@@ -9,7 +9,7 @@ System.Object
 ```C#
 public static class Utility
 ```
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [GetHealthScore(String)](OfficeDevPnP.Core.Utilities.Utility.f79703a9.md) | Returns the healthscore for a SharePoint Server

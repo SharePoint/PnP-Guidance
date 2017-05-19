@@ -1,5 +1,7 @@
 # ProvisioningTemplate Class
- Domain Object for the Provisioning Template / Domain Object for the Provisioning Template   
+ Domain Object for the Provisioning Template 
+
+ Domain Object for the Provisioning Template   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -12,8 +14,8 @@ public class ProvisioningTemplate: IEquatable<ProvisioningTemplate>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ProvisioningTemplate()](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ctor1.md) |  Domain Object for the Provisioning Template / Domain Object for the Provisioning Template 
-| [ProvisioningTemplate(FileConnectorBase)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ctor2.md) |  Domain Object for the Provisioning Template / Domain Object for the Provisioning Template 
+| [ProvisioningTemplate()](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ctor1.md) |  Domain Object for the Provisioning Template Domain Object for the Provisioning Template 
+| [ProvisioningTemplate(FileConnectorBase)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ctor2.md) |  Domain Object for the Provisioning Template Domain Object for the Provisioning Template 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

@@ -23,8 +23,6 @@ public static void SetSearchConfiguration(Web web, String searchConfiguration)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [SearchExtensions](Microsoft.SharePoint.Client.SearchExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

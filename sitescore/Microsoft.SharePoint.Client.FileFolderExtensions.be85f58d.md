@@ -23,8 +23,6 @@ public static void PublishFileToLevel(File file, FileLevel level)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [FileFolderExtensions](Microsoft.SharePoint.Client.FileFolderExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

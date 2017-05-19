@@ -1,5 +1,7 @@
 # FieldAndContentTypeExtensions Class
- This class holds deprecated extension methods that will help you work with fields and content types. / This class provides extension methods that will help you work with fields and content types.   
+ This class holds deprecated extension methods that will help you work with fields and content types. 
+
+ This class provides extension methods that will help you work with fields and content types.   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -9,6 +11,10 @@ System.Object
 ```C#
 public static class FieldAndContentTypeExtensions
 ```
+## Methods
+|**Name**|**Description**|
+|:-----|:-----|
+| [FormatFieldXml(FieldCreationInformation)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.f06bc135.md) | Formats a fieldcreationinformation object into Field CAML xml.
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|
@@ -38,10 +44,10 @@ public static class FieldAndContentTypeExtensions
 | [CreateContentTypeFromXMLFile(Web, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.521fec1b.md) | Create a content type based on the classic feature framework structure.
 | [CreateContentTypeFromXMLString(Web, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.5df0e3e9.md) | Create a content type based on the classic feature framework structure.
 | [CreateField(Web, FieldCreationInformation, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.c9f9b03f.md) | Create field to web remotely / Create field to web remotely
-| [CreateField(Web, FieldCreationInformation, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.c9f9b03f.md) | 
+| [CreateField&lt;T&gt;(Web, FieldCreationInformation, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.c9f9b03f.md) | 
 | [CreateField(Web, String, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.8be6143a.md) | Create field to web remotely
 | [CreateField(List, FieldCreationInformation, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.9167a54e.md) | Adds field to a list / Adds field to a list
-| [CreateField(List, FieldCreationInformation, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.9167a54e.md) | 
+| [CreateField&lt;T&gt;(List, FieldCreationInformation, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.9167a54e.md) | 
 | [CreateField(List, String, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.db895c0.md) | Adds a field to a list
 | [CreateFieldsFromXML(Web, XDocument)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.9bc8d719.md) | Creates field from xml structure which follows the classic feature framework structure
 | [CreateFieldsFromXMLFile(Web, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.c7cd2cf8.md) | Creates fields from feature element xml file schema. XML file can contain one or many field definitions created using classic feature framework structure.
@@ -56,19 +62,18 @@ public static class FieldAndContentTypeExtensions
 | [FieldExistsByName(List, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.67ff82ce.md) | Field exists in list by name
 | [FieldExistsByNameInContentType(Web, String, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.6b483df3.md) | Field exists in content type
 | [FieldExistsByNameInContentType(ContentType, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.470ae95f.md) | Checks if a field exists in a content type by id
-| [FormatFieldXml(FieldCreationInformation)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.f06bc135.md) | Formats a fieldcreationinformation object into Field CAML xml.
 | [GetContentTypeById(Web, String, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.9e769121.md) | Return content type by Id
 | [GetContentTypeById(List, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.5ba34f83.md) | Return content type by Id
 | [GetContentTypeByName(Web, String, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.dac8c10a.md) | Return content type by name
 | [GetContentTypeByName(List, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.7e65e981.md) | Return content type by name
-| [GetFieldById(Web, Guid, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.a552175c.md) | Returns the field if it exists. Null if it does not exist. / Returns the field if it exists. Null if it does not exist.
+| [GetFieldById&lt;T&gt;(Web, Guid, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.a552175c.md) | Returns the field if it exists. Null if it does not exist. / Returns the field if it exists. Null if it does not exist.
 | [GetFieldById(Web, Guid, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.a552175c.md) | 
-| [GetFieldById(List, Guid)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.f00c000f.md) | Returns the field if it exists. Null if it does not exist. / Returns the field if it exists. Null if it does not exist.
+| [GetFieldById&lt;T&gt;(List, Guid)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.f00c000f.md) | Returns the field if it exists. Null if it does not exist. / Returns the field if it exists. Null if it does not exist.
 | [GetFieldById(List, Guid)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.f00c000f.md) | 
 | [GetFieldByInternalName(Web, String, Boolean)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.3ca86595.md) | Returns the field if it exists. Null if does not exist.
-| [GetFieldByInternalName(FieldCollection, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.a6b12c6.md) | Returns the field if it exists. Null if it does not exist. / Returns the field if it exists. Null if it does not exist.
+| [GetFieldByInternalName&lt;T&gt;(FieldCollection, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.a6b12c6.md) | Returns the field if it exists. Null if it does not exist. / Returns the field if it exists. Null if it does not exist.
 | [GetFieldByInternalName(FieldCollection, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.a6b12c6.md) | 
-| [GetFieldByName(FieldCollection, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.db62d2bc.md) | Returns the field if it exists. Null if it does not exist. / Returns the field if it exists. Null if it does not exist.
+| [GetFieldByName&lt;T&gt;(FieldCollection, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.db62d2bc.md) | Returns the field if it exists. Null if it does not exist. / Returns the field if it exists. Null if it does not exist.
 | [GetFieldByName(FieldCollection, String)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.db62d2bc.md) | 
 | [GetFields(List, String[])](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.96a2398f.md) | Gets a list of fields from a list by names.
 | [RemoveContentTypeFromList(Web, List, ContentType)](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.ed537a75.md) | Removes content type from a list

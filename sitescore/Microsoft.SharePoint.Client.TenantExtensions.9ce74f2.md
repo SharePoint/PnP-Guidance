@@ -43,8 +43,6 @@ Type: IList<SiteEntity>
 An IList of SiteEntity objects  
 
 
-## Remarks
-  
 ## See also
 - [TenantExtensions](Microsoft.SharePoint.Client.TenantExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

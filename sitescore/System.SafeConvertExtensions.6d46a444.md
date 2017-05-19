@@ -17,8 +17,6 @@ public static long ToInt64(String input)
 ### Return Value
 Type: long  
 
-## Remarks
-  
 ## See also
 - [SafeConvertExtensions](System.SafeConvertExtensions.md) 
 - [System](System.md) 

@@ -20,7 +20,7 @@ public class WebPartPageWebPart: IXmlSerializable
 | [Order](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.WebPartPageWebPart.Order.md) | 
 | [Title](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.WebPartPageWebPart.Title.md) | 
 | [Zone](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.WebPartPageWebPart.Zone.md) | 
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [GetSchema(XmlSchemaSet)](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.WebPartPageWebPart.b4f30151.md) | 

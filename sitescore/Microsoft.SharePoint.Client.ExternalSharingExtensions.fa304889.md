@@ -23,8 +23,6 @@ public static SharingResult UnshareDocument(Web web, String urlToDocument)
 ### Return Value
 Type: SharingResult  
 
-## Remarks
-  
 ## See also
 - [ExternalSharingExtensions](Microsoft.SharePoint.Client.ExternalSharingExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

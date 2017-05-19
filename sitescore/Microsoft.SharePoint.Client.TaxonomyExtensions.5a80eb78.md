@@ -29,8 +29,6 @@ public static void SetTaxonomyFieldValueByTermPath(ListItem item, String TermPat
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [TaxonomyExtensions](Microsoft.SharePoint.Client.TaxonomyExtensions.md) 
 - System.Collections.Generic.KeyNotFoundException

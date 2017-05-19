@@ -29,9 +29,6 @@ public class PnPPackage: IDisposable
 |:-----|:-----|
 | [AddFile(String, Byte[])](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.c1f2e4e7.md) | 
 | [ClearFiles()](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.8277ac85.md) | 
-## Extension Methods
-|**Name**|**Description**|
-|:-----|:-----|
 | [Open(String, FileMode, FileAccess)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.423b4a84.md) | 
 | [Open(Stream, FileMode, FileAccess)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.fa8e8f48.md) | 
 ## See also

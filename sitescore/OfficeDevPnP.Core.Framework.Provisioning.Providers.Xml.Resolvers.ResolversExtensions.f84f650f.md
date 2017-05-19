@@ -25,8 +25,6 @@ Type: PropertyInfo
 The property, if any  
 
 
-## Remarks
-  
 ## See also
 - [ResolversExtensions](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.Resolvers.ResolversExtensions.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.Resolvers](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.Resolvers.md) 

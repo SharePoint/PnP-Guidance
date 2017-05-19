@@ -21,7 +21,7 @@ public class BaseFieldValue: IXmlSerializable
 |:-----|:-----|
 | [FieldName](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.BaseFieldValue.FieldName.md) | 
 | [Value](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.BaseFieldValue.Value.md) | 
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [GetSchema(XmlSchemaSet)](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.BaseFieldValue.b4f30151.md) | 

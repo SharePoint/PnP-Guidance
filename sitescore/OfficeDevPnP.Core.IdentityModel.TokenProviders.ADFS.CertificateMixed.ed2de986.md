@@ -43,8 +43,6 @@ Type: CookieContainer
 A cookiecontainer holding the FedAuth cookie  
 
 
-## Remarks
-  
 ## See also
 - [CertificateMixed](OfficeDevPnP.Core.IdentityModel.TokenProviders.ADFS.CertificateMixed.md) 
 - [OfficeDevPnP.Core.IdentityModel.TokenProviders.ADFS](OfficeDevPnP.Core.IdentityModel.TokenProviders.ADFS.md) 

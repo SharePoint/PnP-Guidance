@@ -53,8 +53,6 @@ public static SharingResult ShareDocument(Web web, String urlToDocument, String 
 ### Return Value
 Type: SharingResult  
 
-## Remarks
-  
 ## See also
 - [ExternalSharingExtensions](Microsoft.SharePoint.Client.ExternalSharingExtensions.md) 
 - [Microsoft.SharePoint.Client.ExternalSharingExtensions.ShareDocument(Microsoft.SharePoint.Client.Web,System.String,System.String,Microsoft.SharePoint.Client.ExternalSharingDocumentOption,System.Boolean,System.String,System.Boolean)](Microsoft.SharePoint.Client.ExternalSharingExtensions.66dc7567.md)

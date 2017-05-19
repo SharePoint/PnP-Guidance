@@ -1,5 +1,5 @@
 # ClientSideWebPart.Properties Type
- Return   
+Return  [OfficeDevPnP.Core.Pages.ClientSideWebPart.Type](OfficeDevPnP.Core.Pages.ClientSideWebPart.Type.md)  of the client side web part  
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

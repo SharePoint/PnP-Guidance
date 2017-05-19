@@ -19,8 +19,6 @@ Type: string
   
 
 
-## Remarks
-  
 ## See also
 - [SearchExtensions](Microsoft.SharePoint.Client.SearchExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

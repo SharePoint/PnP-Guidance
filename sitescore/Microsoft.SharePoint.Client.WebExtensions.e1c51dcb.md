@@ -49,8 +49,6 @@ Type: EventReceiverDefinition
 Returns an EventReceiverDefinition if succeeded. Returns null if failed.  
 
 
-## Remarks
-  
 ## See also
 - [WebExtensions](Microsoft.SharePoint.Client.WebExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

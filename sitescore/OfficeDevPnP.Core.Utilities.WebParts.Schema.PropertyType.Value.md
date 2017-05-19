@@ -1,4 +1,6 @@
 # PropertyType.Properties Value
+
+
 Gets or sets the text value.  
 
 **Namespace:** [OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)  

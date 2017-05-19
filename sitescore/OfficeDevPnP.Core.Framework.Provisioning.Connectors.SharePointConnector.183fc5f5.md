@@ -12,8 +12,6 @@ Type: List<String>
 List of folders  
 
 
-## Remarks
-  
 ## See also
 - [SharePointConnector](OfficeDevPnP.Core.Framework.Provisioning.Connectors.SharePointConnector.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md) 

@@ -37,8 +37,6 @@ Type: string
   
 
 
-## Remarks
-  
 ## See also
 - [CAML](OfficeDevPnP.Core.Utilities.CAML.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

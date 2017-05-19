@@ -37,8 +37,6 @@ Type: File
 The uploaded file, with at least the ServerRelativeUrl property available  
 
 
-## Remarks
-  
 ## See also
 - [BrandingExtensions](Microsoft.SharePoint.Client.BrandingExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

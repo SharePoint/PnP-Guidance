@@ -25,8 +25,6 @@ Type: bool
 True if action was successfull  
 
 
-## Remarks
-  
 ## Examples
 ```C#
 var editAction = new CustomActionEntity()

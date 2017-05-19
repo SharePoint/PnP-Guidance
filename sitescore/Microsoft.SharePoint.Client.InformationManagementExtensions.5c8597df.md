@@ -19,8 +19,6 @@ Type: bool
 True if site was opened, false otherwise  
 
 
-## Remarks
-  
 ## See also
 - [InformationManagementExtensions](Microsoft.SharePoint.Client.InformationManagementExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

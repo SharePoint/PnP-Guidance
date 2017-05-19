@@ -1,5 +1,5 @@
 # ContentType Class
- Domain Object used in the Provisioning template that defines a Content Type   
+ Domain Object used in the Provisioning template that defines a Content Type https://msdn.microsoft.com/en-us/library/office/ms463449.aspx  
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -13,8 +13,8 @@ public class ContentType: BaseModel, IEquatable<ContentType>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ContentType()](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.ctor1.md) |  Domain Object used in the Provisioning template that defines a Content Type 
-| [ContentType(String, String, String, String, Boolean, Boolean, Boolean, String, Boolean, IEnumerable<FieldRef>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.ctor2.md) |  Domain Object used in the Provisioning template that defines a Content Type 
+| [ContentType()](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.ctor1.md) |  Domain Object used in the Provisioning template that defines a Content Type https://msdn.microsoft.com/en-us/library/office/ms463449.aspx 
+| [ContentType(String, String, String, String, Boolean, Boolean, Boolean, String, Boolean, IEnumerable<FieldRef>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.ctor2.md) |  Domain Object used in the Provisioning template that defines a Content Type https://msdn.microsoft.com/en-us/library/office/ms463449.aspx 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

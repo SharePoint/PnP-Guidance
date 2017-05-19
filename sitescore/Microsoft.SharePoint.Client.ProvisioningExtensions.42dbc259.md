@@ -23,8 +23,6 @@ public static void ProvisionElementFile(Web web, String path)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [ProvisioningExtensions](Microsoft.SharePoint.Client.ProvisioningExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

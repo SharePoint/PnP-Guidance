@@ -23,8 +23,6 @@ public static void SetSiteCollectionSearchCenterUrl(Web web, String searchCenter
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [SearchExtensions](Microsoft.SharePoint.Client.SearchExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

@@ -23,8 +23,6 @@ public static ContentType CreateContentTypeFromXML(Web web, XDocument xDocument)
 ### Return Value
 Type: ContentType  
 
-## Remarks
-  
 ## See also
 - [FieldAndContentTypeExtensions](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

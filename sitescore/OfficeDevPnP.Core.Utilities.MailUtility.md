@@ -13,7 +13,7 @@ public class MailUtility
 |**Name**|**Description**|
 |:-----|:-----|
 | [MailUtility()](OfficeDevPnP.Core.Utilities.MailUtility.ctor1.md) |  
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [SendEmail(String, String, String, IEnumerable&lt;String&gt;, IEnumerable&lt;String&gt;, String, String, Boolean, Object)](OfficeDevPnP.Core.Utilities.MailUtility.9d2d16ff.md) | Sends an email via Office 365 SMTP

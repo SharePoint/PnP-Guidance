@@ -25,8 +25,6 @@ Type: YammerGroup
 Returns Yammer Group is group exists. If group does not exists, returns null.  
 
 
-## Remarks
-  
 ## See also
 - [YammerUtility](OfficeDevPnP.Core.Utilities.YammerUtility.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

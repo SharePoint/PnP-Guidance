@@ -47,8 +47,6 @@ public static void SetThemeByUrl(Web web, String paletteServerRelativeUrl, Strin
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [BrandingExtensions](Microsoft.SharePoint.Client.BrandingExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 
