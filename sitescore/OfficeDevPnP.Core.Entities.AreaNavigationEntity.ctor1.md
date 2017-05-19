@@ -1,5 +1,5 @@
 # AreaNavigationEntity.AreaNavigationEntity members 
-  
+ ctor   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -7,6 +7,8 @@
 ```C#
 public AreaNavigationEntity()
 ```
+## Remarks
+  
 ## See also
 - [AreaNavigationEntity](OfficeDevPnP.Core.Entities.AreaNavigationEntity.md)
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)

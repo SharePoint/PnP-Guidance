@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class WorkflowSubscriptionCollection: ProvisioningTemplateCollection<WorkflowSubscription>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [WorkflowSubscriptionCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscriptionCollection.ctor1.md) |  Defines a collection of objects of type WorkflowSubscription 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

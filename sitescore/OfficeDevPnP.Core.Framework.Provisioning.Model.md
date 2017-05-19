@@ -3,13 +3,13 @@
 |**Class**|**Description**|
 |:-----|:-----|
 |[ComposedLook](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.md)|Domain Object that defines a Composed Look in the Provision Template|
-|[ContentType](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.md)| Domain Object used in the Provisioning template that defines a Content Type &gt;&lt;cref&gt;https://msdn.microsoft.com/en-us/library/office/ms463449.aspx&lt;/cref&gt;&lt;/see&gt;|
+|[ContentType](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.md)| Domain Object used in the Provisioning template that defines a Content Type |
 |[ContentTypeBinding](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.md)|Domain Object for Content Type Binding in the Provisioning Template|
-|[Feature](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.md)|Domain Object that represents an Feature.|
-|[FieldRef](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.md)|Represents a Field XML Markup that is used to define information about a field|
-|[ListInstance](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.md)|This class holds deprecated ListInstance properties and methods|
+|[Feature](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.md)|Domain Object that represents an Feature. / Domain Object that represents an Feature.|
+|[FieldRef](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.md)|Represents a Field XML Markup that is used to define information about a field / Represents a Field XML Markup that is used to define information about a field|
+|[ListInstance](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.md)|This class holds deprecated ListInstance properties and methods / Domain Object that specifies the properties of the new list.|
 |[Page](OfficeDevPnP.Core.Framework.Provisioning.Model.Page.md)||
-|[ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)|Domain Object for the Provisioning Template|
+|[ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)|Domain Object for the Provisioning Template / Domain Object for the Provisioning Template|
 |[ProvisioningTemplateInfo](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateInfo.md)||
 |[Term](OfficeDevPnP.Core.Framework.Provisioning.Model.Term.md)||
 |[TermGroup](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.md)||
@@ -17,7 +17,7 @@
 |[BaseNavigationKind](OfficeDevPnP.Core.Framework.Provisioning.Model.BaseNavigationKind.md)|Base abstract class for the navigation kinds (global or current)|
 |[CurrentNavigation](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.md)|The Current Navigation settings for the Provisioning Template|
 |[DefaultDocumentCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.DefaultDocumentCollection.md)||
-|[CustomAction](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.md)|Domain Object for custom actions associated with a SharePoint list, Web site, or subsite.|
+|[CustomAction](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.md)|Domain Object for custom actions associated with a SharePoint list, Web site, or subsite. / Domain Object for custom actions associated with a SharePoint list, Web site, or subsite.|
 |[Directory](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.md)|Defines a Directory element, to describe a folder in the current repository that will be used to upload files into the target Site|
 |[DirectoryCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.DirectoryCollection.md)|Collection of Directory objects|
 |[ExtensibilityHandler](OfficeDevPnP.Core.Framework.Provisioning.Model.ExtensibilityHandler.md)|Domain Object for Extensiblity Call out|

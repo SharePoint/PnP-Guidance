@@ -12,8 +12,8 @@ public static class ClientObjectExtensions
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [EnsureProperties(T, Expression&lt;Func&lt;T, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ClientObjectExtensions.662d7ca7.md) |  Ensures that particular properties are loaded on the Microsoft.SharePoint.Client.ClientObject 
-| [EnsureProperty(T, Expression&lt;Func&lt;T, TResult&gt;&gt;)](Microsoft.SharePoint.Client.ClientObjectExtensions.84242e1a.md) |  Ensures that particular property is loaded on the Microsoft.SharePoint.Client.ClientObject and immediately returns this property 
+| [EnsureProperties(T, Expression&lt;Func&lt;T, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ClientObjectExtensions.662d7ca7.md) |  Ensures that particular properties are loaded on the 
+| [EnsureProperty(T, Expression&lt;Func&lt;T, TResult&gt;&gt;)](Microsoft.SharePoint.Client.ClientObjectExtensions.84242e1a.md) |  Ensures that particular property is loaded on the 
 | [IsObjectPropertyInstantiated(T, Expression&lt;Func&lt;T, Object&gt;&gt;)](Microsoft.SharePoint.Client.ClientObjectExtensions.21ee3124.md) | Check if a property is instantiated on a object
 | [IsPropertyAvailable(T, Expression&lt;Func&lt;T, Object&gt;&gt;)](Microsoft.SharePoint.Client.ClientObjectExtensions.18c63636.md) | Check if a property is available on a object
 | [ServerObjectIsNull(T)](Microsoft.SharePoint.Client.ClientObjectExtensions.bd54c126.md) | Checks if the ClientObject is null

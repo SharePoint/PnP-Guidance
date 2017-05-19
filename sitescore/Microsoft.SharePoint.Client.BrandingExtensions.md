@@ -1,5 +1,5 @@
 # BrandingExtensions Class
- Class that holds the deprecated branding methods   
+ Class that holds the deprecated branding methods / Class that deals with branding features   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -17,9 +17,9 @@ public static class BrandingExtensions
 | [ComposedLookExists(Web, String)](Microsoft.SharePoint.Client.BrandingExtensions.8b080f34.md) | Checks if a composed look exists.
 | [CreateComposedLookByName(Web, String, String, String, String, String, Int32, Boolean)](Microsoft.SharePoint.Client.BrandingExtensions.740548bb.md) | Creates (or updates) a composed look in the web site; usually this is done in the root site of the collection.
 | [CreateComposedLookByUrl(Web, String, String, String, String, String, Int32, Boolean)](Microsoft.SharePoint.Client.BrandingExtensions.c9d5a1a3.md) | Creates (or updates) a composed look in the web site; usually this is done in the root site of the collection.
-| [DeployHtmlPageLayout(Web, String, String, String, String, String)](Microsoft.SharePoint.Client.BrandingExtensions.9325730f.md) |  Can be used to deploy html page layouts to master page gallery. &lt;remarks&gt;Should be only used with root web of site collection where publishing features are enabled.&lt;/remarks&gt;
+| [DeployHtmlPageLayout(Web, String, String, String, String, String)](Microsoft.SharePoint.Client.BrandingExtensions.9325730f.md) |  Can be used to deploy html page layouts to master page gallery. 
 | [DeployMasterPage(Web, String, String, String, String, String, String)](Microsoft.SharePoint.Client.BrandingExtensions.80e54a26.md) | Deploys a new masterpage
-| [DeployPageLayout(Web, String, String, String, String, String)](Microsoft.SharePoint.Client.BrandingExtensions.27a51e60.md) |  Can be used to deploy page layouts to master page gallery. &lt;remarks&gt;Should be only used with root web of site collection where publishing features are enabled.&lt;/remarks&gt;
+| [DeployPageLayout(Web, String, String, String, String, String)](Microsoft.SharePoint.Client.BrandingExtensions.27a51e60.md) |  Can be used to deploy page layouts to master page gallery. 
 | [DisableReponsiveUI(Site)](Microsoft.SharePoint.Client.BrandingExtensions.bb864eed.md) | Disables the Responsive UI on a Classic SharePoint Site
 | [DisableReponsiveUI(Web)](Microsoft.SharePoint.Client.BrandingExtensions.74132147.md) | Disables the Responsive UI on a Classic SharePoint Web
 | [DisableResponsiveUI(Web)](Microsoft.SharePoint.Client.BrandingExtensions.19801284.md) | Disables the Responsive UI on a Classic SharePoint Web

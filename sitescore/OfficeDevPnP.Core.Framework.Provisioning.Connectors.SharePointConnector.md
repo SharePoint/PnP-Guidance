@@ -13,8 +13,8 @@ public class SharePointConnector: FileConnectorBase
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [SharePointConnector()](OfficeDevPnP.Core.Framework.Provisioning.Connectors.SharePointConnector.ctor1.md) |  Connector for files in SharePoint 
-| [SharePointConnector(ClientRuntimeContext, String, String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.SharePointConnector.ctor2.md) |  Connector for files in SharePoint 
+| [SharePointConnector()](OfficeDevPnP.Core.Framework.Provisioning.Connectors.SharePointConnector.ctor1.md) | Base constructor 
+| [SharePointConnector(ClientRuntimeContext, String, String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.SharePointConnector.ctor2.md) | SharePointConnector constructor. Allows to directly set root folder and sub folder 
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|

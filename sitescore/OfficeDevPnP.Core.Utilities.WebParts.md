@@ -2,7 +2,7 @@
 ## Classes
 |**Class**|**Description**|
 |:-----|:-----|
-|[WebPartPostProcessorFactory](OfficeDevPnP.Core.Utilities.WebParts.WebPartPostProcessorFactory.md)| Creates T:OfficeDevPnP.Core.Utilities.WebParts.IWebPartPostProcessor by parsing web part schema xml |
+|[WebPartPostProcessorFactory](OfficeDevPnP.Core.Utilities.WebParts.WebPartPostProcessorFactory.md)| Creates |
 ## Interfaces
 |**Interface**|**Description**|
 |:-----|:-----|

@@ -7,14 +7,14 @@
 System.Object  
 ## Syntax
 ```C#
-public class TreeNode: ITreeNode, ITreeNode
+public class TreeNode: ITreeNode<T>, ITreeNode
 ```
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
 | [TreeNode()](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.ctor1.md) |  
 | [TreeNode(T)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.ctor2.md) |  
-| [TreeNode(T, TreeNode)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.ctor3.md) |  
+| [TreeNode(T, TreeNode<T>)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.ctor3.md) |  
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -32,7 +32,7 @@ public class TreeNode: ITreeNode, ITreeNode
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [SetParent(ITreeNode, Boolean)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.ba4c22d7.md) | 
+| [SetParent(ITreeNode&lt;T&gt;, Boolean)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.f35584f5.md) | 
 | [ToString()](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.b40365cf.md) | 
 ## See also
 - [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md)

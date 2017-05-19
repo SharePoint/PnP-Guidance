@@ -1,5 +1,5 @@
 # JavaScriptExtensions Class
- Deprecated JavaScript related methods   
+ Deprecated JavaScript related methods / JavaScript related methods   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

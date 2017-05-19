@@ -1,5 +1,5 @@
 # PnPClientContext.PnPClientContext members 
-  
+ Creates a ClientContext allowing you to override the default retry and delay values of ExecuteQueryRetry   
 
 **Namespace:** [OfficeDevPnP.Core](OfficeDevPnP.Core.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,19 +10,21 @@ public PnPClientContext(Uri uri, int retryCount, int delay)
 ### Parameters
 #### uri  
 &emsp;&emsp;Type: System.Uri  
-&emsp;&emsp;  
+&emsp;&emsp; Creates a ClientContext allowing you to override the default retry and delay values of ExecuteQueryRetry   
 
 
 #### (optional) retryCount  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp;  
+&emsp;&emsp; Creates a ClientContext allowing you to override the default retry and delay values of ExecuteQueryRetry   
 
 
 #### (optional) delay  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp;  
+&emsp;&emsp; Creates a ClientContext allowing you to override the default retry and delay values of ExecuteQueryRetry   
 
 
+## Remarks
+  
 ## See also
 - [PnPClientContext](OfficeDevPnP.Core.PnPClientContext.md)
 - [OfficeDevPnP.Core](OfficeDevPnP.Core.md)

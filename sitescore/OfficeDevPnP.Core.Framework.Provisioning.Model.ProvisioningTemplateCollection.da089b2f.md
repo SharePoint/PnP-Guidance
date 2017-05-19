@@ -5,11 +5,11 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public int FindIndex(Predicate match)
+public int FindIndex(Predicate<T> match)
 ```
 ### Parameters
 #### match  
-&emsp;&emsp;Type: System.Predicate  
+&emsp;&emsp;Type: System.Predicate&lt;T&gt;  
 &emsp;&emsp;  
 
   

@@ -1,5 +1,5 @@
 # WebPartPostProcessorFactory Class
- Creates OfficeDevPnP.Core.Utilities.WebParts.IWebPartPostProcessor by parsing web part schema xml   
+ Creates   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities.WebParts](OfficeDevPnP.Core.Utilities.WebParts.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -12,7 +12,7 @@ public class WebPartPostProcessorFactory
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [WebPartPostProcessorFactory()](OfficeDevPnP.Core.Utilities.WebParts.WebPartPostProcessorFactory.ctor1.md) |  Creates OfficeDevPnP.Core.Utilities.WebParts.IWebPartPostProcessor by parsing web part schema xml 
+| [WebPartPostProcessorFactory()](OfficeDevPnP.Core.Utilities.WebParts.WebPartPostProcessorFactory.ctor1.md) |  Creates 
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public TreeNode(T Value, TreeNode Parent)
+public TreeNode(T Value, TreeNode<T> Parent)
 ```
 ### Parameters
 #### Value  
@@ -14,7 +14,7 @@ public TreeNode(T Value, TreeNode Parent)
 
 
 #### Parent  
-&emsp;&emsp;Type: [OfficeDevPnP.Core.Diagnostics.Tree.TreeNode](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.md)  
+&emsp;&emsp;Type: OfficeDevPnP.Core.Diagnostics.Tree.TreeNode<T>  
 &emsp;&emsp;  
 
 

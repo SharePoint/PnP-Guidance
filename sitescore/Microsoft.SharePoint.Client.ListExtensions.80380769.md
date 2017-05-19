@@ -1,5 +1,5 @@
 # ListExtensions.SetLocalizationLabelsForList Method  
- Can be used to set translations for different cultures. http://blogs.msdn.com/b/vesku/archive/2014/03/20/office365-multilingual-content-types-site-columns-and-site-other-elements.aspx  
+ Can be used to set translations for different cultures.   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

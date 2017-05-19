@@ -1,5 +1,5 @@
 # SearchExtensions Class
- Class for deprecated search extension methods   
+ Class for deprecated search extension methods / Class for Search extension methods   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

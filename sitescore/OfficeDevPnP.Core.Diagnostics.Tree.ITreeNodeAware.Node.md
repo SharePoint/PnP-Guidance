@@ -5,11 +5,11 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public TreeNode Node { get; set; }
+public TreeNode<T> Node { get; set; }
 ```
 
 ### Property Value
-Type: [OfficeDevPnP.Core.Diagnostics.Tree.TreeNode](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.md)  
+Type: OfficeDevPnP.Core.Diagnostics.Tree.TreeNode<T>  
 
 ## See also
 - [ITreeNodeAware](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNodeAware.md) 

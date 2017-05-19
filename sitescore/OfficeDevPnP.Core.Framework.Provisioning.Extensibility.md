@@ -2,7 +2,7 @@
 ## Classes
 |**Class**|**Description**|
 |:-----|:-----|
-|[ExtensibilityManager](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.ExtensibilityManager.md)|Provisioning Framework Component that is used for invoking custom providers during the provisioning process.|
+|[ExtensibilityManager](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.ExtensibilityManager.md)|Provisioning Framework Component that is used for invoking custom providers during the provisioning process. / Provisioning Framework Component that is used for invoking custom providers during the provisioning process.|
 |[ExtensiblityPipelineException](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.ExtensiblityPipelineException.md)|Initializes a new instance of the ExtensiblityPipelineException class. This Exception occurs when there is an exception invoking a custom Extensibility Providers|
 ## Interfaces
 |**Interface**|**Description**|

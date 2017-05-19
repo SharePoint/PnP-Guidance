@@ -1,5 +1,5 @@
 # ProvisioningTemplateDictionary.ProvisioningTemplateDictionary members 
-  
+ Custom constructor to manage the ParentTemplate for the collection and all the children of the collection   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,9 +10,11 @@ public ProvisioningTemplateDictionary(ProvisioningTemplate parentTemplate)
 ### Parameters
 #### parentTemplate  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
-&emsp;&emsp;  
+&emsp;&emsp; Custom constructor to manage the ParentTemplate for the collection and all the children of the collection   
 
 
+## Remarks
+  
 ## See also
 - [ProvisioningTemplateDictionary](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateDictionary.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

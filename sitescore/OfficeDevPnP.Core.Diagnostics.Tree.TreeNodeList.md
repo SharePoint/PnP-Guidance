@@ -8,12 +8,12 @@ System.Object
 &ensp;OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode  
 ## Syntax
 ```C#
-public class TreeNodeList: List<ITreeNode>, ITreeNodeList, IList<ITreeNode>, ICollection<ITreeNode>, IEnumerable<ITreeNode>, IEnumerable, INotifyPropertyChanged
+public class TreeNodeList: List<ITreeNode<T>>, ITreeNodeList<T>, IList<ITreeNode<T>>, ICollection<ITreeNode<T>>, IEnumerable<ITreeNode<T>>, IEnumerable, INotifyPropertyChanged
 ```
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [TreeNodeList(ITreeNode)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.ctor1.md) |  
+| [TreeNodeList(ITreeNode<T>)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.ctor1.md) |  
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -21,9 +21,9 @@ public class TreeNodeList: List<ITreeNode>, ITreeNodeList, IList<ITreeNode>, ICo
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Add(ITreeNode)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.711f2701.md) | 
+| [Add(ITreeNode&lt;T&gt;)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.19b9df21.md) | 
 | [add_PropertyChanged(PropertyChangedEventHandler)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.9af7a0ae.md) | 
-| [Remove(ITreeNode)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.fef912eb.md) | 
+| [Remove(ITreeNode&lt;T&gt;)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.5be50920.md) | 
 | [remove_PropertyChanged(PropertyChangedEventHandler)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.d9af74e7.md) | 
 | [ToString()](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.b40365cf.md) | 
 ## See also

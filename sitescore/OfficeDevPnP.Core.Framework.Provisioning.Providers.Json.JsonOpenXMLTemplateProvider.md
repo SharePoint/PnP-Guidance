@@ -14,6 +14,5 @@ public class JsonOpenXMLTemplateProvider: JsonTemplateProvider
 |**Name**|**Description**|
 |:-----|:-----|
 | [JsonOpenXMLTemplateProvider(String, FileConnectorBase, String, X509Certificate2)](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.JsonOpenXMLTemplateProvider.ctor1.md) |  
-| [JsonOpenXMLTemplateProvider(OpenXMLConnector)](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.JsonOpenXMLTemplateProvider.ctor2.md) |  
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Json](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.md)

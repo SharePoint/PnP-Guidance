@@ -1,21 +1,15 @@
-# ProvisioningTemplateCollection.FindIndex Method  
+# ProvisioningTemplateCollection.RemoveAll Method  
   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public int FindIndex(Int32 startIndex, Predicate match)
+public int RemoveAll(Predicate<T> match)
 ```
 ### Parameters
-#### startIndex  
-&emsp;&emsp;Type: System.Int32  
-&emsp;&emsp;  
-
-  
-
 #### match  
-&emsp;&emsp;Type: System.Predicate  
+&emsp;&emsp;Type: System.Predicate&lt;T&gt;  
 &emsp;&emsp;  
 
   

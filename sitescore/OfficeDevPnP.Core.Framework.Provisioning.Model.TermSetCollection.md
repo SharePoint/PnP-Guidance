@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class TermSetCollection: ProvisioningTemplateCollection<TermSet>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [TermSetCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermSetCollection.ctor1.md) |  Collection of TermSete objects 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class ListInstanceCollection: ProvisioningTemplateCollection<ListInstance>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [ListInstanceCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstanceCollection.ctor1.md) |  Collection of ListInstance objects 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

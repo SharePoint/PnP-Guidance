@@ -13,7 +13,7 @@ public class JsonAzureStorageTemplateProvider: JsonTemplateProvider
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [JsonAzureStorageTemplateProvider()](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.JsonAzureStorageTemplateProvider.ctor1.md) |  
+| [JsonAzureStorageTemplateProvider()](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.JsonAzureStorageTemplateProvider.ctor1.md) | Default Constructor 
 | [JsonAzureStorageTemplateProvider(String, String)](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.JsonAzureStorageTemplateProvider.ctor2.md) |  
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Json](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.md)

@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class SiteGroupCollection: ProvisioningTemplateCollection<SiteGroup>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [SiteGroupCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroupCollection.ctor1.md) |  Collection of SiteGroup objects 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

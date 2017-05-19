@@ -5,11 +5,11 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void AddRange(IEnumerable collection)
+public void AddRange(IEnumerable<T> collection)
 ```
 ### Parameters
 #### collection  
-&emsp;&emsp;Type: System.Collections.Generic.IEnumerable  
+&emsp;&emsp;Type: System.Collections.Generic.IEnumerable&lt;T&gt;  
 &emsp;&emsp;  
 
   

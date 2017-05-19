@@ -12,12 +12,12 @@ public static class ExternalSharingExtensions
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [CreateAnonymousLinkForDocument(Web, String, ExternalSharingDocumentOption)](Microsoft.SharePoint.Client.ExternalSharingExtensions.65ade625.md) |  Creates anonymous link to given document. See &lt;a href="https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.web.createanonymouslink.aspx"&gt;MSDN&lt;/a&gt;
-| [CreateAnonymousLinkWithExpirationForDocument(Web, String, ExternalSharingDocumentOption, DateTime)](Microsoft.SharePoint.Client.ExternalSharingExtensions.d634f954.md) |  Creates anonymous link to the given document with automatic expiration time. See &lt;a href="https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.web.createanonymouslinkwithexpiration.aspx"&gt;MSDN&lt;/a&gt;
+| [CreateAnonymousLinkForDocument(Web, String, ExternalSharingDocumentOption)](Microsoft.SharePoint.Client.ExternalSharingExtensions.65ade625.md) |  Creates anonymous link to given document. See 
+| [CreateAnonymousLinkWithExpirationForDocument(Web, String, ExternalSharingDocumentOption, DateTime)](Microsoft.SharePoint.Client.ExternalSharingExtensions.d634f954.md) |  Creates anonymous link to the given document with automatic expiration time. See 
 | [GetObjectSharingSettingsForDocument(Web, String, Boolean)](Microsoft.SharePoint.Client.ExternalSharingExtensions.f6e910ee.md) | Get current sharing settings for document and load list of users it has been shared automatically.
 | [GetObjectSharingSettingsForSite(Web, Boolean)](Microsoft.SharePoint.Client.ExternalSharingExtensions.67d0238b.md) | Get current sharing settings for site and load list of users it has been shared automatically.
 | [InviteExternalUser(Group, String, Boolean, String)](Microsoft.SharePoint.Client.ExternalSharingExtensions.aa73b5f1.md) | Invites an external user as a group member
-| [ResolvePeoplePickerValueForEmail(Web, String)](Microsoft.SharePoint.Client.ExternalSharingExtensions.7657a39c.md) |  Can be used to get needed people picker search result value for given email account. See &lt;a href="https://msdn.microsoft.com/en-us/library/office/jj179690.aspx"&gt;MSDN&lt;/a&gt;
+| [ResolvePeoplePickerValueForEmail(Web, String)](Microsoft.SharePoint.Client.ExternalSharingExtensions.7657a39c.md) |  Can be used to get needed people picker search result value for given email account. See 
 | [ShareDocument(Web, String, String, ExternalSharingDocumentOption, Boolean, String, Boolean)](Microsoft.SharePoint.Client.ExternalSharingExtensions.66dc7567.md) | Abstracted methid for sharing documents just with given email address.
 | [ShareDocumentWithPeoplePickerValue(Web, String, String, ExternalSharingDocumentOption, Boolean, String, Boolean)](Microsoft.SharePoint.Client.ExternalSharingExtensions.1122069f.md) | Share document with complex JSON string value.
 | [ShareSite(Web, String, Group, Boolean, String)](Microsoft.SharePoint.Client.ExternalSharingExtensions.3710fea1.md) | Share site for a person using just email. Will resolve needed people picker JSON value automatically.

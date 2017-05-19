@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class WorkflowDefinitionCollection: ProvisioningTemplateCollection<WorkflowDefinition>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [WorkflowDefinitionCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowDefinitionCollection.ctor1.md) |  Defines a collection of objects of type WorkflowDefinition 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

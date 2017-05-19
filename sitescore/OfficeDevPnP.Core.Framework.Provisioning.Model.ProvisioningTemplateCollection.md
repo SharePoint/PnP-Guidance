@@ -5,15 +5,15 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Inheritance Hierarchy
 System.Object  
-&ensp;System.Collections.ObjectModel.Collection  
+&ensp;T  
 ## Syntax
 ```C#
-public class ProvisioningTemplateCollection: Collection, IProvisioningTemplateDescendant
+public class ProvisioningTemplateCollection: Collection<T>, IProvisioningTemplateDescendant
 ```
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ProvisioningTemplateCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.ctor1.md) |  Generic collection of items stored in the ProvisioningTemplate graph 
+| [ProvisioningTemplateCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.ctor1.md) | Custom constructor to manage the ParentTemplate for the collection and all the children of the collection 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -21,11 +21,11 @@ public class ProvisioningTemplateCollection: Collection, IProvisioningTemplateDe
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [AddRange(IEnumerable)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.fbc0d5d3.md) | 
-| [Find(Predicate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.f398af0d.md) | Finds an item matching a search predicate
-| [FindIndex(Predicate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.be7d3f8c.md) | 
-| [FindIndex(Int32, Predicate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.4e0df9c1.md) | 
-| [FindIndex(Int32, Int32, Predicate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.4d2e4f65.md) | 
-| [RemoveAll(Predicate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.231ea901.md) | 
+| [AddRange(IEnumerable&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.c9396447.md) | 
+| [Find(Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.a3f4e88c.md) | Finds an item matching a search predicate
+| [FindIndex(Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.da089b2f.md) | 
+| [FindIndex(Int32, Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.a0b9537a.md) | 
+| [FindIndex(Int32, Int32, Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.d0beeaa1.md) | 
+| [RemoveAll(Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.519f9e70.md) | 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

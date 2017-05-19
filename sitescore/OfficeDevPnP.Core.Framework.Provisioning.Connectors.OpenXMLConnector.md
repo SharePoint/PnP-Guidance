@@ -13,8 +13,8 @@ public class OpenXMLConnector: FileConnectorBase, ICommitableFileConnector
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [OpenXMLConnector(Stream)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXMLConnector.ctor1.md) |  Connector that stores all the files into a unique .PNP OpenXML package 
-| [OpenXMLConnector(String, FileConnectorBase, String, X509Certificate2)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXMLConnector.ctor2.md) |  Connector that stores all the files into a unique .PNP OpenXML package 
+| [OpenXMLConnector(Stream)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXMLConnector.ctor1.md) | OpenXMLConnector constructor. Allows to manage a .PNP OpenXML package through an in memory stream. 
+| [OpenXMLConnector(String, FileConnectorBase, String, X509Certificate2)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXMLConnector.ctor2.md) | OpenXMLConnector constructor. Allows to manage a .PNP OpenXML package file through a supporting persistence connector. 
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|

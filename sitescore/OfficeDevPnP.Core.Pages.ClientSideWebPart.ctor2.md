@@ -1,5 +1,5 @@
 # ClientSideWebPart.ClientSideWebPart members 
-  
+ Instantiates a client side web part based on the information that was obtain from calling the AvailableClientSideComponents methods on the   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,9 +10,12 @@ public ClientSideWebPart(ClientSideComponent component)
 ### Parameters
 #### component  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Pages.ClientSideComponent](OfficeDevPnP.Core.Pages.ClientSideComponent.md)  
-&emsp;&emsp;  
+&emsp;&emsp;Component to create a ClientSideWebPart instance for  
 
 
+## Remarks
+  
 ## See also
 - [ClientSideWebPart](OfficeDevPnP.Core.Pages.ClientSideWebPart.md)
+- [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

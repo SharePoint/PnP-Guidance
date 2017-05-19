@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class RoleDefinitionCollection: ProvisioningTemplateCollection<RoleDefinition>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [RoleDefinitionCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinitionCollection.ctor1.md) |  Collection of RoleDefinition objects 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

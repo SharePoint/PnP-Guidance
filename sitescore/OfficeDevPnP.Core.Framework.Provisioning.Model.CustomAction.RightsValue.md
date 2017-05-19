@@ -1,5 +1,5 @@
 # CustomAction.Properties RightsValue
- Gets or sets the value that specifies the permissions needed for the custom action. &gt;&lt;cref&gt;https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.permissionkind.aspx&lt;/cref&gt;&lt;/see&gt;  
+ Gets or sets the value that specifies the permissions needed for the custom action.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

@@ -5,10 +5,10 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Inheritance Hierarchy
 System.Object  
-&ensp;OfficeDevPnP.Core.Diagnostics.Tree.TreeNode  
+&ensp;T  
 ## Syntax
 ```C#
-public class Tree: TreeNode
+public class Tree: TreeNode<T>
 ```
 ## Constructors
 |**Name**|**Description**|

@@ -10,9 +10,5 @@ System.Object
 ```C#
 public class DataRowCollection: ProvisioningTemplateCollection<DataRow>
 ```
-## Constructors
-|**Name**|**Description**|
-|:-----|:-----|
-| [DataRowCollection(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.DataRowCollection.ctor1.md) |  Collection of DataRow objects 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)
