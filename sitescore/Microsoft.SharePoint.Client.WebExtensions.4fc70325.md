@@ -35,8 +35,6 @@ public static void SetLocalizationLabels(Web web, String cultureName, String tit
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## Examples
 ```C#
 web.SetLocalizationForSiteLabels("fi-fi", "Name of the site in Finnish", "Description in Finnish");

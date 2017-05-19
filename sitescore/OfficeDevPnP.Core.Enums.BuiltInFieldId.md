@@ -9,7 +9,7 @@ System.Object
 ```C#
 public static class BuiltInFieldId
 ```
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [Contains(Guid)](OfficeDevPnP.Core.Enums.BuiltInFieldId.bd1aa7bd.md) | This method returns a Boolean value that specifies whether or not the current object matches the specified GUID. This value is used as a file identifier for an object that is associated with a Windows SharePoint Services Web site.

@@ -35,8 +35,6 @@ public static void AssociateDefaultGroups(Web web, Group owners, Group members, 
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [SecurityExtensions](Microsoft.SharePoint.Client.SecurityExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

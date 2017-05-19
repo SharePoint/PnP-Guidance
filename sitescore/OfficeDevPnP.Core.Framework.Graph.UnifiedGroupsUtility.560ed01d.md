@@ -41,8 +41,6 @@ public static UnifiedGroupEntity GetUnifiedGroup(String groupId, String accessTo
 ### Return Value
 Type: UnifiedGroupEntity  
 
-## Remarks
-  
 ## See also
 - [UnifiedGroupsUtility](OfficeDevPnP.Core.Framework.Graph.UnifiedGroupsUtility.md) 
 - [OfficeDevPnP.Core.Framework.Graph](OfficeDevPnP.Core.Framework.Graph.md) 

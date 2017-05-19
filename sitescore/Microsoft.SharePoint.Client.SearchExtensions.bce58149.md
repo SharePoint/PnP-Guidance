@@ -29,8 +29,6 @@ public static void ExportSearchSettings(ClientContext context, String exportFile
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [SearchExtensions](Microsoft.SharePoint.Client.SearchExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

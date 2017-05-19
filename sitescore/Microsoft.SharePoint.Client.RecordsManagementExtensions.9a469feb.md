@@ -23,8 +23,6 @@ public static void SetListManualRecordDeclaration(List list, EcmListManualRecord
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [RecordsManagementExtensions](Microsoft.SharePoint.Client.RecordsManagementExtensions.md) 
 - [OfficeDevPnP.Core.EcmListManualRecordDeclaration](OfficeDevPnP.Core.EcmListManualRecordDeclaration.md)

@@ -19,8 +19,6 @@ Type: bool
 true if keyIdentifierClause is a SecurityKeyIdentifierClause and it has the same unique identifier as the Id property; otherwise, false.  
 
 
-## Remarks
-  
 ## See also
 - [MultipleSymmetricKeySecurityToken](OfficeDevPnP.Core.Utilities.MultipleSymmetricKeySecurityToken.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

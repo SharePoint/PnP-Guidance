@@ -29,8 +29,6 @@ public static void RemoveContentTypeFromListByName(Web web, String listTitle, St
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [FieldAndContentTypeExtensions](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

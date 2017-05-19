@@ -19,8 +19,6 @@ Type: int
   
 
 
-## Remarks
-  
 ## See also
 - [Utility](OfficeDevPnP.Core.Utilities.Utility.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

@@ -29,8 +29,6 @@ public static void DeactivateFeature(Site site, Guid featureID, Int32 pollingInt
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [FeatureExtensions](Microsoft.SharePoint.Client.FeatureExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

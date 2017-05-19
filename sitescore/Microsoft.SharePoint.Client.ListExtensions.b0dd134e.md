@@ -25,8 +25,6 @@ Type: bool
 True if the list exists  
 
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - System.ArgumentException

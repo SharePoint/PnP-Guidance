@@ -43,8 +43,6 @@ Type: string
 String to be used in CAML queries  
 
 
-## Remarks
-  
 ## See also
 - [CAML](OfficeDevPnP.Core.Utilities.CAML.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

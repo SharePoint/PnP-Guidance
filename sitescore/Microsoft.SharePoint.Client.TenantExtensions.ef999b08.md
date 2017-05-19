@@ -41,8 +41,6 @@ public static void SetSiteLockState(Tenant tenant, String siteFullUrl, SiteLockS
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [TenantExtensions](Microsoft.SharePoint.Client.TenantExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

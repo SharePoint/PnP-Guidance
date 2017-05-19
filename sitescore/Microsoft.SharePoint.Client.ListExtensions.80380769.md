@@ -41,8 +41,6 @@ public static void SetLocalizationLabelsForList(Web web, String listTitle, Strin
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - [http://blogs.msdn.com/b/vesku/archive/2014/03/20/office365-multilingual-content-types-site-columns-and-site-other-elements.aspx](http://blogs.msdn.com/b/vesku/archive/2014/03/20/office365-multilingual-content-types-site-columns-and-site-other-elements.aspx)

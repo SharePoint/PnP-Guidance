@@ -23,8 +23,6 @@ public static void RemoveTaxonomyFieldById(Web web, Guid id)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [TaxonomyExtensions](Microsoft.SharePoint.Client.TaxonomyExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

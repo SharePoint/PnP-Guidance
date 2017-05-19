@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool DeepEquals(IEnumerable<T> source, IEnumerable<T> target)
+public static bool DeepEquals<T>(IEnumerable<T> source, IEnumerable<T> target)
 ```
 ### Parameters
 #### source  
@@ -25,8 +25,6 @@ Type: bool
 Wether the two enumerations are deep equal  
 
 
-## Remarks
-  
 ## See also
 - [EnumerableExtensions](OfficeDevPnP.Core.Extensions.EnumerableExtensions.md) 
 - [OfficeDevPnP.Core.Extensions](OfficeDevPnP.Core.Extensions.md) 

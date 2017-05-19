@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddRange(IDictionary<TKey, TValue> dictionary, IDictionary<TKey, TValue> range)
+public static void AddRange<T>(IDictionary<TKey, TValue> dictionary, IDictionary<TKey, TValue> range)
 ```
 ### Parameters
 #### dictionary  

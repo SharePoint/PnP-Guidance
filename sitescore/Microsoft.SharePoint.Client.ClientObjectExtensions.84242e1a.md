@@ -1,16 +1,16 @@
 # ClientObjectExtensions.EnsureProperty Method  
- Ensures that particular property is loaded on the   
+ Ensures that particular property is loaded on the Microsoft.SharePoint.Client.ClientObject and immediately returns this property   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TResult EnsureProperty(T clientObject, Expression<Func<T, TResult>> propertySelector)
+public static TResult EnsureProperty<T>(T clientObject, Expression<Func<T, TResult>> propertySelector)
 ```
 ### Parameters
 #### clientObject  
 &emsp;&emsp;Type: T  
-&emsp;&emsp; Ensures that particular property is loaded on the   
+&emsp;&emsp; Ensures that particular property is loaded on the Microsoft.SharePoint.Client.ClientObject and immediately returns this property   
 
   
 
@@ -25,8 +25,6 @@ Type: TResult
 Property value  
 
 
-## Remarks
-  
 ## See also
 - [ClientObjectExtensions](Microsoft.SharePoint.Client.ClientObjectExtensions.md) 
 - Microsoft.SharePoint.Client.ClientObject

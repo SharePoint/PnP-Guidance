@@ -67,8 +67,6 @@ Type: Guid
 Guid of the workflow subscription  
 
 
-## Remarks
-  
 ## See also
 - [WorkflowExtensions](Microsoft.SharePoint.Client.WorkflowExtensions.md) 
 - [GetWorkflowDefinition](Microsoft.SharePoint.Client.WorkflowExtensions.89d3977b.md)

@@ -12,7 +12,7 @@ public static class ValidationExtensions
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [ValidateNotNullOrEmpty(T, String)](System.ValidationExtensions.4b2ec538.md) | Validates an object for not being null or not being the default value
+| [ValidateNotNullOrEmpty&lt;T&gt;(T, String)](System.ValidationExtensions.4b2ec538.md) | Validates an object for not being null or not being the default value
 ## See also
 - System.ArgumentException
 - System.ArgumentNullException

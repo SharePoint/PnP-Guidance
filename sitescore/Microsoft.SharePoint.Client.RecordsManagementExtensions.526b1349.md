@@ -19,8 +19,6 @@ Type: EcmRecordDeclarationBy
  OfficeDevPnP.Core.EcmRecordDeclarationBy enum that defines who can undeclare a record  
 
 
-## Remarks
-  
 ## See also
 - [RecordsManagementExtensions](Microsoft.SharePoint.Client.RecordsManagementExtensions.md) 
 - [OfficeDevPnP.Core.EcmRecordDeclarationBy](OfficeDevPnP.Core.EcmRecordDeclarationBy.md)

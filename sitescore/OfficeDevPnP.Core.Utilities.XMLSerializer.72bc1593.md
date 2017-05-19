@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string Serialize(T objectToSerialize, XmlSerializerNamespaces ns)
+public static string Serialize<T>(T objectToSerialize, XmlSerializerNamespaces ns)
 ```
 ### Parameters
 #### objectToSerialize  
@@ -25,8 +25,6 @@ Type: string
 An string that represents the serialized object.  
 
 
-## Remarks
-  
 ## See also
 - [XMLSerializer](OfficeDevPnP.Core.Utilities.XMLSerializer.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

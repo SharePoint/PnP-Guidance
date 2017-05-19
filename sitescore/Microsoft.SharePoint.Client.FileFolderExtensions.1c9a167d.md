@@ -29,8 +29,6 @@ public static void PublishFile(Web web, String serverRelativeUrl, String comment
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [FileFolderExtensions](Microsoft.SharePoint.Client.FileFolderExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

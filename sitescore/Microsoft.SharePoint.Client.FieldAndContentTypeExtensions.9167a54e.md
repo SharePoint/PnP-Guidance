@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TField CreateField(List list, FieldCreationInformation fieldCreationInformation, Boolean executeQuery)
+public static TField CreateField<T>(List list, FieldCreationInformation fieldCreationInformation, Boolean executeQuery)
 ```
 ### Parameters
 #### list  

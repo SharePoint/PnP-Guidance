@@ -9,7 +9,7 @@ System.Object
 ```C#
 public static class EncryptionUtility
 ```
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [Decrypt(String, String)](OfficeDevPnP.Core.Utilities.EncryptionUtility.2aead82c.md) | Decrypt a piece of text based on a given certificate

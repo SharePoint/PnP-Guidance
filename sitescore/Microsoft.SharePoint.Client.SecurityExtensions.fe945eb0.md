@@ -23,8 +23,6 @@ public static void RemoveAdministrator(Web web, UserEntity admin)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [SecurityExtensions](Microsoft.SharePoint.Client.SecurityExtensions.md) 
 - [OfficeDevPnP.Core.Entities.UserEntity](OfficeDevPnP.Core.Entities.UserEntity.md)

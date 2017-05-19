@@ -17,8 +17,6 @@ public static int ToInt32(String input)
 ### Return Value
 Type: int  
 
-## Remarks
-  
 ## See also
 - [SafeConvertExtensions](System.SafeConvertExtensions.md) 
 - [System](System.md) 

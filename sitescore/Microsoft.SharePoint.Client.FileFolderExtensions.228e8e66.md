@@ -1,5 +1,5 @@
 # FileFolderExtensions.ResolveSubFolder Method  
- Gets a folder with a given name in a given   
+ Gets a folder with a given name in a given Microsoft.SharePoint.Client.Folder  
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -25,8 +25,6 @@ Type: Folder
 The found Microsoft.SharePoint.Client.Folder if available, null otherwise  
 
 
-## Remarks
-  
 ## See also
 - [FileFolderExtensions](Microsoft.SharePoint.Client.FileFolderExtensions.md) 
 - Microsoft.SharePoint.Client.Folder

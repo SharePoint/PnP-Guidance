@@ -29,8 +29,6 @@ public static void SetMasterPagesByUrl(Web web, String masterPageUrl, String cus
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [BrandingExtensions](Microsoft.SharePoint.Client.BrandingExtensions.md) 
 - System.ArgumentException

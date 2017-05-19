@@ -41,8 +41,6 @@ public static void ImportTerms(Site site, String[] termLines, Int32 lcid, String
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [TaxonomyExtensions](Microsoft.SharePoint.Client.TaxonomyExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

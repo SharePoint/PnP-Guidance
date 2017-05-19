@@ -17,8 +17,6 @@ public static double ToDouble(String input)
 ### Return Value
 Type: double  
 
-## Remarks
-  
 ## See also
 - [SafeConvertExtensions](System.SafeConvertExtensions.md) 
 - [System](System.md) 

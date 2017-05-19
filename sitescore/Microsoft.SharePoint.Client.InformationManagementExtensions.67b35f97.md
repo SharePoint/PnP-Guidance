@@ -25,8 +25,6 @@ Type: SitePolicyEntity
 A  [OfficeDevPnP.Core.Entities.SitePolicyEntity](OfficeDevPnP.Core.Entities.SitePolicyEntity.md)  object holding the fetched policy  
 
 
-## Remarks
-  
 ## See also
 - [InformationManagementExtensions](Microsoft.SharePoint.Client.InformationManagementExtensions.md) 
 - [OfficeDevPnP.Core.Entities.SitePolicyEntity](OfficeDevPnP.Core.Entities.SitePolicyEntity.md)

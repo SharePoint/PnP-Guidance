@@ -29,8 +29,6 @@ public static void AddUserToGroup(Web web, Group group, User user)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [SecurityExtensions](Microsoft.SharePoint.Client.SecurityExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

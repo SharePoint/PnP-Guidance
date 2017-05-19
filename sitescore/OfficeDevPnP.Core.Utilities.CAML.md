@@ -9,7 +9,7 @@ System.Object
 ```C#
 public static class CAML
 ```
-## Extension Methods
+## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [And(String, String[])](OfficeDevPnP.Core.Utilities.CAML.2163f362.md) | 

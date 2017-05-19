@@ -23,8 +23,6 @@ public static void CreateViewsFromXMLString(List list, String xmlString)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

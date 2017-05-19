@@ -35,8 +35,6 @@ public static void SetLocalizationLabelsForList(List list, String cultureName, S
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## Examples
 ```C#
 list.SetLocalizationForSiteLabels("fi-fi", "Name of the site in Finnish", "Description in Finnish");

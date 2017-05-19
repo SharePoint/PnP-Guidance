@@ -3,7 +3,7 @@
 |**Class**|**Description**|
 |:-----|:-----|
 |[ComposedLook](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.md)|Domain Object that defines a Composed Look in the Provision Template|
-|[ContentType](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.md)| Domain Object used in the Provisioning template that defines a Content Type |
+|[ContentType](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.md)| Domain Object used in the Provisioning template that defines a Content Type https://msdn.microsoft.com/en-us/library/office/ms463449.aspx|
 |[ContentTypeBinding](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.md)|Domain Object for Content Type Binding in the Provisioning Template|
 |[Feature](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.md)|Domain Object that represents an Feature. / Domain Object that represents an Feature.|
 |[FieldRef](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.md)|Represents a Field XML Markup that is used to define information about a field / Represents a Field XML Markup that is used to define information about a field|

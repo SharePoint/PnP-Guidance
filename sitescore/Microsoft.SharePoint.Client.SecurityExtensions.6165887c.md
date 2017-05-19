@@ -25,8 +25,6 @@ Type: string
 Sharing capabilities of the site collection  
 
 
-## Remarks
-  
 ## See also
 - [SecurityExtensions](Microsoft.SharePoint.Client.SecurityExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

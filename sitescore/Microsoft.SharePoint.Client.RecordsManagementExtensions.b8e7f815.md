@@ -23,8 +23,6 @@ public static void SetListAutoRecordDeclaration(List list, Boolean autoDeclareRe
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [RecordsManagementExtensions](Microsoft.SharePoint.Client.RecordsManagementExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

@@ -25,8 +25,6 @@ Type: TermGroup
 The requested term group, or null if it does not exist  
 
 
-## Remarks
-  
 ## See also
 - [TaxonomyExtensions](Microsoft.SharePoint.Client.TaxonomyExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

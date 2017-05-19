@@ -41,8 +41,6 @@ public static void InstallSolution(Site site, Guid packageGuid, String sourceFil
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [WebExtensions](Microsoft.SharePoint.Client.WebExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

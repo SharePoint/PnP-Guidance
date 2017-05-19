@@ -23,8 +23,6 @@ public static void RemoveContentTypeByName(List list, String contentTypeName)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - System.ArgumentException

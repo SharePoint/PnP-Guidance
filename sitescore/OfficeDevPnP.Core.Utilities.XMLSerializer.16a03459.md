@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Stream SerializeToStream(T objectToSerialize, XmlSerializerNamespaces ns)
+public static Stream SerializeToStream<T>(T objectToSerialize, XmlSerializerNamespaces ns)
 ```
 ### Parameters
 #### objectToSerialize  
@@ -25,8 +25,6 @@ Type: Stream
 An string that represents the serialized object.  
 
 
-## Remarks
-  
 ## See also
 - [XMLSerializer](OfficeDevPnP.Core.Utilities.XMLSerializer.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

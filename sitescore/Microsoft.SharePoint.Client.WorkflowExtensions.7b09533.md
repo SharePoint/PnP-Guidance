@@ -17,8 +17,6 @@ public static void Delete(WorkflowSubscription subscription)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [WorkflowExtensions](Microsoft.SharePoint.Client.WorkflowExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

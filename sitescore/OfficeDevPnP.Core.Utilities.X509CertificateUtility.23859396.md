@@ -31,8 +31,6 @@ Type: X509Certificate2
 An System.Security.Cryptography.X509Certificates.X509Certificate2 certificate  
 
 
-## Remarks
-  
 ## See also
 - [X509CertificateUtility](OfficeDevPnP.Core.Utilities.X509CertificateUtility.md) 
 - System.Security.Cryptography.X509Certificates.X509Certificate2

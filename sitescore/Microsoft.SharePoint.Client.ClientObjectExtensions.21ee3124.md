@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsObjectPropertyInstantiated(T clientObject, Expression<Func<T, Object>> propertySelector)
+public static bool IsObjectPropertyInstantiated<T>(T clientObject, Expression<Func<T, Object>> propertySelector)
 ```
 ### Parameters
 #### clientObject  
@@ -25,8 +25,6 @@ Type: bool
 True if the property is instantiated, false otherwise  
 
 
-## Remarks
-  
 ## See also
 - [ClientObjectExtensions](Microsoft.SharePoint.Client.ClientObjectExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

@@ -19,8 +19,6 @@ Type: List<UserEntity>
 List of  [OfficeDevPnP.Core.Entities.UserEntity](OfficeDevPnP.Core.Entities.UserEntity.md)  objects  
 
 
-## Remarks
-  
 ## See also
 - [SecurityExtensions](Microsoft.SharePoint.Client.SecurityExtensions.md) 
 - [OfficeDevPnP.Core.Entities.UserEntity](OfficeDevPnP.Core.Entities.UserEntity.md)

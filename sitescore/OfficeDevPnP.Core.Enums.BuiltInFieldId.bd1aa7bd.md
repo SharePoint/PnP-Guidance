@@ -19,8 +19,6 @@ Type: bool
  Returns a GUID.   
 
 
-## Remarks
-  
 ## See also
 - [BuiltInFieldId](OfficeDevPnP.Core.Enums.BuiltInFieldId.md) 
 - [OfficeDevPnP.Core.Enums](OfficeDevPnP.Core.Enums.md) 

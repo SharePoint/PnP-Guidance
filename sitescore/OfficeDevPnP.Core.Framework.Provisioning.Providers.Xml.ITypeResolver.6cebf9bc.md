@@ -29,8 +29,6 @@ public object Resolve(Object source, Dictionary<String, IResolver> resolvers, Bo
 ### Return Value
 Type: object  
 
-## Remarks
-  
 ## See also
 - [ITypeResolver](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.ITypeResolver.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.md) 

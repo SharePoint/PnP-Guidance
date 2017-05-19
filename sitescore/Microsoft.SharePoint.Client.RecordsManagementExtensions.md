@@ -1,5 +1,7 @@
 # RecordsManagementExtensions Class
- Class that deals with deprecated records management functionality / Class that deals with records management functionality   
+ Class that deals with deprecated records management functionality 
+
+ Class that deals with records management functionality   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

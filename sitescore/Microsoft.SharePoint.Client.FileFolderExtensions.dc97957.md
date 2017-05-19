@@ -29,8 +29,6 @@ public static void SetFileProperties(File file, IDictionary<String, String> prop
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [FileFolderExtensions](Microsoft.SharePoint.Client.FileFolderExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

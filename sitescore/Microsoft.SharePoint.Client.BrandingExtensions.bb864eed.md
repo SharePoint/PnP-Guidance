@@ -21,8 +21,6 @@ public static void DisableReponsiveUI(Site site)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [BrandingExtensions](Microsoft.SharePoint.Client.BrandingExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static T ToEnum(String name)
+public static T ToEnum<T>(String name)
 ```
 ### Parameters
 #### name  

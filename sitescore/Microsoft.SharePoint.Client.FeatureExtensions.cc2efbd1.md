@@ -25,8 +25,6 @@ Type: bool
 True if active, false otherwise  
 
 
-## Remarks
-  
 ## See also
 - [FeatureExtensions](Microsoft.SharePoint.Client.FeatureExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

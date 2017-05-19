@@ -35,8 +35,6 @@ public static void AddLayoutToWikiPage(Web web, String folder, WikiPageLayout la
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [PageExtensions](Microsoft.SharePoint.Client.PageExtensions.md) 
 - System.ArgumentException

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static T Deserialize(String xmlString)
+public static T Deserialize<T>(String xmlString)
 ```
 ### Parameters
 #### xmlString  
@@ -19,8 +19,6 @@ Type: T
 An object instance of T  
 
 
-## Remarks
-  
 ## See also
 - [XMLSerializer](OfficeDevPnP.Core.Utilities.XMLSerializer.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

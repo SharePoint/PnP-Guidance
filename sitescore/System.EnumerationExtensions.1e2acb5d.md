@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static T Remove(Enum value, T remove)
+public static T Remove<T>(Enum value, T remove)
 ```
 ### Parameters
 #### value  
@@ -23,8 +23,6 @@ public static T Remove(Enum value, T remove)
 ### Return Value
 Type: T  
 
-## Remarks
-  
 ## See also
 - [EnumerationExtensions](System.EnumerationExtensions.md) 
 - [System](System.md) 

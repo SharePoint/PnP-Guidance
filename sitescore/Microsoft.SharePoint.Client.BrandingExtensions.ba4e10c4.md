@@ -29,8 +29,6 @@ public static void SetMasterPagesByName(Web web, String masterPageName, String c
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [BrandingExtensions](Microsoft.SharePoint.Client.BrandingExtensions.md) 
 - System.ArgumentException

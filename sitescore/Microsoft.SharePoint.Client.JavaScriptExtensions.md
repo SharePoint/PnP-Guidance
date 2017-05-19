@@ -1,5 +1,7 @@
 # JavaScriptExtensions Class
- Deprecated JavaScript related methods / JavaScript related methods   
+ Deprecated JavaScript related methods 
+
+ JavaScript related methods   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -9,6 +11,10 @@ System.Object
 ```C#
 public static class JavaScriptExtensions
 ```
+## Methods
+|**Name**|**Description**|
+|:-----|:-----|
+| [ExistsJsLinkImplementation(ClientObject, String)](Microsoft.SharePoint.Client.JavaScriptExtensions.a66bc220.md) | 
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|
@@ -22,6 +28,5 @@ public static class JavaScriptExtensions
 | [DeleteJsLink(Site, String)](Microsoft.SharePoint.Client.JavaScriptExtensions.9b8bed27.md) | Removes the custom action that triggers the execution of a javascript link
 | [ExistsJsLink(Web, String)](Microsoft.SharePoint.Client.JavaScriptExtensions.9e405d88.md) | Checks if the target web already has a custom JsLink with a specified key
 | [ExistsJsLink(Site, String)](Microsoft.SharePoint.Client.JavaScriptExtensions.84b11fe5.md) | Checks if the target site already has a custom JsLink with a specified key
-| [ExistsJsLinkImplementation(ClientObject, String)](Microsoft.SharePoint.Client.JavaScriptExtensions.a66bc220.md) | 
 ## See also
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)

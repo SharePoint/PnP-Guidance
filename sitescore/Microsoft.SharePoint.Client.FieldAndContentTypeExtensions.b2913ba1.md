@@ -35,8 +35,6 @@ public static void AddFieldById(ContentType contentType, String fieldId, Boolean
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [FieldAndContentTypeExtensions](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

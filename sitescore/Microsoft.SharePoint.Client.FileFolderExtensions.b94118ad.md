@@ -41,8 +41,6 @@ public static void SaveFileToLocal(Web web, String serverRelativeUrl, String loc
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [FileFolderExtensions](Microsoft.SharePoint.Client.FileFolderExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

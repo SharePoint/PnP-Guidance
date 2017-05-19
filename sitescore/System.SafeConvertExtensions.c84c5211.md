@@ -23,8 +23,6 @@ public static int ToInt32(String input, Int32 defaultValue)
 ### Return Value
 Type: int  
 
-## Remarks
-  
 ## See also
 - [SafeConvertExtensions](System.SafeConvertExtensions.md) 
 - [System](System.md) 

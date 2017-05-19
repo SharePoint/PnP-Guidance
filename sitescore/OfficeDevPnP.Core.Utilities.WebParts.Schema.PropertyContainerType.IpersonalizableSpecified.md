@@ -1,4 +1,6 @@
 # PropertyContainerType.Properties IpersonalizableSpecified
+
+
 Gets a value indicating whether the Ipersonalizable collection is empty.  
 
 **Namespace:** [OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)  

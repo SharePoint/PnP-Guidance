@@ -65,8 +65,6 @@ public static void SendEmail(String servername, String fromAddress, SecureString
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [MailUtility](OfficeDevPnP.Core.Utilities.MailUtility.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

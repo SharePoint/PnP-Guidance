@@ -43,8 +43,6 @@ Type: Guid
 Guid of the created site collection and Guid.Empty is the wait parameter is specified as false. Returns Guid.Empty if the wait is cancelled.  
 
 
-## Remarks
-  
 ## See also
 - [TenantExtensions](Microsoft.SharePoint.Client.TenantExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

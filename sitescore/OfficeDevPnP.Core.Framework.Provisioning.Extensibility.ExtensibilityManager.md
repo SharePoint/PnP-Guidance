@@ -1,5 +1,7 @@
 # ExtensibilityManager Class
- Provisioning Framework Component that is used for invoking custom providers during the provisioning process. / Provisioning Framework Component that is used for invoking custom providers during the provisioning process.   
+ Provisioning Framework Component that is used for invoking custom providers during the provisioning process. 
+
+ Provisioning Framework Component that is used for invoking custom providers during the provisioning process.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Extensibility](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -12,7 +14,7 @@ public class ExtensibilityManager
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ExtensibilityManager()](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.ExtensibilityManager.ctor1.md) |  Provisioning Framework Component that is used for invoking custom providers during the provisioning process. / Provisioning Framework Component that is used for invoking custom providers during the provisioning process. 
+| [ExtensibilityManager()](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.ExtensibilityManager.ctor1.md) |  Provisioning Framework Component that is used for invoking custom providers during the provisioning process. Provisioning Framework Component that is used for invoking custom providers during the provisioning process. 
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|

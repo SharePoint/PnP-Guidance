@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool Has(Enum value, T check)
+public static bool Has<T>(Enum value, T check)
 ```
 ### Parameters
 #### value  
@@ -23,8 +23,6 @@ public static bool Has(Enum value, T check)
 ### Return Value
 Type: bool  
 
-## Remarks
-  
 ## See also
 - [EnumerationExtensions](System.EnumerationExtensions.md) 
 - [System](System.md) 

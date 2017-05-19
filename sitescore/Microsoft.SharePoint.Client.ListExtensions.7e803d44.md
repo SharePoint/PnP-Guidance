@@ -23,8 +23,6 @@ public static Guid GetListID(Web web, String listName)
 ### Return Value
 Type: Guid  
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - System.ArgumentException

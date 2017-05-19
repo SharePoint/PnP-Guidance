@@ -1,5 +1,7 @@
 # CustomAction Class
- Domain Object for custom actions associated with a SharePoint list, Web site, or subsite. / Domain Object for custom actions associated with a SharePoint list, Web site, or subsite.   
+ Domain Object for custom actions associated with a SharePoint list, Web site, or subsite. 
+
+ Domain Object for custom actions associated with a SharePoint list, Web site, or subsite.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -13,7 +15,7 @@ public class CustomAction: BaseModel, IEquatable<CustomAction>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [CustomAction()](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.ctor1.md) |  Domain Object for custom actions associated with a SharePoint list, Web site, or subsite. / Domain Object for custom actions associated with a SharePoint list, Web site, or subsite. 
+| [CustomAction()](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.ctor1.md) |  Domain Object for custom actions associated with a SharePoint list, Web site, or subsite. Domain Object for custom actions associated with a SharePoint list, Web site, or subsite. 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -28,7 +30,7 @@ public class CustomAction: BaseModel, IEquatable<CustomAction>
 | [RegistrationType](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.RegistrationType.md) | 
 | [Remove](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.Remove.md) | Gets or sets a value that specifies whether to Remove the CustomAction from the target
 | [Rights](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.Rights.md) | Gets or sets the value that specifies the permissions needed for the custom action.
-| [RightsValue](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.RightsValue.md) |  Gets or sets the value that specifies the permissions needed for the custom action. 
+| [RightsValue](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.RightsValue.md) |  Gets or sets the value that specifies the permissions needed for the custom action. https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.permissionkind.aspx
 | [ScriptBlock](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.ScriptBlock.md) | Gets or sets the value that specifies the ECMAScript to be executed when the custom action is performed.
 | [ScriptSrc](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.ScriptSrc.md) | Gets or sets a value that specifies the URI of a file which contains the ECMAScript to execute on the page
 | [Sequence](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.Sequence.md) | Gets or sets the value that specifies an implementation-specific value that determines the order of the custom action that appears on the page.

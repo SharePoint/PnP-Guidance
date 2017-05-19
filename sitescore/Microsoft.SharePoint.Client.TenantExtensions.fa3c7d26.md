@@ -25,8 +25,6 @@ Type: bool
 True if existing, false if not  
 
 
-## Remarks
-  
 ## See also
 - [TenantExtensions](Microsoft.SharePoint.Client.TenantExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

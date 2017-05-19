@@ -29,8 +29,6 @@ public static void SetPropertyBagValue(List list, String key, Int32 value)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

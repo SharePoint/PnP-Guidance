@@ -83,8 +83,6 @@ public static void SetSiteProperties(Tenant tenant, String siteFullUrl, String t
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [TenantExtensions](Microsoft.SharePoint.Client.TenantExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

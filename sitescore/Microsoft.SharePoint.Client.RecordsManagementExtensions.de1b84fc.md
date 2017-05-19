@@ -19,8 +19,6 @@ Type: bool
 True if in place records management settings are active for this list  
 
 
-## Remarks
-  
 ## See also
 - [RecordsManagementExtensions](Microsoft.SharePoint.Client.RecordsManagementExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

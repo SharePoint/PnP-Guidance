@@ -1,5 +1,7 @@
 # FeatureExtensions Class
- Class that holds deprecated feature activation and deactivation methods / Class that deals with feature activation and deactivation   
+ Class that holds deprecated feature activation and deactivation methods 
+
+ Class that deals with feature activation and deactivation   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

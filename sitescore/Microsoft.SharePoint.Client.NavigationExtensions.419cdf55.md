@@ -23,8 +23,6 @@ public static void UpdateNavigationSettings(Web web, AreaNavigationEntity naviga
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [NavigationExtensions](Microsoft.SharePoint.Client.NavigationExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

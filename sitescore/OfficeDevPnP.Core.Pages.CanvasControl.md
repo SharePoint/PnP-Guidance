@@ -32,10 +32,7 @@ public class CanvasControl
 |**Name**|**Description**|
 |:-----|:-----|
 | [Delete()](OfficeDevPnP.Core.Pages.CanvasControl.19cb6464.md) | Removes the control from the page
-| [ToHtml()](OfficeDevPnP.Core.Pages.CanvasControl.7c2b006f.md) | Converts a control object to it's html representation
-## Extension Methods
-|**Name**|**Description**|
-|:-----|:-----|
 | [GetType(String)](OfficeDevPnP.Core.Pages.CanvasControl.c4f3d927.md) | Receives data-sp-controldata content and detects the type of the control
+| [ToHtml()](OfficeDevPnP.Core.Pages.CanvasControl.7c2b006f.md) | Converts a control object to it's html representation
 ## See also
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

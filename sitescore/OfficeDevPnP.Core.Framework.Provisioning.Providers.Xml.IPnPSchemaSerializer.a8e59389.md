@@ -23,8 +23,6 @@ public void Serialize(ProvisioningTemplate template, Object persistence)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [IPnPSchemaSerializer](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.IPnPSchemaSerializer.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.md) 

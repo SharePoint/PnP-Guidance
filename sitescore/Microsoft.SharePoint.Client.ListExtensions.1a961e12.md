@@ -65,8 +65,6 @@ public static View CreateView(List list, String viewName, ViewType viewType, Str
 ### Return Value
 Type: View  
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

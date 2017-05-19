@@ -25,8 +25,6 @@ Type: List<File>
 A list with the found Microsoft.SharePoint.Client.File objects  
 
 
-## Remarks
-  
 ## See also
 - [FileFolderExtensions](Microsoft.SharePoint.Client.FileFolderExtensions.md) 
 - Microsoft.SharePoint.Client.File

@@ -23,8 +23,6 @@ public static void SetManualRecordDeclarationInAllLocations(Site site, Boolean i
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [RecordsManagementExtensions](Microsoft.SharePoint.Client.RecordsManagementExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

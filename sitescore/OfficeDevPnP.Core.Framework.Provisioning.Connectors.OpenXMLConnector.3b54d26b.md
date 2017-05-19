@@ -23,8 +23,6 @@ public void SaveFileStream(String fileName, Stream stream)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [OpenXMLConnector](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXMLConnector.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md) 

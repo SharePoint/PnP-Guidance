@@ -29,8 +29,6 @@ public static void RemoveUserFromGroup(Web web, String groupName, String userLog
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [SecurityExtensions](Microsoft.SharePoint.Client.SecurityExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

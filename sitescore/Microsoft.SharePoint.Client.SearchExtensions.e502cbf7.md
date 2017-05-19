@@ -29,8 +29,6 @@ public static void ImportSearchSettings(ClientContext context, String searchSche
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [SearchExtensions](Microsoft.SharePoint.Client.SearchExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

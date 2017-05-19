@@ -19,8 +19,6 @@ Type: bool
 True if cookie is available and not empty, false otherwise  
 
 
-## Remarks
-  
 ## See also
 - [WebAPIHelper](OfficeDevPnP.Core.WebAPI.WebAPIHelper.md) 
 - [OfficeDevPnP.Core.WebAPI](OfficeDevPnP.Core.WebAPI.md) 

@@ -25,8 +25,6 @@ Type: ClientContext
 A ClientContext object created for the passed site url  
 
 
-## Remarks
-  
 ## See also
 - [ClientContextExtensions](Microsoft.SharePoint.Client.ClientContextExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

@@ -19,8 +19,6 @@ Type: WebAPIContexCacheItem
 A  [OfficeDevPnP.Core.WebAPI.WebAPIContexCacheItem](OfficeDevPnP.Core.WebAPI.WebAPIContexCacheItem.md)  object  
 
 
-## Remarks
-  
 ## See also
 - [WebAPIContextCache](OfficeDevPnP.Core.WebAPI.WebAPIContextCache.md) 
 - [OfficeDevPnP.Core.WebAPI.WebAPIContexCacheItem](OfficeDevPnP.Core.WebAPI.WebAPIContexCacheItem.md)

@@ -29,8 +29,6 @@ public static void RemoveContentTypeFromList(Web web, List list, ContentType con
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [FieldAndContentTypeExtensions](Microsoft.SharePoint.Client.FieldAndContentTypeExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

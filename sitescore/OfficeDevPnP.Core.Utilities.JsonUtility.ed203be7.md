@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string Serialize(T obj)
+public static string Serialize<T>(T obj)
 ```
 ### Parameters
 #### obj  
@@ -19,8 +19,6 @@ Type: string
 json string  
 
 
-## Remarks
-  
 ## See also
 - [JsonUtility](OfficeDevPnP.Core.Utilities.JsonUtility.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

@@ -12,8 +12,6 @@ Type: string
 HTML representation of the client side web part  
 
 
-## Remarks
-  
 ## See also
 - [ClientSideWebPart](OfficeDevPnP.Core.Pages.ClientSideWebPart.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

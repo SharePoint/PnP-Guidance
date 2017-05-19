@@ -1,5 +1,5 @@
 # WebAPIContextCache Class
- Simple cache implementation based on the singleton pattern. Caches the SharePoint access token, refresh token and the information passed during service "registration". All of this information is wrapped in a   
+Simple cache implementation based on the singleton pattern. Caches the SharePoint access token, refresh token and the information passed during service "registration". All of this information is wrapped in a  [OfficeDevPnP.Core.WebAPI.WebAPIContexCacheItem](OfficeDevPnP.Core.WebAPI.WebAPIContexCacheItem.md)  object  
 
 **Namespace:** [OfficeDevPnP.Core.WebAPI](OfficeDevPnP.Core.WebAPI.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

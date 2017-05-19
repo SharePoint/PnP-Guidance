@@ -23,8 +23,6 @@ public static void SetRecordUnDeclarationBy(Site site, EcmRecordDeclarationBy by
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [RecordsManagementExtensions](Microsoft.SharePoint.Client.RecordsManagementExtensions.md) 
 - [OfficeDevPnP.Core.EcmRecordDeclarationBy](OfficeDevPnP.Core.EcmRecordDeclarationBy.md)

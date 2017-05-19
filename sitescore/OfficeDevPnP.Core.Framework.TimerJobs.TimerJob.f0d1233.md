@@ -19,8 +19,6 @@ Type: List<String>
 List of resolved sites  
 
 
-## Remarks
-  
 ## See also
 - [TimerJob](OfficeDevPnP.Core.Framework.TimerJobs.TimerJob.md) 
 - [OfficeDevPnP.Core.Framework.TimerJobs](OfficeDevPnP.Core.Framework.TimerJobs.md) 

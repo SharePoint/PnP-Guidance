@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static T Include(Enum value, T append)
+public static T Include<T>(Enum value, T append)
 ```
 ### Parameters
 #### value  
@@ -23,8 +23,6 @@ public static T Include(Enum value, T append)
 ### Return Value
 Type: T  
 
-## Remarks
-  
 ## See also
 - [EnumerationExtensions](System.EnumerationExtensions.md) 
 - [System](System.md) 

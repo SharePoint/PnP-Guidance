@@ -23,8 +23,6 @@ public static void RemovePropertyBagValue(Web web, String key)
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [WebExtensions](Microsoft.SharePoint.Client.WebExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

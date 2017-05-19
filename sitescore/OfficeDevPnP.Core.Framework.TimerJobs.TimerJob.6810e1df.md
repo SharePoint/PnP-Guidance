@@ -19,8 +19,6 @@ Type: IEnumerable<String>
 IEnumerable of strings holding the sub site urls  
 
 
-## Remarks
-  
 ## See also
 - [TimerJob](OfficeDevPnP.Core.Framework.TimerJobs.TimerJob.md) 
 - [OfficeDevPnP.Core.Framework.TimerJobs](OfficeDevPnP.Core.Framework.TimerJobs.md) 

@@ -35,8 +35,6 @@ public static void WireUpTaxonomyField(Web web, Field field, TermSet termSet, Bo
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [TaxonomyExtensions](Microsoft.SharePoint.Client.TaxonomyExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

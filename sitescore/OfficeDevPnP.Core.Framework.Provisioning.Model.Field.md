@@ -17,7 +17,7 @@ public class Field: BaseModel, IEquatable<Field>
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [SchemaXml](OfficeDevPnP.Core.Framework.Provisioning.Model.Field.SchemaXml.md) |  Gets a value that specifies the XML Schema representing the Field type. 
+| [SchemaXml](OfficeDevPnP.Core.Framework.Provisioning.Model.Field.SchemaXml.md) |  Gets a value that specifies the XML Schema representing the Field type. https://msdn.microsoft.com/en-us/library/office/ff407271.aspx
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|

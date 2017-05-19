@@ -41,8 +41,6 @@ public static void WireUpTaxonomyField(Web web, Guid id, String mmsGroupName, St
 ### Return Value
 Type: void  
 
-## Remarks
-  
 ## See also
 - [TaxonomyExtensions](Microsoft.SharePoint.Client.TaxonomyExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 

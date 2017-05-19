@@ -25,8 +25,6 @@ Type: bool
 True if the entry exists, false otherwise  
 
 
-## Remarks
-  
 ## See also
 - [ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md) 
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md) 
