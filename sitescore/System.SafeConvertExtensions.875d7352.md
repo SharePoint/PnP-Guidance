@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static double ToDouble(String input, Double defaultValue)
+public static double ToDouble(this String input, Double defaultValue)
 ```
 ### Parameters
 #### input  

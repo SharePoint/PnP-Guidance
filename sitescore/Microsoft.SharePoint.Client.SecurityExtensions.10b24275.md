@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List<UserEntity> GetAdministrators(Web web)
+public static List<UserEntity> GetAdministrators(this Web web)
 ```
 ### Parameters
 #### web  

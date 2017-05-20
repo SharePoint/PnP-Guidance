@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetTaxonomyFieldDefaultValue(Field field, TaxonomyItem taxonomyItem, String defaultValue, Boolean pushChangesToLists)
+public static void SetTaxonomyFieldDefaultValue(this Field field, TaxonomyItem taxonomyItem, String defaultValue, Boolean pushChangesToLists = False)
 ```
 ### Parameters
 #### field  

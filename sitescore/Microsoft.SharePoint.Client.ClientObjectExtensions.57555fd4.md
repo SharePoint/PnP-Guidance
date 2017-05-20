@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Expression<Func<TInput, Object>> ToUntypedStaticMethodCallExpression<T>(Expression<Func<TInput, TOutput>> expression)
+public static Expression<Func<TInput, Object>> ToUntypedStaticMethodCallExpression<TInput, TOutput>(this Expression<Func<TInput, TOutput>> expression)
 ```
 ### Parameters
 #### expression  

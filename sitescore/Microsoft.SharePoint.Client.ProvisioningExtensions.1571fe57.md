@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ProvisionElementXml(Web web, String baseFolder, XElement elementsXml)
+public static void ProvisionElementXml(this Web web, String baseFolder, XElement elementsXml)
 ```
 ### Parameters
 #### web  

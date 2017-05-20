@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool SetOpenBySitePolicy(Web web)
+public static bool SetOpenBySitePolicy(this Web web)
 ```
 ### Parameters
 #### web  

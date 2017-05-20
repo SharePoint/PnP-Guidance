@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ActivateInPlaceRecordsManagementFeature(Site site)
+public static void ActivateInPlaceRecordsManagementFeature(this Site site)
 ```
 ### Parameters
 #### site  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsObjectPropertyInstantiated<T>(T clientObject, Expression<Func<T, Object>> propertySelector)
+public static bool IsObjectPropertyInstantiated<T>(this T clientObject, Expression<Func<T, Object>> propertySelector) where T : ClientObject
 ```
 ### Parameters
 #### clientObject  

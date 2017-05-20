@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ClientContext Clone(ClientRuntimeContext clientContext, Uri siteUrl)
+public static ClientContext Clone(this ClientRuntimeContext clientContext, Uri siteUrl)
 ```
 ### Parameters
 #### clientContext  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static WorkflowDefinition GetWorkflowDefinition(Web web, Guid id)
+public static WorkflowDefinition GetWorkflowDefinition(this Web web, Guid id)
 ```
 ### Parameters
 #### web  

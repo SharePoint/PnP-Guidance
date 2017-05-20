@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static MemoryStream PackTemplateAsStream(PnPInfo pnpInfo)
+public static MemoryStream PackTemplateAsStream(this PnPInfo pnpInfo)
 ```
 ### Parameters
 #### pnpInfo  

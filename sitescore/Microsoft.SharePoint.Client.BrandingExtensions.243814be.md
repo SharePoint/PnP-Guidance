@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetDefaultPageLayoutForSite(Web web, Web rootWeb, String pageLayoutName)
+public static void SetDefaultPageLayoutForSite(this Web web, Web rootWeb, String pageLayoutName)
 ```
 ### Parameters
 #### web  

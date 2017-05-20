@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static WebPartEntity GetYammerOpenGraphDiscussionPart(String yammerNetworkName, String url, Boolean showHeader, Boolean showFooter, String postTitle, String postImageUrl, String defaultGroupId)
+public static WebPartEntity GetYammerOpenGraphDiscussionPart(String yammerNetworkName, String url, Boolean showHeader, Boolean showFooter, String postTitle = "", String postImageUrl = "", String defaultGroupId = "")
 ```
 ### Parameters
 #### yammerNetworkName  

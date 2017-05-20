@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void RemoveAdministrator(Web web, UserEntity admin)
+public static void RemoveAdministrator(this Web web, UserEntity admin)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static int GetWssIdForTerm(Web web, Term term)
+public static int GetWssIdForTerm(this Web web, Term term)
 ```
 ### Parameters
 #### web  

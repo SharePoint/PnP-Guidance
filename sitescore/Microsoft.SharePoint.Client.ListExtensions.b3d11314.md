@@ -21,7 +21,7 @@ Value: The default value for the field
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List<Dictionary<String, String>> GetDefaultColumnValues(List list)
+public static List<Dictionary<String, String>> GetDefaultColumnValues(this List list)
 ```
 ### Parameters
 #### list  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void CheckInFile(Web web, String serverRelativeUrl, CheckinType checkinType, String comment)
+public static void CheckInFile(this Web web, String serverRelativeUrl, CheckinType checkinType, String comment)
 ```
 ### Parameters
 #### web  

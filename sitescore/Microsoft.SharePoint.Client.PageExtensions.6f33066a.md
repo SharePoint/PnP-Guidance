@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ClientSidePage AddClientSidePage(Web web, String pageName, Boolean alreadyPersist)
+public static ClientSidePage AddClientSidePage(this Web web, String pageName, Boolean alreadyPersist = False)
 ```
 ### Parameters
 #### web  

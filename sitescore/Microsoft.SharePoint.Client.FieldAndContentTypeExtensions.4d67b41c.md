@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetLocalizationForContentType(List list, String contentTypeId, String cultureName, String nameResource, String descriptionResource)
+public static void SetLocalizationForContentType(this List list, String contentTypeId, String cultureName, String nameResource, String descriptionResource)
 ```
 ### Parameters
 #### list  

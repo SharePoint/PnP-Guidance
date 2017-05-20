@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ActivateFeature(Site site, Guid featureID, Boolean sandboxed, Int32 pollingIntervalSeconds)
+public static void ActivateFeature(this Site site, Guid featureID, Boolean sandboxed = False, Int32 pollingIntervalSeconds = 30)
 ```
 ### Parameters
 #### site  

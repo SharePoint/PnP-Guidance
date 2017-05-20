@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string GetBaseTemplateId(Web parentWeb)
+public static string GetBaseTemplateId(this Web parentWeb)
 ```
 ### Parameters
 #### parentWeb  

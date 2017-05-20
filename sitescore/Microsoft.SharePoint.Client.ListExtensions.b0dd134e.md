@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool ListExists(Web web, Guid id)
+public static bool ListExists(this Web web, Guid id)
 ```
 ### Parameters
 #### web  

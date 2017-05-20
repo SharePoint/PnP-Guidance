@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static User AddReaderAccess(Web web)
+public static User AddReaderAccess(this Web web)
 ```
 ### Parameters
 #### web  

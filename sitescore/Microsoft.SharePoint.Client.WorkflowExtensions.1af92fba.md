@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Guid StartWorkflowInstance(Web web, String subscriptionName, IDictionary<String, Object> payload)
+public static Guid StartWorkflowInstance(this Web web, String subscriptionName, IDictionary<String, Object> payload)
 ```
 ### Parameters
 #### web  

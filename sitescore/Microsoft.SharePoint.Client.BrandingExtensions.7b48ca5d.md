@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetMasterPageByUrl(Web web, String masterPageServerRelativeUrl, Boolean resetSubsitesToInherit, Boolean updateRootOnly)
+public static void SetMasterPageByUrl(this Web web, String masterPageServerRelativeUrl, Boolean resetSubsitesToInherit = False, Boolean updateRootOnly = False)
 ```
 ### Parameters
 #### web  

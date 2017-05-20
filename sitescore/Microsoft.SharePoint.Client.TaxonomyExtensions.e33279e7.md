@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TermGroup GetTermGroupByName(Site site, String name)
+public static TermGroup GetTermGroupByName(this Site site, String name)
 ```
 ### Parameters
 #### site  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ThemeEntity GetCurrentComposedLook(Web web)
+public static ThemeEntity GetCurrentComposedLook(this Web web)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string ResolvePeoplePickerValueForEmail(Web web, String emailAddress)
+public static string ResolvePeoplePickerValueForEmail(this Web web, String emailAddress)
 ```
 ### Parameters
 #### web  

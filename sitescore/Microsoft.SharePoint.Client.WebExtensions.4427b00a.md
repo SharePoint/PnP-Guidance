@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string GetPropertyBagValueString(Web web, String key, String defaultValue)
+public static string GetPropertyBagValueString(this Web web, String key, String defaultValue)
 ```
 ### Parameters
 #### web  

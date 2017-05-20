@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetSiteToInheritPageLayouts(Web web)
+public static void SetSiteToInheritPageLayouts(this Web web)
 ```
 ### Parameters
 #### web  

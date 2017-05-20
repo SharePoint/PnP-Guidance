@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static IEnumerable<RoleAssignmentEntity> GetAllUniqueRoleAssignments(Web web, Int32 leafBreadthLimit)
+public static IEnumerable<RoleAssignmentEntity> GetAllUniqueRoleAssignments(this Web web, Int32 leafBreadthLimit = 2147483647)
 ```
 ### Parameters
 #### web  

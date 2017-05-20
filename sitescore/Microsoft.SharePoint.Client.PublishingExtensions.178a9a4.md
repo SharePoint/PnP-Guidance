@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void RemovePublishingImageRendition(Web web, String imageRenditionName)
+public static void RemovePublishingImageRendition(this Web web, String imageRenditionName)
 ```
 ### Parameters
 #### web  

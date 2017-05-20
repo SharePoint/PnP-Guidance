@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetRating(List list, VotingExperience experience)
+public static void SetRating(this List list, VotingExperience experience)
 ```
 ### Parameters
 #### list  

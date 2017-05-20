@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool WebExists(Web parentWeb, String leafUrl)
+public static bool WebExists(this Web parentWeb, String leafUrl)
 ```
 ### Parameters
 #### parentWeb  

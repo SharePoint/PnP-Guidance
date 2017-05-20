@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool DeepEquals<T>(IEnumerable<T> source, IEnumerable<T> target)
+public static bool DeepEquals<T>(this IEnumerable<T> source, IEnumerable<T> target)
 ```
 ### Parameters
 #### source  

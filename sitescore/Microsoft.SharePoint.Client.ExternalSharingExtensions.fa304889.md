@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static SharingResult UnshareDocument(Web web, String urlToDocument)
+public static SharingResult UnshareDocument(this Web web, String urlToDocument)
 ```
 ### Parameters
 #### web  

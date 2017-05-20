@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void DeleteNavigationNode(Web web, String nodeTitle, String parentNodeTitle, NavigationType navigationType)
+public static void DeleteNavigationNode(this Web web, String nodeTitle, String parentNodeTitle, NavigationType navigationType)
 ```
 ### Parameters
 #### web  

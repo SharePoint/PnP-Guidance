@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TermSet ImportTermSet(TermGroup termGroup, Stream termSetData, Guid termSetId, Boolean synchroniseDeletions, Nullable<Boolean> termSetIsOpen, String termSetContact, String termSetOwner)
+public static TermSet ImportTermSet(this TermGroup termGroup, Stream termSetData, Guid termSetId, Boolean synchroniseDeletions = False, Nullable<Boolean> termSetIsOpen, String termSetContact, String termSetOwner)
 ```
 ### Parameters
 #### termGroup  

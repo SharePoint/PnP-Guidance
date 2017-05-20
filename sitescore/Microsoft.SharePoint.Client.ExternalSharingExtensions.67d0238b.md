@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ObjectSharingSettings GetObjectSharingSettingsForSite(Web web, Boolean useSimplifiedPolicies)
+public static ObjectSharingSettings GetObjectSharingSettingsForSite(this Web web, Boolean useSimplifiedPolicies = True)
 ```
 ### Parameters
 #### web  

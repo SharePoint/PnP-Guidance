@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsManagedNavigationEnabled(Web web, ManagedNavigationKind navigationKind)
+public static bool IsManagedNavigationEnabled(this Web web, ManagedNavigationKind navigationKind)
 ```
 ### Parameters
 #### web  

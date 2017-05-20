@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool SiteExists(Tenant tenant, String siteFullUrl)
+public static bool SiteExists(this Tenant tenant, String siteFullUrl)
 ```
 ### Parameters
 #### tenant  

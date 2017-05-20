@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ConfigureVariationsSettings(ClientContext context, VariationInformation variationSettings)
+public static void ConfigureVariationsSettings(this ClientContext context, VariationInformation variationSettings)
 ```
 ### Parameters
 #### context  

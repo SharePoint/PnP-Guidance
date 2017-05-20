@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ContentType CreateContentTypeFromXMLFile(Web web, String absolutePathToFile)
+public static ContentType CreateContentTypeFromXMLFile(this Web web, String absolutePathToFile)
 ```
 ### Parameters
 #### web  

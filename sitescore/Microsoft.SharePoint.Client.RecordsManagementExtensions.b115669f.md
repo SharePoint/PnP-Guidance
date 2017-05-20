@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static EcmListManualRecordDeclaration GetListManualRecordDeclaration(List list)
+public static EcmListManualRecordDeclaration GetListManualRecordDeclaration(this List list)
 ```
 ### Parameters
 #### list  

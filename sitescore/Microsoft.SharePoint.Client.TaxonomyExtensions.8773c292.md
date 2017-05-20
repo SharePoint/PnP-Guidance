@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TermGroup EnsureTermGroup(Site site, String groupName, Guid groupId, String groupDescription)
+public static TermGroup EnsureTermGroup(this Site site, String groupName, Guid groupId, String groupDescription)
 ```
 ### Parameters
 #### site  

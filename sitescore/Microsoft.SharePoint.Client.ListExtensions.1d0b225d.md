@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string GetWebRelativeUrl(List list)
+public static string GetWebRelativeUrl(this List list)
 ```
 ### Parameters
 #### list  

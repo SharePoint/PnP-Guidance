@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool Missing<T>(Enum obj, T value)
+public static bool Missing<T>(this Enum obj, T value)
 ```
 ### Parameters
 #### obj  

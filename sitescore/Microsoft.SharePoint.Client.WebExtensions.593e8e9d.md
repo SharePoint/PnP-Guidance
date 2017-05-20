@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Web CreateWeb(Web parentWeb, String title, String leafUrl, String description, String template, Int32 language, Boolean inheritPermissions, Boolean inheritNavigation)
+public static Web CreateWeb(this Web parentWeb, String title, String leafUrl, String description, String template, Int32 language, Boolean inheritPermissions = True, Boolean inheritNavigation = True)
 ```
 ### Parameters
 #### parentWeb  

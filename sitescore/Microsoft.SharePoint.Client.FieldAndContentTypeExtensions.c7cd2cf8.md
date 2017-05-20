@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void CreateFieldsFromXMLFile(Web web, String xmlFilePath)
+public static void CreateFieldsFromXMLFile(this Web web, String xmlFilePath)
 ```
 ### Parameters
 #### web  

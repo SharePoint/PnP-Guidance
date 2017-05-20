@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List GetPagesLibrary(Web web)
+public static List GetPagesLibrary(this Web web)
 ```
 ### Parameters
 #### web  

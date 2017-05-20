@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string ViewQuery(ViewScope scope, String whereClause, String orderByClause, String viewFields, Int32 rowLimit)
+public static string ViewQuery(ViewScope scope, String whereClause = "", String orderByClause = "", String viewFields = "", Int32 rowLimit = 100)
 ```
 ### Parameters
 #### scope  

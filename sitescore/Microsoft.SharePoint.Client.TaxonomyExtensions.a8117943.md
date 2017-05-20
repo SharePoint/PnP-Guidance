@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TaxonomySession GetTaxonomySession(Site site)
+public static TaxonomySession GetTaxonomySession(this Site site)
 ```
 ### Parameters
 #### site  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool CustomActionExists(Web web, String name)
+public static bool CustomActionExists(this Web web, String name)
 ```
 ### Parameters
 #### web  

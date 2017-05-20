@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static UnifiedGroupEntity CreateUnifiedGroup(String displayName, String description, String mailNickname, String accessToken, String[] owners, String[] members, Stream groupLogo, Boolean isPrivate, Int32 retryCount, Int32 delay)
+public static UnifiedGroupEntity CreateUnifiedGroup(String displayName, String description, String mailNickname, String accessToken, String[] owners, String[] members, Stream groupLogo, Boolean isPrivate = False, Int32 retryCount = 10, Int32 delay = 500)
 ```
 ### Parameters
 #### displayName  

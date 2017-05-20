@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsUserInGroup(Web web, String groupName, String userLoginName)
+public static bool IsUserInGroup(this Web web, String groupName, String userLoginName)
 ```
 ### Parameters
 #### web  

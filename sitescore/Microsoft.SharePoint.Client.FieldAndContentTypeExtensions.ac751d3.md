@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetJsLinkCustomizations(List list, String fieldName, String jsLink)
+public static void SetJsLinkCustomizations(this List list, String fieldName, String jsLink)
 ```
 ### Parameters
 #### list  

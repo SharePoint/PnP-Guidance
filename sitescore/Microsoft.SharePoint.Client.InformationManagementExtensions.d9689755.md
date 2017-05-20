@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool ApplySitePolicy(Web web, String sitePolicy)
+public static bool ApplySitePolicy(this Web web, String sitePolicy)
 ```
 ### Parameters
 #### web  

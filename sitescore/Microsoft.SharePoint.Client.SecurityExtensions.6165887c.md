@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string GetSharingCapabilitiesTenant(Web web, Uri siteUrl)
+public static string GetSharingCapabilitiesTenant(this Web web, Uri siteUrl)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool FolderExists(Folder parentFolder, String folderName)
+public static bool FolderExists(this Folder parentFolder, String folderName)
 ```
 ### Parameters
 #### parentFolder  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddFieldByName(ContentType contentType, String fieldName, Boolean required, Boolean hidden)
+public static void AddFieldByName(this ContentType contentType, String fieldName, Boolean required = False, Boolean hidden = False)
 ```
 ### Parameters
 #### contentType  

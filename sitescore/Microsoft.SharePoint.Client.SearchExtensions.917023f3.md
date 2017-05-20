@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string GetWebSearchCenterUrl(Web web)
+public static string GetWebSearchCenterUrl(this Web web)
 ```
 ### Parameters
 #### web  

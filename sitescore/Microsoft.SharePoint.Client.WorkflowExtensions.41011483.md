@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void PublishCustomEvent(WorkflowInstance instance, String eventName, String payload)
+public static void PublishCustomEvent(this WorkflowInstance instance, String eventName, String payload)
 ```
 ### Parameters
 #### instance  

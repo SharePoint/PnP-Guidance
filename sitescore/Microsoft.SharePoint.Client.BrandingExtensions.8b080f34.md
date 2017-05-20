@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool ComposedLookExists(Web web, String composedLookName)
+public static bool ComposedLookExists(this Web web, String composedLookName)
 ```
 ### Parameters
 #### web  

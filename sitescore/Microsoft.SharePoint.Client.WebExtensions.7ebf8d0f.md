@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void RemovePropertyBagValue(Web web, String key)
+public static void RemovePropertyBagValue(this Web web, String key)
 ```
 ### Parameters
 #### web  

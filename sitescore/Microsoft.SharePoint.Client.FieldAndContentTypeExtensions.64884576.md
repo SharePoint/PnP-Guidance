@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool ContentTypeExistsByName(List list, String contentTypeName)
+public static bool ContentTypeExistsByName(this List list, String contentTypeName)
 ```
 ### Parameters
 #### list  

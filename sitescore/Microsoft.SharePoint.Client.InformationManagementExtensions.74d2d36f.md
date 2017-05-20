@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static DateTime GetSiteCloseDate(Web web)
+public static DateTime GetSiteCloseDate(this Web web)
 ```
 ### Parameters
 #### web  

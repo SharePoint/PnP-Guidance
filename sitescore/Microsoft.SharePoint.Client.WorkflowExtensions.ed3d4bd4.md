@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Guid AddWorkflowDefinition(Web web, WorkflowDefinition definition, Boolean publish)
+public static Guid AddWorkflowDefinition(this Web web, WorkflowDefinition definition, Boolean publish = True)
 ```
 ### Parameters
 #### web  

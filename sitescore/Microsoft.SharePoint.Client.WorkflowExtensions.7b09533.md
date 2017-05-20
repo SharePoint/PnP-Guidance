@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void Delete(WorkflowSubscription subscription)
+public static void Delete(this WorkflowSubscription subscription)
 ```
 ### Parameters
 #### subscription  

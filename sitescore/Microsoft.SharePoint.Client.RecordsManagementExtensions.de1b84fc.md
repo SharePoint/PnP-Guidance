@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsListRecordSettingDefined(List list)
+public static bool IsListRecordSettingDefined(this List list)
 ```
 ### Parameters
 #### list  

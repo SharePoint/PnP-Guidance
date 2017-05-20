@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetAvailableWebTemplates(Web web, List<WebTemplateEntity> availableTemplates)
+public static void SetAvailableWebTemplates(this Web web, List<WebTemplateEntity> availableTemplates)
 ```
 ### Parameters
 #### web  

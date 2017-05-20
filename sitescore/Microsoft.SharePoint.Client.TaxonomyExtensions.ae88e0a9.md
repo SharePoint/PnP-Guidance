@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TermGroup CreateTermGroup(TermStore termStore, String groupName, Guid groupId, String groupDescription)
+public static TermGroup CreateTermGroup(this TermStore termStore, String groupName, Guid groupId, String groupDescription)
 ```
 ### Parameters
 #### termStore  

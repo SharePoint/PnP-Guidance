@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool ListExists(Web web, Uri siteRelativeUrlPath)
+public static bool ListExists(this Web web, Uri siteRelativeUrlPath)
 ```
 ### Parameters
 #### web  

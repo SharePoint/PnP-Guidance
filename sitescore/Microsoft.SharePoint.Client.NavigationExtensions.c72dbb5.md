@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static AreaNavigationEntity GetNavigationSettings(Web web)
+public static AreaNavigationEntity GetNavigationSettings(this Web web)
 ```
 ### Parameters
 #### web  

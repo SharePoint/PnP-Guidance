@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Guid CreateSiteCollection(Tenant tenant, SiteEntity properties, Boolean removeFromRecycleBin, Boolean wait, Func<TenantOperationMessage, Boolean> timeoutFunction)
+public static Guid CreateSiteCollection(this Tenant tenant, SiteEntity properties, Boolean removeFromRecycleBin = False, Boolean wait = True, Func<TenantOperationMessage, Boolean> timeoutFunction)
 ```
 ### Parameters
 #### tenant  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddPermissionLevelToPrincipal(SecurableObject securableObject, Principal principal, String roleDefinitionName, Boolean removeExistingPermissionLevels)
+public static void AddPermissionLevelToPrincipal(this SecurableObject securableObject, Principal principal, String roleDefinitionName, Boolean removeExistingPermissionLevels = False)
 ```
 ### Parameters
 #### securableObject  

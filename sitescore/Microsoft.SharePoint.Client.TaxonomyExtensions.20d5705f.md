@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void RemoveTaxonomyFieldById(Web web, Guid id)
+public static void RemoveTaxonomyFieldById(this Web web, Guid id)
 ```
 ### Parameters
 #### web  

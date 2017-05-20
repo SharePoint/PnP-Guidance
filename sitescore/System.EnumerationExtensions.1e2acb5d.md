@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static T Remove<T>(Enum value, T remove)
+public static T Remove<T>(this Enum value, T remove)
 ```
 ### Parameters
 #### value  

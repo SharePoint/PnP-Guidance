@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsSiteActive(Tenant tenant, String siteFullUrl)
+public static bool IsSiteActive(this Tenant tenant, String siteFullUrl)
 ```
 ### Parameters
 #### tenant  

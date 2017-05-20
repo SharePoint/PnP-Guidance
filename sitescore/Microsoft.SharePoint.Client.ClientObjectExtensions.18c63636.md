@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsPropertyAvailable<T>(T clientObject, Expression<Func<T, Object>> propertySelector)
+public static bool IsPropertyAvailable<T>(this T clientObject, Expression<Func<T, Object>> propertySelector) where T : ClientObject
 ```
 ### Parameters
 #### clientObject  

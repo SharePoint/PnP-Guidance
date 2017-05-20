@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static File UploadFile(Folder folder, String fileName, Stream stream, Boolean overwriteIfExists)
+public static File UploadFile(this Folder folder, String fileName, Stream stream, Boolean overwriteIfExists)
 ```
 ### Parameters
 #### folder  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool AddContentTypeToListById(List list, String contentTypeID, Boolean defaultContent, Boolean searchContentTypeInSiteHierarchy)
+public static bool AddContentTypeToListById(this List list, String contentTypeID, Boolean defaultContent = False, Boolean searchContentTypeInSiteHierarchy = False)
 ```
 ### Parameters
 #### list  

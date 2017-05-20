@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void UninstallSolution(Site site, Guid packageGuid, String fileName, Int32 majorVersion, Int32 minorVersion)
+public static void UninstallSolution(this Site site, Guid packageGuid, String fileName, Int32 majorVersion = 1, Int32 minorVersion = 0)
 ```
 ### Parameters
 #### site  

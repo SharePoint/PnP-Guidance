@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void EnableResponsiveUI(Site site, String infrastructureUrl)
+public static void EnableResponsiveUI(this Site site, String infrastructureUrl)
 ```
 ### Parameters
 #### site  

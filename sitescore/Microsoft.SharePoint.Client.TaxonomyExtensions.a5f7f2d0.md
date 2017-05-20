@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void WireUpTaxonomyField(List list, Guid id, String mmsGroupName, String mmsTermSetName, Boolean multiValue)
+public static void WireUpTaxonomyField(this List list, Guid id, String mmsGroupName, String mmsTermSetName, Boolean multiValue = False)
 ```
 ### Parameters
 #### list  

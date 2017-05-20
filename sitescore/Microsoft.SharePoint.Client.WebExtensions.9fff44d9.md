@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List<SiteEntity> SiteSearchScopedByTitle(Web web, String siteTitle)
+public static List<SiteEntity> SiteSearchScopedByTitle(this Web web, String siteTitle)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static IList<SiteEntity> GetOneDriveSiteCollections(Tenant tenant)
+public static IList<SiteEntity> GetOneDriveSiteCollections(this Tenant tenant)
 ```
 ### Parameters
 #### tenant  

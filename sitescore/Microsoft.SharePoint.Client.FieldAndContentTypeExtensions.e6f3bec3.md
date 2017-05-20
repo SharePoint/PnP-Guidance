@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool FieldExistsById(List list, Guid fieldId)
+public static bool FieldExistsById(this List list, Guid fieldId)
 ```
 ### Parameters
 #### list  

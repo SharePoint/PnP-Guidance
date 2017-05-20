@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ClearAvailableWebTemplates(Web web)
+public static void ClearAvailableWebTemplates(this Web web)
 ```
 ### Parameters
 #### web  

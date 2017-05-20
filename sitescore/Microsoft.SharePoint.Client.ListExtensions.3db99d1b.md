@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void UpdateListVersioning(Web web, String listName, Boolean enableVersioning, Boolean enableMinorVersioning, Boolean updateAndExecuteQuery)
+public static void UpdateListVersioning(this Web web, String listName, Boolean enableVersioning, Boolean enableMinorVersioning = True, Boolean updateAndExecuteQuery = True)
 ```
 ### Parameters
 #### web  

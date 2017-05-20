@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ResumeWorkflow(WorkflowInstance instance)
+public static void ResumeWorkflow(this WorkflowInstance instance)
 ```
 ### Parameters
 #### instance  

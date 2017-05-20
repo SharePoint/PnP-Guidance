@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static NavigationTermSet GetEditableNavigationTermSet(Web web, ManagedNavigationKind navigationKind)
+public static NavigationTermSet GetEditableNavigationTermSet(this Web web, ManagedNavigationKind navigationKind)
 ```
 ### Parameters
 #### web  

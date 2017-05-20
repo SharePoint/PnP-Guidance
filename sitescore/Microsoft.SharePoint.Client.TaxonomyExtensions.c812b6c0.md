@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void WireUpTaxonomyField(Web web, Guid id, String mmsGroupName, String mmsTermSetName, Boolean multiValue)
+public static void WireUpTaxonomyField(this Web web, Guid id, String mmsGroupName, String mmsTermSetName, Boolean multiValue = False)
 ```
 ### Parameters
 #### web  

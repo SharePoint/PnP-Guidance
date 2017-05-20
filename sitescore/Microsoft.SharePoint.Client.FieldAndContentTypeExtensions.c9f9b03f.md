@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TField CreateField<T>(Web web, FieldCreationInformation fieldCreationInformation, Boolean executeQuery)
+public static TField CreateField<TField>(this Web web, FieldCreationInformation fieldCreationInformation, Boolean executeQuery = True) where TField : Field
 ```
 ### Parameters
 #### web  

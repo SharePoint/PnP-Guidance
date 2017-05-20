@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Guid ToGuid(String input)
+public static Guid ToGuid(this String input)
 ```
 ### Parameters
 #### input  

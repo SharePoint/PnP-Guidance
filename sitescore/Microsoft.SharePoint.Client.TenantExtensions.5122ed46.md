@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Guid CreateSiteCollection(Tenant tenant, String siteFullUrl, String title, String siteOwnerLogin, String template, Int32 storageMaximumLevel, Int32 storageWarningLevel, Int32 timeZoneId, Int32 userCodeMaximumLevel, Int32 userCodeWarningLevel, UInt32 lcid, Boolean removeFromRecycleBin, Boolean wait, Func<TenantOperationMessage, Boolean> timeoutFunction)
+public static Guid CreateSiteCollection(this Tenant tenant, String siteFullUrl, String title, String siteOwnerLogin, String template, Int32 storageMaximumLevel, Int32 storageWarningLevel, Int32 timeZoneId, Int32 userCodeMaximumLevel, Int32 userCodeWarningLevel, UInt32 lcid, Boolean removeFromRecycleBin = False, Boolean wait = True, Func<TenantOperationMessage, Boolean> timeoutFunction)
 ```
 ### Parameters
 #### tenant  

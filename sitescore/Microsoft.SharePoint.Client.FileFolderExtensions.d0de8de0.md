@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool VerifyIfUploadRequired(File serverFile, String localFile)
+public static bool VerifyIfUploadRequired(this File serverFile, String localFile)
 ```
 ### Parameters
 #### serverFile  

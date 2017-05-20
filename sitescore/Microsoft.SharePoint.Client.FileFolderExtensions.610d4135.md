@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List<File> FindFiles(List list, String match)
+public static List<File> FindFiles(this List list, String match)
 ```
 ### Parameters
 #### list  

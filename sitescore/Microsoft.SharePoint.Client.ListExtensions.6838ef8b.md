@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string GetPropertyBagValueString(List list, String key, String defaultValue)
+public static string GetPropertyBagValueString(this List list, String key, String defaultValue)
 ```
 ### Parameters
 #### list  

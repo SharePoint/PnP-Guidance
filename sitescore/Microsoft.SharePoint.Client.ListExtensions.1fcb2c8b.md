@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool PropertyBagContainsKey(List list, String key)
+public static bool PropertyBagContainsKey(this List list, String key)
 ```
 ### Parameters
 #### list  

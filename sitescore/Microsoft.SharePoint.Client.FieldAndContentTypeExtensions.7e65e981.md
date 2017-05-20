@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ContentType GetContentTypeByName(List list, String contentTypeName)
+public static ContentType GetContentTypeByName(this List list, String contentTypeName)
 ```
 ### Parameters
 #### list  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TaxonomyItem GetTaxonomyItemByPath(Site site, String path, String delimiter)
+public static TaxonomyItem GetTaxonomyItemByPath(this Site site, String path, String delimiter = "|")
 ```
 ### Parameters
 #### site  

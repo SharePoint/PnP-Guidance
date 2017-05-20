@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static SharingResult ShareSiteWithPeoplePickerValue(Web web, String peoplePickerInput, ExternalSharingSiteOption shareOption, Boolean sendEmail, String emailBody, Boolean useSimplifiedRoles)
+public static SharingResult ShareSiteWithPeoplePickerValue(this Web web, String peoplePickerInput, ExternalSharingSiteOption shareOption, Boolean sendEmail = True, String emailBody = "Site shared for you.", Boolean useSimplifiedRoles = True)
 ```
 ### Parameters
 #### web  

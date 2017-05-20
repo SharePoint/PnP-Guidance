@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void RemoveContentTypeFromListById(Web web, String listTitle, String contentTypeId)
+public static void RemoveContentTypeFromListById(this Web web, String listTitle, String contentTypeId)
 ```
 ### Parameters
 #### web  

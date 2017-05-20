@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void PublishFile(Web web, String serverRelativeUrl, String comment)
+public static void PublishFile(this Web web, String serverRelativeUrl, String comment)
 ```
 ### Parameters
 #### web  

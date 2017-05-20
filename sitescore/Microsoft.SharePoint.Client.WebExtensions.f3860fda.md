@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static EventReceiverDefinition GetEventReceiverByName(Web web, String name)
+public static EventReceiverDefinition GetEventReceiverByName(this Web web, String name)
 ```
 ### Parameters
 #### web  

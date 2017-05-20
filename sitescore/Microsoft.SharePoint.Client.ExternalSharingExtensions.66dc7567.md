@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static SharingResult ShareDocument(Web web, String urlToDocument, String targetEmailToShare, ExternalSharingDocumentOption shareOption, Boolean sendEmail, String emailBody, Boolean useSimplifiedRoles)
+public static SharingResult ShareDocument(this Web web, String urlToDocument, String targetEmailToShare, ExternalSharingDocumentOption shareOption, Boolean sendEmail = True, String emailBody = "Document shared", Boolean useSimplifiedRoles = True)
 ```
 ### Parameters
 #### web  

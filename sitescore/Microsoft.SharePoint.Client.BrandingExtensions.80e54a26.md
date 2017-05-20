@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static File DeployMasterPage(Web web, String sourceFilePath, String title, String description, String uiVersion, String defaultCSSFile, String folderPath)
+public static File DeployMasterPage(this Web web, String sourceFilePath, String title, String description, String uiVersion = "15", String defaultCSSFile = "", String folderPath = "")
 ```
 ### Parameters
 #### web  

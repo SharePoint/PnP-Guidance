@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void RefreshADFSUserNameMixedAuthenticatedContext(String siteUrl, String user, String password, String domain, String sts, String idpId, Int32 logonTokenCacheExpirationWindow)
+public void RefreshADFSUserNameMixedAuthenticatedContext(String siteUrl, String user, String password, String domain, String sts, String idpId, Int32 logonTokenCacheExpirationWindow = 10)
 ```
 ### Parameters
 #### siteUrl  

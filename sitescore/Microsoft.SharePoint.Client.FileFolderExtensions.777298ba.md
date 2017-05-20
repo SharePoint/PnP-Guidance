@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void CheckOutFile(Web web, String serverRelativeUrl)
+public static void CheckOutFile(this Web web, String serverRelativeUrl)
 ```
 ### Parameters
 #### web  

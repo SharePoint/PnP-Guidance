@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string FieldValue(String fieldName, String fieldValueType, String value, String additionalFieldRefParams)
+public static string FieldValue(String fieldName, String fieldValueType, String value, String additionalFieldRefParams = "")
 ```
 ### Parameters
 #### fieldName  

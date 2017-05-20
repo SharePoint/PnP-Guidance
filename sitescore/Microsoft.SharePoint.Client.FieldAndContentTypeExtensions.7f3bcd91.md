@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void RemoveFieldById(Web web, String fieldId)
+public static void RemoveFieldById(this Web web, String fieldId)
 ```
 ### Parameters
 #### web  

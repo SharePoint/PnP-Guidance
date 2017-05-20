@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool AddJsBlock(Web web, String key, String scriptBlock, Int32 sequence)
+public static bool AddJsBlock(this Web web, String key, String scriptBlock, Int32 sequence = 0)
 ```
 ### Parameters
 #### web  

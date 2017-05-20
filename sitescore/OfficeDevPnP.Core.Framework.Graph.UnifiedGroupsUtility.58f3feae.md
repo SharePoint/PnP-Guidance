@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List<UnifiedGroupEntity> ListUnifiedGroups(String accessToken, String displayName, String mailNickname, Int32 startIndex, Int32 endIndex, Boolean includeSite, Int32 retryCount, Int32 delay)
+public static List<UnifiedGroupEntity> ListUnifiedGroups(String accessToken, String displayName, String mailNickname, Int32 startIndex = 0, Int32 endIndex = 999, Boolean includeSite = True, Int32 retryCount = 10, Int32 delay = 500)
 ```
 ### Parameters
 #### accessToken  

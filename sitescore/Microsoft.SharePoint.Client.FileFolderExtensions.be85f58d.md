@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void PublishFileToLevel(File file, FileLevel level)
+public static void PublishFileToLevel(this File file, FileLevel level)
 ```
 ### Parameters
 #### file  

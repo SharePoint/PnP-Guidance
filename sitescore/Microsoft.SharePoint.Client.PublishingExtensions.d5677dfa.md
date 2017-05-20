@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddPublishingPage(Web web, String pageName, String pageTemplateName, String title, Boolean publish, Folder folder, Nullable<DateTime> startDate, Nullable<DateTime> endDate, Boolean schedule)
+public static void AddPublishingPage(this Web web, String pageName, String pageTemplateName, String title, Boolean publish = False, Folder folder, Nullable<DateTime> startDate, Nullable<DateTime> endDate, Boolean schedule = False)
 ```
 ### Parameters
 #### web  

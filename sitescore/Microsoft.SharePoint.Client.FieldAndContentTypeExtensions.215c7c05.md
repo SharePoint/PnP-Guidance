@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ReorderContentTypes(List list, IEnumerable<String> contentTypeNamesOrIds)
+public static void ReorderContentTypes(this List list, IEnumerable<String> contentTypeNamesOrIds)
 ```
 ### Parameters
 #### list  

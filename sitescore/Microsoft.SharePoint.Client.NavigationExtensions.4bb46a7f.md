@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void DeleteCustomAction(Web web, Guid id)
+public static void DeleteCustomAction(this Web web, Guid id)
 ```
 ### Parameters
 #### web  

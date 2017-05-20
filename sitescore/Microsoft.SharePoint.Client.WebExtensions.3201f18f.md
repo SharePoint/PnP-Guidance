@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static IEnumerable<String> GetAllWebUrls(Site site)
+public static IEnumerable<String> GetAllWebUrls(this Site site)
 ```
 ### Parameters
 #### site  

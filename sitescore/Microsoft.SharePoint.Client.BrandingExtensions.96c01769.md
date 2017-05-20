@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ListItem GetPageLayoutListItemByName(Web web, String pageLayoutName)
+public static ListItem GetPageLayoutListItemByName(this Web web, String pageLayoutName)
 ```
 ### Parameters
 #### web  

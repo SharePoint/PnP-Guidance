@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public ClientContext GetAzureADNativeApplicationAuthenticatedContext(String siteUrl, String clientId, String redirectUrl, TokenCache tokenCache, AzureEnvironment environment)
+public ClientContext GetAzureADNativeApplicationAuthenticatedContext(String siteUrl, String clientId, String redirectUrl, TokenCache tokenCache, AzureEnvironment environment = 0)
 ```
 ### Parameters
 #### siteUrl  

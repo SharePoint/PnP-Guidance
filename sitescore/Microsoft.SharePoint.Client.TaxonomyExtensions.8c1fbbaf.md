@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Term AddTermToTermset(Site site, Guid termSetId, String term)
+public static Term AddTermToTermset(this Site site, Guid termSetId, String term)
 ```
 ### Parameters
 #### site  

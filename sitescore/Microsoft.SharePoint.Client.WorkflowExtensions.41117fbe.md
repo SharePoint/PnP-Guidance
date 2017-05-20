@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static WorkflowInstanceCollection GetInstances(WorkflowSubscription subscription)
+public static WorkflowInstanceCollection GetInstances(this WorkflowSubscription subscription)
 ```
 ### Parameters
 #### subscription  

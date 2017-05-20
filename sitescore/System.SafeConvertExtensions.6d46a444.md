@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static long ToInt64(String input)
+public static long ToInt64(this String input)
 ```
 ### Parameters
 #### input  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsAppOnly(ClientRuntimeContext clientContext)
+public static bool IsAppOnly(this ClientRuntimeContext clientContext)
 ```
 ### Parameters
 #### clientContext  

@@ -23,7 +23,7 @@ Supported column types: Metadata, Text, Choice, MultiChoice, People, Boolean, Da
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetDefaultColumnValues(List list, IEnumerable<IDefaultColumnValue> columnValues)
+public static void SetDefaultColumnValues(this List list, IEnumerable<IDefaultColumnValue> columnValues)
 ```
 ### Parameters
 #### list  

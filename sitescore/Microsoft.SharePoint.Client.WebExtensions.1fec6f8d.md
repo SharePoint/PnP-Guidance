@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void DisableRequestAccess(Web web)
+public static void DisableRequestAccess(this Web web)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SaveFileToLocal(Web web, String serverRelativeUrl, String localPath, String localFileName, Func<String, Boolean> fileExistsCallBack)
+public static void SaveFileToLocal(this Web web, String serverRelativeUrl, String localPath, String localFileName, Func<String, Boolean> fileExistsCallBack)
 ```
 ### Parameters
 #### web  

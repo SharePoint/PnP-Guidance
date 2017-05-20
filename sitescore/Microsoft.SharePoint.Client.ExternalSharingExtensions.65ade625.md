@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string CreateAnonymousLinkForDocument(Web web, String urlToDocument, ExternalSharingDocumentOption shareOption)
+public static string CreateAnonymousLinkForDocument(this Web web, String urlToDocument, ExternalSharingDocumentOption shareOption)
 ```
 ### Parameters
 #### web  

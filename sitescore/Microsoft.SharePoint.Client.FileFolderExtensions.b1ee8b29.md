@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Folder ConvertFolderToDocumentSet(List list, String folderName)
+public static Folder ConvertFolderToDocumentSet(this List list, String folderName)
 ```
 ### Parameters
 #### list  

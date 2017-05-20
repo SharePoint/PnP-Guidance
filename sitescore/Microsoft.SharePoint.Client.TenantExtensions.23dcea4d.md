@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddAdministrators(Tenant tenant, IEnumerable<UserEntity> adminLogins, Uri siteUrl, Boolean addToOwnersGroup)
+public static void AddAdministrators(this Tenant tenant, IEnumerable<UserEntity> adminLogins, Uri siteUrl, Boolean addToOwnersGroup = False)
 ```
 ### Parameters
 #### tenant  

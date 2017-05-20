@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool GroupExists(Web web, String groupName)
+public static bool GroupExists(this Web web, String groupName)
 ```
 ### Parameters
 #### web  

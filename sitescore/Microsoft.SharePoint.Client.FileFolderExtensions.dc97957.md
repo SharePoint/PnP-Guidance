@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetFileProperties(File file, IDictionary<String, String> properties, Boolean checkoutIfRequired)
+public static void SetFileProperties(this File file, IDictionary<String, String> properties, Boolean checkoutIfRequired = True)
 ```
 ### Parameters
 #### file  

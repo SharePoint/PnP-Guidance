@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static UserProfileService GetUserProfileServiceClient(Tenant tenant)
+public static UserProfileService GetUserProfileServiceClient(this Tenant tenant)
 ```
 ### Parameters
 #### tenant  

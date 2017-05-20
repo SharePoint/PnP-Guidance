@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static PnPInfo UnpackTemplate(Byte[] packageBytes)
+public static PnPInfo UnpackTemplate(this Byte[] packageBytes)
 ```
 ### Parameters
 #### packageBytes  

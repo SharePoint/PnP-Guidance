@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool RemoveAppInstanceByTitle(Web web, String appTitle)
+public static bool RemoveAppInstanceByTitle(this Web web, String appTitle)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Web GetWeb(Web parentWeb, String leafUrl)
+public static Web GetWeb(this Web parentWeb, String leafUrl)
 ```
 ### Parameters
 #### parentWeb  
