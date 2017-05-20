@@ -10,10 +10,10 @@ public enum CurrentNavigationType
 ## Members
 |**Member Name**|**Description**|
 |:-----|:-----|
-| Inherit | 
-| Structural | 
-| StructuralLocal | 
-| Managed | 
+| Inherit | The site inherits the Global Navigation settings from its parent
+| Structural | The site uses Structural Global Navigation
+| StructuralLocal | The site uses Structural Local Current Navigation
+| Managed | The site uses Managed Global Navigation
 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -10,9 +10,9 @@ public enum FileLevel
 ## Members
 |**Member Name**|**Description**|
 |:-----|:-----|
-| Draft | 
-| Checkout | 
-| Published | 
+| Draft | The file will be stored as a draft
+| Checkout | The file will be stored as a checked out item
+| Published | The file will be stored as a published item
 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

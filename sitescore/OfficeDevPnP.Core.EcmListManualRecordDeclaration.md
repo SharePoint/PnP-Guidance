@@ -11,9 +11,9 @@ public enum EcmListManualRecordDeclaration
 |**Member Name**|**Description**|
 |:-----|:-----|
 | Unknown | 
-| UseSiteCollectionDefaults | 
-| AlwaysAllowManualDeclaration | 
-| NeverAllowManualDeclaration | 
+| UseSiteCollectionDefaults | Use the site collection defaults
+| AlwaysAllowManualDeclaration | Always allow to manual declare records in this list
+| NeverAllowManualDeclaration | Never allow to manual declare records in this list
 
 ## See also
 - [OfficeDevPnP.Core](OfficeDevPnP.Core.md)
