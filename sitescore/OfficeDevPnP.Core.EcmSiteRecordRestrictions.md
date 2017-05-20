@@ -11,9 +11,9 @@ public enum EcmSiteRecordRestrictions
 |**Member Name**|**Description**|
 |:-----|:-----|
 | Unknown | 
-| None | 
-| BlockDelete | 
-| BlockEdit | 
+| None | Records are no more restricted than non-records
+| BlockDelete | Records can be edited but not deleted
+| BlockEdit | Records cannot be edited or deleted. Any change will require the record declaration to be revoked
 
 ## See also
 - [OfficeDevPnP.Core](OfficeDevPnP.Core.md)

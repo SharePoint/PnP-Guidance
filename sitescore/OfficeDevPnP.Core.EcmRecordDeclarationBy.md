@@ -11,9 +11,9 @@ public enum EcmRecordDeclarationBy
 |**Member Name**|**Description**|
 |:-----|:-----|
 | Unknown | 
-| AllListContributors | 
-| OnlyAdmins | 
-| OnlyPolicy | 
+| AllListContributors | All list contributors and administrators
+| OnlyAdmins | Only list administrators
+| OnlyPolicy | Only policy actions
 
 ## See also
 - [OfficeDevPnP.Core](OfficeDevPnP.Core.md)

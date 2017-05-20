@@ -30,16 +30,11 @@ You can learn more about the PnP Core Component from the project [readme file](h
 |[OfficeDevPnP.Core.Framework.Provisioning.Extensibility](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md)|
-|[OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.Extensions](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.Extensions.md)|
-|[OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ObjectListInstance](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ObjectListInstance.md)|
-|[OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ObjectTermGroups](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ObjectTermGroups.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions.md)|
-|[OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions.AssociatedGroupToken](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions.AssociatedGroupToken.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.Providers](OfficeDevPnP.Core.Framework.Provisioning.Providers.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.Providers.Json](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.Resolvers](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.Resolvers.md)|
-|[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.Serializers](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.Serializers.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508.md)|
@@ -47,17 +42,11 @@ You can learn more about the PnP Core Component from the project [readme file](h
 |[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md)|
 |[OfficeDevPnP.Core.Framework.TimerJobs](OfficeDevPnP.Core.Framework.TimerJobs.md)|
 |[OfficeDevPnP.Core.Framework.TimerJobs.Enums](OfficeDevPnP.Core.Framework.TimerJobs.Enums.md)|
-|[OfficeDevPnP.Core.Framework.TimerJobs.Utilities](OfficeDevPnP.Core.Framework.TimerJobs.Utilities.md)|
 |[OfficeDevPnP.Core.IdentityModel.TokenProviders.ADFS](OfficeDevPnP.Core.IdentityModel.TokenProviders.ADFS.md)|
 |[OfficeDevPnP.Core.IdentityModel.WSTrustBindings](OfficeDevPnP.Core.IdentityModel.WSTrustBindings.md)|
 |[OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)|
-|[OfficeDevPnP.Core.Properties](OfficeDevPnP.Core.Properties.md)|
 |[OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md)|
 |[OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)|
-|[OfficeDevPnP.Core.Utilities.CAML](OfficeDevPnP.Core.Utilities.CAML.md)|
-|[OfficeDevPnP.Core.Utilities.CookieReader](OfficeDevPnP.Core.Utilities.CookieReader.md)|
-|[OfficeDevPnP.Core.Utilities.CredentialManager](OfficeDevPnP.Core.Utilities.CredentialManager.md)|
-|[OfficeDevPnP.Core.Utilities.TokenHelper](OfficeDevPnP.Core.Utilities.TokenHelper.md)|
 |[OfficeDevPnP.Core.Utilities.WebParts](OfficeDevPnP.Core.Utilities.WebParts.md)|
 |[OfficeDevPnP.Core.Utilities.WebParts.Processors](OfficeDevPnP.Core.Utilities.WebParts.Processors.md)|
 |[OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)|
@@ -66,13 +55,10 @@ You can learn more about the PnP Core Component from the project [readme file](h
 |**Namespace**|
 |:-----|
 |[Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)|
-|[Microsoft.SharePoint.Client.ClientContextExtensions](Microsoft.SharePoint.Client.ClientContextExtensions.md)|
-|[Microsoft.SharePoint.Client.ListExtensions](Microsoft.SharePoint.Client.ListExtensions.md)|
 ### System namespaces
 |**Namespace**|
 |:-----|
 |[System](System.md)|
-|[System.EnumerationExtensions](System.EnumerationExtensions.md)|
 
 
 

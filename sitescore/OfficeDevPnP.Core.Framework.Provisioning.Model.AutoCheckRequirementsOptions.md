@@ -10,9 +10,9 @@ public enum AutoCheckRequirementsOptions
 ## Members
 |**Member Name**|**Description**|
 |:-----|:-----|
-| MakeCompliant | 
-| SkipIfNotCompliant | 
-| FailIfNotCompliant | 
+| MakeCompliant | Instructs the engine to make the target site compliant with the requirements
+| SkipIfNotCompliant | Instructs the engine to skip the Publishing section if the target site is not compliant with the requirements
+| FailIfNotCompliant | Instructs the engine to throw an exception/failure if the target site is not compliant with the requirements
 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

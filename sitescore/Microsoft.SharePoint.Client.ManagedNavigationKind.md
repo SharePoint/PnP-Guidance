@@ -10,8 +10,8 @@ public enum ManagedNavigationKind
 ## Members
 |**Member Name**|**Description**|
 |:-----|:-----|
-| Current | 
-| Global | 
+| Current | Current Navigation
+| Global | Global Navigation
 
 ## See also
 - [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)
