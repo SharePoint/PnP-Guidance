@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ContentTypeId BestMatchContentTypeId(List list, String baseContentTypeId)
+public static ContentTypeId BestMatchContentTypeId(this List list, String baseContentTypeId)
 ```
 ### Parameters
 #### list  

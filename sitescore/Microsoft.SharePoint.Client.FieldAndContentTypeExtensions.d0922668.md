@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetLocalizationForField(Web web, Guid siteColumnId, String cultureName, String titleResource, String descriptionResource)
+public static void SetLocalizationForField(this Web web, Guid siteColumnId, String cultureName, String titleResource, String descriptionResource)
 ```
 ### Parameters
 #### web  

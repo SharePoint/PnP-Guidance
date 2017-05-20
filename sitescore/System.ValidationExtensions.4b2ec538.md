@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ValidateNotNullOrEmpty<T>(T input, String variableName)
+public static void ValidateNotNullOrEmpty<T>(this T input, String variableName)
 ```
 ### Parameters
 #### input  

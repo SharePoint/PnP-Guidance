@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ImportTerms(Site site, String[] termLines, Int32 lcid, String delimiter, Boolean synchronizeDeletions)
+public static void ImportTerms(this Site site, String[] termLines, Int32 lcid, String delimiter = "|", Boolean synchronizeDeletions = False)
 ```
 ### Parameters
 #### site  

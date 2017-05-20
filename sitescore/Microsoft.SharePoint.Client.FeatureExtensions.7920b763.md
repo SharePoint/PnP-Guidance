@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void DeactivateFeature(Site site, Guid featureID, Int32 pollingIntervalSeconds)
+public static void DeactivateFeature(this Site site, Guid featureID, Int32 pollingIntervalSeconds = 30)
 ```
 ### Parameters
 #### site  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static EcmSiteRecordRestrictions GetRecordRestrictions(Site site)
+public static EcmSiteRecordRestrictions GetRecordRestrictions(this Site site)
 ```
 ### Parameters
 #### site  

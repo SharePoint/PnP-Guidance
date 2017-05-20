@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ClientObjectList<AppInstance> GetAppInstances(Web web, Expression<Func<AppInstance, Object>>[] expressions)
+public static ClientObjectList<AppInstance> GetAppInstances(this Web web, Expression<Func<AppInstance, Object>>[] expressions)
 ```
 ### Parameters
 #### web  

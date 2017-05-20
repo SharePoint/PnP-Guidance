@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void EnsureProperties<T>(T clientObject, Expression<Func<T, Object>>[] propertySelector)
+public static void EnsureProperties<T>(this T clientObject, Expression<Func<T, Object>>[] propertySelector) where T : ClientObject
 ```
 ### Parameters
 #### clientObject  

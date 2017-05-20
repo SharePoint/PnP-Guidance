@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ReIndexWeb(Web web)
+public static void ReIndexWeb(this Web web)
 ```
 ### Parameters
 #### web  

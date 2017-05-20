@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Folder EnsureFolder(Web web, Folder parentFolder, String folderPath, Expression<Func<Folder, Object>>[] expressions)
+public static Folder EnsureFolder(this Web web, Folder parentFolder, String folderPath, Expression<Func<Folder, Object>>[] expressions)
 ```
 ### Parameters
 #### web  

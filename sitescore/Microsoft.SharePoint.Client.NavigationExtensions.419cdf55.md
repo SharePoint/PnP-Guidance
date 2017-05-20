@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void UpdateNavigationSettings(Web web, AreaNavigationEntity navigationSettings)
+public static void UpdateNavigationSettings(this Web web, AreaNavigationEntity navigationSettings)
 ```
 ### Parameters
 #### web  

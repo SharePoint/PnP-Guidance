@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddFieldById(ContentType contentType, Guid fieldId, Boolean required, Boolean hidden)
+public static void AddFieldById(this ContentType contentType, Guid fieldId, Boolean required = False, Boolean hidden = False)
 ```
 ### Parameters
 #### contentType  

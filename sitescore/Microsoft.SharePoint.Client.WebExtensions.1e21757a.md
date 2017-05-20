@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool AddIndexedPropertyBagKey(Web web, String key)
+public static bool AddIndexedPropertyBagKey(this Web web, String key)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetTaxonomyFieldValues(ListItem item, Guid fieldId, IEnumerable<KeyValuePair<Guid, String>> termValues)
+public static void SetTaxonomyFieldValues(this ListItem item, Guid fieldId, IEnumerable<KeyValuePair<Guid, String>> termValues)
 ```
 ### Parameters
 #### item  

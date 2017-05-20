@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List<String> ExportAllTerms(Site site, Boolean includeId, String delimiter)
+public static List<String> ExportAllTerms(this Site site, Boolean includeId, String delimiter = "|")
 ```
 ### Parameters
 #### site  

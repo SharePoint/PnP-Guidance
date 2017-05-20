@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List<SitePolicyEntity> GetSitePolicies(Web web)
+public static List<SitePolicyEntity> GetSitePolicies(this Web web)
 ```
 ### Parameters
 #### web  

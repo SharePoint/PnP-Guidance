@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string GetRelativeUrlForMasterByName(Web web, String masterPageName)
+public static string GetRelativeUrlForMasterByName(this Web web, String masterPageName)
 ```
 ### Parameters
 #### web  

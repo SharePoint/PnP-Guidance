@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool ContainsInvalidUrlChars(String content)
+public static bool ContainsInvalidUrlChars(this String content)
 ```
 ### Parameters
 #### content  

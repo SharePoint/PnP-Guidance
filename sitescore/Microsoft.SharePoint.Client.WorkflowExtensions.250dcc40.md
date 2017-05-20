@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static WorkflowSubscription GetWorkflowSubscription(Web web, String name)
+public static WorkflowSubscription GetWorkflowSubscription(this Web web, String name)
 ```
 ### Parameters
 #### web  

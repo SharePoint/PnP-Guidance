@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool AddJsLink(Site site, String key, String scriptLinks, Int32 sequence)
+public static bool AddJsLink(this Site site, String key, String scriptLinks, Int32 sequence = 0)
 ```
 ### Parameters
 #### site  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool RemoveIndexedPropertyBagKey(Web web, String key)
+public static bool RemoveIndexedPropertyBagKey(this Web web, String key)
 ```
 ### Parameters
 #### web  

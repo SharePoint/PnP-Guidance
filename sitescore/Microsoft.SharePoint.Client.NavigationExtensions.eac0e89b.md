@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static IEnumerable<UserCustomAction> GetCustomActions(Web web, Expression<Func<UserCustomAction, Object>>[] expressions)
+public static IEnumerable<UserCustomAction> GetCustomActions(this Web web, Expression<Func<UserCustomAction, Object>>[] expressions)
 ```
 ### Parameters
 #### web  

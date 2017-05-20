@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static File UploadThemeFile(Web web, String fileName, String localFilePath, String themeFolderVersion)
+public static File UploadThemeFile(this Web web, String fileName, String localFilePath, String themeFolderVersion = "15")
 ```
 ### Parameters
 #### web  

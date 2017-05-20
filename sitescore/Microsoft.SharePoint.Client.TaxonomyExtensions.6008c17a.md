@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Field CreateTaxonomyField(Web web, TaxonomyFieldCreationInformation fieldCreationInformation)
+public static Field CreateTaxonomyField(this Web web, TaxonomyFieldCreationInformation fieldCreationInformation)
 ```
 ### Parameters
 #### web  

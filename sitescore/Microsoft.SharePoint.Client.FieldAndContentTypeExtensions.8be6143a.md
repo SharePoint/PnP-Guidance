@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Field CreateField(Web web, String fieldAsXml, Boolean executeQuery)
+public static Field CreateField(this Web web, String fieldAsXml, Boolean executeQuery = True)
 ```
 ### Parameters
 #### web  

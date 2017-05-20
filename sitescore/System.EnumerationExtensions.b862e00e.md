@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool Has<T>(Enum value, T check)
+public static bool Has<T>(this Enum value, T check)
 ```
 ### Parameters
 #### value  

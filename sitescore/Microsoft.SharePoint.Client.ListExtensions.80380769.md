@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetLocalizationLabelsForList(Web web, String listTitle, String cultureName, String titleResource, String descriptionResource)
+public static void SetLocalizationLabelsForList(this Web web, String listTitle, String cultureName, String titleResource, String descriptionResource)
 ```
 ### Parameters
 #### web  

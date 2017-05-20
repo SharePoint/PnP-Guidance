@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ContentType GetContentTypeByName(Web web, String contentTypeName, Boolean searchInSiteHierarchy)
+public static ContentType GetContentTypeByName(this Web web, String contentTypeName, Boolean searchInSiteHierarchy = False)
 ```
 ### Parameters
 #### web  

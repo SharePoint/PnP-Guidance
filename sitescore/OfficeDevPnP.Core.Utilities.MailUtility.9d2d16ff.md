@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SendEmail(String servername, String fromAddress, String fromUserPassword, IEnumerable<String> to, IEnumerable<String> cc, String subject, String body, Boolean sendAsync, Object asyncUserToken)
+public static void SendEmail(String servername, String fromAddress, String fromUserPassword, IEnumerable<String> to, IEnumerable<String> cc, String subject, String body, Boolean sendAsync = False, Object asyncUserToken)
 ```
 ### Parameters
 #### servername  

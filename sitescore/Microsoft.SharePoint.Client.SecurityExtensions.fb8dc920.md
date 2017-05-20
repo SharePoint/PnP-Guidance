@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddUserToGroup(Web web, Group group, String userLoginName)
+public static void AddUserToGroup(this Web web, Group group, String userLoginName)
 ```
 ### Parameters
 #### web  

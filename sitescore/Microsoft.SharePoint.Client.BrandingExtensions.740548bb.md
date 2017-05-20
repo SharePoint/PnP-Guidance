@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void CreateComposedLookByName(Web web, String lookName, String paletteFileName, String fontFileName, String backgroundFileName, String masterFileName, Int32 displayOrder, Boolean replaceContent)
+public static void CreateComposedLookByName(this Web web, String lookName, String paletteFileName, String fontFileName, String backgroundFileName, String masterFileName, Int32 displayOrder = 1, Boolean replaceContent = True)
 ```
 ### Parameters
 #### web  

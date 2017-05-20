@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void DisableInPlaceRecordsManagementFeature(Site site)
+public static void DisableInPlaceRecordsManagementFeature(this Site site)
 ```
 ### Parameters
 #### site  

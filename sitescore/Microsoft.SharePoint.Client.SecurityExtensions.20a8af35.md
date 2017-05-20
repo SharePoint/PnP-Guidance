@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void RemoveGroup(Web web, String groupName)
+public static void RemoveGroup(this Web web, String groupName)
 ```
 ### Parameters
 #### web  

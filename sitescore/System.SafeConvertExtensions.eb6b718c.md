@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool ToBoolean(String input)
+public static bool ToBoolean(this String input)
 ```
 ### Parameters
 #### input  

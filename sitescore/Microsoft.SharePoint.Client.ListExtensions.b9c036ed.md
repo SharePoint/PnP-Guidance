@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static EventReceiverDefinition AddRemoteEventReceiver(List list, String name, String url, EventReceiverType eventReceiverType, EventReceiverSynchronization synchronization, Boolean force)
+public static EventReceiverDefinition AddRemoteEventReceiver(this List list, String name, String url, EventReceiverType eventReceiverType, EventReceiverSynchronization synchronization, Boolean force)
 ```
 ### Parameters
 #### list  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static WorkflowInstanceCollection GetWorkflowInstances(Web web)
+public static WorkflowInstanceCollection GetWorkflowInstances(this Web web)
 ```
 ### Parameters
 #### web  

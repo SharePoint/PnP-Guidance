@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void WaitForVariationLabelCreation(ClientContext context, VariationLabelEntity variationLabel)
+public static void WaitForVariationLabelCreation(this ClientContext context, VariationLabelEntity variationLabel)
 ```
 ### Parameters
 #### context  

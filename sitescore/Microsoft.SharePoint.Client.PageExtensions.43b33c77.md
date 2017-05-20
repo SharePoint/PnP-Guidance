@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string AddWikiPage(Web web, String wikiPageLibraryName, String wikiPageName)
+public static string AddWikiPage(this Web web, String wikiPageLibraryName, String wikiPageName)
 ```
 ### Parameters
 #### web  

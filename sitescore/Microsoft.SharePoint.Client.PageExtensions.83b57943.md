@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static WebPartDefinition AddWebPartToWikiPage(Web web, String serverRelativePageUrl, WebPartEntity webPart, Int32 row, Int32 col, Boolean addSpace)
+public static WebPartDefinition AddWebPartToWikiPage(this Web web, String serverRelativePageUrl, WebPartEntity webPart, Int32 row, Int32 col, Boolean addSpace)
 ```
 ### Parameters
 #### web  

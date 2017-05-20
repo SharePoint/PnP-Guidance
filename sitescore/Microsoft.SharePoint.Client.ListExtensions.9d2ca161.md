@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ReIndexList(List list)
+public static void ReIndexList(this List list)
 ```
 ### Parameters
 #### list  

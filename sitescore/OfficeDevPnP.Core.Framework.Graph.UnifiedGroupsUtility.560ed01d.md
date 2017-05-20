@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static UnifiedGroupEntity GetUnifiedGroup(String groupId, String accessToken, Int32 retryCount, Int32 delay, Boolean includeSite)
+public static UnifiedGroupEntity GetUnifiedGroup(String groupId, String accessToken, Int32 retryCount = 10, Int32 delay = 500, Boolean includeSite = True)
 ```
 ### Parameters
 #### groupId  

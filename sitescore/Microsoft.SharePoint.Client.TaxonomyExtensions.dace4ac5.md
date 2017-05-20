@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TermStore GetDefaultSiteCollectionTermStore(Site site)
+public static TermStore GetDefaultSiteCollectionTermStore(this Site site)
 ```
 ### Parameters
 #### site  

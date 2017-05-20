@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Guid GetAuthenticationRealm(Web web)
+public static Guid GetAuthenticationRealm(this Web web)
 ```
 ### Parameters
 #### web  

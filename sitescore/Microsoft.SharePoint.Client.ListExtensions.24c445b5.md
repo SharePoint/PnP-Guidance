@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void UpdateTaxonomyFieldDefaultValue(Web web, String termName, String listName, String fieldInternalName, Guid groupGuid, Guid termSetGuid)
+public static void UpdateTaxonomyFieldDefaultValue(this Web web, String termName, String listName, String fieldInternalName, Guid groupGuid, Guid termSetGuid)
 ```
 ### Parameters
 #### web  

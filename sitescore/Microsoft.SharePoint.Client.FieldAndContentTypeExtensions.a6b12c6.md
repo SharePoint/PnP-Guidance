@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Field GetFieldByInternalName(FieldCollection fields, String internalName)
+public static Field GetFieldByInternalName(this FieldCollection fields, String internalName)
 ```
 ### Parameters
 #### fields  

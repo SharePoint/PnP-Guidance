@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetAvailablePageLayouts(Web web, Web rootWeb, IEnumerable<String> pageLayouts)
+public static void SetAvailablePageLayouts(this Web web, Web rootWeb, IEnumerable<String> pageLayouts)
 ```
 ### Parameters
 #### web  

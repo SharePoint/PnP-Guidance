@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static int GetGroupID(Web web, String groupName)
+public static int GetGroupID(this Web web, String groupName)
 ```
 ### Parameters
 #### web  

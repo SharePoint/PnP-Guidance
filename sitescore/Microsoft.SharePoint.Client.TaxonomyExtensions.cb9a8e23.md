@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TermSetCollection GetTermSetsByName(Site site, String name, Int32 lcid)
+public static TermSetCollection GetTermSetsByName(this Site site, String name, Int32 lcid = 1033)
 ```
 ### Parameters
 #### site  

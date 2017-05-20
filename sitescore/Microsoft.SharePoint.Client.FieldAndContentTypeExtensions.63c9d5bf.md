@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ContentType CreateContentType(Web web, String name, String id, String group)
+public static ContentType CreateContentType(this Web web, String name, String id, String group)
 ```
 ### Parameters
 #### web  

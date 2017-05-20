@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static IEnumerable<String> GetIndexedPropertyBagKeys(Web web)
+public static IEnumerable<String> GetIndexedPropertyBagKeys(this Web web)
 ```
 ### Parameters
 #### web  

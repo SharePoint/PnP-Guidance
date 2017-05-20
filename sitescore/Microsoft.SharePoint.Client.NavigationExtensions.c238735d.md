@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool AddCustomAction(Site site, CustomActionEntity customAction)
+public static bool AddCustomAction(this Site site, CustomActionEntity customAction)
 ```
 ### Parameters
 #### site  

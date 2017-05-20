@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetCustomMasterPageByName(Web web, String masterPageName)
+public static void SetCustomMasterPageByName(this Web web, String masterPageName)
 ```
 ### Parameters
 #### web  

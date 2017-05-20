@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetSearchConfiguration(Site site, String searchConfiguration)
+public static void SetSearchConfiguration(this Site site, String searchConfiguration)
 ```
 ### Parameters
 #### site  

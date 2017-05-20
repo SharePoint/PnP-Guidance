@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void DeployPageLayout(Web web, String sourceFilePath, String title, String description, String associatedContentTypeID, String folderHierarchy)
+public static void DeployPageLayout(this Web web, String sourceFilePath, String title, String description, String associatedContentTypeID, String folderHierarchy = "")
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool FolderExists(Web web, String folderName)
+public static bool FolderExists(this Web web, String folderName)
 ```
 ### Parameters
 #### web  

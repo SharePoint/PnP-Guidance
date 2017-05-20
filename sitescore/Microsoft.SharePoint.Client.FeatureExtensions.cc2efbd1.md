@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsFeatureActive(Site site, Guid featureID)
+public static bool IsFeatureActive(this Site site, Guid featureID)
 ```
 ### Parameters
 #### site  

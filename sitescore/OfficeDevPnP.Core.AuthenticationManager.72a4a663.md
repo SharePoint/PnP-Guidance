@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public ClientContext GetAppOnlyAuthenticatedContext(String siteUrl, String realm, String appId, String appSecret, String acsHostUrl, String globalEndPointPrefix)
+public ClientContext GetAppOnlyAuthenticatedContext(String siteUrl, String realm, String appId, String appSecret, String acsHostUrl = "accesscontrol.windows.net", String globalEndPointPrefix = "accounts")
 ```
 ### Parameters
 #### siteUrl  

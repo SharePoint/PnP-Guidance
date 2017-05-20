@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static View GetViewById(List list, Guid id, Expression<Func<View, Object>>[] expressions)
+public static View GetViewById(this List list, Guid id, Expression<Func<View, Object>>[] expressions)
 ```
 ### Parameters
 #### list  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsInPlaceRecordsManagementActive(Site site)
+public static bool IsInPlaceRecordsManagementActive(this Site site)
 ```
 ### Parameters
 #### site  

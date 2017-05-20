@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool UpdateUnifiedGroup(String groupId, String accessToken, Int32 retryCount, Int32 delay, String displayName, String description, String[] owners, String[] members, Stream groupLogo, Boolean isPrivate)
+public static bool UpdateUnifiedGroup(String groupId, String accessToken, Int32 retryCount = 10, Int32 delay = 500, String displayName, String description, String[] owners, String[] members, Stream groupLogo, Boolean isPrivate = False)
 ```
 ### Parameters
 #### groupId  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool DeleteWeb(Web parentWeb, String leafUrl)
+public static bool DeleteWeb(this Web parentWeb, String leafUrl)
 ```
 ### Parameters
 #### parentWeb  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddContentTypeToListById(Web web, String listTitle, String contentTypeId, Boolean defaultContent, Boolean searchContentTypeInSiteHierarchy)
+public static void AddContentTypeToListById(this Web web, String listTitle, String contentTypeId, Boolean defaultContent = False, Boolean searchContentTypeInSiteHierarchy = False)
 ```
 ### Parameters
 #### web  

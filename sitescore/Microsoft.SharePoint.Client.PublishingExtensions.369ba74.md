@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static PublishingPage GetPublishingPage(Web web, String fileLeafRef)
+public static PublishingPage GetPublishingPage(this Web web, String fileLeafRef)
 ```
 ### Parameters
 #### web  

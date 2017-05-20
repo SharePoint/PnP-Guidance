@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List<ExternalUserEntity> GetExternalUsersTenant(Web web)
+public static List<ExternalUserEntity> GetExternalUsersTenant(this Web web)
 ```
 ### Parameters
 #### web  

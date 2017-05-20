@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddPermissionLevelToGroup(SecurableObject securableObject, String groupName, RoleType permissionLevel, Boolean removeExistingPermissionLevels)
+public static void AddPermissionLevelToGroup(this SecurableObject securableObject, String groupName, RoleType permissionLevel, Boolean removeExistingPermissionLevels = False)
 ```
 ### Parameters
 #### securableObject  

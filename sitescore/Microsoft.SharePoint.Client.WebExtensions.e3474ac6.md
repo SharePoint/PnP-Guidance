@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static IEnumerable<String> GetRequestAccessEmails(Web web)
+public static IEnumerable<String> GetRequestAccessEmails(this Web web)
 ```
 ### Parameters
 #### web  

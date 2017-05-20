@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string CreateAnonymousLinkWithExpirationForDocument(Web web, String urlToDocument, ExternalSharingDocumentOption shareOption, DateTime expireTime)
+public static string CreateAnonymousLinkWithExpirationForDocument(this Web web, String urlToDocument, ExternalSharingDocumentOption shareOption, DateTime expireTime)
 ```
 ### Parameters
 #### web  

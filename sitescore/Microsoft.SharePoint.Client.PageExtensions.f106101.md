@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddHtmlToWikiPage(Web web, String folder, String html, String page, Int32 row, Int32 col)
+public static void AddHtmlToWikiPage(this Web web, String folder, String html, String page, Int32 row, Int32 col)
 ```
 ### Parameters
 #### web  

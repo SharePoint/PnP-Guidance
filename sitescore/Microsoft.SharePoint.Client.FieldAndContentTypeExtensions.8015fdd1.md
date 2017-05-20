@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddContentTypeToList(Web web, String listTitle, ContentType contentType, Boolean defaultContent)
+public static void AddContentTypeToList(this Web web, String listTitle, ContentType contentType, Boolean defaultContent = False)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List CreateList(Web web, ListTemplateType listType, String listName, Boolean enableVersioning, Boolean updateAndExecuteQuery, String urlPath, Boolean enableContentTypes)
+public static List CreateList(this Web web, ListTemplateType listType, String listName, Boolean enableVersioning, Boolean updateAndExecuteQuery = True, String urlPath = "", Boolean enableContentTypes = False)
 ```
 ### Parameters
 #### web  

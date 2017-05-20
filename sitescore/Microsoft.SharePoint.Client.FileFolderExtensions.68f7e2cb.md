@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static File GetFile(Folder folder, String fileName)
+public static File GetFile(this Folder folder, String fileName)
 ```
 ### Parameters
 #### folder  

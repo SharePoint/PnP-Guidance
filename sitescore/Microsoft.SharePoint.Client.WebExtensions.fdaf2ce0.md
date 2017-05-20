@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List<SiteEntity> SiteSearch(Web web, String keywordQueryValue, Boolean trimDuplicates)
+public static List<SiteEntity> SiteSearch(this Web web, String keywordQueryValue, Boolean trimDuplicates = False)
 ```
 ### Parameters
 #### web  

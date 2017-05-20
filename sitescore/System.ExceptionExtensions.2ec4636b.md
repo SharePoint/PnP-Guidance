@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string ToDetailedString(Exception exception, ClientRuntimeContext cc, ExceptionOptions options)
+public static string ToDetailedString(this Exception exception, ClientRuntimeContext cc, ExceptionOptions options)
 ```
 ### Parameters
 #### exception  

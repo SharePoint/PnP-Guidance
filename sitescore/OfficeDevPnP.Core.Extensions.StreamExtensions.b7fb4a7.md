@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static MemoryStream ToMemoryStream(Stream source)
+public static MemoryStream ToMemoryStream(this Stream source)
 ```
 ### Parameters
 #### source  

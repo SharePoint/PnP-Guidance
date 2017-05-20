@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void CancelWorkFlow(WorkflowInstance instance)
+public static void CancelWorkFlow(this WorkflowInstance instance)
 ```
 ### Parameters
 #### instance  

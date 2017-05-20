@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string AsInternalFilename(String filename)
+public static string AsInternalFilename(this String filename)
 ```
 ### Parameters
 #### filename  

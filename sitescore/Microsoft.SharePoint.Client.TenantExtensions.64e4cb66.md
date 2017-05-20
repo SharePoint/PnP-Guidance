@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Guid GetSiteGuidByUrl(Tenant tenant, Uri siteFullUrl)
+public static Guid GetSiteGuidByUrl(this Tenant tenant, Uri siteFullUrl)
 ```
 ### Parameters
 #### tenant  

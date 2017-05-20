@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string GetWikiPageContent(Web web, String serverRelativePageUrl)
+public static string GetWikiPageContent(this Web web, String serverRelativePageUrl)
 ```
 ### Parameters
 #### web  

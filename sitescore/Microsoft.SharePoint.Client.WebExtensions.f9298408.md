@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsNoScriptSite(Site site)
+public static bool IsNoScriptSite(this Site site)
 ```
 ### Parameters
 #### site  

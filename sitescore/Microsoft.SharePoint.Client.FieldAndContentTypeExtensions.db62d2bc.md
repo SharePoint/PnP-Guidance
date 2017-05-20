@@ -9,7 +9,7 @@
 
 ## Syntax
 ```C#
-public static Field GetFieldByName(FieldCollection fields, String internalName)
+public static Field GetFieldByName(this FieldCollection fields, String internalName)
 ```
 ### Parameters
 #### fields  

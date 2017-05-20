@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ObjectSharingSettings GetObjectSharingSettingsForDocument(Web web, String urlToDocument, Boolean useSimplifiedPolicies)
+public static ObjectSharingSettings GetObjectSharingSettingsForDocument(this Web web, String urlToDocument, Boolean useSimplifiedPolicies = True)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ClientSidePage LoadClientSidePage(Web web, String pageName)
+public static ClientSidePage LoadClientSidePage(this Web web, String pageName)
 ```
 ### Parameters
 #### web  

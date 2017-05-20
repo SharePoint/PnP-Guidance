@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void Delete(WorkflowDefinition definition)
+public static void Delete(this WorkflowDefinition definition)
 ```
 ### Parameters
 #### definition  

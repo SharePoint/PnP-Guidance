@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool ServerObjectIsNull<T>(T clientObject)
+public static bool ServerObjectIsNull<T>(this T clientObject) where T : ClientObject
 ```
 ### Parameters
 #### clientObject  

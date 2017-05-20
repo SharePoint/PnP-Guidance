@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetPropertyBagValue(List list, String key, Int32 value)
+public static void SetPropertyBagValue(this List list, String key, Int32 value)
 ```
 ### Parameters
 #### list  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Nullable<DateTime> GetPropertyBagValueDateTime(Web web, String key, DateTime defaultValue)
+public static Nullable<DateTime> GetPropertyBagValueDateTime(this Web web, String key, DateTime defaultValue)
 ```
 ### Parameters
 #### web  

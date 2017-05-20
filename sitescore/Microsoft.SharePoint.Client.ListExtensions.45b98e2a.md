@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List GetListByUrl(Web web, String webRelativeUrl, Expression<Func<List, Object>>[] expressions)
+public static List GetListByUrl(this Web web, String webRelativeUrl, Expression<Func<List, Object>>[] expressions)
 ```
 ### Parameters
 #### web  

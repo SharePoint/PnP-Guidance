@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public ClientContext GetAppOnlyAuthenticatedContext(String siteUrl, String appId, String appSecret, AzureEnvironment environment)
+public ClientContext GetAppOnlyAuthenticatedContext(String siteUrl, String appId, String appSecret, AzureEnvironment environment = 0)
 ```
 ### Parameters
 #### siteUrl  

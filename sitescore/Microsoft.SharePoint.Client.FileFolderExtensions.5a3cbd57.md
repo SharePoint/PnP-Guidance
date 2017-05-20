@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Folder CreateFolder(Web web, String folderName)
+public static Folder CreateFolder(this Web web, String folderName)
 ```
 ### Parameters
 #### web  

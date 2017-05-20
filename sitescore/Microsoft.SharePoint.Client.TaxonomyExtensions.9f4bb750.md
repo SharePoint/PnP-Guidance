@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void RemoveTaxonomyFieldByInternalName(Web web, String internalName)
+public static void RemoveTaxonomyFieldByInternalName(this Web web, String internalName)
 ```
 ### Parameters
 #### web  

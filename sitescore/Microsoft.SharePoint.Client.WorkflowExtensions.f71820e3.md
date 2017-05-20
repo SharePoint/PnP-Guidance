@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Guid StartWorkflowInstance(ListItem item, Guid subscriptionId, IDictionary<String, Object> payload)
+public static Guid StartWorkflowInstance(this ListItem item, Guid subscriptionId, IDictionary<String, Object> payload)
 ```
 ### Parameters
 #### item  

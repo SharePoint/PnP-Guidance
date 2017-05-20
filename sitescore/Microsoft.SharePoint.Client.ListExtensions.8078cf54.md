@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List GetListByTitle(Web web, String listTitle, Expression<Func<List, Object>>[] expressions)
+public static List GetListByTitle(this Web web, String listTitle, Expression<Func<List, Object>>[] expressions)
 ```
 ### Parameters
 #### web  

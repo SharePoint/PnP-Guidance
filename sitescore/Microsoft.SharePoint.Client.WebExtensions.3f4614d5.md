@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool IsSubSite(Web web)
+public static bool IsSubSite(this Web web)
 ```
 ### Parameters
 #### web  

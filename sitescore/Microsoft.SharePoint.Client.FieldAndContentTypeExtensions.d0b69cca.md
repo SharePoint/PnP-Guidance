@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void RemoveFieldByInternalName(Web web, String internalName)
+public static void RemoveFieldByInternalName(this Web web, String internalName)
 ```
 ### Parameters
 #### web  

@@ -9,7 +9,7 @@
 
 ## Syntax
 ```C#
-public static void DisableReponsiveUI(Web web)
+public static void DisableReponsiveUI(this Web web)
 ```
 ### Parameters
 #### web  

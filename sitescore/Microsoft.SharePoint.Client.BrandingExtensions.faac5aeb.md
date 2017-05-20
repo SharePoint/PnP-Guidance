@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetHomePage(Web web, String rootFolderRelativePath)
+public static void SetHomePage(this Web web, String rootFolderRelativePath)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static IList<ImageRendition> GetPublishingImageRenditions(Web web)
+public static IList<ImageRendition> GetPublishingImageRenditions(this Web web)
 ```
 ### Parameters
 #### web  

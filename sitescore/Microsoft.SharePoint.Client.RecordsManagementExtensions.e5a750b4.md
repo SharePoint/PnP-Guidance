@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetManualRecordDeclarationInAllLocations(Site site, Boolean inAllPlaces)
+public static void SetManualRecordDeclarationInAllLocations(this Site site, Boolean inAllPlaces)
 ```
 ### Parameters
 #### site  

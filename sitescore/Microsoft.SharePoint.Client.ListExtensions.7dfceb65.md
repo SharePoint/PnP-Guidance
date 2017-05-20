@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void CreateViewsFromXMLFile(List list, String filePath)
+public static void CreateViewsFromXMLFile(this List list, String filePath)
 ```
 ### Parameters
 #### list  

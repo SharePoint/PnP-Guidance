@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string GetSearchConfiguration(Web web)
+public static string GetSearchConfiguration(this Web web)
 ```
 ### Parameters
 #### web  

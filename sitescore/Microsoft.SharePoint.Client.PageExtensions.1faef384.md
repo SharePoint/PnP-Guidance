@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static WebPartDefinition AddWebPartToWebPartPage(Web web, WebPartEntity webPart, String page)
+public static WebPartDefinition AddWebPartToWebPartPage(this Web web, WebPartEntity webPart, String page)
 ```
 ### Parameters
 #### web  

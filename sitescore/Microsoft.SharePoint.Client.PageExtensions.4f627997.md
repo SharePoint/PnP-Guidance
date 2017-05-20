@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static PropertyValues GetWebPartProperties(Web web, Guid id, String serverRelativePageUrl)
+public static PropertyValues GetWebPartProperties(this Web web, Guid id, String serverRelativePageUrl)
 ```
 ### Parameters
 #### web  

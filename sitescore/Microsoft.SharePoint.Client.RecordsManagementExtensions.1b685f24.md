@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetRecordRestrictions(Site site, EcmSiteRecordRestrictions restrictions)
+public static void SetRecordRestrictions(this Site site, EcmSiteRecordRestrictions restrictions)
 ```
 ### Parameters
 #### site  

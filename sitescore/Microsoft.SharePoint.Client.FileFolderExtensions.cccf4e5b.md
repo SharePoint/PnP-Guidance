@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string GetFileAsString(Web web, String serverRelativeUrl)
+public static string GetFileAsString(this Web web, String serverRelativeUrl)
 ```
 ### Parameters
 #### web  

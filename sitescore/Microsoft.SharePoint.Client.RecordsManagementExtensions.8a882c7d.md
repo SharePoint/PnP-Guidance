@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static EcmRecordDeclarationBy GetRecordDeclarationBy(Site site)
+public static EcmRecordDeclarationBy GetRecordDeclarationBy(this Site site)
 ```
 ### Parameters
 #### site  

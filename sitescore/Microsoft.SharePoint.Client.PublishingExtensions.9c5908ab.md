@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void CreatePublishingImageRendition(Web web, String imageRenditionName, Int32 imageRenditionWidth, Int32 imageRenditionHeight)
+public static void CreatePublishingImageRendition(this Web web, String imageRenditionName, Int32 imageRenditionWidth, Int32 imageRenditionHeight)
 ```
 ### Parameters
 #### web  

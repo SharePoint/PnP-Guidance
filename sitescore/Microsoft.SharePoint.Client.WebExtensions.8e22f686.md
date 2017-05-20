@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ProvisioningTemplate GetProvisioningTemplate(Web web, ProvisioningTemplateCreationInformation creationInfo)
+public static ProvisioningTemplate GetProvisioningTemplate(this Web web, ProvisioningTemplateCreationInformation creationInfo)
 ```
 ### Parameters
 #### web  

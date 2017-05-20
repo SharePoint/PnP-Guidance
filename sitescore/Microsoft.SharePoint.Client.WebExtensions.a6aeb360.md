@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void EnableRequestAccess(Web web, String[] emails)
+public static void EnableRequestAccess(this Web web, String[] emails)
 ```
 ### Parameters
 #### web  

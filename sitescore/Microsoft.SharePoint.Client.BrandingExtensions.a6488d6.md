@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AllowAllPageLayouts(Web web)
+public static void AllowAllPageLayouts(this Web web)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetSiteCollectionSearchCenterUrl(Web web, String searchCenterUrl)
+public static void SetSiteCollectionSearchCenterUrl(this Web web, String searchCenterUrl)
 ```
 ### Parameters
 #### web  

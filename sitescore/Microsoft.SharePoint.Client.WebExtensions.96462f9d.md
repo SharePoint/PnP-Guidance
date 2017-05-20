@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List<SiteEntity> SiteSearch(Web web)
+public static List<SiteEntity> SiteSearch(this Web web)
 ```
 ### Parameters
 #### web  

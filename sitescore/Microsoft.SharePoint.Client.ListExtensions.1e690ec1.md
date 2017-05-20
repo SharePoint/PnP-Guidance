@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Nullable<Int32> GetPropertyBagValueInt(List list, String key, Int32 defaultValue)
+public static Nullable<Int32> GetPropertyBagValueInt(this List list, String key, Int32 defaultValue)
 ```
 ### Parameters
 #### list  

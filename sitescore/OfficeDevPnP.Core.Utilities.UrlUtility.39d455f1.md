@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string StripInvalidUrlChars(String content)
+public static string StripInvalidUrlChars(this String content)
 ```
 ### Parameters
 #### content  

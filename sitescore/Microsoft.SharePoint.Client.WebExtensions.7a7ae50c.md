@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool PropertyBagContainsKey(Web web, String key)
+public static bool PropertyBagContainsKey(this Web web, String key)
 ```
 ### Parameters
 #### web  

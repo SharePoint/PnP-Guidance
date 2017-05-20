@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ProvisionSourceVariationLabel(ClientContext context, VariationLabelEntity sourceVariationLabel)
+public static void ProvisionSourceVariationLabel(this ClientContext context, VariationLabelEntity sourceVariationLabel)
 ```
 ### Parameters
 #### context  

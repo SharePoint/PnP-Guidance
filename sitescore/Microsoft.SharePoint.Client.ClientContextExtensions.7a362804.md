@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ClientContext GetSiteCollectionContext(ClientRuntimeContext clientContext)
+public static ClientContext GetSiteCollectionContext(this ClientRuntimeContext clientContext)
 ```
 ### Parameters
 #### clientContext  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Folder CreateFolder(Folder parentFolder, String folderName)
+public static Folder CreateFolder(this Folder parentFolder, String folderName)
 ```
 ### Parameters
 #### parentFolder  

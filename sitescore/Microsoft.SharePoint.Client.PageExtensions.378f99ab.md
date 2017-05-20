@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void AddLayoutToWikiPage(Web web, WikiPageLayout layout, String serverRelativePageUrl)
+public static void AddLayoutToWikiPage(this Web web, WikiPageLayout layout, String serverRelativePageUrl)
 ```
 ### Parameters
 #### web  

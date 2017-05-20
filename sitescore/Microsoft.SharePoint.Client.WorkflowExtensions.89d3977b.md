@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static WorkflowDefinition GetWorkflowDefinition(Web web, String displayName, Boolean publishedOnly)
+public static WorkflowDefinition GetWorkflowDefinition(this Web web, String displayName, Boolean publishedOnly = True)
 ```
 ### Parameters
 #### web  

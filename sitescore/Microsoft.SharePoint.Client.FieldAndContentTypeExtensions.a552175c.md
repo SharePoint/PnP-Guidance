@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Field GetFieldById(Web web, Guid fieldId, Boolean searchInSiteHierarchy)
+public static Field GetFieldById(this Web web, Guid fieldId, Boolean searchInSiteHierarchy = False)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static T ToEnum<T>(Int32 enumValue)
+public static T ToEnum<T>(this Int32 enumValue)
 ```
 ### Parameters
 #### enumValue  

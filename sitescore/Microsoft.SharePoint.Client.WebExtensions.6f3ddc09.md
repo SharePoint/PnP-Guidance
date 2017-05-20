@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetPageOutputCache(Web web, Boolean enableOutputCache, Int32 anonymousCacheProfileId, Int32 authenticatedCacheProfileId, Boolean debugCacheInformation)
+public static void SetPageOutputCache(this Web web, Boolean enableOutputCache, Int32 anonymousCacheProfileId, Int32 authenticatedCacheProfileId, Boolean debugCacheInformation)
 ```
 ### Parameters
 #### web  

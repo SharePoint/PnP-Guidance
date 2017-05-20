@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool FieldExistsByName(Web web, String fieldName, Boolean searchInSiteHierarchy)
+public static bool FieldExistsByName(this Web web, String fieldName, Boolean searchInSiteHierarchy = False)
 ```
 ### Parameters
 #### web  

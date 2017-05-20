@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static IEnumerable<VariationLabelEntity> GetVariationLabels(ClientContext context)
+public static IEnumerable<VariationLabelEntity> GetVariationLabels(this ClientContext context)
 ```
 ### Parameters
 #### context  

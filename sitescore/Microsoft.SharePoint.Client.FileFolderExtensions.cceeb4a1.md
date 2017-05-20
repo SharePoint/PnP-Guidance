@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Folder CreateDocumentSet(Folder folder, String documentSetName, ContentTypeId contentTypeId)
+public static Folder CreateDocumentSet(this Folder folder, String documentSetName, ContentTypeId contentTypeId)
 ```
 ### Parameters
 #### folder  

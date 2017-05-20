@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void RemovePermissionLevelFromPrincipal(SecurableObject securableObject, Principal principal, RoleType permissionLevel, Boolean removeAllPermissionLevels)
+public static void RemovePermissionLevelFromPrincipal(this SecurableObject securableObject, Principal principal, RoleType permissionLevel, Boolean removeAllPermissionLevels = False)
 ```
 ### Parameters
 #### securableObject  

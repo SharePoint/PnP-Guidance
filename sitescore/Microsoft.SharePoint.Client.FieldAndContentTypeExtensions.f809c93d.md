@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetDefaultContentTypeToList(List list, String contentTypeId)
+public static void SetDefaultContentTypeToList(this List list, String contentTypeId)
 ```
 ### Parameters
 #### list  

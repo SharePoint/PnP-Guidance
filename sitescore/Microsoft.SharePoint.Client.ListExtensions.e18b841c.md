@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static List CreateDocumentLibrary(Web web, String listName, Boolean enableVersioning, String urlPath)
+public static List CreateDocumentLibrary(this Web web, String listName, Boolean enableVersioning = False, String urlPath = "")
 ```
 ### Parameters
 #### web  

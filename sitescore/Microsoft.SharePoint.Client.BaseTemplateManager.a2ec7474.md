@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static ProvisioningTemplate GetBaseTemplate(Web web, String webTemplate, Int16 configuration)
+public static ProvisioningTemplate GetBaseTemplate(this Web web, String webTemplate, Int16 configuration)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static View CreateView(List list, String viewName, ViewType viewType, String[] viewFields, UInt32 rowLimit, Boolean setAsDefault, String query, Boolean personal, Boolean paged)
+public static View CreateView(this List list, String viewName, ViewType viewType, String[] viewFields, UInt32 rowLimit, Boolean setAsDefault, String query, Boolean personal = False, Boolean paged = False)
 ```
 ### Parameters
 #### list  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static PropertyInfo GetPublicInstanceProperty(Object source, String propertyName)
+public static PropertyInfo GetPublicInstanceProperty(this Object source, String propertyName)
 ```
 ### Parameters
 #### source  

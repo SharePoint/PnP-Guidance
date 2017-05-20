@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string GetWebPartXml(Web web, Guid webPartId, String serverRelativePageUrl)
+public static string GetWebPartXml(this Web web, Guid webPartId, String serverRelativePageUrl)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static IList<SiteEntity> GetSiteCollections(Tenant tenant, Int32 startIndex, Int32 endIndex, Boolean includeDetail, Boolean includeOD4BSites)
+public static IList<SiteEntity> GetSiteCollections(this Tenant tenant, Int32 startIndex = 0, Int32 endIndex = 500000, Boolean includeDetail = True, Boolean includeOD4BSites = False)
 ```
 ### Parameters
 #### tenant  

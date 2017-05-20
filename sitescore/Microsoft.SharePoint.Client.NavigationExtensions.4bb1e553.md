@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static NavigationNodeCollection LoadSearchNavigation(Web web)
+public static NavigationNodeCollection LoadSearchNavigation(this Web web)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool DeleteJsLink(Site site, String key)
+public static bool DeleteJsLink(this Site site, String key)
 ```
 ### Parameters
 #### site  

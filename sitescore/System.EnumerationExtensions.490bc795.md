@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static T Include<T>(Enum value, T append)
+public static T Include<T>(this Enum value, T append)
 ```
 ### Parameters
 #### value  

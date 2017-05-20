@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void SetListAutoRecordDeclaration(List list, Boolean autoDeclareRecords)
+public static void SetListAutoRecordDeclaration(this List list, Boolean autoDeclareRecords)
 ```
 ### Parameters
 #### list  

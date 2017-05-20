@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Term GetTermByName(Site site, Guid termSetId, String term)
+public static Term GetTermByName(this Site site, Guid termSetId, String term)
 ```
 ### Parameters
 #### site  

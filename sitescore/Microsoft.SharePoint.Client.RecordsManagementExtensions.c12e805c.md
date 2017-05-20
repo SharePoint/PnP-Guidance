@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static bool GetListAutoRecordDeclaration(List list)
+public static bool GetListAutoRecordDeclaration(this List list)
 ```
 ### Parameters
 #### list  

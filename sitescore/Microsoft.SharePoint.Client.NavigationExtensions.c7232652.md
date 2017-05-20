@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void UpdateNavigationInheritance(Web web, Boolean inheritNavigation)
+public static void UpdateNavigationInheritance(this Web web, Boolean inheritNavigation)
 ```
 ### Parameters
 #### web  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ExecuteQueryRetry(ClientRuntimeContext clientContext, Int32 retryCount, Int32 delay)
+public static void ExecuteQueryRetry(this ClientRuntimeContext clientContext, Int32 retryCount = 10, Int32 delay = 500)
 ```
 ### Parameters
 #### clientContext  

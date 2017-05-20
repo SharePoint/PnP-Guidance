@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static TermSet EnsureTermSet(TermGroup parentGroup, String termSetName, Guid termSetId, Nullable<Int32> lcid, String description, Nullable<Boolean> isOpen, String termSetContact, String termSetOwner)
+public static TermSet EnsureTermSet(this TermGroup parentGroup, String termSetName, Guid termSetId, Nullable<Int32> lcid, String description, Nullable<Boolean> isOpen, String termSetContact, String termSetOwner)
 ```
 ### Parameters
 #### parentGroup  

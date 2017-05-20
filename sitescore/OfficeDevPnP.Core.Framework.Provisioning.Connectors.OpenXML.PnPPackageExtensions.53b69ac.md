@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Byte[] PackTemplate(PnPInfo pnpInfo)
+public static Byte[] PackTemplate(this PnPInfo pnpInfo)
 ```
 ### Parameters
 #### pnpInfo  

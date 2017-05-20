@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void ExportSearchSettings(ClientContext context, String exportFilePath, SearchObjectLevel searchSettingsExportLevel)
+public static void ExportSearchSettings(this ClientContext context, String exportFilePath, SearchObjectLevel searchSettingsExportLevel)
 ```
 ### Parameters
 #### context  

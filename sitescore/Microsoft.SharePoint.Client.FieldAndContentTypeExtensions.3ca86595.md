@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static Field GetFieldByInternalName(Web web, String internalName, Boolean searchInSiteHierarchy)
+public static Field GetFieldByInternalName(this Web web, String internalName, Boolean searchInSiteHierarchy = False)
 ```
 ### Parameters
 #### web  
