@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public int GetHashCode()
+public int virtual GetHashCode()
 ```
 ### Return Value
 Type: int  

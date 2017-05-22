@@ -5,7 +5,7 @@ Converts this  [OfficeDevPnP.Core.Pages.ClientSideText](OfficeDevPnP.Core.Pages.
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public string ToHtml()
+public string virtual ToHtml()
 ```
 ### Return Value
 Type: string  

@@ -5,7 +5,7 @@ Return  [OfficeDevPnP.Core.Pages.ClientSideWebPart.Type](OfficeDevPnP.Core.Pages
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public Type Type { get; }
+public virtual Type Type { get; }
 ```
 
 ### Property Value

@@ -9,7 +9,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class ListExtensions
+public static abstract class ListExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|
@@ -29,14 +29,14 @@ public static class ListExtensions
 | [GetDefaultColumnValues(List)](Microsoft.SharePoint.Client.ListExtensions.b3d11314.md) | Gets default values for column values.The returned list contains one dictionary per default setting per folder.Each dictionary has the following keys set: Path, Field, ValuePath: Relative path to the library/folderField: Internal name of the field which has a default valueValue: The default value for the field
 | [GetEventReceiverById(List, Guid)](Microsoft.SharePoint.Client.ListExtensions.63be7c1a.md) | Returns an event receiver definition
 | [GetEventReceiverByName(List, String)](Microsoft.SharePoint.Client.ListExtensions.fcdeff9f.md) | Returns an event receiver definition
-| [GetListByTitle(Web, String, Expression&lt;Func&lt;List, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.8078cf54.md) | 
-| [GetListByUrl(Web, String, Expression&lt;Func&lt;List, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.45b98e2a.md) | 
+| [GetListByTitle(Web, String, Expression&lt;Func&lt;List, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.8078cf54.md) | Get list by using Title
+| [GetListByUrl(Web, String, Expression&lt;Func&lt;List, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.45b98e2a.md) | Get list by using Url
 | [GetListID(Web, String)](Microsoft.SharePoint.Client.ListExtensions.7e803d44.md) | Returns the GUID id of a list
 | [GetPagesLibrary(Web)](Microsoft.SharePoint.Client.ListExtensions.72bc72eb.md) | Gets the publishing pages library of the web based on site language
 | [GetPropertyBagValueInt(List, String, Int32)](Microsoft.SharePoint.Client.ListExtensions.1e690ec1.md) | Get int typed property bag value. If does not contain, returns default value.
 | [GetPropertyBagValueString(List, String, String)](Microsoft.SharePoint.Client.ListExtensions.6838ef8b.md) | Get string typed property bag value. If does not contain, returns given default value.
-| [GetViewById(List, Guid, Expression&lt;Func&lt;View, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.77ca9349.md) | 
-| [GetViewByName(List, String, Expression&lt;Func&lt;View, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.53d0489.md) | 
+| [GetViewById(List, Guid, Expression&lt;Func&lt;View, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.77ca9349.md) | Gets a view by Id
+| [GetViewByName(List, String, Expression&lt;Func&lt;View, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.53d0489.md) | Gets a view by Name
 | [GetWebRelativeUrl(List)](Microsoft.SharePoint.Client.ListExtensions.1d0b225d.md) | Gets the web relative URL. Allow users to get the web relative URL of a list. This is useful when exporting lists as it can then be used as a parameter to Web.GetListByUrl().
 | [ListExists(Web, String)](Microsoft.SharePoint.Client.ListExtensions.696f8225.md) | Checks if list exists on the particular site based on the list Title property.
 | [ListExists(Web, Uri)](Microsoft.SharePoint.Client.ListExtensions.18ffaeae.md) | Checks if list exists on the particular site based on the list's site relative path.

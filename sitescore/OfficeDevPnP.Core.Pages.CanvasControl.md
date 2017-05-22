@@ -10,7 +10,7 @@ System.Object
 &emsp;[OfficeDevPnP.Core.Pages.ClientSideWebPart](OfficeDevPnP.Core.Pages.ClientSideWebPart.md)  
 ## Syntax
 ```C#
-public class CanvasControl
+public abstract class CanvasControl
 ```
 ## Constructors
 |**Name**|**Description**|

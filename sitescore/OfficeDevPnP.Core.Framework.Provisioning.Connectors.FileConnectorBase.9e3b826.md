@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public string GetFilenamePart(String fileName)
+public string virtual GetFilenamePart(String fileName)
 ```
 ### Parameters
 #### fileName  

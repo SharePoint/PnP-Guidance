@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public ProvisioningTemplate PreProcessSaveTemplate(ProvisioningTemplate template)
+public ProvisioningTemplate virtual PreProcessSaveTemplate(ProvisioningTemplate template)
 ```
 ### Parameters
 #### template  

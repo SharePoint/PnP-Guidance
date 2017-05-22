@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class WorkflowExtensions
+public static abstract class WorkflowExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class UnifiedGroupsUtility
+public static abstract class UnifiedGroupsUtility
 ```
 ## Methods
 |**Name**|**Description**|

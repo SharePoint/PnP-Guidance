@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public BindingElementCollection CreateBindingElements()
+public BindingElementCollection virtual CreateBindingElements()
 ```
 ### Return Value
 Type: BindingElementCollection  

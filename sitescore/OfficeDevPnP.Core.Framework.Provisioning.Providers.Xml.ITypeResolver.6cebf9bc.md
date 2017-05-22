@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public object Resolve(Object source, Dictionary<String, IResolver> resolvers, Boolean recursive = False)
+public object virtual Resolve(Object source, Dictionary<String, IResolver> resolvers, Boolean recursive = False)
 ```
 ### Parameters
 #### source  

@@ -9,7 +9,7 @@ System.Object
 &emsp;[OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions.DateNowToken](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions.DateNowToken.md)  
 ## Syntax
 ```C#
-public class TokenDefinition
+public abstract class TokenDefinition
 ```
 ## Constructors
 |**Name**|**Description**|

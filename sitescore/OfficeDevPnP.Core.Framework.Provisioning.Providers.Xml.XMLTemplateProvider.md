@@ -8,7 +8,7 @@ System.Object
 &ensp;[OfficeDevPnP.Core.Framework.Provisioning.Providers.TemplateProviderBase](OfficeDevPnP.Core.Framework.Provisioning.Providers.TemplateProviderBase.md)  
 ## Syntax
 ```C#
-public class XMLTemplateProvider: TemplateProviderBase
+public abstract class XMLTemplateProvider: TemplateProviderBase
 ```
 ## Methods
 |**Name**|**Description**|

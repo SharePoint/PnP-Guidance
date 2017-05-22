@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public Stream GetFileStream(String fileName, String container)
+public Stream virtual GetFileStream(String fileName, String container)
 ```
 ### Parameters
 #### fileName  

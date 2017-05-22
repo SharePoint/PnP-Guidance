@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public IAsyncResult BeginInvoke(String message, Int32 step, Int32 total, AsyncCallback callback, Object object)
+public IAsyncResult virtual BeginInvoke(String message, Int32 step, Int32 total, AsyncCallback callback, Object object)
 ```
 ### Parameters
 #### message  

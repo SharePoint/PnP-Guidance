@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class PublishingExtensions
+public static abstract class PublishingExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

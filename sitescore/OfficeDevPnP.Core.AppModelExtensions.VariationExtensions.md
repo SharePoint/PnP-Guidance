@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class VariationExtensions
+public static abstract class VariationExtensions
 ```
 ## See also
 - [OfficeDevPnP.Core.AppModelExtensions](OfficeDevPnP.Core.AppModelExtensions.md)

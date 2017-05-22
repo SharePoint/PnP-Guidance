@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void Invoke(Object sender, AddColleagueWithoutEmailNotificationCompletedEventArgs e)
+public void virtual Invoke(Object sender, AddColleagueWithoutEmailNotificationCompletedEventArgs e)
 ```
 ### Parameters
 #### sender  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void ProcessRequest(ClientContext ctx, ProvisioningTemplate template, String configurationData)
+public void virtual ProcessRequest(ClientContext ctx, ProvisioningTemplate template, String configurationData)
 ```
 ### Parameters
 #### ctx  

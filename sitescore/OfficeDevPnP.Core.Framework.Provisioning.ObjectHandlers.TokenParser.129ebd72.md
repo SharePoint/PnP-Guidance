@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public string ParseString(String input, String[] tokensToSkip)
+public string ParseString(String input, params String[] tokensToSkip)
 ```
 ### Parameters
 #### input  

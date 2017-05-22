@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void Initialize(TemplateProviderBase provider)
+public void virtual Initialize(TemplateProviderBase provider)
 ```
 ### Parameters
 #### provider  

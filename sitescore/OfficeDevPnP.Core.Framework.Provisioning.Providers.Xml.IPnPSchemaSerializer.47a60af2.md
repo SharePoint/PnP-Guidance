@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void Deserialize(Object persistence, ProvisioningTemplate template)
+public void virtual Deserialize(Object persistence, ProvisioningTemplate template)
 ```
 ### Parameters
 #### persistence  

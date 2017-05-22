@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class Constants
+public static abstract class Constants
 ```
 ## See also
 - [OfficeDevPnP.Core](OfficeDevPnP.Core.md)

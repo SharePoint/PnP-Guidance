@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool Equals(WorkflowSubscription other)
+public bool virtual Equals(WorkflowSubscription other)
 ```
 ### Parameters
 #### other  

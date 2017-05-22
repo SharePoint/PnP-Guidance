@@ -8,7 +8,7 @@ System.Object
 &ensp;[OfficeDevPnP.Core.Framework.Provisioning.Model.BaseModel](OfficeDevPnP.Core.Framework.Provisioning.Model.BaseModel.md)  
 ## Syntax
 ```C#
-public class BaseNavigationKind: BaseModel, IEquatable<BaseNavigationKind>
+public abstract class BaseNavigationKind: BaseModel, IEquatable<BaseNavigationKind>
 ```
 ## Constructors
 |**Name**|**Description**|

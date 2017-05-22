@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public ProvisioningTemplate PostProcessGetTemplate(ProvisioningTemplate template)
+public ProvisioningTemplate virtual PostProcessGetTemplate(ProvisioningTemplate template)
 ```
 ### Parameters
 #### template  

@@ -8,7 +8,7 @@ System.Object
 &ensp;System.ServiceModel.Channels.Binding  
 ## Syntax
 ```C#
-public class WSTrustBinding: Binding
+public abstract class WSTrustBinding: Binding
 ```
 ## Properties
 |**Name**|**Description**|

@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class PnPCoreUtilities
+public static abstract class PnPCoreUtilities
 ```
 ## Properties
 |**Name**|**Description**|

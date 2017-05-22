@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public string ToHtml()
+public string virtual ToHtml()
 ```
 ### Return Value
 Type: string  

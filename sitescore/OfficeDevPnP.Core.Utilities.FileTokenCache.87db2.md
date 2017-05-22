@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void Clear()
+public void virtual Clear()
 ```
 ### Return Value
 Type: void  

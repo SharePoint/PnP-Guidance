@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool Equals(AddIn other)
+public bool virtual Equals(AddIn other)
 ```
 ### Parameters
 #### other  

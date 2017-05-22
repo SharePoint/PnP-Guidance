@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void LogWarning(String message, Object[] args)
+public void LogWarning(String message, params Object[] args)
 ```
 ### Parameters
 #### message  

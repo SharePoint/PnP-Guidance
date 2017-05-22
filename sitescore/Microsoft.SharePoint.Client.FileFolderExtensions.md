@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class FileFolderExtensions
+public static abstract class FileFolderExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|
@@ -21,10 +21,10 @@ public static class FileFolderExtensions
 | [CreateFolder(Web, String)](Microsoft.SharePoint.Client.FileFolderExtensions.5a3cbd57.md) | Creates a folder with the given name as a child of the Web. Note it is more common to create folders within an existing Folder, such as the RootFolder of a List.
 | [CreateFolder(Folder, String)](Microsoft.SharePoint.Client.FileFolderExtensions.2d34edc8.md) | Creates a folder with the given name.
 | [DoesFolderExists(Web, String)](Microsoft.SharePoint.Client.FileFolderExtensions.f242ff96.md) | Checks if a specific folder exists
-| [EnsureFolder(Web, Folder, String, Expression&lt;Func&lt;Folder, Object&gt;&gt;[])](Microsoft.SharePoint.Client.FileFolderExtensions.ff1bc66d.md) | 
-| [EnsureFolder(Web, String, Expression&lt;Func&lt;Folder, Object&gt;&gt;[])](Microsoft.SharePoint.Client.FileFolderExtensions.f0af8f8.md) | 
-| [EnsureFolder(Folder, String, Expression&lt;Func&lt;Folder, Object&gt;&gt;[])](Microsoft.SharePoint.Client.FileFolderExtensions.cb4683a9.md) | 
-| [EnsureFolderPath(Web, String, Expression&lt;Func&lt;Folder, Object&gt;&gt;[])](Microsoft.SharePoint.Client.FileFolderExtensions.35b06e1c.md) | 
+| [EnsureFolder(Web, Folder, String, Expression&lt;Func&lt;Folder, Object&gt;&gt;[])](Microsoft.SharePoint.Client.FileFolderExtensions.ff1bc66d.md) | Ensure that the folder structure is created. This also ensures hierarchy of folders.
+| [EnsureFolder(Web, String, Expression&lt;Func&lt;Folder, Object&gt;&gt;[])](Microsoft.SharePoint.Client.FileFolderExtensions.f0af8f8.md) | Checks if the folder exists at the top level of the web site, and if it does not exist creates it. Note it is more common to create folders within an existing Folder, such as the RootFolder of a List.
+| [EnsureFolder(Folder, String, Expression&lt;Func&lt;Folder, Object&gt;&gt;[])](Microsoft.SharePoint.Client.FileFolderExtensions.cb4683a9.md) | Checks if the subfolder exists, and if it does not exist creates it.
+| [EnsureFolderPath(Web, String, Expression&lt;Func&lt;Folder, Object&gt;&gt;[])](Microsoft.SharePoint.Client.FileFolderExtensions.35b06e1c.md) | Check if a folder exists with the specified path (relative to the web), and if not creates it (inside a list if necessary)
 | [FindFiles(Web, String)](Microsoft.SharePoint.Client.FileFolderExtensions.9355c7ca.md) | Finds files in the web. Can be slow.
 | [FindFiles(List, String)](Microsoft.SharePoint.Client.FileFolderExtensions.610d4135.md) | Find files in the list, Can be slow.
 | [FindFiles(Folder, String)](Microsoft.SharePoint.Client.FileFolderExtensions.d977f1fa.md) | Find files in a specific folder

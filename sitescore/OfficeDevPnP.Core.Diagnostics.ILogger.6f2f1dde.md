@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void Warning(LogEntry entry)
+public void virtual Warning(LogEntry entry)
 ```
 ### Parameters
 #### entry  

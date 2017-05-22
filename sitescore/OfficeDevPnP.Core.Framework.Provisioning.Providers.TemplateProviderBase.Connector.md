@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public FileConnectorBase Connector { get; set; }
+public virtual FileConnectorBase Connector { get; set; }
 ```
 
 ### Property Value

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static void Warning(String source, String message, Object[] args)
+public static void Warning(String source, String message, params Object[] args)
 ```
 ### Parameters
 #### source  

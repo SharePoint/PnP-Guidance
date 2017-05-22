@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool Equals(ListInstance other)
+public bool virtual Equals(ListInstance other)
 ```
 ### Parameters
 #### other  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static IEnumerable<Field> GetFields(this List list, String[] fieldInternalNames)
+public static IEnumerable<Field> GetFields(this List list, params String[] fieldInternalNames)
 ```
 ### Parameters
 #### list  

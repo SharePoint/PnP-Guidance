@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class ExternalSharingExtensions
+public static abstract class ExternalSharingExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

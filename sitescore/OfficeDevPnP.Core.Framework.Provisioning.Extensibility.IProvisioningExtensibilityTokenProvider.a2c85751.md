@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public IEnumerable<TokenDefinition> GetTokens(ClientContext ctx, ProvisioningTemplate template, String configurationData)
+public IEnumerable<TokenDefinition> virtual GetTokens(ClientContext ctx, ProvisioningTemplate template, String configurationData)
 ```
 ### Parameters
 #### ctx  
