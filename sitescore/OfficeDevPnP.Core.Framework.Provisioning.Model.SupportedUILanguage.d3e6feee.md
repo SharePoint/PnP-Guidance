@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(SupportedUILanguage other)
+public virtual bool Equals(SupportedUILanguage other)
 ```
 ### Parameters
 #### other  

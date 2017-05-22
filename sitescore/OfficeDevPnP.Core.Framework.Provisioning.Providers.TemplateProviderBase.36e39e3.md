@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void virtual Save(ProvisioningTemplate template, ITemplateFormatter formatter)
+public abstract void Save(ProvisioningTemplate template, ITemplateFormatter formatter)
 ```
 ### Parameters
 #### template  

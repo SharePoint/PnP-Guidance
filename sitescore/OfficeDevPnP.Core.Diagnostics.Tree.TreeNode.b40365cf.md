@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public string virtual ToString()
+public override string ToString()
 ```
 ### Return Value
 Type: string  

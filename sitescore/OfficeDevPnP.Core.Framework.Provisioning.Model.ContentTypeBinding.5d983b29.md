@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(ContentTypeBinding other)
+public virtual bool Equals(ContentTypeBinding other)
 ```
 ### Parameters
 #### other  

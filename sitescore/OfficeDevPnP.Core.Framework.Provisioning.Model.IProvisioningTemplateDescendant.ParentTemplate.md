@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public virtual ProvisioningTemplate ParentTemplate { get; }
+public abstract ProvisioningTemplate ParentTemplate { get; }
 ```
 
 ### Property Value

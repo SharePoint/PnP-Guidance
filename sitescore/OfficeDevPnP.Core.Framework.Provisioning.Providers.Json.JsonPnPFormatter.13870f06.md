@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual IsValid(Stream template)
+public virtual bool IsValid(Stream template)
 ```
 ### Parameters
 #### template  

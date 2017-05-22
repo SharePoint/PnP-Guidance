@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public Stream virtual PostProcessSaveTemplate(Stream stream)
+public abstract Stream PostProcessSaveTemplate(Stream stream)
 ```
 ### Parameters
 #### stream  

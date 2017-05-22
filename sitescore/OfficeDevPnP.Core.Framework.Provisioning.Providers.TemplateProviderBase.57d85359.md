@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public List<ProvisioningTemplate> virtual GetTemplates(ITemplateFormatter formatter)
+public abstract List<ProvisioningTemplate> GetTemplates(ITemplateFormatter formatter)
 ```
 ### Parameters
 #### formatter  

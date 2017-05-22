@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(TermSet other)
+public virtual bool Equals(TermSet other)
 ```
 ### Parameters
 #### other  

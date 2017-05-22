@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void virtual Invoke(String message, Int32 step, Int32 total)
+public virtual void Invoke(String message, Int32 step, Int32 total)
 ```
 ### Parameters
 #### message  

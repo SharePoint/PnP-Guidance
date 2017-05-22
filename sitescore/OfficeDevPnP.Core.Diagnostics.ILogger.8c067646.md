@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void virtual Info(LogEntry entry)
+public abstract void Info(LogEntry entry)
 ```
 ### Parameters
 #### entry  

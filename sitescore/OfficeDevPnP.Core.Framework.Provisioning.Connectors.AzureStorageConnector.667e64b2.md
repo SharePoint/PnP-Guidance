@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public Stream virtual GetFileStream(String fileName)
+public override Stream GetFileStream(String fileName)
 ```
 ### Parameters
 #### fileName  

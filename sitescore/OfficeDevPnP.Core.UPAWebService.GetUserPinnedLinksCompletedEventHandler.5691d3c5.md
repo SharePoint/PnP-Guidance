@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void virtual Invoke(Object sender, GetUserPinnedLinksCompletedEventArgs e)
+public virtual void Invoke(Object sender, GetUserPinnedLinksCompletedEventArgs e)
 ```
 ### Parameters
 #### sender  

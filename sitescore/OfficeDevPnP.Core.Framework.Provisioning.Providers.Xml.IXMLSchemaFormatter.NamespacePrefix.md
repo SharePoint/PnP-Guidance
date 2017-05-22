@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public virtual string NamespacePrefix { get; }
+public abstract string NamespacePrefix { get; }
 ```
 
 ### Property Value

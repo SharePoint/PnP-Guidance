@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(DataRow other)
+public virtual bool Equals(DataRow other)
 ```
 ### Parameters
 #### other  

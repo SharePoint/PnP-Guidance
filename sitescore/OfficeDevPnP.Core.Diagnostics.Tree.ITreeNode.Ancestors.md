@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public virtual IEnumerable<ITreeNode> Ancestors { get; }
+public abstract IEnumerable<ITreeNode> Ancestors { get; }
 ```
 
 ### Property Value

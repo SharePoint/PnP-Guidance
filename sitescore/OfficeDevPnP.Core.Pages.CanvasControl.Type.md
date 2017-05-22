@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public virtual Type Type { get; }
+public abstract Type Type { get; }
 ```
 
 ### Property Value

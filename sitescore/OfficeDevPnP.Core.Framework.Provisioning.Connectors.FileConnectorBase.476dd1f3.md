@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void virtual DeleteFile(String fileName, String container)
+public abstract void DeleteFile(String fileName, String container)
 ```
 ### Parameters
 #### fileName  

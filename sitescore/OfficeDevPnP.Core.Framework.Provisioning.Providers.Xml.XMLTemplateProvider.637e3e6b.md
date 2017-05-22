@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public List<ProvisioningTemplate> virtual GetTemplates()
+public override List<ProvisioningTemplate> GetTemplates()
 ```
 ### Return Value
 Type: List<ProvisioningTemplate>  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(DocumentSetTemplate other)
+public virtual bool Equals(DocumentSetTemplate other)
 ```
 ### Parameters
 #### other  

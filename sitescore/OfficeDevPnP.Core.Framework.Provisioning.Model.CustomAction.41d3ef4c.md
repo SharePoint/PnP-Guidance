@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(CustomAction other)
+public virtual bool Equals(CustomAction other)
 ```
 ### Parameters
 #### other  

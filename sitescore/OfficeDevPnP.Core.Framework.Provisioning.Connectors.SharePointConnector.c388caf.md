@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public List<String> virtual GetFolders(String container)
+public override List<String> GetFolders(String container)
 ```
 ### Parameters
 #### container  

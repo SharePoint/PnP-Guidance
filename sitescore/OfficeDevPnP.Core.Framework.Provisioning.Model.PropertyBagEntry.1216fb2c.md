@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(PropertyBagEntry other)
+public virtual bool Equals(PropertyBagEntry other)
 ```
 ### Parameters
 #### other  

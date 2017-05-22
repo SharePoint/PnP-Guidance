@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public List<String> virtual ResolveAddedSites(List<String> addedSites)
+public virtual List<String> ResolveAddedSites(List<String> addedSites)
 ```
 ### Parameters
 #### addedSites  

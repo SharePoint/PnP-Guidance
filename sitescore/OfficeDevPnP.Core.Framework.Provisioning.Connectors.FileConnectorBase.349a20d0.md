@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public List<String> virtual GetFiles(String container)
+public abstract List<String> GetFiles(String container)
 ```
 ### Parameters
 #### container  

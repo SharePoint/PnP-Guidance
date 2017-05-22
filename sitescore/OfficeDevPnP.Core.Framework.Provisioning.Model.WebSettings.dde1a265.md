@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(WebSettings other)
+public virtual bool Equals(WebSettings other)
 ```
 ### Parameters
 #### other  
