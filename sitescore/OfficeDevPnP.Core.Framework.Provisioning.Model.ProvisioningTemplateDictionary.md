@@ -8,7 +8,7 @@ System.Object
 &ensp;TKey,TItem  
 ## Syntax
 ```C#
-public abstract class ProvisioningTemplateDictionaryTKey, TItem: KeyedCollection<TKey, TItem>, IProvisioningTemplateDescendant where TItem : BaseModel
+public abstract class ProvisioningTemplateDictionary<TKey, TItem>: KeyedCollection<TKey, TItem>, IProvisioningTemplateDescendant where TItem : BaseModel
 ```
 ## Constructors
 |**Name**|**Description**|
