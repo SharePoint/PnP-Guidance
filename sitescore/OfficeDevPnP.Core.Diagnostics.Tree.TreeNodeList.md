@@ -8,7 +8,7 @@ System.Object
 &ensp;OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode  
 ## Syntax
 ```C#
-public class TreeNodeList: List<ITreeNode<T>>, ITreeNodeList<T>, IList<ITreeNode<T>>, ICollection<ITreeNode<T>>, IEnumerable<ITreeNode<T>>, IEnumerable, INotifyPropertyChanged
+public class TreeNodeListT: List<ITreeNode<T>>, ITreeNodeList<T>, IList<ITreeNode<T>>, ICollection<ITreeNode<T>>, IEnumerable<ITreeNode<T>>, IEnumerable, INotifyPropertyChanged
 ```
 ## Constructors
 |**Name**|**Description**|

@@ -8,7 +8,7 @@ System.Object
 &ensp;T  
 ## Syntax
 ```C#
-public abstract class ProvisioningTemplateCollection: Collection<T>, IProvisioningTemplateDescendant where T : BaseModel
+public abstract class ProvisioningTemplateCollectionT: Collection<T>, IProvisioningTemplateDescendant where T : BaseModel
 ```
 ## Constructors
 |**Name**|**Description**|
