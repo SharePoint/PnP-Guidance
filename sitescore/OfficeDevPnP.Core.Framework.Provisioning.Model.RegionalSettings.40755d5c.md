@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(RegionalSettings other)
+public virtual bool Equals(RegionalSettings other)
 ```
 ### Parameters
 #### other  

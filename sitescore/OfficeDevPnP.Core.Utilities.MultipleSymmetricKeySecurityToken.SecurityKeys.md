@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public virtual ReadOnlyCollection<SecurityKey> SecurityKeys { get; }
+public override ReadOnlyCollection<SecurityKey> SecurityKeys { get; }
 ```
 
 ### Property Value

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(RoleAssignment other)
+public virtual bool Equals(RoleAssignment other)
 ```
 ### Parameters
 #### other  

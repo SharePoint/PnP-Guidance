@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(ProvisioningTemplate other)
+public virtual bool Equals(ProvisioningTemplate other)
 ```
 ### Parameters
 #### other  

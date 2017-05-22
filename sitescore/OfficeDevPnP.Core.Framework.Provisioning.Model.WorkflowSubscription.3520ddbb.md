@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(Object obj)
+public override bool Equals(Object obj)
 ```
 ### Parameters
 #### obj  

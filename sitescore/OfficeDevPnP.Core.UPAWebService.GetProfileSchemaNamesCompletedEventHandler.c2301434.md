@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void virtual Invoke(Object sender, GetProfileSchemaNamesCompletedEventArgs e)
+public virtual void Invoke(Object sender, GetProfileSchemaNamesCompletedEventArgs e)
 ```
 ### Parameters
 #### sender  

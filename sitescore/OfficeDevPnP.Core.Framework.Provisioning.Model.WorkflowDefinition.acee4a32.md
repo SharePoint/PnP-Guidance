@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(WorkflowDefinition other)
+public virtual bool Equals(WorkflowDefinition other)
 ```
 ### Parameters
 #### other  

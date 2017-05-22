@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(AuditSettings other)
+public virtual bool Equals(AuditSettings other)
 ```
 ### Parameters
 #### other  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(ComposedLook other)
+public virtual bool Equals(ComposedLook other)
 ```
 ### Parameters
 #### other  

@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public virtual string Scheme { get; }
+public override string Scheme { get; }
 ```
 
 ### Property Value

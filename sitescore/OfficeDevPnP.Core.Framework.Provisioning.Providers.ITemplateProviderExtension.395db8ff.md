@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public Stream virtual PreProcessGetTemplate(Stream stream)
+public abstract Stream PreProcessGetTemplate(Stream stream)
 ```
 ### Parameters
 #### stream  

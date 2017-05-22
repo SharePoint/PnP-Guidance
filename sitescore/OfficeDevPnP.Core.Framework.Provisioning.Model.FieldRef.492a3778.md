@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(FieldRef other)
+public virtual bool Equals(FieldRef other)
 ```
 ### Parameters
 #### other  

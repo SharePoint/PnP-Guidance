@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(Localization other)
+public virtual bool Equals(Localization other)
 ```
 ### Parameters
 #### other  

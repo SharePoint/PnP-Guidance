@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public virtual int Height { get; }
+public abstract int Height { get; }
 ```
 
 ### Property Value

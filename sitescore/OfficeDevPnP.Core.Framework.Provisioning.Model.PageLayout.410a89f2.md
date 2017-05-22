@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Equals(PageLayout other)
+public virtual bool Equals(PageLayout other)
 ```
 ### Parameters
 #### other  

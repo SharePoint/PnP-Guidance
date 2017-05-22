@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void virtual OnActionExecuting(HttpActionContext actionContext)
+public override void OnActionExecuting(HttpActionContext actionContext)
 ```
 ### Parameters
 #### actionContext  

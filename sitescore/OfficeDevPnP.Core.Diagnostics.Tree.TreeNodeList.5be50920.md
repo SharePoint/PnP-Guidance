@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool virtual Remove(ITreeNode<T> node)
+public virtual bool Remove(ITreeNode<T> node)
 ```
 ### Parameters
 #### node  

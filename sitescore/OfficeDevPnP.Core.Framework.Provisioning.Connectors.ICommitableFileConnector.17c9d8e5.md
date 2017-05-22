@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void virtual Commit()
+public abstract void Commit()
 ```
 ### Return Value
 Type: void  

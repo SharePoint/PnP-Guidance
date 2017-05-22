@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public string virtual GetReplaceValue()
+public override string GetReplaceValue()
 ```
 ### Return Value
 Type: string  

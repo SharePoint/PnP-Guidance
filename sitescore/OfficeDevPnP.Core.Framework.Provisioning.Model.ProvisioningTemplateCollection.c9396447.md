@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void virtual AddRange(IEnumerable<T> collection)
+public virtual void AddRange(IEnumerable<T> collection)
 ```
 ### Parameters
 #### collection  

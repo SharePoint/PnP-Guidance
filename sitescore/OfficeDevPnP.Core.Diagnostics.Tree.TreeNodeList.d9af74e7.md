@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void virtual remove_PropertyChanged(PropertyChangedEventHandler value)
+public virtual void remove_PropertyChanged(PropertyChangedEventHandler value)
 ```
 ### Parameters
 #### value  
