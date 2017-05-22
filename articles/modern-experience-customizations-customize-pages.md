@@ -61,7 +61,7 @@ If you want to completely disable the "modern" experience, then it's best to use
 ### Web level configuration
 You can prevent a web from using the "modern" page experience by disabling the web scoped feature with ID **B6917CB1-93A0-4B97-A84D-7CF49975D4EC** (name = "Site Pages"). To re-enable the "modern" page experience at the web level you'll need to activate the feature again.
 
-Use the following [PnP PowerShell](aka.ms/sppnp-powershell) to enable/disable the needed features:
+Use the following [PnP PowerShell](http://aka.ms/sppnp-powershell) to enable/disable the needed features:
 
 ```PowerShell
 # Connect to a site
