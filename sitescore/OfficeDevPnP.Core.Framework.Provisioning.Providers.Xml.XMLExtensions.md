@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class XMLExtensions
+public static abstract class XMLExtensions
 ```
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.md)

@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class CredentialManager
+public static abstract class CredentialManager
 ```
 ## Methods
 |**Name**|**Description**|

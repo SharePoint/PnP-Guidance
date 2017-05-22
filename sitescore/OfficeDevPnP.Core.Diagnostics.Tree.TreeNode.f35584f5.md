@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void SetParent(ITreeNode<T> node, Boolean updateChildNodes = True)
+public void virtual SetParent(ITreeNode<T> node, Boolean updateChildNodes = True)
 ```
 ### Parameters
 #### node  

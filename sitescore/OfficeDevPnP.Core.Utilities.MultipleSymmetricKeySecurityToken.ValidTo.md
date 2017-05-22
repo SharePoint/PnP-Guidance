@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public DateTime ValidTo { get; }
+public virtual DateTime ValidTo { get; }
 ```
 
 ### Property Value

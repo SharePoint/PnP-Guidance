@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string Combine(String path, String[] relativePaths)
+public static string Combine(String path, params String[] relativePaths)
 ```
 ### Parameters
 #### path  

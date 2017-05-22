@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool Equals(GlobalNavigation other)
+public bool virtual Equals(GlobalNavigation other)
 ```
 ### Parameters
 #### other  

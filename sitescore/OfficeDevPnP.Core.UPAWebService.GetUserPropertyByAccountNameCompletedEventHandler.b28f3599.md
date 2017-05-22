@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public IAsyncResult BeginInvoke(Object sender, GetUserPropertyByAccountNameCompletedEventArgs e, AsyncCallback callback, Object object)
+public IAsyncResult virtual BeginInvoke(Object sender, GetUserPropertyByAccountNameCompletedEventArgs e, AsyncCallback callback, Object object)
 ```
 ### Parameters
 #### sender  

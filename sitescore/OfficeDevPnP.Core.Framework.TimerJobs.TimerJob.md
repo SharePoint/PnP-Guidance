@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public class TimerJob
+public abstract class TimerJob
 ```
 ## Constructors
 |**Name**|**Description**|

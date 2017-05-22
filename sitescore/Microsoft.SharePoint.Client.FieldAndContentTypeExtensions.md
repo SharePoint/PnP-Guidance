@@ -9,7 +9,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class FieldAndContentTypeExtensions
+public static abstract class FieldAndContentTypeExtensions
 ```
 ## Methods
 |**Name**|**Description**|

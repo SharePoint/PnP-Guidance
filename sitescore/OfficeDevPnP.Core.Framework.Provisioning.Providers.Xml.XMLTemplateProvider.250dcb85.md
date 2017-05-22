@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public ProvisioningTemplate GetTemplate(String uri, String identifier, ITemplateFormatter formatter)
+public ProvisioningTemplate virtual GetTemplate(String uri, String identifier, ITemplateFormatter formatter)
 ```
 ### Parameters
 #### uri  

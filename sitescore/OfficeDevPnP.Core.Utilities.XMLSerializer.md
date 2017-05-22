@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class XMLSerializer
+public static abstract class XMLSerializer
 ```
 ## Methods
 |**Name**|**Description**|

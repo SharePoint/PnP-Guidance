@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class BuiltInContentTypeId
+public static abstract class BuiltInContentTypeId
 ```
 ## Methods
 |**Name**|**Description**|

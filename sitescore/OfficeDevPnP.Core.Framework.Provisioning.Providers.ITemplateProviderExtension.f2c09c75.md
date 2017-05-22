@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void Initialize(Object settings)
+public void virtual Initialize(Object settings)
 ```
 ### Parameters
 #### settings  

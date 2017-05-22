@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static string ViewFields(String[] fieldRefs)
+public static string ViewFields(params String[] fieldRefs)
 ```
 ### Parameters
 #### fieldRefs  

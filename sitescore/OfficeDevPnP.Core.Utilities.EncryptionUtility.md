@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class EncryptionUtility
+public static abstract class EncryptionUtility
 ```
 ## Methods
 |**Name**|**Description**|

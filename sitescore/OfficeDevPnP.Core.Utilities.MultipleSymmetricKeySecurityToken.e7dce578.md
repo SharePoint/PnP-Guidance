@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool MatchesKeyIdentifierClause(SecurityKeyIdentifierClause keyIdentifierClause)
+public bool virtual MatchesKeyIdentifierClause(SecurityKeyIdentifierClause keyIdentifierClause)
 ```
 ### Parameters
 #### keyIdentifierClause  

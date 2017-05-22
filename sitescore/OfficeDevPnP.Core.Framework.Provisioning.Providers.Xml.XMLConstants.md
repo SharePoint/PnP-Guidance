@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class XMLConstants
+public static abstract class XMLConstants
 ```
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.md)

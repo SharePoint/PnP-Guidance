@@ -9,7 +9,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class RecordsManagementExtensions
+public static abstract class RecordsManagementExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

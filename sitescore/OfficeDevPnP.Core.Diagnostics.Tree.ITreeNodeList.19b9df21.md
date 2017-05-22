@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public ITreeNode<T> Add(ITreeNode<T> node)
+public ITreeNode<T> virtual Add(ITreeNode<T> node)
 ```
 ### Parameters
 #### node  

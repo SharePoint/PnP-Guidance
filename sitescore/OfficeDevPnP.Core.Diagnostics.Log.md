@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class Log
+public static abstract class Log
 ```
 ## Properties
 |**Name**|**Description**|

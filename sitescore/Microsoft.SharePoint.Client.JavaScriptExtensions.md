@@ -9,7 +9,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class JavaScriptExtensions
+public static abstract class JavaScriptExtensions
 ```
 ## Methods
 |**Name**|**Description**|

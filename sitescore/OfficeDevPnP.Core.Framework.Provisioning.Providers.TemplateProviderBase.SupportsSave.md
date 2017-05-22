@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool SupportsSave { get; }
+public virtual bool SupportsSave { get; }
 ```
 
 ### Property Value

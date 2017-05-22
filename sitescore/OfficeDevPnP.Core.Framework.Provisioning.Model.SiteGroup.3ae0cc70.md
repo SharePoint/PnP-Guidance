@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool Equals(SiteGroup other)
+public bool virtual Equals(SiteGroup other)
 ```
 ### Parameters
 #### other  

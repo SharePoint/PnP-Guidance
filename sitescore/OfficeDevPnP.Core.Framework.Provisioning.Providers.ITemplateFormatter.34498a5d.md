@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public Stream ToFormattedTemplate(ProvisioningTemplate template)
+public Stream virtual ToFormattedTemplate(ProvisioningTemplate template)
 ```
 ### Parameters
 #### template  

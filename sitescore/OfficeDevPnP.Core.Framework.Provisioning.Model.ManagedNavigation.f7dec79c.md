@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool Equals(ManagedNavigation other)
+public bool virtual Equals(ManagedNavigation other)
 ```
 ### Parameters
 #### other  

@@ -9,7 +9,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class SearchExtensions
+public static abstract class SearchExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

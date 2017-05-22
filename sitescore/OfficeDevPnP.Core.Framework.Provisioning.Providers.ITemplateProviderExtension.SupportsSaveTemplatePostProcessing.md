@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool SupportsSaveTemplatePostProcessing { get; }
+public virtual bool SupportsSaveTemplatePostProcessing { get; }
 ```
 
 ### Property Value

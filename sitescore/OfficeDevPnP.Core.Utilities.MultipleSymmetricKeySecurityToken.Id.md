@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public string Id { get; }
+public virtual string Id { get; }
 ```
 
 ### Property Value

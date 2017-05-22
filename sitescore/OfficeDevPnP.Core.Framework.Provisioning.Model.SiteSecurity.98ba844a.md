@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool Equals(SiteSecurity other)
+public bool virtual Equals(SiteSecurity other)
 ```
 ### Parameters
 #### other  

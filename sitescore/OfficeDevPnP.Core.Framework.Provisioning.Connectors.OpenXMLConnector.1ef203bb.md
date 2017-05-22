@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public List<String> GetFiles()
+public List<String> virtual GetFiles()
 ```
 ### Return Value
 Type: List<String>  

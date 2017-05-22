@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public string FolderRelativePath { get; set; }
+public virtual string FolderRelativePath { get; set; }
 ```
 
 ### Property Value

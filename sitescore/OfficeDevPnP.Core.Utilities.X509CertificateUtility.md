@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class X509CertificateUtility
+public static abstract class X509CertificateUtility
 ```
 ## Methods
 |**Name**|**Description**|

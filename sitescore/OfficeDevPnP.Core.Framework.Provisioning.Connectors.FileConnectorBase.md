@@ -12,7 +12,7 @@ System.Object
 &emsp;[OfficeDevPnP.Core.Framework.Provisioning.Connectors.SharePointConnector](OfficeDevPnP.Core.Framework.Provisioning.Connectors.SharePointConnector.md)  
 ## Syntax
 ```C#
-public class FileConnectorBase
+public abstract class FileConnectorBase
 ```
 ## Properties
 |**Name**|**Description**|

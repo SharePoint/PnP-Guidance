@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public TreeNodeList<T> Children { get; }
+public virtual TreeNodeList<T> Children { get; }
 ```
 
 ### Property Value

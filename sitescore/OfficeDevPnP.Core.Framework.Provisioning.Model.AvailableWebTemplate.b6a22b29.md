@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool Equals(AvailableWebTemplate other)
+public bool virtual Equals(AvailableWebTemplate other)
 ```
 ### Parameters
 #### other  

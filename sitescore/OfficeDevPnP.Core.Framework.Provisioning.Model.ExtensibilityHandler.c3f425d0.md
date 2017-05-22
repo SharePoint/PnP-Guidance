@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool Equals(ExtensibilityHandler other)
+public bool virtual Equals(ExtensibilityHandler other)
 ```
 ### Parameters
 #### other  

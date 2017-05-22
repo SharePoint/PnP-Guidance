@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class ListRatingExtensions
+public static abstract class ListRatingExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

@@ -58,7 +58,7 @@ System.Object
 &emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.md)  
 ## Syntax
 ```C#
-public class BaseModel: IProvisioningTemplateDescendant
+public abstract class BaseModel: IProvisioningTemplateDescendant
 ```
 ## Properties
 |**Name**|**Description**|

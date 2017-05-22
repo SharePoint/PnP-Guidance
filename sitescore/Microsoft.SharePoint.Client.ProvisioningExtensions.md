@@ -9,7 +9,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class ProvisioningExtensions
+public static abstract class ProvisioningExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class EnumerationExtensions
+public static abstract class EnumerationExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

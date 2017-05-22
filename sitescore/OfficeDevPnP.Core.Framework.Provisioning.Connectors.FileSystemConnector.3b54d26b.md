@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public void SaveFileStream(String fileName, Stream stream)
+public void virtual SaveFileStream(String fileName, Stream stream)
 ```
 ### Parameters
 #### fileName  

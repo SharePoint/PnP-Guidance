@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool Equals(Page other)
+public bool virtual Equals(Page other)
 ```
 ### Parameters
 #### other  

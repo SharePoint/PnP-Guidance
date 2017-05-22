@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class JsonUtility
+public static abstract class JsonUtility
 ```
 ## Methods
 |**Name**|**Description**|

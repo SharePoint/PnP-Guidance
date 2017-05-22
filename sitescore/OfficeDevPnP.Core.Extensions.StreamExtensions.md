@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class StreamExtensions
+public static abstract class StreamExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

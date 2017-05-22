@@ -9,7 +9,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class WebExtensions
+public static abstract class WebExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|
@@ -25,7 +25,7 @@ public static class WebExtensions
 | [EnableRequestAccess(Web, String[])](Microsoft.SharePoint.Client.WebExtensions.a6aeb360.md) | Enables request access for the specified e-mail addresses.
 | [EnableRequestAccess(Web, IEnumerable&lt;String&gt;)](Microsoft.SharePoint.Client.WebExtensions.efaf0293.md) | Enables request access for the specified e-mail addresses.
 | [GetAllWebUrls(Site)](Microsoft.SharePoint.Client.WebExtensions.3201f18f.md) | Gets the collection of the URLs of all Web sites that are contained within the site collection, including the top-level site and its subsites.
-| [GetAppInstances(Web, Expression&lt;Func&lt;AppInstance, Object&gt;&gt;[])](Microsoft.SharePoint.Client.WebExtensions.b057f688.md) | 
+| [GetAppInstances(Web, Expression&lt;Func&lt;AppInstance, Object&gt;&gt;[])](Microsoft.SharePoint.Client.WebExtensions.b057f688.md) | Returns all app instances
 | [GetBaseTemplateId(Web)](Microsoft.SharePoint.Client.WebExtensions.f90c56f2.md) | Returns the Base Template ID for the current web
 | [GetEventReceiverById(Web, Guid)](Microsoft.SharePoint.Client.WebExtensions.a2bbb95b.md) | Returns an event receiver definition
 | [GetEventReceiverByName(Web, String)](Microsoft.SharePoint.Client.WebExtensions.f3860fda.md) | Returns an event receiver definition

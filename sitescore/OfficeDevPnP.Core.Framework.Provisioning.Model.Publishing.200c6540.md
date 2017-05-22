@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public bool Equals(Publishing other)
+public bool virtual Equals(Publishing other)
 ```
 ### Parameters
 #### other  

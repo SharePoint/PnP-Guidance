@@ -10,7 +10,7 @@ System.Object
 &emsp;[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.md)  
 ## Syntax
 ```C#
-public class TemplateProviderBase
+public abstract class TemplateProviderBase
 ```
 ## Constructors
 |**Name**|**Description**|

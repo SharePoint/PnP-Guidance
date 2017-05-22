@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static class BaseTemplateManager
+public static abstract class BaseTemplateManager
 ```
 ## Extension Methods
 |**Name**|**Description**|
