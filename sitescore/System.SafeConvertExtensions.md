@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class SafeConvertExtensions
+public static class SafeConvertExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

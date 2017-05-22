@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class DictionaryExtensions
+public static class DictionaryExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

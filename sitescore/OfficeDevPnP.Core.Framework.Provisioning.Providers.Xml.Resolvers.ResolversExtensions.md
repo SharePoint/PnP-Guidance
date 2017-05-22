@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class ResolversExtensions
+public static class ResolversExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

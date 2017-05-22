@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class CAML
+public static class CAML
 ```
 ## Methods
 |**Name**|**Description**|

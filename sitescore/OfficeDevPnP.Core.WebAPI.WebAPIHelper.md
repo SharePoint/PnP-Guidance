@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class WebAPIHelper
+public static class WebAPIHelper
 ```
 ## Methods
 |**Name**|**Description**|
