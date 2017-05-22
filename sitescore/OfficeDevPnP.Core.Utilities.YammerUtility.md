@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class YammerUtility
+public static class YammerUtility
 ```
 ## Methods
 |**Name**|**Description**|

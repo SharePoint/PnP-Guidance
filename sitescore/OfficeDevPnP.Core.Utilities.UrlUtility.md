@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class UrlUtility
+public static class UrlUtility
 ```
 ## Methods
 |**Name**|**Description**|

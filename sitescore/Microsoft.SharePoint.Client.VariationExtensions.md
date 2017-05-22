@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class VariationExtensions
+public static class VariationExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

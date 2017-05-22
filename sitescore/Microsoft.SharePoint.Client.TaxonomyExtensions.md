@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class TaxonomyExtensions
+public static class TaxonomyExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

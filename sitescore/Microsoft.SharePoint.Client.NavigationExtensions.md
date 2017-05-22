@@ -9,7 +9,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class NavigationExtensions
+public static class NavigationExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

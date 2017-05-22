@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class ExceptionExtensions
+public static class ExceptionExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

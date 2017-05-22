@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class ClientObjectExtensions
+public static class ClientObjectExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

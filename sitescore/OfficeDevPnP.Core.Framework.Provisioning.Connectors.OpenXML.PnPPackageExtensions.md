@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class PnPPackageExtensions
+public static class PnPPackageExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|

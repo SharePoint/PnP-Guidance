@@ -7,7 +7,7 @@
 System.Object  
 ## Syntax
 ```C#
-public static abstract class FileFolderExtensions
+public static class FileFolderExtensions
 ```
 ## Extension Methods
 |**Name**|**Description**|
