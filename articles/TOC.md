@@ -47,7 +47,7 @@
 ### [Bulk upload documents](Bulk-upload-documents-sample-app-for-SharePoint.md)
 ### [Upload large files](Upload-large-files-sample-app-for-SharePoint.md)
 ### [Synchronize term groups](Synchronize-term-groups-sample-app-for-SharePoint.md)
-### [Supporting % and # in file and folder with the ResourcePath API](supporting-and-in-file-and-folder-with-the-resourcepath-api)
+### [Supporting % and # in file and folder with the ResourcePath API](supporting-and-in-file-and-folder-with-the-resourcepath-api.md)
 ## [Localization solutions](localization-solutions-for-sharepoint-2013-and-sharepoint-online.md)
 ### [Use localization features](Use-localization-features-in-Office-365-sample-app.md)
 ### [Localize UI elements](Localize-UI-elements-sample-app-for-SharePoint.md)
