@@ -8,7 +8,7 @@ System.Object
 &ensp;T  
 ## Syntax
 ```C#
-public class TreeT: TreeNode<T>
+public class Tree<T>: TreeNode<T>
 ```
 ## Constructors
 |**Name**|**Description**|

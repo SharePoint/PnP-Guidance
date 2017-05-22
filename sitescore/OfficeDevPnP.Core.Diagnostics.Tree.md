@@ -2,9 +2,9 @@
 ## Classes
 |**Class**|**Description**|
 |:-----|:-----|
-|[Tree](OfficeDevPnP.Core.Diagnostics.Tree.Tree.md)||
-|[TreeNode](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.md)||
-|[TreeNodeList](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.md)||
+|[Tree&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.Tree.md)||
+|[TreeNode&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.md)||
+|[TreeNodeList&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.md)||
 ## Interfaces
 |**Interface**|**Description**|
 |:-----|:-----|
