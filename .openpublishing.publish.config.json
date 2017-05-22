@@ -36,7 +36,7 @@
       "build_output_subfolder": "pnp_sites_core",
       "locale": "en-us",
       "monikers": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
