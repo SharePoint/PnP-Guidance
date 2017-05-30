@@ -25,7 +25,7 @@ _**Applies to:** SharePoint Online_
 
 "Modern" sites have a different level of customization options compared to "classic" team sites. Over time we'll introduce additional customization options, mainly focusing on extensibility and branding. The list below gives a quick overview of the supported capabilities for "modern" team sites.
 
-- Apply a custom theme 
+- Apply a custom theme / change the logo
 - Apply an out of the box theme
 - Custom Site columns (fields) and content types
 - Lists and libraries
@@ -114,7 +114,8 @@ $web.Context.ExecuteQuery()
 !["Modern team site with custom theme"](media/modern-experiences/modern-site-with-custom-theme.png)
 
 > **Note:**
-> You can use [SharePoint Color Palette Tool](https://www.microsoft.com/en-us/download/details.aspx?id=38182) to create a custom theme file (.spcolor) with the custom color definition. In general, modern team sites try to preserve the feel of the theme by automatically converting classic site theming elements to the modern side. Preserved areas are background image and the following theme slots: ContentAccent1, PageBackground, and BackgroundOverlay.
+> - You can use [SharePoint Color Palette Tool](https://www.microsoft.com/en-us/download/details.aspx?id=38182) to create a custom theme file (.spcolor) with the custom color definition. In general, modern team sites try to preserve the feel of the theme by automatically converting classic site theming elements to the modern side. Preserved areas are background image and the following theme slots: ContentAccent1, PageBackground, and BackgroundOverlay.
+> - You can change the logo of "modern" team site by using the Groups Graph API as shown by the SharePoint [PnP UpdateUnifiedGroup method](https://github.com/SharePoint/PnP-Sites-Core/blob/master/Core/OfficeDevPnP.Core/Framework/Graph/UnifiedGroupsUtility.cs#L350)
 
 ## How to determine if a site is a "modern" team site?
 <a name="sectionSection1"> </a>
