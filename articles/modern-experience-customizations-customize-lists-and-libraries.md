@@ -214,7 +214,7 @@ After adding these user custom actions you'll see them appear in the toolbar. No
 
 When developing user custom actions that need to work in modern experiences please take into account the following limitations:
  - You can't completely control the order in which the user custom actions show up: the user custom actions are added in the order the `_api/web/Lists(guid'listid')/CustomActionElements` returns the user custom actions... and this API currently does not take in account the sequence attributes. Buttons defined inside a custom tab can be ordered by adding them in the correct order in the CommandUIDefinition xml. Our sample shows Button 3 as first and that's because of the order in the XML
- - Grouping of user custom actions inside a custom tab is not possible, a custom tab shows up as group, but the grouped user custom actions will show as one list of user custom actions
+ - Grouping of user custom actions inside a custom tab is driven by the presence of `Button` elements whenever there's either multiple `Tab` or `Group` elements in the returned user custom action element xml
  - Command actions cannot contain JavaScript... using for example `CommandAction="javascript:alert('My custom Action');"` will mean the user custom action will not show up
  - Using the `ScriptLink` or `ScriptBlock` properties is not possible since they can only be used with user custom action location `ScriptLink`, which is not supported
  - Using image maps (e.g. `Image16by16="/_layouts/15/1033/images/formatmap16x16.png?rev=33" Image16by16Left="-144" Image16by16Top="-107"`) does not work, you'll need to specify individual images. Also note that only 16x16 images are relevant
@@ -295,7 +295,7 @@ SharePoint will use an auto-detect system to automatically switch the rendering 
 
 Below are the settings that are evaluated as part of the auto-detect system and which make the list render in "classic" mode:
 - If the requested list form page has zero or more than 1 web part on it
-- If the Web scoped feature "Metadata Navigation and Filtering" is enabled
+- **Until July 2017**: If the Web scoped feature "Metadata Navigation and Filtering" is enabled. We're rolling out managed metadata navigation support for "modern" list and libraries as explained here: https://techcommunity.microsoft.com/t5/SharePoint-Blog/SharePoint-filters-pane-updates-filtering-and-metadata/ba-p/74162
 - If the available webpart is an **XSLTListViewWebPart** (default way to render the list) and:
 	- There's a non standard JSLink or XslLink value set for the web part properties
 	- The page is shown in a dialog (IsDlg=1)
