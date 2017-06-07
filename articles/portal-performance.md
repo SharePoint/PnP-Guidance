@@ -288,19 +288,27 @@ The Client-Side Data Access Layer (DAL) Framework is a custom client-side JavaSc
 
 There are a number of client-side JavaScript Frameworks and Libraries that you can leverage to implement the DAL. Choose the one with which you are most familiar and adhere to the following tenets.  Use the logical architecture proposed below as a template for your implementation.
 
+The **Client-Side Data Access Layer (DAL) Sample** provides a working reference implementation of the Client-Side Data Access Layer (DAL) Framework. You can access the sample on GitHub:
+
+- [Client-Side Data Access Layer (DAL) Sample](https://github.com/SharePoint/PnP/tree/master/Samples/Portal.DataAccessLayer)
+
 ### Architectural Tenets
 <a name="bk_dalTenets"> </a>
 
 - Performance is Feature #1
 - Core component of the overall client-side framework
 	- to be leveraged by all custom client-side web applications and components for consistency and performance
-- Fulfill data requests via the local data cache; if a cache miss occurs, execute the client-to-server data fetch
-- Fetch the server data via an asynchronous AJAX call (never use a synchronous AJAX call)
+- Fulfill data requests via the client-side data cache; if a cache miss occurs, execute the client-to-server data fetch
+- Fetch the server data via an asynchronous client-to-server AJAX call (never use a synchronous call)
+- Reduce cascading call failures by re-using stale data when/if a data request fails
 - Honor request throttling responses and adjust behavior accordingly
-- Store the server data response in the local cache using a minimal, request-independent JSON representation
-- Support a private cache for personal data and a public cache for shared data
-- Support component-specific cache expiration values that align with the volatility of the associated data
-- Continuously monitor and review data flow scenarios/sequences to ensure each remains optimized for overall page performance and responsiveness
+- Store the server data response in the client-side cache using a minimal, request-independent JSON representation
+- Support transient and durable storage options
+- Use transient storage for personal data and durable storage for shared data
+- Support absolute and sliding expiration policies
+- Allow each storage entry to configure its own storage options for storage (transient/durable), expiration policy (absolute/sliding), and expiration timeout (in minutes)
+- Continuously monitor run-time performance via logging and telemetry 
+- Continuously review data flow scenarios/sequences to ensure each remains optimized for overall page performance and responsiveness
 
 The following diagram shows the logical architecture of the Client-Side Data Access Layer (DAL) Framework:
 
@@ -316,39 +324,45 @@ The logical architecture of the Data Access Layer (DAL) Framework includes the f
 	- Display Controls may present status indicators while data requests are in flight
 - Event-based Data Requests
 	- These event handlers are bound to control or page events and invoke data access methods when fired
-- Business Data Objects
-	- BDOs provide logical data access methods that abstract the underlying data sources
-	- Data can come from a mock, a client-side cache, or the actual data source
+- Business Data Manager
+	- Provides Business Data Objects (BDOs) for use by the Display Components
+	- Provides logical data access methods that abstract the underlying data sources
+	- BDO Data can come from a mock, a client-side cache, or the actual data source
 - External Services
 	- Provide APIs to access server-side (i.e., back-end) data
 	- Includes SharePoint Online, Third-Party Data Services, Custom Data Sources, and Custom Applications
-- Client-Side Data Cache, with Expiration
-	- Client-side Web Storage allows the client environment to store transient data (session storage) and long-term data (local storage), for a specified duration (i.e., expiry)
+- Storage Manager
+	- Provides Client-Side Data Cache semantics, with durability (transient or persistent), duration (expiration timeout), and policy (absolute or sliding)
+	- Web Storage allows the client environment to store transient data (session storage) and long-term data (local storage)
 		- Session storage supports caching of private data
 		- Local storage supports caching of shared data
-	- Serving data from a local cache reduces requests to the actual data source and improves page performance
+	- Cookie support can be added to provide another client-side storage option if needed
+	- Serving data from a client-side cache reduces requests to the actual data source and improves page performance
 
 ### Typical Call Sequence
 <a name="bk_dalCallSequence"> </a>
 
 1. An event (implicit or explicit) occurs within the Client Browser
-2. The Display Control decides that it needs to render Data
-3. The Display Control activates its associated Business Data Object (BDO) and invokes a Data Access Method
-4. The Business Data Framework creates the BDO
-5. The Business Data Framework executes the requested Data Access Method
-6. The Data Access Method queries the Client-Side Cache for the requested data
-	1. If the data is missing, or stale, a Cache Miss occurs
-	2. If the data is present and fresh, a Cache Hit occurs and the data is returned
-7. The Data Access Method issues an (asynchronous) request to fetch the data from the External Service.
-	1. The Display Component displays a progress indicator while the call is in progress
-8. The Data Access method loads the data into the BDO and inserts a copy of the data into the Client-Side Cache (with specific expiration value)
-	1. If the call fails, the method logs a message and loads the stale cache data (if present) or suitable default data 
-9. The BDO (with Data) is returned to the Display Component
-10. The Data is rendered within the Display Component
+2. The Display Component determines that it needs to request Data to render
+3. The Display Component requests its associated Business Data Object (BDO) from the Business Data Manager 
+	- Optionally, the Display Component displays a progress indicator while the request is in progress
+4. The Business Data Manager computes the storage key and determines the storage options for the BDO
+5. The Business Data Manager requests the BDO from the Storage Manager per the storage options
+	- If the BDO is present and fresh, a Cache Hit occurs and the Storage Manager returns the BDO (go to step 10)
+	- If the BDO is absent or stale, a Cache Miss occurs and the Storage Manager returns no BDO (go to step 6)
+6. The Business Data Manager issues an (asynchronous) request to the External Service for fresh data
+	- If the request fails, the Business Data Manager **re-uses** the stale BDO *if present* (go to step 9)
+	- If the request succeeds, the Business Data Manager processes the fresh data response (go to step 7)
+7. The Business Data Manager creates the Business Data Object (BDO)
+8. The Business Data Manager populates the BDO with the fresh data
+9. The Business Data Manager asks the Storage Manager to store the BDO per the storage options 
+10. The Business Data Manager returns the BDO to the Display Component
+11. The Display Component binds to the BDO and renders the data
 
 ## Additional resources
 <a name="bk_additionalResources"> </a>
 
+- [Client-Side Data Access Layer (DAL) Sample](https://github.com/SharePoint/PnP/tree/master/Samples/Portal.DataAccessLayer)
 - [Introduction to Performance Tuning for SharePoint Online](https://support.office.com/en-US/article/Introduction-to-performance-tuning-for-SharePoint-Online-81c4be5f-327e-435d-a568-526d68cffef0)
 - [Office Development Patterns and Practices (PnP) JavaScript Core](https://github.com/SharePoint/PnP-JS-Core)
 - [Learn how to build a fast, responsive SharePoint portal in SharePoint Online](https://channel9.msdn.com/Events/Ignite/2016/BRK3026)
