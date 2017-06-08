@@ -31,14 +31,17 @@ _**Applies to:** SharePoint Online_
  - PowerApps and Flow integration
 
 There are numerous customizations which currently are not supported for "modern" lists and libraries:
- - JSLink based field customizations - More options will become available in the future
- - JSLink based view customizations - More options will become available in the future
+ - JSLink based field customizations - See note on **SharePoint Framework Extensions**
+ - JSLink based view customizations - See note on **SharePoint Framework Extensions**
  - Custom CSS via AlternateCSSUrl web property
- - Custom JavaScript embedded via User Custom Actions - There will a be more controlled way to embed JavaScript on the pages through the SharePoint Framework (not only client-side web parts)
+ - Custom JavaScript embedded via User Custom Actions - See note on **SharePoint Framework Extensions**
  - Custom master pages - More extensive branding will be supported later using alternative options
  - Customization via InfoPath
  - Minimal Download Strategy (MDS)
  - SharePoint Server Publishing
+
+>**Note:**
+> In June 2017 [SharePoint Framework extensions went into developer preview](https://dev.office.com/blogs/announcing-availability-of-sharepoint-framework-extensions-developer-preview). Using these SharePoint Framework Extensions you can control the rendering of a field via custom code and you can create user custom actions that execute your custom code. If you want to learn more about the SharePoint Framework Extensions checkout out this link: http://aka.ms/spfx-extensions. 
 
 ## User Custom Actions
 <a name="supportedcustomactions"> </a>

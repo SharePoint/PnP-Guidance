@@ -21,16 +21,18 @@ The number of customizations available for "modern" pages is limited and in this
  - Adding, deleting, updating client side web parts on "modern" pages
 
 There are numerous customizations which currently are not supported for "modern" pages:
- - Alternative layouts -  We are looking to have support for multiple canvases in the future
- - Custom page templates (layout templates) - We are looking to have support for multiple canvases in the future
+ - Alternative layouts - See note on **SharePoint Virtual Summit**
+ - Custom page templates (layout templates) - See note on **SharePoint Virtual Summit**
  - Adding "classic" web parts on "modern" pages
  - Custom CSS via AlternateCSSUrl web property
- - Custom JavaScript embedded via User Custom Actions - There will a be more controlled way to embed JavaScript on the pages through SharePoint Framework (not only client-side web parts)
+ - Custom JavaScript embedded via User Custom Actions - See note on **SharePoint Framework Extensions**
  - Custom master pages - More extensive branding will be supported later using alternative options
  - Minimal Download Strategy (MDS)
 
 >**Note:**
-> We don't recommend combining the "modern" page functionality with "classic" SharePoint publishing portals. That's the reason why by default the "modern" page functionality is not enabled on "classic" SharePoint publishing portals.
+> - We don't recommend combining the "modern" page functionality with "classic" SharePoint publishing portals. That's the reason why by default the "modern" page functionality is not enabled on "classic" SharePoint publishing portals.
+> - In June 2017 [SharePoint Framework extensions went into developer preview](https://dev.office.com/blogs/announcing-availability-of-sharepoint-framework-extensions-developer-preview). Using these SharePoint Framework Extensions you can control the rendering of a field via custom code and you can create user custom actions that execute your custom code. If you want to learn more about the SharePoint Framework Extensions checkout out this link: http://aka.ms/spfx-extensions. 
+> - In May 2017 during the [SharePoint Virtual Summit we announced communication sites with configurable page layouts](https://blogs.office.com/2017/05/16/new-sharepoint-and-onedrive-capabilities-accelerate-your-digital-transformation/).  
 
 ## Custom branding
 <a name="themingimpact"> </a>
