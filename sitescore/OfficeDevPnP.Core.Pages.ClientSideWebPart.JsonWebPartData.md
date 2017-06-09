@@ -1,5 +1,5 @@
 # ClientSideWebPart.Properties JsonWebPartData
- Json serialized web part properties   
+ Value of the "data-sp-webpartdata" attribute   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

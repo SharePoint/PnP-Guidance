@@ -1,5 +1,5 @@
 # ClientSideWebPart.Properties WebPartData
- Value of the data-sp-webpart attribute   
+ Value of the "data-sp-webpart" attribute   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

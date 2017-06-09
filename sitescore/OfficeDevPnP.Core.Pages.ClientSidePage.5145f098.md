@@ -1,5 +1,5 @@
 # ClientSidePage.FromHtml Method  
-  
+Instantiate a  [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)  from a html fragment  
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,13 +10,16 @@ public static ClientSidePage FromHtml(String html)
 ### Parameters
 #### html  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Html to convert into a   
 
   
 
 ### Return Value
 Type: ClientSidePage  
+A  [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)  instance  
+
 
 ## See also
 - [ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md) 
+- [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

@@ -2,6 +2,8 @@
 ## Classes
 |**Class**|**Description**|
 |:-----|:-----|
+|[WebhookNotification](OfficeDevPnP.Core.Entities.WebhookNotification.md)|Web hook notification model: this message is received when SharePoint "fires" a web hook|
+|[WebhookSubscription](OfficeDevPnP.Core.Entities.WebhookSubscription.md)|Represents the payload of a Http message|
 |[UnifiedGroupEntity](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.md)|Defines a Unified Group|
 |[AreaNavigationEntity](OfficeDevPnP.Core.Entities.AreaNavigationEntity.md)|Entity description navigation|
 |[CustomActionEntity](OfficeDevPnP.Core.Entities.CustomActionEntity.md)|CustomActionEntity class describes the information for a Custom Action|

@@ -1,16 +1,16 @@
-# CanvasSection.Properties Order
+# ClientSideCanvasPosition.Properties SectionIndex
   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public int Order { get; set; }
+public int SectionIndex { get; set; }
 ```
 
 ### Property Value
 Type: System.Int32  
 
 ## See also
-- [CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md) 
+- [ClientSideCanvasPosition](OfficeDevPnP.Core.Pages.ClientSideCanvasPosition.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 
