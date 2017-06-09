@@ -17,13 +17,14 @@ public class ClientSideText: CanvasControl
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [Rte](OfficeDevPnP.Core.Pages.ClientSideText.Rte.md) | 
-| [Text](OfficeDevPnP.Core.Pages.ClientSideText.Text.md) | 
-| [Type](OfficeDevPnP.Core.Pages.ClientSideText.Type.md) | 
+| [Rte](OfficeDevPnP.Core.Pages.ClientSideText.Rte.md) | Value of the "data-sp-rte" attribute
+| [SpControlData](OfficeDevPnP.Core.Pages.ClientSideText.SpControlData.md) | Deserialized value of the "data-sp-controldata" attribute
+| [Text](OfficeDevPnP.Core.Pages.ClientSideText.Text.md) | Text value of the client side text control
+| [Type](OfficeDevPnP.Core.Pages.ClientSideText.Type.md) |  Type of the control (= OfficeDevPnP.Core.Pages.ClientSideText) 
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [ToHtml()](OfficeDevPnP.Core.Pages.ClientSideText.7c2b006f.md) | Converts this [OfficeDevPnP.Core.Pages.ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md) control to it's html representation 
+| [ToHtml(Int32)](OfficeDevPnP.Core.Pages.ClientSideText.bfd4198d.md) | Converts this [OfficeDevPnP.Core.Pages.ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md) control to it's html representation 
 ## See also
 - [OfficeDevPnP.Core.Pages.ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md)
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

@@ -21,6 +21,8 @@ public class FieldCreationInformation
 |:-----|:-----|
 | [AdditionalAttributes](OfficeDevPnP.Core.Entities.FieldCreationInformation.AdditionalAttributes.md) | 
 | [AddToDefaultView](OfficeDevPnP.Core.Entities.FieldCreationInformation.AddToDefaultView.md) | 
+| [ClientSideComponentId](OfficeDevPnP.Core.Entities.FieldCreationInformation.ClientSideComponentId.md) | Ignored currently for SP2016
+| [ClientSideComponentProperties](OfficeDevPnP.Core.Entities.FieldCreationInformation.ClientSideComponentProperties.md) | Ignored currently for SP2016
 | [DisplayName](OfficeDevPnP.Core.Entities.FieldCreationInformation.DisplayName.md) | 
 | [FieldType](OfficeDevPnP.Core.Entities.FieldCreationInformation.FieldType.md) | 
 | [Group](OfficeDevPnP.Core.Entities.FieldCreationInformation.Group.md) | 

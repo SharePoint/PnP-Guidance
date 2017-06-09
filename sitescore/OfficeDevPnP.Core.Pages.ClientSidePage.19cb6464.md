@@ -1,5 +1,5 @@
 # ClientSidePage.Delete Method  
-  
+ Deletes a control from a page   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

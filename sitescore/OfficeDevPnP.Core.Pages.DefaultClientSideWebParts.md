@@ -24,6 +24,13 @@ public enum DefaultClientSideWebParts
 | SiteActivity | 
 | VideoEmbed | 
 | YammerEmbed | 
+| Events | 
+| GroupCalendar | 
+| Hero | 
+| List | 
+| PageTitle | 
+| People | 
+| QuickLinks | 
 
 ## See also
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

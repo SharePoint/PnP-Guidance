@@ -1,5 +1,5 @@
 # CanvasControl.GetType Method  
- Receives data-sp-controldata content and detects the type of the control   
+ Receives "data-sp-controldata" content and detects the type of the control   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

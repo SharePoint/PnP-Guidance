@@ -1,5 +1,5 @@
 # CanvasSection.Properties Controls
-  
+List of  [OfficeDevPnP.Core.Pages.CanvasControl](OfficeDevPnP.Core.Pages.CanvasControl.md)  instances that are hosted in this section  
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,9 @@ public List<CanvasControl> Controls { get; }
 ### Property Value
 Type: System.Collections.Generic.List<OfficeDevPnP.Core.Pages.CanvasControl>  
 
+## Remarks
+  
 ## See also
 - [CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md) 
+- [OfficeDevPnP.Core.Pages.CanvasControl](OfficeDevPnP.Core.Pages.CanvasControl.md)
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

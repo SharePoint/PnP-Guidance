@@ -1,5 +1,5 @@
 # ClientSideCanvasControlData Class
- Abstract base class representing the json control data that will be included in each client side control (de-)serialization (data-sp-controldata attribute)   
+ Base class representing the json control data that will be included in each client side control (de-)serialization (data-sp-controldata attribute)   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -15,11 +15,12 @@ public class ClientSideCanvasControlData
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ClientSideCanvasControlData()](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.ctor1.md) |  Abstract base class representing the json control data that will be included in each client side control (de-)serialization (data-sp-controldata attribute) 
+| [ClientSideCanvasControlData()](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.ctor1.md) |  Base class representing the json control data that will be included in each client side control (de-)serialization (data-sp-controldata attribute) 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
 | [ControlType](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.ControlType.md) | 
 | [Id](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.Id.md) | 
+| [Position](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.Position.md) | 
 ## See also
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

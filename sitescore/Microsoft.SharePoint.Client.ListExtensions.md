@@ -16,6 +16,8 @@ public static class ListExtensions
 |:-----|:-----|
 | [AddRemoteEventReceiver(List, String, String, EventReceiverType, EventReceiverSynchronization, Boolean)](Microsoft.SharePoint.Client.ListExtensions.b9c036ed.md) | Registers a remote event receiver
 | [AddRemoteEventReceiver(List, String, String, EventReceiverType, EventReceiverSynchronization, Int32, Boolean)](Microsoft.SharePoint.Client.ListExtensions.f19fbc38.md) | Registers a remote event receiver
+| [AddWebhookSubscription(List, String, DateTime, String, String)](Microsoft.SharePoint.Client.ListExtensions.562ded14.md) | Add the a Webhook subscription to a list Note: If the access token is not specified, it will cost a dummy request to retrieve it
+| [AddWebhookSubscription(List, String, Int32, String, String)](Microsoft.SharePoint.Client.ListExtensions.94d285b1.md) | Add the a Webhook subscription to a list Note: If the access token is not specified, it will cost a dummy request to retrieve it
 | [CreateDocumentLibrary(Web, String, Boolean, String)](Microsoft.SharePoint.Client.ListExtensions.e18b841c.md) | Adds a document library to a web. Execute Query is called during this implementation
 | [CreateList(Web, ListTemplateType, String, Boolean, Boolean, String, Boolean)](Microsoft.SharePoint.Client.ListExtensions.8c2b1d97.md) | Adds a default list to a site
 | [CreateList(Web, Guid, Int32, String, Boolean, Boolean, String, Boolean)](Microsoft.SharePoint.Client.ListExtensions.bc245822.md) | Adds a custom list to a site
@@ -37,6 +39,7 @@ public static class ListExtensions
 | [GetPropertyBagValueString(List, String, String)](Microsoft.SharePoint.Client.ListExtensions.6838ef8b.md) | Get string typed property bag value. If does not contain, returns given default value.
 | [GetViewById(List, Guid, Expression&lt;Func&lt;View, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.77ca9349.md) | Gets a view by Id
 | [GetViewByName(List, String, Expression&lt;Func&lt;View, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.53d0489.md) | Gets a view by Name
+| [GetWebhookSubscriptions(List, String)](Microsoft.SharePoint.Client.ListExtensions.15edb0e7.md) | Get all the existing Webhooks subscriptions of the list Note: If the access token is not specified, it will cost a dummy request to retrieve it
 | [GetWebRelativeUrl(List)](Microsoft.SharePoint.Client.ListExtensions.1d0b225d.md) | Gets the web relative URL. Allow users to get the web relative URL of a list. This is useful when exporting lists as it can then be used as a parameter to Web.GetListByUrl().
 | [ListExists(Web, String)](Microsoft.SharePoint.Client.ListExtensions.696f8225.md) | Checks if list exists on the particular site based on the list Title property.
 | [ListExists(Web, Uri)](Microsoft.SharePoint.Client.ListExtensions.18ffaeae.md) | Checks if list exists on the particular site based on the list's site relative path.
@@ -44,6 +47,9 @@ public static class ListExtensions
 | [PropertyBagContainsKey(List, String)](Microsoft.SharePoint.Client.ListExtensions.1fcb2c8b.md) | Checks if the given property bag entry exists
 | [ReIndexList(List)](Microsoft.SharePoint.Client.ListExtensions.9d2ca161.md) | Queues a list for a full crawl the next incremental crawl
 | [RemoveContentTypeByName(List, String)](Microsoft.SharePoint.Client.ListExtensions.8e0c93ca.md) | Removes a content type from a list/library by name
+| [RemoveWebhookSubscription(List, String, String)](Microsoft.SharePoint.Client.ListExtensions.e742f4.md) | Remove a Webhook subscription from the list Note: If the access token is not specified, it will cost a dummy request to retrieve it
+| [RemoveWebhookSubscription(List, Guid, String)](Microsoft.SharePoint.Client.ListExtensions.bafc4d30.md) | Remove a Webhook subscription from the list Note: If the access token is not specified, it will cost a dummy request to retrieve it
+| [RemoveWebhookSubscription(List, WebhookSubscription, String)](Microsoft.SharePoint.Client.ListExtensions.12620e16.md) | Remove a Webhook subscription from the list Note: If the access token is not specified, it will cost a dummy request to retrieve it
 | [SetDefaultColumnValues(List, IEnumerable&lt;IDefaultColumnValue&gt;)](Microsoft.SharePoint.Client.ListExtensions.4bb08d61.md) | Sets default values for column values.In order to for instance set the default Enterprise Metadata keyword field to a term, add the enterprise metadata keyword to a library (internal name "TaxKeyword")Column values are defined by the DefaultColumnValue class that has 3 properties:RelativeFolderPath : / to set a default value for the root of the document library, or /foldername to specify a subfolderFieldInternalName : The name of the field to set. For instance "TaxKeyword" to set the Enterprise Metadata fieldTerms : A collection of Taxonomy terms to setSupported column types: Metadata, Text, Choice, MultiChoice, People, Boolean, DateTime, Number, Currency
 | [SetJSLinkCustomizations(List, PageType, String)](Microsoft.SharePoint.Client.ListExtensions.2f8c0ee3.md) | Sets JS link customization for a list form
 | [SetJSLinkCustomizations(List, String, String)](Microsoft.SharePoint.Client.ListExtensions.81a6f21d.md) | Sets JS link customization for a list view page
@@ -56,6 +62,9 @@ public static class ListExtensions
 | [UpdateListVersioning(Web, String, Boolean, Boolean, Boolean)](Microsoft.SharePoint.Client.ListExtensions.3db99d1b.md) | Enable/disable versioning on a list
 | [UpdateListVersioning(List, Boolean, Boolean, Boolean)](Microsoft.SharePoint.Client.ListExtensions.9a7ebb3c.md) | Enable/disable versioning on a list
 | [UpdateTaxonomyFieldDefaultValue(Web, String, String, String, Guid, Guid)](Microsoft.SharePoint.Client.ListExtensions.24c445b5.md) | Sets the default value for a managed metadata column in the specified list. This operation will not change existing items in the list
+| [UpdateWebhookSubscription(List, String, String, DateTime, String)](Microsoft.SharePoint.Client.ListExtensions.42b0ceaa.md) | Updates a Webhook subscription from the list Note: If the access token is not specified, it will cost a dummy request to retrieve it
+| [UpdateWebhookSubscription(List, Guid, String, DateTime, String)](Microsoft.SharePoint.Client.ListExtensions.c7f782d.md) | Updates a Webhook subscription from the list Note: If the access token is not specified, it will cost a dummy request to retrieve it
+| [UpdateWebhookSubscription(List, WebhookSubscription, String)](Microsoft.SharePoint.Client.ListExtensions.90f7bd07.md) | Updates a Webhook subscription from the list Note: If the access token is not specified, it will cost a dummy request to retrieve it
 ## Examples
 ```C#
 list.SetLocalizationForSiteLabels("fi-fi", "Name of the site in Finnish", "Description in Finnish");

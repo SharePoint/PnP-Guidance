@@ -17,3 +17,7 @@
 |[MultipleSymmetricKeySecurityToken](OfficeDevPnP.Core.Utilities.MultipleSymmetricKeySecurityToken.md)|Represents a security token which contains multiple security keys that are generated using symmetric algorithms.|
 |[X509CertificateUtility](OfficeDevPnP.Core.Utilities.X509CertificateUtility.md)|Supporting class for certificate based operations|
 |[YammerUtility](OfficeDevPnP.Core.Utilities.YammerUtility.md)||
+## Enumerations
+|**Enumeration**|**Description**|
+|:-----|:-----|
+|[WebHookResourceType](OfficeDevPnP.Core.Utilities.WebHookResourceType.md)|The list of Hookable Resource Types|

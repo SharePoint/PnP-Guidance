@@ -1,5 +1,5 @@
 # ClientSidePage.AddControl Method  
-  
+Adds a new control to your client side page using the default  [OfficeDevPnP.Core.Pages.CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md)  using a given order  
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,13 +10,13 @@ public void AddControl(CanvasControl control, Int32 order)
 ### Parameters
 #### control  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Pages.CanvasControl](OfficeDevPnP.Core.Pages.CanvasControl.md)  
-&emsp;&emsp;  
+&emsp;&emsp; to add  
 
   
 
 #### order  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp;  
+&emsp;&emsp;Order of the control in the default zone  
 
   
 
@@ -25,4 +25,6 @@ Type: void
 
 ## See also
 - [ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md) 
+- [OfficeDevPnP.Core.Pages.CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md)
+- [OfficeDevPnP.Core.Pages.CanvasControl](OfficeDevPnP.Core.Pages.CanvasControl.md)
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

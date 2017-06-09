@@ -1,5 +1,5 @@
 # ClientSidePage.Load Method  
-  
+ Loads an existint SharePoint client side page   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,19 +10,22 @@ public static ClientSidePage Load(ClientContext cc, String pageName)
 ### Parameters
 #### cc  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.ClientContext  
-&emsp;&emsp;  
+&emsp;&emsp;ClientContext object used to load the page  
 
   
 
 #### pageName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Name of the page (e.g. mypage.aspx) to load  
 
   
 
 ### Return Value
 Type: ClientSidePage  
+A  [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)  instance for the given page  
+
 
 ## See also
 - [ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md) 
+- [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

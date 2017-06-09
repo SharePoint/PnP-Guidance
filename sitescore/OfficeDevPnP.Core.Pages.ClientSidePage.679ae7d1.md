@@ -1,5 +1,5 @@
 # ClientSidePage.Save Method  
-  
+Persists the current  [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)  instance as a client side page in SharePoint  
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,7 +10,7 @@ public void Save(String pageName)
 ### Parameters
 #### (optional) pageName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Persists the current  [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)  instance as a client side page in SharePoint  
 
   
 
@@ -19,4 +19,5 @@ Type: void
 
 ## See also
 - [ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md) 
+- [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 
