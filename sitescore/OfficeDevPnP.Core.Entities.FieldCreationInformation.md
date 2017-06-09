@@ -1,5 +1,5 @@
 # FieldCreationInformation Class
-  
+ Class that describes the field creation information   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -14,12 +14,12 @@ public class FieldCreationInformation
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [FieldCreationInformation(String)](OfficeDevPnP.Core.Entities.FieldCreationInformation.ctor1.md) |  
-| [FieldCreationInformation(FieldType)](OfficeDevPnP.Core.Entities.FieldCreationInformation.ctor2.md) |  
+| [FieldCreationInformation(String)](OfficeDevPnP.Core.Entities.FieldCreationInformation.ctor1.md) |  Class that describes the field creation information 
+| [FieldCreationInformation(FieldType)](OfficeDevPnP.Core.Entities.FieldCreationInformation.ctor2.md) |  Class that describes the field creation information 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [AdditionalAttributes](OfficeDevPnP.Core.Entities.FieldCreationInformation.AdditionalAttributes.md) | 
+| [AdditionalAttributes](OfficeDevPnP.Core.Entities.FieldCreationInformation.AdditionalAttributes.md) | List of additional properties that need to be applied to the field on creation
 | [AddToDefaultView](OfficeDevPnP.Core.Entities.FieldCreationInformation.AddToDefaultView.md) | 
 | [ClientSideComponentId](OfficeDevPnP.Core.Entities.FieldCreationInformation.ClientSideComponentId.md) | Ignored currently for SP2016
 | [ClientSideComponentProperties](OfficeDevPnP.Core.Entities.FieldCreationInformation.ClientSideComponentProperties.md) | Ignored currently for SP2016

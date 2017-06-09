@@ -2,9 +2,9 @@
 ## Classes
 |**Class**|**Description**|
 |:-----|:-----|
-|[ProvisioningTemplateApplyingInformation](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningTemplateApplyingInformation.md)||
-|[ProvisioningProgressDelegate](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningProgressDelegate.md)||
 |[ProvisioningMessagesDelegate](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningMessagesDelegate.md)||
+|[ProvisioningProgressDelegate](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningProgressDelegate.md)||
+|[ProvisioningTemplateApplyingInformation](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningTemplateApplyingInformation.md)||
 |[ProvisioningTemplateCreationInformation](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningTemplateCreationInformation.md)||
 |[TokenParser](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenParser.md)||
 ## Enumerations
