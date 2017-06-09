@@ -96,6 +96,9 @@ The simplest and best-performing custom Navigation Store is a JavaScript resourc
 
 At the other end of the spectrum of custom Navigation Stores is the custom database. This option provides the ultimate in flexibility, but also requires the most custom development. Additionally, a hosting environment is needed for the database, the custom Web API, and the Navigation Management Page. 
 
+>**Note:**
+> An excellent sample showing how to implement a custom navigation store which uses client-side data access layer is available from the SharePoint PnP repository: [Client-Side Data Access Layer (DAL) Sample](https://github.com/SharePoint/PnP/tree/master/Samples/Portal.DataAccessLayer)
+
 **Out-of-Box (OOB) Navigation Stores:**
 <a name="bk_oobNavStores"> </a> 
 
@@ -164,6 +167,7 @@ Please refer to the [Portal Performance article](portal-performance.md) for more
 - [Portal performance guidance](portal-performance.md)
 - [Navigation Options for SharePoint Online](https://support.office.com/en-us/article/Navigation-options-for-SharePoint-Online-adb92b80-b342-4ecb-99a1-da2a2b4782eb?ui=en-US&rs=en-US&ad=US)
 - [Overview of managed navigation in SharePoint Server 2013](https://technet.microsoft.com/en-us/library/dn194311.aspx)
+- [Client-Side Data Access Layer (DAL) and navigation Sample](https://github.com/SharePoint/PnP/tree/master/Samples/Portal.DataAccessLayer)
 - [PnP O365 Starter Intranet - Navigation details](http://thecollaborationcorner.com/2016/08/31/part-4-the-navigation-implementation/#.WNoU5oVOKiM)
 - [ASP.Net Web API 2.0](https://msdn.microsoft.com/en-us/library/dn448365(v=vs.118))
 - [Azure AD Authentication Library for JavaScript](https://github.com/AzureAD/azure-activedirectory-library-for-js)

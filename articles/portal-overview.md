@@ -16,8 +16,7 @@ The guidance currently mainly focuses on patterns and practices that will help y
 - We'll start with anti-patterns: essentially telling you what you should **not** do anymore
 - We'll then provide best practice and patterns on how you should be implementing your portal
 - We'll give you a set of links to interesting resources where you can learn more
-
-Currently we're not having a lot of sample code, but the plan is to complement these described patterns and practices with samples.
+- We're complementing the best practices with samples like our [Client-Side Data Access Layer (DAL) Sample](https://github.com/SharePoint/PnP/tree/master/Samples/Portal.DataAccessLayer)
 
 ## How to provide feedback around provided guidance?
 This guidance is completely open source and we encourage the community to provide feedback. On the top right of each page you can click on "Contribute" which will bring you to the GitHub repository hosting this guidance. Once in GitHub you can: 

@@ -288,6 +288,10 @@ The Client-Side Data Access Layer (DAL) Framework is a custom client-side JavaSc
 
 There are a number of client-side JavaScript Frameworks and Libraries that you can leverage to implement the DAL. Choose the one with which you are most familiar and adhere to the following tenets.  Use the logical architecture proposed below as a template for your implementation.
 
+>**Note:**
+> An excellent sample showing how to implement your client-side data access layer is available from the SharePoint PnP repository: [Client-Side Data Access Layer (DAL) Sample](https://github.com/SharePoint/PnP/tree/master/Samples/Portal.DataAccessLayer)
+
+
 ### Architectural Tenets
 <a name="bk_dalTenets"> </a>
 
@@ -352,3 +356,4 @@ The logical architecture of the Data Access Layer (DAL) Framework includes the f
 - [Introduction to Performance Tuning for SharePoint Online](https://support.office.com/en-US/article/Introduction-to-performance-tuning-for-SharePoint-Online-81c4be5f-327e-435d-a568-526d68cffef0)
 - [Office Development Patterns and Practices (PnP) JavaScript Core](https://github.com/SharePoint/PnP-JS-Core)
 - [Learn how to build a fast, responsive SharePoint portal in SharePoint Online](https://channel9.msdn.com/Events/Ignite/2016/BRK3026)
+- [Client-Side Data Access Layer (DAL) Sample](https://github.com/SharePoint/PnP/tree/master/Samples/Portal.DataAccessLayer)
