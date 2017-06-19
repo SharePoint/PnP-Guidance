@@ -13,8 +13,8 @@ public class ObjectSecurity: BaseModel, IEquatable<ObjectSecurity>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ObjectSecurity()](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.ctor1.md) |  
-| [ObjectSecurity(IEnumerable<RoleAssignment>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.ctor2.md) |  
+| [ObjectSecurity()](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.ctor1.md) | Constructor for ObjectSecurity class 
+| [ObjectSecurity(IEnumerable<RoleAssignment>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.ctor2.md) | Constructor for ObjectSecurity class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -24,8 +24,8 @@ public class ObjectSecurity: BaseModel, IEquatable<ObjectSecurity>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.3520ddbb.md) | 
-| [Equals(ObjectSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.7e96c81b.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.3520ddbb.md) | Compares object with ObjectSecurity
+| [Equals(ObjectSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.7e96c81b.md) | Compares ObjectSecurity object based on RoleAssignments, CopyRoleAssignments and ClearSubscopes properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

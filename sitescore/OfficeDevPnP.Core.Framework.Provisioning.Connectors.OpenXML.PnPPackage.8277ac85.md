@@ -1,5 +1,5 @@
 # PnPPackage.ClearFiles Method  
-  
+ Clear the files having package parts with specific relationship type   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

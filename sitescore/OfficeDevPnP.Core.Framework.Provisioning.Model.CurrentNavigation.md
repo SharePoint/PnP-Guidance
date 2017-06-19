@@ -13,8 +13,8 @@ public class CurrentNavigation: BaseNavigationKind, IEquatable<CurrentNavigation
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [CurrentNavigation()](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.ctor1.md) |  The Current Navigation settings for the Provisioning Template 
-| [CurrentNavigation(CurrentNavigationType, StructuralNavigation, ManagedNavigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.ctor2.md) |  The Current Navigation settings for the Provisioning Template 
+| [CurrentNavigation()](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.ctor1.md) | Constructor for CurrentNavigation class 
+| [CurrentNavigation(CurrentNavigationType, StructuralNavigation, ManagedNavigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.ctor2.md) | Constructor for CurrentNavigation class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -22,8 +22,8 @@ public class CurrentNavigation: BaseNavigationKind, IEquatable<CurrentNavigation
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.3520ddbb.md) | 
-| [Equals(CurrentNavigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.8df81d21.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.3520ddbb.md) | Compares object with CurrentNavigation
+| [Equals(CurrentNavigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.8df81d21.md) | Compares CurrentNavigation object based on BaseNavigationKind and NavigationType.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

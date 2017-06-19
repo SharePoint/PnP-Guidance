@@ -10,7 +10,7 @@ public static void PublishCustomEvent(this WorkflowInstance instance, String eve
 ### Parameters
 #### instance  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.WorkflowServices.WorkflowInstance  
-&emsp;&emsp; Publish a custom event to a target workflow instance   
+&emsp;&emsp;the workflow instance to publish event  
 
   
 

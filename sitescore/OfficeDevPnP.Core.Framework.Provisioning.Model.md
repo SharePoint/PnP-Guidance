@@ -60,7 +60,7 @@
 |[ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)|Domain Object for the Provisioning Template / Domain Object for the Provisioning Template|
 |[ProvisioningTemplateCollection&lt;T&gt;](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.md)|Generic collection of items stored in the ProvisioningTemplate graph|
 |[ProvisioningTemplateDictionary&lt;TKey, TItem&gt;](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateDictionary.md)|Generic keyed collection of items stored in the ProvisioningTemplate graph|
-|[ProvisioningTemplateInfo](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateInfo.md)||
+|[ProvisioningTemplateInfo](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateInfo.md)|Class holds the required Provisioning Template Information|
 |[Publishing](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.md)|Defines the Publishing configuration to provision|
 |[RegionalSettings](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.md)|Defines the Regional Settings for a site|
 |[RoleAssignment](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignment.md)|Role Assignment for a target Principal|
@@ -104,6 +104,6 @@
 |[CurrentNavigationType](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigationType.md)|Defines the type of Current Navigation|
 |[FileLevel](OfficeDevPnP.Core.Framework.Provisioning.Model.FileLevel.md)|The File Level for a File element|
 |[GlobalNavigationType](OfficeDevPnP.Core.Framework.Provisioning.Model.GlobalNavigationType.md)|Defines the type of Global Navigation|
-|[Handlers](OfficeDevPnP.Core.Framework.Provisioning.Model.Handlers.md)||
+|[Handlers](OfficeDevPnP.Core.Framework.Provisioning.Model.Handlers.md)|Handlers to be processed on the template|
 |[AutoCheckRequirementsOptions](OfficeDevPnP.Core.Framework.Provisioning.Model.AutoCheckRequirementsOptions.md)|Defines how an engine should behave if the requirements for provisioning publishing capabilities are not satisfied by the target site|
 |[WorkHour](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkHour.md)|The Work Hours of a Day|

@@ -22,7 +22,7 @@ public static IEnumerable<RoleAssignmentEntity> GetAllUniqueRoleAssignments(this
 
 ### Return Value
 Type: IEnumerable<RoleAssignmentEntity>  
-  
+Returns all role assignments  
 
 
 ## See also

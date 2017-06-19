@@ -13,7 +13,7 @@ public class RegionalSettings: BaseModel, IEquatable<RegionalSettings>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [RegionalSettings()](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.ctor1.md) |  Defines the Regional Settings for a site 
+| [RegionalSettings()](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.ctor1.md) | Constructor for RegionalSettings class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -33,8 +33,8 @@ public class RegionalSettings: BaseModel, IEquatable<RegionalSettings>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.3520ddbb.md) | 
-| [Equals(RegionalSettings)](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.40755d5c.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.3520ddbb.md) | Compares object with RegionalSettings
+| [Equals(RegionalSettings)](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.40755d5c.md) | Compares RegionalSettings object object based on AdjustHijriDays, AlternateCalendarType, CalendarType, Collation, FirstDayOfWeek, FirstWeekOfYear, LocaleId, ShowWeeks, Time24, TimeZone, WorkDayEndHour, WorkDays and WorkDayStartHour properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

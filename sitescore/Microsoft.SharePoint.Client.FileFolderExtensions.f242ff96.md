@@ -22,7 +22,7 @@ public static bool DoesFolderExists(this Web web, String serverRelativeFolderUrl
 
 ### Return Value
 Type: bool  
-  
+Returns true if folder exists  
 
 
 ## See also

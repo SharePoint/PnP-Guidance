@@ -10,13 +10,13 @@ public static View GetViewById(this List list, Guid id, params Expression<Func<V
 ### Parameters
 #### list  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.List  
-&emsp;&emsp; Gets a view by Id   
+&emsp;&emsp;List to process  
 
   
 
 #### id  
 &emsp;&emsp;Type: System.Guid  
-&emsp;&emsp; Gets a view by Id   
+&emsp;&emsp;Id to the view to extract  
 
   
 

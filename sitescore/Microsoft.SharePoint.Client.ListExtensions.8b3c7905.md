@@ -10,13 +10,13 @@ public static void CreateViewsFromXML(this List list, XmlDocument xmlDoc)
 ### Parameters
 #### list  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.List  
-&emsp;&emsp; Actual implementation of the view creation logic based on given xml   
+&emsp;&emsp;List to process  
 
   
 
 #### xmlDoc  
 &emsp;&emsp;Type: System.Xml.XmlDocument  
-&emsp;&emsp; Actual implementation of the view creation logic based on given xml   
+&emsp;&emsp;XmlDocument object  
 
   
 

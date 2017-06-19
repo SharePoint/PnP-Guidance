@@ -22,7 +22,7 @@ public static void AddLayoutToWikiPage(this Web web, WikiPageLayout layout, Stri
 
 #### serverRelativePageUrl  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Applies a layout to a wiki page   
+&emsp;&emsp;Server relative url of the page to add the layout to  
 
   
 

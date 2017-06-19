@@ -17,12 +17,12 @@ public abstract class FileConnectorBase
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [Parameters](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase.Parameters.md) | 
+| [Parameters](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase.Parameters.md) | Parameters required for the file.
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [AddParameter(String, Object)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase.5427f8bb.md) | 
-| [AddParameterAsString(String, String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase.3a5ffa18.md) | 
+| [AddParameter(String, Object)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase.5427f8bb.md) | Adds Parameter as an object.
+| [AddParameterAsString(String, String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase.3a5ffa18.md) | Adds Parameter as a string.
 | [DeleteFile(String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase.9ad8acaf.md) | Deletes a file from the default container
 | [DeleteFile(String, String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase.476dd1f3.md) | Deletes a file from the specified container
 | [GetFile(String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase.df261957.md) | Gets a file as string from the default container

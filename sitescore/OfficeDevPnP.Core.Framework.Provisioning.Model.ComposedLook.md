@@ -29,8 +29,8 @@ public class ComposedLook: BaseModel, IEquatable<ComposedLook>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.3520ddbb.md) | 
-| [Equals(ComposedLook)](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.f79612e1.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.3520ddbb.md) | Compares object with ComposedLook
+| [Equals(ComposedLook)](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.f79612e1.md) | Compares ComposedLook object based on BackgroundFile, ColorFile, FontFile, Name and Version.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

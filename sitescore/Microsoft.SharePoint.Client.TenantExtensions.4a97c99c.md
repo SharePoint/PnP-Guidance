@@ -10,7 +10,7 @@ public static UserProfileService GetUserProfileServiceClient(this Tenant tenant)
 ### Parameters
 #### tenant  
 &emsp;&emsp;Type: Microsoft.Online.SharePoint.TenantAdministration.Tenant  
-&emsp;&emsp; Gets the UserProfileService proxy to enable calls to the UPA web service.   
+&emsp;&emsp;A tenant object pointing to the context of a Tenant Administration site   
 
   
 

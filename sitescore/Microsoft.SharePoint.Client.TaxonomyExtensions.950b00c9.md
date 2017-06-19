@@ -16,19 +16,19 @@ public static Term GetTermByName(this Site site, Guid termSetId, String term)
 
 #### termSetId  
 &emsp;&emsp;Type: System.Guid  
-&emsp;&emsp; Gets a Taxonomy Term by Name   
+&emsp;&emsp;Guid of a TermSet  
 
   
 
 #### term  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Gets a Taxonomy Term by Name   
+&emsp;&emsp;Term name  
 
   
 
 ### Return Value
 Type: Term  
-  
+Returns Term object  
 
 
 ## See also

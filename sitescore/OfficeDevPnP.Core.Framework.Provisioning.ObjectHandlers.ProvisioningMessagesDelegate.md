@@ -1,5 +1,5 @@
 # ProvisioningMessagesDelegate Class
-  
+ Provisioning Messages Delegate   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -13,7 +13,7 @@ public class ProvisioningMessagesDelegate: MulticastDelegate
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ProvisioningMessagesDelegate(Object, IntPtr)](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningMessagesDelegate.ctor1.md) |  
+| [ProvisioningMessagesDelegate(Object, IntPtr)](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningMessagesDelegate.ctor1.md) |  Provisioning Messages Delegate 
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|

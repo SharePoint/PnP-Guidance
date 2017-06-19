@@ -10,19 +10,19 @@ public abstract IEnumerable<TokenDefinition> GetTokens(ClientContext ctx, Provis
 ### Parameters
 #### ctx  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.ClientContext  
-&emsp;&emsp; Provides Token Definitions to the template provisioning pipeline   
+&emsp;&emsp;The ClientContext  
 
   
 
 #### template  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
-&emsp;&emsp; Provides Token Definitions to the template provisioning pipeline   
+&emsp;&emsp;The Provisioning template  
 
   
 
 #### configurationData  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Provides Token Definitions to the template provisioning pipeline   
+&emsp;&emsp;Configuration Data string  
 
   
 

@@ -10,7 +10,7 @@ public static string FormatFieldXml(FieldCreationInformation fieldCreationInform
 ### Parameters
 #### fieldCreationInformation  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Entities.FieldCreationInformation](OfficeDevPnP.Core.Entities.FieldCreationInformation.md)  
-&emsp;&emsp; Formats a fieldcreationinformation object into Field CAML xml.   
+&emsp;&emsp;Field Cration Information object  
 
   
 

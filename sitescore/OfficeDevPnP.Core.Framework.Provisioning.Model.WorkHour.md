@@ -10,30 +10,30 @@ public enum WorkHour
 ## Members
 |**Member Name**|**Description**|
 |:-----|:-----|
-| AM1200 | 
-| AM0100 | 
-| AM0200 | 
-| AM0300 | 
-| AM0400 | 
-| AM0500 | 
-| AM0600 | 
-| AM0700 | 
-| AM0800 | 
-| AM0900 | 
-| AM1000 | 
-| AM1100 | 
-| PM1200 | 
-| PM0100 | 
-| PM0200 | 
-| PM0300 | 
-| PM0400 | 
-| PM0500 | 
-| PM0600 | 
-| PM0700 | 
-| PM0800 | 
-| PM0900 | 
-| PM1000 | 
-| PM1100 | 
+| AM1200 | 00:00 am
+| AM0100 | 01:00 am
+| AM0200 | 02:00 am
+| AM0300 | 03:00 am
+| AM0400 | 04:00 am
+| AM0500 | 05:00 am
+| AM0600 | 06:00 am
+| AM0700 | 07:00 am
+| AM0800 | 08:00 am
+| AM0900 | 09:00 am
+| AM1000 | 10:00 am
+| AM1100 | 11:00 am
+| PM1200 | 12:00 pm
+| PM0100 | 01:00 pm
+| PM0200 | 02:00 pm
+| PM0300 | 03:00 pm
+| PM0400 | 04:00 pm
+| PM0500 | 05:00 pm
+| PM0600 | 06:00 pm
+| PM0700 | 07:00 pm
+| PM0800 | 08:00 pm
+| PM0900 | 09:00 pm
+| PM1000 | 10:00 pm
+| PM1100 | 11:00 pm
 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -10,13 +10,13 @@ public static WorkflowInstanceCollection GetInstances(this WorkflowSubscription 
 ### Parameters
 #### subscription  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.WorkflowServices.WorkflowSubscription  
-&emsp;&emsp; Returns all instances of a workflow for this subscription   
+&emsp;&emsp;the workflow subscription to get instances  
 
   
 
 ### Return Value
 Type: WorkflowInstanceCollection  
-  
+Returns a WorkflowInstanceCollection object  
 
 
 ## See also

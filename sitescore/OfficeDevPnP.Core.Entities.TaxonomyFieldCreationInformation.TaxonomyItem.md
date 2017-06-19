@@ -1,5 +1,5 @@
 # TaxonomyFieldCreationInformation.Properties TaxonomyItem
-  
+ Represents an item in the TermStore   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public TaxonomyItem TaxonomyItem { get; set; }
 ### Property Value
 Type: Microsoft.SharePoint.Client.Taxonomy.TaxonomyItem  
 
+## Remarks
+  
 ## See also
 - [TaxonomyFieldCreationInformation](OfficeDevPnP.Core.Entities.TaxonomyFieldCreationInformation.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

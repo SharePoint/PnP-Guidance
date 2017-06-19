@@ -12,7 +12,7 @@ public class DefaultColumnTermPathValue
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [DefaultColumnTermPathValue()](OfficeDevPnP.Core.Entities.DefaultColumnTermPathValue.ctor1.md) | ctor 
+| [DefaultColumnTermPathValue()](OfficeDevPnP.Core.Entities.DefaultColumnTermPathValue.ctor1.md) | Default Constructor 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

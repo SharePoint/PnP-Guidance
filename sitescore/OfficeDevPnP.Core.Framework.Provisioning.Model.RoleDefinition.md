@@ -13,8 +13,8 @@ public class RoleDefinition: BaseModel, IEquatable<RoleDefinition>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [RoleDefinition()](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.ctor1.md) |  
-| [RoleDefinition(IEnumerable<PermissionKind>)](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.ctor2.md) |  
+| [RoleDefinition()](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.ctor1.md) | Constructor for RoleDefinition class 
+| [RoleDefinition(IEnumerable<PermissionKind>)](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.ctor2.md) | Constructor for RoleDefinition class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -24,8 +24,8 @@ public class RoleDefinition: BaseModel, IEquatable<RoleDefinition>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.3520ddbb.md) | 
-| [Equals(RoleDefinition)](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.8f7175d4.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.3520ddbb.md) | Compares object with RoleDefinition
+| [Equals(RoleDefinition)](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.8f7175d4.md) | Compares RoleDefinition object based on Name, Description and Permisssions
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

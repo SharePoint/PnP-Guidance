@@ -13,7 +13,7 @@ public class CustomActions: BaseModel
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [CustomActions()](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomActions.ctor1.md) |  Domain Object that represents a Collections of Custom Actions 
+| [CustomActions()](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomActions.ctor1.md) | Constructor for CustomActions class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

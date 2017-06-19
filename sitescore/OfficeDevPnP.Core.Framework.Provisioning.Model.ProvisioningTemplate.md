@@ -14,8 +14,8 @@ public class ProvisioningTemplate: IEquatable<ProvisioningTemplate>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ProvisioningTemplate()](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ctor1.md) |  Domain Object for the Provisioning Template Domain Object for the Provisioning Template 
-| [ProvisioningTemplate(FileConnectorBase)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ctor2.md) |  Domain Object for the Provisioning Template Domain Object for the Provisioning Template 
+| [ProvisioningTemplate()](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ctor1.md) | Constructor for ProvisioningTemplate class 
+| [ProvisioningTemplate(FileConnectorBase)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ctor2.md) | Constructor for ProvisioningTemplate class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -23,19 +23,19 @@ public class ProvisioningTemplate: IEquatable<ProvisioningTemplate>
 | [AuditSettings](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.AuditSettings.md) | The Audit Settings for the Provisioning Template
 | [BaseSiteTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.BaseSiteTemplate.md) | The Base SiteTemplate of the Provisioning Template
 | [ComposedLook](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ComposedLook.md) | Gets or Sets the composed look of the template
-| [Connector](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Connector.md) | 
+| [Connector](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Connector.md) | Gets or sets the File Connector
 | [ContentTypes](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ContentTypes.md) | Gets a collection of Content Types to create
 | [CustomActions](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.CustomActions.md) | Gets or sets CustomActions for the template
 | [Description](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Description.md) | The Description of the Provisioning Template
 | [Directories](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Directories.md) | Gets a collection of directories from which upload files for the template
 | [DisplayName](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.DisplayName.md) | The Display Name of the Provisioning Template
-| [ExtensibilityHandlers](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ExtensibilityHandlers.md) | 
+| [ExtensibilityHandlers](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ExtensibilityHandlers.md) | Gets or sets the Extensibility Handlers
 | [Features](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Features.md) | Gets or sets a list of features to activate or deactivate
 | [Files](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Files.md) | Gets a collection of files for the template
 | [Id](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Id.md) | Gets or sets the ID of the Provisioning Template
 | [ImagePreviewUrl](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.ImagePreviewUrl.md) | The Image Preview Url of the Provisioning Template
 | [Lists](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Lists.md) | 
-| [Localizations](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Localizations.md) | 
+| [Localizations](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Localizations.md) | Gets or sets the Localizations
 | [Navigation](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Navigation.md) | The Navigation configurations of the Provisioning Template
 | [Pages](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Pages.md) | Gets a collection of Wiki Pages for the template
 | [Parameters](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.Parameters.md) | Any parameters that can be used throughout the template
@@ -58,9 +58,9 @@ public class ProvisioningTemplate: IEquatable<ProvisioningTemplate>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.3520ddbb.md) | 
-| [Equals(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.89c2b310.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.3520ddbb.md) | Compares object with ProvisioningTemplate
+| [Equals(ProvisioningTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.89c2b310.md) | Compares ProvisioningTemplate object based on ComposedLook, ContentTypes, CustomActions, SiteFeature, WebFeatures, Files, Id, Lists, PropertyBagEntries, Providers, Security, SiteFields, SitePolicy, Version, Pages, TermGroups, Workflows, AddIns, Publishing, Loaclizations and WebSettings properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.1c6872bd.md) | Gets the hash code
 | [ToXML(ITemplateFormatter)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.f3da680e.md) | Serializes a template to XML
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

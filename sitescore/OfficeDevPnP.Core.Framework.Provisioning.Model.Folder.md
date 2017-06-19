@@ -13,8 +13,8 @@ public class Folder: BaseModel, IEquatable<Folder>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [Folder()](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.ctor1.md) |  Defines a folder that will be provisioned into the target list/library 
-| [Folder(String, List<Folder>, ObjectSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.ctor2.md) |  Defines a folder that will be provisioned into the target list/library 
+| [Folder()](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.ctor1.md) | Constructor for the Folder class 
+| [Folder(String, List<Folder>, ObjectSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.ctor2.md) | Constructor for the Folder class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -24,8 +24,8 @@ public class Folder: BaseModel, IEquatable<Folder>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.3520ddbb.md) | 
-| [Equals(Folder)](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.4b857f24.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.3520ddbb.md) | Compares object with Folder
+| [Equals(Folder)](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.4b857f24.md) | Compares Folder object based on Name, Folders and Security properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

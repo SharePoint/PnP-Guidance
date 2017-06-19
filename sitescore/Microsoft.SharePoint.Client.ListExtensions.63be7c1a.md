@@ -10,13 +10,13 @@ public static EventReceiverDefinition GetEventReceiverById(this List list, Guid 
 ### Parameters
 #### list  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.List  
-&emsp;&emsp; Returns an event receiver definition   
+&emsp;&emsp;The target list  
 
   
 
 #### id  
 &emsp;&emsp;Type: System.Guid  
-&emsp;&emsp; Returns an event receiver definition   
+&emsp;&emsp;Id of the event receiver  
 
   
 

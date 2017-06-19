@@ -10,7 +10,7 @@ public static IList<SiteEntity> GetOneDriveSiteCollections(this Tenant tenant)
 ### Parameters
 #### tenant  
 &emsp;&emsp;Type: Microsoft.Online.SharePoint.TenantAdministration.Tenant  
-&emsp;&emsp; Get OneDrive site collections by iterating through all user profiles.   
+&emsp;&emsp;A tenant object pointing to the context of a Tenant Administration site   
 
   
 

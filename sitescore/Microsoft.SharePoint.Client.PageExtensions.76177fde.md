@@ -34,7 +34,7 @@ public static void SetWebPartProperty(this Web web, String key, Boolean value, G
 
 #### serverRelativePageUrl  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Sets a web part property   
+&emsp;&emsp;Server relative url of the page to set web part property  
 
   
 

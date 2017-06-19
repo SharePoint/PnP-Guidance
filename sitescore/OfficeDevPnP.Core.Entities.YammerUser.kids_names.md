@@ -1,5 +1,5 @@
 # YammerUser.Properties kids_names
-  
+ Represents yammer user kids names   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public object kids_names { get; set; }
 ### Property Value
 Type: System.Object  
 
+## Remarks
+  
 ## See also
 - [YammerUser](OfficeDevPnP.Core.Entities.YammerUser.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

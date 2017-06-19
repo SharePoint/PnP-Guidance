@@ -1,5 +1,5 @@
 # Page.Page members 
-  
+ Constructor for Page class   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,34 +10,36 @@ public Page(string url, bool overwrite, WikiPageLayout layout, IEnumerable<WebPa
 ### Parameters
 #### url  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Url of the page  
 
 
 #### overwrite  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp;  
+&emsp;&emsp;Overwrite flag for the page  
 
 
 #### layout  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.WikiPageLayout](OfficeDevPnP.Core.WikiPageLayout.md)  
-&emsp;&emsp;  
+&emsp;&emsp;Page Layout  
 
 
 #### webParts  
 &emsp;&emsp;Type: System.Collections.Generic.IEnumerable<OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart>  
-&emsp;&emsp;  
+&emsp;&emsp;Webparts of the page  
 
 
 #### (optional) security  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.md)  
-&emsp;&emsp;  
+&emsp;&emsp;Security Rules for the page  
 
 
 #### (optional) fields  
 &emsp;&emsp;Type: System.Collections.Generic.Dictionary<System.String, System.String>  
-&emsp;&emsp;  
+&emsp;&emsp;Fields used in the page  
 
 
+## Remarks
+  
 ## See also
 - [Page](OfficeDevPnP.Core.Framework.Provisioning.Model.Page.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

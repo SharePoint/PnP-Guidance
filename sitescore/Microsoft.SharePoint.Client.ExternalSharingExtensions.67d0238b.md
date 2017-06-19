@@ -22,7 +22,7 @@ public static ObjectSharingSettings GetObjectSharingSettingsForSite(this Web web
 
 ### Return Value
 Type: ObjectSharingSettings  
-  
+A ObjectSharingSettings object  
 
 
 ## See also

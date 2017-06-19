@@ -13,9 +13,9 @@ public class WebSettings: BaseModel, IEquatable<WebSettings>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [WebSettings()](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.ctor1.md) |  Domain Object used in the Provisioning template that defines a Section of Settings for the current Web Site 
-| [WebSettings(Boolean, String, String)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.ctor2.md) |  Domain Object used in the Provisioning template that defines a Section of Settings for the current Web Site 
-| [WebSettings(Boolean, String, String, String, String, String, String)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.ctor3.md) |  Domain Object used in the Provisioning template that defines a Section of Settings for the current Web Site 
+| [WebSettings()](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.ctor1.md) | Default Constructor 
+| [WebSettings(Boolean, String, String)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.ctor2.md) | Constructor 
+| [WebSettings(Boolean, String, String, String, String, String, String)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.ctor3.md) | Constructor 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -31,8 +31,8 @@ public class WebSettings: BaseModel, IEquatable<WebSettings>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.3520ddbb.md) | 
-| [Equals(WebSettings)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.dde1a265.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.3520ddbb.md) | Compares web settings with other web settings
+| [Equals(WebSettings)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.dde1a265.md) | Compares web settings with other web settings
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.1c6872bd.md) | Gets hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -22,8 +22,8 @@ public class RoleAssignment: BaseModel, IEquatable<RoleAssignment>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignment.3520ddbb.md) | 
-| [Equals(RoleAssignment)](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignment.29b90be5.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignment.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignment.3520ddbb.md) | Compares object with RoleAssignment
+| [Equals(RoleAssignment)](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignment.29b90be5.md) | Compares RoleAssignment object based on Principal and RoleDefinition
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignment.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

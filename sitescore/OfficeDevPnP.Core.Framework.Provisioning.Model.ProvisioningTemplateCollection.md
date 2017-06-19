@@ -21,11 +21,11 @@ public abstract class ProvisioningTemplateCollection<T>: Collection<T>, IProvisi
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [AddRange(IEnumerable&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.c9396447.md) | 
+| [AddRange(IEnumerable&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.c9396447.md) | Adds item to the collection
 | [Find(Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.a3f4e88c.md) | Finds an item matching a search predicate
-| [FindIndex(Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.da089b2f.md) | 
-| [FindIndex(Int32, Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.a0b9537a.md) | 
-| [FindIndex(Int32, Int32, Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.d0beeaa1.md) | 
-| [RemoveAll(Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.519f9e70.md) | 
+| [FindIndex(Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.da089b2f.md) | Finds index of the item matching the search predicate
+| [FindIndex(Int32, Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.a0b9537a.md) | Finds index of the item matching the search predicate based on start index provided.
+| [FindIndex(Int32, Int32, Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.d0beeaa1.md) | Finds index of the item matching the search predicate based on start index and count.
+| [RemoveAll(Predicate&lt;T&gt;)](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.519f9e70.md) | Removes all the matching indexes
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -10,19 +10,19 @@ public static WorkflowSubscription GetWorkflowSubscription(this Web web, Guid id
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Returns a workflow subscription   
+&emsp;&emsp;The web to get workflow subscription  
 
   
 
 #### id  
 &emsp;&emsp;Type: System.Guid  
-&emsp;&emsp; Returns a workflow subscription   
+&emsp;&emsp;The id of the workflow subscription  
 
   
 
 ### Return Value
 Type: WorkflowSubscription  
-  
+Returns a WorkflowSubscription object  
 
 
 ## See also

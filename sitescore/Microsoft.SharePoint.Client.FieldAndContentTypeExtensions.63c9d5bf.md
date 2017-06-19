@@ -34,7 +34,7 @@ public static ContentType CreateContentType(this Web web, String name, String id
 
 ### Return Value
 Type: ContentType  
-  
+Returns newly created content type  
 
 
 ## See also

@@ -28,7 +28,7 @@ public static Field GetFieldByInternalName(this Web web, String internalName, Bo
 
 ### Return Value
 Type: Field  
-  
+Field  
 
 
 ## See also

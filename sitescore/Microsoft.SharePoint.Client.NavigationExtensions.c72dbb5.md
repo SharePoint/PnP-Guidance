@@ -10,13 +10,13 @@ public static AreaNavigationEntity GetNavigationSettings(this Web web)
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Returns the navigation settings for the selected web   
+&emsp;&emsp;Web to process  
 
   
 
 ### Return Value
 Type: AreaNavigationEntity  
-  
+Returns AreaNavigationEntity settings  
 
 
 ## See also

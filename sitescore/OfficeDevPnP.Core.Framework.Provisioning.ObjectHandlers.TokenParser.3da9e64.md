@@ -1,5 +1,5 @@
 # TokenParser.GetResourceTokenResourceValues Method  
-  
+ Gets list of token resource values   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,12 +10,14 @@ public List<Tuple<String, String>> GetResourceTokenResourceValues(String tokenVa
 ### Parameters
 #### tokenValue  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Token value  
 
   
 
 ### Return Value
 Type: List<Tuple<String,  String>>  
+Returns list of token resource values  
+
 
 ## See also
 - [TokenParser](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenParser.md) 

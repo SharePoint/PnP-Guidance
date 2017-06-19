@@ -13,8 +13,8 @@ public class ContentType: BaseModel, IEquatable<ContentType>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ContentType()](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.ctor1.md) |  Domain Object used in the Provisioning template that defines a Content Type https://msdn.microsoft.com/en-us/library/office/ms463449.aspx 
-| [ContentType(String, String, String, String, Boolean, Boolean, Boolean, String, Boolean, IEnumerable<FieldRef>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.ctor2.md) |  Domain Object used in the Provisioning template that defines a Content Type https://msdn.microsoft.com/en-us/library/office/ms463449.aspx 
+| [ContentType()](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.ctor1.md) | Constructor for ContentType class 
+| [ContentType(String, String, String, String, Boolean, Boolean, Boolean, String, Boolean, IEnumerable<FieldRef>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.ctor2.md) | Constructor for ContentType class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -35,9 +35,9 @@ public class ContentType: BaseModel, IEquatable<ContentType>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.3520ddbb.md) | 
-| [Equals(ContentType)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.f2a50643.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.3520ddbb.md) | Compares object with ContentType
+| [Equals(ContentType)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.f2a50643.md) | Compares ContentType object based on Id, Name, Description, Group, Hidden, RedOnly, Overwrite, Sealed, DocumentTemplate, DocumentSetTemplate and FieldRefs properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.1c6872bd.md) | Gets the hash code
 ## See also
 - [https://msdn.microsoft.com/en-us/library/office/ms463449.aspx](https://msdn.microsoft.com/en-us/library/office/ms463449.aspx)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -22,7 +22,7 @@ public static ClientObjectList<AppInstance> GetAppInstances(this Web web, params
 
 ### Return Value
 Type: ClientObjectList<AppInstance>  
-  
+all app instances  
 
 
 ## See also

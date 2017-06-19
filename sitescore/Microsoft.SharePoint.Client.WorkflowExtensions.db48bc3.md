@@ -10,7 +10,7 @@ public static Guid AddWorkflowSubscription(this List list, String workflowDefini
 ### Parameters
 #### list  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.List  
-&emsp;&emsp; Adds a workflow subscription   
+&emsp;&emsp;The target list  
 
   
 
@@ -58,7 +58,7 @@ public static Guid AddWorkflowSubscription(this List list, String workflowDefini
 
 #### (optional) associationValues  
 &emsp;&emsp;Type: System.Collections.Generic.Dictionary&lt;System.String, System.String&gt;  
-&emsp;&emsp; Adds a workflow subscription   
+&emsp;&emsp;the name-value pairs for workflow definition  
 
   
 

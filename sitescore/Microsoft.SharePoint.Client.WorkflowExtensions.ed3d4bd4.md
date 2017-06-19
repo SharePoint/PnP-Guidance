@@ -1,5 +1,5 @@
 # WorkflowExtensions.AddWorkflowDefinition Method  
-  
+ Adds a workflow definition   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,24 +10,26 @@ public static Guid AddWorkflowDefinition(this Web web, WorkflowDefinition defini
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp;  
+&emsp;&emsp;the target web  
 
   
 
 #### definition  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.WorkflowServices.WorkflowDefinition  
-&emsp;&emsp;  
+&emsp;&emsp;the workflow definition to add  
 
   
 
 #### (optional) publish  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp;  
+&emsp;&emsp;specify true to publish workflow definition  
 
   
 
 ### Return Value
 Type: Guid  
+  
+
 
 ## See also
 - [WorkflowExtensions](Microsoft.SharePoint.Client.WorkflowExtensions.md) 

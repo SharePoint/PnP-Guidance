@@ -10,13 +10,13 @@ public static TermStore GetDefaultSiteCollectionTermStore(this Site site)
 ### Parameters
 #### site  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Site  
-&emsp;&emsp; Returns the default site collection termstore   
+&emsp;&emsp;Site to be processed  
 
   
 
 ### Return Value
 Type: TermStore  
-  
+Returns TermStore object  
 
 
 ## See also

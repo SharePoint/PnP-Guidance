@@ -22,7 +22,7 @@ public class FileSystemConnector: FileConnectorBase
 | [DeleteFile(String, String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.476dd1f3.md) | Deletes a file from the specified container
 | [GetFile(String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.df261957.md) | Gets a file as string from the default container
 | [GetFile(String, String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.7ad54aac.md) | Gets a file as string from the specified container
-| [GetFilenamePart(String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.9e3b826.md) | 
+| [GetFilenamePart(String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.9e3b826.md) | Returns a filename without a path
 | [GetFiles()](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.1ef203bb.md) | Get the files available in the default container
 | [GetFiles(String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.349a20d0.md) | Get the files available in the specified container
 | [GetFileStream(String)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileSystemConnector.667e64b2.md) | Gets a file as stream from the default container

@@ -1,5 +1,5 @@
 # ListInstance.Properties Views
- Gets or sets the content types to associate to the list   
+ Gets or sets the views associated to the list   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

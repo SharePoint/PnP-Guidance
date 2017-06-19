@@ -1,5 +1,5 @@
 # PnPPackageExtensions.UnpackTemplate Method  
-  
+ Unpacks template into PnP OpenXML package info object based on memory stream   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,12 +10,14 @@ public static PnPInfo UnpackTemplate(this MemoryStream stream)
 ### Parameters
 #### stream  
 &emsp;&emsp;Type: System.IO.MemoryStream  
-&emsp;&emsp;  
+&emsp;&emsp;MemoryStream  
 
   
 
 ### Return Value
 Type: PnPInfo  
+Returns site template  
+
 
 ## See also
 - [PnPPackageExtensions](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackageExtensions.md) 

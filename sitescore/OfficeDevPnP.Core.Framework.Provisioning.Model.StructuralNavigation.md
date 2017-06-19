@@ -13,7 +13,7 @@ public class StructuralNavigation: BaseModel, IEquatable<StructuralNavigation>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [StructuralNavigation()](OfficeDevPnP.Core.Framework.Provisioning.Model.StructuralNavigation.ctor1.md) |  Defines the Structural Navigation settings of a site 
+| [StructuralNavigation()](OfficeDevPnP.Core.Framework.Provisioning.Model.StructuralNavigation.ctor1.md) | Constructor for StructuralNavigation class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -22,8 +22,8 @@ public class StructuralNavigation: BaseModel, IEquatable<StructuralNavigation>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.StructuralNavigation.3520ddbb.md) | 
-| [Equals(StructuralNavigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.StructuralNavigation.4d36f90d.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.StructuralNavigation.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.StructuralNavigation.3520ddbb.md) | Compares object with StructuralNavigation
+| [Equals(StructuralNavigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.StructuralNavigation.4d36f90d.md) | Compares StructuralNavigation object based on NavigationNodes and RemoveExistingNodes properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.StructuralNavigation.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -10,13 +10,13 @@ public static void UpdateNavigationSettings(this Web web, AreaNavigationEntity n
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Updates navigation settings for the current web   
+&emsp;&emsp;Web to process  
 
   
 
 #### navigationSettings  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Entities.AreaNavigationEntity](OfficeDevPnP.Core.Entities.AreaNavigationEntity.md)  
-&emsp;&emsp; Updates navigation settings for the current web   
+&emsp;&emsp;Navigation settings to update  
 
   
 

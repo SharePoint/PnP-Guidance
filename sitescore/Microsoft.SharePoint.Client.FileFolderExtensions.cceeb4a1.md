@@ -10,13 +10,13 @@ public static Folder CreateDocumentSet(this Folder folder, String documentSetNam
 ### Parameters
 #### folder  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Folder  
-&emsp;&emsp; Creates a new document set as a child of an existing folder, with the specified content type ID.   
+&emsp;&emsp;Folder of the document set  
 
   
 
 #### documentSetName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates a new document set as a child of an existing folder, with the specified content type ID.   
+&emsp;&emsp;Name of the document set  
 
   
 

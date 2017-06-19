@@ -10,7 +10,7 @@ public SharePointConnector(ClientRuntimeContext clientContext, string connection
 ### Parameters
 #### clientContext  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.ClientRuntimeContext  
-&emsp;&emsp; SharePointConnector constructor. Allows to directly set root folder and sub folder   
+&emsp;&emsp;Client context for SharePoint connection  
 
 
 #### connectionString  

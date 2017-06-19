@@ -16,7 +16,7 @@ public static WorkflowSubscription[] GetWorkflowSubscriptions(this Web web)
 
 ### Return Value
 Type: WorkflowSubscription[]  
-  
+Returns all WorkflowSubscriptions  
 
 
 ## See also

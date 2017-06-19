@@ -22,7 +22,7 @@ public static File UploadFileWebDav(this Folder folder, String fileName, Stream 
 
 #### stream  
 &emsp;&emsp;Type: System.IO.Stream  
-&emsp;&emsp; Uploads a file to the specified folder by saving the binary directly (via webdav). Note: this method does not work using app only token.   
+&emsp;&emsp;A stream object that represents the file.  
 
   
 

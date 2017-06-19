@@ -10,13 +10,13 @@ public static void CreateViewsFromXMLFile(this List list, String filePath)
 ### Parameters
 #### list  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.List  
-&emsp;&emsp; Create list views based on specific xml structure in external file   
+&emsp;&emsp;List to process  
 
   
 
 #### filePath  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Create list views based on specific xml structure in external file   
+&emsp;&emsp;Path of the file  
 
   
 

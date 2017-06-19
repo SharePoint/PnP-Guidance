@@ -22,7 +22,7 @@ public static File UploadFile(this Folder folder, String fileName, Stream stream
 
 #### stream  
 &emsp;&emsp;Type: System.IO.Stream  
-&emsp;&emsp; Uploads a file to the specified folder.   
+&emsp;&emsp;A stream object that represents the file.  
 
   
 

@@ -40,7 +40,7 @@ public static class WebExtensions
 | [InstallSolution(Site, Guid, String, Int32, Int32)](Microsoft.SharePoint.Client.WebExtensions.8e60cd11.md) | Uploads and installs a sandbox solution package (.WSP) file, replacing existing solution if necessary.
 | [IsNoScriptSite(Site)](Microsoft.SharePoint.Client.WebExtensions.f9298408.md) | Detects if the site in question has no script enabled or not. Detection is done by verifying if the AddAndCustomizePages permission is missing. See https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f for the effects of NoScript
 | [IsNoScriptSite(Web)](Microsoft.SharePoint.Client.WebExtensions.e5b2b186.md) | Detects if the site in question has no script enabled or not. Detection is done by verifying if the AddAndCustomizePages permission is missing. See https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f for the effects of NoScript
-| [IsPublishingWeb(Web)](Microsoft.SharePoint.Client.WebExtensions.471e4515.md) | 
+| [IsPublishingWeb(Web)](Microsoft.SharePoint.Client.WebExtensions.471e4515.md) | Checks if the current web is a publishing site or not
 | [IsSubSite(Web)](Microsoft.SharePoint.Client.WebExtensions.3f4614d5.md) | Checks if the current web is a sub site or not
 | [MySiteSearch(Web)](Microsoft.SharePoint.Client.WebExtensions.cd9358ce.md) | Returns all my site site collections
 | [PropertyBagContainsKey(Web, String)](Microsoft.SharePoint.Client.WebExtensions.7a7ae50c.md) | Checks if the given property bag entry exists

@@ -1,5 +1,5 @@
 # TemplateProviderBase.TemplateProviderBase members 
-  
+ Constructor   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Providers](OfficeDevPnP.Core.Framework.Provisioning.Providers.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,9 +10,11 @@ public TemplateProviderBase(FileConnectorBase connector)
 ### Parameters
 #### connector  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase.md)  
-&emsp;&emsp;  
+&emsp;&emsp; Constructor   
 
 
+## Remarks
+  
 ## See also
 - [TemplateProviderBase](OfficeDevPnP.Core.Framework.Provisioning.Providers.TemplateProviderBase.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers](OfficeDevPnP.Core.Framework.Provisioning.Providers.md)

@@ -1,5 +1,5 @@
 # DefaultColumnValue Class
- DefaultColumnValue   
+ Holds DefalutColumnValue Properties   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -15,7 +15,7 @@ public class DefaultColumnValue: IDefaultColumnValue
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [DefaultColumnValue()](OfficeDevPnP.Core.Entities.DefaultColumnValue.ctor1.md) |  DefaultColumnValue 
+| [DefaultColumnValue()](OfficeDevPnP.Core.Entities.DefaultColumnValue.ctor1.md) |  Holds DefalutColumnValue Properties 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

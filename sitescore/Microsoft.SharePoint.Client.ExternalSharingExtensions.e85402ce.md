@@ -46,7 +46,7 @@ public static SharingResult ShareSite(this Web web, String email, ExternalSharin
 
 ### Return Value
 Type: SharingResult  
-  
+A SharingResult object  
 
 
 ## See also

@@ -34,7 +34,7 @@ public static List<String> ExportTermSet(this Site site, Guid termSetId, Boolean
 
 ### Return Value
 Type: List<String>  
-  
+Returns list of Termset strings  
 
 
 ## See also

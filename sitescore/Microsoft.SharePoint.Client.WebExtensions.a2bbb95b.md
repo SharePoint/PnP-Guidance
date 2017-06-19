@@ -16,13 +16,13 @@ public static EventReceiverDefinition GetEventReceiverById(this Web web, Guid id
 
 #### id  
 &emsp;&emsp;Type: System.Guid  
-&emsp;&emsp; Returns an event receiver definition   
+&emsp;&emsp;The id of event receiver  
 
   
 
 ### Return Value
 Type: EventReceiverDefinition  
-  
+Returns an EventReceiverDefinition if succeeded. Returns null if failed.  
 
 
 ## See also

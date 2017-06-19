@@ -10,19 +10,19 @@ public static void CreateViewsFromXML(this Web web, String listUrl, XmlDocument 
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Create list views based on xml structure loaded to memory   
+&emsp;&emsp;Web to process  
 
   
 
 #### listUrl  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Create list views based on xml structure loaded to memory   
+&emsp;&emsp;List Url  
 
   
 
 #### xmlDoc  
 &emsp;&emsp;Type: System.Xml.XmlDocument  
-&emsp;&emsp; Create list views based on xml structure loaded to memory   
+&emsp;&emsp;XmlDocument object  
 
   
 

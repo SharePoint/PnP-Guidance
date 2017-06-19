@@ -1,5 +1,5 @@
 # RoleDefinition.RoleDefinition members 
-  
+ Constructor for RoleDefinition class   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -7,6 +7,8 @@
 ```C#
 public RoleDefinition()
 ```
+## Remarks
+  
 ## See also
 - [RoleDefinition](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

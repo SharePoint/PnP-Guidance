@@ -1,5 +1,5 @@
 # YammerUserContact.Properties phone_numbers
-  
+ List of yammer user phone numbers   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public IList<Object> phone_numbers { get; set; }
 ### Property Value
 Type: System.Collections.Generic.IList<System.Object>  
 
+## Remarks
+  
 ## See also
 - [YammerUserContact](OfficeDevPnP.Core.Entities.YammerUserContact.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

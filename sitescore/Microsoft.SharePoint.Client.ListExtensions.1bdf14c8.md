@@ -10,19 +10,19 @@ public static void CreateViewsFromXMLFile(this Web web, String listUrl, String f
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Creates list views based on specific xml structure from file   
+&emsp;&emsp;Web to process  
 
   
 
 #### listUrl  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates list views based on specific xml structure from file   
+&emsp;&emsp;List Url  
 
   
 
 #### filePath  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates list views based on specific xml structure from file   
+&emsp;&emsp;Path of the file  
 
   
 

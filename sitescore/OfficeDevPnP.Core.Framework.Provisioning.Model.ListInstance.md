@@ -15,17 +15,17 @@ public class ListInstance: BaseModel, IEquatable<ListInstance>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ListInstance()](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor1.md) |  This class holds deprecated ListInstance properties and methods Domain Object that specifies the properties of the new list. 
-| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor2.md) |  This class holds deprecated ListInstance properties and methods Domain Object that specifies the properties of the new list. 
-| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor3.md) |  This class holds deprecated ListInstance properties and methods Domain Object that specifies the properties of the new list. 
-| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity, List<Folder>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor4.md) |  This class holds deprecated ListInstance properties and methods Domain Object that specifies the properties of the new list. 
-| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity, List<Folder>, List<CustomAction>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor5.md) |  This class holds deprecated ListInstance properties and methods Domain Object that specifies the properties of the new list. 
+| [ListInstance()](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor1.md) | Constructor for ListInstance class 
+| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor2.md) | Constructor for ListInstance class 
+| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor3.md) | Constructor for ListInstance class 
+| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity, List<Folder>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor4.md) | Constructor for ListInstance class 
+| [ListInstance(IEnumerable<ContentTypeBinding>, IEnumerable<View>, IEnumerable<Field>, IEnumerable<FieldRef>, List<DataRow>, Dictionary<String, String>, ObjectSecurity, List<Folder>, List<CustomAction>)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ctor5.md) | Constructor for the ListInstance class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
 | [ContentTypeBindings](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ContentTypeBindings.md) | Gets or sets the content types to associate to the list
 | [ContentTypesEnabled](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ContentTypesEnabled.md) | Gets or sets whether content types are enabled
-| [DataRows](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.DataRows.md) | 
+| [DataRows](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.DataRows.md) | Gets or sets the DataRows associated to the list
 | [Description](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.Description.md) | Gets or sets the description of the list
 | [DocumentTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.DocumentTemplate.md) | Gets or sets a value that specifies the identifier of the document template for the new list.
 | [DraftVersionVisibility](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.DraftVersionVisibility.md) | Gets or sets the DraftVersionVisibility for the list
@@ -35,8 +35,8 @@ public class ListInstance: BaseModel, IEquatable<ListInstance>
 | [EnableModeration](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.EnableModeration.md) | Gets or sets whether moderation/content approval is enabled on the list
 | [EnableVersioning](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.EnableVersioning.md) | Gets or sets whether verisioning is enabled on the list
 | [FieldDefaults](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.FieldDefaults.md) | Defines a list of default values for the Fields of the List Instance
-| [FieldRefs](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.FieldRefs.md) | 
-| [Fields](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.Fields.md) | 
+| [FieldRefs](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.FieldRefs.md) | Gets or sets the FieldRefs associated to the list
+| [Fields](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.Fields.md) | Gets or sets the Fields associated to the list
 | [Folders](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.Folders.md) | Defines a collection of folders (eventually nested) that will be provisioned into the target list/library
 | [ForceCheckout](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.ForceCheckout.md) | Gets or sets whether to force checkout of documents in the library
 | [Hidden](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.Hidden.md) | Gets or sets whether to hide the list
@@ -46,17 +46,17 @@ public class ListInstance: BaseModel, IEquatable<ListInstance>
 | [RemoveExistingContentTypes](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.RemoveExistingContentTypes.md) | Gets or sets whether existing content types should be removed
 | [RemoveExistingViews](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.RemoveExistingViews.md) | Gets or sets whether existing views should be removed
 | [Security](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.Security.md) | Defines the Security rules for the List Instance
-| [TemplateFeatureID](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.TemplateFeatureID.md) | 
+| [TemplateFeatureID](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.TemplateFeatureID.md) | Gets or sets the Guid for TemplateFeature
 | [TemplateType](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.TemplateType.md) | Gets or sets a value that specifies the list server template of the new list. https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.listtemplatetype.aspx
 | [Title](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.Title.md) | Gets or sets the list title
 | [Url](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.Url.md) | Gets or sets a value that specifies whether the new list is displayed on the Quick Launch of the site.
 | [UserCustomActions](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.UserCustomActions.md) | Defines a collection of user custom actions that will be provisioned into the target list/library
-| [Views](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.Views.md) | Gets or sets the content types to associate to the list
+| [Views](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.Views.md) | Gets or sets the views associated to the list
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.3520ddbb.md) | 
-| [Equals(ListInstance)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.f4a95136.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.3520ddbb.md) | Compares object with ListInstance
+| [Equals(ListInstance)](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.f4a95136.md) | Compares ListInstance object based on ContentTypesEnabled, Description, DocumentTemplate, EnableVersioning, EnableMinorVersions, EnableModeration, Hidden, MaxVersionLimit, MinorVersionLimit, OnQuickLaunch, EnableAttachments, EnableFolderCreation, ForceCheckOut, RemoveExistingContentTypes, TemplateType, Title, Url, TemplateFeatureID, RemoveExistingViews, ContentTypeBindings, View, Fields, FieldRefs, FieldDefaults, Security, Folders and UserCustomActions properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -13,7 +13,7 @@ public class NavigationNode: BaseModel, IEquatable<NavigationNode>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [NavigationNode()](OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNode.ctor1.md) |  Defines a Navigation Node for the Structural Navigation of a site 
+| [NavigationNode()](OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNode.ctor1.md) | Constructor for NavigationNode class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -24,8 +24,8 @@ public class NavigationNode: BaseModel, IEquatable<NavigationNode>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNode.3520ddbb.md) | 
-| [Equals(NavigationNode)](OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNode.d9f2b69a.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNode.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNode.3520ddbb.md) | Compares object with NavigationNode
+| [Equals(NavigationNode)](OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNode.d9f2b69a.md) | Compares NavigationNode object based on isExternal, NavigationNodes, Title and Url properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNode.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

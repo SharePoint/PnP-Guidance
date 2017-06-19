@@ -10,13 +10,13 @@ public static Guid GetAuthenticationRealm(this Web web)
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Returns the authentication realm for the current web   
+&emsp;&emsp;The Current site  
 
   
 
 ### Return Value
 Type: Guid  
-  
+Returns Realm in Guid  
 
 
 ## See also

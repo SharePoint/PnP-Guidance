@@ -16,7 +16,7 @@ public static IEnumerable<String> GetIndexedPropertyBagKeys(this Web web)
 
 ### Return Value
 Type: IEnumerable<String>  
-  
+all indexed property bag keys  
 
 
 ## See also

@@ -10,7 +10,7 @@ public static void ReIndexList(this List list)
 ### Parameters
 #### list  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.List  
-&emsp;&emsp; Queues a list for a full crawl the next incremental crawl   
+&emsp;&emsp;List to process  
 
   
 

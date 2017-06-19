@@ -1,5 +1,5 @@
 # ExternalSharingExtensions Class
-  
+ This class holds the methods for sharing and unsharing of the document and the site.   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

@@ -1,5 +1,5 @@
 # FileConnectorBase.AddParameterAsString Method  
-  
+ Adds Parameter as a string.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,13 +10,13 @@ public void AddParameterAsString(String key, String value)
 ### Parameters
 #### key  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Key for adding parameter  
 
   
 
 #### value  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Value of the parameter  
 
   
 

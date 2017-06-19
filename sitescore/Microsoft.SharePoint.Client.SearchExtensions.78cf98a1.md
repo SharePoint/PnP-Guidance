@@ -10,13 +10,13 @@ public static void SetSearchConfiguration(this Site site, String searchConfigura
 ### Parameters
 #### site  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Site  
-&emsp;&emsp; Sets the search configuration   
+&emsp;&emsp;A SharePoint site  
 
   
 
 #### searchConfiguration  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Sets the search configuration   
+&emsp;&emsp;search configuration  
 
   
 

@@ -1,5 +1,5 @@
 # PageExtensions.GetWikiPageContent Method  
- Returns the HTML contents of a wiki page   
+ Gets the HTML contents of a wiki page   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -22,7 +22,7 @@ public static string GetWikiPageContent(this Web web, String serverRelativePageU
 
 ### Return Value
 Type: string  
-  
+Returns the HTML contents of a wiki page  
 
 
 ## See also

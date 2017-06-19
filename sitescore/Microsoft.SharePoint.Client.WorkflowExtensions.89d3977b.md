@@ -10,25 +10,25 @@ public static WorkflowDefinition GetWorkflowDefinition(this Web web, String disp
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Returns a workflow definition for a site   
+&emsp;&emsp;the target web  
 
   
 
 #### displayName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Returns a workflow definition for a site   
+&emsp;&emsp;the workflow definition display name, which is displayed to users  
 
   
 
 #### (optional) publishedOnly  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Returns a workflow definition for a site   
+&emsp;&emsp;Defines whether to include only published definition, or all the definitions  
 
   
 
 ### Return Value
 Type: WorkflowDefinition  
-  
+Returns a WorkflowDefinition object  
 
 
 ## See also

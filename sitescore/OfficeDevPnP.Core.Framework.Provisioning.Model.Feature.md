@@ -24,8 +24,8 @@ public class Feature: BaseModel, IEquatable<Feature>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.3520ddbb.md) | 
-| [Equals(Feature)](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.662ef537.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.3520ddbb.md) | Compares object with Feature
+| [Equals(Feature)](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.662ef537.md) | Compares Feature object based on Deactivate and Id properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

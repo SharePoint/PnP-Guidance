@@ -15,8 +15,8 @@ public class FieldRef: BaseModel, IEquatable<FieldRef>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [FieldRef()](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.ctor1.md) |  Represents a Field XML Markup that is used to define information about a field Represents a Field XML Markup that is used to define information about a field 
-| [FieldRef(String)](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.ctor2.md) |  Represents a Field XML Markup that is used to define information about a field Represents a Field XML Markup that is used to define information about a field 
+| [FieldRef()](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.ctor1.md) | Constructor for FieldRef class 
+| [FieldRef(String)](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.ctor2.md) | Constructor for FieldRef class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -28,8 +28,8 @@ public class FieldRef: BaseModel, IEquatable<FieldRef>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.3520ddbb.md) | 
-| [Equals(FieldRef)](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.492a3778.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.3520ddbb.md) | Compares object with FieldRef
+| [Equals(FieldRef)](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.492a3778.md) | Compares FieldRef object based on Id, Required and Hidden properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

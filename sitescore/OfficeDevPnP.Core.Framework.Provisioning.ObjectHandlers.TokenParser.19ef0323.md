@@ -1,5 +1,5 @@
 # TokenParser.Rebase Method  
-  
+ Clears cache of tokens   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,7 +10,7 @@ public void Rebase(Web web)
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp;  
+&emsp;&emsp;A SharePoint site or subsite  
 
   
 

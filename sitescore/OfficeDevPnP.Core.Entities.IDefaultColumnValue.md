@@ -1,5 +1,5 @@
 # IDefaultColumnValue Interface  
- IDefaultColumnValue   
+ Holds default column value properties   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

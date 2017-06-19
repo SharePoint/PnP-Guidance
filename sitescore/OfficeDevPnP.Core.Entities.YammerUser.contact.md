@@ -1,5 +1,5 @@
 # YammerUser.Properties contact
-  
+ Represents yammer user contact details   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public YammerUserContact contact { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Entities.YammerUserContact](OfficeDevPnP.Core.Entities.YammerUserContact.md)  
 
+## Remarks
+  
 ## See also
 - [YammerUser](OfficeDevPnP.Core.Entities.YammerUser.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

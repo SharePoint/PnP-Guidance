@@ -16,11 +16,11 @@ public class UnifiedGroupEntity
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [Description](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.Description.md) | 
-| [DisplayName](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.DisplayName.md) | 
-| [GroupId](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.GroupId.md) | 
-| [Mail](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.Mail.md) | 
-| [MailNickname](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.MailNickname.md) | 
-| [SiteUrl](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.SiteUrl.md) | 
+| [Description](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.Description.md) | Unified group description
+| [DisplayName](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.DisplayName.md) | Unified group display name
+| [GroupId](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.GroupId.md) | Unified group id
+| [Mail](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.Mail.md) | Unified group mail
+| [MailNickname](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.MailNickname.md) | Unified group nick name
+| [SiteUrl](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.SiteUrl.md) | Url of site to configure unified group
 ## See also
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)

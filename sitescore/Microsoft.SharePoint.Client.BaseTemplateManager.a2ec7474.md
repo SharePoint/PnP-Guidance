@@ -1,5 +1,5 @@
 # BaseTemplateManager.GetBaseTemplate Method  
-  
+ Gets the provisioning template of provided webtemplate and configuration.   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,24 +10,26 @@ public static ProvisioningTemplate GetBaseTemplate(this Web web, String webTempl
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp;  
+&emsp;&emsp;the target web  
 
   
 
 #### webTemplate  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;the name of the webtemplate  
 
   
 
 #### configuration  
 &emsp;&emsp;Type: System.Int16  
-&emsp;&emsp;  
+&emsp;&emsp;configuration of template  
 
   
 
 ### Return Value
 Type: ProvisioningTemplate  
+Returns a ProvisioningTemplate object  
+
 
 ## See also
 - [BaseTemplateManager](Microsoft.SharePoint.Client.BaseTemplateManager.md) 

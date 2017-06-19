@@ -1,5 +1,5 @@
 # FileConnectorBase.Properties Parameters
-  
+ Parameters required for the file.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public Dictionary<String, Object> Parameters { get; }
 ### Property Value
 Type: System.Collections.Generic.Dictionary<System.String, System.Object>  
 
+## Remarks
+  
 ## See also
 - [FileConnectorBase](OfficeDevPnP.Core.Framework.Provisioning.Connectors.FileConnectorBase.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md) 

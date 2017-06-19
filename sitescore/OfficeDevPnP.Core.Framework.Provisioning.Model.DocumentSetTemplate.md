@@ -13,8 +13,8 @@ public class DocumentSetTemplate: BaseModel, IEquatable<DocumentSetTemplate>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [DocumentSetTemplate()](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.ctor1.md) |  Defines a DocumentSet Template for creating multiple DocumentSet instances 
-| [DocumentSetTemplate(String, IEnumerable<String>, IEnumerable<DefaultDocument>, IEnumerable<Guid>, IEnumerable<Guid>)](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.ctor2.md) |  Defines a DocumentSet Template for creating multiple DocumentSet instances 
+| [DocumentSetTemplate()](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.ctor1.md) | Constructor for DocumentSetTemplate class 
+| [DocumentSetTemplate(String, IEnumerable<String>, IEnumerable<DefaultDocument>, IEnumerable<Guid>, IEnumerable<Guid>)](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.ctor2.md) | Constructor for DocumentSetTemplate class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -26,8 +26,8 @@ public class DocumentSetTemplate: BaseModel, IEquatable<DocumentSetTemplate>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.3520ddbb.md) | 
-| [Equals(DocumentSetTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.9b91d7be.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.3520ddbb.md) | Compares object with DocumentSetTemplate
+| [Equals(DocumentSetTemplate)](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.9b91d7be.md) | Compares DocumentSetTemplate object based on AllowedContentTypes, DefaultDocuments, SharedFields and WelcomePageFields properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

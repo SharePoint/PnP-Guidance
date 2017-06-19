@@ -28,19 +28,19 @@ public static EventReceiverDefinition AddRemoteEventReceiver(this Web web, Strin
 
 #### eventReceiverType  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.EventReceiverType  
-&emsp;&emsp; Registers a remote event receiver   
+&emsp;&emsp;The type of event for the event receiver.  
 
   
 
 #### synchronization  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.EventReceiverSynchronization  
-&emsp;&emsp; Registers a remote event receiver   
+&emsp;&emsp;An enumeration that specifies the synchronization state for the event receiver.  
 
   
 
 #### sequenceNumber  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp; Registers a remote event receiver   
+&emsp;&emsp;An integer that represents the relative sequence of the event.  
 
   
 

@@ -1,5 +1,5 @@
 # DefaultColumnTextValue Class
- DefaultColumnTextValue   
+ Holds DefaultColumnTextValue Properties   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -13,10 +13,10 @@ public class DefaultColumnTextValue: DefaultColumnValue
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [DefaultColumnTextValue()](OfficeDevPnP.Core.Entities.DefaultColumnTextValue.ctor1.md) |  DefaultColumnTextValue 
+| [DefaultColumnTextValue()](OfficeDevPnP.Core.Entities.DefaultColumnTextValue.ctor1.md) |  Holds DefaultColumnTextValue Properties 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [Text](OfficeDevPnP.Core.Entities.DefaultColumnTextValue.Text.md) | 
+| [Text](OfficeDevPnP.Core.Entities.DefaultColumnTextValue.Text.md) | Default column text value
 ## See also
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)

@@ -22,7 +22,7 @@ public static WorkflowDefinition[] GetWorkflowDefinitions(this Web web, Boolean 
 
 ### Return Value
 Type: WorkflowDefinition[]  
-  
+Returns all WorkflowDefinitions  
 
 
 ## See also

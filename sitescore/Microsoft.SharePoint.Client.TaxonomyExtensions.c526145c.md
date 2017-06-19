@@ -28,7 +28,7 @@ public static TaxonomyItem GetTaxonomyItemByPath(this Site site, String path, St
 
 ### Return Value
 Type: TaxonomyItem  
-  
+Returns TaxonomyItem object  
 
 
 ## See also

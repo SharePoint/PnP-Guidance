@@ -16,7 +16,7 @@ public static void AddHtmlToWikiPage(this Web web, String serverRelativePageUrl,
 
 #### serverRelativePageUrl  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Add HTML to a wiki page   
+&emsp;&emsp;Server relative url of the page to add html to  
 
   
 

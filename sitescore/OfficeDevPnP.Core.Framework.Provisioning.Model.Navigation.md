@@ -13,8 +13,8 @@ public class Navigation: BaseModel, IEquatable<Navigation>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [Navigation()](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.ctor1.md) |  The Navigation configurations of the Provisioning Template 
-| [Navigation(GlobalNavigation, CurrentNavigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.ctor2.md) |  The Navigation configurations of the Provisioning Template 
+| [Navigation()](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.ctor1.md) | Constructor for Navigation class 
+| [Navigation(GlobalNavigation, CurrentNavigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.ctor2.md) | Constructor for Navigation class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -23,8 +23,8 @@ public class Navigation: BaseModel, IEquatable<Navigation>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.3520ddbb.md) | 
-| [Equals(Navigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.d107522b.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.3520ddbb.md) | Compares object with Navigation
+| [Equals(Navigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.d107522b.md) | Compares Navigation object based on GlobalNavigation and CurrentNavigation properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)
