@@ -10,7 +10,7 @@ public ProvisioningTemplateDictionary(ProvisioningTemplate parentTemplate)
 ### Parameters
 #### parentTemplate  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
-&emsp;&emsp; Custom constructor to manage the ParentTemplate for the collection and all the children of the collection   
+&emsp;&emsp;Parent provisioning template  
 
 
 ## Remarks

@@ -22,8 +22,8 @@ public class ManagedNavigation: BaseModel, IEquatable<ManagedNavigation>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ManagedNavigation.3520ddbb.md) | 
-| [Equals(ManagedNavigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.ManagedNavigation.f7dec79c.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ManagedNavigation.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ManagedNavigation.3520ddbb.md) | Compares object with ManagedNavigation
+| [Equals(ManagedNavigation)](OfficeDevPnP.Core.Framework.Provisioning.Model.ManagedNavigation.f7dec79c.md) | Compares ManagedNavigation object based on TermStoreId and TermSetId
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ManagedNavigation.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -22,7 +22,7 @@ public static string GetPropertyBagValueString(this List list, String key, Strin
 
 #### defaultValue  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Get string typed property bag value. If does not contain, returns given default value.   
+&emsp;&emsp;Default value of the property bag  
 
   
 

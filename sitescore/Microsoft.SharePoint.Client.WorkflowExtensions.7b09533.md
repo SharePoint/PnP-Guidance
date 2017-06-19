@@ -10,7 +10,7 @@ public static void Delete(this WorkflowSubscription subscription)
 ### Parameters
 #### subscription  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.WorkflowServices.WorkflowSubscription  
-&emsp;&emsp; Deletes the subscription   
+&emsp;&emsp;the workflow subscription to delete  
 
   
 

@@ -21,8 +21,8 @@ public class User: BaseModel, IEquatable<User>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.User.3520ddbb.md) | 
-| [Equals(User)](OfficeDevPnP.Core.Framework.Provisioning.Model.User.30eb9518.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.User.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.User.3520ddbb.md) | Compares object with User
+| [Equals(User)](OfficeDevPnP.Core.Framework.Provisioning.Model.User.30eb9518.md) | Compares User object based on Name
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.User.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

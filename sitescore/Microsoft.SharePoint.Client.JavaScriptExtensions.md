@@ -14,7 +14,7 @@ public static class JavaScriptExtensions
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [ExistsJsLinkImplementation(ClientObject, String)](Microsoft.SharePoint.Client.JavaScriptExtensions.a66bc220.md) | 
+| [ExistsJsLinkImplementation(ClientObject, String)](Microsoft.SharePoint.Client.JavaScriptExtensions.a66bc220.md) | Checks if the given clientObject already has a custom JsLink with a specified key
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|

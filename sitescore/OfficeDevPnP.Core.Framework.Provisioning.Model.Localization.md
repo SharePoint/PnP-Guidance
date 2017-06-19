@@ -13,8 +13,8 @@ public class Localization: BaseModel, IEquatable<Localization>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [Localization()](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.ctor1.md) |  Domain Object used in the Provisioning template that defines a Localization item 
-| [Localization(Int32, String, String)](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.ctor2.md) |  Domain Object used in the Provisioning template that defines a Localization item 
+| [Localization()](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.ctor1.md) | Constructor for Localization class 
+| [Localization(Int32, String, String)](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.ctor2.md) | Constructor for Localization class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -24,8 +24,8 @@ public class Localization: BaseModel, IEquatable<Localization>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.3520ddbb.md) | 
-| [Equals(Localization)](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.8ae42b7d.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.3520ddbb.md) | Compares object with Localization
+| [Equals(Localization)](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.8ae42b7d.md) | Compares Localization object based on LCID, Name and ResourceFile
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

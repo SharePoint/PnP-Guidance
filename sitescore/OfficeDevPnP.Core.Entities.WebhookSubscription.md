@@ -16,10 +16,10 @@ public class WebhookSubscription
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [ClientState](OfficeDevPnP.Core.Entities.WebhookSubscription.ClientState.md) | 
-| [ExpirationDateTime](OfficeDevPnP.Core.Entities.WebhookSubscription.ExpirationDateTime.md) | 
-| [Id](OfficeDevPnP.Core.Entities.WebhookSubscription.Id.md) | 
-| [NotificationUrl](OfficeDevPnP.Core.Entities.WebhookSubscription.NotificationUrl.md) | 
-| [Resource](OfficeDevPnP.Core.Entities.WebhookSubscription.Resource.md) | 
+| [ClientState](OfficeDevPnP.Core.Entities.WebhookSubscription.ClientState.md) | An opaque string passed back to the client on all notifications. You can use this for validating notifications, tagging different subscriptions, or other reasons.
+| [ExpirationDateTime](OfficeDevPnP.Core.Entities.WebhookSubscription.ExpirationDateTime.md) | The expiration date for subscription. The expiration date should not be more than 6 months. By default, subscriptions are set to expire 6 months from when they are created.
+| [Id](OfficeDevPnP.Core.Entities.WebhookSubscription.Id.md) | Webhook subscription id
+| [NotificationUrl](OfficeDevPnP.Core.Entities.WebhookSubscription.NotificationUrl.md) | Webhook notification url
+| [Resource](OfficeDevPnP.Core.Entities.WebhookSubscription.Resource.md) | The resource endpoint URL you are creating the subscription for. For example a SharePoint List API URL
 ## See also
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)

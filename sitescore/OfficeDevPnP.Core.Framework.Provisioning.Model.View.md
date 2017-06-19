@@ -21,8 +21,8 @@ public class View: BaseModel, IEquatable<View>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.View.3520ddbb.md) | 
-| [Equals(View)](OfficeDevPnP.Core.Framework.Provisioning.Model.View.d29f207d.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.View.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.View.3520ddbb.md) | Compares object with View
+| [Equals(View)](OfficeDevPnP.Core.Framework.Provisioning.Model.View.d29f207d.md) | Compares View object based on currentXml and otherXml
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.View.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

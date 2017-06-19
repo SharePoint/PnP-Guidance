@@ -10,19 +10,19 @@ public static bool HasMinimalServerLibraryVersion(this ClientRuntimeContext clie
 ### Parameters
 #### clientContext  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.ClientRuntimeContext  
-&emsp;&emsp; Checks the server library version of the context for a minimally required version   
+&emsp;&emsp;clientContext to operate on  
 
   
 
 #### minimallyRequiredVersion  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Checks the server library version of the context for a minimally required version   
+&emsp;&emsp;provide version to validate  
 
   
 
 ### Return Value
 Type: bool  
-  
+True if it has minimal required version, false otherwise  
 
 
 ## See also

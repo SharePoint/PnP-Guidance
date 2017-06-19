@@ -10,7 +10,7 @@ public static void Delete(this WorkflowDefinition definition)
 ### Parameters
 #### definition  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.WorkflowServices.WorkflowDefinition  
-&emsp;&emsp; Deletes a workflow definition   
+&emsp;&emsp;the workflow defition to delete  
 
   
 

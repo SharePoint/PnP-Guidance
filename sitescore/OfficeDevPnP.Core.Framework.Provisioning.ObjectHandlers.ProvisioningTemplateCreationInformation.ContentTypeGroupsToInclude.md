@@ -1,5 +1,5 @@
 # ProvisioningTemplateCreationInformation.Properties ContentTypeGroupsToInclude
-  
+ List of content type groups   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public List<String> ContentTypeGroupsToInclude { get; set; }
 ### Property Value
 Type: System.Collections.Generic.List<System.String>  
 
+## Remarks
+  
 ## See also
 - [ProvisioningTemplateCreationInformation](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningTemplateCreationInformation.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md) 

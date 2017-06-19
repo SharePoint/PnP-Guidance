@@ -1,5 +1,5 @@
 # PnPPackageFileItem.Properties Content
-  
+ Content of the package file item   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public Byte[] Content { get; set; }
 ### Property Value
 Type: System.Byte[]  
 
+## Remarks
+  
 ## See also
 - [PnPPackageFileItem](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackageFileItem.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.md) 

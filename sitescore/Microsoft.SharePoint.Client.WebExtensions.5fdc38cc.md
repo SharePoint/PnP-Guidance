@@ -10,7 +10,7 @@ public static void ApplyProvisioningTemplate(this Web web, ProvisioningTemplate 
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Can be used to apply custom remote provisioning template on top of existing site.   
+&emsp;&emsp;web to apply remote template  
 
   
 

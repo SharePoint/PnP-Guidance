@@ -16,7 +16,7 @@ public static SPOTenantWebTemplateCollection GetWebTemplates(this Tenant tenant,
 
 #### lcid  
 &emsp;&emsp;Type: System.UInt32  
-&emsp;&emsp; Returns available webtemplates/site definitions   
+&emsp;&emsp;Locale identifier (LCID) for the language  
 
   
 
@@ -28,7 +28,7 @@ public static SPOTenantWebTemplateCollection GetWebTemplates(this Tenant tenant,
 
 ### Return Value
 Type: SPOTenantWebTemplateCollection  
-  
+Returns collection of SPTenantWebTemplate  
 
 
 ## See also

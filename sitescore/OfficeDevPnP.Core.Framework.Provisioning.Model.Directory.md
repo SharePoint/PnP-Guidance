@@ -13,8 +13,8 @@ public class Directory: BaseModel, IEquatable<Directory>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [Directory()](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.ctor1.md) |  Defines a Directory element, to describe a folder in the current repository that will be used to upload files into the target Site 
-| [Directory(String, String, Boolean, FileLevel, Boolean, String, String, String, ObjectSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.ctor2.md) |  Defines a Directory element, to describe a folder in the current repository that will be used to upload files into the target Site 
+| [Directory()](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.ctor1.md) | Constructor for Directory class 
+| [Directory(String, String, Boolean, FileLevel, Boolean, String, String, String, ObjectSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.ctor2.md) | Constructor for Directory class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -30,8 +30,8 @@ public class Directory: BaseModel, IEquatable<Directory>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.3520ddbb.md) | 
-| [Equals(Directory)](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.dbc03230.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.3520ddbb.md) | Compares object with Directory
+| [Equals(Directory)](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.dbc03230.md) | Compares Directory object based on ExcludedExtensions, Folder, IncludedExtensions, Level, MetaDataMappingFile, Overwrite, Recursive, Src and Security properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

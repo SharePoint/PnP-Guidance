@@ -10,7 +10,7 @@ public static string GetRelativeUrlForMasterByName(this Web web, String masterPa
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Returns the relative URL for a masterpage   
+&emsp;&emsp;Web to process  
 
   
 

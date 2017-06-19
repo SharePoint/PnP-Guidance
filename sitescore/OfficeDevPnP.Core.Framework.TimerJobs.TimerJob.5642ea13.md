@@ -10,7 +10,7 @@ public void UseOffice365Authentication(String userUPN, String password)
 ### Parameters
 #### userUPN  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Prepares the timerjob to operate against Office 365 with user and password credentials. Sets AuthenticationType to AuthenticationType.Office365   
+&emsp;&emsp;user name  
 
   
 

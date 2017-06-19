@@ -13,7 +13,7 @@ public class SiteSecurityPermissions: BaseModel
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [SiteSecurityPermissions()](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurityPermissions.ctor1.md) |  Permission settings for the target Site 
+| [SiteSecurityPermissions()](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurityPermissions.ctor1.md) | Constructor for SiteSecurityPermissions class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|

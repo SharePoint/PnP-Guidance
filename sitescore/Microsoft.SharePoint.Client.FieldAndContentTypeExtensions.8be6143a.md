@@ -22,7 +22,7 @@ public static Field CreateField(this Web web, String fieldAsXml, Boolean execute
 
 #### (optional) executeQuery  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Create field to web remotely   
+&emsp;&emsp;Executes query if true  
 
   
 

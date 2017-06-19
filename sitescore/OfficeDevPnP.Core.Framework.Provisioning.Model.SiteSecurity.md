@@ -13,7 +13,7 @@ public class SiteSecurity: BaseModel, IEquatable<SiteSecurity>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [SiteSecurity()](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurity.ctor1.md) |  Domain Object that is used in the site template 
+| [SiteSecurity()](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurity.ctor1.md) | Constructor for SiteSecurity class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -29,8 +29,8 @@ public class SiteSecurity: BaseModel, IEquatable<SiteSecurity>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurity.3520ddbb.md) | 
-| [Equals(SiteSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurity.98ba844a.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurity.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurity.3520ddbb.md) | Compares object with SiteSecurity
+| [Equals(SiteSecurity)](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurity.98ba844a.md) | Compares SiteSecurity object based on AdditionalAdministrators, AdditionalOwners, AdditionalMembers, AdditionalVisitors, SiteGroups, SiteSecurityPermissions, BreakRoleInheritance, CopyRoleAssignments and ClearSubscopes properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurity.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

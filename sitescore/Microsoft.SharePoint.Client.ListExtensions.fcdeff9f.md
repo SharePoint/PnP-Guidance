@@ -16,7 +16,7 @@ public static EventReceiverDefinition GetEventReceiverByName(this List list, Str
 
 #### name  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Returns an event receiver definition   
+&emsp;&emsp;Name of the event receiver  
 
   
 

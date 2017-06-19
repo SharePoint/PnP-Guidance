@@ -23,8 +23,8 @@ public class ContentTypeBinding: BaseModel, IEquatable<ContentTypeBinding>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.3520ddbb.md) | 
-| [Equals(ContentTypeBinding)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.5d983b29.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.3520ddbb.md) | Compares object with ContentTypeBinding
+| [Equals(ContentTypeBinding)](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.5d983b29.md) | Compares ContentTypeBinding object based on ContentTypeId, Default and Remove properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -10,13 +10,13 @@ public static void CreateViewsFromXMLString(this List list, String xmlString)
 ### Parameters
 #### list  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.List  
-&emsp;&emsp; Create list views based on specific xml structure in string   
+&emsp;&emsp;List to process  
 
   
 
 #### xmlString  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Create list views based on specific xml structure in string   
+&emsp;&emsp;XML string to create view  
 
   
 

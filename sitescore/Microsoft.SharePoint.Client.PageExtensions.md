@@ -33,8 +33,8 @@ public static class PageExtensions
 | [EnsureWikiPage(Web, String, String)](Microsoft.SharePoint.Client.PageExtensions.2efd9f8f.md) | Returns the Url for the requested wiki page, creates it if the pageis not yet available
 | [GetWebPartProperties(Web, Guid, String)](Microsoft.SharePoint.Client.PageExtensions.4f627997.md) | Returns web part properties
 | [GetWebParts(Web, String)](Microsoft.SharePoint.Client.PageExtensions.37813d52.md) | List the web parts on a page
-| [GetWebPartXml(Web, Guid, String)](Microsoft.SharePoint.Client.PageExtensions.dfcbd0d1.md) | 
-| [GetWikiPageContent(Web, String)](Microsoft.SharePoint.Client.PageExtensions.bfdefefa.md) | Returns the HTML contents of a wiki page
+| [GetWebPartXml(Web, Guid, String)](Microsoft.SharePoint.Client.PageExtensions.dfcbd0d1.md) | Gets XML string of a Webpart
+| [GetWikiPageContent(Web, String)](Microsoft.SharePoint.Client.PageExtensions.bfdefefa.md) | Gets the HTML contents of a wiki page
 | [LoadClientSidePage(Web, String)](Microsoft.SharePoint.Client.PageExtensions.398b8deb.md) | Loads a client side "modern" page
 | [SetWebPartProperty(Web, String, String, Guid, String)](Microsoft.SharePoint.Client.PageExtensions.ca57f4e2.md) | Sets a web part property
 | [SetWebPartProperty(Web, String, Int32, Guid, String)](Microsoft.SharePoint.Client.PageExtensions.da634517.md) | Sets a web part property

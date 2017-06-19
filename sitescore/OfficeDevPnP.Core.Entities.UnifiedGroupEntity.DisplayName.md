@@ -1,5 +1,5 @@
 # UnifiedGroupEntity.Properties DisplayName
-  
+ Unified group display name   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public string DisplayName { get; set; }
 ### Property Value
 Type: System.String  
 
+## Remarks
+  
 ## See also
 - [UnifiedGroupEntity](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

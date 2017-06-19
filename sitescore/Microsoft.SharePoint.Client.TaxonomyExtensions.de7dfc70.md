@@ -46,13 +46,13 @@ public static TermSet EnsureTermSet(this TermGroup parentGroup, String termSetNa
 
 #### (optional) termSetContact  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Ensures the named term set exists, returning a reference to the set, and creating or updating as necessary.   
+&emsp;&emsp;(Optional) E-mail address for term suggestions and feedback  
 
   
 
 #### (optional) termSetOwner  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Ensures the named term set exists, returning a reference to the set, and creating or updating as necessary.   
+&emsp;&emsp;Owner of termset  
 
   
 

@@ -10,19 +10,19 @@ public static WorkflowDefinition GetWorkflowDefinition(this Web web, Guid id)
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Returns a workflow definition   
+&emsp;&emsp;the target web  
 
   
 
 #### id  
 &emsp;&emsp;Type: System.Guid  
-&emsp;&emsp; Returns a workflow definition   
+&emsp;&emsp;the id of workflow definition  
 
   
 
 ### Return Value
 Type: WorkflowDefinition  
-  
+Returns a WorkflowDefinition object  
 
 
 ## See also

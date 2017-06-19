@@ -28,7 +28,7 @@ public static TermSetCollection GetTermSetsByName(this Site site, String name, I
 
 ### Return Value
 Type: TermSetCollection  
-  
+Returns collection of TermSet  
 
 
 ## See also

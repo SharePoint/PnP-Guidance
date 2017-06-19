@@ -22,8 +22,8 @@ public class AddIn: BaseModel, IEquatable<AddIn>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.AddIn.3520ddbb.md) | 
-| [Equals(AddIn)](OfficeDevPnP.Core.Framework.Provisioning.Model.AddIn.29788fde.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.AddIn.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.AddIn.3520ddbb.md) | Compares object with AddIn class
+| [Equals(AddIn)](OfficeDevPnP.Core.Framework.Provisioning.Model.AddIn.29788fde.md) | Compares AddIn object based on PackagePath and source
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.AddIn.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

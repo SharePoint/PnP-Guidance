@@ -10,7 +10,7 @@ public OpenXMLConnector(Stream packageStream)
 ### Parameters
 #### packageStream  
 &emsp;&emsp;Type: System.IO.Stream  
-&emsp;&emsp; OpenXMLConnector constructor. Allows to manage a .PNP OpenXML package through an in memory stream.   
+&emsp;&emsp;The package stream  
 
 
 ## Remarks

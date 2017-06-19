@@ -1,5 +1,5 @@
 # ICommitableFileConnector.Commit Method  
-  
+ Commits the file   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

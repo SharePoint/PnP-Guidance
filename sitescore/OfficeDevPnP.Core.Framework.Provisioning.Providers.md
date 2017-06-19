@@ -2,7 +2,7 @@
 ## Classes
 |**Class**|**Description**|
 |:-----|:-----|
-|[TemplateProviderBase](OfficeDevPnP.Core.Framework.Provisioning.Providers.TemplateProviderBase.md)||
+|[TemplateProviderBase](OfficeDevPnP.Core.Framework.Provisioning.Providers.TemplateProviderBase.md)|Handles methods for Template Provider|
 ## Interfaces
 |**Interface**|**Description**|
 |:-----|:-----|

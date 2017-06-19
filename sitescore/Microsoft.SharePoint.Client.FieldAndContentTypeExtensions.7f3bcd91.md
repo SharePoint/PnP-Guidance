@@ -10,7 +10,7 @@ public static void RemoveFieldById(this Web web, String fieldId)
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Removes a field by specifying its ID   
+&emsp;&emsp;Web to process  
 
   
 

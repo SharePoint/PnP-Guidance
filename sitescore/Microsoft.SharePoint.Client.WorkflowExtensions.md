@@ -12,7 +12,7 @@ public static class WorkflowExtensions
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [AddWorkflowDefinition(Web, WorkflowDefinition, Boolean)](Microsoft.SharePoint.Client.WorkflowExtensions.ed3d4bd4.md) | 
+| [AddWorkflowDefinition(Web, WorkflowDefinition, Boolean)](Microsoft.SharePoint.Client.WorkflowExtensions.ed3d4bd4.md) | Adds a workflow definition
 | [AddWorkflowSubscription(List, String, String, Boolean, Boolean, Boolean, String, String, Dictionary&lt;String, String&gt;)](Microsoft.SharePoint.Client.WorkflowExtensions.db48bc3.md) | Adds a workflow subscription
 | [AddWorkflowSubscription(List, WorkflowDefinition, String, Boolean, Boolean, Boolean, String, String, Dictionary&lt;String, String&gt;)](Microsoft.SharePoint.Client.WorkflowExtensions.22152967.md) | Adds a workflow subscription to a list
 | [CancelWorkFlow(WorkflowInstance)](Microsoft.SharePoint.Client.WorkflowExtensions.1afb83c2.md) | Cancels a workflow instance

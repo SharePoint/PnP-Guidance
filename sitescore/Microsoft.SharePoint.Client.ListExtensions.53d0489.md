@@ -10,13 +10,13 @@ public static View GetViewByName(this List list, String name, params Expression<
 ### Parameters
 #### list  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.List  
-&emsp;&emsp; Gets a view by Name   
+&emsp;&emsp;List to process  
 
   
 
 #### name  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Gets a view by Name   
+&emsp;&emsp;Name of the view  
 
   
 

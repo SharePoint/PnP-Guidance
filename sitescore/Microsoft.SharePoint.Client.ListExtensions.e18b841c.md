@@ -28,7 +28,7 @@ public static List CreateDocumentLibrary(this Web web, String listName, Boolean 
 
 #### (optional) urlPath  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Adds a document library to a web. Execute Query is called during this implementation   
+&emsp;&emsp;Path of the url  
 
   
 

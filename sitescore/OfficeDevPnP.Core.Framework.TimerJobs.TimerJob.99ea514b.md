@@ -10,7 +10,7 @@ public void SetEnumerationCredentials(String userUPN, String password)
 ### Parameters
 #### userUPN  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Provides the timer job with the enumeration credentials. For Office 365 username and password is sufficient   
+&emsp;&emsp;user name  
 
   
 

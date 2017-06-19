@@ -28,7 +28,7 @@ public static bool AddJsLink(this Site site, String key, String scriptLinks, Int
 
 #### (optional) sequence  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp; Injects links to javascript files via a adding a custom action to the site   
+&emsp;&emsp;Specifies the ordering priority for actions. A value is 0 indicates that the button will appear at the first position on the ribbon.  
 
   
 

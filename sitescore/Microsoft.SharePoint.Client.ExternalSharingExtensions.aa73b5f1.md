@@ -34,7 +34,7 @@ public static SharingResult InviteExternalUser(this Group group, String email, B
 
 ### Return Value
 Type: SharingResult  
-  
+A SharingResult object  
 
 
 ## See also

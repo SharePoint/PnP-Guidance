@@ -22,14 +22,14 @@ public class PnPPackage: IDisposable
 | [FilesPackageParts](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.FilesPackageParts.md) | The Files Parts of the package
 | [Manifest](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.Manifest.md) | The Manifest of the package file
 | [ManifestPart](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.ManifestPart.md) | The Manifest Part of the package file
-| [Package](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.Package.md) | 
+| [Package](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.Package.md) | The complete package object
 | [Properties](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.Properties.md) | The Properties of the package
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [AddFile(String, Byte[])](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.c1f2e4e7.md) | 
-| [ClearFiles()](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.8277ac85.md) | 
-| [Open(String, FileMode, FileAccess)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.423b4a84.md) | 
-| [Open(Stream, FileMode, FileAccess)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.fa8e8f48.md) | 
+| [AddFile(String, Byte[])](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.c1f2e4e7.md) | Adds file to the package
+| [ClearFiles()](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.8277ac85.md) | Clear the files having package parts with specific relationship type
+| [Open(String, FileMode, FileAccess)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.423b4a84.md) | Opens the package and returns it based on the path
+| [Open(Stream, FileMode, FileAccess)](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.fa8e8f48.md) | Opens the package and returns it based on the stream
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.md)

@@ -10,13 +10,13 @@ public static WorkflowInstanceCollection GetWorkflowInstances(this Web web)
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Returns alls workflow instances for a site   
+&emsp;&emsp;the target web  
 
   
 
 ### Return Value
 Type: WorkflowInstanceCollection  
-  
+Returns a WorkflowInstanceCollection object  
 
 
 ## See also

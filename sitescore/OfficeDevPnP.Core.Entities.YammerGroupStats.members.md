@@ -1,5 +1,5 @@
 # YammerGroupStats.Properties members
-  
+ Number of users in the yammer group   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public int members { get; set; }
 ### Property Value
 Type: System.Int32  
 
+## Remarks
+  
 ## See also
 - [YammerGroupStats](OfficeDevPnP.Core.Entities.YammerGroupStats.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

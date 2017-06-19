@@ -28,7 +28,7 @@ public static List GetListByUrl(this Web web, String webRelativeUrl, params Expr
 
 ### Return Value
 Type: List  
-  
+Returns list if found, null if no list is found.  
 
 
 ## See also

@@ -22,7 +22,7 @@ public static TermGroup GetTermGroupByName(this Site site, String name)
 
 ### Return Value
 Type: TermGroup  
-  
+Returns TermGroup object  
 
 
 ## See also

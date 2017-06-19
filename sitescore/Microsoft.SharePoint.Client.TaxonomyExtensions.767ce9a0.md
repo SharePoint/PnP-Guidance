@@ -10,25 +10,25 @@ public static void ImportTerms(this Site site, String[] termLines, Int32 lcid, S
 ### Parameters
 #### site  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Site  
-&emsp;&emsp; Imports an array of &brvbar; delimited strings into the deafult site collection termstore. Specify strings in this format: TermGroup&brvbar;TermSet&brvbar;Term E.g. "Locations&brvbar;Nordics&brvbar;Sweden"   
+&emsp;&emsp;The current site  
 
   
 
 #### termLines  
 &emsp;&emsp;Type: System.String[]  
-&emsp;&emsp; Imports an array of &brvbar; delimited strings into the deafult site collection termstore. Specify strings in this format: TermGroup&brvbar;TermSet&brvbar;Term E.g. "Locations&brvbar;Nordics&brvbar;Sweden"   
+&emsp;&emsp;Array of TermLines  
 
   
 
 #### lcid  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp; Imports an array of &brvbar; delimited strings into the deafult site collection termstore. Specify strings in this format: TermGroup&brvbar;TermSet&brvbar;Term E.g. "Locations&brvbar;Nordics&brvbar;Sweden"   
+&emsp;&emsp;Locale identifier (LCID) for the language  
 
   
 
 #### (optional) delimiter  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Imports an array of &brvbar; delimited strings into the deafult site collection termstore. Specify strings in this format: TermGroup&brvbar;TermSet&brvbar;Term E.g. "Locations&brvbar;Nordics&brvbar;Sweden"   
+&emsp;&emsp;delimeter which seperates terms  
 
   
 

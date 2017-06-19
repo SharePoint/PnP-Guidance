@@ -28,7 +28,7 @@ public static Term AddTermToTermset(this Site site, Guid termSetId, String term)
 
 ### Return Value
 Type: Term  
-  
+Returns Term object  
 
 
 ## See also

@@ -22,7 +22,7 @@ public static Nullable<Int32> GetPropertyBagValueInt(this List list, String key,
 
 #### defaultValue  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp; Get int typed property bag value. If does not contain, returns default value.   
+&emsp;&emsp;Default value of the property bag  
 
   
 

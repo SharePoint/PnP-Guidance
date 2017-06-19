@@ -1,5 +1,5 @@
 # ListInstance.ListInstance members 
-  
+ Constructor for the ListInstance class   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,49 +10,51 @@ public ListInstance(IEnumerable<ContentTypeBinding> contentTypeBindings, IEnumer
 ### Parameters
 #### contentTypeBindings  
 &emsp;&emsp;Type: System.Collections.Generic.IEnumerable<OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding>  
-&emsp;&emsp;  
+&emsp;&emsp;ContentTypeBindings of the list  
 
 
 #### views  
 &emsp;&emsp;Type: System.Collections.Generic.IEnumerable<OfficeDevPnP.Core.Framework.Provisioning.Model.View>  
-&emsp;&emsp;  
+&emsp;&emsp;Views of the list  
 
 
 #### fields  
 &emsp;&emsp;Type: System.Collections.Generic.IEnumerable<OfficeDevPnP.Core.Framework.Provisioning.Model.Field>  
-&emsp;&emsp;  
+&emsp;&emsp;Fields of the list  
 
 
 #### fieldRefs  
 &emsp;&emsp;Type: System.Collections.Generic.IEnumerable<OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef>  
-&emsp;&emsp;  
+&emsp;&emsp;FieldRefs of the list  
 
 
 #### dataRows  
 &emsp;&emsp;Type: System.Collections.Generic.List<OfficeDevPnP.Core.Framework.Provisioning.Model.DataRow>  
-&emsp;&emsp;  
+&emsp;&emsp;DataRows of the list  
 
 
 #### fieldDefaults  
 &emsp;&emsp;Type: System.Collections.Generic.Dictionary<System.String, System.String>  
-&emsp;&emsp;  
+&emsp;&emsp;FieldDefaults of the list  
 
 
 #### security  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.md)  
-&emsp;&emsp;  
+&emsp;&emsp;Security Rules of the list  
 
 
 #### folders  
 &emsp;&emsp;Type: System.Collections.Generic.List<OfficeDevPnP.Core.Framework.Provisioning.Model.Folder>  
-&emsp;&emsp;  
+&emsp;&emsp;List Folders  
 
 
 #### userCustomActions  
 &emsp;&emsp;Type: System.Collections.Generic.List<OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction>  
-&emsp;&emsp;  
+&emsp;&emsp;UserCustomActions of the list  
 
 
+## Remarks
+  
 ## See also
 - [ListInstance](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

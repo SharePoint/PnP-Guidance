@@ -1,5 +1,5 @@
 # ProvisioningProgressDelegate Class
-  
+ Privisioning Progress Delegate   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -13,7 +13,7 @@ public class ProvisioningProgressDelegate: MulticastDelegate
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [ProvisioningProgressDelegate(Object, IntPtr)](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningProgressDelegate.ctor1.md) |  
+| [ProvisioningProgressDelegate(Object, IntPtr)](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningProgressDelegate.ctor1.md) |  Privisioning Progress Delegate 
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|

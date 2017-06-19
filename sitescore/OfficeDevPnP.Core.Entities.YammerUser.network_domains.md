@@ -1,5 +1,5 @@
 # YammerUser.Properties network_domains
-  
+ Represents yammer user list of network domains   
 
 **Namespace:** [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public IList<String> network_domains { get; set; }
 ### Property Value
 Type: System.Collections.Generic.IList<System.String>  
 
+## Remarks
+  
 ## See also
 - [YammerUser](OfficeDevPnP.Core.Entities.YammerUser.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

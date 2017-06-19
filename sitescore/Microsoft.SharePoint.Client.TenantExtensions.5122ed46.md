@@ -94,7 +94,7 @@ public static Guid CreateSiteCollection(this Tenant tenant, String siteFullUrl, 
 
 ### Return Value
 Type: Guid  
-  
+Guid of the created site collection and Guid.Empty is the wait parameter is specified as false. Returns Guid.Empty if the wait is cancelled.  
 
 
 ## See also

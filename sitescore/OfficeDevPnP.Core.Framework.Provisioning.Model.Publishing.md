@@ -13,8 +13,8 @@ public class Publishing: BaseModel, IEquatable<Publishing>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [Publishing()](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.ctor1.md) |  Defines the Publishing configuration to provision 
-| [Publishing(AutoCheckRequirementsOptions, DesignPackage, IEnumerable<AvailableWebTemplate>, IEnumerable<PageLayout>)](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.ctor2.md) |  Defines the Publishing configuration to provision 
+| [Publishing()](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.ctor1.md) | Constructor for Publishing class 
+| [Publishing(AutoCheckRequirementsOptions, DesignPackage, IEnumerable<AvailableWebTemplate>, IEnumerable<PageLayout>)](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.ctor2.md) | Constructor for Publishing class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -25,8 +25,8 @@ public class Publishing: BaseModel, IEquatable<Publishing>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.3520ddbb.md) | 
-| [Equals(Publishing)](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.200c6540.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.3520ddbb.md) | Compares object with Publishing
+| [Equals(Publishing)](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.200c6540.md) | Compares Publishing object based on AutoCheckRequirements, AvailableWebTemplates, DesignPackage and PageLayout properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

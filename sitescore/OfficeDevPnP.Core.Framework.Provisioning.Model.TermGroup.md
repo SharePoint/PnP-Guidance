@@ -13,8 +13,8 @@ public class TermGroup: BaseModel, IEquatable<TermGroup>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [TermGroup()](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.ctor1.md) |  
-| [TermGroup(Guid, String, List<TermSet>, Boolean, IEnumerable<User>, IEnumerable<User>)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.ctor2.md) |  
+| [TermGroup()](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.ctor1.md) | Constructor for TermGroup class 
+| [TermGroup(Guid, String, List<TermSet>, Boolean, IEnumerable<User>, IEnumerable<User>)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.ctor2.md) | Constructor for TermGroup class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -28,8 +28,8 @@ public class TermGroup: BaseModel, IEquatable<TermGroup>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.3520ddbb.md) | 
-| [Equals(TermGroup)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.2061d3d1.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.3520ddbb.md) | Compares object with TermGroup
+| [Equals(TermGroup)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.2061d3d1.md) | Compares TermGroup object based on Id, Name, Description and TermSets.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -13,8 +13,8 @@ public class WorkflowSubscription: BaseModel, IEquatable<WorkflowSubscription>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [WorkflowSubscription()](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.ctor1.md) |  Defines a Workflow Subscription to provision 
-| [WorkflowSubscription(Dictionary<String, String>)](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.ctor2.md) |  Defines a Workflow Subscription to provision 
+| [WorkflowSubscription()](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.ctor1.md) | Default Constructor 
+| [WorkflowSubscription(Dictionary<String, String>)](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.ctor2.md) | Constructor 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -31,8 +31,8 @@ public class WorkflowSubscription: BaseModel, IEquatable<WorkflowSubscription>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.3520ddbb.md) | 
-| [Equals(WorkflowSubscription)](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.ed86df1.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.3520ddbb.md) | Comapres given workflow subscription object which is to be provisioned
+| [Equals(WorkflowSubscription)](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.ed86df1.md) | Comapres given workflow subscription object which is to be provisioned
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.1c6872bd.md) | Gets hash code of workflow subscription
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

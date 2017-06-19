@@ -10,19 +10,19 @@ public static void SetMasterPagesByUrl(this Web web, String masterPageUrl, Strin
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Can be used to set master page and custom master page in single command   
+&emsp;&emsp;Current web  
 
   
 
 #### masterPageUrl  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Can be used to set master page and custom master page in single command   
+&emsp;&emsp;Url of the master page  
 
   
 
 #### customMasterPageUrl  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Can be used to set master page and custom master page in single command   
+&emsp;&emsp;Url of the custom master page  
 
   
 

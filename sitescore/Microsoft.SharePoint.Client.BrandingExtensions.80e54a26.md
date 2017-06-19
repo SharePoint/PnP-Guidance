@@ -34,19 +34,19 @@ public static File DeployMasterPage(this Web web, String sourceFilePath, String 
 
 #### (optional) uiVersion  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Deploys a new masterpage   
+&emsp;&emsp;UIVersion of the masterpage  
 
   
 
 #### (optional) defaultCSSFile  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Deploys a new masterpage   
+&emsp;&emsp;DefaultCSSFile of the masterpage  
 
   
 
 #### (optional) folderPath  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Deploys a new masterpage   
+&emsp;&emsp;FolderPath of the masterpage  
 
   
 

@@ -46,7 +46,7 @@ public static SharingResult ShareSiteWithPeoplePickerValue(this Web web, String 
 
 ### Return Value
 Type: SharingResult  
-  
+A SharingResult object  
 
 
 ## See also

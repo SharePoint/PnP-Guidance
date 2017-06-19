@@ -16,7 +16,7 @@ public static File UploadFile(this Folder folder, String fileName, String localF
 
 #### fileName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Uploads a file to the specified folder.   
+&emsp;&emsp;Name of the file  
 
   
 

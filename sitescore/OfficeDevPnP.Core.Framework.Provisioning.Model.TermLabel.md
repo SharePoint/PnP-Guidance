@@ -17,14 +17,14 @@ public class TermLabel: BaseModel, IEquatable<TermLabel>
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [IsDefaultForLanguage](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.IsDefaultForLanguage.md) | 
-| [Language](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.Language.md) | 
-| [Value](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.Value.md) | 
+| [IsDefaultForLanguage](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.IsDefaultForLanguage.md) | Gets or sets the IsDefaultForLangauage flag for the term label
+| [Language](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.Language.md) | Gets or sets the Language for the term label
+| [Value](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.Value.md) | Gets or sets the Value for the term label
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.3520ddbb.md) | 
-| [Equals(TermLabel)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.7fc226d.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.3520ddbb.md) | Compares object with TermLabel
+| [Equals(TermLabel)](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.7fc226d.md) | Compares TermLabel object based on Language and Value.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

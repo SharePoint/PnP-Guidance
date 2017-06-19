@@ -10,19 +10,19 @@ public static WorkflowSubscription GetWorkflowSubscription(this List list, Strin
 ### Parameters
 #### list  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.List  
-&emsp;&emsp; Returns a workflow subscription (associations) for a list   
+&emsp;&emsp;The target list  
 
   
 
 #### name  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Returns a workflow subscription (associations) for a list   
+&emsp;&emsp;Name of workflow subscription to get  
 
   
 
 ### Return Value
 Type: WorkflowSubscription  
-  
+Returns a WorkflowSubscription object  
 
 
 ## See also

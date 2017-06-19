@@ -1,5 +1,5 @@
 # Publishing.Publishing members 
-  
+ Constructor for Publishing class   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,24 +10,26 @@ public Publishing(AutoCheckRequirementsOptions autoCheckRequirements, DesignPack
 ### Parameters
 #### autoCheckRequirements  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.AutoCheckRequirementsOptions](OfficeDevPnP.Core.Framework.Provisioning.Model.AutoCheckRequirementsOptions.md)  
-&emsp;&emsp;  
+&emsp;&emsp;AutoCheckRequirementsOption object  
 
 
 #### (optional) designPackage  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.DesignPackage](OfficeDevPnP.Core.Framework.Provisioning.Model.DesignPackage.md)  
-&emsp;&emsp;  
+&emsp;&emsp;Design Package for publishing  
 
 
 #### (optional) availableWebTemplates  
 &emsp;&emsp;Type: System.Collections.Generic.IEnumerable<OfficeDevPnP.Core.Framework.Provisioning.Model.AvailableWebTemplate>  
-&emsp;&emsp;  
+&emsp;&emsp;Available WebTemplates for publishing  
 
 
 #### (optional) pageLayouts  
 &emsp;&emsp;Type: System.Collections.Generic.IEnumerable<OfficeDevPnP.Core.Framework.Provisioning.Model.PageLayout>  
-&emsp;&emsp;  
+&emsp;&emsp;PageLayouts for publishing  
 
 
+## Remarks
+  
 ## See also
 - [Publishing](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

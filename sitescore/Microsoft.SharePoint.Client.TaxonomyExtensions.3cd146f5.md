@@ -22,7 +22,7 @@ public static TermGroup GetTermGroupById(this Site site, Guid termGroupId)
 
 ### Return Value
 Type: TermGroup  
-  
+Returns TermGroup object  
 
 
 ## See also

@@ -10,55 +10,55 @@ public static View CreateView(this List list, String viewName, ViewType viewType
 ### Parameters
 #### list  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.List  
-&emsp;&emsp; Create view to existing list   
+&emsp;&emsp;List to process  
 
   
 
 #### viewName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Create view to existing list   
+&emsp;&emsp;Name of the view  
 
   
 
 #### viewType  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.ViewType  
-&emsp;&emsp; Create view to existing list   
+&emsp;&emsp;Type of the view  
 
   
 
 #### viewFields  
 &emsp;&emsp;Type: System.String[]  
-&emsp;&emsp; Create view to existing list   
+&emsp;&emsp;Fields of the view  
 
   
 
 #### rowLimit  
 &emsp;&emsp;Type: System.UInt32  
-&emsp;&emsp; Create view to existing list   
+&emsp;&emsp;Row limit of the view  
 
   
 
 #### setAsDefault  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Create view to existing list   
+&emsp;&emsp;Set as default view  
 
   
 
 #### (optional) query  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Create view to existing list   
+&emsp;&emsp;Query for view creation  
 
   
 
 #### (optional) personal  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Create view to existing list   
+&emsp;&emsp;Personal View  
 
   
 
 #### (optional) paged  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Create view to existing list   
+&emsp;&emsp;Paged view  
 
   
 

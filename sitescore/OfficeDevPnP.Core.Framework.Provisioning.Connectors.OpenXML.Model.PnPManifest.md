@@ -17,6 +17,6 @@ public class PnPManifest
 |**Name**|**Description**|
 |:-----|:-----|
 | [Type](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.PnPManifest.Type.md) | The Type of the package file defined by the current manifest
-| [Version](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.PnPManifest.Version.md) | 
+| [Version](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.PnPManifest.Version.md) | The version of the package file
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.md)

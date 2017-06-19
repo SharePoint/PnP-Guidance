@@ -1,5 +1,5 @@
 # TemplateProviderBase.GetTemplate Method  
-  
+ Gets ProvisioningTemplate   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Providers](OfficeDevPnP.Core.Framework.Provisioning.Providers.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,18 +10,20 @@ public abstract ProvisioningTemplate GetTemplate(String uri, ITemplateProviderEx
 ### Parameters
 #### uri  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;A SharePoint uri  
 
   
 
 #### extensions  
 &emsp;&emsp;Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateProviderExtension[]  
-&emsp;&emsp;  
+&emsp;&emsp;Collection of provisioning template extensions  
 
   
 
 ### Return Value
 Type: ProvisioningTemplate  
+Returns a ProvisioningTemplate  
+
 
 ## See also
 - [TemplateProviderBase](OfficeDevPnP.Core.Framework.Provisioning.Providers.TemplateProviderBase.md) 

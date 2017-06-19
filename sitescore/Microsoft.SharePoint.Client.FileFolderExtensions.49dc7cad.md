@@ -16,7 +16,7 @@ public static File UploadFileWebDav(this Folder folder, String fileName, String 
 
 #### fileName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Uploads a file to the specified folder by saving the binary directly (via webdav).   
+&emsp;&emsp;Name of the file  
 
   
 

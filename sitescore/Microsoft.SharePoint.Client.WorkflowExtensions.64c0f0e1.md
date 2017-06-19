@@ -10,7 +10,7 @@ public static void ResumeWorkflow(this WorkflowInstance instance)
 ### Parameters
 #### instance  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.WorkflowServices.WorkflowInstance  
-&emsp;&emsp; Resumes a workflow   
+&emsp;&emsp;the workflow instance to resume  
 
   
 

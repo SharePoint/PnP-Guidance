@@ -22,7 +22,7 @@ public static bool ExistsJsLink(this Site site, String key)
 
 ### Return Value
 Type: bool  
-  
+True if custom JsLink exists, false otherwise  
 
 
 ## See also

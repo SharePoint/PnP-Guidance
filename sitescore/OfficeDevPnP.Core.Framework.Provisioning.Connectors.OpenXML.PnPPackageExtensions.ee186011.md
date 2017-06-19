@@ -1,5 +1,5 @@
 # PnPPackageExtensions.UnpackTemplate Method  
-  
+ Unpacks template into PnP OpenXML package info object   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,12 +10,14 @@ public static PnPInfo UnpackTemplate(this Byte[] packageBytes)
 ### Parameters
 #### packageBytes  
 &emsp;&emsp;Type: System.Byte[]  
-&emsp;&emsp;  
+&emsp;&emsp;Package Byte  
 
   
 
 ### Return Value
 Type: PnPInfo  
+Returns site template  
+
 
 ## See also
 - [PnPPackageExtensions](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackageExtensions.md) 

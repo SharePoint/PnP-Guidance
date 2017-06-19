@@ -16,55 +16,55 @@ public static void SetSiteProperties(this Tenant tenant, String siteFullUrl, Str
 
 #### siteFullUrl  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Sets tenant site Properties   
+&emsp;&emsp;full url of site  
 
   
 
 #### (optional) title  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Sets tenant site Properties   
+&emsp;&emsp;site title  
 
   
 
 #### (optional) allowSelfServiceUpgrade  
 &emsp;&emsp;Type: System.Nullable&lt;System.Boolean&gt;  
-&emsp;&emsp; Sets tenant site Properties   
+&emsp;&emsp;Boolean value to allow serlf service upgrade  
 
   
 
 #### (optional) sharingCapability  
 &emsp;&emsp;Type: System.Nullable&lt;Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities&gt;  
-&emsp;&emsp; Sets tenant site Properties   
+&emsp;&emsp;SharingCapabilities enumeration value (i.e. Disabled/ExternalUserSharingOnly/ExternalUserAndGuestSharing/ExistingExternalUserSharingOnly)  
 
   
 
 #### (optional) storageMaximumLevel  
 &emsp;&emsp;Type: System.Nullable&lt;System.Int64&gt;  
-&emsp;&emsp; Sets tenant site Properties   
+&emsp;&emsp;A limit on all disk space used by the site collection  
 
   
 
 #### (optional) storageWarningLevel  
 &emsp;&emsp;Type: System.Nullable&lt;System.Int64&gt;  
-&emsp;&emsp; Sets tenant site Properties   
+&emsp;&emsp;A storage warning level for when administrators of the site collection receive advance notice before available storage is expended.  
 
   
 
 #### (optional) userCodeMaximumLevel  
 &emsp;&emsp;Type: System.Nullable&lt;System.Double&gt;  
-&emsp;&emsp; Sets tenant site Properties   
+&emsp;&emsp;A value that represents the maximum allowed resource usage for the site/  
 
   
 
 #### (optional) userCodeWarningLevel  
 &emsp;&emsp;Type: System.Nullable&lt;System.Double&gt;  
-&emsp;&emsp; Sets tenant site Properties   
+&emsp;&emsp;A value that determines the level of resource usage at which a warning e-mail message is sent  
 
   
 
 #### (optional) noScriptSite  
 &emsp;&emsp;Type: System.Nullable&lt;System.Boolean&gt;  
-&emsp;&emsp; Sets tenant site Properties   
+&emsp;&emsp;Boolean value which allows to customize the site using scripts  
 
   
 

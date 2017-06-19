@@ -10,13 +10,13 @@ public static string GetSearchConfiguration(this Site site)
 ### Parameters
 #### site  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Site  
-&emsp;&emsp; Returns the current search configuration as as string   
+&emsp;&emsp;A SharePoint site  
 
   
 
 ### Return Value
 Type: string  
-  
+Returns search configuration  
 
 
 ## See also

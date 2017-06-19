@@ -1,5 +1,5 @@
 # ProvisioningTemplateInfo.Properties ProvisioningTime
-  
+ Gets or sets the provisioning time for the provisioning template   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public DateTime ProvisioningTime { get; set; }
 ### Property Value
 Type: System.DateTime  
 
+## Remarks
+  
 ## See also
 - [ProvisioningTemplateInfo](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateInfo.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

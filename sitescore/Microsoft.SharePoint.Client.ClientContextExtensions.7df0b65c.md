@@ -1,5 +1,5 @@
 # ClientContextExtensions.ExecuteQueryRetry Method  
-  
+ Executes the current set of data retrieval queries and method invocations and retries it if needed.   
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,7 +10,7 @@ public static void ExecuteQueryRetry(this ClientRuntimeContext clientContext, In
 ### Parameters
 #### clientContext  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.ClientRuntimeContext  
-&emsp;&emsp;  
+&emsp;&emsp;clientContext to operate on  
 
   
 

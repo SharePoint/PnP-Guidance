@@ -22,7 +22,7 @@ public static IEnumerable<UserCustomAction> GetCustomActions(this Web web, param
 
 ### Return Value
 Type: IEnumerable<UserCustomAction>  
-  
+Returns all custom actions  
 
 
 ## See also

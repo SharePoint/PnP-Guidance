@@ -1,5 +1,5 @@
 # TemplateProviderBase.Save Method  
-  
+ Saves ProvisioningTemplate   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Providers](OfficeDevPnP.Core.Framework.Provisioning.Providers.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,13 +10,13 @@ public abstract void Save(ProvisioningTemplate template, ITemplateProviderExtens
 ### Parameters
 #### template  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
-&emsp;&emsp;  
+&emsp;&emsp;Provisioning Template  
 
   
 
 #### extensions  
 &emsp;&emsp;Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateProviderExtension[]  
-&emsp;&emsp;  
+&emsp;&emsp;Collection of provisioning template extensions  
 
   
 

@@ -22,8 +22,8 @@ public class PageLayout: BaseModel, IEquatable<PageLayout>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.PageLayout.3520ddbb.md) | 
-| [Equals(PageLayout)](OfficeDevPnP.Core.Framework.Provisioning.Model.PageLayout.410a89f2.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.PageLayout.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.PageLayout.3520ddbb.md) | Compares object with PageLayout
+| [Equals(PageLayout)](OfficeDevPnP.Core.Framework.Provisioning.Model.PageLayout.410a89f2.md) | Compares PageLayout object based on Path and IsDefault properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.PageLayout.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

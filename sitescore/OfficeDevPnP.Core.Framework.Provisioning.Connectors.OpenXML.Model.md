@@ -10,4 +10,4 @@
 ## Enumerations
 |**Enumeration**|**Description**|
 |:-----|:-----|
-|[PackageType](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.PackageType.md)||
+|[PackageType](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.PackageType.md)|Types of package|

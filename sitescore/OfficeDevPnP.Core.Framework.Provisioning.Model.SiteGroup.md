@@ -13,8 +13,8 @@ public class SiteGroup: BaseModel, IEquatable<SiteGroup>
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [SiteGroup()](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.ctor1.md) |  The base type for a Site Group 
-| [SiteGroup(IEnumerable<User>)](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.ctor2.md) |  The base type for a Site Group 
+| [SiteGroup()](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.ctor1.md) | Constructor for SiteGroup class 
+| [SiteGroup(IEnumerable<User>)](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.ctor2.md) | Constructor for SiteGroup class 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
@@ -30,8 +30,8 @@ public class SiteGroup: BaseModel, IEquatable<SiteGroup>
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.3520ddbb.md) | 
-| [Equals(SiteGroup)](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.3ae0cc70.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.3520ddbb.md) | Compares object with SiteGroup
+| [Equals(SiteGroup)](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.3ae0cc70.md) | Compares SiteGroup object based on AllowMembersEditMembership, AllowRequestToJoinLeave, AutoAcceptRequestToJoinLeave, Description, Members, OnlyAllowMembersViewMembership, Owner, RequestToJoinLeaveEmailSetting and Title properties.
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

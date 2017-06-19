@@ -1,5 +1,5 @@
 # ObjectSecurity.ObjectSecurity members 
-  
+ Constructor for ObjectSecurity class   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,9 +10,11 @@ public ObjectSecurity(IEnumerable<RoleAssignment> roleAssignments)
 ### Parameters
 #### roleAssignments  
 &emsp;&emsp;Type: System.Collections.Generic.IEnumerable<OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignment>  
-&emsp;&emsp;  
+&emsp;&emsp;RoleAssignments for security component  
 
 
+## Remarks
+  
 ## See also
 - [ObjectSecurity](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

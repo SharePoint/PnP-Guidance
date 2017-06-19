@@ -1,5 +1,5 @@
 # PnPClientContext.ConvertFrom Method  
-  
+ Converts ClientContext into PnPClientContext   
 
 **Namespace:** [OfficeDevPnP.Core](OfficeDevPnP.Core.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,24 +10,26 @@ public static PnPClientContext ConvertFrom(ClientContext clientContext, Int32 re
 ### Parameters
 #### clientContext  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.ClientContext  
-&emsp;&emsp;  
+&emsp;&emsp;A SharePoint ClientContext for resource operations  
 
   
 
 #### (optional) retryCount  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp;  
+&emsp;&emsp;Maximum amount of retries before giving up  
 
   
 
 #### (optional) delay  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp;  
+&emsp;&emsp;Initial delay in milliseconds  
 
   
 
 ### Return Value
 Type: PnPClientContext  
+  
+
 
 ## See also
 - [PnPClientContext](OfficeDevPnP.Core.PnPClientContext.md) 

@@ -5,7 +5,7 @@
 |[AuthenticationManager](OfficeDevPnP.Core.AuthenticationManager.md)|This manager class can be used to obtain a SharePointContext object|
 |[BuiltInContentTypeId](OfficeDevPnP.Core.BuiltInContentTypeId.md)|A class that returns strings that represent identifiers (IDs) for built-in content types.|
 |[Constants](OfficeDevPnP.Core.Constants.md)|Constants.|
-|[PnPClientContext](OfficeDevPnP.Core.PnPClientContext.md)||
+|[PnPClientContext](OfficeDevPnP.Core.PnPClientContext.md)|Class that deals with PnPClientContext methods|
 ## Enumerations
 |**Enumeration**|**Description**|
 |:-----|:-----|

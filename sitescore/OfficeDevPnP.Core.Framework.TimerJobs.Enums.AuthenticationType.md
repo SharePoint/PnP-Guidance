@@ -10,10 +10,10 @@ public enum AuthenticationType
 ## Members
 |**Member Name**|**Description**|
 |:-----|:-----|
-| Office365 | 
-| NetworkCredentials | 
-| AppOnly | 
-| AzureADAppOnly | 
+| Office365 | Office365 Authentication.
+| NetworkCredentials | Network Credentials Authentication.
+| AppOnly | Apps-Only Authentication.
+| AzureADAppOnly | Azure Active Directory Apps-Only Authentication.
 
 ## See also
 - [OfficeDevPnP.Core.Framework.TimerJobs.Enums](OfficeDevPnP.Core.Framework.TimerJobs.Enums.md)

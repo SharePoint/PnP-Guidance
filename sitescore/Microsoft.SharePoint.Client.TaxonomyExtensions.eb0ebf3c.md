@@ -28,7 +28,7 @@ public static List<String> ExportAllTerms(this Site site, Boolean includeId, Str
 
 ### Return Value
 Type: List<String>  
-  
+Returns list of Term strings  
 
 
 ## See also

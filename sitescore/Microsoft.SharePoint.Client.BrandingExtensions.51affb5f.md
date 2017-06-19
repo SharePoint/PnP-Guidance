@@ -10,7 +10,7 @@ public static void ClearAvailableWebTemplates(this Web web)
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp; Can be used to remote filters from the available web template   
+&emsp;&emsp;Web to process  
 
   
 

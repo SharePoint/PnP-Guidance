@@ -20,7 +20,7 @@ public TimerJob(string name, string version, string configurationData)
 
 #### configurationData  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Default constructor for timer job   
+&emsp;&emsp;Timer job configuration data  
 
 
 ## Remarks

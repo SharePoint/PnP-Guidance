@@ -17,17 +17,17 @@ public class WebPart: BaseModel, IEquatable<WebPart>
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [Column](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Column.md) | 
-| [Contents](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Contents.md) | 
-| [Order](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Order.md) | 
-| [Row](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Row.md) | 
-| [Title](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Title.md) | 
-| [Zone](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Zone.md) | 
+| [Column](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Column.md) | Webpart Column
+| [Contents](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Contents.md) | Webpart Contents
+| [Order](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Order.md) | Webpart Order
+| [Row](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Row.md) | Webpart Row
+| [Title](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Title.md) | Webpart Title
+| [Zone](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.Zone.md) | Webpart Zone
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.3520ddbb.md) | 
-| [Equals(WebPart)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.686e59e6.md) | 
-| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.1c6872bd.md) | 
+| [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.3520ddbb.md) | Compares object with WebPart
+| [Equals(WebPart)](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.686e59e6.md) | Compares WebPart object based on Row, Column and Contents
+| [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

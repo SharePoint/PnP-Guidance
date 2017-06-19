@@ -1,5 +1,5 @@
 # ProvisioningTemplateCreationInformation.ProvisioningTemplateCreationInformation members 
-  
+ Constructor   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,9 +10,11 @@ public ProvisioningTemplateCreationInformation(Web web)
 ### Parameters
 #### web  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.Web  
-&emsp;&emsp;  
+&emsp;&emsp;A SharePoint site or subsite  
 
 
+## Remarks
+  
 ## See also
 - [ProvisioningTemplateCreationInformation](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningTemplateCreationInformation.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md)

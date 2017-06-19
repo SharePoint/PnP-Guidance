@@ -10,19 +10,19 @@ public abstract void ProcessRequest(ClientContext ctx, ProvisioningTemplate temp
 ### Parameters
 #### ctx  
 &emsp;&emsp;Type: Microsoft.SharePoint.Client.ClientContext  
-&emsp;&emsp; Defines a interface that accepts requests from the provisioning processing component   
+&emsp;&emsp;The ClientContext to process  
 
   
 
 #### template  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
-&emsp;&emsp; Defines a interface that accepts requests from the provisioning processing component   
+&emsp;&emsp;The Provisioning template  
 
   
 
 #### configurationData  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Defines a interface that accepts requests from the provisioning processing component   
+&emsp;&emsp;Configuration Data string  
 
   
 
