@@ -79,10 +79,14 @@ Disable-PnPFeature -Identity B6917CB1-93A0-4B97-A84D-7CF49975D4EC -Scope Web
 >**Notes:**
 > - When you disable the feature you'll not be able anymore to create new "modern" pages, but the already created pages stay working using the "modern" user experience. 
 
+### Commenting configuration
+By default users will be able to add comments (June 2017) on "modern" pages. If your organization does not want this feature it can be disabled from the tenant admin center via the settings page:
+
+![](http://i.imgur.com/atl91Vh.png)
 
 ## Programming "modern" pages
 ### Adding "modern" pages
-Creating a "modern" page comes down to creating a list item in the site pages library and assinging it the correct content type combined with setting some additional properties as shown in below code snippet:
+Creating a "modern" page comes down to creating a list item in the site pages library and assigning it the correct content type combined with setting some additional properties as shown in below code snippet:
 
 ```C#
 // pagesLibrary is List object for the "site pages" library of the site
