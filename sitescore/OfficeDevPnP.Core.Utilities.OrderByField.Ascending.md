@@ -1,5 +1,5 @@
 # OrderByField.Properties Ascending
-  
+ Gets or sets the Ascending order flag   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public bool Ascending { get; set; }
 ### Property Value
 Type: System.Boolean  
 
+## Remarks
+  
 ## See also
 - [OrderByField](OfficeDevPnP.Core.Utilities.OrderByField.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

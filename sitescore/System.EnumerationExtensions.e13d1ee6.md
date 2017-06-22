@@ -10,18 +10,20 @@ public static bool Missing<T>(this Enum obj, T value)
 ### Parameters
 #### obj  
 &emsp;&emsp;Type: System.Enum  
-&emsp;&emsp; Checks if an enumerated type is missing a value   
+&emsp;&emsp;Enum object  
 
   
 
 #### value  
 &emsp;&emsp;Type: T  
-&emsp;&emsp; Checks if an enumerated type is missing a value   
+&emsp;&emsp;Generic type parameter  
 
   
 
 ### Return Value
 Type: bool  
+Returns true if enumerated type is missing a value  
+
 
 ## See also
 - [EnumerationExtensions](System.EnumerationExtensions.md) 

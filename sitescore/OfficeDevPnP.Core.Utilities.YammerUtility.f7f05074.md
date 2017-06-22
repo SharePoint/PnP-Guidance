@@ -10,7 +10,7 @@ public static List<YammerGroup> GetYammerGroups(String accessToken)
 ### Parameters
 #### accessToken  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;Access token to the Yammer network  
+&emsp;&emsp;accessToken will have all the required permissions to update or retrieve data to Yammer on behalf of the user  
 
   
 

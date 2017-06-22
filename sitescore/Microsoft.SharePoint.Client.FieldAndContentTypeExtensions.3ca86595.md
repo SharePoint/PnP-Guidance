@@ -22,7 +22,7 @@ public static Field GetFieldByInternalName(this Web web, String internalName, Bo
 
 #### (optional) searchInSiteHierarchy  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Returns the field if it exists. Null if does not exist.   
+&emsp;&emsp;If true, search across all the available fields in the site hierarchy  
 
   
 

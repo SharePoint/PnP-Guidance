@@ -10,7 +10,7 @@ public void Save(String pageName)
 ### Parameters
 #### (optional) pageName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;Persists the current  [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)  instance as a client side page in SharePoint  
+&emsp;&emsp;Name of the page (e.g. mypage.aspx) to save  
 
   
 

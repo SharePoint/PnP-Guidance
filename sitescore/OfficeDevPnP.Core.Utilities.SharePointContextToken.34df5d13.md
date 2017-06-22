@@ -1,5 +1,5 @@
 # SharePointContextToken.Create Method  
-  
+ Creates SharePoint ContextToken   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,12 +10,14 @@ public static SharePointContextToken Create(JsonWebSecurityToken contextToken)
 ### Parameters
 #### contextToken  
 &emsp;&emsp;Type: SharePointPnP.IdentityModel.Extensions.S2S.Tokens.JsonWebSecurityToken  
-&emsp;&emsp;  
+&emsp;&emsp;JsonWebSecurityToken object  
 
   
 
 ### Return Value
 Type: SharePointContextToken  
+Returns SharePoint ContextToken object  
+
 
 ## See also
 - [SharePointContextToken](OfficeDevPnP.Core.Utilities.SharePointContextToken.md) 

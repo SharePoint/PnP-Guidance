@@ -1,5 +1,5 @@
 # TreeNode.TreeNode members 
-  
+ Constructor   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,9 +10,11 @@ public TreeNode(T Value)
 ### Parameters
 #### Value  
 &emsp;&emsp;Type: T  
-&emsp;&emsp;  
+&emsp;&emsp;Generic type value  
 
 
+## Remarks
+  
 ## See also
 - [TreeNode](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.md)
 - [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md)

@@ -1,5 +1,5 @@
 # WebPartData.Properties GenericWebPartProperties
-  
+ Represents genericWebPartProperties element of webpart data   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

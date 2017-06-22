@@ -70,13 +70,13 @@ public static void SetSiteProperties(this Tenant tenant, String siteFullUrl, Str
 
 #### (optional) wait  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Sets tenant site Properties   
+&emsp;&emsp;Id true this function only returns when the tenant properties are set, if false it will return immediately  
 
   
 
 #### (optional) timeoutFunction  
 &emsp;&emsp;Type: System.Func&lt;OfficeDevPnP.Core.TenantOperationMessage, System.Boolean&gt;  
-&emsp;&emsp; Sets tenant site Properties   
+&emsp;&emsp;An optional function that will be called while waiting for the tenant properties to be set. If set will override the wait variable. Return true to cancel the wait loop.  
 
   
 

@@ -10,13 +10,13 @@ public static string FieldRef(String fieldName)
 ### Parameters
 #### fieldName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates a &lt;FieldRef&gt; node for ViewFields clause   
+&emsp;&emsp;Name of the field  
 
   
 
 ### Return Value
 Type: string  
-  
+Returns FieldRef string to be used in CAML queries  
 
 
 ## See also

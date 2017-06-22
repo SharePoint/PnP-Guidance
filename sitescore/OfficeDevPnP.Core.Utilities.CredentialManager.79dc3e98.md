@@ -10,7 +10,7 @@ public static SharePointOnlineCredentials GetSharePointOnlineCredential(String n
 ### Parameters
 #### name  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Returns a SharePoint Online Credential given a certain name. Add the credential in the Windows Credential Manager and create a new Windows Credential. Then add a new GENERIC Credential. The name parameter in the method maps to the Internet or network address field.   
+&emsp;&emsp;Name maps to internet or network address fields  
 
   
 

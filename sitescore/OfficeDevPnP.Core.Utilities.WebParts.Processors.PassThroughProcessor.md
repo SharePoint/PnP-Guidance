@@ -16,6 +16,6 @@ public class PassThroughProcessor: IWebPartPostProcessor
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Process(WebPartDefinition, File)](OfficeDevPnP.Core.Utilities.WebParts.Processors.PassThroughProcessor.bedadeac.md) | 
+| [Process(WebPartDefinition, File)](OfficeDevPnP.Core.Utilities.WebParts.Processors.PassThroughProcessor.bedadeac.md) | Method to process webpart when it is not resolved
 ## See also
 - [OfficeDevPnP.Core.Utilities.WebParts.Processors](OfficeDevPnP.Core.Utilities.WebParts.Processors.md)

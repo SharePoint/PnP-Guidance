@@ -1,5 +1,5 @@
 # Log.Debug Method  
-  
+ Debug Log   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,7 +10,7 @@ public static void Debug(LogEntry logEntry)
 ### Parameters
 #### logEntry  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Diagnostics.LogEntry](OfficeDevPnP.Core.Diagnostics.LogEntry.md)  
-&emsp;&emsp;  
+&emsp;&emsp;LogEntry object  
 
   
 

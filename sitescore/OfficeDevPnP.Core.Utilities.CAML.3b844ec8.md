@@ -1,5 +1,5 @@
 # CAML.DateRangesOverlap Method  
-  
+ Creates &lt;DateRangesOverlap&gt; node for Comparison   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,12 +10,14 @@ public static string DateRangesOverlap(String fieldValue)
 ### Parameters
 #### fieldValue  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Value of the field  
 
   
 
 ### Return Value
 Type: string  
+Returns Comparison string to be used in CAML queries  
+
 
 ## See also
 - [CAML](OfficeDevPnP.Core.Utilities.CAML.md) 

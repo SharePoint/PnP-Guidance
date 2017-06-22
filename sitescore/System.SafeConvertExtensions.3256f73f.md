@@ -1,5 +1,5 @@
 # SafeConvertExtensions.ToEnum Method  
-  
+ Converts byte input to Enum   
 
 **Namespace:** [System](System.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,12 +10,14 @@ public static T ToEnum<T>(this Byte enumValue)
 ### Parameters
 #### enumValue  
 &emsp;&emsp;Type: System.Byte  
-&emsp;&emsp;  
+&emsp;&emsp;byte input  
 
   
 
 ### Return Value
 Type: T  
+Return Generic Type of Enum  
+
 
 ## See also
 - [SafeConvertExtensions](System.SafeConvertExtensions.md) 

@@ -17,6 +17,6 @@ public class ClientSideCanvasControlPosition: ClientSideCanvasPosition
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [ControlIndex](OfficeDevPnP.Core.Pages.ClientSideCanvasControlPosition.ControlIndex.md) | 
+| [ControlIndex](OfficeDevPnP.Core.Pages.ClientSideCanvasControlPosition.ControlIndex.md) | Gets or sets JsonProperty "controlIndex"
 ## See also
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

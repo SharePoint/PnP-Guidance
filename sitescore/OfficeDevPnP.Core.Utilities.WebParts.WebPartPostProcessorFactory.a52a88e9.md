@@ -1,5 +1,5 @@
 # WebPartPostProcessorFactory.Resolve Method  
-  
+ Resolves webpart by parsing web part schema xml   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities.WebParts](OfficeDevPnP.Core.Utilities.WebParts.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,12 +10,14 @@ public static IWebPartPostProcessor Resolve(String wpXml)
 ### Parameters
 #### wpXml  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;WebPart schema xml  
 
   
 
 ### Return Value
 Type: IWebPartPostProcessor  
+Returns PassThroughProcessor object  
+
 
 ## See also
 - [WebPartPostProcessorFactory](OfficeDevPnP.Core.Utilities.WebParts.WebPartPostProcessorFactory.md) 

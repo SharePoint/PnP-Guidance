@@ -1,5 +1,5 @@
 # WebPart.Properties Data
-  
+ Represents data element of Webpart element   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

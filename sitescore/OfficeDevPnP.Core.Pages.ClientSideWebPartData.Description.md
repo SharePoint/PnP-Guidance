@@ -1,5 +1,5 @@
 # ClientSideWebPartData.Properties Description
-  
+ Gets or sets JsonProperty "description"   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public string Description { get; set; }
 ### Property Value
 Type: System.String  
 
+## Remarks
+  
 ## See also
 - [ClientSideWebPartData](OfficeDevPnP.Core.Pages.ClientSideWebPartData.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

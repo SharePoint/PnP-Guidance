@@ -1,5 +1,5 @@
 # PropertyContainerTypeIpersonalizable.Properties Property
-  
+ Gets collection of webpart property types   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

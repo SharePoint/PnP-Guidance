@@ -22,7 +22,7 @@ public static void SetPublicInstancePropertyValue(this Object source, String pro
 
 #### value  
 &emsp;&emsp;Type: System.Object  
-&emsp;&emsp; Sets the value of a public, instance property   
+&emsp;&emsp;The value to set  
 
   
 

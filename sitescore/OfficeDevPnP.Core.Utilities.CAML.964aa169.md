@@ -16,7 +16,7 @@ public static string Today(Nullable<Int32> offset)
 
 ### Return Value
 Type: string  
-  
+Returns &lt;Today /&gt; node based on offset value  
 
 
 ## See also

@@ -1,5 +1,5 @@
 # PnPMonitoredScope.Properties Name
-  
+ Gets or sets the source name   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public string Name { get; set; }
 ### Property Value
 Type: System.String  
 
+## Remarks
+  
 ## See also
 - [PnPMonitoredScope](OfficeDevPnP.Core.Diagnostics.PnPMonitoredScope.md) 
 - [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md) 

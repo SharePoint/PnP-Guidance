@@ -10,9 +10,9 @@ public enum NavigationType
 ## Members
 |**Member Name**|**Description**|
 |:-----|:-----|
-| TopNavigationBar | 
-| QuickLaunch | 
-| SearchNav | 
+| TopNavigationBar | Top Navigation or Global Navigation
+| QuickLaunch | Quick Launch or left navigation
+| SearchNav | Search Navigation
 
 ## See also
 - [OfficeDevPnP.Core.Enums](OfficeDevPnP.Core.Enums.md)

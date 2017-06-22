@@ -1,5 +1,5 @@
 # YammerUtility Class
-  
+ Holds yammer operation methods   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -21,6 +21,6 @@ public static class YammerUtility
 | [GetYammerGroupDiscussionPart(String, Int32, Boolean, Boolean)](OfficeDevPnP.Core.Utilities.YammerUtility.b7919cc6.md) | Creates web part entity with the Yammer group structure on it
 | [GetYammerGroups(String)](OfficeDevPnP.Core.Utilities.YammerUtility.f7f05074.md) | Returns Yammer groups based on the access token. All groups are returned for registered apps.
 | [GetYammerOpenGraphDiscussionPart(String, String, Boolean, Boolean, String, String, String)](OfficeDevPnP.Core.Utilities.YammerUtility.fad93f7c.md) | Creates web part entity with the Yammer OpenGraph structure on it for specific URL
-| [GetYammerUser(String)](OfficeDevPnP.Core.Utilities.YammerUtility.9c9e98a.md) | 
+| [GetYammerUser(String)](OfficeDevPnP.Core.Utilities.YammerUtility.9c9e98a.md) | Returns yammer user if user exists. If the user doesn't exist, returns null
 ## See also
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)
