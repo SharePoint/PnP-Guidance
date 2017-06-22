@@ -1,5 +1,5 @@
 # ITreeNode.SetParent Method  
-  
+ Sets parent node to the child nodes   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,13 +10,13 @@ public abstract void SetParent(ITreeNode<T> Node, Boolean UpdateChildNodes = Tru
 ### Parameters
 #### Node  
 &emsp;&emsp;Type: OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode&lt;T&gt;  
-&emsp;&emsp;  
+&emsp;&emsp;Node to which we need to set parent node  
 
   
 
 #### (optional) UpdateChildNodes  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp;  
+&emsp;&emsp;Updates child nodes  
 
   
 

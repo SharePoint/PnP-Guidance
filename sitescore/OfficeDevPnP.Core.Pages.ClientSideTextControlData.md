@@ -17,6 +17,6 @@ public class ClientSideTextControlData: ClientSideCanvasControlData
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [EditorType](OfficeDevPnP.Core.Pages.ClientSideTextControlData.EditorType.md) | 
+| [EditorType](OfficeDevPnP.Core.Pages.ClientSideTextControlData.EditorType.md) | Gets or sets JsonProperty "editorType"
 ## See also
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

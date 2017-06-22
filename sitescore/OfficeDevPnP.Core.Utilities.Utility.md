@@ -1,5 +1,5 @@
 # Utility Class
-  
+ Holds a method that returns health score for a SharePoint Server   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

@@ -10,31 +10,31 @@ public static string FieldValue(Guid fieldId, String fieldValueType, String valu
 ### Parameters
 #### fieldId  
 &emsp;&emsp;Type: System.Guid  
-&emsp;&emsp; Creates both a &lt;FieldRef&gt; and &lt;Value&gt; nodes combination for Where clauses.   
+&emsp;&emsp;Id of the field  
 
   
 
 #### fieldValueType  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates both a &lt;FieldRef&gt; and &lt;Value&gt; nodes combination for Where clauses.   
+&emsp;&emsp;Value type of the field  
 
   
 
 #### value  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates both a &lt;FieldRef&gt; and &lt;Value&gt; nodes combination for Where clauses.   
+&emsp;&emsp;Value of the field  
 
   
 
 #### (optional) additionalFieldRefParams  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates both a &lt;FieldRef&gt; and &lt;Value&gt; nodes combination for Where clauses.   
+&emsp;&emsp;Additional FieldRef Parameters  
 
   
 
 ### Return Value
 Type: string  
-  
+Returns FieldValue string to be used in CAML queries  
 
 
 ## See also

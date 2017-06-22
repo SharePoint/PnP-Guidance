@@ -1,5 +1,5 @@
 # CredentialManager Class
-  
+ Class for getting and managing Credentials for SharePoint Online and SharePoint Onpremise   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

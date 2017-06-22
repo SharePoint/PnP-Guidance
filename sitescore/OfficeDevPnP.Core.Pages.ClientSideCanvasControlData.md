@@ -19,8 +19,8 @@ public class ClientSideCanvasControlData
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [ControlType](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.ControlType.md) | 
-| [Id](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.Id.md) | 
-| [Position](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.Position.md) | 
+| [ControlType](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.ControlType.md) | Gets or sets JsonProperty "controlType"
+| [Id](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.Id.md) | Gets or sets JsonProperty "id"
+| [Position](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.Position.md) | Gets or sets JsonProperty "position"
 ## See also
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

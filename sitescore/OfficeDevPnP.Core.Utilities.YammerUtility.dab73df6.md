@@ -10,7 +10,7 @@ public static string CreateYammerGroupDiscussionPartXml(String yammerNetworkName
 ### Parameters
 #### yammerNetworkName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;Name of the network  
+&emsp;&emsp;Yammer network name  
 
   
 
@@ -22,19 +22,19 @@ public static string CreateYammerGroupDiscussionPartXml(String yammerNetworkName
 
 #### showHeader  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Constructs the webpart XML for yammer group needed to inject as Yammer web part to SharePoint page   
+&emsp;&emsp;Shows header based on value  
 
   
 
 #### showFooter  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Constructs the webpart XML for yammer group needed to inject as Yammer web part to SharePoint page   
+&emsp;&emsp;Shows footer based on value  
 
   
 
 #### (optional) useSSO  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Constructs the webpart XML for yammer group needed to inject as Yammer web part to SharePoint page   
+&emsp;&emsp;uses given Single Sign-on information to create webpart  
 
   
 

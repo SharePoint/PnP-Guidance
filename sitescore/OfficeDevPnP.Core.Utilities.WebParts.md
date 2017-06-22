@@ -6,4 +6,4 @@
 ## Interfaces
 |**Interface**|**Description**|
 |:-----|:-----|
-|[IWebPartPostProcessor](OfficeDevPnP.Core.Utilities.WebParts.IWebPartPostProcessor.md)||
+|[IWebPartPostProcessor](OfficeDevPnP.Core.Utilities.WebParts.IWebPartPostProcessor.md)|Interface for WebPart Post Processing|

@@ -1,5 +1,5 @@
 # Log.Info Method  
-  
+ Log Information   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,25 +10,25 @@ public static void Info(Exception ex, String source, String message, params Obje
 ### Parameters
 #### ex  
 &emsp;&emsp;Type: System.Exception  
-&emsp;&emsp;  
+&emsp;&emsp;Exception object  
 
   
 
 #### source  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Source string  
 
   
 
 #### message  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Message string  
 
   
 
 #### args  
 &emsp;&emsp;Type: System.Object[]  
-&emsp;&emsp;  
+&emsp;&emsp;Arguments option  
 
   
 

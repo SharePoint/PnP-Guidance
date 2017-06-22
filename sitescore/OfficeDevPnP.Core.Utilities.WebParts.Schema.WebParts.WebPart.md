@@ -1,5 +1,5 @@
 # WebParts.Properties WebPart
-  
+ Represents single WebPart element in the page   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

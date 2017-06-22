@@ -1,5 +1,5 @@
 # FileTokenCache.FileTokenCache members 
-  
+ Constructor for FileTokenCache class   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,9 +10,11 @@ public FileTokenCache(string filePath)
 ### Parameters
 #### (optional) filePath  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Path of the file  
 
 
+## Remarks
+  
 ## See also
 - [FileTokenCache](OfficeDevPnP.Core.Utilities.FileTokenCache.md)
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)

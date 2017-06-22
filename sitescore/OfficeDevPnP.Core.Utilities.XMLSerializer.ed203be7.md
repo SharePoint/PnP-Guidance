@@ -10,7 +10,7 @@ public static string Serialize<T>(T objectToSerialize)
 ### Parameters
 #### objectToSerialize  
 &emsp;&emsp;Type: T  
-&emsp;&emsp; Serializes an object instance to an XML represented string.   
+&emsp;&emsp;Object to serialize  
 
   
 

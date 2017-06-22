@@ -16,7 +16,7 @@ public static YammerGroup GetYammerGroupByName(String groupName, String accessTo
 
 #### accessToken  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Returns Yammer Group if group exists. If the group does not exist, returns null.   
+&emsp;&emsp;accessToken will have all the required permissions to update or retrieve data to Yammer on behalf of the user  
 
   
 

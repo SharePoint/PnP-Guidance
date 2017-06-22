@@ -10,55 +10,55 @@ public static string CreateYammerOpenGraphDiscussionPartXml(String yammerNetwork
 ### Parameters
 #### yammerNetworkName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Constructs web part definition for Open Graph discussion web part definition   
+&emsp;&emsp;Yammer network name  
 
   
 
 #### url  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Constructs web part definition for Open Graph discussion web part definition   
+&emsp;&emsp;Yammer url  
 
   
 
 #### showHeader  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Constructs web part definition for Open Graph discussion web part definition   
+&emsp;&emsp;Shows header based on value  
 
   
 
 #### showFooter  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Constructs web part definition for Open Graph discussion web part definition   
+&emsp;&emsp;Shows footer based on value  
 
   
 
 #### (optional) postTitle  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Constructs web part definition for Open Graph discussion web part definition   
+&emsp;&emsp;creates webpart with given post title  
 
   
 
 #### (optional) postImageUrl  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Constructs web part definition for Open Graph discussion web part definition   
+&emsp;&emsp;creates webpart with given post title  
 
   
 
 #### (optional) useSso  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Constructs web part definition for Open Graph discussion web part definition   
+&emsp;&emsp;uses given Single Sign-on information to create webpart  
 
   
 
 #### (optional) groupId  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Constructs web part definition for Open Graph discussion web part definition   
+&emsp;&emsp;yammer group id  
 
   
 
 ### Return Value
 Type: string  
-  
+The constructed Open Graph Discussion Part XML  
 
 
 ## See also

@@ -1,5 +1,5 @@
 # Log.Warning Method  
-  
+ Warning Log   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,25 +10,25 @@ public static void Warning(String source, Exception ex, String message, params O
 ### Parameters
 #### source  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Source string  
 
   
 
 #### ex  
 &emsp;&emsp;Type: System.Exception  
-&emsp;&emsp;  
+&emsp;&emsp;Exception object  
 
   
 
 #### message  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Message string  
 
   
 
 #### args  
 &emsp;&emsp;Type: System.Object[]  
-&emsp;&emsp;  
+&emsp;&emsp;Arguments object  
 
   
 

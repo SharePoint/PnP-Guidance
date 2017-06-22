@@ -34,7 +34,7 @@ public CookieContainer GetFedAuthCookie(String siteUrl, String serialNumber, Uri
 
 #### logonTokenCacheExpirationWindow  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp; Performs active authentication against ADFS using the trust/13/usernamemixed ADFS endpoint.   
+&emsp;&emsp;Logon TokenCache expiration window integer value  
 
   
 

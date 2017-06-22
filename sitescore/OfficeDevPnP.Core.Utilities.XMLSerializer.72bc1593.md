@@ -16,7 +16,7 @@ public static string Serialize<T>(T objectToSerialize, XmlSerializerNamespaces n
 
 #### ns  
 &emsp;&emsp;Type: System.Xml.Serialization.XmlSerializerNamespaces  
-&emsp;&emsp; Serializes an object instance to an XML represented string, providing custom namespace prefixes.   
+&emsp;&emsp;Xml serialization namespace  
 
   
 

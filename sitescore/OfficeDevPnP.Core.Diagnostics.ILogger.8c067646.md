@@ -1,5 +1,5 @@
 # ILogger.Info Method  
-  
+ Log Information   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,7 +10,7 @@ public abstract void Info(LogEntry entry)
 ### Parameters
 #### entry  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Diagnostics.LogEntry](OfficeDevPnP.Core.Diagnostics.LogEntry.md)  
-&emsp;&emsp;  
+&emsp;&emsp;LogEntry object  
 
   
 

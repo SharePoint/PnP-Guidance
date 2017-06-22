@@ -10,19 +10,19 @@ public static string AppendQueryString(String path, String queryString)
 ### Parameters
 #### path  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Adds query string parameters to the end of a querystring and guarantees the proper concatenation with ? and &.  
+&emsp;&emsp;A SharePoint url  
 
   
 
 #### queryString  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Adds query string parameters to the end of a querystring and guarantees the proper concatenation with ? and &.  
+&emsp;&emsp;Query string value that need to append to the url  
 
   
 
 ### Return Value
 Type: string  
-  
+Returns url along with appended query string  
 
 
 ## See also

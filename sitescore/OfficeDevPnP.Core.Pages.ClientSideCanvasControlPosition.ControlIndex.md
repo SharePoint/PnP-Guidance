@@ -1,5 +1,5 @@
 # ClientSideCanvasControlPosition.Properties ControlIndex
-  
+ Gets or sets JsonProperty "controlIndex"   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public int ControlIndex { get; set; }
 ### Property Value
 Type: System.Int32  
 
+## Remarks
+  
 ## See also
 - [ClientSideCanvasControlPosition](OfficeDevPnP.Core.Pages.ClientSideCanvasControlPosition.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

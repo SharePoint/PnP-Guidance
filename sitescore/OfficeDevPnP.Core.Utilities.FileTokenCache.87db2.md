@@ -1,5 +1,5 @@
 # FileTokenCache.Clear Method  
-  
+ Clears the Cached file path   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

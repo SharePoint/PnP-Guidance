@@ -18,8 +18,8 @@ public class ClientSideCanvasPosition
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [SectionFactor](OfficeDevPnP.Core.Pages.ClientSideCanvasPosition.SectionFactor.md) | 
-| [SectionIndex](OfficeDevPnP.Core.Pages.ClientSideCanvasPosition.SectionIndex.md) | 
-| [ZoneIndex](OfficeDevPnP.Core.Pages.ClientSideCanvasPosition.ZoneIndex.md) | 
+| [SectionFactor](OfficeDevPnP.Core.Pages.ClientSideCanvasPosition.SectionFactor.md) | Gets or sets JsonProperty "sectionFactor"
+| [SectionIndex](OfficeDevPnP.Core.Pages.ClientSideCanvasPosition.SectionIndex.md) | Gets or sets JsonProperty "sectionIndex"
+| [ZoneIndex](OfficeDevPnP.Core.Pages.ClientSideCanvasPosition.ZoneIndex.md) | Gets or sets JsonProperty "zoneIndex"
 ## See also
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

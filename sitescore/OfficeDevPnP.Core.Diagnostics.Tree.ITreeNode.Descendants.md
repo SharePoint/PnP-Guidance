@@ -1,5 +1,5 @@
 # ITreeNode.Properties Descendants
-  
+ All Child nodes. Children, Children[i].Children, ...   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -11,6 +11,8 @@ public abstract IEnumerable<ITreeNode> Descendants { get; }
 ### Property Value
 Type: System.Collections.Generic.IEnumerable<OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode>  
 
+## Remarks
+  
 ## See also
 - [ITreeNode](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode.md) 
 - [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md) 

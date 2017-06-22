@@ -1,5 +1,5 @@
 # TreeNodeList Class
-  
+ Holds methods for Tree node   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -13,18 +13,18 @@ public class TreeNodeList<T>: List<ITreeNode<T>>, ITreeNodeList<T>, IList<ITreeN
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [TreeNodeList(ITreeNode<T>)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.ctor1.md) |  
+| [TreeNodeList(ITreeNode<T>)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.ctor1.md) | Constructor 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [Parent](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.Parent.md) | 
+| [Parent](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.Parent.md) | Gets or sets Parent node
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [Add(ITreeNode&lt;T&gt;)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.19b9df21.md) | 
+| [Add(ITreeNode&lt;T&gt;)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.19b9df21.md) | Adds node to a tree
 | [add_PropertyChanged(PropertyChangedEventHandler)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.9af7a0ae.md) | 
-| [Remove(ITreeNode&lt;T&gt;)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.5be50920.md) | 
+| [Remove(ITreeNode&lt;T&gt;)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.5be50920.md) | Removes node from a tree
 | [remove_PropertyChanged(PropertyChangedEventHandler)](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.d9af74e7.md) | 
-| [ToString()](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.b40365cf.md) | 
+| [ToString()](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.b40365cf.md) | Retuns count of child nodes as a string
 ## See also
 - [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md)

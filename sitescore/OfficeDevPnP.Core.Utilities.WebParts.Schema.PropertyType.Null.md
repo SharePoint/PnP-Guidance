@@ -1,5 +1,5 @@
 # PropertyType.Properties Null
-  
+ Gets or sets a value indicating whether the Null property   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

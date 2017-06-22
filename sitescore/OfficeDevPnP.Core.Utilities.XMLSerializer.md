@@ -1,5 +1,5 @@
 # XMLSerializer Class
-  
+ Holds methods for XML serialization   
 
 **Namespace:** [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

@@ -10,31 +10,31 @@ public static WebPartEntity GetYammerGroupDiscussionPart(String yammerNetworkNam
 ### Parameters
 #### yammerNetworkName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates web part entity with the Yammer group structure on it   
+&emsp;&emsp;Yammer group network name  
 
   
 
 #### yammerGroupId  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp; Creates web part entity with the Yammer group structure on it   
+&emsp;&emsp;Yammer group id  
 
   
 
 #### showHeader  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Creates web part entity with the Yammer group structure on it   
+&emsp;&emsp;Shows header of webpart based on the value  
 
   
 
 #### showFooter  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Creates web part entity with the Yammer group structure on it   
+&emsp;&emsp;Shows footer of webpart based on value  
 
   
 
 ### Return Value
 Type: WebPartEntity  
-  
+Returns created WebPartEntity  
 
 
 ## See also

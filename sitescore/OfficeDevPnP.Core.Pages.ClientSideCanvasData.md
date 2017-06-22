@@ -16,6 +16,6 @@ public class ClientSideCanvasData
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [Position](OfficeDevPnP.Core.Pages.ClientSideCanvasData.Position.md) | 
+| [Position](OfficeDevPnP.Core.Pages.ClientSideCanvasData.Position.md) | Gets or sets JsonProperty "position"
 ## See also
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

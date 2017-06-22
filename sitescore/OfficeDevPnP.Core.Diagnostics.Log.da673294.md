@@ -1,5 +1,5 @@
 # Log.Error Method  
-  
+ Logs error message, source and exception   
 
 **Namespace:** [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -10,25 +10,25 @@ public static void Error(Exception ex, String source, String message, params Obj
 ### Parameters
 #### ex  
 &emsp;&emsp;Type: System.Exception  
-&emsp;&emsp;  
+&emsp;&emsp;Exception object  
 
   
 
 #### source  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Error source  
 
   
 
 #### message  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp;  
+&emsp;&emsp;Error message  
 
   
 
 #### args  
 &emsp;&emsp;Type: System.Object[]  
-&emsp;&emsp;  
+&emsp;&emsp;Arguments object  
 
   
 

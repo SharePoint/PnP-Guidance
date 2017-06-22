@@ -10,49 +10,49 @@ public static WebPartEntity GetYammerOpenGraphDiscussionPart(String yammerNetwor
 ### Parameters
 #### yammerNetworkName  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates web part entity with the Yammer OpenGraph structure on it for specific URL   
+&emsp;&emsp;Yammer network name  
 
   
 
 #### url  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates web part entity with the Yammer OpenGraph structure on it for specific URL   
+&emsp;&emsp;yammer url  
 
   
 
 #### showHeader  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Creates web part entity with the Yammer OpenGraph structure on it for specific URL   
+&emsp;&emsp;Shows header based on value  
 
   
 
 #### showFooter  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp; Creates web part entity with the Yammer OpenGraph structure on it for specific URL   
+&emsp;&emsp;Shows footer based on value  
 
   
 
 #### (optional) postTitle  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates web part entity with the Yammer OpenGraph structure on it for specific URL   
+&emsp;&emsp;creates webpart with given post title  
 
   
 
 #### (optional) postImageUrl  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates web part entity with the Yammer OpenGraph structure on it for specific URL   
+&emsp;&emsp;creates webpart with given post title  
 
   
 
 #### (optional) defaultGroupId  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Creates web part entity with the Yammer OpenGraph structure on it for specific URL   
+&emsp;&emsp;creates webpart with givne group id  
 
   
 
 ### Return Value
 Type: WebPartEntity  
-  
+Returns created WebPartEntity  
 
 
 ## See also

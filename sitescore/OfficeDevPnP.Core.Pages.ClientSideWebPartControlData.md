@@ -17,6 +17,6 @@ public class ClientSideWebPartControlData: ClientSideCanvasControlData
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [WebPartId](OfficeDevPnP.Core.Pages.ClientSideWebPartControlData.WebPartId.md) | 
+| [WebPartId](OfficeDevPnP.Core.Pages.ClientSideWebPartControlData.WebPartId.md) | Gets or sets JsonProperty "webPartId"
 ## See also
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

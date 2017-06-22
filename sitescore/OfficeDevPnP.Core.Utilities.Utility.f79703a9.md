@@ -10,13 +10,13 @@ public static int GetHealthScore(String url)
 ### Parameters
 #### url  
 &emsp;&emsp;Type: System.String  
-&emsp;&emsp; Returns the healthscore for a SharePoint Server   
+&emsp;&emsp;SharePoint server url  
 
   
 
 ### Return Value
 Type: int  
-  
+Returns server health score integer value  
 
 
 ## See also

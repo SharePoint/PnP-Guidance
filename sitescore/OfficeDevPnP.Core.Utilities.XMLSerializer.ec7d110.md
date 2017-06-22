@@ -10,13 +10,13 @@ public static T Deserialize<T>(XDocument xdoc)
 ### Parameters
 #### xdoc  
 &emsp;&emsp;Type: System.Xml.Linq.XDocument  
-&emsp;&emsp; Deserialize an XDocuemnt to instance of an object T   
+&emsp;&emsp;XML document  
 
   
 
 ### Return Value
 Type: T  
-  
+Returns deserialized object  
 
 
 ## See also

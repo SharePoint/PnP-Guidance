@@ -16,7 +16,7 @@ public static Stream SerializeToStream<T>(T objectToSerialize, XmlSerializerName
 
 #### ns  
 &emsp;&emsp;Type: System.Xml.Serialization.XmlSerializerNamespaces  
-&emsp;&emsp; Serializes an object instance to a stream, providing custom namespace prefixes.   
+&emsp;&emsp;Xml serializer namespace  
 
   
 
