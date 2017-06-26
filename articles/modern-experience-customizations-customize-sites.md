@@ -13,7 +13,7 @@ This article concentrates on the available extensibility options within "modern"
 
 - New capabilities in SharePoint Online team sites including integration with Office 365 Groups: https://blogs.office.com/2016/08/31/new-capabilities-in-sharepoint-online-team-sites-including-integration-with-office-365-groups
 - Create connected SharePoint Online team sites in seconds: https://blogs.office.com/2016/11/08/create-connected-sharepoint-online-team-sites-in-seconds
-- [Turn scripting capabilities on or off](https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f) - Notice that you cannot enable scripting capabilities in the "modern" team sites, but this article defines the features, which are affected when scripting is disabled
+- [Turn scripting capabilities on or off](https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f)
 
 >**Important:** 
 We're not deprecating the "classic" experience, both "classic" and "modern" will coexist.
@@ -32,31 +32,32 @@ _**Applies to:** SharePoint Online_
 - Site configurations, like regional settings, languages and auditing settings
 
 > **Note:**
-> You can apply a custom theme, but you cannot introduce a custom theme to the theme gallery as an option for end users.
+> By default a "modern" team site has scripting capabilities turned off. You can still apply a custom theme, but you cannot introduce a custom theme to the theme gallery as an option for end users. If you want to add a theme to the theme gallery you need to [enable scripting](https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f) on the site.
 
 ### What's not supported with "modern" team sites?
 <a name="notsupported"> </a>
 
-There are numerous areas in the "modern" team sites where the typical customizations are not yet available. There will be further support for some of these specific topics when they are ready to be released. Below is a list of currently unsupported customizations in "modern" team sites:
+There are numerous areas in the "modern" team sites where the typical customizations are not at least currently available. There will be further support for some of these specific topics when they are ready to be released. Below is a list of currently unsupported customizations in "modern" team sites:
 
 - Custom master pages - More extensive branding will be supported later using alternative options
 - Changing "modern" site to use classic seattle.master or oslo.master
 - Custom page layouts - We are looking to have support for multiple canvases in the future
 - Enabling site or site collection scoped publishing features. Technically features can be currently activated, but this is not supported configuration.
-- Welcome page modifications - There are no APIs to modify the welcome page currently, this will be introduced later
-- User custom actions / Custom JavaScript - There will be a more controlled way to embed JavaScript on the pages through the SharePoint Framework (not only client-side web parts)
+- User custom actions / Custom JavaScript - There will be a more controlled way to embed JavaScript on the pages through the SharePoint Framework Extensions (currently in dev preview)
 - "Modern" sub sites - Sub sites created in "modern" team sites use the "classic" experience, but you can change the user experience to be similar to "modern" sites
 - Control available sub site template options
 - "Classic" publishing features (WCM)
-- Accessing or updating site property bag entries
 - Activating community feature or creating community sub sites under modern" team site
 
-Since "modern" team sites also have scripting capabilities disabled (it's a so called noscript site), there are numerous additional areas which cannot be customized. The impact of noscript is the same for "modern" or "classic" sites, the only difference with "modern" sites is that you cannot turn off "noscript" whereas this is possible for "classic" sites. Here are some key areas to take in account when you design your solutions:
+Since "modern" team sites also have scripting capabilities disabled (it's a so called 'noscript' site), there are numerous additional areas which cannot be customized. The impact of 'noscript' is the same for "modern" or "classic" sites. "Modern" sites have 'noscript' by default enabled, meaning that scripting capabilities are not available. It is however possible and supported to disable 'noscript' setting in both "modern" and classic sites to further enable some capabilities. 
+
+Here are some key areas to take in account when you design your solutions related on the 'noscript' setting:
 
 - Sandbox solutions are not supported
 - Custom JavaScript cannot be enabled in the sites using "classic" extensibility options (e.g. via user custom actions)
 - You cannot access sites using SharePoint Designer
 - Some web parts are not available for end users
+- Accessing or updating site property bag entries
 
 > **Note:**
 > You can find the full list of impacted capabilities from the [Microsoft Support article](https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f) under the "Features affected when scripting is disabled" chapter.
@@ -116,6 +117,7 @@ $web.Context.ExecuteQuery()
 > **Note:**
 > - You can use [SharePoint Color Palette Tool](https://www.microsoft.com/en-us/download/details.aspx?id=38182) to create a custom theme file (.spcolor) with the custom color definition. In general, modern team sites try to preserve the feel of the theme by automatically converting classic site theming elements to the modern side. Preserved areas are background image and the following theme slots: ContentAccent1, PageBackground, and BackgroundOverlay.
 > - You can change the logo of "modern" team site by using the Groups Graph API as shown by the SharePoint [PnP UpdateUnifiedGroup method](https://github.com/SharePoint/PnP-Sites-Core/blob/master/Core/OfficeDevPnP.Core/Framework/Graph/UnifiedGroupsUtility.cs#L350)
+> - Applying a custom theme to a modern team site can cause timeouts. The resolution to this is to turn off all available [user interface languages](https://support.office.com/en-us/article/Choose-the-languages-you-want-to-make-available-for-a-site-s-user-interface-16d3a83c-05ab-4b50-8fbb-ff576a3351e8) for the site before applying the theme. Then turn them back on afterwards.
 
 ## How to determine if a site is a "modern" team site?
 <a name="sectionSection1"> </a>
@@ -132,18 +134,9 @@ Since there's no direct property to check if the scripting is enabled or not, yo
 /// <returns>True if no scripting is enabled, False if it's not</returns>
 public static bool IsNoScriptSite(Web web)
 {
-    // Array if there will be more of these specific tempates 
-    string[] NoScriptSiteTemplates = new string[] { "GROUP" };
-
     // Ensure that we have the needed properties - Notice that these are 
     // PnP CSOM extension capabilities
     web.EnsureProperties(w => w.WebTemplate, w => w.EffectiveBasePermissions);
-
-    // If we know that template is no script site
-    if (NoScriptSiteTemplates.Contains(web.WebTemplate))
-    {
-        return true;
-    }
 
     // Definition of no-script is not having the AddAndCustomizePages permission
     if (!web.EffectiveBasePermissions.Has(PermissionKind.AddAndCustomizePages))
@@ -151,7 +144,7 @@ public static bool IsNoScriptSite(Web web)
         return true;
     }
 
-    // It's a "classic" site without noscript enabled
+    // It's a site without noscript enabled
     return false;
 }
 ```
