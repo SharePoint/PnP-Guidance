@@ -13,8 +13,6 @@ public ClientSidePage(ClientSidePageLayoutType clientSidePageLayoutType)
 &emsp;&emsp; type of the page to create. Defaults to Article type  
 
 
-## Remarks
-  
 ## See also
 - [ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)
 - [OfficeDevPnP.Core.Pages.ClientSidePageLayoutType](OfficeDevPnP.Core.Pages.ClientSidePageLayoutType.md)

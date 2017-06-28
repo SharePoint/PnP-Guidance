@@ -11,8 +11,6 @@ public Dictionary<String, String> PropertyDefinitions { get; }
 ### Property Value
 Type: System.Collections.Generic.Dictionary<System.String, System.String>  
 
-## Remarks
-  
 ## See also
 - [WorkflowSubscription](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

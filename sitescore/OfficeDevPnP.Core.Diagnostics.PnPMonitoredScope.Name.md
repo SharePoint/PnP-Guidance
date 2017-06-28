@@ -11,8 +11,6 @@ public string Name { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [PnPMonitoredScope](OfficeDevPnP.Core.Diagnostics.PnPMonitoredScope.md) 
 - [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md) 

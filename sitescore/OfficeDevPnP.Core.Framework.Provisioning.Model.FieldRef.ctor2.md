@@ -13,8 +13,6 @@ public FieldRef(string fieldRefName)
 &emsp;&emsp;Name of the Field Reference  
 
 
-## Remarks
-  
 ## See also
 - [FieldRef](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

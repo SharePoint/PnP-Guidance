@@ -11,8 +11,6 @@ public ClientSideTextControlData SpControlData { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Pages.ClientSideTextControlData](OfficeDevPnP.Core.Pages.ClientSideTextControlData.md)  
 
-## Remarks
-  
 ## See also
 - [ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

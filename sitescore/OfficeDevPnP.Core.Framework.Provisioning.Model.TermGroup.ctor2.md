@@ -38,8 +38,6 @@ public TermGroup(Guid id, string name, List<TermSet> termSets, bool siteCollecti
 &emsp;&emsp;TermGroup Managers  
 
 
-## Remarks
-  
 ## See also
 - [TermGroup](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

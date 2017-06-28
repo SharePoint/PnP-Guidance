@@ -39,7 +39,7 @@ public static UnifiedGroupEntity GetUnifiedGroup(String groupId, String accessTo
   
 
 ### Return Value
-Type: UnifiedGroupEntity  
+Type: [UnifiedGroupEntity](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.md)  
 
 ## See also
 - [UnifiedGroupsUtility](OfficeDevPnP.Core.Framework.Graph.UnifiedGroupsUtility.md) 

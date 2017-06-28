@@ -11,8 +11,6 @@ public abstract string NamespaceUri { get; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [IXMLSchemaFormatter](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.IXMLSchemaFormatter.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.md) 

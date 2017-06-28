@@ -11,9 +11,6 @@ public ContactData Result { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.UPAWebService.ContactData](OfficeDevPnP.Core.UPAWebService.ContactData.md)  
 
-## Remarks
-
-  
 ## See also
 - [AddColleagueWithoutEmailNotificationCompletedEventArgs](OfficeDevPnP.Core.UPAWebService.AddColleagueWithoutEmailNotificationCompletedEventArgs.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

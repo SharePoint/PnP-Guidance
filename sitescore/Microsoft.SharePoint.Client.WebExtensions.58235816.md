@@ -15,7 +15,7 @@ public static ProvisioningTemplate GetProvisioningTemplate(this Web web)
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 ProvisioningTemplate object with generated values from existing site  
 
 

@@ -9,11 +9,8 @@ public ListInstance[] Lists { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.ListInstance[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.ListInstance[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.ListInstance.md)  
 
-## Remarks
-
-  
 ## See also
 - [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.ProvisioningTemplate.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.md) 

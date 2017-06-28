@@ -11,8 +11,6 @@ public bool IsSource { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [VariationLabelEntity](OfficeDevPnP.Core.Entities.VariationLabelEntity.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

@@ -11,9 +11,6 @@ public string File { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [ImportSequence](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.ImportSequence.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

@@ -11,8 +11,6 @@ public string WebPartData { get; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [ClientSideWebPart](OfficeDevPnP.Core.Pages.ClientSideWebPart.md) 
 - Newtonsoft.Json.Linq.JObject

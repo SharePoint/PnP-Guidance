@@ -13,8 +13,6 @@ public MultipleSymmetricKeySecurityToken(IEnumerable<Byte[]> keys)
 &emsp;&emsp;An enumeration of Byte arrays that contain the symmetric keys.  
 
 
-## Remarks
-  
 ## See also
 - [MultipleSymmetricKeySecurityToken](OfficeDevPnP.Core.Utilities.MultipleSymmetricKeySecurityToken.md)
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)

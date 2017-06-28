@@ -11,8 +11,6 @@ public int Status { get; set; }
 ### Property Value
 Type: System.Int32  
 
-## Remarks
-  
 ## See also
 - [ClientSideComponent](OfficeDevPnP.Core.Pages.ClientSideComponent.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

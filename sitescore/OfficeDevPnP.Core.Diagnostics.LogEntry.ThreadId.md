@@ -11,8 +11,6 @@ public int ThreadId { get; set; }
 ### Property Value
 Type: System.Int32  
 
-## Remarks
-  
 ## See also
 - [LogEntry](OfficeDevPnP.Core.Diagnostics.LogEntry.md) 
 - [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md) 

@@ -11,8 +11,6 @@ public string TemplateSitePolicy { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [ProvisioningTemplateInfo](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateInfo.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

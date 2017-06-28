@@ -11,9 +11,6 @@ public string ID { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [TaxonomyItem](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.TaxonomyItem.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.md) 

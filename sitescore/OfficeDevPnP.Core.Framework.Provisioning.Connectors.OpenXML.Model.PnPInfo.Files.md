@@ -11,8 +11,6 @@ public List<PnPFileInfo> Files { get; set; }
 ### Property Value
 Type: System.Collections.Generic.List<OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.PnPFileInfo>  
 
-## Remarks
-  
 ## See also
 - [PnPInfo](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.PnPInfo.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.md) 

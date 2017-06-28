@@ -27,7 +27,7 @@ public static PnPPackage Open(Stream stream, FileMode mode, FileAccess access)
   
 
 ### Return Value
-Type: PnPPackage  
+Type: [PnPPackage](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.md)  
 Package  
 
 

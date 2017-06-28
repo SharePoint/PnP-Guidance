@@ -43,8 +43,6 @@ public File(string src, string folder, bool overwrite, IEnumerable<WebPart> webP
 &emsp;&emsp;Level status for the file  
 
 
-## Remarks
-  
 ## See also
 - [File](OfficeDevPnP.Core.Framework.Provisioning.Model.File.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

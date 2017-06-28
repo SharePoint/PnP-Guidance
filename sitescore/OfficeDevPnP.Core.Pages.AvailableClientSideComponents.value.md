@@ -9,7 +9,7 @@ public ClientSideComponent[] value { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Pages.ClientSideComponent[]  
+Type: [OfficeDevPnP.Core.Pages.ClientSideComponent[]](OfficeDevPnP.Core.Pages.ClientSideComponent.md)  
 
 ## See also
 - [AvailableClientSideComponents](OfficeDevPnP.Core.Pages.AvailableClientSideComponents.md) 

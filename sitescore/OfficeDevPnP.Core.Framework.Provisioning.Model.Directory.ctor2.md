@@ -53,8 +53,6 @@ public Directory(string src, string folder, bool overwrite, FileLevel level, boo
 &emsp;&emsp;ObjectSecurity  
 
 
-## Remarks
-  
 ## See also
 - [Directory](OfficeDevPnP.Core.Framework.Provisioning.Model.Directory.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

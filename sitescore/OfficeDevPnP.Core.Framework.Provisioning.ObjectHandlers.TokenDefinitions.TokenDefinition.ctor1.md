@@ -18,8 +18,6 @@ public TokenDefinition(Web web, String[] token)
 &emsp;&emsp;token  
 
 
-## Remarks
-  
 ## See also
 - [TokenDefinition](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions.TokenDefinition.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions.md)

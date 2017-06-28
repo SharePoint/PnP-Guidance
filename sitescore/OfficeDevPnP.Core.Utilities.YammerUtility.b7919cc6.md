@@ -33,7 +33,7 @@ public static WebPartEntity GetYammerGroupDiscussionPart(String yammerNetworkNam
   
 
 ### Return Value
-Type: WebPartEntity  
+Type: [WebPartEntity](OfficeDevPnP.Core.Entities.WebPartEntity.md)  
 Returns created WebPartEntity  
 
 

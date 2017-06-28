@@ -11,8 +11,6 @@ public float Order { get; set; }
 ### Property Value
 Type: System.Single  
 
-## Remarks
-  
 ## See also
 - [CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md) 
 - [OfficeDevPnP.Core.Pages.CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)

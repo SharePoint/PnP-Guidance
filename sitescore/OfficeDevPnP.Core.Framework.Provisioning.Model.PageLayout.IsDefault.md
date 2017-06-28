@@ -11,8 +11,6 @@ public bool IsDefault { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [PageLayout](OfficeDevPnP.Core.Framework.Provisioning.Model.PageLayout.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

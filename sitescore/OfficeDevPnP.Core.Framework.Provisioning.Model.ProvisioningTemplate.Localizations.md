@@ -11,8 +11,6 @@ public LocalizationCollection Localizations { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.LocalizationCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.LocalizationCollection.md)  
 
-## Remarks
-  
 ## See also
 - [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

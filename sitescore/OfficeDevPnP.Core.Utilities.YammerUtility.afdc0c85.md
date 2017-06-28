@@ -27,7 +27,7 @@ public static YammerGroup CreateYammerGroup(String groupName, Boolean isPrivate,
   
 
 ### Return Value
-Type: YammerGroup  
+Type: [YammerGroup](OfficeDevPnP.Core.Entities.YammerGroup.md)  
 Returns YammerGroup created  
 
 

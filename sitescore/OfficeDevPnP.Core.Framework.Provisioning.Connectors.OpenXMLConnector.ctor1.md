@@ -13,8 +13,6 @@ public OpenXMLConnector(Stream packageStream)
 &emsp;&emsp;The package stream  
 
 
-## Remarks
-  
 ## See also
 - [OpenXMLConnector](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXMLConnector.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md)

@@ -11,8 +11,6 @@ public string Text { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [DefaultColumnTextValue](OfficeDevPnP.Core.Entities.DefaultColumnTextValue.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

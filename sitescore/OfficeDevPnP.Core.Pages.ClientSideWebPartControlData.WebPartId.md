@@ -11,8 +11,6 @@ public string WebPartId { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [ClientSideWebPartControlData](OfficeDevPnP.Core.Pages.ClientSideWebPartControlData.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

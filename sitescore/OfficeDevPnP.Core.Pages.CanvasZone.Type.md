@@ -11,8 +11,6 @@ public CanvasZoneTemplate Type { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Pages.CanvasZoneTemplate](OfficeDevPnP.Core.Pages.CanvasZoneTemplate.md)  
 
-## Remarks
-  
 ## See also
 - [CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md) 
 - [OfficeDevPnP.Core.Pages.CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)

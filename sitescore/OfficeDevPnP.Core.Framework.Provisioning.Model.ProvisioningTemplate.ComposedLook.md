@@ -11,8 +11,6 @@ public ComposedLook ComposedLook { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.md)  
 
-## Remarks
-  
 ## See also
 - [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

@@ -11,8 +11,6 @@ public bool Required { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [FieldCreationInformation](OfficeDevPnP.Core.Entities.FieldCreationInformation.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

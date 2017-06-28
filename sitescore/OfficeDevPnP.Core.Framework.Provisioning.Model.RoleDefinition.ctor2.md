@@ -13,8 +13,6 @@ public RoleDefinition(IEnumerable<PermissionKind> permissions)
 &emsp;&emsp;RoleDefinition permissions  
 
 
-## Remarks
-  
 ## See also
 - [RoleDefinition](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

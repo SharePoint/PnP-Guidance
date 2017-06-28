@@ -9,11 +9,8 @@ public RoleAssignment[] RoleAssignment { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.RoleAssignment[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.RoleAssignment[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.RoleAssignment.md)  
 
-## Remarks
-
-  
 ## See also
 - [ObjectSecurityBreakRoleInheritance](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.ObjectSecurityBreakRoleInheritance.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

@@ -11,9 +11,6 @@ public RegistrationType RegistrationType { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.RegistrationType](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.RegistrationType.md)  
 
-## Remarks
-
-  
 ## See also
 - [CustomAction](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.CustomAction.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

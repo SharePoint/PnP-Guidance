@@ -11,8 +11,6 @@ public string Version { get; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [PnPManifest](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.PnPManifest.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.md) 

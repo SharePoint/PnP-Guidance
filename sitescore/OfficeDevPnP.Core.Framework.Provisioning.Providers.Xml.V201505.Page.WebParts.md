@@ -9,11 +9,8 @@ public WikiPageWebPart[] WebParts { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.WikiPageWebPart[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.WikiPageWebPart[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.WikiPageWebPart.md)  
 
-## Remarks
-
-  
 ## See also
 - [Page](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.Page.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.md) 

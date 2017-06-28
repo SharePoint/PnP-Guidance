@@ -15,11 +15,8 @@ public QuickLinkData[] GetUserLinks(String accountName)
   
 
 ### Return Value
-Type: QuickLinkData[]  
+Type: [QuickLinkData[]](OfficeDevPnP.Core.UPAWebService.QuickLinkData.md)  
 
-## Remarks
-
-  
 ## See also
 - [UserProfileService](OfficeDevPnP.Core.UPAWebService.UserProfileService.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

@@ -11,8 +11,6 @@ public override ReadOnlyCollection<SecurityKey> SecurityKeys { get; }
 ### Property Value
 Type: System.Collections.ObjectModel.ReadOnlyCollection<System.IdentityModel.Tokens.SecurityKey>  
 
-## Remarks
-  
 ## See also
 - [MultipleSymmetricKeySecurityToken](OfficeDevPnP.Core.Utilities.MultipleSymmetricKeySecurityToken.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

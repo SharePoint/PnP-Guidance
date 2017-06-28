@@ -15,7 +15,7 @@ public static UserProfileService GetUserProfileServiceClient(this Tenant tenant)
   
 
 ### Return Value
-Type: UserProfileService  
+Type: [UserProfileService](OfficeDevPnP.Core.UPAWebService.UserProfileService.md)  
 UserProfileService web service client  
 
 

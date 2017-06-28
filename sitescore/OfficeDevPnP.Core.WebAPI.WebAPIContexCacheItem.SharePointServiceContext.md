@@ -11,8 +11,6 @@ public WebAPIContext SharePointServiceContext { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.WebAPI.WebAPIContext](OfficeDevPnP.Core.WebAPI.WebAPIContext.md)  
 
-## Remarks
-  
 ## See also
 - [WebAPIContexCacheItem](OfficeDevPnP.Core.WebAPI.WebAPIContexCacheItem.md) 
 - [OfficeDevPnP.Core.WebAPI](OfficeDevPnP.Core.WebAPI.md) 

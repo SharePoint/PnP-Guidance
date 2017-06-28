@@ -11,8 +11,6 @@ public string HostWebUrl { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [WebAPIContext](OfficeDevPnP.Core.WebAPI.WebAPIContext.md) 
 - [OfficeDevPnP.Core.WebAPI](OfficeDevPnP.Core.WebAPI.md) 

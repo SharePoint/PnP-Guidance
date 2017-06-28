@@ -43,8 +43,6 @@ public TermSet(Guid id, string name, Nullable<Int32> language, bool isAvailableF
 &emsp;&emsp;Termset properties  
 
 
-## Remarks
-  
 ## See also
 - [TermSet](OfficeDevPnP.Core.Framework.Provisioning.Model.TermSet.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

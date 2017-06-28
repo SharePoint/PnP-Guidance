@@ -15,7 +15,7 @@ public abstract ProvisioningTemplate PostProcessGetTemplate(ProvisioningTemplate
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 The resulting template, after post-processing  
 
 

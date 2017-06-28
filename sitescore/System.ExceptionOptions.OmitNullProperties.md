@@ -11,8 +11,6 @@ public bool OmitNullProperties { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [ExceptionOptions](System.ExceptionOptions.md) 
 - [System](System.md) 

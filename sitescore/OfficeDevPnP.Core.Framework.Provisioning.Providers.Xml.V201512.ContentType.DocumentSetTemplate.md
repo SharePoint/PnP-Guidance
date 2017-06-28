@@ -11,9 +11,6 @@ public DocumentSetTemplate DocumentSetTemplate { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.DocumentSetTemplate](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.DocumentSetTemplate.md)  
 
-## Remarks
-
-  
 ## See also
 - [ContentType](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.ContentType.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

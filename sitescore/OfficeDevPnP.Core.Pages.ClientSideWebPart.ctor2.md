@@ -13,8 +13,6 @@ public ClientSideWebPart(ClientSideComponent component)
 &emsp;&emsp;Component to create a ClientSideWebPart instance for  
 
 
-## Remarks
-  
 ## See also
 - [ClientSideWebPart](OfficeDevPnP.Core.Pages.ClientSideWebPart.md)
 - [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)

@@ -11,8 +11,6 @@ public bool EnableRsaProofKeys { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [WSTrustBinding](OfficeDevPnP.Core.IdentityModel.WSTrustBindings.WSTrustBinding.md) 
 - [OfficeDevPnP.Core.IdentityModel.WSTrustBindings](OfficeDevPnP.Core.IdentityModel.WSTrustBindings.md) 

@@ -9,11 +9,8 @@ public Provider[] Providers { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.Provider[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.Provider[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.Provider.md)  
 
-## Remarks
-
-  
 ## See also
 - [SharePointProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.SharePointProvisioningTemplate.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.md) 

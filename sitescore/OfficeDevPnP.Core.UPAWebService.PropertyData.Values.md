@@ -9,11 +9,8 @@ public ValueData[] Values { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.UPAWebService.ValueData[]  
+Type: [OfficeDevPnP.Core.UPAWebService.ValueData[]](OfficeDevPnP.Core.UPAWebService.ValueData.md)  
 
-## Remarks
-
-  
 ## See also
 - [PropertyData](OfficeDevPnP.Core.UPAWebService.PropertyData.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

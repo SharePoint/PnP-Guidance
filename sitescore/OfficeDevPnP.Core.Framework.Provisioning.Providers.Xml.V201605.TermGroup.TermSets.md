@@ -9,11 +9,8 @@ public TermSet[] TermSets { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.TermSet[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.TermSet[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.TermSet.md)  
 
-## Remarks
-
-  
 ## See also
 - [TermGroup](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.TermGroup.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md) 

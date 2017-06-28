@@ -13,8 +13,6 @@ public OrderByField(string name)
 &emsp;&emsp;Name of the field  
 
 
-## Remarks
-  
 ## See also
 - [OrderByField](OfficeDevPnP.Core.Utilities.OrderByField.md)
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)

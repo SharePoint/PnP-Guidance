@@ -15,7 +15,7 @@ public static SharePointContextToken Create(JsonWebSecurityToken contextToken)
   
 
 ### Return Value
-Type: SharePointContextToken  
+Type: [SharePointContextToken](OfficeDevPnP.Core.Utilities.SharePointContextToken.md)  
 Returns SharePoint ContextToken object  
 
 

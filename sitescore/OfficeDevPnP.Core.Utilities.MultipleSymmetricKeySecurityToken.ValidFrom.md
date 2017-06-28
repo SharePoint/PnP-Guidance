@@ -11,8 +11,6 @@ public override DateTime ValidFrom { get; }
 ### Property Value
 Type: System.DateTime  
 
-## Remarks
-  
 ## See also
 - [MultipleSymmetricKeySecurityToken](OfficeDevPnP.Core.Utilities.MultipleSymmetricKeySecurityToken.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

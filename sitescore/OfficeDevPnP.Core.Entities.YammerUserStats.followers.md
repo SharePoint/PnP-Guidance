@@ -11,8 +11,6 @@ public int followers { get; set; }
 ### Property Value
 Type: System.Int32  
 
-## Remarks
-  
 ## See also
 - [YammerUserStats](OfficeDevPnP.Core.Entities.YammerUserStats.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

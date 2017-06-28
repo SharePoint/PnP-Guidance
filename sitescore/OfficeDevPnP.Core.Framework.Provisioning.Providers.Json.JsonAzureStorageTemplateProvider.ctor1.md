@@ -7,8 +7,6 @@
 ```C#
 public JsonAzureStorageTemplateProvider()
 ```
-## Remarks
-  
 ## See also
 - [JsonAzureStorageTemplateProvider](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.JsonAzureStorageTemplateProvider.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Json](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.md)

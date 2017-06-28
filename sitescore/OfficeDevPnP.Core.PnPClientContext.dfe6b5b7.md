@@ -27,7 +27,7 @@ public static PnPClientContext ConvertFrom(ClientContext clientContext, Int32 re
   
 
 ### Return Value
-Type: PnPClientContext  
+Type: [PnPClientContext](OfficeDevPnP.Core.PnPClientContext.md)  
   
 
 

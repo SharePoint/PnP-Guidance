@@ -11,8 +11,6 @@ public TrustVersion TrustVersion { get; set; }
 ### Property Value
 Type: System.ServiceModel.Security.TrustVersion  
 
-## Remarks
-  
 ## See also
 - [WSTrustBinding](OfficeDevPnP.Core.IdentityModel.WSTrustBindings.WSTrustBinding.md) 
 - [OfficeDevPnP.Core.IdentityModel.WSTrustBindings](OfficeDevPnP.Core.IdentityModel.WSTrustBindings.md) 

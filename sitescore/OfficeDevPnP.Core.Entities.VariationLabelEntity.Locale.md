@@ -11,8 +11,6 @@ public uint Locale { get; set; }
 ### Property Value
 Type: System.UInt32  
 
-## Remarks
-  
 ## See also
 - [VariationLabelEntity](OfficeDevPnP.Core.Entities.VariationLabelEntity.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

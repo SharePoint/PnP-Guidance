@@ -11,8 +11,6 @@ public override Type Type { get; }
 ### Property Value
 Type: System.Type  
 
-## Remarks
-  
 ## See also
 - [ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md) 
 - [OfficeDevPnP.Core.Pages.ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md)

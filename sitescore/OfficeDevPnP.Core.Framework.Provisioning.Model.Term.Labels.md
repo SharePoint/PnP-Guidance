@@ -11,8 +11,6 @@ public TermLabelCollection Labels { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabelCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabelCollection.md)  
 
-## Remarks
-  
 ## See also
 - [Term](OfficeDevPnP.Core.Framework.Provisioning.Model.Term.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

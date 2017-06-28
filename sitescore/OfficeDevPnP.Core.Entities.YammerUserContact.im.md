@@ -11,8 +11,6 @@ public YammerUserIm im { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Entities.YammerUserIm](OfficeDevPnP.Core.Entities.YammerUserIm.md)  
 
-## Remarks
-  
 ## See also
 - [YammerUserContact](OfficeDevPnP.Core.Entities.YammerUserContact.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

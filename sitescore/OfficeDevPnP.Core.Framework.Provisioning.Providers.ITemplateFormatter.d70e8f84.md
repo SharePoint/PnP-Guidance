@@ -15,7 +15,7 @@ public abstract ProvisioningTemplate ToProvisioningTemplate(Stream template)
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 The output ProvisioningTemplate  
 
 

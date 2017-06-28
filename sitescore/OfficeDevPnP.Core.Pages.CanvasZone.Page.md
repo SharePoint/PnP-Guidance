@@ -11,8 +11,6 @@ public ClientSidePage Page { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)  
 
-## Remarks
-  
 ## See also
 - [CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md) 
 - [OfficeDevPnP.Core.Pages.CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)

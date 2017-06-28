@@ -21,7 +21,7 @@ public abstract ProvisioningTemplate GetTemplate(String uri, ITemplateFormatter 
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 Returns a ProvisioningTemplate  
 
 

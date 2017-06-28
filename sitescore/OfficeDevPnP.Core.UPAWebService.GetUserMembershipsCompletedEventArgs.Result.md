@@ -9,11 +9,8 @@ public MembershipData[] Result { get; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.UPAWebService.MembershipData[]  
+Type: [OfficeDevPnP.Core.UPAWebService.MembershipData[]](OfficeDevPnP.Core.UPAWebService.MembershipData.md)  
 
-## Remarks
-
-  
 ## See also
 - [GetUserMembershipsCompletedEventArgs](OfficeDevPnP.Core.UPAWebService.GetUserMembershipsCompletedEventArgs.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

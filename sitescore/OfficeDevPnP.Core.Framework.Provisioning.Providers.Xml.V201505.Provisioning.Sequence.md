@@ -9,11 +9,8 @@ public Sequence[] Sequence { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.Sequence[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.Sequence[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.Sequence.md)  
 
-## Remarks
-
-  
 ## See also
 - [Provisioning](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.Provisioning.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.md) 

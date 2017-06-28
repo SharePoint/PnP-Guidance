@@ -18,8 +18,6 @@ public ClientSidePage(ClientContext cc, ClientSidePageLayoutType clientSidePageL
 &emsp;&emsp; type of the page to create. Defaults to Article type  
 
 
-## Remarks
-  
 ## See also
 - [ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)
 - Microsoft.SharePoint.Client.ClientContext

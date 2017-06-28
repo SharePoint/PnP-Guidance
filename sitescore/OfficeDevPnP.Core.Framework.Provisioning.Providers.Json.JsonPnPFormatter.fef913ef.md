@@ -21,7 +21,7 @@ public virtual ProvisioningTemplate ToProvisioningTemplate(Stream template, Stri
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 
 ## See also
 - [JsonPnPFormatter](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.JsonPnPFormatter.md) 

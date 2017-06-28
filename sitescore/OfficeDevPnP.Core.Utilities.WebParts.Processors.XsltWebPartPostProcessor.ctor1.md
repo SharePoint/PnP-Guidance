@@ -13,8 +13,6 @@ public XsltWebPartPostProcessor(WebPart schema)
 &emsp;&emsp;Webpart object  
 
 
-## Remarks
-  
 ## See also
 - [XsltWebPartPostProcessor](OfficeDevPnP.Core.Utilities.WebParts.Processors.XsltWebPartPostProcessor.md)
 - [OfficeDevPnP.Core.Utilities.WebParts.Processors](OfficeDevPnP.Core.Utilities.WebParts.Processors.md)

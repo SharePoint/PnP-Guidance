@@ -7,8 +7,6 @@
 ```C#
 public AzureStorageConnector()
 ```
-## Remarks
-  
 ## See also
 - [AzureStorageConnector](OfficeDevPnP.Core.Framework.Provisioning.Connectors.AzureStorageConnector.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md)

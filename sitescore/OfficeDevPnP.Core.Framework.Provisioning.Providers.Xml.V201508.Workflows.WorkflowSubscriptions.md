@@ -9,11 +9,8 @@ public WorkflowsWorkflowSubscription[] WorkflowSubscriptions { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508.WorkflowsWorkflowSubscription[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508.WorkflowsWorkflowSubscription[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508.WorkflowsWorkflowSubscription.md)  
 
-## Remarks
-
-  
 ## See also
 - [Workflows](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508.Workflows.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508.md) 

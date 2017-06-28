@@ -11,8 +11,6 @@ public bool BreakRoleInheritance { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [SiteSecurity](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurity.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

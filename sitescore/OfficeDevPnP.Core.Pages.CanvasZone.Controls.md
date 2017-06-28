@@ -11,8 +11,6 @@ public List<CanvasControl> Controls { get; }
 ### Property Value
 Type: System.Collections.Generic.List<OfficeDevPnP.Core.Pages.CanvasControl>  
 
-## Remarks
-  
 ## See also
 - [CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

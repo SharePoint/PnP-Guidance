@@ -11,8 +11,6 @@ public long EllapsedMilliseconds { get; set; }
 ### Property Value
 Type: System.Int64  
 
-## Remarks
-  
 ## See also
 - [LogEntry](OfficeDevPnP.Core.Diagnostics.LogEntry.md) 
 - [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md) 

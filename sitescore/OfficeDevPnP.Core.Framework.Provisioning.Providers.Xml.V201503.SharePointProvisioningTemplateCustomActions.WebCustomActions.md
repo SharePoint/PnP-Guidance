@@ -9,11 +9,8 @@ public CustomAction[] WebCustomActions { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.CustomAction[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.CustomAction[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.CustomAction.md)  
 
-## Remarks
-
-  
 ## See also
 - [SharePointProvisioningTemplateCustomActions](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.SharePointProvisioningTemplateCustomActions.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.md) 

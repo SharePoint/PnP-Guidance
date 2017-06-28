@@ -11,8 +11,6 @@ public Dictionary<String, String> Properties { get; }
 ### Property Value
 Type: System.Collections.Generic.Dictionary<System.String, System.String>  
 
-## Remarks
-  
 ## See also
 - [Term](OfficeDevPnP.Core.Framework.Provisioning.Model.Term.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

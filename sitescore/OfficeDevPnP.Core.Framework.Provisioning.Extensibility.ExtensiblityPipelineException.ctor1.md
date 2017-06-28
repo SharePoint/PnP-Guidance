@@ -7,8 +7,6 @@
 ```C#
 public ExtensiblityPipelineException()
 ```
-## Remarks
-  
 ## See also
 - [ExtensiblityPipelineException](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.ExtensiblityPipelineException.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Extensibility](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.md)

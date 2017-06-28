@@ -11,8 +11,6 @@ public string SchemaXml { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [View](OfficeDevPnP.Core.Framework.Provisioning.Model.View.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

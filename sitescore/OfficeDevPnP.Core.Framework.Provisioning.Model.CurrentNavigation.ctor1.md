@@ -7,8 +7,6 @@
 ```C#
 public CurrentNavigation()
 ```
-## Remarks
-  
 ## See also
 - [CurrentNavigation](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

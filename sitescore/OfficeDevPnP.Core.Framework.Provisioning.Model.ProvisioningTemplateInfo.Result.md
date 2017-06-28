@@ -11,8 +11,6 @@ public bool Result { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [ProvisioningTemplateInfo](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateInfo.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

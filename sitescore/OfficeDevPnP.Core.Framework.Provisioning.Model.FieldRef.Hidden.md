@@ -11,8 +11,6 @@ public bool Hidden { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [FieldRef](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

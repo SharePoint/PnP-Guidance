@@ -11,8 +11,6 @@ public DateTime LastContentModifiedDate { get; set; }
 ### Property Value
 Type: System.DateTime  
 
-## Remarks
-  
 ## See also
 - [SiteEntity](OfficeDevPnP.Core.Entities.SiteEntity.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

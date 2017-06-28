@@ -15,7 +15,7 @@ public static SitePolicyEntity GetAppliedSitePolicy(this Web web)
   
 
 ### Return Value
-Type: SitePolicyEntity  
+Type: [SitePolicyEntity](OfficeDevPnP.Core.Entities.SitePolicyEntity.md)  
 A  [OfficeDevPnP.Core.Entities.SitePolicyEntity](OfficeDevPnP.Core.Entities.SitePolicyEntity.md)  object holding the applied policy  
 
 

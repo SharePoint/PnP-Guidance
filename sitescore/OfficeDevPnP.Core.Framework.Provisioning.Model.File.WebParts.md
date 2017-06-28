@@ -11,8 +11,6 @@ public WebPartCollection WebParts { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.WebPartCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPartCollection.md)  
 
-## Remarks
-  
 ## See also
 - [File](OfficeDevPnP.Core.Framework.Provisioning.Model.File.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

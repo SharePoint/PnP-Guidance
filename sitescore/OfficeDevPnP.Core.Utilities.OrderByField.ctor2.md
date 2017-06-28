@@ -18,8 +18,6 @@ public OrderByField(string name, bool ascending)
 &emsp;&emsp;If we want to order in ascending order  
 
 
-## Remarks
-  
 ## See also
 - [OrderByField](OfficeDevPnP.Core.Utilities.OrderByField.md)
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)

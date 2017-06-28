@@ -11,8 +11,6 @@ public bool AutoAcceptRequestToJoinLeave { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [SiteGroup](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

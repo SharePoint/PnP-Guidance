@@ -11,9 +11,6 @@ public bool IsInWorkGroup { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-
-  
 ## See also
 - [ContactData](OfficeDevPnP.Core.UPAWebService.ContactData.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

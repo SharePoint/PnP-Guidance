@@ -18,8 +18,6 @@ public TimerJob(string name, string version)
 &emsp;&emsp;Version of the timer job  
 
 
-## Remarks
-  
 ## See also
 - [TimerJob](OfficeDevPnP.Core.Framework.TimerJobs.TimerJob.md)
 - [OfficeDevPnP.Core.Framework.TimerJobs](OfficeDevPnP.Core.Framework.TimerJobs.md)

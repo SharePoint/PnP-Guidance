@@ -33,8 +33,6 @@ public SharePointContextToken(string issuer, string audience, DateTime validFrom
 &emsp;&emsp;IEnumerable of JsonWebTokenClaim object  
 
 
-## Remarks
-  
 ## See also
 - [SharePointContextToken](OfficeDevPnP.Core.Utilities.SharePointContextToken.md)
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)

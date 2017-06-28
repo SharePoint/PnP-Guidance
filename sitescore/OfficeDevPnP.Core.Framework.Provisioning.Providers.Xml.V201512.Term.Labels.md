@@ -9,11 +9,8 @@ public TermLabelsLabel[] Labels { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.TermLabelsLabel[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.TermLabelsLabel[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.TermLabelsLabel.md)  
 
-## Remarks
-
-  
 ## See also
 - [Term](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Term.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

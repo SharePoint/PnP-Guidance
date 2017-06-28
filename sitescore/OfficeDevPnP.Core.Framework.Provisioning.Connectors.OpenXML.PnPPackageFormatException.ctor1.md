@@ -18,8 +18,6 @@ public PnPPackageFormatException(string message, Exception innerException)
 &emsp;&emsp;The exception that is the cause of the current exception  
 
 
-## Remarks
-  
 ## See also
 - [PnPPackageFormatException](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackageFormatException.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.md)

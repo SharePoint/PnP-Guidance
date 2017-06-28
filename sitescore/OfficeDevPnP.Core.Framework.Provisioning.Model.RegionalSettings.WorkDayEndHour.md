@@ -11,8 +11,6 @@ public WorkHour WorkDayEndHour { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.WorkHour](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkHour.md)  
 
-## Remarks
-  
 ## See also
 - [RegionalSettings](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

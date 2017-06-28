@@ -11,9 +11,6 @@ public string Name { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [FieldRefFull](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.FieldRefFull.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md) 

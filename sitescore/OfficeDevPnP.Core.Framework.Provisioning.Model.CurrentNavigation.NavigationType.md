@@ -11,8 +11,6 @@ public CurrentNavigationType NavigationType { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigationType](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigationType.md)  
 
-## Remarks
-  
 ## See also
 - [CurrentNavigation](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigation.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

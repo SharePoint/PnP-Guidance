@@ -39,11 +39,8 @@ public ContactData AddColleague(String accountName, String colleagueAccountName,
   
 
 ### Return Value
-Type: ContactData  
+Type: [ContactData](OfficeDevPnP.Core.UPAWebService.ContactData.md)  
 
-## Remarks
-
-  
 ## See also
 - [UserProfileService](OfficeDevPnP.Core.UPAWebService.UserProfileService.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

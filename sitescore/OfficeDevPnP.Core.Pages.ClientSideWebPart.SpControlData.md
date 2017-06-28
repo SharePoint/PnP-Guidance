@@ -11,8 +11,6 @@ public ClientSideWebPartControlData SpControlData { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Pages.ClientSideWebPartControlData](OfficeDevPnP.Core.Pages.ClientSideWebPartControlData.md)  
 
-## Remarks
-  
 ## See also
 - [ClientSideWebPart](OfficeDevPnP.Core.Pages.ClientSideWebPart.md) 
 - Newtonsoft.Json.Linq.JObject

@@ -11,8 +11,6 @@ public string Title { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [UserEntity](OfficeDevPnP.Core.Entities.UserEntity.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

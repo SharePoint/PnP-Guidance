@@ -23,8 +23,6 @@ public Localization(int lcid, string name, string resourceFile)
 &emsp;&emsp;Resource file for localization  
 
 
-## Remarks
-  
 ## See also
 - [Localization](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

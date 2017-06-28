@@ -18,8 +18,6 @@ public DataRow(Dictionary<String, String> values, ObjectSecurity security)
 &emsp;&emsp;ObjectSecurity object  
 
 
-## Remarks
-  
 ## See also
 - [DataRow](OfficeDevPnP.Core.Framework.Provisioning.Model.DataRow.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

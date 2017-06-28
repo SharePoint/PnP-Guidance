@@ -11,8 +11,6 @@ public abstract string Name { get; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [IPnPSchemaSerializer](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.IPnPSchemaSerializer.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.md) 

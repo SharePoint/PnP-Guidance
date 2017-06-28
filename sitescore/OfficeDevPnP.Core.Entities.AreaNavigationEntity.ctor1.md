@@ -7,8 +7,6 @@
 ```C#
 public AreaNavigationEntity()
 ```
-## Remarks
-  
 ## See also
 - [AreaNavigationEntity](OfficeDevPnP.Core.Entities.AreaNavigationEntity.md)
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)

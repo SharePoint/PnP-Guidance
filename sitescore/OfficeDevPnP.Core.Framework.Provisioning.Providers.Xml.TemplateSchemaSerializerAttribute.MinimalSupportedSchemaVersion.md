@@ -11,8 +11,6 @@ public XMLPnPSchemaVersion MinimalSupportedSchemaVersion { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLPnPSchemaVersion](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLPnPSchemaVersion.md)  
 
-## Remarks
-  
 ## See also
 - [TemplateSchemaSerializerAttribute](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.TemplateSchemaSerializerAttribute.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.md) 

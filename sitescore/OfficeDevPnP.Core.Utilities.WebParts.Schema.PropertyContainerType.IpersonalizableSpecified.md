@@ -13,8 +13,6 @@ public bool IpersonalizableSpecified { get; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [PropertyContainerType](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyContainerType.md) 
 - [OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md) 

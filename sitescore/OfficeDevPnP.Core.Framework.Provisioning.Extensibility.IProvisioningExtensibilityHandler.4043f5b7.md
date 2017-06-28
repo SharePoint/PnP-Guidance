@@ -39,7 +39,7 @@ public abstract ProvisioningTemplate Extract(ClientContext ctx, ProvisioningTemp
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 The Provisioning Template eventually enriched by the handler during extraction  
 
 

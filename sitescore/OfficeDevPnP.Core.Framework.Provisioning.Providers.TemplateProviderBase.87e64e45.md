@@ -15,13 +15,13 @@ public abstract ProvisioningTemplate GetTemplate(String uri, ITemplateProviderEx
   
 
 #### extensions  
-&emsp;&emsp;Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateProviderExtension[]  
+&emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateProviderExtension[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateProviderExtension.md)  
 &emsp;&emsp;Collection of provisioning template extensions  
 
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 Returns a ProvisioningTemplate  
 
 

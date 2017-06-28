@@ -9,11 +9,8 @@ public Site[] Site { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Site[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Site[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Site.md)  
 
-## Remarks
-
-  
 ## See also
 - [Sequence](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Sequence.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

@@ -15,7 +15,7 @@ public WebAPIContexCacheItem Get(String cacheKey)
   
 
 ### Return Value
-Type: WebAPIContexCacheItem  
+Type: [WebAPIContexCacheItem](OfficeDevPnP.Core.WebAPI.WebAPIContexCacheItem.md)  
 A  [OfficeDevPnP.Core.WebAPI.WebAPIContexCacheItem](OfficeDevPnP.Core.WebAPI.WebAPIContexCacheItem.md)  object  
 
 

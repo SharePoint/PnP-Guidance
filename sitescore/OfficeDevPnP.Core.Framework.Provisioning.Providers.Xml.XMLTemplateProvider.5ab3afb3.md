@@ -21,7 +21,7 @@ public override ProvisioningTemplate GetTemplate(String uri, ITemplateFormatter 
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 
 ## See also
 - [XMLTemplateProvider](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.md) 

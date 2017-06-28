@@ -11,8 +11,6 @@ public string Url { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [NavigationNode](OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNode.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

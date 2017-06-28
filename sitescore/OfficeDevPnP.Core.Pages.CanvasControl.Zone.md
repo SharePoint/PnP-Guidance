@@ -11,8 +11,6 @@ public CanvasZone Zone { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Pages.CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md)  
 
-## Remarks
-  
 ## See also
 - [CanvasControl](OfficeDevPnP.Core.Pages.CanvasControl.md) 
 - [OfficeDevPnP.Core.Pages.CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)

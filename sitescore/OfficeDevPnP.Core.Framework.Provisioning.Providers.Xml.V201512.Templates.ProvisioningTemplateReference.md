@@ -9,11 +9,8 @@ public ProvisioningTemplateReference[] ProvisioningTemplateReference { get; set;
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.ProvisioningTemplateReference[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.ProvisioningTemplateReference[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.ProvisioningTemplateReference.md)  
 
-## Remarks
-
-  
 ## See also
 - [Templates](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Templates.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

@@ -15,7 +15,7 @@ public static YammerUser GetYammerUser(String accessToken)
   
 
 ### Return Value
-Type: YammerUser  
+Type: [YammerUser](OfficeDevPnP.Core.Entities.YammerUser.md)  
   
 
 

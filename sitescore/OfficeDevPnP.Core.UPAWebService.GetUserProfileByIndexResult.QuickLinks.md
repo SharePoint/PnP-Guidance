@@ -9,11 +9,8 @@ public QuickLinkData[] QuickLinks { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.UPAWebService.QuickLinkData[]  
+Type: [OfficeDevPnP.Core.UPAWebService.QuickLinkData[]](OfficeDevPnP.Core.UPAWebService.QuickLinkData.md)  
 
-## Remarks
-
-  
 ## See also
 - [GetUserProfileByIndexResult](OfficeDevPnP.Core.UPAWebService.GetUserProfileByIndexResult.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

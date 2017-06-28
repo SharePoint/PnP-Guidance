@@ -11,8 +11,6 @@ public string RootWebTemplate { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [VariationInformation](OfficeDevPnP.Core.Entities.VariationInformation.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

@@ -27,7 +27,7 @@ public abstract void SaveAs(ProvisioningTemplate template, String uri, ITemplate
   
 
 #### extensions  
-&emsp;&emsp;Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateProviderExtension[]  
+&emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateProviderExtension[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateProviderExtension.md)  
 &emsp;&emsp;Collection of provisioning template extensions  
 
   

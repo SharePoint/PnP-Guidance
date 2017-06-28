@@ -11,8 +11,6 @@ public OAuth2AccessTokenResponse AccessToken { get; set; }
 ### Property Value
 Type: SharePointPnP.IdentityModel.Extensions.S2S.Protocols.OAuth2.OAuth2AccessTokenResponse  
 
-## Remarks
-  
 ## See also
 - [WebAPIContexCacheItem](OfficeDevPnP.Core.WebAPI.WebAPIContexCacheItem.md) 
 - [OfficeDevPnP.Core.WebAPI](OfficeDevPnP.Core.WebAPI.md) 

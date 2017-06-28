@@ -11,8 +11,6 @@ public int id { get; set; }
 ### Property Value
 Type: System.Int32  
 
-## Remarks
-  
 ## See also
 - [YammerUser](OfficeDevPnP.Core.Entities.YammerUser.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

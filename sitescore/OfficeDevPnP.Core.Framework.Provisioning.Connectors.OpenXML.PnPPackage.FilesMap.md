@@ -11,8 +11,6 @@ public PnPFilesMap FilesMap { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.PnPFilesMap](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.PnPFilesMap.md)  
 
-## Remarks
-  
 ## See also
 - [PnPPackage](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.md) 

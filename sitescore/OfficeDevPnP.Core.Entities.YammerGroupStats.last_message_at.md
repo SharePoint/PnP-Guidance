@@ -11,8 +11,6 @@ public string last_message_at { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [YammerGroupStats](OfficeDevPnP.Core.Entities.YammerGroupStats.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

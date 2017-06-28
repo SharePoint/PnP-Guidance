@@ -11,8 +11,6 @@ public string Name { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [RoleDefinition](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinition.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

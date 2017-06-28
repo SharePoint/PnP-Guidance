@@ -13,8 +13,6 @@ public WorkflowSubscription(Dictionary<String, String> propertyDefinitions)
 &emsp;&emsp;Dictionary Key-Value pair of property definitions   
 
 
-## Remarks
-  
 ## See also
 - [WorkflowSubscription](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkflowSubscription.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

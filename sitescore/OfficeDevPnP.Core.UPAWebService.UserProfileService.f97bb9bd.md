@@ -15,7 +15,7 @@ public void ModifyUserPropertyByAccountName(String accountName, PropertyData[] n
   
 
 #### newData  
-&emsp;&emsp;Type: OfficeDevPnP.Core.UPAWebService.PropertyData[]  
+&emsp;&emsp;Type: [OfficeDevPnP.Core.UPAWebService.PropertyData[]](OfficeDevPnP.Core.UPAWebService.PropertyData.md)  
 &emsp;&emsp;  
 
   
@@ -23,9 +23,6 @@ public void ModifyUserPropertyByAccountName(String accountName, PropertyData[] n
 ### Return Value
 Type: void  
 
-## Remarks
-
-  
 ## See also
 - [UserProfileService](OfficeDevPnP.Core.UPAWebService.UserProfileService.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

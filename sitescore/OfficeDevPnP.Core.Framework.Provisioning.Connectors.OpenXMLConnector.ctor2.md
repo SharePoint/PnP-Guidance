@@ -28,8 +28,6 @@ public OpenXMLConnector(string packageFileName, FileConnectorBase persistenceCon
 &emsp;&emsp;The X.509 certificate to use for digital signature of the template, optional  
 
 
-## Remarks
-  
 ## See also
 - [OpenXMLConnector](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXMLConnector.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md)

@@ -11,8 +11,6 @@ public int updates { get; set; }
 ### Property Value
 Type: System.Int32  
 
-## Remarks
-  
 ## See also
 - [YammerGroupStats](OfficeDevPnP.Core.Entities.YammerGroupStats.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

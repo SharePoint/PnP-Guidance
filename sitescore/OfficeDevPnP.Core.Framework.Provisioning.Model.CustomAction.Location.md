@@ -11,8 +11,6 @@ public string Location { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [CustomAction](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

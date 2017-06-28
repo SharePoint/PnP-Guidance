@@ -11,8 +11,6 @@ public bool Remove { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [CustomActionEntity](OfficeDevPnP.Core.Entities.CustomActionEntity.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

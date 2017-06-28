@@ -11,8 +11,6 @@ public bool enable_chat { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [YammerUserNetworkSettings](OfficeDevPnP.Core.Entities.YammerUserNetworkSettings.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

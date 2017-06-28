@@ -9,11 +9,8 @@ public OrganizationProfileData[] Result { get; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.UPAWebService.OrganizationProfileData[]  
+Type: [OfficeDevPnP.Core.UPAWebService.OrganizationProfileData[]](OfficeDevPnP.Core.UPAWebService.OrganizationProfileData.md)  
 
-## Remarks
-
-  
 ## See also
 - [GetUserOrganizationsCompletedEventArgs](OfficeDevPnP.Core.UPAWebService.GetUserOrganizationsCompletedEventArgs.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

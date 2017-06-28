@@ -11,9 +11,6 @@ public int Version { get; set; }
 ### Property Value
 Type: System.Int32  
 
-## Remarks
-
-  
 ## See also
 - [ComposedLook](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.ComposedLook.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.md) 

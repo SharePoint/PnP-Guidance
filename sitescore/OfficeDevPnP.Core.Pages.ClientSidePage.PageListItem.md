@@ -11,8 +11,6 @@ public ListItem PageListItem { get; }
 ### Property Value
 Type: Microsoft.SharePoint.Client.ListItem  
 
-## Remarks
-  
 ## See also
 - [ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

@@ -15,7 +15,7 @@ public static AreaNavigationEntity GetNavigationSettings(this Web web)
   
 
 ### Return Value
-Type: AreaNavigationEntity  
+Type: [AreaNavigationEntity](OfficeDevPnP.Core.Entities.AreaNavigationEntity.md)  
 Returns AreaNavigationEntity settings  
 
 

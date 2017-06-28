@@ -23,8 +23,6 @@ public TimerJob(string name, string version, string configurationData)
 &emsp;&emsp;Timer job configuration data  
 
 
-## Remarks
-  
 ## See also
 - [TimerJob](OfficeDevPnP.Core.Framework.TimerJobs.TimerJob.md)
 - [OfficeDevPnP.Core.Framework.TimerJobs](OfficeDevPnP.Core.Framework.TimerJobs.md)

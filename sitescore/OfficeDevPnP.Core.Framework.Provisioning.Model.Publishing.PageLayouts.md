@@ -11,8 +11,6 @@ public PageLayoutCollection PageLayouts { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.PageLayoutCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.PageLayoutCollection.md)  
 
-## Remarks
-  
 ## See also
 - [Publishing](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

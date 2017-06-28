@@ -9,11 +9,8 @@ public AuditSettingsAudit[] Audit { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.AuditSettingsAudit[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.AuditSettingsAudit[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.AuditSettingsAudit.md)  
 
-## Remarks
-
-  
 ## See also
 - [AuditSettings](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.AuditSettings.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

@@ -11,9 +11,6 @@ public string Description { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [PropertyInfo](OfficeDevPnP.Core.UPAWebService.PropertyInfo.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

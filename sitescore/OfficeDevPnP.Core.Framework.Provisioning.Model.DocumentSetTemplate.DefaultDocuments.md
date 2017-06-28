@@ -11,8 +11,6 @@ public DefaultDocumentCollection DefaultDocuments { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.DefaultDocumentCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.DefaultDocumentCollection.md)  
 
-## Remarks
-  
 ## See also
 - [DocumentSetTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

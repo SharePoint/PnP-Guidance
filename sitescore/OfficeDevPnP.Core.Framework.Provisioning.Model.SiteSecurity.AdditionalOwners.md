@@ -11,8 +11,6 @@ public UserCollection AdditionalOwners { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.UserCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.UserCollection.md)  
 
-## Remarks
-  
 ## See also
 - [SiteSecurity](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurity.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

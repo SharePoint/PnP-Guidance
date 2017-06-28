@@ -9,8 +9,6 @@ Initializes a new instance of the  [OfficeDevPnP.Core.Utilities.WebParts.Schema.
 ```C#
 public PropertyContainerTypeIpersonalizable()
 ```
-## Remarks
-  
 ## See also
 - [PropertyContainerTypeIpersonalizable](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyContainerTypeIpersonalizable.md)
 - [OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyContainerTypeIpersonalizable](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyContainerTypeIpersonalizable.md)

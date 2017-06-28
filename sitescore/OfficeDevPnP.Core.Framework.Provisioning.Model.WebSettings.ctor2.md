@@ -23,8 +23,6 @@ public WebSettings(bool noCrawl, string requestAccessEmail, string welcomePage)
 &emsp;&emsp;Welcome page for site or subsite  
 
 
-## Remarks
-  
 ## See also
 - [WebSettings](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

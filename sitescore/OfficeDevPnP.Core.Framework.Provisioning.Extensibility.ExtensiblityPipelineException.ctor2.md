@@ -18,8 +18,6 @@ public ExtensiblityPipelineException(string message, Exception innerException)
 &emsp;&emsp;The exception that is the cause of the current exception.  
 
 
-## Remarks
-  
 ## See also
 - [ExtensiblityPipelineException](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.ExtensiblityPipelineException.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Extensibility](OfficeDevPnP.Core.Framework.Provisioning.Extensibility.md)

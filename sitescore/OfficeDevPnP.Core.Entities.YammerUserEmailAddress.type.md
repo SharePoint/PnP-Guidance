@@ -11,8 +11,6 @@ public string type { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [YammerUserEmailAddress](OfficeDevPnP.Core.Entities.YammerUserEmailAddress.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

@@ -23,8 +23,6 @@ public CanvasZone(ClientSidePage page, CanvasZoneTemplate canvasSectionTemplate,
 &emsp;&emsp;Order of this zone in the collection of zones on the page  
 
 
-## Remarks
-  
 ## See also
 - [CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md)
 - [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)

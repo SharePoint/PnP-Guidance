@@ -7,8 +7,6 @@
 ```C#
 public PnPMonitoredScope()
 ```
-## Remarks
-  
 ## See also
 - [PnPMonitoredScope](OfficeDevPnP.Core.Diagnostics.PnPMonitoredScope.md)
 - [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md)

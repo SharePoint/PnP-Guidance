@@ -18,8 +18,6 @@ public AzureStorageConnector(string connectionString, string container)
 &emsp;&emsp;Name of the Azure container to operate against  
 
 
-## Remarks
-  
 ## See also
 - [AzureStorageConnector](OfficeDevPnP.Core.Framework.Provisioning.Connectors.AzureStorageConnector.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md)

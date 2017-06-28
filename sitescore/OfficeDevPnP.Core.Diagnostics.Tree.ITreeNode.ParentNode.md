@@ -11,8 +11,6 @@ public abstract ITreeNode ParentNode { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode.md)  
 
-## Remarks
-  
 ## See also
 - [ITreeNode](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode.md) 
 - [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md) 

@@ -11,8 +11,6 @@ public string SiteUrl { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [UnifiedGroupEntity](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

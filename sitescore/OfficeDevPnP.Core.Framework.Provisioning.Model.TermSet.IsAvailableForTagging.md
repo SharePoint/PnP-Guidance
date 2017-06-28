@@ -11,8 +11,6 @@ public bool IsAvailableForTagging { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [TermSet](OfficeDevPnP.Core.Framework.Provisioning.Model.TermSet.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

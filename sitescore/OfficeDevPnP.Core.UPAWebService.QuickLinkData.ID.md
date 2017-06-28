@@ -11,9 +11,6 @@ public long ID { get; set; }
 ### Property Value
 Type: System.Int64  
 
-## Remarks
-
-  
 ## See also
 - [QuickLinkData](OfficeDevPnP.Core.UPAWebService.QuickLinkData.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

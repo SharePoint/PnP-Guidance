@@ -13,8 +13,6 @@ public ObjectSecurity(IEnumerable<RoleAssignment> roleAssignments)
 &emsp;&emsp;RoleAssignments for security component  
 
 
-## Remarks
-  
 ## See also
 - [ObjectSecurity](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

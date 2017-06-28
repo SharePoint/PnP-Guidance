@@ -11,8 +11,6 @@ public string LanguageCode { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [WebTemplateEntity](OfficeDevPnP.Core.Entities.WebTemplateEntity.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

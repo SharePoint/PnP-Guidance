@@ -15,11 +15,8 @@ public GetUserProfileByIndexResult GetUserProfileByIndex(Int32 index)
   
 
 ### Return Value
-Type: GetUserProfileByIndexResult  
+Type: [GetUserProfileByIndexResult](OfficeDevPnP.Core.UPAWebService.GetUserProfileByIndexResult.md)  
 
-## Remarks
-
-  
 ## See also
 - [UserProfileService](OfficeDevPnP.Core.UPAWebService.UserProfileService.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 
