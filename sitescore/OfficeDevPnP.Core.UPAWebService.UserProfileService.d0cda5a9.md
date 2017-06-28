@@ -23,9 +23,6 @@ public void GetInCommonAsync(String accountName, Object userState)
 ### Return Value
 Type: void  
 
-## Remarks
-
-  
 ## See also
 - [UserProfileService](OfficeDevPnP.Core.UPAWebService.UserProfileService.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

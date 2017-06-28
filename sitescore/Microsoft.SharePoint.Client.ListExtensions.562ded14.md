@@ -39,7 +39,7 @@ public static WebhookSubscription AddWebhookSubscription(this List list, String 
   
 
 ### Return Value
-Type: WebhookSubscription  
+Type: [WebhookSubscription](OfficeDevPnP.Core.Entities.WebhookSubscription.md)  
 The added subscription object  
 
 

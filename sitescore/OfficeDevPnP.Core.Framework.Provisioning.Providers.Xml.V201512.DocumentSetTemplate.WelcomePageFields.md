@@ -9,11 +9,8 @@ public DocumentSetFieldRef[] WelcomePageFields { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.DocumentSetFieldRef[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.DocumentSetFieldRef[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.DocumentSetFieldRef.md)  
 
-## Remarks
-
-  
 ## See also
 - [DocumentSetTemplate](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.DocumentSetTemplate.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

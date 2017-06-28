@@ -11,8 +11,6 @@ public string NotificationUrl { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [WebhookSubscription](OfficeDevPnP.Core.Entities.WebhookSubscription.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

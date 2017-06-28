@@ -11,9 +11,6 @@ public string RequestToJoinLeaveEmailSetting { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [SiteGroup](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.SiteGroup.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md) 

@@ -23,8 +23,6 @@ public SharePointConnector(ClientRuntimeContext clientContext, string connection
 &emsp;&emsp;Library + folder that holds the files (mydocs/myfolder)  
 
 
-## Remarks
-  
 ## See also
 - [SharePointConnector](OfficeDevPnP.Core.Framework.Provisioning.Connectors.SharePointConnector.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors](OfficeDevPnP.Core.Framework.Provisioning.Connectors.md)

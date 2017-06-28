@@ -69,7 +69,7 @@ public static UnifiedGroupEntity CreateUnifiedGroup(String displayName, String d
   
 
 ### Return Value
-Type: UnifiedGroupEntity  
+Type: [UnifiedGroupEntity](OfficeDevPnP.Core.Entities.UnifiedGroupEntity.md)  
 The just created Office 365 Group  
 
 

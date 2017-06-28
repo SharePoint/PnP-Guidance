@@ -11,9 +11,6 @@ public string Key { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [PreferencesParameter](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.PreferencesParameter.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md) 

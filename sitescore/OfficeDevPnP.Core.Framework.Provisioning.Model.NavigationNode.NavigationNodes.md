@@ -11,8 +11,6 @@ public NavigationNodeCollection NavigationNodes { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNodeCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNodeCollection.md)  
 
-## Remarks
-  
 ## See also
 - [NavigationNode](OfficeDevPnP.Core.Framework.Provisioning.Model.NavigationNode.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

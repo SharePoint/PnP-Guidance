@@ -11,9 +11,6 @@ public bool IsPrivacyChanged { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-
-  
 ## See also
 - [PropertyData](OfficeDevPnP.Core.UPAWebService.PropertyData.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

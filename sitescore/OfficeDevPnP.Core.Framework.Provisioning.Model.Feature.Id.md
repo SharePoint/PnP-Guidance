@@ -11,8 +11,6 @@ public Guid Id { get; set; }
 ### Property Value
 Type: System.Guid  
 
-## Remarks
-  
 ## See also
 - [Feature](OfficeDevPnP.Core.Framework.Provisioning.Model.Feature.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

@@ -18,8 +18,6 @@ public PnPHttpProvider(int retryCount, int delay)
 &emsp;&emsp;Delay Time  
 
 
-## Remarks
-  
 ## See also
 - [PnPHttpProvider](OfficeDevPnP.Core.Framework.Graph.PnPHttpProvider.md)
 - [OfficeDevPnP.Core.Framework.Graph](OfficeDevPnP.Core.Framework.Graph.md)

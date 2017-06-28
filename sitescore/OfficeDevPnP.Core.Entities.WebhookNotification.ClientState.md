@@ -11,8 +11,6 @@ public string ClientState { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [WebhookNotification](OfficeDevPnP.Core.Entities.WebhookNotification.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

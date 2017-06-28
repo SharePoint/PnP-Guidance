@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public static WebhookSubscription AddWebhookSubscription(this List list, String notificationUrl, Int32 validityInMonths = 3, String clientState, String accessToken)
+public static WebhookSubscription AddWebhookSubscription(this List list, String notificationUrl, Int32 validityInMonths = 6, String clientState, String accessToken)
 ```
 ### Parameters
 #### list  
@@ -39,7 +39,7 @@ public static WebhookSubscription AddWebhookSubscription(this List list, String 
   
 
 ### Return Value
-Type: WebhookSubscription  
+Type: [WebhookSubscription](OfficeDevPnP.Core.Entities.WebhookSubscription.md)  
 The added subscription object  
 
 

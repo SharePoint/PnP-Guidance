@@ -9,11 +9,8 @@ public TermStore[] TermStore { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.TermStore[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.TermStore[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.TermStore.md)  
 
-## Remarks
-
-  
 ## See also
 - [Sequence](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Sequence.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

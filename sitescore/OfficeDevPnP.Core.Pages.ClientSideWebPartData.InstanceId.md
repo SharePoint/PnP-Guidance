@@ -11,8 +11,6 @@ public string InstanceId { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [ClientSideWebPartData](OfficeDevPnP.Core.Pages.ClientSideWebPartData.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

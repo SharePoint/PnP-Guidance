@@ -11,8 +11,6 @@ public IList<Term> Terms { get; }
 ### Property Value
 Type: System.Collections.Generic.IList<Microsoft.SharePoint.Client.Taxonomy.Term>  
 
-## Remarks
-  
 ## See also
 - [DefaultColumnTermValue](OfficeDevPnP.Core.Entities.DefaultColumnTermValue.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

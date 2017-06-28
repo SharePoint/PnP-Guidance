@@ -11,8 +11,6 @@ public Guid CorrelationId { get; }
 ### Property Value
 Type: System.Guid  
 
-## Remarks
-  
 ## See also
 - [PnPMonitoredScope](OfficeDevPnP.Core.Diagnostics.PnPMonitoredScope.md) 
 - [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md) 

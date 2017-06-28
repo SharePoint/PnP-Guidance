@@ -11,9 +11,6 @@ public bool Overwrite { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-
-  
 ## See also
 - [File](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.File.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.md) 

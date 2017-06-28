@@ -58,8 +58,8 @@
 |[Provider](OfficeDevPnP.Core.Framework.Provisioning.Model.Provider.md)|Domain Object for Extensiblity Call out|
 |[ProviderCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.ProviderCollection.md)|Collection of Provider objects|
 |[ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)|Domain Object for the Provisioning Template / Domain Object for the Provisioning Template|
-|[ProvisioningTemplateCollection&lt;T&gt;](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection.md)|Generic collection of items stored in the ProvisioningTemplate graph|
-|[ProvisioningTemplateDictionary&lt;TKey, TItem&gt;](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateDictionary.md)|Generic keyed collection of items stored in the ProvisioningTemplate graph|
+|[ProvisioningTemplateCollection&lt;T&gt;](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateCollection_cdcab78f.md)|Generic collection of items stored in the ProvisioningTemplate graph|
+|[ProvisioningTemplateDictionary&lt;TKey, TItem&gt;](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateDictionary_cdcab78e.md)|Generic keyed collection of items stored in the ProvisioningTemplate graph|
 |[ProvisioningTemplateInfo](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateInfo.md)|Class holds the required Provisioning Template Information|
 |[Publishing](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.md)|Defines the Publishing configuration to provision|
 |[RegionalSettings](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.md)|Defines the Regional Settings for a site|

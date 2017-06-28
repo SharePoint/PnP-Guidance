@@ -9,11 +9,8 @@ public Term[] Items { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Term[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Term[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Term.md)  
 
-## Remarks
-
-  
 ## See also
 - [TermTerms](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.TermTerms.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

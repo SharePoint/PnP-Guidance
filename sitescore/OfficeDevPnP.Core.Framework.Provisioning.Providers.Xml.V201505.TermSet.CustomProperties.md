@@ -9,11 +9,8 @@ public StringDictionaryItem[] CustomProperties { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.StringDictionaryItem[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.StringDictionaryItem[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.StringDictionaryItem.md)  
 
-## Remarks
-
-  
 ## See also
 - [TermSet](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.TermSet.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.md) 

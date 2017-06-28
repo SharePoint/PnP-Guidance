@@ -15,7 +15,7 @@ public static PnPInfo UnpackTemplate(this MemoryStream stream)
   
 
 ### Return Value
-Type: PnPInfo  
+Type: [PnPInfo](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.Model.PnPInfo.md)  
 Returns site template  
 
 

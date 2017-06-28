@@ -15,7 +15,7 @@ public ClientSideWebPart InstantiateDefaultWebPart(DefaultClientSideWebParts web
   
 
 ### Return Value
-Type: ClientSideWebPart  
+Type: [ClientSideWebPart](OfficeDevPnP.Core.Pages.ClientSideWebPart.md)  
  [OfficeDevPnP.Core.Pages.ClientSideWebPart](OfficeDevPnP.Core.Pages.ClientSideWebPart.md)  instance  
 
 

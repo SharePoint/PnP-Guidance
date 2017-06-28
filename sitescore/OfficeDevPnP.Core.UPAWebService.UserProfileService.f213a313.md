@@ -15,11 +15,8 @@ public PinnedLinkData[] GetUserPinnedLinks(String accountName)
   
 
 ### Return Value
-Type: PinnedLinkData[]  
+Type: [PinnedLinkData[]](OfficeDevPnP.Core.UPAWebService.PinnedLinkData.md)  
 
-## Remarks
-
-  
 ## See also
 - [UserProfileService](OfficeDevPnP.Core.UPAWebService.UserProfileService.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

@@ -11,8 +11,6 @@ public bool ManagedNavigation { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [StructuralNavigationEntity](OfficeDevPnP.Core.Entities.StructuralNavigationEntity.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

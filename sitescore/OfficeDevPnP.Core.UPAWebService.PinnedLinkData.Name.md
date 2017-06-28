@@ -11,9 +11,6 @@ public string Name { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [PinnedLinkData](OfficeDevPnP.Core.UPAWebService.PinnedLinkData.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

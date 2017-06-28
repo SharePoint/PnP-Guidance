@@ -11,9 +11,6 @@ public AddInsAddinSource Source { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.AddInsAddinSource](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.AddInsAddinSource.md)  
 
-## Remarks
-
-  
 ## See also
 - [AddInsAddin](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.AddInsAddin.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md) 

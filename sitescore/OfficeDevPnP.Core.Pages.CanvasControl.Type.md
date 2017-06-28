@@ -11,8 +11,6 @@ public abstract Type Type { get; }
 ### Property Value
 Type: System.Type  
 
-## Remarks
-  
 ## See also
 - [CanvasControl](OfficeDevPnP.Core.Pages.CanvasControl.md) 
 - [OfficeDevPnP.Core.Pages.CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)

@@ -7,8 +7,6 @@
 ```C#
 public Publishing()
 ```
-## Remarks
-  
 ## See also
 - [Publishing](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -18,8 +18,6 @@ public TokenParser(Web web, ProvisioningTemplate template)
 &emsp;&emsp;a provisioning template  
 
 
-## Remarks
-  
 ## See also
 - [TokenParser](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenParser.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md)

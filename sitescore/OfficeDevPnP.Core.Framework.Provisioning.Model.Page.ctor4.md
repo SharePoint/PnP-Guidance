@@ -38,8 +38,6 @@ public Page(string url, bool overwrite, WikiPageLayout layout, IEnumerable<WebPa
 &emsp;&emsp;Fields used in the page  
 
 
-## Remarks
-  
 ## See also
 - [Page](OfficeDevPnP.Core.Framework.Provisioning.Model.Page.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

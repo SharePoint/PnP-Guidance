@@ -11,8 +11,6 @@ public LogConfigurationTracingLoggerElement Logger { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Diagnostics.LogConfigurationTracingLoggerElement](OfficeDevPnP.Core.Diagnostics.LogConfigurationTracingLoggerElement.md)  
 
-## Remarks
-  
 ## See also
 - [LogConfigurationTracingSection](OfficeDevPnP.Core.Diagnostics.LogConfigurationTracingSection.md) 
 - [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md) 

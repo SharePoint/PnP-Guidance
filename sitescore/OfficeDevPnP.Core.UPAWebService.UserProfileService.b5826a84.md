@@ -17,9 +17,6 @@ public string GetProfileSchemaNameByAccountName(String accountName)
 ### Return Value
 Type: string  
 
-## Remarks
-
-  
 ## See also
 - [UserProfileService](OfficeDevPnP.Core.UPAWebService.UserProfileService.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

@@ -15,11 +15,8 @@ public OrganizationProfileData[] GetUserOrganizations(String accountName)
   
 
 ### Return Value
-Type: OrganizationProfileData[]  
+Type: [OrganizationProfileData[]](OfficeDevPnP.Core.UPAWebService.OrganizationProfileData.md)  
 
-## Remarks
-
-  
 ## See also
 - [UserProfileService](OfficeDevPnP.Core.UPAWebService.UserProfileService.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

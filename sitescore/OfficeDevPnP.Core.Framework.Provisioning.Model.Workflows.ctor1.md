@@ -7,8 +7,6 @@
 ```C#
 public Workflows()
 ```
-## Remarks
-  
 ## See also
 - [Workflows](OfficeDevPnP.Core.Framework.Provisioning.Model.Workflows.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

@@ -11,8 +11,6 @@ public bool CommentsDisabled { get; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

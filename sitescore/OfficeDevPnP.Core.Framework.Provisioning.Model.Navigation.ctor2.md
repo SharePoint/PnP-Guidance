@@ -18,8 +18,6 @@ public Navigation(GlobalNavigation globalNavigation, CurrentNavigation currentNa
 &emsp;&emsp;CurrentNavigation object  
 
 
-## Remarks
-  
 ## See also
 - [Navigation](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

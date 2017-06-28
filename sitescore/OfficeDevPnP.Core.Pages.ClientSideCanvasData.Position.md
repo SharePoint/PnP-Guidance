@@ -11,8 +11,6 @@ public ClientSideCanvasPosition Position { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Pages.ClientSideCanvasPosition](OfficeDevPnP.Core.Pages.ClientSideCanvasPosition.md)  
 
-## Remarks
-  
 ## See also
 - [ClientSideCanvasData](OfficeDevPnP.Core.Pages.ClientSideCanvasData.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

@@ -11,8 +11,6 @@ public virtual ProvisioningTemplate ParentTemplate { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 
-## Remarks
-  
 ## See also
 - [BaseModel](OfficeDevPnP.Core.Framework.Provisioning.Model.BaseModel.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

@@ -9,8 +9,6 @@ Initializes a new instance of the  [OfficeDevPnP.Core.Utilities.WebParts.Schema.
 ```C#
 public PropertyContainerType()
 ```
-## Remarks
-  
 ## See also
 - [PropertyContainerType](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyContainerType.md)
 - [OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyContainerType](OfficeDevPnP.Core.Utilities.WebParts.Schema.PropertyContainerType.md)

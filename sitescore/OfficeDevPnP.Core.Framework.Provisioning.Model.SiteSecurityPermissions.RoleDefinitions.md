@@ -11,8 +11,6 @@ public RoleDefinitionCollection RoleDefinitions { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinitionCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleDefinitionCollection.md)  
 
-## Remarks
-  
 ## See also
 - [SiteSecurityPermissions](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurityPermissions.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

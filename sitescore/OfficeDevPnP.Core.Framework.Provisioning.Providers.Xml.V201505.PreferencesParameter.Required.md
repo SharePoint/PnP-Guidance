@@ -11,9 +11,6 @@ public bool Required { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-
-  
 ## See also
 - [PreferencesParameter](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.PreferencesParameter.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.md) 

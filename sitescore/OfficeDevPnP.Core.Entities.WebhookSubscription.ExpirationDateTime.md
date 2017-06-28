@@ -11,8 +11,6 @@ public DateTime ExpirationDateTime { get; set; }
 ### Property Value
 Type: System.DateTime  
 
-## Remarks
-  
 ## See also
 - [WebhookSubscription](OfficeDevPnP.Core.Entities.WebhookSubscription.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

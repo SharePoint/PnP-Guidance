@@ -11,8 +11,6 @@ public FeatureCollection WebFeatures { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.FeatureCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.FeatureCollection.md)  
 
-## Remarks
-  
 ## See also
 - [Features](OfficeDevPnP.Core.Framework.Provisioning.Model.Features.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

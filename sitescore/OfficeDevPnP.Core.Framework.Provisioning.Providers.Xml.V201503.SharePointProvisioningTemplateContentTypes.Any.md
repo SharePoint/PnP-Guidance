@@ -11,9 +11,6 @@ public XmlElement[] Any { get; set; }
 ### Property Value
 Type: System.Xml.XmlElement[]  
 
-## Remarks
-
-  
 ## See also
 - [SharePointProvisioningTemplateContentTypes](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.SharePointProvisioningTemplateContentTypes.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.md) 

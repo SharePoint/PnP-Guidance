@@ -11,8 +11,6 @@ public string DisplayName { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [FieldRef](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

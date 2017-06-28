@@ -9,11 +9,8 @@ public FieldRef[] FieldRefs { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.FieldRef[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.FieldRef[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.FieldRef.md)  
 
-## Remarks
-
-  
 ## See also
 - [ListInstance](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.ListInstance.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.md) 

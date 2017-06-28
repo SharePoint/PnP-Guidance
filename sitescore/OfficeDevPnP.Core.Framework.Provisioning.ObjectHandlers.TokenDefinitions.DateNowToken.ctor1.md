@@ -13,8 +13,6 @@ public DateNowToken(Web web)
 &emsp;&emsp;A SharePoint site/subsite  
 
 
-## Remarks
-  
 ## See also
 - [DateNowToken](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions.DateNowToken.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions.md)

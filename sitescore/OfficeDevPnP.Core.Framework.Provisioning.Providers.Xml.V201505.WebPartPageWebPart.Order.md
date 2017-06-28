@@ -11,9 +11,6 @@ public int Order { get; set; }
 ### Property Value
 Type: System.Int32  
 
-## Remarks
-
-  
 ## See also
 - [WebPartPageWebPart](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.WebPartPageWebPart.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201505.md) 

@@ -15,7 +15,7 @@ public static ThemeEntity GetCurrentComposedLook(this Web web)
   
 
 ### Return Value
-Type: ThemeEntity  
+Type: [ThemeEntity](OfficeDevPnP.Core.Entities.ThemeEntity.md)  
 Entity with attributes of current composed look, or null if none  
 
 

@@ -13,8 +13,6 @@ public SiteGroup(IEnumerable<User> members)
 &emsp;&emsp;SiteGroup members  
 
 
-## Remarks
-  
 ## See also
 - [SiteGroup](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroup.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

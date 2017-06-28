@@ -27,7 +27,7 @@ public static ProvisioningTemplate GetBaseTemplate(this Web web, String webTempl
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 Returns a ProvisioningTemplate object  
 
 

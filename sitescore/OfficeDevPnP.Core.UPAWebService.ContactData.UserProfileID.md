@@ -11,9 +11,6 @@ public Guid UserProfileID { get; set; }
 ### Property Value
 Type: System.Guid  
 
-## Remarks
-
-  
 ## See also
 - [ContactData](OfficeDevPnP.Core.UPAWebService.ContactData.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

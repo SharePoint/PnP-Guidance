@@ -11,8 +11,6 @@ public CalendarType CalendarType { get; set; }
 ### Property Value
 Type: Microsoft.SharePoint.Client.CalendarType  
 
-## Remarks
-  
 ## See also
 - [RegionalSettings](OfficeDevPnP.Core.Framework.Provisioning.Model.RegionalSettings.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

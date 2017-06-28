@@ -7,8 +7,6 @@
 ```C#
 public DataRow()
 ```
-## Remarks
-  
 ## See also
 - [DataRow](OfficeDevPnP.Core.Framework.Provisioning.Model.DataRow.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

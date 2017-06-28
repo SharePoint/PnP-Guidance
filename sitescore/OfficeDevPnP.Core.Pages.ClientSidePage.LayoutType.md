@@ -11,8 +11,6 @@ public ClientSidePageLayoutType LayoutType { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Pages.ClientSidePageLayoutType](OfficeDevPnP.Core.Pages.ClientSidePageLayoutType.md)  
 
-## Remarks
-  
 ## See also
 - [ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

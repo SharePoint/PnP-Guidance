@@ -11,9 +11,6 @@ public long ID { get; set; }
 ### Property Value
 Type: System.Int64  
 
-## Remarks
-
-  
 ## See also
 - [MembershipData](OfficeDevPnP.Core.UPAWebService.MembershipData.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

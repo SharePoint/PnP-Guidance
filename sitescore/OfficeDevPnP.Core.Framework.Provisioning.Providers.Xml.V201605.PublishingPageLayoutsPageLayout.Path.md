@@ -11,9 +11,6 @@ public string Path { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [PublishingPageLayoutsPageLayout](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.PublishingPageLayoutsPageLayout.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md) 

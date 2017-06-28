@@ -7,8 +7,6 @@ Creates a  [OfficeDevPnP.Core.Pages.ClientSideText](OfficeDevPnP.Core.Pages.Clie
 ```C#
 public ClientSideText()
 ```
-## Remarks
-  
 ## See also
 - [ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md)
 - [OfficeDevPnP.Core.Pages.ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md)

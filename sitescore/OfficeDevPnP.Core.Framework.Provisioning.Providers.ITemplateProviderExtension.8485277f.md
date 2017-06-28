@@ -15,7 +15,7 @@ public abstract ProvisioningTemplate PreProcessSaveTemplate(ProvisioningTemplate
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 The resulting template, after pre-processing  
 
 

@@ -11,8 +11,6 @@ public JObject Properties { get; }
 ### Property Value
 Type: Newtonsoft.Json.Linq.JObject  
 
-## Remarks
-  
 ## See also
 - [ClientSideWebPart](OfficeDevPnP.Core.Pages.ClientSideWebPart.md) 
 - Newtonsoft.Json.Linq.JObject

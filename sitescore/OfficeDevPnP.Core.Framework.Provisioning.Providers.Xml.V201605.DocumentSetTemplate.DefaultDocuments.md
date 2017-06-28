@@ -9,11 +9,8 @@ public DocumentSetTemplateDefaultDocument[] DefaultDocuments { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.DocumentSetTemplateDefaultDocument[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.DocumentSetTemplateDefaultDocument[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.DocumentSetTemplateDefaultDocument.md)  
 
-## Remarks
-
-  
 ## See also
 - [DocumentSetTemplate](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.DocumentSetTemplate.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md) 

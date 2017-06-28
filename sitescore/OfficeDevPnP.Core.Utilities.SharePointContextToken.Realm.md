@@ -11,8 +11,6 @@ public string Realm { get; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [SharePointContextToken](OfficeDevPnP.Core.Utilities.SharePointContextToken.md) 
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md) 

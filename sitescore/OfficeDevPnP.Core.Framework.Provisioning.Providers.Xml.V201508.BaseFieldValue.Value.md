@@ -11,9 +11,6 @@ public string Value { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [BaseFieldValue](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508.BaseFieldValue.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508.md) 

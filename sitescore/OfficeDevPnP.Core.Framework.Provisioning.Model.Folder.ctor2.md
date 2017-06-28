@@ -23,8 +23,6 @@ public Folder(string name, List<Folder> folders, ObjectSecurity security)
 &emsp;&emsp;ObjectSecurity for the folder  
 
 
-## Remarks
-  
 ## See also
 - [Folder](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

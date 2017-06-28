@@ -11,8 +11,6 @@ public TaxonomyItem TaxonomyItem { get; set; }
 ### Property Value
 Type: Microsoft.SharePoint.Client.Taxonomy.TaxonomyItem  
 
-## Remarks
-  
 ## See also
 - [TaxonomyFieldCreationInformation](OfficeDevPnP.Core.Entities.TaxonomyFieldCreationInformation.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

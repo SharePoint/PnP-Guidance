@@ -11,8 +11,6 @@ public FileCollection Files { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.FileCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.FileCollection.md)  
 
-## Remarks
-  
 ## See also
 - [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

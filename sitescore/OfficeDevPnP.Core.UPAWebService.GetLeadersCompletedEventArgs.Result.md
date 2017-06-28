@@ -9,11 +9,8 @@ public Leader[] Result { get; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.UPAWebService.Leader[]  
+Type: [OfficeDevPnP.Core.UPAWebService.Leader[]](OfficeDevPnP.Core.UPAWebService.Leader.md)  
 
-## Remarks
-
-  
 ## See also
 - [GetLeadersCompletedEventArgs](OfficeDevPnP.Core.UPAWebService.GetLeadersCompletedEventArgs.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

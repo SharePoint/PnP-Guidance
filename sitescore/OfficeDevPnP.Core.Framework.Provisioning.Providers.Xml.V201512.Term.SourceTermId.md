@@ -11,9 +11,6 @@ public string SourceTermId { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [Term](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Term.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

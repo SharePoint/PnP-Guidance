@@ -9,11 +9,8 @@ public ProvisioningTemplateFile[] ProvisioningTemplateFile { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.ProvisioningTemplateFile[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.ProvisioningTemplateFile[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.ProvisioningTemplateFile.md)  
 
-## Remarks
-
-  
 ## See also
 - [Templates](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.Templates.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md) 

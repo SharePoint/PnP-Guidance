@@ -11,8 +11,6 @@ public YammerUserStats stats { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Entities.YammerUserStats](OfficeDevPnP.Core.Entities.YammerUserStats.md)  
 
-## Remarks
-  
 ## See also
 - [YammerUser](OfficeDevPnP.Core.Entities.YammerUser.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

@@ -11,8 +11,6 @@ public object office365_url { get; set; }
 ### Property Value
 Type: System.Object  
 
-## Remarks
-  
 ## See also
 - [YammerGroup](OfficeDevPnP.Core.Entities.YammerGroup.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

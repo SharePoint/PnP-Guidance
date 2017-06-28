@@ -7,8 +7,6 @@
 ```C#
 public GlobalNavigation()
 ```
-## Remarks
-  
 ## See also
 - [GlobalNavigation](OfficeDevPnP.Core.Framework.Provisioning.Model.GlobalNavigation.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

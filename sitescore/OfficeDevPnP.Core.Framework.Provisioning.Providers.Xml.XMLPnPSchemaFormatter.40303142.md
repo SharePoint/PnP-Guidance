@@ -15,7 +15,7 @@ public static ITemplateFormatter GetSpecificFormatter(String namespaceUri)
   
 
 ### Return Value
-Type: ITemplateFormatter  
+Type: [ITemplateFormatter](OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateFormatter.md)  
   
 
 

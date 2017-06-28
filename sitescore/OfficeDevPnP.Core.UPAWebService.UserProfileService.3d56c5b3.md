@@ -8,11 +8,8 @@
 public Leader[] GetLeaders()
 ```
 ### Return Value
-Type: Leader[]  
+Type: [Leader[]](OfficeDevPnP.Core.UPAWebService.Leader.md)  
 
-## Remarks
-
-  
 ## See also
 - [UserProfileService](OfficeDevPnP.Core.UPAWebService.UserProfileService.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

@@ -21,7 +21,7 @@ public static SitePolicyEntity GetSitePolicyByName(this Web web, String sitePoli
   
 
 ### Return Value
-Type: SitePolicyEntity  
+Type: [SitePolicyEntity](OfficeDevPnP.Core.Entities.SitePolicyEntity.md)  
 A  [OfficeDevPnP.Core.Entities.SitePolicyEntity](OfficeDevPnP.Core.Entities.SitePolicyEntity.md)  object holding the fetched policy  
 
 

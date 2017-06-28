@@ -11,8 +11,6 @@ public override string Scheme { get; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [WSTrustBinding](OfficeDevPnP.Core.IdentityModel.WSTrustBindings.WSTrustBinding.md) 
 - [OfficeDevPnP.Core.IdentityModel.WSTrustBindings](OfficeDevPnP.Core.IdentityModel.WSTrustBindings.md) 

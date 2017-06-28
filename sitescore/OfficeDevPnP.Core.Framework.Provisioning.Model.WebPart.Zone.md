@@ -11,8 +11,6 @@ public string Zone { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [WebPart](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

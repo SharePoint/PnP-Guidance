@@ -11,9 +11,6 @@ public string ID { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [Templates](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.Templates.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md) 

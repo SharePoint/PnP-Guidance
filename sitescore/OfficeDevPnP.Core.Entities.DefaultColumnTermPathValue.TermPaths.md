@@ -11,8 +11,6 @@ public IList<String> TermPaths { get; }
 ### Property Value
 Type: System.Collections.Generic.IList<System.String>  
 
-## Remarks
-  
 ## See also
 - [DefaultColumnTermPathValue](OfficeDevPnP.Core.Entities.DefaultColumnTermPathValue.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

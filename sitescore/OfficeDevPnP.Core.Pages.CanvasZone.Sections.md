@@ -11,8 +11,6 @@ public List<CanvasSection> Sections { get; }
 ### Property Value
 Type: System.Collections.Generic.List<OfficeDevPnP.Core.Pages.CanvasSection>  
 
-## Remarks
-  
 ## See also
 - [CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md) 
 - [OfficeDevPnP.Core.Pages.CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)

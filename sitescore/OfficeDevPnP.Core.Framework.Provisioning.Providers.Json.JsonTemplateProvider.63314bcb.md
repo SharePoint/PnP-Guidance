@@ -15,7 +15,7 @@ public override ProvisioningTemplate GetTemplate(String uri)
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 
 ## See also
 - [JsonTemplateProvider](OfficeDevPnP.Core.Framework.Provisioning.Providers.Json.JsonTemplateProvider.md) 

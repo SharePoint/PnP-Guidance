@@ -11,8 +11,6 @@ public string PackagePath { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [AddIn](OfficeDevPnP.Core.Framework.Provisioning.Model.AddIn.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

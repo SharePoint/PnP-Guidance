@@ -9,11 +9,8 @@ public File[] File { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.File[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.File[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.File.md)  
 
-## Remarks
-
-  
 ## See also
 - [ProvisioningTemplateFiles](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.ProvisioningTemplateFiles.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md) 

@@ -51,7 +51,7 @@ public static WebPartEntity GetYammerOpenGraphDiscussionPart(String yammerNetwor
   
 
 ### Return Value
-Type: WebPartEntity  
+Type: [WebPartEntity](OfficeDevPnP.Core.Entities.WebPartEntity.md)  
 Returns created WebPartEntity  
 
 

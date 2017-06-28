@@ -11,8 +11,6 @@ public Package Package { get; }
 ### Property Value
 Type: System.IO.Packaging.Package  
 
-## Remarks
-  
 ## See also
 - [PnPPackage](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.md) 

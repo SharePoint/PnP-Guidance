@@ -7,8 +7,6 @@
 ```C#
 public BaseNavigationKind()
 ```
-## Remarks
-  
 ## See also
 - [BaseNavigationKind](OfficeDevPnP.Core.Framework.Provisioning.Model.BaseNavigationKind.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

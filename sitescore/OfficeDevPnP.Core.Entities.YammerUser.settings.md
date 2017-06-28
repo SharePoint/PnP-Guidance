@@ -11,8 +11,6 @@ public YammerUserSettings settings { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Entities.YammerUserSettings](OfficeDevPnP.Core.Entities.YammerUserSettings.md)  
 
-## Remarks
-  
 ## See also
 - [YammerUser](OfficeDevPnP.Core.Entities.YammerUser.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

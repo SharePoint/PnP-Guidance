@@ -9,11 +9,8 @@ public TermGroup[] TermGroup { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.TermGroup[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.TermGroup[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.TermGroup.md)  
 
-## Remarks
-
-  
 ## See also
 - [TermStore](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.TermStore.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

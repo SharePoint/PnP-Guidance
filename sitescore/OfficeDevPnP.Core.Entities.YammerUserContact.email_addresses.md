@@ -11,8 +11,6 @@ public IList<YammerUserEmailAddress> email_addresses { get; set; }
 ### Property Value
 Type: System.Collections.Generic.IList<OfficeDevPnP.Core.Entities.YammerUserEmailAddress>  
 
-## Remarks
-  
 ## See also
 - [YammerUserContact](OfficeDevPnP.Core.Entities.YammerUserContact.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

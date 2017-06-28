@@ -11,8 +11,6 @@ public bool IsDefaultForLanguage { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [TermLabel](OfficeDevPnP.Core.Framework.Provisioning.Model.TermLabel.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

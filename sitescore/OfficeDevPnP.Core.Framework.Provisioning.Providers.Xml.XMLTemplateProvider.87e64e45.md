@@ -15,13 +15,13 @@ public override ProvisioningTemplate GetTemplate(String uri, ITemplateProviderEx
   
 
 #### (optional) extensions  
-&emsp;&emsp;Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateProviderExtension[]  
+&emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateProviderExtension[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.ITemplateProviderExtension.md)  
 &emsp;&emsp;  
 
   
 
 ### Return Value
-Type: ProvisioningTemplate  
+Type: [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate.md)  
 
 ## See also
 - [XMLTemplateProvider](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.md) 

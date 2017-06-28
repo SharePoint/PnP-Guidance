@@ -11,8 +11,6 @@ public Guid ClientSideComponentId { get; set; }
 ### Property Value
 Type: System.Guid  
 
-## Remarks
-  
 ## See also
 - [FieldCreationInformation](OfficeDevPnP.Core.Entities.FieldCreationInformation.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

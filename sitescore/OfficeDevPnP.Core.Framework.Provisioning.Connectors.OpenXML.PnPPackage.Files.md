@@ -11,8 +11,6 @@ public IDictionary<String, PnPPackageFileItem> Files { get; }
 ### Property Value
 Type: System.Collections.Generic.IDictionary<System.String, OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackageFileItem>  
 
-## Remarks
-  
 ## See also
 - [PnPPackage](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.PnPPackage.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML](OfficeDevPnP.Core.Framework.Provisioning.Connectors.OpenXML.md) 

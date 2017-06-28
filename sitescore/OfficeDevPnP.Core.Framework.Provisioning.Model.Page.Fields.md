@@ -11,8 +11,6 @@ public Dictionary<String, String> Fields { get; }
 ### Property Value
 Type: System.Collections.Generic.Dictionary<System.String, System.String>  
 
-## Remarks
-  
 ## See also
 - [Page](OfficeDevPnP.Core.Framework.Provisioning.Model.Page.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

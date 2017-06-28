@@ -11,8 +11,6 @@ public List<Guid> SharedFields { get; }
 ### Property Value
 Type: System.Collections.Generic.List<System.Guid>  
 
-## Remarks
-  
 ## See also
 - [DocumentSetTemplate](OfficeDevPnP.Core.Framework.Provisioning.Model.DocumentSetTemplate.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

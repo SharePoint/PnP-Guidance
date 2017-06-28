@@ -11,8 +11,6 @@ public string Manifest { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [ClientSideComponent](OfficeDevPnP.Core.Pages.ClientSideComponent.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

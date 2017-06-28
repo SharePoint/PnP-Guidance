@@ -21,7 +21,7 @@ public static ThemeEntity GetComposedLook(this Web web, String composedLookName)
   
 
 ### Return Value
-Type: ThemeEntity  
+Type: [ThemeEntity](OfficeDevPnP.Core.Entities.ThemeEntity.md)  
 Entity with the attributes of the composed look, or null if the composed look does not exists or cannot be determined  
 
 

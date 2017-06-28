@@ -11,8 +11,6 @@ public uint Order { get; set; }
 ### Property Value
 Type: System.UInt32  
 
-## Remarks
-  
 ## See also
 - [WebPart](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

@@ -11,8 +11,6 @@ public string Rte { get; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

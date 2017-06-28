@@ -11,8 +11,6 @@ public bool Indexed { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [PropertyBagEntry](OfficeDevPnP.Core.Framework.Provisioning.Model.PropertyBagEntry.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

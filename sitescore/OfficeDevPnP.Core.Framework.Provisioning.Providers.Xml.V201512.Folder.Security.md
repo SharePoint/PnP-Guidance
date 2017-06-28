@@ -11,9 +11,6 @@ public ObjectSecurity Security { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.ObjectSecurity](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.ObjectSecurity.md)  
 
-## Remarks
-
-  
 ## See also
 - [Folder](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Folder.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

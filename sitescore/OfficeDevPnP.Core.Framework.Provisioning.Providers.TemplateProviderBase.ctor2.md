@@ -13,8 +13,6 @@ public TemplateProviderBase(FileConnectorBase connector)
 &emsp;&emsp; Constructor   
 
 
-## Remarks
-  
 ## See also
 - [TemplateProviderBase](OfficeDevPnP.Core.Framework.Provisioning.Providers.TemplateProviderBase.md)
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers](OfficeDevPnP.Core.Framework.Provisioning.Providers.md)

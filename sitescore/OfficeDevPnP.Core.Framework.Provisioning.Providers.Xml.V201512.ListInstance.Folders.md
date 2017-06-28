@@ -9,11 +9,8 @@ public Folder[] Folders { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Folder[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Folder[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.Folder.md)  
 
-## Remarks
-
-  
 ## See also
 - [ListInstance](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.ListInstance.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

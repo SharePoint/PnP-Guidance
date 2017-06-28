@@ -11,8 +11,6 @@ public static WebAPIContextCache Instance { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.WebAPI.WebAPIContextCache](OfficeDevPnP.Core.WebAPI.WebAPIContextCache.md)  
 
-## Remarks
-  
 ## See also
 - [WebAPIContextCache](OfficeDevPnP.Core.WebAPI.WebAPIContextCache.md) 
 - [OfficeDevPnP.Core.WebAPI](OfficeDevPnP.Core.WebAPI.md) 

@@ -7,8 +7,6 @@
 ```C#
 public StructuralNavigationEntity()
 ```
-## Remarks
-  
 ## See also
 - [StructuralNavigationEntity](OfficeDevPnP.Core.Entities.StructuralNavigationEntity.md)
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)

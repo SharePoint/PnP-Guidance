@@ -11,8 +11,6 @@ public RoleAssignmentCollection RoleAssignments { get; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignmentCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignmentCollection.md)  
 
-## Remarks
-  
 ## See also
 - [SiteSecurityPermissions](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurityPermissions.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

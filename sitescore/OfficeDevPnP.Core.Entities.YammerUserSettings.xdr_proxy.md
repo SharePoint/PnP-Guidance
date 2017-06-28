@@ -11,8 +11,6 @@ public string xdr_proxy { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [YammerUserSettings](OfficeDevPnP.Core.Entities.YammerUserSettings.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

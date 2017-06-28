@@ -11,8 +11,6 @@ public IList<String> network_domains { get; set; }
 ### Property Value
 Type: System.Collections.Generic.IList<System.String>  
 
-## Remarks
-  
 ## See also
 - [YammerUser](OfficeDevPnP.Core.Entities.YammerUser.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

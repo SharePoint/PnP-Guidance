@@ -23,8 +23,6 @@ public PnPClientContext(string url, int retryCount, int delay)
 &emsp;&emsp;Initial delay in milliseconds  
 
 
-## Remarks
-  
 ## See also
 - [PnPClientContext](OfficeDevPnP.Core.PnPClientContext.md)
 - [OfficeDevPnP.Core](OfficeDevPnP.Core.md)

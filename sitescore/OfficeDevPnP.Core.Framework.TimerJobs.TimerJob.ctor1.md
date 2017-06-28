@@ -13,8 +13,6 @@ public TimerJob(string name)
 &emsp;&emsp;Name of the timer job  
 
 
-## Remarks
-  
 ## See also
 - [TimerJob](OfficeDevPnP.Core.Framework.TimerJobs.TimerJob.md)
 - [OfficeDevPnP.Core.Framework.TimerJobs](OfficeDevPnP.Core.Framework.TimerJobs.md)

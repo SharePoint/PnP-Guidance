@@ -9,11 +9,8 @@ public PinnedLinkData[] PinnedLinks { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.UPAWebService.PinnedLinkData[]  
+Type: [OfficeDevPnP.Core.UPAWebService.PinnedLinkData[]](OfficeDevPnP.Core.UPAWebService.PinnedLinkData.md)  
 
-## Remarks
-
-  
 ## See also
 - [GetUserProfileByIndexResult](OfficeDevPnP.Core.UPAWebService.GetUserProfileByIndexResult.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

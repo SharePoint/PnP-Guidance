@@ -11,8 +11,6 @@ public int ControlType { get; set; }
 ### Property Value
 Type: System.Int32  
 
-## Remarks
-  
 ## See also
 - [ClientSideCanvasControlData](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

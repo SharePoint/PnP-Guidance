@@ -15,7 +15,7 @@ public static IWebPartPostProcessor Resolve(String wpXml)
   
 
 ### Return Value
-Type: IWebPartPostProcessor  
+Type: [IWebPartPostProcessor](OfficeDevPnP.Core.Utilities.WebParts.IWebPartPostProcessor.md)  
 Returns PassThroughProcessor object  
 
 

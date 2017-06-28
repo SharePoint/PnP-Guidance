@@ -11,8 +11,6 @@ public string Key { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [PropertyBagEntry](OfficeDevPnP.Core.Framework.Provisioning.Model.PropertyBagEntry.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

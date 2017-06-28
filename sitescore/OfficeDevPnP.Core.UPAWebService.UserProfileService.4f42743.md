@@ -27,11 +27,8 @@ public PinnedLinkData AddPinnedLink(String accountName, String name, String url)
   
 
 ### Return Value
-Type: PinnedLinkData  
+Type: [PinnedLinkData](OfficeDevPnP.Core.UPAWebService.PinnedLinkData.md)  
 
-## Remarks
-
-  
 ## See also
 - [UserProfileService](OfficeDevPnP.Core.UPAWebService.UserProfileService.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

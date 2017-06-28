@@ -11,9 +11,6 @@ public string Assembly { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [Provider](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.Provider.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.md) 

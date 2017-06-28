@@ -11,8 +11,6 @@ public Handlers HandlersToProcess { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.Handlers](OfficeDevPnP.Core.Framework.Provisioning.Model.Handlers.md)  
 
-## Remarks
-  
 ## See also
 - [ProvisioningTemplateApplyingInformation](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningTemplateApplyingInformation.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md) 

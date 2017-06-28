@@ -9,11 +9,8 @@ public PublishingPageLayoutsPageLayout[] PageLayout { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.PublishingPageLayoutsPageLayout[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.PublishingPageLayoutsPageLayout[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.PublishingPageLayoutsPageLayout.md)  
 
-## Remarks
-
-  
 ## See also
 - [PublishingPageLayouts](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.PublishingPageLayouts.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

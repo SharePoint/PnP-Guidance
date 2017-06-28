@@ -11,9 +11,6 @@ public string FontFile { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [ComposedLook](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508.ComposedLook.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508.md) 

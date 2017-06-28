@@ -11,8 +11,6 @@ public Nullable<Boolean> private { get; set; }
 ### Property Value
 Type: System.Nullable<System.Boolean>  
 
-## Remarks
-  
 ## See also
 - [YammerUserHomeTab](OfficeDevPnP.Core.Entities.YammerUserHomeTab.md) 
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md) 

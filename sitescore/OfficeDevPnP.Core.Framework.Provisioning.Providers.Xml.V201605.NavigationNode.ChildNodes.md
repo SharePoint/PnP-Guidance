@@ -9,7 +9,7 @@ public NavigationNode[] ChildNodes { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.NavigationNode[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.NavigationNode[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.NavigationNode.md)  
 
 ## See also
 - [NavigationNode](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.NavigationNode.md) 

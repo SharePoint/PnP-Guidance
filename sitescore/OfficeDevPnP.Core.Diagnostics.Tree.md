@@ -2,16 +2,16 @@
 ## Classes
 |**Class**|**Description**|
 |:-----|:-----|
-|[Tree&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.Tree.md)|Defines Tree|
-|[TreeNode&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode.md)|Defnines methods for TreeNode|
-|[TreeNodeList&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList.md)|Holds methods for Tree node|
+|[Tree&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.Tree_cdcab78f.md)|Defines Tree|
+|[TreeNode&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.TreeNode_cdcab78f.md)|Defnines methods for TreeNode|
+|[TreeNodeList&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.TreeNodeList_cdcab78f.md)|Holds methods for Tree node|
 ## Interfaces
 |**Interface**|**Description**|
 |:-----|:-----|
-|[ITreeNodeList](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNodeList.md)|Contains add mothod to add node to a tree|
-|[ITreeNode](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode.md)|Contains Tree node properties and methods|
+|[ITreeNodeList&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNodeList_cdcab78f.md)|Contains add mothod to add node to a tree|
+|[ITreeNode&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode_cdcab78f.md)|Contains Tree node properties and methods|
 |[ITreeNode](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode.md)|Contains tree node properties|
-|[ITreeNodeAware](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNodeAware.md)|Conints tree node properties|
+|[ITreeNodeAware&lt;T&gt;](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNodeAware_cdcab78f.md)|Conints tree node properties|
 ## Enumerations
 |**Enumeration**|**Description**|
 |:-----|:-----|

@@ -11,9 +11,6 @@ public RegionalSettings RegionalSettings { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.RegionalSettings](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.RegionalSettings.md)  
 
-## Remarks
-
-  
 ## See also
 - [ProvisioningTemplate](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.ProvisioningTemplate.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

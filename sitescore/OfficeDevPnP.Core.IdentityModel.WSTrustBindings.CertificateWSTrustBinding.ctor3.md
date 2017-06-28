@@ -18,8 +18,6 @@ public CertificateWSTrustBinding(SecurityMode mode, HttpClientCredentialType cli
 &emsp;&emsp; Constructor   
 
 
-## Remarks
-  
 ## See also
 - [CertificateWSTrustBinding](OfficeDevPnP.Core.IdentityModel.WSTrustBindings.CertificateWSTrustBinding.md)
 - [OfficeDevPnP.Core.IdentityModel.WSTrustBindings](OfficeDevPnP.Core.IdentityModel.WSTrustBindings.md)

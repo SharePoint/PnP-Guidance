@@ -11,8 +11,6 @@ public virtual bool SupportsSave { get; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [TemplateProviderBase](OfficeDevPnP.Core.Framework.Provisioning.Providers.TemplateProviderBase.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers](OfficeDevPnP.Core.Framework.Provisioning.Providers.md) 

@@ -11,9 +11,6 @@ public ChoiceTypes ChoiceType { get; set; }
 ### Property Value
 Type: [OfficeDevPnP.Core.UPAWebService.ChoiceTypes](OfficeDevPnP.Core.UPAWebService.ChoiceTypes.md)  
 
-## Remarks
-
-  
 ## See also
 - [PropertyInfo](OfficeDevPnP.Core.UPAWebService.PropertyInfo.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

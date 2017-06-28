@@ -11,8 +11,6 @@ public string EditorType { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-  
 ## See also
 - [ClientSideTextControlData](OfficeDevPnP.Core.Pages.ClientSideTextControlData.md) 
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

@@ -11,8 +11,6 @@ public double TemplateVersion { get; set; }
 ### Property Value
 Type: System.Double  
 
-## Remarks
-  
 ## See also
 - [ProvisioningTemplateInfo](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateInfo.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md) 

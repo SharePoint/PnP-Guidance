@@ -27,7 +27,7 @@ public static ClientSidePage AddClientSidePage(this Web web, String pageName = "
   
 
 ### Return Value
-Type: ClientSidePage  
+Type: [ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)  
 A  [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)  instance  
 
 

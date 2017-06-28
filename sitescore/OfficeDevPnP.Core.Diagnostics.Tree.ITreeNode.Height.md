@@ -11,8 +11,6 @@ public abstract int Height { get; }
 ### Property Value
 Type: System.Int32  
 
-## Remarks
-  
 ## See also
 - [ITreeNode](OfficeDevPnP.Core.Diagnostics.Tree.ITreeNode.md) 
 - [OfficeDevPnP.Core.Diagnostics.Tree](OfficeDevPnP.Core.Diagnostics.Tree.md) 

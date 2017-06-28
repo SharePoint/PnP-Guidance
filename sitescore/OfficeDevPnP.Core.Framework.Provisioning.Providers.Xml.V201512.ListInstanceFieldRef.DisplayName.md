@@ -11,9 +11,6 @@ public string DisplayName { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [ListInstanceFieldRef](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.ListInstanceFieldRef.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md) 

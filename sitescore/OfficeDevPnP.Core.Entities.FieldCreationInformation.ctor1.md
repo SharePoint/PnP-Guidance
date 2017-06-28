@@ -13,8 +13,6 @@ public FieldCreationInformation(string fieldType)
 &emsp;&emsp;Type of the field  
 
 
-## Remarks
-  
 ## See also
 - [FieldCreationInformation](OfficeDevPnP.Core.Entities.FieldCreationInformation.md)
 - [OfficeDevPnP.Core.Entities](OfficeDevPnP.Core.Entities.md)

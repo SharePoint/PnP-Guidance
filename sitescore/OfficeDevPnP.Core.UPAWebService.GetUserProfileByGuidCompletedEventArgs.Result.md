@@ -9,11 +9,8 @@ public PropertyData[] Result { get; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.UPAWebService.PropertyData[]  
+Type: [OfficeDevPnP.Core.UPAWebService.PropertyData[]](OfficeDevPnP.Core.UPAWebService.PropertyData.md)  
 
-## Remarks
-
-  
 ## See also
 - [GetUserProfileByGuidCompletedEventArgs](OfficeDevPnP.Core.UPAWebService.GetUserProfileByGuidCompletedEventArgs.md) 
 - [OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md) 

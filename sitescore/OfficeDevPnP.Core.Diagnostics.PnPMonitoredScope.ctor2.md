@@ -13,8 +13,6 @@ public PnPMonitoredScope(string name)
 &emsp;&emsp;Source name  
 
 
-## Remarks
-  
 ## See also
 - [PnPMonitoredScope](OfficeDevPnP.Core.Diagnostics.PnPMonitoredScope.md)
 - [OfficeDevPnP.Core.Diagnostics](OfficeDevPnP.Core.Diagnostics.md)

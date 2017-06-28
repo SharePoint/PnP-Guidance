@@ -11,8 +11,6 @@ public bool Default { get; set; }
 ### Property Value
 Type: System.Boolean  
 
-## Remarks
-  
 ## See also
 - [TemplateSchemaSerializerAttribute](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.TemplateSchemaSerializerAttribute.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.md) 

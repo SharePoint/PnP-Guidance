@@ -9,11 +9,8 @@ public Feature[] SiteFeatures { get; set; }
 ```
 
 ### Property Value
-Type: OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.Feature[]  
+Type: [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.Feature[]](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.Feature.md)  
 
-## Remarks
-
-  
 ## See also
 - [SharePointProvisioningTemplateFeatures](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.SharePointProvisioningTemplateFeatures.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201503.md) 

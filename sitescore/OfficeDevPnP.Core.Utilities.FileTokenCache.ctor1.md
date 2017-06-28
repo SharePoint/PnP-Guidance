@@ -13,8 +13,6 @@ public FileTokenCache(string filePath)
 &emsp;&emsp;Path of the file  
 
 
-## Remarks
-  
 ## See also
 - [FileTokenCache](OfficeDevPnP.Core.Utilities.FileTokenCache.md)
 - [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)

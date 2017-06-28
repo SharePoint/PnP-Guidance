@@ -11,9 +11,6 @@ public string Title { get; set; }
 ### Property Value
 Type: System.String  
 
-## Remarks
-
-  
 ## See also
 - [WikiPageWebPart](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.WikiPageWebPart.md) 
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md) 
