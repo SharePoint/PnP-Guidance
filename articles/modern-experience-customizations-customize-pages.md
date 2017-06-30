@@ -80,9 +80,15 @@ Disable-PnPFeature -Identity B6917CB1-93A0-4B97-A84D-7CF49975D4EC -Scope Web
 > - When you disable the feature you'll not be able anymore to create new "modern" pages, but the already created pages stay working using the "modern" user experience. 
 
 ### Commenting configuration
-By default users will be able to add comments (June 2017) on "modern" pages. If your organization does not want this feature it can be disabled from the tenant admin center via the settings page:
+By default users will be able to add comments (July 2017) on "modern" pages. If your organization does not want this feature it can be disabled from the tenant admin center via the settings page:
 
 ![](http://i.imgur.com/atl91Vh.png)
+
+>**Notes:**
+> You can also programmatically manage the commenting behaviour via site and tenant level API's (requires SharePoint Client-Side Object Model (CSOM) version 16.1.6621.1200 or higher):
+> - Microsoft.Online.SharePoint.TenantAdministration.SiteProperties.CommentsOnSitePagesDisabled 
+> - Microsoft.SharePoint.Client.Site.CommentsOnSitePagesDisabled
+
 
 ## Programming "modern" pages
 ### Adding "modern" pages
