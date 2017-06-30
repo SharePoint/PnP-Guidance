@@ -289,6 +289,7 @@ context.ExecuteQuery();
 
 >**Note**:
 > - The settings at the library level **override** the settings at the web, site, or tenant level. This also implies that you could pilot the "modern" list and library experience to a sub site of sites by having the "modern" experience turned off at tenant level but enabled at list level in the pilot sites.
+> - When you've manually chosen (so not because of list, site, web or tenant "classic" enforcement) you'll see a link "Exit classic experience" appearing under the left navigation (as of July 2017). Clicking this will bring you back to the "modern" experience.
 > - If you're not able to get the "modern" experience to show up then inspect the cookies being passed to SharePoint as it could be possible that the opt out of modern experiences cookie (splnu with value set to 0) is still present. Clearing the browser cookies should get this fixed.
 
 
