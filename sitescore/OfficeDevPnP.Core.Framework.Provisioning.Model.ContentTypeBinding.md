@@ -19,6 +19,7 @@ public class ContentTypeBinding: BaseModel, IEquatable<ContentTypeBinding>
 |:-----|:-----|
 | [ContentTypeId](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.ContentTypeId.md) | Gets or Sets the Content Type ID
 | [Default](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.Default.md) | Gets or Sets if the Content Type should be the default Content Type in the library
+| [Hidden](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.Hidden.md) | Declares if the Content Type should be Hidden from New button of the list or library, optional attribute.
 | [Remove](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.Remove.md) | Declares if the Content Type should be Removed from the list or library
 ## Methods
 |**Name**|**Description**|

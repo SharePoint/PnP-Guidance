@@ -9,6 +9,12 @@
 |[AvailableWebTemplateCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.AvailableWebTemplateCollection.md)|A collection of AvailableWebTemplate objects|
 |[BaseModel](OfficeDevPnP.Core.Framework.Provisioning.Model.BaseModel.md)|Base type for any Domain Model object (excluded the ProvisioningTemplate type)|
 |[BaseNavigationKind](OfficeDevPnP.Core.Framework.Provisioning.Model.BaseNavigationKind.md)|Base abstract class for the navigation kinds (global or current)|
+|[CanvasControl](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.md)|Defines a CanvasControl|
+|[CanvasControlCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControlCollection.md)|A collection of CanvasControl objects|
+|[CanvasZone](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasZone.md)|Defines a CanvasZone|
+|[CanvasZoneCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasZoneCollection.md)|A collection of CanvasZone objects|
+|[ClientSidePage](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.md)|Defines a ClientSidePage|
+|[ClientSidePageCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePageCollection.md)|A collection of ClientSidePage objects|
 |[ComposedLook](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.md)|Domain Object that defines a Composed Look in the Provision Template|
 |[ContentType](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.md)| Domain Object used in the Provisioning template that defines a Content Type https://msdn.microsoft.com/en-us/library/office/ms463449.aspx|
 |[ContentTypeBinding](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.md)|Domain Object for Content Type Binding in the Provisioning Template|
@@ -40,6 +46,9 @@
 |[Folder](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.md)|Defines a folder that will be provisioned into the target list/library|
 |[FolderCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.FolderCollection.md)|Collection of Folder objects|
 |[GlobalNavigation](OfficeDevPnP.Core.Framework.Provisioning.Model.GlobalNavigation.md)|The Global Navigation settings for the Provisioning Template|
+|[ImageRendition](OfficeDevPnP.Core.Framework.Provisioning.Model.ImageRendition.md)|Defines an available Image Rendition for the current Publishing site.|
+|[ImageRenditionCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.ImageRenditionCollection.md)|A collection of ImageRendition objects|
+|[IRMSettings](OfficeDevPnP.Core.Framework.Provisioning.Model.IRMSettings.md)|Declares the Information Rights Management settings for the list or library.|
 |[ListInstance](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstance.md)|This class holds deprecated ListInstance properties and methods / Domain Object that specifies the properties of the new list.|
 |[ListInstanceCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.ListInstanceCollection.md)|Collection of ListInstance objects|
 |[Localization](OfficeDevPnP.Core.Framework.Provisioning.Model.Localization.md)|Domain Object used in the Provisioning template that defines a Localization item|
@@ -71,6 +80,8 @@
 |[SiteGroupCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteGroupCollection.md)|Collection of SiteGroup objects|
 |[SiteSecurity](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurity.md)|Domain Object that is used in the site template|
 |[SiteSecurityPermissions](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteSecurityPermissions.md)|Permission settings for the target Site|
+|[SiteWebhook](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteWebhook.md)|Defines a SiteWebhook to provision|
+|[SiteWebhookCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteWebhookCollection.md)|Collection of SiteWebhook objects|
 |[StructuralNavigation](OfficeDevPnP.Core.Framework.Provisioning.Model.StructuralNavigation.md)|Defines the Structural Navigation settings of a site|
 |[SupportedUILanguage](OfficeDevPnP.Core.Framework.Provisioning.Model.SupportedUILanguage.md)|Defines a single Supported UI Language for a site|
 |[SupportedUILanguageCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.SupportedUILanguageCollection.md)|Collection of SupportedUILanguage objects|
@@ -86,6 +97,8 @@
 |[UserCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.UserCollection.md)|Collection of User objects|
 |[View](OfficeDevPnP.Core.Framework.Provisioning.Model.View.md)||
 |[ViewCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.ViewCollection.md)|Collection of View objects|
+|[Webhook](OfficeDevPnP.Core.Framework.Provisioning.Model.Webhook.md)|Defines a Webhook|
+|[WebhookCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.WebhookCollection.md)|Defines a collection of objects of type Webhook|
 |[WebPart](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPart.md)||
 |[WebPartCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPartCollection.md)|Collection of WebPart objects|
 |[WebSettings](OfficeDevPnP.Core.Framework.Provisioning.Model.WebSettings.md)|Domain Object used in the Provisioning template that defines a Section of Settings for the current Web Site|
@@ -101,9 +114,17 @@
 ## Enumerations
 |**Enumeration**|**Description**|
 |:-----|:-----|
+|[WebPartType](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPartType.md)||
+|[CanvasZoneType](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasZoneType.md)|The type of the Canvas Zone for a Client-side Page.|
+|[SiteWebhookType](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteWebhookType.md)|Defines the various flavors of a SiteWebhook|
 |[CurrentNavigationType](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigationType.md)|Defines the type of Current Navigation|
+|[UpdateBehavior](OfficeDevPnP.Core.Framework.Provisioning.Model.UpdateBehavior.md)||
 |[FileLevel](OfficeDevPnP.Core.Framework.Provisioning.Model.FileLevel.md)|The File Level for a File element|
 |[GlobalNavigationType](OfficeDevPnP.Core.Framework.Provisioning.Model.GlobalNavigationType.md)|Defines the type of Global Navigation|
 |[Handlers](OfficeDevPnP.Core.Framework.Provisioning.Model.Handlers.md)|Handlers to be processed on the template|
 |[AutoCheckRequirementsOptions](OfficeDevPnP.Core.Framework.Provisioning.Model.AutoCheckRequirementsOptions.md)|Defines how an engine should behave if the requirements for provisioning publishing capabilities are not satisfied by the target site|
 |[WorkHour](OfficeDevPnP.Core.Framework.Provisioning.Model.WorkHour.md)|The Work Hours of a Day|
+|[TermGroupUpdateBehavior](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroupUpdateBehavior.md)||
+|[ListExperience](OfficeDevPnP.Core.Framework.Provisioning.Model.ListExperience.md)||
+|[ListReadingDirection](OfficeDevPnP.Core.Framework.Provisioning.Model.ListReadingDirection.md)||
+|[ProvisioningTemplateScope](OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplateScope.md)|Declares the target scope of the current Provisioning Template|

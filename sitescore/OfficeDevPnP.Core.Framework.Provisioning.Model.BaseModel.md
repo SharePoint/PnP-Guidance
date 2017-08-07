@@ -6,6 +6,12 @@
 ## Inheritance Hierarchy
 System.Object  
 &ensp;OfficeDevPnP.Core.Framework.Provisioning.Model.BaseModel  
+&emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.md)  
+&emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasZone](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasZone.md)  
+&emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.md)  
+&emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.ImageRendition](OfficeDevPnP.Core.Framework.Provisioning.Model.ImageRendition.md)  
+&emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.IRMSettings](OfficeDevPnP.Core.Framework.Provisioning.Model.IRMSettings.md)  
+&emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.Webhook](OfficeDevPnP.Core.Framework.Provisioning.Model.Webhook.md)  
 &emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.md)  
 &emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentType.md)  
 &emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding](OfficeDevPnP.Core.Framework.Provisioning.Model.ContentTypeBinding.md)  

@@ -21,6 +21,7 @@ public class Publishing: BaseModel, IEquatable<Publishing>
 | [AutoCheckRequirements](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.AutoCheckRequirements.md) | Defines how an engine should behave if the requirements for provisioning publishing capabilities are not satisfied by the target site
 | [AvailableWebTemplates](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.AvailableWebTemplates.md) | Defines the Available Web Templates for the current Publishing site
 | [DesignPackage](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.DesignPackage.md) | Defines a Design Package to import into the current Publishing site
+| [ImageRenditions](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.ImageRenditions.md) | 
 | [PageLayouts](OfficeDevPnP.Core.Framework.Provisioning.Model.Publishing.PageLayouts.md) | Defines the Available Page Layouts for the current Publishing site
 ## Methods
 |**Name**|**Description**|

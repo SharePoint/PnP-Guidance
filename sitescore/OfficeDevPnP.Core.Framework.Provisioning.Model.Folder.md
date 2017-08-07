@@ -20,6 +20,7 @@ public class Folder: BaseModel, IEquatable<Folder>
 |:-----|:-----|
 | [Folders](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.Folders.md) | Defines the child folders of the current Folder, if any
 | [Name](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.Name.md) | The Name of the Folder
+| [PropertyBagEntries](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.PropertyBagEntries.md) | 
 | [Security](OfficeDevPnP.Core.Framework.Provisioning.Model.Folder.Security.md) | Defines the security rules for the current Folder
 ## Methods
 |**Name**|**Description**|

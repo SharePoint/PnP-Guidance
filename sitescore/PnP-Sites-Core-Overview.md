@@ -40,6 +40,7 @@ You can learn more about the PnP Core Component from the project [readme file](h
 |[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201508.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201512.md)|
 |[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.md)|
+|[OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.md)|
 |[OfficeDevPnP.Core.Framework.TimerJobs](OfficeDevPnP.Core.Framework.TimerJobs.md)|
 |[OfficeDevPnP.Core.Framework.TimerJobs.Enums](OfficeDevPnP.Core.Framework.TimerJobs.Enums.md)|
 |[OfficeDevPnP.Core.IdentityModel.TokenProviders.ADFS](OfficeDevPnP.Core.IdentityModel.TokenProviders.ADFS.md)|

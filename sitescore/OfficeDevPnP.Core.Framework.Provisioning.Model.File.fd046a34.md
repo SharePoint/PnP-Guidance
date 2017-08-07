@@ -1,5 +1,5 @@
 # File.Equals Method  
- Compares File object based on Folder, Overwrite, Src, WebParts, Properties and Security.   
+ Compares File object based on Folder, Overwrite, Src, WebParts, Properties, Security, and TargetFileName.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

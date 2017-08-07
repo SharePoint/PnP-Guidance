@@ -22,7 +22,7 @@ public static List<SiteEntity> SiteSearch(this Web web, String keywordQueryValue
 
 #### (optional) trimDuplicates  
 &emsp;&emsp;Type: System.Boolean  
-&emsp;&emsp;Indicates if dublicates should be trimmed or not  
+&emsp;&emsp;Indicates if duplicates should be trimmed or not  
 
   
 
