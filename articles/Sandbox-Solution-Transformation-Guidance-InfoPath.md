@@ -96,7 +96,7 @@ If the guidance in the previous chapter was not applicable for your InfoPath for
 - Build a SharePoint Add-In that leverages remote API's to read/write SharePoint data
 
 ### Building SharePoint Add-In's to replace your InfoPath forms
-When you opt to use regualar SharePoint Add-In's to replace your InfoPath forms you do have several options. Below are three options we've worked out in more detail, but as said you can perfectly use variations of these. The three options we would like to dive into are:
+When you opt to use regular SharePoint Add-In's to replace your InfoPath forms you do have several options. Below are three options we've worked out in more detail, but as said you can perfectly use variations of these. The three options we would like to dive into are:
 - [A Single Page Application (SPA) based on knockout.js](https://github.com/SharePoint/PnP-Transformation/tree/master/InfoPath/Samples/EmployeeRegistration.KnockOut.SinglePageApp "SPA sample using knockout.js")
 
 ![Knockout sample](media/Sandbox-Solution-Transformation-Guidance-InfoPath/knockoutsample.png)
