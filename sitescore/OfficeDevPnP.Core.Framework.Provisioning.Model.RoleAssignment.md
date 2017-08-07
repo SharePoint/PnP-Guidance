@@ -18,6 +18,7 @@ public class RoleAssignment: BaseModel, IEquatable<RoleAssignment>
 |**Name**|**Description**|
 |:-----|:-----|
 | [Principal](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignment.Principal.md) | Defines the Role to which the assignment will apply
+| [Remove](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignment.Remove.md) | Allows to remove a role assignment, instead of adding it. It is an optional attribute, and by default it assumes a value of false.
 | [RoleDefinition](OfficeDevPnP.Core.Framework.Provisioning.Model.RoleAssignment.RoleDefinition.md) | Defines the Role to which the assignment will apply
 ## Methods
 |**Name**|**Description**|

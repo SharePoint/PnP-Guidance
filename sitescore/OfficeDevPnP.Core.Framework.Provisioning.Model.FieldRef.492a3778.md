@@ -1,5 +1,5 @@
 # FieldRef.Equals Method  
- Compares FieldRef object based on Id, Required and Hidden properties.   
+ Compares FieldRef object based on Id, Required, Hidden, and Remove properties.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

@@ -19,6 +19,7 @@ public class Navigation: BaseModel, IEquatable<Navigation>
 |**Name**|**Description**|
 |:-----|:-----|
 | [CurrentNavigation](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.CurrentNavigation.md) | The Current Navigation settings for the Provisioning Template
+| [EnableTreeView](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.EnableTreeView.md) | Declares whether the tree view has to be enabled at the site level or not, optional attribute.
 | [GlobalNavigation](OfficeDevPnP.Core.Framework.Provisioning.Model.Navigation.GlobalNavigation.md) | The Global Navigation settings for the Provisioning Template
 ## Methods
 |**Name**|**Description**|

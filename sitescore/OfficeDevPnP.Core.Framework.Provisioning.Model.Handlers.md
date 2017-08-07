@@ -32,6 +32,7 @@ public enum Handlers
 | PageContents | Value 524288, represents PageContents
 | WebSettings | Value 1048576, represents WebSettings
 | Navigation | Value 2097152, represents Navigation
+| ImageRenditions | Value 4194304, represents Image Renditions
 | All | Takes all handlers
 
 ## See also

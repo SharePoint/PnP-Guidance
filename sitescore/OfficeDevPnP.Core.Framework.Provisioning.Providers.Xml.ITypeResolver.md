@@ -7,6 +7,10 @@
 ```C#
 public interface ITypeResolver
 ```
+## Properties
+|**Name**|**Description**|
+|:-----|:-----|
+| [CustomCollectionResolver](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.ITypeResolver.CustomCollectionResolver.md) | Declares whether the Type Resolver handles a collection in a custom way
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|

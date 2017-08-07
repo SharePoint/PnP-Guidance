@@ -24,12 +24,13 @@ public class File: BaseModel, IEquatable<File>
 | [Properties](OfficeDevPnP.Core.Framework.Provisioning.Model.File.Properties.md) | Properties of the file
 | [Security](OfficeDevPnP.Core.Framework.Provisioning.Model.File.Security.md) | Defines the Security rules for the File
 | [Src](OfficeDevPnP.Core.Framework.Provisioning.Model.File.Src.md) | The Src of the File
+| [TargetFileName](OfficeDevPnP.Core.Framework.Provisioning.Model.File.TargetFileName.md) | The Target file name for the File, optional attribute. If missing, the original file name will be used.
 | [WebParts](OfficeDevPnP.Core.Framework.Provisioning.Model.File.WebParts.md) | Webparts in the file
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.File.3520ddbb.md) | Compares object with File
-| [Equals(File)](OfficeDevPnP.Core.Framework.Provisioning.Model.File.fd046a34.md) | Compares File object based on Folder, Overwrite, Src, WebParts, Properties and Security.
+| [Equals(File)](OfficeDevPnP.Core.Framework.Provisioning.Model.File.fd046a34.md) | Compares File object based on Folder, Overwrite, Src, WebParts, Properties, Security, and TargetFileName.
 | [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.File.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

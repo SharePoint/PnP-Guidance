@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public DataRow(Dictionary<String, String> values, ObjectSecurity security)
+public DataRow(Dictionary<String, String> values, string keyValue)
 ```
 ### Parameters
 #### values  
@@ -13,9 +13,9 @@ public DataRow(Dictionary<String, String> values, ObjectSecurity security)
 &emsp;&emsp;DataRow Values  
 
 
-#### security  
-&emsp;&emsp;Type: [OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity](OfficeDevPnP.Core.Framework.Provisioning.Model.ObjectSecurity.md)  
-&emsp;&emsp;ObjectSecurity object  
+#### keyValue  
+&emsp;&emsp;Type: System.String  
+&emsp;&emsp; Constructor for DataRow class   
 
 
 ## See also

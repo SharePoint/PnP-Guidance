@@ -1,5 +1,5 @@
 # DocumentSetTemplate.Equals Method  
- Compares DocumentSetTemplate object based on AllowedContentTypes, DefaultDocuments, SharedFields and WelcomePageFields properties.   
+ Compares DocumentSetTemplate object based on AllowedContentTypes, DefaultDocuments, SharedFields, WelcomePageFields, and RemoveExistingContentTypes properties.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

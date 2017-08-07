@@ -1,5 +1,5 @@
 # ProvisioningTemplate.Equals Method  
- Compares ProvisioningTemplate object based on ComposedLook, ContentTypes, CustomActions, SiteFeature, WebFeatures, Files, Id, Lists, PropertyBagEntries, Providers, Security, SiteFields, SitePolicy, Version, Pages, TermGroups, Workflows, AddIns, Publishing, Loaclizations and WebSettings properties.   
+ Compares ProvisioningTemplate object based on ComposedLook, ContentTypes, CustomActions, SiteFeature, WebFeatures, Files, Id, Lists, PropertyBagEntries, Providers, Security, SiteFields, SitePolicy, Version, Pages, TermGroups, Workflows, AddIns, Publishing, Loaclizations, WebSettings, SiteWebhooks, and ClientSidePages properties.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

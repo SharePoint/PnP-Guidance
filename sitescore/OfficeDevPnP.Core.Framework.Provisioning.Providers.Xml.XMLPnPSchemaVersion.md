@@ -16,6 +16,7 @@ public enum XMLPnPSchemaVersion
 | V201508 | 
 | V201512 | 
 | V201605 | 
+| V201705 | 
 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.md)

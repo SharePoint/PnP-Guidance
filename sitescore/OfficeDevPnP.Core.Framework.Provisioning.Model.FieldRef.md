@@ -24,12 +24,13 @@ public class FieldRef: BaseModel, IEquatable<FieldRef>
 | [Hidden](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.Hidden.md) | Gets or sets if the field is Hidden
 | [Id](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.Id.md) | Gets ot sets the ID of the referenced field
 | [Name](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.Name.md) | Gets or sets the name of the field link. This will not change the internal name of the field.
+| [Remove](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.Remove.md) | Declares if the FieldRef should be Removed from the list or library, optional attribute.
 | [Required](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.Required.md) | Gets or sets if the field is Required
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.3520ddbb.md) | Compares object with FieldRef
-| [Equals(FieldRef)](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.492a3778.md) | Compares FieldRef object based on Id, Required and Hidden properties.
+| [Equals(FieldRef)](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.492a3778.md) | Compares FieldRef object based on Id, Required, Hidden, and Remove properties.
 | [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.FieldRef.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

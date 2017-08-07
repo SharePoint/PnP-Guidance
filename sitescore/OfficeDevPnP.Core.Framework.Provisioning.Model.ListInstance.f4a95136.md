@@ -1,5 +1,5 @@
 # ListInstance.Equals Method  
- Compares ListInstance object based on ContentTypesEnabled, Description, DocumentTemplate, EnableVersioning, EnableMinorVersions, EnableModeration, Hidden, MaxVersionLimit, MinorVersionLimit, OnQuickLaunch, EnableAttachments, EnableFolderCreation, ForceCheckOut, RemoveExistingContentTypes, TemplateType, Title, Url, TemplateFeatureID, RemoveExistingViews, ContentTypeBindings, View, Fields, FieldRefs, FieldDefaults, Security, Folders and UserCustomActions properties.   
+ Compares ListInstance object based on ContentTypesEnabled, Description, DocumentTemplate, EnableVersioning, EnableMinorVersions, EnableModeration, Hidden, MaxVersionLimit, MinorVersionLimit, OnQuickLaunch, EnableAttachments, EnableFolderCreation, ForceCheckOut, RemoveExistingContentTypes, TemplateType, Title, Url, TemplateFeatureID, RemoveExistingViews, ContentTypeBindings, View, Fields, FieldRefs, FieldDefaults, Security, Folders, UserCustomActions, Webhooks, IRMSettings, DefaultDisplayFormUrl, DefaultEditFormUrl, DefaultNewFormUrl, Direction, ImageUrl, IrmExpire, IrmReject, IsApplicationList, ReadSecurity, ValidationFormula, and ValidationMessage properties.   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

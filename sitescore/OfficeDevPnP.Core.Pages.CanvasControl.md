@@ -33,6 +33,10 @@ public abstract class CanvasControl
 |:-----|:-----|
 | [Delete()](OfficeDevPnP.Core.Pages.CanvasControl.19cb6464.md) | Removes the control from the page
 | [GetType(String)](OfficeDevPnP.Core.Pages.CanvasControl.c4f3d927.md) | Receives "data-sp-controldata" content and detects the type of the control
+| [Move(CanvasZone)](OfficeDevPnP.Core.Pages.CanvasControl.4e3f36d3.md) | Moves the control to another zone and section
+| [Move(CanvasZone, Int32)](OfficeDevPnP.Core.Pages.CanvasControl.2e9f9f2f.md) | Moves the control to another zone and section
+| [Move(CanvasSection)](OfficeDevPnP.Core.Pages.CanvasControl.dc68ee9.md) | Moves the control to another zone and section
+| [Move(CanvasSection, Int32)](OfficeDevPnP.Core.Pages.CanvasControl.f979593b.md) | Moves the control to another zone and section
 | [ToHtml(Int32)](OfficeDevPnP.Core.Pages.CanvasControl.bfd4198d.md) | Converts a control object to it's html representation
 ## See also
 - [OfficeDevPnP.Core.Pages.CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)

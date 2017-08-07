@@ -25,6 +25,7 @@ public class TermGroup: BaseModel, IEquatable<TermGroup>
 | [Name](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.Name.md) | The Name of the TermGroup
 | [SiteCollectionTermGroup](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.SiteCollectionTermGroup.md) | Is this a site collection term group
 | [TermSets](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.TermSets.md) | The collection of TermSet items in the TermGroup
+| [UpdateBehavior](OfficeDevPnP.Core.Framework.Provisioning.Model.TermGroup.UpdateBehavior.md) | If the TermGroup already exists on target, this attribute defines whether the TermGroup will be overwritten or skipped.
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
