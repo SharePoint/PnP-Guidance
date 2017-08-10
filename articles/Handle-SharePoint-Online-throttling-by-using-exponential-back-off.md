@@ -10,13 +10,13 @@ The [Core.Throttling](https://github.com/SharePoint/PnP/tree/master/Samples/Core
     
 For more information about throttling in SharePoint Online (for example, causes, limits, and so on), and an explanation of the Core.Throttling code sample, see [How to: Avoid getting throttled or blocked in SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx). 
 
-Also, in the [ClientContextExtensions.cs](https://github.com/SharePoint/PnP-Sites-Core/tree/master/Core/OfficeDevPnP.Core/AppModelExtensions/ClientContextExtensions.cs) sample, check out the ExecuteQueryImplementation extension method. ExecuteQueryImplementation is included in [OfficeDevPnP.Core](https://github.com/SharePoint/PnP-Sites-Core/tree/master/Core/OfficeDevPnP.Core).    
+Also, in the [ClientContextExtensions.cs](https://github.com/SharePoint/PnP/blob/dev/Samples/Core.Throttling/Core.Throttling/ClientContextExtensions.cs) sample, check out the ExecuteQueryImplementation extension method. ExecuteQueryImplementation is included in [OfficeDevPnP.Core](https://github.com/SharePoint/PnP-Sites-Core/tree/master/Core/OfficeDevPnP.Core).    
 
 ## Additional resources
 <a name="bk_addresources"> </a>
 
 -  [Solution guidance](Office-365-development-patterns-and-practices-solution-guidance.md)
     
--  [ClientContextExtensions.cs sample](https://github.com/SharePoint/PnP-Sites-Core/tree/master/Core/OfficeDevPnP.Core/AppModelExtensions/ClientContextExtensions.cs)
+-  [ClientContextExtensions.cs sample](https://github.com/SharePoint/PnP/blob/dev/Samples/Core.Throttling/Core.Throttling/ClientContextExtensions.cs)
     
 -  [How to: Avoid getting throttled or blocked in SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
