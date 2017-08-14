@@ -303,7 +303,7 @@ Below are the settings that are evaluated as part of the auto-detect system and 
 - If the available webpart is an **XSLTListViewWebPart** (default way to render the list) and:
 	- There's a non standard JSLink or XslLink value set for the web part properties
 	- The page is shown in a dialog (IsDlg=1)
-	- The list is not based on one of the following types: Document library (101), Picture library (109), Web page library (119) or Generic list (100)
+	- The list is not based on one of the following types: Document library (101), Picture library (109), Web page library (119) or Generic list (100). **As of August 2017** also Announcements (104) and Links (103) do render using the "modern" UI.
 	- The JSLink property is set on one of the fields to render
 	- One of the fields to render is of type "BCS external data", "Geolocation", "OutcomeChoice" or one of these publishing field types "Image", "Html", or "SummaryLinks"
 	- There are list scoped user custom actions which have their ScriptSrc property set
