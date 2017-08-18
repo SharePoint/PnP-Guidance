@@ -366,7 +366,7 @@ There’s no remote API to create custom user profile properties programmaticall
 
 **Is this capability available in on-premises SharePoint?**
 
-Unfortunately, this capability is currently only for SharePoint Online. In on-premises SharePoint this capability would be useful but as critical since you can modify the attribute mapping in the on-premises User Profile Service Application. You can also take advantage of importing user profile attributes using the Business Continuity Service (BCS) in SharePoint 2013. However, this option is not available in SharePoint 2016, which means that for SharePoint 2016 the only option currently is to implement customizations which take advantage of the user profile web services.
+Unfortunately, this capability is currently only for SharePoint Online. In on-premises SharePoint this capability would be useful but not as critical since you can modify the attribute mapping in the on-premises User Profile Service Application. You can also take advantage of importing user profile attributes using the Business Connectivity Service (BCS) in SharePoint 2013. However, this option is not available in SharePoint 2016, which means that for SharePoint 2016 the only option currently is to implement customizations which take advantage of the user profile web services.
 
 **Could I use this API for synchronizing user profile property values from my on-premises SharePoint 2013 or 2016 farm(s) to SharePoint Online?**
 Yes, on-premises SharePoint can be used just like any other source system. You'll need to export the user profile values from your on-premises SharePoint to the JSON file format and then the process would be exactly the same as importing values from any other system.
