@@ -104,7 +104,7 @@ item["Title"] = System.IO.Path.GetFileNameWithoutExtension("mypage.aspx");
 item["ClientSideApplicationId"] = "b6917cb1-93a0-4b97-a84d-7cf49975d4ec";
 item["PageLayoutType"] = "Article";
 item["PromotedState"] = "0";
-item["CanvasContent1"] = "<div></div>"
+item["CanvasContent1"] = "<div></div>";
 item["BannerImageUrl"] = "/_layouts/15/images/sitepagethumbnail.png";
 item.Update();
 clientContext.Load(item);
