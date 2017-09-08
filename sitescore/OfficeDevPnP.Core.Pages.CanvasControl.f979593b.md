@@ -1,5 +1,5 @@
 # CanvasControl.Move Method  
- Moves the control to another zone and section   
+ Moves the control to another section and column   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -16,7 +16,7 @@ public void Move(CanvasSection newSection, Int32 order)
 
 #### order  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp;New order for the control in the new zone  
+&emsp;&emsp;New order for the control in the new section  
 
   
 

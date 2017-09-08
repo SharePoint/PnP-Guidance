@@ -11,6 +11,7 @@ public enum CanvasControlWebPartType
 |**Member Name**|**Description**|
 |:-----|:-----|
 | Custom | 
+| Text | 
 | ContentRollup | 
 | BingMap | 
 | ContentEmbed | 

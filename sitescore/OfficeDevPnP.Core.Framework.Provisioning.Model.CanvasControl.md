@@ -17,12 +17,12 @@ public class CanvasControl: BaseModel, IEquatable<CanvasControl>
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
+| [Column](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.Column.md) | Defines the column of the section in which the Canvas Control will be inserted. Optional, default 0.
 | [ControlId](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.ControlId.md) | Defines the Instance Id for Canvas Control of a Client-side Page.
 | [ControlProperties](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.ControlProperties.md) | Defines the custom properties for the client-side web part control.
 | [CustomWebPartName](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.CustomWebPartName.md) | Defines the Name of the client-side web part if the WebPartType attribute has a value of "Custom".
 | [JsonControlData](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.JsonControlData.md) | Defines the JSON Control Data for Canvas Control of a Client-side Page.
 | [Order](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.Order.md) | Defines the order of the Canvas Control for a Client-side Page.
-| [Section](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.Section.md) | Defines the Section of the Zone in which the Canvas Control will be inserted. Optional, default 0.
 | [Type](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.Type.md) | Defines the Type of Client-side Web Part.
 ## Methods
 |**Name**|**Description**|

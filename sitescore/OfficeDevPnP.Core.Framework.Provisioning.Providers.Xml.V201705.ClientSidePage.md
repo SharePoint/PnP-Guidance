@@ -16,9 +16,11 @@ public class ClientSidePage
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [PagesLibrary](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ClientSidePage.PagesLibrary.md) | 
+| [Overwrite](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ClientSidePage.Overwrite.md) | 
+| [OverwriteSpecified](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ClientSidePage.OverwriteSpecified.md) | 
+| [PageName](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ClientSidePage.PageName.md) | 
 | [PromoteAsNewsArticle](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ClientSidePage.PromoteAsNewsArticle.md) | 
 | [PromoteAsNewsArticleSpecified](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ClientSidePage.PromoteAsNewsArticleSpecified.md) | 
-| [Zones](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ClientSidePage.Zones.md) | 
+| [Sections](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ClientSidePage.Sections.md) | 
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.md)

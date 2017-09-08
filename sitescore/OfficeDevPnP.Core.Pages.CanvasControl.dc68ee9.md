@@ -1,5 +1,5 @@
 # CanvasControl.Move Method  
- Moves the control to another zone and section   
+ Moves the control to another section and column   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  

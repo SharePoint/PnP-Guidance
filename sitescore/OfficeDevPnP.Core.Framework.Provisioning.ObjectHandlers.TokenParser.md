@@ -25,6 +25,7 @@ public class TokenParser
 | [GetResourceTokenResourceValues(String)](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenParser.3da9e64.md) | Gets list of token resource values
 | [ParseString(String)](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenParser.82a519cf.md) | Parses the string
 | [ParseString(String, String[])](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenParser.129ebd72.md) | Parses given string
+| [ParseXmlString(String, String[])](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenParser.9b88e843.md) | 
 | [Rebase(Web)](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenParser.19ef0323.md) | Clears cache of tokens
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers](OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.md)

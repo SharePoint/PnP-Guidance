@@ -7,7 +7,7 @@
 System.Object  
 &ensp;OfficeDevPnP.Core.Framework.Provisioning.Model.BaseModel  
 &emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.md)  
-&emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasZone](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasZone.md)  
+&emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasSection](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasSection.md)  
 &emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.md)  
 &emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.ImageRendition](OfficeDevPnP.Core.Framework.Provisioning.Model.ImageRendition.md)  
 &emsp;[OfficeDevPnP.Core.Framework.Provisioning.Model.IRMSettings](OfficeDevPnP.Core.Framework.Provisioning.Model.IRMSettings.md)  

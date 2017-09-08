@@ -5,7 +5,7 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 
 >**This method is obsolete**
->:Please use the DeployApplicationPackageToAppCatalog overloads that don't require you to specify the appCatalogSiteUrl parameter. This method will be removed in the October 2017 release.
+>:Please use the DeployApplicationPackageToAppCatalog overloads on the Web class that don't require you to specify the appCatalogSiteUrl parameter. This method will be removed in the October 2017 release.
 
 ## Syntax
 ```C#

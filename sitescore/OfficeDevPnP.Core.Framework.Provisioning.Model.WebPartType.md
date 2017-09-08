@@ -11,6 +11,7 @@ public enum WebPartType
 |**Member Name**|**Description**|
 |:-----|:-----|
 | Custom | 
+| Text | 
 | ContentRollup | 
 | BingMap | 
 | ContentEmbed | 

@@ -19,6 +19,8 @@ public class CustomAction: BaseModel, IEquatable<CustomAction>
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
+| [ClientSideComponentId](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.ClientSideComponentId.md) | Gets or sets a value for the ClientSideComponentId, if any
+| [ClientSideComponentProperties](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.ClientSideComponentProperties.md) | Gets or sets a value for the ClientSideComponentProperties, if any
 | [CommandUIExtension](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.CommandUIExtension.md) | 
 | [Description](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.Description.md) | Gets or sets the description of the custom action.
 | [Enabled](OfficeDevPnP.Core.Framework.Provisioning.Model.CustomAction.Enabled.md) | Gets or sets the Enabled property value.
