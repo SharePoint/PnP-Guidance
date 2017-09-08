@@ -1,18 +1,19 @@
-#New-PnPPersonalSite
+# New-PnPPersonalSite
 Office365 only: Creates a personal / OneDrive For Business site
-##Syntax
+>*Only available for SharePoint Online*
+## Syntax
 ```powershell
 New-PnPPersonalSite -Email <String[]>
 ```
 
 
-##Parameters
+## Parameters
 Parameter|Type|Required|Description
 ---------|----|--------|-----------
 |Email|String[]|True|The UserPrincipalName (UPN) of the users|
-##Examples
+## Examples
 
-###Example 1
+### Example 1
 ```powershell
 PS:> $users = ('katiej@contoso.onmicrosoft.com','garth@contoso.onmicrosoft.com')
                  PS:> New-PnPPersonalSite -Email $users
