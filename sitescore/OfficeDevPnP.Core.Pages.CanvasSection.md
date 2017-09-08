@@ -1,5 +1,5 @@
 # CanvasSection Class
- Represents a section in a canvas zone   
+ Represents a section on the canvas   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -9,17 +9,24 @@ System.Object
 ```C#
 public class CanvasSection
 ```
+## Constructors
+|**Name**|**Description**|
+|:-----|:-----|
+| [CanvasSection(ClientSidePage, CanvasSectionTemplate, Single)](OfficeDevPnP.Core.Pages.CanvasSection.ctor1.md) | Creates a new canvas section 
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [Controls](OfficeDevPnP.Core.Pages.CanvasSection.Controls.md) | List of [OfficeDevPnP.Core.Pages.CanvasControl](OfficeDevPnP.Core.Pages.CanvasControl.md) instances that are hosted in this section 
-| [SectionFactor](OfficeDevPnP.Core.Pages.CanvasSection.SectionFactor.md) | Section size factor. Max value is 12 (= one column), other options are 8,6,4 or 0
-| [Zone](OfficeDevPnP.Core.Pages.CanvasSection.Zone.md) |  [OfficeDevPnP.Core.Pages.CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md) this section belongs to 
+| [Columns](OfficeDevPnP.Core.Pages.CanvasSection.Columns.md) |  [OfficeDevPnP.Core.Pages.CanvasColumn](OfficeDevPnP.Core.Pages.CanvasColumn.md) instances that are part of this section 
+| [Controls](OfficeDevPnP.Core.Pages.CanvasSection.Controls.md) | Controls hosted in this section
+| [DefaultColumn](OfficeDevPnP.Core.Pages.CanvasSection.DefaultColumn.md) | The default [OfficeDevPnP.Core.Pages.CanvasColumn](OfficeDevPnP.Core.Pages.CanvasColumn.md) of this section 
+| [Order](OfficeDevPnP.Core.Pages.CanvasSection.Order.md) | Order in which this section is presented on the page
+| [Page](OfficeDevPnP.Core.Pages.CanvasSection.Page.md) | The [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md) instance holding this section 
+| [Type](OfficeDevPnP.Core.Pages.CanvasSection.Type.md) | Type of the section
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [ToHtml()](OfficeDevPnP.Core.Pages.CanvasSection.7c2b006f.md) | Renders a HTML presentation of this section
+| [ToHtml()](OfficeDevPnP.Core.Pages.CanvasSection.7c2b006f.md) | Renders this section as a HTML fragment
 ## See also
-- [OfficeDevPnP.Core.Pages.CanvasControl](OfficeDevPnP.Core.Pages.CanvasControl.md)
-- [OfficeDevPnP.Core.Pages.CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md)
+- [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)
+- [OfficeDevPnP.Core.Pages.CanvasColumn](OfficeDevPnP.Core.Pages.CanvasColumn.md)
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

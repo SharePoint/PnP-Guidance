@@ -10,6 +10,7 @@ public enum ProvisioningTemplateScope
 ## Members
 |**Member Name**|**Description**|
 |:-----|:-----|
+| Undefined | 
 | RootSite | 
 | Web | 
 

@@ -21,10 +21,13 @@ public static class WebExtensions
 | [CreateWeb(Web, SiteEntity, Boolean, Boolean)](Microsoft.SharePoint.Client.WebExtensions.6792428f.md) | Adds a new child Web (site) to a parent Web.
 | [CreateWeb(Web, String, String, String, String, Int32, Boolean, Boolean)](Microsoft.SharePoint.Client.WebExtensions.593e8e9d.md) | Adds a new child Web (site) to a parent Web.
 | [DeleteWeb(Web, String)](Microsoft.SharePoint.Client.WebExtensions.34d305de.md) | Deletes the child website with the specified leaf URL, from a parent Web, if it exists.
+| [DeployApplicationPackageToAppCatalog(Web, String, String, Boolean, Boolean)](Microsoft.SharePoint.Client.WebExtensions.a38d0e24.md) | Adds a package to the tenants app catalog and by default deploys it if the package is a client side package (sppkg)
+| [DeployApplicationPackageToAppCatalog(Web, String, String, Boolean, Boolean, Boolean)](Microsoft.SharePoint.Client.WebExtensions.ac37d25e.md) | Adds a package to the tenants app catalog and by default deploys it if the package is a client side package (sppkg)
 | [DisableRequestAccess(Web)](Microsoft.SharePoint.Client.WebExtensions.1fec6f8d.md) | Disables the request access on the web.
 | [EnableRequestAccess(Web, String[])](Microsoft.SharePoint.Client.WebExtensions.a6aeb360.md) | Enables request access for the specified e-mail addresses.
 | [EnableRequestAccess(Web, IEnumerable&lt;String&gt;)](Microsoft.SharePoint.Client.WebExtensions.efaf0293.md) | Enables request access for the specified e-mail addresses.
 | [GetAllWebUrls(Site)](Microsoft.SharePoint.Client.WebExtensions.3201f18f.md) | Gets the collection of the URLs of all Web sites that are contained within the site collection, including the top-level site and its subsites.
+| [GetAppCatalog(Web)](Microsoft.SharePoint.Client.WebExtensions.c6c34651.md) | Gets the Uri for the tenant's app catalog site (if that one has already been created)
 | [GetAppInstances(Web, Expression&lt;Func&lt;AppInstance, Object&gt;&gt;[])](Microsoft.SharePoint.Client.WebExtensions.b057f688.md) | Returns all app instances
 | [GetBaseTemplateId(Web)](Microsoft.SharePoint.Client.WebExtensions.f90c56f2.md) | Returns the Base Template ID for the current web
 | [GetEventReceiverById(Web, Guid)](Microsoft.SharePoint.Client.WebExtensions.a2bbb95b.md) | Returns an event receiver definition

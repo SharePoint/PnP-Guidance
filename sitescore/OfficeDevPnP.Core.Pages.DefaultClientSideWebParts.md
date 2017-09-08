@@ -10,6 +10,7 @@ public enum DefaultClientSideWebParts
 ## Members
 |**Member Name**|**Description**|
 |:-----|:-----|
+| ThirdParty | Third party webpart
 | ContentRollup | Content Rollup webpart
 | BingMap | Bing Map webpart
 | ContentEmbed | Content Embed webpart

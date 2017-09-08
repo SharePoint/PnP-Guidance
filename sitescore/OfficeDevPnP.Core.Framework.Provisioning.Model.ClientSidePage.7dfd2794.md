@@ -1,5 +1,5 @@
 # ClientSidePage.Equals Method  
- Compares ClientSidePage object based on Zones, PagesLibrary, and PromoteAsNewsArticle   
+ Compares ClientSidePage object based on Sections, PagesLibrary, and PromoteAsNewsArticle   
 
 **Namespace:** [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
