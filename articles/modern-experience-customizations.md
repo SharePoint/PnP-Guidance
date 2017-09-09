@@ -44,7 +44,7 @@ By default, "classic" SharePoint sites will also use "modern" pages for any newl
 
 ## SharePoint "modern" experiences support for on-premises
 <a name="onpremisessupport"> </a>
-The SharePoint "modern" experiences are currently not available for SharePoint on-premises. They are planned to, step-by-step, become available for SharePoint 2016 as part of upcoming feature packs.
+The SharePoint "modern" experiences are currently not available for SharePoint on-premises. As part of the SharePoint 2016 Feature Pack, modern experiences will be introduced within the OneDrive for Business experience and you can take advantage of the SharePoint Framework client-side web parts in the classic page experience.
 
 ## Additional resources
 <a name="bk_addresources"> </a>
