@@ -11,8 +11,8 @@
 |[BaseNavigationKind](OfficeDevPnP.Core.Framework.Provisioning.Model.BaseNavigationKind.md)|Base abstract class for the navigation kinds (global or current)|
 |[CanvasControl](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControl.md)|Defines a CanvasControl|
 |[CanvasControlCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasControlCollection.md)|A collection of CanvasControl objects|
-|[CanvasZone](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasZone.md)|Defines a CanvasZone|
-|[CanvasZoneCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasZoneCollection.md)|A collection of CanvasZone objects|
+|[CanvasSection](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasSection.md)|Defines a CanvasSection|
+|[CanvasSectionCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasSectionCollection.md)|A collection of CanvasZone objects|
 |[ClientSidePage](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.md)|Defines a ClientSidePage|
 |[ClientSidePageCollection](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePageCollection.md)|A collection of ClientSidePage objects|
 |[ComposedLook](OfficeDevPnP.Core.Framework.Provisioning.Model.ComposedLook.md)|Domain Object that defines a Composed Look in the Provision Template|
@@ -115,7 +115,7 @@
 |**Enumeration**|**Description**|
 |:-----|:-----|
 |[WebPartType](OfficeDevPnP.Core.Framework.Provisioning.Model.WebPartType.md)||
-|[CanvasZoneType](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasZoneType.md)|The type of the Canvas Zone for a Client-side Page.|
+|[CanvasSectionType](OfficeDevPnP.Core.Framework.Provisioning.Model.CanvasSectionType.md)|The type of the Canvas section for a Client-side Page.|
 |[SiteWebhookType](OfficeDevPnP.Core.Framework.Provisioning.Model.SiteWebhookType.md)|Defines the various flavors of a SiteWebhook|
 |[CurrentNavigationType](OfficeDevPnP.Core.Framework.Provisioning.Model.CurrentNavigationType.md)|Defines the type of Current Navigation|
 |[UpdateBehavior](OfficeDevPnP.Core.Framework.Provisioning.Model.UpdateBehavior.md)||

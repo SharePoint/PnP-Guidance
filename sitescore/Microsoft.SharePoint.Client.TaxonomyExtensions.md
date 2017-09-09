@@ -11,6 +11,11 @@ System.Object
 ```C#
 public static class TaxonomyExtensions
 ```
+## Methods
+|**Name**|**Description**|
+|:-----|:-----|
+| [DenormalizeName(String)](Microsoft.SharePoint.Client.TaxonomyExtensions.fce4464c.md) | Denormalizes a Taxonomy name
+| [NormalizeName(String)](Microsoft.SharePoint.Client.TaxonomyExtensions.980773b1.md) | Normalizes a Taxonomy name
 ## Extension Methods
 |**Name**|**Description**|
 |:-----|:-----|

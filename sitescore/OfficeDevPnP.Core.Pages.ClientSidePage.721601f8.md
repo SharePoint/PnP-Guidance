@@ -16,7 +16,7 @@ public void AddControl(CanvasControl control, CanvasSection section, Int32 order
 
 #### section  
 &emsp;&emsp;Type: [OfficeDevPnP.Core.Pages.CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)  
-&emsp;&emsp; that will hold the control  
+&emsp;&emsp; that will hold the control. Control will end up in the .  
 
   
 
@@ -33,4 +33,5 @@ Type: void
 - [ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md) 
 - [OfficeDevPnP.Core.Pages.CanvasControl](OfficeDevPnP.Core.Pages.CanvasControl.md)
 - [OfficeDevPnP.Core.Pages.CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)
+- [OfficeDevPnP.Core.Pages.CanvasSection.DefaultColumn](OfficeDevPnP.Core.Pages.CanvasSection.DefaultColumn.md)
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md) 

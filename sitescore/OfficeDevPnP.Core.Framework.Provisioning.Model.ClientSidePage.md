@@ -17,14 +17,15 @@ public class ClientSidePage: BaseModel, IEquatable<ClientSidePage>
 ## Properties
 |**Name**|**Description**|
 |:-----|:-----|
-| [PagesLibrary](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.PagesLibrary.md) | Defines the Pages Library of the Client Side Page, required attribute.
+| [Overwrite](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.Overwrite.md) | Defines whether the page can be overwritten if it exists
+| [PageName](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.PageName.md) | Defines the Page Name of the Client Side Page, required attribute.
 | [PromoteAsNewsArticle](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.PromoteAsNewsArticle.md) | Defines whether to promote the page as a news article, optional attribute
-| [Zones](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.Zones.md) | Gets or sets the zones
+| [Sections](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.Sections.md) | Gets or sets the sections
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
 | [Equals(Object)](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.3520ddbb.md) | Compares object with ClientSidePage class
-| [Equals(ClientSidePage)](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.7dfd2794.md) | Compares ClientSidePage object based on Zones, PagesLibrary, and PromoteAsNewsArticle
+| [Equals(ClientSidePage)](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.7dfd2794.md) | Compares ClientSidePage object based on Sections, PagesLibrary, and PromoteAsNewsArticle
 | [GetHashCode()](OfficeDevPnP.Core.Framework.Provisioning.Model.ClientSidePage.1c6872bd.md) | Gets the hash code
 ## See also
 - [OfficeDevPnP.Core.Framework.Provisioning.Model](OfficeDevPnP.Core.Framework.Provisioning.Model.md)

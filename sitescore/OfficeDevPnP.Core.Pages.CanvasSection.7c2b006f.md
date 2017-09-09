@@ -1,5 +1,5 @@
 # CanvasSection.ToHtml Method  
- Renders a HTML presentation of this section   
+ Renders this section as a HTML fragment   
 
 **Namespace:** [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
@@ -9,7 +9,7 @@ public string ToHtml()
 ```
 ### Return Value
 Type: string  
-The HTML presentation of this section  
+HTML string representing this section  
 
 
 ## See also

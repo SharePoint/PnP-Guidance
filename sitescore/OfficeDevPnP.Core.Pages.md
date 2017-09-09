@@ -3,9 +3,9 @@
 |**Class**|**Description**|
 |:-----|:-----|
 |[AvailableClientSideComponents](OfficeDevPnP.Core.Pages.AvailableClientSideComponents.md)|Class holding a collection of client side webparts (retrieved via the _api/web/GetClientSideWebParts REST call)|
+|[CanvasColumn](OfficeDevPnP.Core.Pages.CanvasColumn.md)|Represents a column in a canvas section|
 |[CanvasControl](OfficeDevPnP.Core.Pages.CanvasControl.md)|Base class for a canvas control|
-|[CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)|Represents a section in a canvas zone|
-|[CanvasZone](OfficeDevPnP.Core.Pages.CanvasZone.md)|Represents a zone on the canvas|
+|[CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)|Represents a section on the canvas|
 |[ClientSideCanvasControlData](OfficeDevPnP.Core.Pages.ClientSideCanvasControlData.md)|Base class representing the json control data that will be included in each client side control (de-)serialization (data-sp-controldata attribute)|
 |[ClientSideCanvasControlPosition](OfficeDevPnP.Core.Pages.ClientSideCanvasControlPosition.md)|Class representing the json control data that will describe a control versus the zones and sections on a page|
 |[ClientSideCanvasData](OfficeDevPnP.Core.Pages.ClientSideCanvasData.md)|Base class representing the json control data that will be included in each client side control (de-)serialization (data-sp-controldata attribute)|
@@ -23,4 +23,4 @@
 |[DefaultClientSideWebParts](OfficeDevPnP.Core.Pages.DefaultClientSideWebParts.md)|List of possible OOB web parts|
 |[ClientSidePageLayoutType](OfficeDevPnP.Core.Pages.ClientSidePageLayoutType.md)|Types of client side pages that can be created|
 |[PromotedState](OfficeDevPnP.Core.Pages.PromotedState.md)|Page promotion state|
-|[CanvasZoneTemplate](OfficeDevPnP.Core.Pages.CanvasZoneTemplate.md)|The type of canvas being used|
+|[CanvasSectionTemplate](OfficeDevPnP.Core.Pages.CanvasSectionTemplate.md)|The type of canvas being used|

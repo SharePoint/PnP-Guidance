@@ -103,5 +103,4 @@
 |[WorkflowsWorkflowDefinitionRestrictToType](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.WorkflowsWorkflowDefinitionRestrictToType.md)||
 |[PublishingAutoCheckRequirements](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.PublishingAutoCheckRequirements.md)||
 |[AddInsAddinSource](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.AddInsAddinSource.md)||
-|[ProvisioningTemplateScope](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.ProvisioningTemplateScope.md)||
 |[SequenceSequenceType](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201605.SequenceSequenceType.md)||

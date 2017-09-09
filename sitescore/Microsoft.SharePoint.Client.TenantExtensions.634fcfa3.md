@@ -3,6 +3,10 @@
 
 **Namespace:** [Microsoft.SharePoint.Client](Microsoft.SharePoint.Client.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
+
+>**This method is obsolete**
+>:Please use the DeployApplicationPackageToAppCatalog extension method on the Web class. This method will be removed in the October 2017 release.
+
 ## Syntax
 ```C#
 public static ListItem DeployApplicationPackageToAppCatalog(this Tenant tenant, String spPkgName, String spPkgPath, Boolean autoDeploy = True, Boolean skipFeatureDeployment = True, Boolean overwrite = True)

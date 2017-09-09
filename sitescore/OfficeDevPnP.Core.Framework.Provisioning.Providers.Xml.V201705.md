@@ -7,7 +7,7 @@
 |[AuditSettingsAudit](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.AuditSettingsAudit.md)||
 |[BaseFieldValue](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.BaseFieldValue.md)||
 |[CanvasControl](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.CanvasControl.md)||
-|[CanvasZone](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.CanvasZone.md)||
+|[CanvasSection](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.CanvasSection.md)||
 |[ClientSidePage](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ClientSidePage.md)||
 |[ComposedLook](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ComposedLook.md)||
 |[ContentType](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ContentType.md)||
@@ -118,6 +118,6 @@
 |[PublishingAutoCheckRequirements](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.PublishingAutoCheckRequirements.md)||
 |[AddInsAddinSource](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.AddInsAddinSource.md)||
 |[CanvasControlWebPartType](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.CanvasControlWebPartType.md)||
-|[CanvasZoneType](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.CanvasZoneType.md)||
+|[CanvasSectionType](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.CanvasSectionType.md)||
 |[ProvisioningTemplateScope](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.ProvisioningTemplateScope.md)||
 |[SequenceSequenceType](OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201705.SequenceSequenceType.md)||
