@@ -94,7 +94,7 @@ Related links
 Related PnP samples
 ===================
 
-- [OD4B.NavLinksInjection (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/OD4B.NavLinksInjection)
+- [OD4B.NavLinksInjection (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/OD4B.NavLinksInjection)
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to

@@ -4,7 +4,7 @@ Implement asynchronous operations in SharePoint Add-ins by using Microsoft Azure
 
 _**Applies to:** SharePoint 2013 | SharePoint Add-ins | SharePoint Online_
 
-The [Core.QueueWebJobUsage](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.QueueWebJobUsage) sample shows you how to create and run asynchronous operations by using provider-hosted add-ins and Azure WebJobs in Office 365.
+The [Core.QueueWebJobUsage](https://github.com/SharePoint/PnP/tree/dev/Samples/Core.QueueWebJobUsage) sample shows you how to create and run asynchronous operations by using provider-hosted add-ins and Azure WebJobs in Office 365.
 
 Use this solution to:
 
@@ -40,7 +40,7 @@ To implement asynchronous operations in your provider-hosted add-in by using Azu
 
 ## Before you begin
 
-To get started, download the [Core.QueueWebJobUsage](https://github.com/OfficeDev/PnP/tree/dev/Samples/Core.QueueWebJobUsage) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub, and then create an Azure account, add details to that account, and verify that Azure WebJob is running.
+To get started, download the [Core.QueueWebJobUsage](https://github.com/SharePoint/PnP/tree/dev/Samples/Core.QueueWebJobUsage) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub, and then create an Azure account, add details to that account, and verify that Azure WebJob is running.
 
 To create an Azure Storage account to access the Azure storage queue:
 

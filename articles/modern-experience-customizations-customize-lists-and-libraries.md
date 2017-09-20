@@ -31,14 +31,17 @@ _**Applies to:** SharePoint Online_
  - PowerApps and Flow integration
 
 There are numerous customizations which currently are not supported for "modern" lists and libraries:
- - JSLink based field customizations - More options will become available in the future
- - JSLink based view customizations - More options will become available in the future
+ - JSLink based field customizations - See note on **SharePoint Framework Extensions**
+ - JSLink based view customizations - See note on **SharePoint Framework Extensions**
  - Custom CSS via AlternateCSSUrl web property
- - Custom JavaScript embedded via User Custom Actions - There will a be more controlled way to embed JavaScript on the pages through the SharePoint Framework (not only client-side web parts)
+ - Custom JavaScript embedded via User Custom Actions - See note on **SharePoint Framework Extensions**
  - Custom master pages - More extensive branding will be supported later using alternative options
  - Customization via InfoPath
  - Minimal Download Strategy (MDS)
  - SharePoint Server Publishing
+
+>**Note:**
+> In June 2017 [SharePoint Framework extensions went into developer preview](https://dev.office.com/blogs/announcing-availability-of-sharepoint-framework-extensions-developer-preview). Using these SharePoint Framework Extensions you can control the rendering of a field via custom code and you can create user custom actions that execute your custom code. If you want to learn more about the SharePoint Framework Extensions checkout out this link: http://aka.ms/spfx-extensions. 
 
 ## User Custom Actions
 <a name="supportedcustomactions"> </a>
@@ -51,6 +54,8 @@ The "modern" experiences allow certain user custom actions to be surfaced in the
 | `CommandUI.Ribbon` | Yes, these entries show up as toolbar items |
 | All other locations (e.g. `scriptlink`) | Sorry, these user custom actions won't work |
 
+>**Note:** 
+>The above custom actions show up in "modern" lists and libraries only when you are in classic sites with "modern" UI enabled, while they by default don't show up in "modern" sites as it's not possible to add user custom actions to "modern" sites because they've the NoScript option enabled. You however can disable NoScript in "modern" sites to achieve the same behavior for "modern" list and libraries across "classic" and "modern" sites.
 
 ### EditControlBlock User Custom Actions 
 <a name="editcontrolblockcustomactions"> </a>
@@ -68,7 +73,7 @@ Adding custom links to the context menu can be done by using the `EditControlBlo
 </pnp:ProvisioningTemplate>
 ```
 
-You can apply this [PnP provisioning template](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) to a site using the PnP Core library or PnP PowerShell. We've opted to show the PowerShell approach in this article. A first step is installing the PnP PowerShell module as described in https://github.com/SharePoint/PnP-PowerShell. Once that's done, save the PnP provisioning xml to a file and then 2 simple lines of PnP PowerShell are enough to apply the template:
+You can apply this [PnP provisioning template](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) to a site using the PnP Core library or [PnP PowerShell](http://aka.ms/sppnp-powershell). We've opted to show the PowerShell approach in this article. A first step is installing the PnP PowerShell module as described in https://github.com/SharePoint/PnP-PowerShell. Once that's done, save the PnP provisioning xml to a file and then 2 simple lines of PnP PowerShell are enough to apply the template:
 
 ```PowerShell
 
@@ -87,7 +92,8 @@ If you refresh the "modern" view of a document library in your site you'll see t
 
 
 >**Note**:
->If you want to use this sample for a list then please set the `RegistrationId` attribute to 100
+>- If you're trying this on a ["modern" team site](modern-experience-customizations-customize-sites.md) where you disabled the NoScript option then please use the April 2017 or later version from PnP-PowerShell. Alternatively use the current dev version.
+>- If you want to use this sample for a list then please set the `RegistrationId` attribute to 100
 
 ### CommandUI.Ribbon User Custom Actions 
 <a name="ribboncustomactions"> </a>
@@ -124,67 +130,50 @@ If you want to extend the toolbar in the "modern" list and library experiences y
       <pnp:CustomAction Name="CA_6" Description="ca 6" Location="CommandUI.Ribbon" RegistrationType="ContentType" RegistrationId="0x0101" Title="CA 6 Title" Sequence="5000" Enabled="true">
         <pnp:CommandUIExtension>
             <CommandUIDefinitions>
-              <CommandUIDefinition Location="Ribbon.CustomTabs._children">
+              <CommandUIDefinition Location="Ribbon.Tabs._children">
                 <Tab Id="Custom Tab" Title="Custom Tab" Description="Custom Tab">
                   <Scaling Id="Custom Tab.Scaling">
-                    <MaxSize Id="Custom Group.Scaling.MaxSize" GroupId="Custom Group" Size="LargeLarge" />
-                    <MaxSize Id="Custom Group 2.Scaling.MaxSize" GroupId="Custom Group 2" Size="LargeLarge" />
-                    <Scale Id="Custom Group.Scaling.Scale" GroupId="Custom Group" Size="LargeLarge" />
-                    <Scale Id="Custom Group 2.Scaling.Scale" GroupId="Custom Group 2" Size="LargeLarge" />
+                    <MaxSize Id="Custom Group.Scaling.MaxSize" GroupId="Custom Group" Size="TwoLarge" />
+                    <MaxSize Id="Custom Group 2.Scaling.MaxSize" GroupId="Custom Group 2" Size="OneLarge" />
+                    <Scale Id="Custom Group.Scaling.Scale" GroupId="Custom Group" Size="TwoLarge" />
+                    <Scale Id="Custom Group 2.Scaling.Scale" GroupId="Custom Group 2" Size="OneLarge" />
                   </Scaling>
                   <Groups Id="Custom Tab.Groups">
-                    <Group Id="Custom Group 2" Title="Custom Group 2" Description="Custom Group 2" Sequence="7888" Template="Ribbon.Templates.Flexible2">
+                    <Group Id="Custom Group 2" Title="Custom Group 2" Description="Custom Group 2" Sequence="7888" Template="Ribbon.Templates.OneLarge">
                       <Controls Id="Custom Group 2.Controls">
-                        <Button Id="CustomButton3" LabelText="Custom Button 3" Image16by16="/_layouts/15/images/attach16.png" ToolTipTitle="Custom Button 3" ToolTipDescription="Custom Button 3" Command="CustomButton3.Command" TemplateAlias="o1" />
+                        <Button Id="CustomButton3" LabelText="Custom Button 3" Image16by16="/_layouts/15/images/attach16.png" Image32by32="/_layouts/15/images/attach16.png" ToolTipTitle="Custom Button 3" ToolTipDescription="Custom Button 3" Command="CustomButton3.Command" TemplateAlias="c3" />
                       </Controls>
                     </Group>
-                    <Group Id="Custom Group 1" Title="Custom Group 1" Description="Custom Group 1" Sequence="10000" Template="Ribbon.Templates.Flexible2">
+                    <Group Id="Custom Group" Title="Custom Group 1" Description="Custom Group 1" Sequence="10000" Template="Ribbon.Templates.TwoLarge">
                       <Controls Id="Custom Group 1.Controls">
-                        <Button Id="CustomButton1" LabelText="Custom Button 1" Image16by16="/_layouts/15/images/itslidelibrary.png" ToolTipTitle="Custom Button 1" ToolTipDescription="Custom Button 1" Command="CustomButton1.Command" TemplateAlias="o1" />
-                        <Button Id="CustomButton2" LabelText="Custom Button 2" Image16by16="/_layouts/15/images/dldsln16.png" ToolTipTitle="Custom Button 2" ToolTipDescription="Custom Button 2" Command="CustomButton2.Command" TemplateAlias="o1" />
+                        <Button Id="CustomButton1" LabelText="Custom Button 1" Image16by16="/_layouts/15/images/itslidelibrary.png" Image32by32="/_layouts/15/images/itslidelibrary.png" ToolTipTitle="Custom Button 1" ToolTipDescription="Custom Button 1" Command="CustomButton1.Command" TemplateAlias="c1" />
+                        <Button Id="CustomButton2" LabelText="Custom Button 2" Image16by16="/_layouts/15/images/dldsln16.png" Image32by32="/_layouts/15/images/dldsln16.png" ToolTipTitle="Custom Button 2" ToolTipDescription="Custom Button 2" Command="CustomButton2.Command" TemplateAlias="c2" />
                       </Controls>
                     </Group>
                   </Groups>
                 </Tab>
               </CommandUIDefinition>
               <CommandUIDefinition Location="Ribbon.Templates._children">
-                <GroupTemplate Id="Ribbon.Templates.Flexible2">
-                  <Layout Title="LargeLarge" LayoutTitle="LargeLarge">
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o1" Type="OneRow" />
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o2" Type="OneRow" />
-                  </Layout>
-                  <Layout Title="LargeMedium" LayoutTitle="LargeMedium">
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o1" Type="OneRow" />
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
-                  <Layout Title="LargeSmall" LayoutTitle="LargeSmall">
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o1" Type="OneRow" />
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
-                  <Layout Title="MediumLarge" LayoutTitle="MediumLarge">
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o2" Type="OneRow" />
-                  </Layout>
-                  <Layout Title="MediumMedium" LayoutTitle="MediumMedium">
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
-                  <Layout Title="MediumSmall" LayoutTitle="MediumSmall">
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
-                  <Layout Title="SmallLarge" LayoutTitle="SmallLarge">
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Large" TemplateAlias="o2" Type="OneRow" />
-                  </Layout>
-                  <Layout Title="SmallMedium" LayoutTitle="SmallMedium">
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Medium" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
-                  <Layout Title="SmallSmall" LayoutTitle="SmallSmall">
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o1" Type="ThreeRow" />
-                    <OverflowSection DisplayMode="Small" TemplateAlias="o2" Type="ThreeRow" />
-                  </Layout>
+                <GroupTemplate Id="Ribbon.Templates.TwoLarge">
+                  <Layout Title="TwoLarge" LayoutTitle="TwoLarge"> 
+                    <Section Alignment="Top" Type="OneRow"> 
+                      <Row> 
+                        <ControlRef DisplayMode="Large" TemplateAlias="c1" /> 
+                        <ControlRef DisplayMode="Large" TemplateAlias="c2" /> 
+                      </Row> 
+                    </Section> 
+                  </Layout> 
+                </GroupTemplate>
+              </CommandUIDefinition>
+              <CommandUIDefinition Location="Ribbon.Templates._children">
+                <GroupTemplate Id="Ribbon.Templates.OneLarge">
+                  <Layout Title="OneLarge" LayoutTitle="OneLarge"> 
+                    <Section Alignment="Top" Type="OneRow"> 
+                      <Row> 
+                        <ControlRef DisplayMode="Large" TemplateAlias="c3" /> 
+                      </Row> 
+                    </Section> 
+                  </Layout> 
                 </GroupTemplate>
               </CommandUIDefinition>
             </CommandUIDefinitions>
@@ -205,7 +194,8 @@ After adding these user custom actions you'll see them appear in the toolbar. No
 ![Custom action visible in the toolbar](media/modern-experiences/custom-actions-toolbar.png)
 
 >**Note**:
->If you want to use this sample for a list then please set the `RegistrationId` attributes to 100 and use the below XML for the CA_4 user custom action
+>- If you're trying this on a ["modern" team site](modern-experience-customizations-customize-sites.md) where you disabled the NoScript option then please use the April 2017 or later version from PnP-PowerShell. Alternatively use the current dev version.
+>- If you want to use this sample for a list then please set the `RegistrationId` attributes to 100 and use the below XML for the CA_4 user custom action.
 >
 ```XML
 <CommandUIDefinition Location="Ribbon.Templates._children">
@@ -227,9 +217,9 @@ After adding these user custom actions you'll see them appear in the toolbar. No
 
 When developing user custom actions that need to work in modern experiences please take into account the following limitations:
  - You can't completely control the order in which the user custom actions show up: the user custom actions are added in the order the `_api/web/Lists(guid'listid')/CustomActionElements` returns the user custom actions... and this API currently does not take in account the sequence attributes. Buttons defined inside a custom tab can be ordered by adding them in the correct order in the CommandUIDefinition xml. Our sample shows Button 3 as first and that's because of the order in the XML
+ - Grouping of user custom actions inside a custom tab is driven by the presence of `Button` elements whenever there's either multiple `Tab` or `Group` elements in the returned user custom action element xml
  - Command actions cannot contain JavaScript... using for example `CommandAction="javascript:alert('My custom Action');"` will mean the user custom action will not show up
  - Using the `ScriptLink` or `ScriptBlock` properties is not possible since they can only be used with user custom action location `ScriptLink`, which is not supported
- - The `RegistrationId` cannot refer to a specific library ID (e.g. {7A46F86F-D6CC-4263-8A1B-1BC1658B506C}), only out of the box template types (e.g. 100 for a List or 101 for a Document Library) or content type id's (e.g. 0x0101 for the Document content type) are allowed
  - Using image maps (e.g. `Image16by16="/_layouts/15/1033/images/formatmap16x16.png?rev=33" Image16by16Left="-144" Image16by16Top="-107"`) does not work, you'll need to specify individual images. Also note that only 16x16 images are relevant
 
 
@@ -250,6 +240,7 @@ If you want to completely disable the "modern" experience, then it's best to use
 
 
 >**Note**:
+> - When you switch from between "New experience (auto detect)" and "Classic experience" the change will not be immediately visible.
 > - When you've selected "New experience (auto detect)" then you'll always see the "Return to classic SharePoint" option. This is by design given today not all functionalities of "classic" libraries and lists are implemented in the "modern" libraries and lists. There's no option to change this behavior.
 
 ### Site/Web level configuration
@@ -257,34 +248,22 @@ You can prevent a site collection or web from using the "modern" experience by e
 - Site collection scoped feature with ID **E3540C7D-6BEA-403C-A224-1A12EAFEE4C4** for site collection control
 - Web scoped feature with ID **52E14B6F-B1BB-4969-B89B-C4FAA56745EF** for web scoped control
 
-You can use below [PnP provisioning XML](https://msdn.microsoft.com/en-us/pnp_articles/pnp-provisioning-engine-and-the-core-library) to enable this feature on site or web level
-
-```XML
-<pnp:ProvisioningTemplate ID="experiencecontrol" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
-  <pnp:Features>
-    <!-- for site collection scoped control -->
-    <pnp:SiteFeatures>
-      <pnp:Feature ID="E3540C7D-6BEA-403C-A224-1A12EAFEE4C4" Description="Disable modern list experience"/>
-    </pnp:SiteFeatures>
-    <!-- for web scoped control -->
-    <pnp:WebFeatures>
-      <pnp:Feature ID="52E14B6F-B1BB-4969-B89B-C4FAA56745EF" Description="Disable modern list experience"/>
-    </pnp:WebFeatures>
-  </pnp:Features>
-</pnp:ProvisioningTemplate>
-```
-
-Use the following PnP PowerShell to apply this template:
+Use the following [PnP PowerShell](http://aka.ms/sppnp-powershell) to enable/disable the needed features:
 
 ```PowerShell
-
-# Connect to a previously created Modern Site
+# Connect to a site
 $cred = Get-Credential
 Connect-PnPOnline -Url https://[tenant].sharepoint.com/sites/siteurl -Credentials $cred
 
-# Apply the PnP provisioning template
-Apply-PnPProvisioningTemplate -Path c:\experiencecontrol.xml -Handlers Features
+# Prevent modern list and libraries at site collection level
+Enable-PnPFeature -Identity E3540C7D-6BEA-403C-A224-1A12EAFEE4C4 -Scope Site 
+# And again enable modern list and libraries at site collection level
+#Disable-PnPFeature -Identity E3540C7D-6BEA-403C-A224-1A12EAFEE4C4 -Scope Site 
 
+# Prevent modern list and libraries at web level
+#Enable-PnPFeature -Identity 52E14B6F-B1BB-4969-B89B-C4FAA56745EF  -Scope Web 
+# And again enable modern list and libraries at web
+#Disable-PnPFeature -Identity 52E14B6F-B1BB-4969-B89B-C4FAA56745EF  -Scope Web 
 ```
 
 ### List/Library configuration
@@ -309,8 +288,10 @@ context.ExecuteQuery();
 ```
 
 >**Note**:
-> - The settings at the library level **override** the settings at the web, site, or tenant level
-> - The current configuration is cached, so changes are not immediately visible
+> - The settings at the library level **override** the settings at the web, site, or tenant level. This also implies that you could pilot the "modern" list and library experience to a sub site of sites by having the "modern" experience turned off at tenant level but enabled at list level in the pilot sites.
+> - When you've manually chosen (so not because of list, site, web or tenant "classic" enforcement) you'll see a link "Exit classic experience" appearing under the left navigation (as of July 2017). Clicking this will bring you back to the "modern" experience.
+> - If you're not able to get the "modern" experience to show up then inspect the cookies being passed to SharePoint as it could be possible that the opt out of modern experiences cookie (splnu with value set to 0) is still present. Clearing the browser cookies should get this fixed.
+
 
 ## When does the built-in auto-detect automatically switch rendering back to "classic"?
 <a name="autodetect"> </a>
@@ -318,21 +299,77 @@ SharePoint will use an auto-detect system to automatically switch the rendering 
 
 Below are the settings that are evaluated as part of the auto-detect system and which make the list render in "classic" mode:
 - If the requested list form page has zero or more than 1 web part on it
-- If the Web scoped feature "Metadata Navigation and Filtering" is enabled
+- **Until July 2017**: If the Web scoped feature "Metadata Navigation and Filtering" is enabled. We're rolling out managed metadata navigation support for "modern" list and libraries as explained here: https://techcommunity.microsoft.com/t5/SharePoint-Blog/SharePoint-filters-pane-updates-filtering-and-metadata/ba-p/74162
 - If the available webpart is an **XSLTListViewWebPart** (default way to render the list) and:
 	- There's a non standard JSLink or XslLink value set for the web part properties
 	- The page is shown in a dialog (IsDlg=1)
+	- The list is not based on one of the following types: Document library (101), Picture library (109), Web page library (119) or Generic list (100). **As of August 2017** also Announcements (104) and Links (103) do render using the "modern" UI.
 	- The JSLink property is set on one of the fields to render
 	- One of the fields to render is of type "BCS external data", "Geolocation", "OutcomeChoice" or one of these publishing field types "Image", "Html", or "SummaryLinks"
-	- The list has customized content type ordering
 	- There are list scoped user custom actions which have their ScriptSrc property set
-- If the available webpart is a **ListFormWebPart** and:
-	- The page is shown in a dialog (IsDlg=1)
-	- It's a "New" form page for a document library 
-	- The fields to render are not any of these supported types (Attachments, TaxonomyField, Boolean, Choice, Currency, DateTime, File, Lookup, MultiChoice, MultiLine except when Append with versioning is on, Number, Text, User, or Url)
+- If the available webpart is a **ListFormWebPart** and: 
+	- The page is shown in a dialog (IsDlg=1) 
+	- It's a "New" form page for a document library  
+	- The fields to render are not any of these supported types (Attachments, TaxonomyField, Boolean, Choice, Currency, DateTime, File, Lookup, MultiChoice, MultiLine except when Append with versioning is on, Number, Text, User, or Url) 
+
+### Programmatically detecting if your library/list will be shown using "modern" or "classic" 
+The previous chapter explained the reasoning behind our auto-detect mechanism, but luckily there's an easy way for you as a developer to understand how a library/list will be rendered. Getting this information is as simple as getting the value of the **PageRenderType** file property which you can obtain using CSOM or REST. Below samples show how to first load the page rendering the list and then get the **PageRenderType**:
+
+*CSOM sample:*
+```C#
+using (var cc = new ClientContext(siteUrl))
+{
+    cc.Credentials = new SharePointOnlineCredentials(userName, password);
+    
+    // Load the AllItems.aspx file from the list
+    File file = cc.Web.GetFileByServerRelativeUrl("/sites/dev/ECMTest/Forms/AllItems.aspx");
+    cc.Load(file, f => f.PageRenderType);
+    cc.ExecuteQuery();
+
+    // Check page render type
+    Console.WriteLine($"Status = {file.PageRenderType}");
+}
+```
+
 
 >**Note**:
->In the future there will be an API that you can use to verify if a page can render in "modern" mode. If the page can't render in "modern" the API will tell you why it can't. Essentially the API will tell you which of the above reasons caused the page to render in "classic" mode.
+> The PageRenderType property was introduced in [January 2017 CSOM release (16.1.6112.1200)](https://dev.office.com/blogs/new-sharepoint-csom-version-released-for-Office-365-january-2017).
+
+*REST request:*
+```Html
+GET _api/web/getfilebyserverrelativeurl('/sites/dev/ECMTest/Forms/AllItems.aspx')/pageRenderType
+```
+
+The REST call will get you integer value which is explained in below table:
+
+Value | Reason
+:------:|-------
+0 | Undefined = 0, (there's not enough information to know the render mode)
+1 | MultipeWePart
+2 | JSLinkCustomization
+3 | XslLinkCustomization
+4 | NoSPList
+5 | HasBusinessDataField
+6 | HasTaskOutcomeField
+7 | HasPublishingfield
+8 | HasGeolocationField
+9 | HasCustomActionWithCode
+10 | HasMetadataNavFeature 
+11 | SpecialViewType
+12 | ListTypeNoSupportForModernMode
+13 | AnonymousUser
+14 | ListSettingOff
+15 | SiteSettingOff
+16 | WebSettingOff
+17 | TenantSettingOff
+18 | CustomizedForm
+19 | DocLibNewForm
+20 | UnsupportedFieldTypeInForm
+21 | InvalidFieldTypeInForm 
+22 | InvalidControModeInForm
+23 | CustomizedPage
+24 | ListTemplateNotSupported
+100 | Modern
 
 
 ## Additional Considerations

@@ -4,7 +4,7 @@ When you develop SharePoint Online add-ins, you have a number of different optio
 
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-This article describes the  [Core.DataStorageModels](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.DataStorageModels) sample app, which shows you each of the following data storage options and the advantages and disadvantages of each:
+This article describes the  [Core.DataStorageModels](https://github.com/SharePoint/PnP/tree/master/Samples/Core.DataStorageModels) sample app, which shows you each of the following data storage options and the advantages and disadvantages of each:
 
 - SharePoint list on the host web
     
@@ -18,8 +18,8 @@ This article describes the  [Core.DataStorageModels](https://github.com/OfficeDe
     
 - External web service
     
-The  [Core.DataStorageModels](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.DataStorageModels) sample app is a provider-hosted app written in C# and JavaScript that deploys a number of SharePoint artifacts (lists, app part, web part) to both the host web and the app web. It interacts with SharePoint lists on the app web and host web, and also makes calls to a SQL Azure database, an Azure queue and table storage, and a remote web service that implements OData. This sample uses the Model-View-Controller (MVC) pattern.
-The  [Core.DataStorageModels](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.DataStorageModels) sample app applies each data storage option to a specific function for which the option is well suited, as described in the following table.
+The  [Core.DataStorageModels](https://github.com/SharePoint/PnP/tree/master/Samples/Core.DataStorageModels) sample app is a provider-hosted app written in C# and JavaScript that deploys a number of SharePoint artifacts (lists, app part, web part) to both the host web and the app web. It interacts with SharePoint lists on the app web and host web, and also makes calls to a SQL Azure database, an Azure queue and table storage, and a remote web service that implements OData. This sample uses the Model-View-Controller (MVC) pattern.
+The  [Core.DataStorageModels](https://github.com/SharePoint/PnP/tree/master/Samples/Core.DataStorageModels) sample app applies each data storage option to a specific function for which the option is well suited, as described in the following table.
 
 |Sample app storage option|Used for|
 |:--|:--|
@@ -74,7 +74,7 @@ Also, you need to deploy the Northwind database to Microsoft Azure.
     
 8. In the  **Object Explorer**, select the  **Northwind** database, and then choose **New Query**.
     
-9. In a text editor of your choice, open the northwind.sql SQL script that is provided with the  [Core.DataStorageModels](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.DataStorageModels) sample.
+9. In a text editor of your choice, open the northwind.sql SQL script that is provided with the  [Core.DataStorageModels](https://github.com/SharePoint/PnP/tree/master/Samples/Core.DataStorageModels) sample.
     
 10. Copy the text in the northwind.sql file and paste it into the  **SQL Query window** in the SQL Server Management Studio, and then choose **Execute**.
     
@@ -641,4 +641,4 @@ public ActionResult Orders(string customerId)
 
 -  [Composite business add-ins for SharePoint 2013 and SharePoint Online](Composite-buisness-apps-for-SharePoint.md)
     
--  [Office 365 Development Patterns and Practices on GitHub](https://github.com/OfficeDev/PnP)
+-  [Office 365 Development Patterns and Practices on GitHub](https://github.com/SharePoint/PnP)

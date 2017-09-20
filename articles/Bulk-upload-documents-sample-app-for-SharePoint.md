@@ -15,7 +15,7 @@ This add-in uses a console application to upload files by using REST API calls. 
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [Core.BulkDocumentUploader](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.BulkDocumentUploader) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [Core.BulkDocumentUploader](https://github.com/SharePoint/PnP/tree/master/Samples/Core.BulkDocumentUploader) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub.
 
 Before you run the code sample, do the following:
 
@@ -209,5 +209,5 @@ public override void IterateCollection(Collection<string> entries, LogHelper log
 
 -  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
--  [Core.LargeFileUpload sample](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.LargeFileUpload)
+-  [Core.LargeFileUpload sample](https://github.com/SharePoint/PnP/tree/master/Samples/Core.LargeFileUpload)
     

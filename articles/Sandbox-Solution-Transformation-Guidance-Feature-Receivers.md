@@ -15,8 +15,8 @@ The approach you take to handle feature receivers in SharePoint is slightly diff
 
 |**Approach**|**Additional Information**|
 |:-----|:-----|
-|PowerShell based customizations|<p>You use PowerShell scripts to provision new site collections (and potentially sub sites) where needed customizations are applied using remote APIs. Typically this is done by using CSOM/REST directly in the PowerShell scripts or by using PnP PowerShell commands, which provides easy way to modify sites and content remotely.</p><p><lu><li>[PnP Provisioning Engine](https://github.com/OfficeDev/PnP-PowerShell)</li><li>[PnP PowerShell - Getting started with latest updates](http://dev.office.com/blogs/pnp-powershell-getting-started-with-latest-updates)</li></lu></p>|
-|Code based customizations|<p>You can apply the needed customizations also using managed code with remote APIs. This means that you will either apply them as part of the administrative operation when the site is created or you apply customizations to SharePoint, which will hook in your code to be part of the UI elements, like by overiding the sub site creation logic, so that you can associate customizations as part of the provisioning logic.</p><p><lu><li>[Remote provisioning pattern for sub site creation](https://channel9.msdn.com/blogs/OfficeDevPnP/Using-remote-provisioning-pattern-for-sub-site-creation)</li><li>[PnP CSOM Core Component](https://github.com/OfficeDev/PnP-sites-core)</li></lu></p>|
+|PowerShell based customizations|<p>You use PowerShell scripts to provision new site collections (and potentially sub sites) where needed customizations are applied using remote APIs. Typically this is done by using CSOM/REST directly in the PowerShell scripts or by using PnP PowerShell commands, which provides easy way to modify sites and content remotely.</p><p><lu><li>[PnP Provisioning Engine](https://github.com/SharePoint/PnP-PowerShell)</li><li>[PnP PowerShell - Getting started with latest updates](http://dev.office.com/blogs/pnp-powershell-getting-started-with-latest-updates)</li></lu></p>|
+|Code based customizations|<p>You can apply the needed customizations also using managed code with remote APIs. This means that you will either apply them as part of the administrative operation when the site is created or you apply customizations to SharePoint, which will hook in your code to be part of the UI elements, like by overiding the sub site creation logic, so that you can associate customizations as part of the provisioning logic.</p><p><lu><li>[Remote provisioning pattern for sub site creation](https://channel9.msdn.com/blogs/OfficeDevPnP/Using-remote-provisioning-pattern-for-sub-site-creation)</li><li>[PnP CSOM Core Component](https://github.com/SharePoint/PnP-sites-core)</li></lu></p>|
 
 ## Design Considerations
 ### PowerShell based provisioning
@@ -39,7 +39,7 @@ This model works great if your site provisioning model is based on administrativ
 ### Applying needed customizations to sites using PowerShell
 Here's a simple script which is using PnP PowerShell to upload a theme color file from computer to SharePoint Online and activates that in SharePoint site. 
 
-> This sample is using [PnP PowerShell](https://github.com/OfficeDev/PnP-PowerShell), which provides more than 150 additional PowerShell cmdlets targeted for site configuration and asset management. 
+> This sample is using [PnP PowerShell](https://github.com/SharePoint/PnP-PowerShell), which provides more than 150 additional PowerShell cmdlets targeted for site configuration and asset management. 
 
 ```postscript 
 
@@ -52,7 +52,7 @@ Set-SPOTheme -ColorPaletteUrl /_catalogs/theme/15/company.spcolor
 ### Applying needed customizations to sites using code
 Here's a simple code piece which uses SharePoint Online CSOM to activate custom theme by first uploading the assets to SharePoint site and then activating custom theme. 
 
-> This sample is using [PnP CSOM Core Component](https://github.com/OfficeDev/PnP-sites-core), which extends the native out of the box operations by introducing additional set of extension methods for common operations. You can perform similar operations also by using native CSOM, but code would be significantly more complex.
+> This sample is using [PnP CSOM Core Component](https://github.com/SharePoint/PnP-sites-core), which extends the native out of the box operations by introducing additional set of extension methods for common operations. You can perform similar operations also by using native CSOM, but code would be significantly more complex.
 
 ```csharp
 
@@ -91,5 +91,5 @@ When you deactivate your existing sandbox solution from your sites, any assets o
 <a name="bk_addresources"> </a>
 -  [Removing Code-Based Sandbox Solutions in SharePoint Online](http://dev.office.com/blogs/removing-code-based-sandbox-solutions-in-sharepoint-online)
 -  [Sandbox solution transformation guidance](https://msdn.microsoft.com/en-us/pnp_articles/sandbox-solution-transformation-guidance)
--  [PnP PowerShell](https://github.com/OfficeDev/PnP-PowerShell/blob/master/README.md) - Script based customizations
+-  [PnP PowerShell](https://github.com/SharePoint/PnP-PowerShell/blob/master/README.md) - Script based customizations
 -  [PnP CSOM Core training](https://blogs.msdn.microsoft.com/vesku/2016/04/12/office-dev-pnp-core-componenttraining-package/) - For code based options

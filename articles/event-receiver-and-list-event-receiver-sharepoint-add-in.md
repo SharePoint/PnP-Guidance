@@ -38,7 +38,7 @@ As a rule of a thumb, we would like to provide the following high-level guidelin
 	+ See the following MSDN blog post for more information about this pattern. [Using Azure storage queues and WebJobs for async actions in Office 365 (MSDN Blog Post)](http://blogs.msdn.com/b/vesku/archive/2015/03/02/using-azure-storage-queues-and-webjobs-for-async-actions-in-office-365.aspx)
 	+ See the following MSDN article for more information about timeouts in event receivers.  (Search for timeout in the article.)  [Handle events in add-ins for SharePoint (MSDN Article)](https://msdn.microsoft.com/en-us/library/office/jj220048.aspx)
 - When event receivers operate on SharePoint lists we recommend using a specific change tracking mechanism along with the event receiver to ensure higher quality processing.
-	+ See the following O365 PnP Code Sample for more information about this pattern and how to implement it.  [Core.ListItemChangeMonitor (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ListItemChangeMonitor)
+	+ See the following O365 PnP Code Sample for more information about this pattern and how to implement it.  [Core.ListItemChangeMonitor (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.ListItemChangeMonitor)
 
 
 Debugging Event Receivers
@@ -51,16 +51,16 @@ To debug event receivers you need to configure a few different things in Azure a
 
 More Examples
 -------------
-- [Core.EventReceivers (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EventReceivers)
+- [Core.EventReceivers (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.EventReceivers)
 	+ This sample hows how a SharePoint Add-in can use the App Installed event to perform additional work in the host web, such as attaching event receivers to lists in the host web.
 	+ See the following MSDN blog post for more information about this pattern. [Attaching Remote Event Receivers to Lists in the Host Web (MSDN Blog Post)](http://blogs.msdn.com/b/kaevans/archive/2014/02/26/attaching-remote-event-receivers-to-lists-in-the-host-web.aspx)
-- [Core.AppEvents.HandlerDelegation (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppEvents.HandlerDelegation)
+- [Core.AppEvents.HandlerDelegation (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.AppEvents.HandlerDelegation)
 	+ This sample shows how to implement handlers for the AppInstalled and AppUninstalling events that:
 		1. Incorporate rollback logic if the handler encounters an error.
 		2. Incorporate "already done" logic to accommodate the fact that SharePoint retries the handler up to three more times if it fails or takes more than 30 seconds to complete.
 		3. Use the handler delegation strategy to minimize calls from the handler web service to SharePoint.
 		4. Use the CSOM classes ExceptionHandlingScope and ConditionalScope.
-- [Core.AppEvents (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppEvents)
+- [Core.AppEvents (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.AppEvents)
 	+ This sample shows how to implement handlers for the AppInstalled and AppUninstalling events that:
 		1. Incorporate rollback logic if the handler encounters an error.
 		2. Incorporate "already done" logic to accommodate the fact that SharePoint retries the handler up to three more times if it fails or takes more than 30 seconds to complete.
@@ -77,11 +77,11 @@ Related links
 Related PnP samples
 ===================
 
-- [Core.ListItemChangeMonitor (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.ListItemChangeMonitor)
-- [Core.EventReceivers (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.EventReceivers)
-- [Core.AppEvents.HandlerDelegation (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppEvents.HandlerDelegation)
-- [Core.AppEvents (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppEvents)
-- Samples and content at https://github.com/OfficeDev/PnP
+- [Core.ListItemChangeMonitor (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.ListItemChangeMonitor)
+- [Core.EventReceivers (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.EventReceivers)
+- [Core.AppEvents.HandlerDelegation (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.AppEvents.HandlerDelegation)
+- [Core.AppEvents (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.AppEvents)
+- Samples and content at https://github.com/SharePoint/PnP
 
 Applies to
 ==========

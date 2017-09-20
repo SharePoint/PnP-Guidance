@@ -105,8 +105,8 @@ One of the key downsides of this option is that there can clearly be a situation
 
 ### Related PnP samples ###
 -  [Customizing OD4B sites using Async pattern](#)
--  [Classic app part and sync process for OD4B site customization](https://github.com/OfficeDev/PnP/tree/master/Solutions/Provisioning.OneDrive)
--  [Pre-create OD4B sites for users](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.OneDriveProvisioning)
+-  [Classic app part and sync process for OD4B site customization](https://github.com/SharePoint/PnP/tree/master/Solutions/Provisioning.OneDrive)
+-  [Pre-create OD4B sites for users](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.OneDriveProvisioning)
 
 ### Applies to ###
 -  Office 365 Multi Tenant (MT)

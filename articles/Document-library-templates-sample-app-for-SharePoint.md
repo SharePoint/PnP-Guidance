@@ -4,7 +4,7 @@ As part of your Enterprise Content Management (ECM) strategy, you can implement 
     
 _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Online_
 
-The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample shows you how to use a provider-hosted add-in to create a list or document library, assign a content type to it, and remove the default content type. Use this solution if you want to:    
+The [ECM.DocumentLibraries](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.DocumentLibraries) sample shows you how to use a provider-hosted add-in to create a list or document library, assign a content type to it, and remove the default content type. Use this solution if you want to:    
 
 - Create a list or document library and apply a default content type.
     
@@ -17,7 +17,7 @@ The [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples
 ## Before you begin
 <a name="sectionSection0"> </a>
 
-To get started, download the  [ECM.DocumentLibraries](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.DocumentLibraries) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the  [ECM.DocumentLibraries](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.DocumentLibraries) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub.
 
 Users accessing the ECM.DocumentLibraries add-in must have permissions to manage lists. The  **DoesUserHavePermission** method in Default.aspx.cs checks the user's permissions to ensure they can manage lists. If the user does not have permissions to manage lists, the add-in presents an error message to the user.
 
@@ -283,4 +283,4 @@ After you create the document library, go to the  **Library settings** on your d
 
 -  [Enterprise Content Management solutions for SharePoint 2013 and SharePoint Online](Enterprise-Content-Management-solutions-for-SharePoint-2013-and-SharePoint-Online.md)
     
--  [ECM.Autotagging sample app](https://github.com/OfficeDev/PnP/tree/master/Samples/ECM.Autotagging)
+-  [ECM.Autotagging sample app](https://github.com/SharePoint/PnP/tree/master/Samples/ECM.Autotagging)

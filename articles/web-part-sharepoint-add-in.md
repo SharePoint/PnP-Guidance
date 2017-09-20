@@ -19,7 +19,7 @@ As a rule of a thumb, we would like to provide the following high level guidelin
 - By default, custom properties you add to editor parts are always shown as the final group in an editor part.
 	+ You can use JavaScript to override the look and feel of an editor part for an Add-in Part.
 	+ See the following sample that demonstrates how this is done. 
-	+ [Core.AppPartPropertyUIOverride (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppPartPropertyUIOverride)
+	+ [Core.AppPartPropertyUIOverride (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.AppPartPropertyUIOverride)
 
 **Getting Started**
 
@@ -31,7 +31,7 @@ The following article describes the Add-in Script Part pattern and how to use it
 
 The following sample demonstrates how to use an Add-in Script Part to integrate with Yammer, Bing Maps, and Google Maps.
 
-- [Core.AppScriptPart (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppScriptPart)
+- [Core.AppScriptPart (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.AppScriptPart)
 
 The following video walks you through the code sample.
 
@@ -49,8 +49,8 @@ Related links
 Related PnP samples
 ===================
 
-- [Core.AppPartPropertyUIOverride (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppPartPropertyUIOverride)
-- [Core.AppScriptPart (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.AppScriptPart)
+- [Core.AppPartPropertyUIOverride (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.AppPartPropertyUIOverride)
+- [Core.AppScriptPart (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.AppScriptPart)
 - Samples and content at [http://aka.ms/OfficeDevPnP](http://aka.ms/OfficeDevPnP)
 
 Applies to

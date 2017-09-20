@@ -6,13 +6,13 @@ As you learned in our [PnP provisioning framework](pnp-provisioning-framework.md
 
 ## Provisioning schema resources
 
-You can get the provisioning schema, along with its supporting files, on GitHub: [PnP-Provisioning-Schema](https://github.com/OfficeDev/PnP-Provisioning-Schema)
+You can get the provisioning schema, along with its supporting files, on GitHub: [PnP-Provisioning-Schema](https://github.com/SharePoint/PnP-Provisioning-Schema)
 
 There is a 20-minute Channel 9 video that discusses the provisioning schema: [Deep dive to PnP provisioning engine schema](https://channel9.msdn.com/blogs/OfficeDevPnP/Deep-dive-to-PnP-provisioning-engine-schema).
 
-Sample schemas are available on: [GitHub at PnP-Provisioning-Schema/Samples](https://github.com/OfficeDev/PnP-Provisioning-Schema/tree/master/Samples).
+Sample schemas are available on: [GitHub at PnP-Provisioning-Schema/Samples](https://github.com/SharePoint/PnP-Provisioning-Schema/tree/master/Samples).
 
-The code block below displays the schema's root element and direct child elements of the root. You can find provisioning schema documentation on GitHub: [PnP Provisioning Schema](https://github.com/OfficeDev/PnP-Sites-Core/blob/dev/Core/Tools/OfficeDevPnP.Core.Tools.DocsGenerator/OfficeDevPnP.Core.Tools.DocsGenerator/ProvisioningSchema-2015-08.md).
+The code block below displays the schema's root element and direct child elements of the root. You can find provisioning schema documentation on GitHub: [PnP Provisioning Schema](https://github.com/SharePoint/PnP-Sites-Core/blob/dev/Core/Tools/OfficeDevPnP.Core.Tools.DocsGenerator/OfficeDevPnP.Core.Tools.DocsGenerator/ProvisioningSchema-2015-08.md).
 
 ```
 <pnp:ProvisioningTemplate
@@ -51,6 +51,6 @@ The code block below displays the schema's root element and direct child element
 
 - [Deep dive to PnP provisioning engine schema](https://channel9.msdn.com/blogs/OfficeDevPnP/Deep-dive-to-PnP-provisioning-engine-schema)
     
-- [PnP Provisioning Schema](https://github.com/OfficeDev/PnP-Sites-Core/blob/dev/Core/Tools/OfficeDevPnP.Core.Tools.DocsGenerator/OfficeDevPnP.Core.Tools.DocsGenerator/ProvisioningSchema-2015-08.md)
+- [PnP Provisioning Schema](https://github.com/SharePoint/PnP-Sites-Core/blob/dev/Core/Tools/OfficeDevPnP.Core.Tools.DocsGenerator/OfficeDevPnP.Core.Tools.DocsGenerator/ProvisioningSchema-2015-08.md)
     
-- [GitHub at PnP-Provisioning-Schema/Samples](https://github.com/OfficeDev/PnP-Provisioning-Schema/tree/master/Samples)
+- [GitHub at PnP-Provisioning-Schema/Samples](https://github.com/SharePoint/PnP-Provisioning-Schema/tree/master/Samples)

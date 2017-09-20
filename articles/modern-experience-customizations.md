@@ -20,7 +20,7 @@ The modern experiences in SharePoint Online are:
 We recommend using the following process for adopting the "modern" experiences, if you have existing customizations which are business critical for your deployment:
 
 1. **Readiness**: Understand the "modern" experiences, know what features they offer but equally important understand which features are not (yet) available.
-2. **Assess**: Assess to what extent your current customizations can work within the "modern" experience. Also assess which of your sites have customizations or features that will not work within the "modern" experiences. These sites and their customizations should be updated or will need to stay in "classic". However, other sites should work just fine using the "modern" experiences.
+2. **Assess**: Assess to what extent your current customizations can work within the "modern" experience. Also assess which of your sites have customizations or features that will not work within the "modern" experiences. These sites and their customizations should be updated or will need to stay in "classic". However, other sites should work just fine using the "modern" experiences. The best way to asses your compatibility with the "modern" experiences is by using the [SharePoint Modern user experience experience scanner](https://aka.ms/sppnp-modernuiscanner).
 3. **Solution planning**: Plan the work required for both custom solutions and sites to prepare them to be used with the "modern" experiences.
 4. **Develop and test**: Apply the needed changes to your customizations and test them.
 5. **Deploy**: Roll out the updated changes to your SharePoint Online environment.
@@ -44,7 +44,7 @@ By default, "classic" SharePoint sites will also use "modern" pages for any newl
 
 ## SharePoint "modern" experiences support for on-premises
 <a name="onpremisessupport"> </a>
-The SharePoint "modern" experiences are currently not available for SharePoint on-premises. They are planned to, step-by-step, become available for SharePoint 2016 as part of upcoming feature packs.
+The SharePoint "modern" experiences are currently not available for SharePoint on-premises. As part of the SharePoint 2016 Feature Pack, modern experiences will be introduced within the OneDrive for Business experience and you can take advantage of the SharePoint Framework client-side web parts in the classic page experience.
 
 ## Additional resources
 <a name="bk_addresources"> </a>

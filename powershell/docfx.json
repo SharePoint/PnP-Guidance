@@ -14,11 +14,13 @@
         }
     ],
     "globalMetadata": {
-        "ROBOTS": "INDEX, FOLLOW"
+        "ROBOTS": "INDEX, FOLLOW",
+        "author": "spdevdocs"
     },
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "powershell"
+    "dest": "powershell",
+	"contributors_to_exclude": ["jansenbe","VesaJuvonen"]
   }
 }

@@ -6,11 +6,11 @@ _**Applies to:** Office 365 | SharePoint 2013 | SharePoint Add-ins | SharePoint 
 
 When you create a new list in the host web, you can use a **ListAdded** remote event receiver to modify that list. For example, you can enable versioning, or add a content type to the list, or make any other changes implemented by the client object model (CSOM).
 
-When the list is added to the host web, you need to programmatically attach the event receiver. The [Core.EventReceiversBasedModifications](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.EventReceiversBasedModifications) sample shows you how to use a provider-hosted add-in to do this. When the add-in is installed, an **AppInstalled** event occurs, and you use this event to attach the **ListAdded** event.
+When the list is added to the host web, you need to programmatically attach the event receiver. The [Core.EventReceiversBasedModifications](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Core.EventReceiversBasedModifications) sample shows you how to use a provider-hosted add-in to do this. When the add-in is installed, an **AppInstalled** event occurs, and you use this event to attach the **ListAdded** event.
 
 ## Before you begin
 
-To get started, download the [Core.EventReceiversBasedModifications](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.EventReceiversBasedModifications) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/OfficeDev/PnP/tree/dev) project on GitHub.
+To get started, download the [Core.EventReceiversBasedModifications](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Core.EventReceiversBasedModifications) sample add-in from the [Office 365 Developer patterns and practices](https://github.com/SharePoint/PnP/tree/dev) project on GitHub.
 
 ## Attach the ListAdded event
 
@@ -89,4 +89,4 @@ When the add-in is uninstalled, the event receiver should also be removed. To ma
 
 - [SharePoint site provisioning solutions](sharepoint-site-provisioning-solutions.md)
     
-- [Core.EventReceiversBasedModifications sample](https://github.com/OfficeDev/PnP/tree/dev/Scenarios/Core.EventReceiversBasedModifications)
+- [Core.EventReceiversBasedModifications sample](https://github.com/SharePoint/PnP/tree/dev/Scenarios/Core.EventReceiversBasedModifications)

@@ -92,7 +92,7 @@ If you are familiar of classic SharePoint development models with farm solutions
 Pre-create and apply configuration
 ----------------------------------
 
-This option relies on the pre-creation of the OD4B sites before users will access them. This can be achieved by using [relatively new API](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.OneDriveProvisioning) which provides us away to create OD4B sites for specific users in batch process, using either CSOM or REST. Needed code can be initiated using a PowerShell script or by writing actual code which is calling the remote APIs.
+This option relies on the pre-creation of the OD4B sites before users will access them. This can be achieved by using [relatively new API](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.OneDriveProvisioning) which provides us away to create OD4B sites for specific users in batch process, using either CSOM or REST. Needed code can be initiated using a PowerShell script or by writing actual code which is calling the remote APIs.
 
 ![An administrator uses, pre-create and customize, to create an OD4B site.](media/Recipes/OD4BCustomization/pre-create-and-apply.png)
 
@@ -257,7 +257,7 @@ Second level of optimization on our code processing is done by versioning specif
 
 This approach will also significantly reduce the needed resources from Microsoft Azure, since we avoid refreshing or executing actual customization code when it’s not needed. This means reduction on the CPU and other resource usage in the Microsoft Azure and less requests towards Office 365.
 
-All customization logic is stored in this sample is located in *ApplySiteConfiguration* method at *OD4B.Configuration.Async.Common.SiteModificationManager* class. This method is also called by the WebJob with right parameters to start the customization process. Before we actually perform any operations, we are checking property bag value with a key of ‘Contoso_OneDriveVersion’ and execution will only continue if current version in the site is lower than the version which we are planning to apply.  Here’s the actual code which is using [Office PnP Core component](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core) to simplify the code.
+All customization logic is stored in this sample is located in *ApplySiteConfiguration* method at *OD4B.Configuration.Async.Common.SiteModificationManager* class. This method is also called by the WebJob with right parameters to start the customization process. Before we actually perform any operations, we are checking property bag value with a key of ‘Contoso_OneDriveVersion’ and execution will only continue if current version in the site is lower than the version which we are planning to apply.  Here’s the actual code which is using [Office PnP Core component](https://github.com/SharePoint/PnP-Sites-Core/tree/master/Core) to simplify the code.
 
 	// Check current site configuration status - is it already in right version?
     if (ctx.Web.GetPropertyBagValueInt(
@@ -561,10 +561,10 @@ Related links
 Related PnP samples
 ===================
 
-- [OD4B.Configuration.Async (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Solutions/OD4B.Configuration.Async)
-- [Provisioning.OneDriveProvisioning (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Provisioning.OneDriveProvisioning)
-- [Office PnP Core component](https://github.com/OfficeDev/PnP-Sites-Core/tree/master/Core)
-- Samples and content at https://github.com/OfficeDev/PnP
+- [OD4B.Configuration.Async (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Solutions/OD4B.Configuration.Async)
+- [Provisioning.OneDriveProvisioning (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Provisioning.OneDriveProvisioning)
+- [Office PnP Core component](https://github.com/SharePoint/PnP-Sites-Core/tree/master/Core)
+- Samples and content at https://github.com/SharePoint/PnP
 
 Applies to
 ==========

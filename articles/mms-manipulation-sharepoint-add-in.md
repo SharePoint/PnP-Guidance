@@ -53,7 +53,7 @@ When you have an on-premises SharePoint or Office 365 or a hybrid environment an
 
 The following sample demonstrates how to perform MMS CRUD operations.
 
-- [Core.MMS (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMS)
+- [Core.MMS (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.MMS)
 
 On-premises & O365 - Use CSOM to sync data
 ------------------------------------------
@@ -67,7 +67,7 @@ When you have an on-premises SharePoint or Office 365 or a hybrid environment an
 
 The following sample demonstrates how to build a synchronization tool for MMS data.
 
-- [Core.MMSSync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMSSync)
+- [Core.MMSSync (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.MMSSync)
 
 Related links
 =============
@@ -79,9 +79,9 @@ Related links
 Related PnP samples
 ===================
 
-- [Core.MMS (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMS)
-- [Core.MMSSync (O365 PnP Sample)](https://github.com/OfficeDev/PnP/tree/master/Samples/Core.MMSSync)
-- Samples and content at [https://github.com/OfficeDev/PnP](https://github.com/OfficeDev/PnP)
+- [Core.MMS (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.MMS)
+- [Core.MMSSync (O365 PnP Sample)](https://github.com/SharePoint/PnP/tree/master/Samples/Core.MMSSync)
+- Samples and content at [https://github.com/SharePoint/PnP](https://github.com/SharePoint/PnP)
 
 Applies to
 ==========
