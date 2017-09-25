@@ -27,7 +27,7 @@ To programmatically discover the user's profile location, you can do one of the 
 - Use the Microsoft Graph. This works for users who also have personal sites, but not for users who don't have personal sites.
 
 ### Use the SharePoint User Profile API to detect the profile location
-The SharePoint user profile API, which can be called via either REST or CSOM, allows you to retrieve the personal site host URL for a given account. This personal site host URL will contain the personal site host for the user's personal site, Regardless of whether this personal site has been created. The following example shows the REST call.
+You can use the SharePoint User Profile API, which can be called via REST or CSOM, to retrieve the personal site host URL for a given account. This URL contains the personal site host for the user's personal site, whether or not the personal site has been created. The following example shows the REST call.
 
 ```
 GET https://contoso.sharepoint.com/_api/SP.UserProfiles.PeopleManager/GetPropertiesFor(accountName=@v)/personalsitehosturl?%40v=%27i%3A0%23.f%7Cmembership%7Cbert%40contoso.onmicrosoft.com%27
@@ -49,29 +49,29 @@ public string GetUserPersonalSiteHostUrlCSOM(ClientContext ctx, string userPrinc
 }
 ```
 
-Once you have the personal site host url you can use that to cross it with the Multi-Geo discovery information (see the [Multi-Geo Discovery](multigeo-discovery.md) article) to get the tenant admin site url for the geo location hosting the user's profile.
+When you have the personal site host URL, you can use that along with the [Multi-Geo discovery](multigeo-discovery.md) information to get the tenant admin site URL for the geo location that hosts the user's profile.
 
 To learn more, see the [MultiGeo.UserProfileUpdates](https://github.com/SharePoint/PnP/tree/dev/Samples/MultiGeo.UserProfileUpdates) sample.
 
-### Use Microsoft Graph to detect the user's personal site url
-Discovering a user's personal site is an important task in a multi geo tenant: if you want to update the user's profile knowing the personal site url will tell you where the profile lives. The recommended method for getting the user's personal site url is using the following Microsoft Graph call:
+### Use Microsoft Graph to detect the user's personal site URL
+To discover a user's personal site URL in a Multi-Geo tenant, you can use the following Microsoft Graph call:
 
 ```
 GET https://graph.microsoft.com/v1.0/users/bert@contoso.onmicrosoft.com?$select=mySite
 ```
 
-Once you have the personal site url you can cross that with the Multi-Geo discovery information (see the [Multi-Geo Discovery](multigeo-discovery.md) article) to get the tenant admin site url for the geo location hosting the user's profile. 
+When you have the personal site host URL, you can use that along with the [Multi-Geo discovery](multigeo-discovery.md) information to get the tenant admin site URL for the geo location that hosts the user's profile.
 
 >**Note:**
 >In case the user does not have a personal site yet this approach will not help you detect where the user's profile lives. Refer to the SharePoint User Profile API described in previous chapter in that case.
 
 To learn more, see the [MultiGeo.UserProfileUpdates](https://github.com/SharePoint/PnP/tree/dev/Samples/MultiGeo.UserProfileUpdates) sample.
 
-## Manipulating user profile properties
-A common scenario, especially for enterprise customers, is performing bulk updates of user profile properties. Depending on the type of user profile property you'll need to use a different approach as explained in below chapters.
+## Updating user profile properties
+Making bulk updates to user profile properties is a common scenario for enterprise customers. The process to use varies based on the type of user profile property you want to update.
 
-### Out-of-the-box user profile properties
-Out of the box user profile properties are properties which are available by default. Samples are for example the Department, AboutMe, PreferredDataLocation...and many more. The recommended model for manipulating these properties is using the Microsoft Graph API: when using the Microsoft Graph API you don't need to be aware of the geo location of the profile, the Microsoft Graph API will handle this for you.
+### Updating default user profile properties
+Some user profile properties are available by default; for example, **Department**, **AboutMe**, and **PreferredDataLocation**. We recommend that you use the Microsoft Graph API to update these properties, because Microsoft Graph is geo-aware. The following example shows how to update the **AboutMe** property for the user bert@contoso.onmicrosoft.com.
 
 ```
 GET https://graph.microsoft.com/v1.0/users/bert@contoso.onmicrosoft.com?$select=aboutme
@@ -79,12 +79,13 @@ GET https://graph.microsoft.com/v1.0/users/bert@contoso.onmicrosoft.com?$select=
 
 To learn more, see the [MultiGeo.UserProfileUpdates](https://github.com/SharePoint/PnP/tree/dev/Samples/MultiGeo.UserProfileUpdates) sample.
 
-#### What about the user's preferred data location (preferredDataLocation) property?
-The user's preferred data location (preferredDataLocation) is special kind of property: this property indicates the preferred geo location of this user which impacts the following:
-- The user's personal site will be provisioned in this geo location
-- When that user creates a "modern" team site (a.k.a. group site) then this site will be created in this geo location
+#### Updating the preferred data location property
+The user's preferred data location (**preferredDataLocation** property) indicates the preferred geo location for the user. This affects the following:
 
-Since the preferred data location is an out of the box property the recommended approach to configure it is using the Microsoft Graph API. 
+- The geo location where the user's personal site is provisioned
+- The geo location where the user's group sites are created 
+
+Because the preferred data location is a default property, we recommend that you use the Microsoft Graph API  to configure it, as shown in the following example. 
 
 ```
 GET https://graph.microsoft.com/v1.0/users/bert@contoso.onmicrosoft.com?$select=preferredDataLocation
@@ -100,13 +101,14 @@ JSON payload:
 
 To learn more, see the [MultiGeo.UserPreferredDataLocation](https://github.com/SharePoint/PnP/tree/dev/Samples/MultiGeo.UserPreferredDataLocation) sample.
 
-### Custom created SharePoint specific user profile properties
-Customers often have a need to add company specific user profile properties, which is something that's possible for SharePoint user profiles. When working in a Multi-Geo tenant you need to take in account the following key considerations when you're working with custom user profile properties:
-- Custom user profile properties are created at geo location level: so if you create a property in the Europe geo location then that property is not available in the other geo locations. **It's a best practice to create custom user profile properties in all geo locations: this way there's no risk on data loss when a user is moved across geo locations**.
-- Reading and updating custom user profile properties will need to be done at geo location level: if you've a custom property in all geo locations then you need you would need to iterate over the geo regions and update the property for the users having their profile in the geo region.
+### Custom SharePoint user profile properties
+You can add company-specific user profile properties to user profiles in SharePoint. For SharePoint Multi-Geo tenants, the following considerations apply:
+
+- Custom user profile properties are created at the geo location level. If you create a property in the Europe geo location, that property is not available in the other geo locations. As a best practice, create custom user profile properties in all geo locations. This reduces the risk that data will be lost when a user move across geo locations.
+- You must read and update custom user profile properties at the geo location level. If you created a custom property in all geo locations, you need to iterate over the geo locations and update the property for all  users.
 
 ```C#
-// For SPO custom created properties use below approach
+// For SharePoint Online custom properties, use the following approach.
 string userPrincipalName = "bert@contoso.onmicrosoft.com";
 string userAccountName = $"i:0#.f|membership|{userPrincipalName}";
 PeopleManager peopleManager = new PeopleManager(tenantAdminContext);
@@ -128,15 +130,16 @@ tenantAdminContext.ExecuteQuery();
 
 To learn more, see the [MultiGeo.UserProfileUpdates](https://github.com/SharePoint/PnP/tree/dev/Samples/MultiGeo.UserProfileUpdates) sample.
 
-#### Can I still use the batch user profile update API
-The [bulk user profile update API](https://msdn.microsoft.com/en-us/pnp_articles/bulk-user-profile-update-api-for-sharepoint-online) is specifically designed to perform mass updates on custom user profile properties and can still be used in a Multi-Geo tenant taking in account the following considerations:
-- This API works at geo location level and is not Multi-Geo aware: when you for example use the API in the Europe geo location then only accounts living in the Europe geo location can be updated
-- If you specify an import file with accounts living in different geo locations then the bulk update API will only update the properties for the users that live in the same geo location as the geo location in which you submitted the import file
+### Using the bulk user profile update API
+You can use the [bulk user profile update API](https://msdn.microsoft.com/en-us/pnp_articles/bulk-user-profile-update-api-for-sharepoint-online) to make bulk updates to custom user profile properties in a Multi-Geo tenant. Note the following:
+
+- This API works at the geo location level and is not Multi-Geo aware. For example, if you use the API in the Europe geo location, only accounts in Europe are updated.
+- If you specify an import file with accounts in different geo locations, the API will only update the properties for the users in that geo location.
 
 
-## Resources
-Below list of resources are useful when you're learning more about working with user profiles in SharePoint Online:
-- [Bulk user profile import documentation](https://msdn.microsoft.com/en-us/pnp_articles/bulk-user-profile-update-api-for-sharepoint-online)
-- [Sample on using the batch user profile update API](https://github.com/SharePoint/PnP/tree/master/Samples/UserProfile.BatchUpdate.API)
+## See also
+
+- [Introducing the API for Bulk Updating Custom User Profile Properties for SharePoint Online(https://msdn.microsoft.com/en-us/pnp_articles/bulk-user-profile-update-api-for-sharepoint-online)
+- [User Profile Batch Update API sample](https://github.com/SharePoint/PnP/tree/master/Samples/UserProfile.BatchUpdate.API)
 
 
