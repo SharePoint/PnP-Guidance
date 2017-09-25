@@ -31,7 +31,7 @@
 ### [Discover the Multi-Geo configuration of your SharePoint tenant](multigeo-discovery.md)
 ### [Onedrive for Business in a Multi-Geo tenant](multigeo-onedrive.md)
 ### [Work with SharePoint sites in a Multi-Geo tenant](multigeo-sites.md)
-### [Multi-Geo user profile experience](multigeo-userprofileexperience.md)
+### [Work with user profiles in a Multi-Geo tenant](multigeo-userprofileexperience.md)
 ### [Search in a Multi-Geo SharePoint tenant](multigeo-search.md)
 ### [Managed metadata in a Multi-Geo tenant](multigeo-managedmetadata.md)
 ### [Content type hub in a Multi-Geo tenant](multigeo-contenttypehub.md)
