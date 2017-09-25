@@ -10,7 +10,7 @@ The following image shows a Multi-Geo tenant with:
 - A satellite geo location in Europe
 - A satellite geo location in Asia
 
-![A world map showing a default geo location in North America, and satellite geo locations in Europe and Asia, with language-specific tenant admin, root, and my site URLs](/media/multigeo/multigeodiscovery_intro.png)
+![A world map showing a default geo location in North America, and satellite geo locations in Europe and Asia, with language-specific tenant admin, root, and my site URLs](media/multigeo/multigeodiscovery_intro.png)
 
 Depending on your scenario, you can use one or a combination of the following APIs to access a Multi-Geo tenant site:
 

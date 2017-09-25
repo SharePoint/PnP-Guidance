@@ -10,7 +10,7 @@ The managed metadata that you define for the default geo location of a Multi-Geo
 
 Looking at sample below you'll notice that the term groups TGMain1 and TGMain2 which were created in the central location are then replicated to all satellite geo locations, making these terms available throughout the Multi-Geo tenant. Term Sets and Terms synchronization is a 1 way mechanism always flowing from the default location to the satellite locations. Term sets created in a satellite location will not be synchronized to the central location or to any other satellite location, for example term sets created in a satellite geo location (e.g. TGEurope1) will only be available for sites hosted in that geo location (e.g. Europe).
 
-![](/media/multigeo/multigeomanagedmetadata_intro.png)
+![world map showing term groups across geo locations](media/multigeo/multigeomanagedmetadata_intro.png)
 
 Here's what you need to know as a developer:
 

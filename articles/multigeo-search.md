@@ -17,11 +17,9 @@ In the scenario shown in the following image, a Multi-Geo tenant has three geo l
 |Asia (satellite location|https://contosoapc.sharepoint.com/search|
 
 
-![World map showing geo locations in North America, Europe, and Asia with tenant-specific search site URLs](/media/multigeo/multigeosearch_intro.png)
+![World map showing geo locations in North America, Europe, and Asia with tenant-specific search site URLs](media/multigeo/multigeosearch_intro.png)
 
 From an end user point of view, search is scoped to the current geo location. When users perform searches from a site hosted in North America, they will only see results from the North America geo location. Searches from a site hosted in Europe will return results from sites in the Europe geo location.
-
-<!-- Be careful about making mention of future features. Is the ETA for this feature soon (1-3 months)? If not, suggest that you remove this. See the guidance in this topic: https://worldready.cloudapp.net/Styleguide/Read?id=2696&topicid=35715 -->
 
 > **Note:** In the future, search will be Multi-Geo aware. A search query run from any location within the tenant will search all geo locations within the tenant and return combined results.
 
@@ -29,8 +27,6 @@ From an end user point of view, search is scoped to the current geo location. Wh
 Working with search programmatically is similar to the end user search experience. If you perform a search query, you'll only get results for the geo location in which you run the query. Your applications can, however, perform Multi-Geo tenant searches. To do this, iterate over the geo locations in your tenant, issue the same search query in each geo location, and then concatenate the results.
 
 This approach might be sufficient for in some scenarios (for example, searches for sites of a given type). However, in some cases, you want the search results to be ranked according to relevancy. You can't do this when you have multiple result sets. If your scenario requires search ranking, you will need to wait until a Multi-Geo search experience is available.
-
-<!-- Double-check the last sentence and remove if the search experience is not immediately imminent. -->
 
 
 ## See also

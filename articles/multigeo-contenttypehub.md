@@ -13,7 +13,7 @@ https://<tenant>.sharepoint.com/sites/contenttypehub
 
 There's however an important distinction between the content type hub in the default geo location and in the satellite geo location(s): **when you create and publish a content type in the default geo location content type hub then that content type will be available in all sites in your tenant, regardless of which geo location the site is hosted in.** Below picture is showing that content types created in the North America geo location, which is the default locations for this tenant, (so contenttype1 and contenttype2) will be pushed to all sites across the satellite geo locations for the tenant while content types created in the Europe (which is a satellite locations for this tenant) content type hub (contenttype3 and contenttype4) will only be pushed to the sites in the European geo location.
 
-![](/media/multigeo/multigeocontenttypehub_intro.png)
+![World map showing content types across geo locations](media/multigeo/multigeocontenttypehub_intro.png)
 
 > **Recommendation**
 > - Given enterprises want to have content types being consistent across their tenant it's a best practice to only use the content type hub in the default geo location for creation and publishing of content types. If you do not want all content types of the default location content type hub to be published to all geo locations then you can use the `Set-SPOTenantContentTypeReplicationParameters` PowerShell cmdlet to configure the content types that you do want to publish. This cmdlet is part of the [SharePoint Online Management Shell](https://www.microsoft.com/en-us/download/confirmation.aspx?id=35588).

@@ -1,7 +1,7 @@
 # Set up your Multi-Geo sample applications
 
 > **Important:** OneDrive and SharePoint Online Multi-Geo is currently in preview and is subject to change.
-> 
+
 When developing for a Multi-Geo tenant it's important to understand the security model and luckily the used model for a Multi-Geo tenant does not differ from the model used for a regular tenant. This article shows you how to configure the sample applications.
 
 ## My application needs to be able to read/update profiles for all users
@@ -11,7 +11,7 @@ As explained in the [Multi-geo User Profile Experience](multigeo-userprofileexpe
 |**Permission**|**Type**|**Description**| **Admin consent needed**
 |:-----|:-----|:-----|:-----|
 |**[User.ReadWrite.All](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#user-permissions)** | Application permission | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.  Also allows the app to create and delete non-administrative users. Does not allow reset of user passwords. | Yes
-|**[Sites.ReadWrite.All](Sites.Read.All)** | Application permission | Allows the app to read/write documents and list items in all site collections without a signed in user. This permission is only needed if the application will be retrieving the user's personal site location (e.g. https://graph.microsoft.com/v1.0/users/UserB@contoso.onmicrosoft.com?$select=mySite) | Yes
+|**[Sites.ReadWrite.All](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#user-permissions)** | Application permission | Allows the app to read/write documents and list items in all site collections without a signed in user. This permission is only needed if the application will be retrieving the user's personal site location (e.g. https://graph.microsoft.com/v1.0/users/UserB@contoso.onmicrosoft.com?$select=mySite) | Yes
 
 The Microsoft Graph based Multi-Geo samples are using the Microsoft Authentication Library (MSAL) to connect with the Microsoft Graph on the v2 endpoint. Compared to ADAL which connects using the v1 endpoint, MSAL allows connection to the Microsoft Graph with Microsoft Accounts, Azure AD and Azure AD B2C. Below instructions will help you setup your application for the v2 endpoint, but you can also use the "older" approach based on the v1 endpoints.
 
@@ -147,7 +147,7 @@ The only supported API discover the geo locations in a Multi-Geo tenant is by us
 
 |**Permission**|**Type**|**Description**| **Admin consent needed**
 |:-----|:-----|:-----|:-----|
-|**[Sites.ReadWrite.All](Sites.Read.All)** | Application permission | Allows the app to read/write documents and list items in all site collections without a signed in user. | Yes
+|**[Sites.ReadWrite.All](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#user-permissions)** | Application permission | Allows the app to read/write documents and list items in all site collections without a signed in user. | Yes
 
 Use the Azure AD application creation steps as described in the "My application needs to be able to read/update profiles for all users" chapter.
 

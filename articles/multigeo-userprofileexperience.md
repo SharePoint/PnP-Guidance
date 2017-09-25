@@ -11,7 +11,7 @@ In a Multi-Geo tenant the SharePoint users are spread across the different geo l
 
 On the other hand user bert@contoso.onmicrosoft.com has his preferred data location set to **nam**, but since he already had a personal site hosted in the Europe region before his preferred data location was set, his profile stays in Europe 
 
-![](/media/multigeo/multigeouserprofiles_intro.png)
+![](media/multigeo/multigeouserprofiles_intro.png)
 
 So you'll **find the user's profile and personal site in the same geo location**, but what about user's without a personal site. For them the following logic applies:
 - If the user has a preferred data location set then their profile lives in that geo location
