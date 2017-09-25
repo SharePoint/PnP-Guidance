@@ -18,7 +18,7 @@ The Microsoft Graph based Multi-Geo samples are using the Microsoft Authenticati
 #### Register your application
 To use application permissions against the Microsoft Graph you first have to register your application. You do this at https://apps.dev.microsoft.com. Once logged in click add a new Converged application, by clicking Add an app
 
-![](/media/multigeo/multigeopermissions_registerapp1.png)
+![Register application in Azure AD](media/multigeo/multigeopermissions_registerapp1.png)
 
 Give your application a name and hit Create application.
 
@@ -29,9 +29,9 @@ In the application configuration screen configure the following:
 - Make sure to uncheck 'Live SDK support'
 - Once configured save your changes.
 
-![](/media/multigeo/multigeopermissions_registerapp2.png)
-p
-![](/media/multigeo/multigeopermissions_registerapp3.png)
+![Configure application in Azure AD part 1](media/multigeo/multigeopermissions_registerapp2.png)
+
+![Configure application in Azure AD part 2](media/multigeo/multigeopermissions_registerapp3.png)
 
 
 #### Consent to the application
@@ -49,7 +49,7 @@ https://login.microsoftonline.com/contoso.onmicrosoft.com/adminconsent?client_id
 
 Browsing to the created URL and log in as a tenant admin, and consent to the application. You can see the consent screen show the name of your application as well as the permission scopes you configured.
 
-![](/media/multigeo/multigeopermissions_registerapp4.png)
+![Tenant consent for Azure AD application](media/multigeo/multigeopermissions_registerapp4.png)
 
 ### I'm using the CSOM User Profile API
 When using the CSOM API to manipulate profile properties you'll only do this for the custom created properties since out-of-the-box properties are better handled via the Microsoft Graph API...see the [Multi-geo User Profile Experience](multigeo-userprofileexperience.md) article for more details. From a permission point of view there's two modes:
@@ -82,7 +82,7 @@ When using app-only you'll need to grant the created app principal **full contro
 ##### Create the principal
 Navigate to a site in your tenant (e.g. https://contoso.sharepoint.com) and then call the appregnew.aspx page (e.g. https://contoso.sharepoint.com/_layouts/15/appregnew.aspx). In this page click on the Generate button to generate a client id and client secret and fill the remaining information like shown in the screen-shot below.
 
-![](/media/multigeo/multigeopermissions_registerprincipal1.png)
+![Register ACS app principal](media/multigeo/multigeopermissions_registerprincipal1.png)
 
 > **Important**
 > Store the retrieved information (client id and client secret) since you'll need this in the next step!
@@ -90,7 +90,7 @@ Navigate to a site in your tenant (e.g. https://contoso.sharepoint.com) and then
 ##### Grant permissions to the created principal
 Next step is granting permissions to the newly created principal. Since we're granting tenant scoped permissions this granting can only be done via the appinv.aspx page on the tenant administration site. You can reach this site via https://contoso-admin.sharepoint.com/_layouts/15/appinv.aspx. Once the page is loaded add your client id and look up the created principal:
 
-![](/media/multigeo/multigeopermissions_registerprincipal2.png)
+![Grant permissions to app principal](media/multigeo/multigeopermissions_registerprincipal2.png)
 
 In order to grant permissions you'll need to provide the permission XML that describes the needed permissions. Since the UI experience scanner needs to be able to access all sites + also uses search with app-only it requires below permissions:
 
@@ -102,7 +102,7 @@ In order to grant permissions you'll need to provide the permission XML that des
 
 When you click on Create you'll be presented with a permission consent dialog. Press Trust It to grant the permissions:
 
-![](/media/multigeo/multigeopermissions_registerprincipal3.png)
+![Consent the app principal](media/multigeo/multigeopermissions_registerprincipal3.png)
 
 
 ##### Use the principal in your code

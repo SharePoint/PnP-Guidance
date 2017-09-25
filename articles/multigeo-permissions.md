@@ -17,9 +17,7 @@ The following image shows a Multi-Geo tenant with:
 
 This tenant has one distributed Azure Active Directory (Azure AD) environment that includes all the users, groups, and permissions. The central Azure AD instance is distributed to all the geo locations. 
 
-<!-- FYI, alt text is required for all images to meet accessibility requirements. Alt text should clearly explain the information conveyed in the image for non-sighted readers. For details, see: https://worldready.cloudapp.net/Styleguide/Read?id=2665&topicid=28349 -->
-
-![A world map showing a default geo location in North America, and satellite geo locations in Europe and Asia, with user accounts and groups stored in AAD](/media/multigeo/multigeopermissions_intro.png)
+![A world map showing a default geo location in North America, and satellite geo locations in Europe and Asia, with user accounts and groups stored in AAD](media/multigeo/multigeopermissions_intro.png)
 
 To configure your applications for Multi-Geo tenants in Azure AD, see [Set up a Multi-Geo sample application](multigeo-sampleapplicationsetup.md).
 
