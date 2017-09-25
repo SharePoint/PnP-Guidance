@@ -15,14 +15,13 @@ _**Applies to:** SharePoint Online_
 
 
 ## Supported customizations for "modern" pages
-The number of customizations available for "modern" pages is limited and in this article we'll provide details and examples of the supported options. The SharePoint team is working to support more options in the future. The list below gives a quick overview of the supported capabilities for "modern" team sites:
+The number of customizations available for "modern" pages keeps on growing and in this article we'll provide details and examples of the supported options. The SharePoint team is working to support more options in the future. The list below gives a quick overview of the supported capabilities for "modern" team sites:
  - Custom branding
  - Adding "modern" pages programmatically
  - Adding, deleting, updating client side web parts on "modern" pages
+ - Alternative layouts - See note on **SharePoint Virtual Summit**
 
 There are numerous customizations which currently are not supported for "modern" pages:
- - Alternative layouts - See note on **SharePoint Virtual Summit**
- - Custom page templates (layout templates) - See note on **SharePoint Virtual Summit**
  - Adding "classic" web parts on "modern" pages
  - Custom CSS via AlternateCSSUrl web property
  - Custom JavaScript embedded via User Custom Actions - See note on **SharePoint Framework Extensions**
@@ -118,110 +117,8 @@ When using PnP (as of March 2017 release) you can leverage our extension methods
 cc.Web.AddClientSidePage("mypage.aspx", true);
 ```
 
-### Introduction into the "modern" page model
-As described in the previous chapter a "modern" page essentially is row in the site pages library with the right content type and properties set. In this chapter we'll be explaining the **CanvasContent1** property as that's the one holding the information about the page structure and the client side web parts hosted on the page.
-
-#### Basic page structure
-The most elementary empty page can be constructed like this:
-
-```Html
-<div>
-</div>
-```
-
-#### Adding a  control to a page
-Let's start with showing a sample and then discuss it:
-
-```Html
-<div>
-    <div data-sp-canvascontrol="" data-sp-canvasdataversion="1.0" data-sp-controldata="{&quot;controlType&quot;:4,&quot;id&quot;:&quot;4eae4f30-3a40-4a36-bd2a-3de2b0705d54&quot;,&quot;editorType&quot;:&quot;CKEditor&quot;}">
-	-- content removed for clarity reasons --
-    </div>
-</div>
-```
-
-**Important concepts** to understand are:
-- Controls on page are nested inside the page div using the control div element. A control div is identified via the data-sp-canvascontrol, data-sp-canvasdataversion and data-sp-controldata attributes
-	- **data-sp-canvascontrol** is empty as it's used to identify the div
-	- **data-sp-canvasdataversion** describes the version of the "serialization model", currently we're at 1.0
-	- **data-sp-controldata** contains json serialized information about the control hosted inside...actual content depends on the hosted control type as discussed in the next chapters
-- The order of the control div's determines the ordering of rendering
-- Inside the control div you'll find the actual web part or rich text control markup
-
-
-#### Adding a rich text editor control
-
-```Html
-<div>
-    <div data-sp-canvascontrol="" data-sp-canvasdataversion="1.0" data-sp-controldata="{&quot;controlType&quot;:4,&quot;id&quot;:&quot;4eae4f30-3a40-4a36-bd2a-3de2b0705d54&quot;,&quot;editorType&quot;:&quot;CKEditor&quot;}">
-        <div data-sp-rte="">
-            <p>Hi <strong>there</strong></p>
-            <p>Second <strong>line</strong></p>
-            <ul>
-                <li><strong>a</strong></li>
-                <li><strong><i>b</i></strong></li>
-            </ul>
-            <p>​​​​​​​<strong><i>cool</i></strong></p>
-        </div>
-    </div>
-</div>
-```
-
-**Important concepts** to understand are:
-- The rich text editor control markup is a div tag with the **data-sp-rte** attribute. This markup is always hosted inside a control div tag
-- The **data-sp-controldata** json for a rich text editor contains these properties:
-	- **controlType** indicates its a rich text editor control and must be set to 4
-	- **id** refers to the control id which is a guid that uniquely identifies this control instance
-	- **editorType** defines the used editor and must be set to **CKEditor**
-
-```json
-{"controlType":4,"id":"4eae4f30-3a40-4a36-bd2a-3de2b0705d54","editorType":"CKEditor"}
-```
-
-- The actual rich text markup is added as HTML markup inside the rich text editor control div
-
-
-#### Adding a client side web part
-
-```Html
-<div>
-    <div data-sp-canvascontrol="" data-sp-canvasdataversion="1.0" data-sp-controldata="{&quot;controlType&quot;:3,&quot;webPartId&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;id&quot;:&quot;7457b50c-aad3-4520-b4de-44d9ee9bbdc2&quot;}">
-        <div data-sp-webpart="" data-sp-webpartdataversion="1.0" data-sp-webpartdata="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;7457b50c-aad3-4520-b4de-44d9ee9bbdc2&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Draw people's attention by adding images to your page.&quot;,&quot;dataVersion&quot;:&quot;1.0&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;webhook-azure-function4.png&quot;,&quot;siteId&quot;:&quot;c827cb03-d059-4956-83d0-cd60e02e3b41&quot;,&quot;webId&quot;:&quot;9fafd7c0-e8c3-4a3c-9e87-4232c481ca26&quot;,&quot;listId&quot;:&quot;78d1b1ac-7590-49e7-b812-55f37c018c4b&quot;,&quot;uniqueId&quot;:&quot;3c27a419-66d0-4c36-bf24-bd6147719052&quot;,&quot;imgWidth&quot;:1002,&quot;imgHeight&quot;:469}}">
-            <div data-sp-componentid="">d1d91016-032f-456d-98a4-721247c305e8</div>
-            <div data-sp-htmlproperties=""><img data-sp-prop-name="imageSource" src="/sites/130023/SiteAssets/SitePages/page2/21934-webhook-azure-function4.png" /></div>
-        </div>
-    </div>
-</div>
-```
-
-**Important concepts** to understand are:
-- The client side web part markup is a div tag with the **data-sp-webpart** attribute. This markup is always hosted inside a control div tag
-- The **data-sp-controldata** json for a client side web part contains these properties:
-	- **controlType** indicates its a client side web part and must be set to 3
-	- **id** refers to the control id which is a guid that uniquely identifies this control instance
-	- **webPartId** defines the id that identifies the used client side web part
-	
-```json
-{"controlType":3,"webPartId":"d1d91016-032f-456d-98a4-721247c305e8","id":"7457b50c-aad3-4520-b4de-44d9ee9bbdc2"}
-```
-- The actual text to show is represented as HTML markup inside the rich text editor control div
-	- **data-sp-webpart** is empty as it's used to identify the div
-	- **data-sp-webpartdataversion** describes the version of the "serialization model", currently we're at 1.0
-	- **data-sp-webpartdata** describes the web part parameters. Correctly setting these parameters is important to ensure the client side web works as desired:
-		- **id** again identifies the the used client side web part (identical the webPartId in the data-sp-controldata json)
-		- **instanceId** refers to the unique control id (identical the id in the data-sp-controldata json)
-		- **title** is the web part title
-		- **description** is the web part description
-		- **dataVersion** describes the version of the "serialization model", currently we're at 1.0
-		- **properties** describe the client side web part settings. **The actual properties depend on the used web part**, below sample shows the properties for the out of the box image client side web part
-
-```json
-{"id":"d1d91016-032f-456d-98a4-721247c305e8","instanceId":"7457b50c-aad3-4520-b4de-44d9ee9bbdc2","title":"Image","description":"Draw people's attention by adding images to your page.","dataVersion":"1.0","properties":{"imageSourceType":2,"altText":"","fileName":"webhook-azure-function4.png","siteId":"c827cb03-d059-4956-83d0-cd60e02e3b41","webId":"9fafd7c0-e8c3-4a3c-9e87-4232c481ca26","listId":"78d1b1ac-7590-49e7-b812-55f37c018c4b","uniqueId":"3c27a419-66d0-4c36-bf24-bd6147719052","imgWidth":1002,"imgHeight":469}}
-```
-
-- The web part div also has 2 nested div elements:
-	- The div with the **data-sp-componentid** attribute contains the id that identifies the used client side web part (identical the webPartId in the data-sp-controldata json)
-	- The div with the **data-sp-htmlproperties** attribute will hold the specific client side web part html. You'll not need to populate this data as it's the control's responsibility to do this
+> **Important:**
+> At this moment (September 2017) pages created using the `AddTemplateFile` method do not have a preview when you hover over them from the search results page. Microsoft is working on a fix/alternative solution for this.
 
 ### Using the PnP support for "modern" pages and client side web parts
 As of the [March 2017 release the PnP Sites core library](http://aka.ms/sppnp) offers support for creating, updating and deleting client side pages. This chapter will give you insight in how to work with client side pages using the [PnP Sites core library](https://github.com/SharePoint/PnP-Sites-Core).
@@ -250,6 +147,15 @@ ClientSidePage p = ClientSidePage.Load(cc, "page3.aspx");
 
 // save the page back to SharePoint
 p.Save()
+```
+
+#### Adding a sections
+Pages can have a flexible layout: you can add one or more sections on a page and these sections then can have up to 3 columns. You can add sections to your pages using the SharePoint user interface, but you can also do this programmatically:
+
+```C#
+var page2 = cc.Web.AddClientSidePage("PageWithSections.aspx", true);
+page2.AddSection(CanvasSectionTemplate.ThreeColumn, 5);
+page2.AddSection(CanvasSectionTemplate.TwoColumn, 10);
 ```
 
 #### Adding an out of the box web part 
