@@ -1,4 +1,4 @@
-# User profiles in a SharePoint Multi-Geo tenant
+# Work with user profiles in a SharePoint Multi-Geo tenant
 
 > **Important:** OneDrive and SharePoint Online Multi-Geo is currently in preview and is subject to change.
 
