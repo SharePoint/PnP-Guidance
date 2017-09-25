@@ -5,29 +5,29 @@
 In a Multi-Geo tenant, you can define a preferred data location for a user. This article also describes how to find a user's OneDrive site and how to read and update default and custom user profile properties.
 
 ## Where are user profiles located in a Multi-Geo tenant?
-In a Multi-Geo tenant, SharePoint users span the different geo locations - for example, some users are in North America, some in Europe, and so on. This model also applies to user accounts and personal sites (OneDrive for Business sites). Ideally, the users and their user accounts and sites are in the same geo location. To ensure this, before you create personal sites, you set the user's preferred data location to their geo location. 
+In a Multi-Geo tenant, SharePoint users span the different geo locations - for example, some users are in North America, some are in Europe, and so on. This model also applies to user accounts and personal (OneDrive for Business) sites. Ideally, the users and their user accounts and sites are in the same geo location. To ensure this, before you create personal sites, you set the user's preferred data location to their geo location. 
 
-As shown in the following image, user vesa@contoso.onmicrosoft.com is living in Europe and has a preferred data location set to **EUR**. As such:
+In the example shown in the following image, user vesa@contoso.onmicrosoft.com is living in Europe and has a preferred data location set to **EUR**. As such:
  
 - The default copy of the user's profile is in the Europe geo location.
 - The user's personal site is created in the Europe geo location.
 
-User bert@contoso.onmicrosoft.com has his preferred data location set to **NAM**. Because he already had a personal site hosted in Europe before his preferred data location was set, his profile stays in Europe. 
+User bert@contoso.onmicrosoft.com has his preferred data location set to **NAM**. Because he  had a personal site hosted in Europe before his preferred data location was set, his profile stays in Europe. 
 
 ![World map showing default geo location in North America and satellite locations in Europe and Asia, with users, geo locations, and preferred data locations set](media/multigeo/multigeouserprofiles_intro.png)
 
-Users' profile and personal sites are in the same geo location. For users who do not have a personal site:
+Users' profiles and personal sites are in the same geo location. For users who do not have a personal site:
 
-- If the user has a preferred data location set, their profile is located in that geo location.
-- If the user does not have a preferred data location set, their profile is located in the default geo location.
+- If they set a preferred data location, their profile is located in that geo location.
+- If they have not set a preferred data location, their profile is located in the default geo location.
 
-To programmatically discover the user's profile location, you can do one of the following:
+To programmatically discover a user's profile location, you can do one of the following:
 
 - Use the SharePoint User Profile API. We recommend this approach because it works in all scenarios. 
-- Use the Microsoft Graph. This works for users who also have personal sites, but not for users who don't have personal sites.
+- Use Microsoft Graph. This works for users who also have personal sites, but not for users who don't have personal sites.
 
 ### Use the SharePoint User Profile API to detect the profile location
-You can use the SharePoint User Profile API, which can be called via REST or CSOM, to retrieve the personal site host URL for a given account. This URL contains the personal site host for the user's personal site, whether or not the personal site has been created. The following example shows the REST call.
+You can call the SharePoint User Profile API via REST or CSOM to retrieve the personal site host URL for a given account. This URL contains the personal site host for the user's personal site, regardless of whether the personal site has been created. The following example shows the REST call.
 
 ```
 GET https://contoso.sharepoint.com/_api/SP.UserProfiles.PeopleManager/GetPropertiesFor(accountName=@v)/personalsitehosturl?%40v=%27i%3A0%23.f%7Cmembership%7Cbert%40contoso.onmicrosoft.com%27
@@ -62,8 +62,7 @@ GET https://graph.microsoft.com/v1.0/users/bert@contoso.onmicrosoft.com?$select=
 
 When you have the personal site host URL, you can use that along with the [Multi-Geo discovery](multigeo-discovery.md) information to get the tenant admin site URL for the geo location that hosts the user's profile.
 
->**Note:**
->In case the user does not have a personal site yet this approach will not help you detect where the user's profile lives. Refer to the SharePoint User Profile API described in previous chapter in that case.
+>**Note:** If the user doesn't have a personal site, this approach will not work. Instead, you should use the SharePoint User Profile API.
 
 To learn more, see the [MultiGeo.UserProfileUpdates](https://github.com/SharePoint/PnP/tree/dev/Samples/MultiGeo.UserProfileUpdates) sample.
 
@@ -139,7 +138,7 @@ You can use the [bulk user profile update API](https://msdn.microsoft.com/en-us/
 
 ## See also
 
-- [Introducing the API for Bulk Updating Custom User Profile Properties for SharePoint Online(https://msdn.microsoft.com/en-us/pnp_articles/bulk-user-profile-update-api-for-sharepoint-online)
+- [Introducing the API for Bulk Updating Custom User Profile Properties for SharePoint Online](https://msdn.microsoft.com/en-us/pnp_articles/bulk-user-profile-update-api-for-sharepoint-online)
 - [User Profile Batch Update API sample](https://github.com/SharePoint/PnP/tree/master/Samples/UserProfile.BatchUpdate.API)
 
 
