@@ -26,7 +26,7 @@
 ### [Customizing "modern" team sites](modern-experience-customizations-customize-sites.md)
 ### [Customizing "modern" lists and libraries](modern-experience-customizations-customize-lists-and-libraries.md)
 ### [Customizing "modern" site pages](modern-experience-customizations-customize-pages.md)
-## [SharePoint Multi-Geo guidance](multigeo-introduction.md)
+## [SharePoint Multi-Geo tenant guidance](multigeo-introduction.md)
 ### [Permissions in a Multi-Geo tenant](multigeo-permissions.md)
 ### [Discover the Multi-Geo configuration of your SharePoint tenant](multigeo-discovery.md)
 ### [Onedrive for Business in a Multi-Geo tenant](multigeo-onedrive.md)
