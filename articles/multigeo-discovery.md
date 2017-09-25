@@ -31,10 +31,10 @@ GET https://graph.microsoft.com/v1.0/sites?filter=siteCollection/root%20ne%20nul
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites",
     "value": [
         {
-            "webUrl": "https://contosonam.sharepoint.com/",
+            "webUrl": "https://contoso.sharepoint.com/",
             "siteCollection": {
                 "dataLocationCode":"NAM",
-                "hostname": "contosonam.sharepoint.com"
+                "hostname": "contoso.sharepoint.com"
             }
         },
         {
