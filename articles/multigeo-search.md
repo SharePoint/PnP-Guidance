@@ -12,9 +12,9 @@ In the scenario shown in the following image, a Multi-Geo tenant has three geo l
 
 |**Geo location**|**Search URL**|
 |:---------------|:-------------|
-|North America (default location|https://contoso.sharepoint.com/search|
-|Europe (satellite location|https://contosoeur.sharepoint.com/search|
-|Asia (satellite location|https://contosoapc.sharepoint.com/search|
+|North America (default location)|https://contoso.sharepoint.com/search|
+|Europe (satellite location)|https://contosoeur.sharepoint.com/search|
+|Asia (satellite location)|https://contosoapc.sharepoint.com/search|
 
 
 ![World map showing geo locations in North America, Europe, and Asia with tenant-specific search site URLs](media/multigeo/multigeosearch_intro.png)
