@@ -46,8 +46,11 @@ You can learn more about the PnP Core Component from the project [readme file](h
 |[OfficeDevPnP.Core.IdentityModel.TokenProviders.ADFS](OfficeDevPnP.Core.IdentityModel.TokenProviders.ADFS.md)|
 |[OfficeDevPnP.Core.IdentityModel.WSTrustBindings](OfficeDevPnP.Core.IdentityModel.WSTrustBindings.md)|
 |[OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)|
+|[OfficeDevPnP.Core.Sites](OfficeDevPnP.Core.Sites.md)|
 |[OfficeDevPnP.Core.UPAWebService](OfficeDevPnP.Core.UPAWebService.md)|
 |[OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)|
+|[OfficeDevPnP.Core.Utilities.CanvasControl](OfficeDevPnP.Core.Utilities.CanvasControl.md)|
+|[OfficeDevPnP.Core.Utilities.CanvasControl.Processors](OfficeDevPnP.Core.Utilities.CanvasControl.Processors.md)|
 |[OfficeDevPnP.Core.Utilities.WebParts](OfficeDevPnP.Core.Utilities.WebParts.md)|
 |[OfficeDevPnP.Core.Utilities.WebParts.Processors](OfficeDevPnP.Core.Utilities.WebParts.Processors.md)|
 |[OfficeDevPnP.Core.Utilities.WebParts.Schema](OfficeDevPnP.Core.Utilities.WebParts.Schema.md)|

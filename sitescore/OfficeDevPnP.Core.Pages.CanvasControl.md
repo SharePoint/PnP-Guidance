@@ -37,7 +37,7 @@ public abstract class CanvasControl
 | [Move(CanvasSection, Int32)](OfficeDevPnP.Core.Pages.CanvasControl.f979593b.md) | Moves the control to another section and column
 | [Move(CanvasColumn)](OfficeDevPnP.Core.Pages.CanvasControl.34612aca.md) | Moves the control to another section and column
 | [Move(CanvasColumn, Int32)](OfficeDevPnP.Core.Pages.CanvasControl.e4fd48e.md) | Moves the control to another section and column
-| [ToHtml(Int32)](OfficeDevPnP.Core.Pages.CanvasControl.bfd4198d.md) | Converts a control object to it's html representation
+| [ToHtml(Single)](OfficeDevPnP.Core.Pages.CanvasControl.5d8c1207.md) | Converts a control object to it's html representation
 ## See also
 - [OfficeDevPnP.Core.Pages.CanvasColumn](OfficeDevPnP.Core.Pages.CanvasColumn.md)
 - [OfficeDevPnP.Core.Pages.CanvasSection](OfficeDevPnP.Core.Pages.CanvasSection.md)

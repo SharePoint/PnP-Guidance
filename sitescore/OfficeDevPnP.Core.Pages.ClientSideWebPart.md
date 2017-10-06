@@ -33,7 +33,7 @@ public class ClientSideWebPart: CanvasControl
 |**Name**|**Description**|
 |:-----|:-----|
 | [Import(ClientSideComponent, Func&lt;String, String&gt;)](OfficeDevPnP.Core.Pages.ClientSideWebPart.587fffcf.md) | Imports a [OfficeDevPnP.Core.Pages.ClientSideComponent](OfficeDevPnP.Core.Pages.ClientSideComponent.md) to use it as base for configuring the client side web part instance 
-| [ToHtml(Int32)](OfficeDevPnP.Core.Pages.ClientSideWebPart.bfd4198d.md) | Returns a HTML representation of the client side web part
+| [ToHtml(Single)](OfficeDevPnP.Core.Pages.ClientSideWebPart.5d8c1207.md) | Returns a HTML representation of the client side web part
 ## See also
 - [OfficeDevPnP.Core.Pages.ClientSidePage](OfficeDevPnP.Core.Pages.ClientSidePage.md)
 - Newtonsoft.Json.Linq.JObject

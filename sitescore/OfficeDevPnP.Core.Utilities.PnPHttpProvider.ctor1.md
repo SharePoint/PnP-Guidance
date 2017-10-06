@@ -1,7 +1,7 @@
 # PnPHttpProvider.PnPHttpProvider members 
- Constructor for the PnPHttpProvider class   
+ Constructor without HttpMessageHandler   
 
-**Namespace:** [OfficeDevPnP.Core.Framework.Graph](OfficeDevPnP.Core.Framework.Graph.md)  
+**Namespace:** [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)  
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
@@ -10,12 +10,12 @@ public PnPHttpProvider(int retryCount, int delay, string userAgent)
 ### Parameters
 #### (optional) retryCount  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp;Maximum retry Count  
+&emsp;&emsp;Number of retries, defaults to 10  
 
 
 #### (optional) delay  
 &emsp;&emsp;Type: System.Int32  
-&emsp;&emsp;Delay Time  
+&emsp;&emsp;Incremental delay increase in milliseconds  
 
 
 #### (optional) userAgent  
@@ -24,5 +24,5 @@ public PnPHttpProvider(int retryCount, int delay, string userAgent)
 
 
 ## See also
-- [PnPHttpProvider](OfficeDevPnP.Core.Framework.Graph.PnPHttpProvider.md)
-- [OfficeDevPnP.Core.Framework.Graph](OfficeDevPnP.Core.Framework.Graph.md)
+- [PnPHttpProvider](OfficeDevPnP.Core.Utilities.PnPHttpProvider.md)
+- [OfficeDevPnP.Core.Utilities](OfficeDevPnP.Core.Utilities.md)

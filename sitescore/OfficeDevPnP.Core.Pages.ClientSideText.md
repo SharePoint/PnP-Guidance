@@ -24,7 +24,7 @@ public class ClientSideText: CanvasControl
 ## Methods
 |**Name**|**Description**|
 |:-----|:-----|
-| [ToHtml(Int32)](OfficeDevPnP.Core.Pages.ClientSideText.bfd4198d.md) | Converts this [OfficeDevPnP.Core.Pages.ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md) control to it's html representation 
+| [ToHtml(Single)](OfficeDevPnP.Core.Pages.ClientSideText.5d8c1207.md) | Converts this [OfficeDevPnP.Core.Pages.ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md) control to it's html representation 
 ## See also
 - [OfficeDevPnP.Core.Pages.ClientSideText](OfficeDevPnP.Core.Pages.ClientSideText.md)
 - [OfficeDevPnP.Core.Pages](OfficeDevPnP.Core.Pages.md)

@@ -13,6 +13,6 @@ public class PnPHttpProvider: HttpProvider, IHttpProvider, IDisposable
 ## Constructors
 |**Name**|**Description**|
 |:-----|:-----|
-| [PnPHttpProvider(Int32, Int32)](OfficeDevPnP.Core.Framework.Graph.PnPHttpProvider.ctor1.md) | Constructor for the PnPHttpProvider class 
+| [PnPHttpProvider(Int32, Int32, String)](OfficeDevPnP.Core.Framework.Graph.PnPHttpProvider.ctor1.md) | Constructor for the PnPHttpProvider class 
 ## See also
 - [OfficeDevPnP.Core.Framework.Graph](OfficeDevPnP.Core.Framework.Graph.md)
