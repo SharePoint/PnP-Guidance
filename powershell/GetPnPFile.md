@@ -1,6 +1,6 @@
-#Get-PnPFile
+# Get-PnPFile
 Downloads a file.
-##Syntax
+## Syntax
 ```powershell
 Get-PnPFile -Url <String>
             [-Web <WebPipeBind>]
@@ -10,6 +10,7 @@ Get-PnPFile -Url <String>
 ```powershell
 Get-PnPFile -Url <String>
             [-AsListItem [<SwitchParameter>]]
+            [-ThrowExceptionIfFileNotFound [<SwitchParameter>]]
             [-Web <WebPipeBind>]
 ```
 
@@ -30,52 +31,53 @@ Get-PnPFile -AsFile [<SwitchParameter>]
 ```
 
 
-##Returns
+## Returns
 >[Microsoft.SharePoint.Client.File](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.file.aspx)
 
-##Parameters
+## Parameters
 Parameter|Type|Required|Description
 ---------|----|--------|-----------
 |AsFile|SwitchParameter|True||
 |Url|String|True|The URL (server or site relative) to the file|
-|AsListItem|SwitchParameter|False||
+|AsListItem|SwitchParameter|False|Returns the file as a listitem showing all its properties|
 |AsString|SwitchParameter|False|Retrieve the file contents as a string|
 |Filename|String|False|Name for the local file|
 |Path|String|False|Local path where the file should be saved|
+|ThrowExceptionIfFileNotFound|SwitchParameter|False|If provided in combination with -AsListItem, a Sytem.ArgumentException will be thrown if the file specified in the -Url argument does not exist. Otherwise it will return nothing instead.|
 |Web|WebPipeBind|False|The web to apply the command to. Omit this parameter to use the current web.|
-##Examples
+## Examples
 
-###Example 1
+### Example 1
 ```powershell
 PS:> Get-PnPFile -Url /sites/project/_catalogs/themes/15/company.spcolor
 ```
 Retrieves the file and downloads it to the current folder
 
-###Example 2
+### Example 2
 ```powershell
 PS:> Get-PnPFile -Url /sites/project/_catalogs/themes/15/company.spcolor -Path c:\temp -FileName company.spcolor
 ```
 Retrieves the file and downloads it to c:\temp\company.spcolor
 
-###Example 3
+### Example 3
 ```powershell
 PS:> Get-PnPFile -Url /sites/project/_catalogs/themes/15/company.spcolor -AsString
 ```
 Retrieves the file and outputs its contents to the console
 
-###Example 4
+### Example 4
 ```powershell
 PS:> Get-PnPFile -Url /sites/project/_catalogs/themes/15/company.spcolor -AsFile
 ```
 Retrieves the file and returns it as a File object
 
-###Example 5
+### Example 5
 ```powershell
 PS:> Get-PnPFile -Url /sites/project/_catalogs/themes/15/company.spcolor -AsListItem
 ```
 Retrieves the file and returns it as a ListItem object
 
-###Example 6
+### Example 6
 ```powershell
 PS:> Get-PnPFile -Url _catalogs/themes/15/company.spcolor -Path c:\temp -FileName company.spcolor
 ```

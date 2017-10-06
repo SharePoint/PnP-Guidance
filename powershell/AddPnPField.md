@@ -1,6 +1,6 @@
-#Add-PnPField
+# Add-PnPField
 Adds a field to a list or as a site column
-##Syntax
+## Syntax
 ```powershell
 Add-PnPField [-AddToDefaultView [<SwitchParameter>]]
              [-Required [<SwitchParameter>]]
@@ -25,6 +25,8 @@ Add-PnPField -DisplayName <String>
              [-AddToDefaultView [<SwitchParameter>]]
              [-Required [<SwitchParameter>]]
              [-Group <String>]
+             [-ClientSideComponentId <GuidPipeBind>]
+             [-ClientSideComponentProperties <String>]
              [-Web <WebPipeBind>]
              [-Choices <String[]>]
 ```
@@ -35,15 +37,17 @@ Add-PnPField -DisplayName <String>
              -InternalName <String>
              -Type <FieldType>
              [-Id <GuidPipeBind>]
+             [-ClientSideComponentId <GuidPipeBind>]
+             [-ClientSideComponentProperties <String>]
              [-Web <WebPipeBind>]
              [-Choices <String[]>]
 ```
 
 
-##Returns
+## Returns
 >[Microsoft.SharePoint.Client.Field](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.field.aspx)
 
-##Parameters
+## Parameters
 Parameter|Type|Required|Description
 ---------|----|--------|-----------
 |DisplayName|String|True|The display name of the field|
@@ -52,20 +56,22 @@ Parameter|Type|Required|Description
 |Type|FieldType|True|The type of the field like Choice, Note, MultiChoice|
 |AddToDefaultView|SwitchParameter|False|Switch Parameter if this field must be added to the default view|
 |Choices|String[]|False|Specify choices, only valid if the field type is Choice|
+|ClientSideComponentId|GuidPipeBind|False|The Client Side Component Id to set to the field|
+|ClientSideComponentProperties|String|False|The Client Side Component Properties to set to the field|
 |Group|String|False|The group name to where this field belongs to|
 |Id|GuidPipeBind|False|The ID of the field, must be unique|
 |List|ListPipeBind|False|The name of the list, its ID or an actual list object where this field needs to be added|
 |Required|SwitchParameter|False|Switch Parameter if the field is a required field|
 |Web|WebPipeBind|False|The web to apply the command to. Omit this parameter to use the current web.|
-##Examples
+## Examples
 
-###Example 1
+### Example 1
 ```powershell
 PS:> Add-PnPField -List "Demo list" -DisplayName "Location" -InternalName "SPSLocation" -Type Choice -Group "Demo Group" -AddToDefaultView -Choices "Stockholm","Helsinki","Oslo"
 ```
 This will add a field of type Choice to the list "Demo List".
 
-###Example 2
+### Example 2
 ```powershell
 PS:>Add-PnPField -List "Demo list" -DisplayName "Speakers" -InternalName "SPSSpeakers" -Type MultiChoice -Group "Demo Group" -AddToDefaultView -Choices "Obiwan Kenobi","Darth Vader", "Anakin Skywalker"
 ```
