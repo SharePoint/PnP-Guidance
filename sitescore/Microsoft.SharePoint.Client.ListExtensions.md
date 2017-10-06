@@ -40,6 +40,7 @@ public static class ListExtensions
 | [GetViewById(List, Guid, Expression&lt;Func&lt;View, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.77ca9349.md) | Gets a view by Id
 | [GetViewByName(List, String, Expression&lt;Func&lt;View, Object&gt;&gt;[])](Microsoft.SharePoint.Client.ListExtensions.53d0489.md) | Gets a view by Name
 | [GetWebhookSubscriptions(List, String)](Microsoft.SharePoint.Client.ListExtensions.15edb0e7.md) | Get all the existing Webhooks subscriptions of the list Note: If the access token is not specified, it will cost a dummy request to retrieve it
+| [GetWebhookSubscriptionsAsync(List, String)](Microsoft.SharePoint.Client.ListExtensions.73f6d642.md) | Async get all the existing Webhooks subscriptions of the list Note: If the access token is not specified, it will cost a dummy request to retrieve it
 | [GetWebRelativeUrl(List)](Microsoft.SharePoint.Client.ListExtensions.1d0b225d.md) | Gets the web relative URL. Allow users to get the web relative URL of a list. This is useful when exporting lists as it can then be used as a parameter to Web.GetListByUrl().
 | [ListExists(Web, String)](Microsoft.SharePoint.Client.ListExtensions.696f8225.md) | Checks if list exists on the particular site based on the list Title property.
 | [ListExists(Web, Uri)](Microsoft.SharePoint.Client.ListExtensions.18ffaeae.md) | Checks if list exists on the particular site based on the list's site relative path.

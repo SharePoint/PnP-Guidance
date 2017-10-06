@@ -5,11 +5,11 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public override string ToHtml(Int32 controlIndex)
+public override string ToHtml(Single controlIndex)
 ```
 ### Parameters
 #### controlIndex  
-&emsp;&emsp;Type: System.Int32  
+&emsp;&emsp;Type: System.Single  
 &emsp;&emsp;The sequence of the control inside the section  
 
   

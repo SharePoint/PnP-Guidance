@@ -5,11 +5,11 @@
 **Assembly:** OfficeDevPnP.Core.dll  
 ## Syntax
 ```C#
-public int ControlIndex { get; set; }
+public float ControlIndex { get; set; }
 ```
 
 ### Property Value
-Type: System.Int32  
+Type: System.Single  
 
 ## See also
 - [ClientSideCanvasControlPosition](OfficeDevPnP.Core.Pages.ClientSideCanvasControlPosition.md) 
