@@ -115,4 +115,4 @@ If your target is a  "modern" communication site, you can use the _Classificatio
 
 If your target is a "modern" team site and you want to update the classification value, you should use the Microsoft Graph because the _Classification_ property of CSOM simply replicates the value of the _classification_ property of the Office 365 Group.
 
-> **Note**: You can find further details about how to update an Office 365 Group using the Microsoft Graph at the document [Update group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_update).
+> **Note**: You can find further details about how to update an Office 365 Group using the Microsoft Graph in the document [Update group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_update).
