@@ -273,8 +273,6 @@ If you don't want to allow users to create a "classic" sub site under a "modern"
 
 ![Subsite Creation options from the SharePoint Online admin UI](media/modern-experiences/subsite-creation-admin-setting.png)
 
-Notice that the above setting applies to sites that includes an Office 365 group, only. Thus, at the time of this writing it applies to "modern" team sites, but it does not apply to "modern" communication sites.
-
 ### Sites are not listed in the classic SharePoint Admin UI / Tenant API
 <a name="sectionSection13"> </a>
 
