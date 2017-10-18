@@ -82,13 +82,15 @@ $currentSettings = Get-AzureADDirectorySetting | where { $_.DisplayName -eq "Gro
 Remove-AzureADDirectorySetting -Id $currentSettings.Id
 ```
 
-## Custom automation based on 'Site Classification'
+## Managing the classification of a site
 <a name="sectionSection2"> </a>
-The value of site classification can be read, or updated, later on using the UI of SharePoint Online, as you can see in the following figure, by editing the 'Site Information' settings.
+The value of classification for a site can be read, or updated, later on using the UI of SharePoint Online, as you can see in the following figure, by editing the 'Site Information' settings.
 
 ![The 'Site Classification' option while editing the 'Site Information' settings of a "modern" site in SharePoint Online](media/modern-experiences/site-classification-update-ui.png)
 
-However, from a developer's perspective, you can also use CSOM and the REST API of SharePoint Online. In fact, every SharePoint Online site collection has the _Classification_ property that you can use to read the site classification. Here you can see a PowerShell snippet to do that.
+### Programmatically reading the classification of a site
+<a name="sectionSection3"> </a>
+From a developer's perspective, you can also use CSOM and the REST API of SharePoint Online. In fact, every SharePoint Online site collection has the _Classification_ property that you can use to read the site classification. Here you can see a PowerShell snippet to do that.
 
 ```PowerShell
 # Delete settings
@@ -99,34 +101,18 @@ $classificationValue = Get-PnPProperty -ClientObject $site -Property Classificat
 Write-Host $classificationValue
 ```
 
-Based on the classification value of a site, you can define automation and custom policy rules.
 If you like to read the 'Site Classification' value using REST, for example within a SharePoint Framework client-side web part, you can use the following REST endpoint:
 
 ```TEXT
 https://[tenant].sharepoint.com/sites/[modernsite]/_api/site/Classification
 ```
 
-If your target is a "modern" team site and you want to update the classification value of a site, you can make a HTTP PATCH request targeting a new REST API provided at the following URL:
+Based on the classification value of a site, you can define automation and custom policy rules.
 
-```TEXT
-https://[tenant].sharepoint.com/sites/[modernsite]/_api/SP.Directory.DirectorySession/Group('[group-id]')
-```
+### Programmatically updating the classification of a site
+<a name="sectionSection4"> </a>
+If your target is a  "modern" communication site, you can use the _Classification_ property of CSOM to update the value, too.
 
-Where the [group-id] argument is the ID of the Office 365 Group backing your SharePoint Online "modern" team site.
+If your target is a "modern" team site and you want to update the classification value, you should use the Microsoft Graph because the _Classification_ property of CSOM simply replicates the value of the _classification_ property of the Office 365 Group.
 
-The body of the PATCH request has to be a JSON object like the following one:
-
-```JSON
-{ 
-    "__metadata":
-    {
-      "type":"SP.Directory.Group"
-    },
-    "displayName":"displayName",
-    "description":"description",
-    "isPublic":true,
-    "classification":"HBI"
-}
-```
-
-In case of successfull update, you will get back an HTTP status code 204 (No Content).
+> **Note**: You can find further details about how to update an Office 365 Group using the Microsoft Graph at the document [Update group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_update).
