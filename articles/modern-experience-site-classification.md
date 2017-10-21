@@ -7,7 +7,7 @@ The 'Site Classification' option is not enabled by default, and you need to conf
 _**Applies to:** SharePoint Online_
 
 ## Enabling 'Site Classification' in your tenant
-<a name="sectionSection0"> </a>
+<a name="enablingSiteClassification"> </a>
 In order to benefit of 'Site Classification' you need to enable this capability at the Azure AD level, in your target tenant. Once you have enabled this capability, you will see an additional field 'How sensititive is your data?' while creating new "modern" sites. In the following figure you can see how the 'Site Classification' field looks like.
 
 ![The 'Site Classification' option while creating a "modern" site in SharePoint Online](media/modern-experiences/site-classification-ui.png)
@@ -29,7 +29,7 @@ Connect-AzureAD
 $template = Get-AzureADDirectorySettingTemplate | where { $_.DisplayName -eq "Group.Unified" }
 
 $setting = $template.CreateDirectorySetting()
-$setting["UserGuidelinesUrl"] = "https://aka.ms/sppnp"
+$setting["UsageGuidelinesUrl"] = "https://aka.ms/sppnp"
 $setting["ClassificationList"] = "HBI, MBI, LBI, GDPR"
 $setting["DefaultClassification"] = "MBI"
 New-AzureADDirectorySetting -DirectorySetting $setting
@@ -45,12 +45,12 @@ Using the _Get-AzureADDirectorySettingTemplate_ cmdlet you get a reference to th
 Once you have the template, you can configure the settings of that template by creating a new _DirectorySetting_ and providing the setting values through a dictionary.
 
 The main settings, from a 'Site Classification' perspective are:
-* **UserGuidelinesUrl**: the URL of a page where you can explain what are the different classification options. A link to that page will show up in the site creation form and in the header of every classified site.
+* **UsageGuidelinesUrl**: the URL of a page where you can explain what are the different classification options. A link to that page will show up in the site creation form and in the header of every classified site.
 * **ClassificationList**: a comma separated list of values for the 'Site Classification' options list.
 * **DefaultClassification**: the default value for the 'Site Classification'.
 
 ## Updating or Removing 'Site Classification' in your tenant
-<a name="sectionSection1"> </a>
+<a name="updatingRemovingClassification"> </a>
 If you need to update the 'Site Classification' settings afterwards, you can use the following PowerShell snippet.
 
 ```PowerShell
@@ -62,7 +62,7 @@ Connect-AzureAD
 
 # Update settings
 $currentSettings = Get-AzureADDirectorySetting | where { $_.DisplayName -eq "Group.Unified" }
-$currentSettings["UserGuidelinesUrl"] = "https://aka.ms/sppnp"
+$currentSettings["UsageGuidelinesUrl"] = "https://aka.ms/sppnp"
 $currentSettings["ClassificationList"] = "HBI, MBI, LBI, GDPR"
 $currentSettings["DefaultClassification"] = "MBI"
 Set-AzureADDirectorySetting -Id $currentSettings.Id -DirectorySetting $currentSettings
@@ -83,7 +83,7 @@ Remove-AzureADDirectorySetting -Id $currentSettings.Id
 ```
 
 ## Managing the classification of a site
-<a name="sectionSection2"> </a>
+<a name="managingClassification"> </a>
 The value of classification for a site can be read, or updated, later on using the UI of SharePoint Online, as you can see in the following figure, by editing the 'Site Information' settings.
 
 ![The 'Site Classification' option while editing the 'Site Information' settings of a "modern" site in SharePoint Online](media/modern-experiences/site-classification-update-ui.png)
@@ -110,7 +110,7 @@ https://[tenant].sharepoint.com/sites/[modernsite]/_api/site/Classification
 Based on the classification value of a site, you can define automation and custom policy rules.
 
 ### Programmatically updating the classification of a site
-<a name="sectionSection4"> </a>
+<a name="governanceClassification"> </a>
 If your target is a  "modern" communication site, you can use the _Classification_ property of CSOM to update the value, too.
 
 If your target is a "modern" team site and you want to update the classification value, you should use the Microsoft Graph because the _Classification_ property of CSOM simply replicates the value of the _classification_ property of the Office 365 Group.
