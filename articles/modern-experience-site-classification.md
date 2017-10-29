@@ -83,7 +83,7 @@ using (var adminContext = new ClientContext("https://[tenant]-admin.sharepoint.c
 
 ## Updating or Removing 'Site Classification' in your tenant
 <a name="updatingRemovingClassification"> </a>
-As like as for enabling the 'Site Classification, updating or removing the setting can be done either using PowerShell or PnP Core Library.
+As like as for enabling the 'Site Classification', updating or removing the setting can be done either using PowerShell or PnP Core Library.
 
 ### Updating or Removing 'Site Classification' with PowerShell
 If you need to update the 'Site Classification' settings afterwards, you can use the following PowerShell snippet.
@@ -222,8 +222,6 @@ If your target is a "modern" team site and you want to update the classification
 
 In order to make it easier for you to update the classification of a site, in the PnP Core Library there is an extension method that applies for you the right behavior, depending on the "modern" site type. In the following code excerpt you can see how to use it.
 
-In the PnP Core Library there is an extension method for the Site object of CSOM, which allows you to easily read the classification value of a site. In the following code snippet you can see how to leverage this extension method.
-
 ```C#
 // Connect to the target site collectiion
 using (var clientContext = new ClientContext("https://[tenant].sharepoint.com/sites/[modernsite]"))
@@ -238,7 +236,7 @@ using (var clientContext = new ClientContext("https://[tenant].sharepoint.com/si
     // Update the classification value, where the accessToken is an optional argument
     clientContext.Site.SetSiteClassification("MBI", accessToken);
 
-    // Read the current classification value
+    // Read back the new classification value (it can take a while to get back the new value)
     var currentClassification = clientContext.Site.GetSiteClassification();
 }
 
