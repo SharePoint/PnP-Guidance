@@ -16,7 +16,8 @@ While in the following figure, you can see the classification highlighted in the
 
 ![The 'Site Classification' highlighted in the header of a "modern" site](media/modern-experiences/site-classification-ui-output.png)
 
-To enable the capability you need to execute a bunch of PowerShell code, like the one illustrated below.
+### Enabling 'Site Classification' with PowerShell
+To enable the 'Site Classification' capability you can execute a bunch of PowerShell code, like the one illustrated below.
 
 ```PowerShell
 # Install the AzureAD Preview Module for PowerShell
@@ -49,8 +50,42 @@ The main settings, from a 'Site Classification' perspective are:
 * **ClassificationList**: a comma separated list of values for the 'Site Classification' options list.
 * **DefaultClassification**: the default value for the 'Site Classification'.
 
+### Enabling 'Site Classification' with PnP Core Library
+Another option that you have to enable the 'Site Classification' capability is to leverage the PnP Core Library, which provides few extension methods to manage classification in C# code.
+For example, to enable the 'Site Classification' you can write C# code like the one illustrated below.
+
+```C#
+// Connect to the admin central of your tenant
+using (var adminContext = new ClientContext("https://[tenant]-admin.sharepoint.com/"))
+{
+    // Provide a valid set of credentials
+    adminContext.Credentials = OfficeDevPnP.Core.Utilities.CredentialManager.GetSharePointOnlineCredential("[name-of-your-credentials]");
+
+    // Create a new instance of the Tenant class of CSOM
+    var tenant = new Tenant(adminContext);
+
+    // Get an Azure AD Access Token using ADAL, MSAL, or whatever else you like
+    var accessToken = getAzureADAccessToken();
+
+    // Define the list of classifications
+    var newClassificationList = new List<String>();
+    newClassificationList.Add("HBI");
+    newClassificationList.Add("MBI");
+    newClassificationList.Add("LBI");
+    newClassificationList.Add("GDPR");
+
+    // Use the PnP extension method to enable 'Site Classification'
+    // Including a default classification value and a the URL to an informative page
+    tenant.EnableSiteClassification(accessToken, newClassificationList, "MBI", "http://aka.ms/OfficeDevPnP");
+}
+
+```
+
 ## Updating or Removing 'Site Classification' in your tenant
 <a name="updatingRemovingClassification"> </a>
+As like as for enabling the 'Site Classification, updating or removing the setting can be done either using PowerShell or PnP Core Library.
+
+### Updating or Removing 'Site Classification' with PowerShell
 If you need to update the 'Site Classification' settings afterwards, you can use the following PowerShell snippet.
 
 ```PowerShell
@@ -82,6 +117,57 @@ $currentSettings = Get-AzureADDirectorySetting | where { $_.DisplayName -eq "Gro
 Remove-AzureADDirectorySetting -Id $currentSettings.Id
 ```
 
+### Updating or Removing 'Site Classification' with PnP Core Library
+Another option that you have is to use the PnP Core Library.
+For example, to update the 'Site Classification' you can write C# code like the one illustrated below.
+
+```C#
+// Connect to the admin central of your tenant
+using (var adminContext = new ClientContext("https://[tenant]-admin.sharepoint.com/"))
+{
+    // Provide a valid set of credentials
+    adminContext.Credentials = OfficeDevPnP.Core.Utilities.CredentialManager.GetSharePointOnlineCredential("[name-of-your-credentials]");
+
+    // Create a new instance of the Tenant class of CSOM
+    var tenant = new Tenant(adminContext);
+
+    // Get an Azure AD Access Token using ADAL, MSAL, or whatever else you like
+    var accessToken = getAzureADAccessToken();
+
+    // Retrieve the current set of values for 'Site Classification'
+    var classificationList = tenant.GetSiteClassificationList(accessToken);
+    
+    // And update it by adding a new value
+    var updatedClassificationList = new List<String>(classificationList);
+    updatedClassificationList.Add("TopSecret");
+
+    // Update the 'Site Classification' settings accordingly
+    tenant.UpdateSiteClassification(accessToken, updatedClassificationList, "MBI", "http://aka.ms/SharePointPnP");
+}
+
+```
+
+Moreover, in order to disable and remove the 'Site Classification' settings, you can use a code snippet like the following one.
+
+```C#
+// Connect to the admin central of your tenant
+using (var adminContext = new ClientContext("https://[tenant]-admin.sharepoint.com/"))
+{
+    // Provide a valid set of credentials
+    adminContext.Credentials = OfficeDevPnP.Core.Utilities.CredentialManager.GetSharePointOnlineCredential("[name-of-your-credentials]");
+
+    // Create a new instance of the Tenant class of CSOM
+    var tenant = new Tenant(adminContext);
+
+    // Get an Azure AD Access Token using ADAL, MSAL, or whatever else you like
+    var accessToken = getAzureADAccessToken();
+
+    // Disable the 'Site Classification' settings
+    tenant.DisableSiteClassification(accessToken);
+}
+
+```
+
 ## Managing the classification of a site
 <a name="managingClassification"> </a>
 The value of classification for a site can be read, or updated, later on using the UI of SharePoint Online, as you can see in the following figure, by editing the 'Site Information' settings.
@@ -90,7 +176,9 @@ The value of classification for a site can be read, or updated, later on using t
 
 ### Programmatically reading the classification of a site
 <a name="sectionSection3"> </a>
-From a developer's perspective, you can also use CSOM and the REST API of SharePoint Online. In fact, every SharePoint Online site collection has the _Classification_ property that you can use to read the site classification. Here you can see a PowerShell snippet to do that.
+From a developer's perspective, you can use CSOM and the REST API of SharePoint Online to read and write the value of classification for a specific site. In fact, every SharePoint Online site collection has the _Classification_ property that you can use to read the site classification. 
+
+Here you can see a PowerShell snippet to do that.
 
 ```PowerShell
 # Delete settings
@@ -109,6 +197,21 @@ https://[tenant].sharepoint.com/sites/[modernsite]/_api/site/Classification
 
 Based on the classification value of a site, you can define automation and custom policy rules.
 
+In the PnP Core Library there is an extension method for the Site object of CSOM, which allows you to easily read the classification value of a site. In the following code snippet you can see how to leverage this extension method.
+
+```C#
+// Connect to the target site collectiion
+using (var clientContext = new ClientContext("https://[tenant].sharepoint.com/sites/[modernsite]"))
+{
+    // Provide a valid set of credentials
+    clientContext.Credentials = OfficeDevPnP.Core.Utilities.CredentialManager.GetSharePointOnlineCredential("[name-of-your-credentials]");
+
+    // Read the current classification value
+    var currentClassification = clientContext.Site.GetSiteClassification();
+}
+
+```
+
 ### Programmatically updating the classification of a site
 <a name="governanceClassification"> </a>
 If your target is a  "modern" communication site, you can use the _Classification_ property of CSOM to update the value, too.
@@ -116,3 +219,27 @@ If your target is a  "modern" communication site, you can use the _Classificatio
 If your target is a "modern" team site and you want to update the classification value, you should use the Microsoft Graph because the _Classification_ property of CSOM simply replicates the value of the _classification_ property of the Office 365 Group.
 
 > **Note**: You can find further details about how to update an Office 365 Group using the Microsoft Graph in the document [Update group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_update).
+
+In order to make it easier for you to update the classification of a site, in the PnP Core Library there is an extension method that applies for you the right behavior, depending on the "modern" site type. In the following code excerpt you can see how to use it.
+
+In the PnP Core Library there is an extension method for the Site object of CSOM, which allows you to easily read the classification value of a site. In the following code snippet you can see how to leverage this extension method.
+
+```C#
+// Connect to the target site collectiion
+using (var clientContext = new ClientContext("https://[tenant].sharepoint.com/sites/[modernsite]"))
+{
+    // Provide a valid set of credentials
+    clientContext.Credentials = OfficeDevPnP.Core.Utilities.CredentialManager.GetSharePointOnlineCredential("[name-of-your-credentials]");
+
+    // Get an Azure AD Access Token using ADAL, MSAL, or whatever else you like
+    // This is needed only if your target is a "modern" team site
+    var accessToken = getAzureADAccessToken();
+
+    // Update the classification value, where the accessToken is an optional argument
+    clientContext.Site.SetSiteClassification("MBI", accessToken);
+
+    // Read the current classification value
+    var currentClassification = clientContext.Site.GetSiteClassification();
+}
+
+```
