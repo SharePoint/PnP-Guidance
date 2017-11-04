@@ -76,7 +76,7 @@ using (var adminContext = new ClientContext("https://[tenant]-admin.sharepoint.c
 
     // Use the PnP extension method to enable 'Site Classification'
     // Including a default classification value and a the URL to an informative page
-    tenant.EnableSiteClassification(accessToken, newClassificationList, "MBI", "http://aka.ms/OfficeDevPnP");
+    tenant.EnableSiteClassifications(accessToken, newClassificationList, "MBI", "http://aka.ms/OfficeDevPnP");
 }
 
 ```
@@ -142,7 +142,7 @@ using (var adminContext = new ClientContext("https://[tenant]-admin.sharepoint.c
     updatedClassificationList.Add("TopSecret");
 
     // Update the 'Site Classification' settings accordingly
-    tenant.UpdateSiteClassification(accessToken, updatedClassificationList, "MBI", "http://aka.ms/SharePointPnP");
+    tenant.UpdateSiteClassificationSettings(accessToken, updatedClassificationList, "MBI", "http://aka.ms/SharePointPnP");
 }
 
 ```
@@ -163,7 +163,7 @@ using (var adminContext = new ClientContext("https://[tenant]-admin.sharepoint.c
     var accessToken = getAzureADAccessToken();
 
     // Disable the 'Site Classification' settings
-    tenant.DisableSiteClassification(accessToken);
+    tenant.DisableSiteClassifications(accessToken);
 }
 
 ```
