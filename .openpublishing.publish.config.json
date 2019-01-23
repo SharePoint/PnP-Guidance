@@ -4,33 +4,6 @@
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-      "docset_name": "PnP_articles",
-      "build_source_folder": "articles",
-      "build_output_subfolder": "articles",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "version": 0
-    },
-    {
-      "docset_name": "pnp_powershell",
-      "build_source_folder": "powershell",
-      "build_output_subfolder": "powershell",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "op",
-      "version": 0
-    },
-    {
       "docset_name": "pnp_sites_core",
       "build_source_folder": "sitescore",
       "build_output_subfolder": "pnp_sites_core",
